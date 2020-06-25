@@ -1,17 +1,17 @@
 # Dufuna-CodeCamp-July-2020
 This README explains how to get started with this repository.
 
-How to get started
-Fork this repository.
+## How to get started
+### Fork this repository.
 In your fork, you'll find a submissions directory, create a new folder in that directory and name it <YOUR FULL NAME>.
 In the last folder you created that is named after you, create another folder named the topic for which you want to make a submission, e.g. uxDesign.
 In this new folder, create a new file for the solution of each tasks, e.g uxDesign.txt
 Add your changes to git, make a commit and push to your forked version.
 Head over to your forked version of this repository on Github and create a Pull Request to have your solution merged to this repository.
-How to make a submission
+## How to make a submission
 If you want to make a submission for a week where the topic was 'sample'
 
-Create a new branch.
+### Create a new branch.
 Navigate to the folder that has your name in the submissions folder.
 Create a folder for the task using the topic of the week as the name, e.g. Git&VersionControl
 Add necessary files/content for the task to the folder.
