@@ -1,4 +1,4 @@
-# Dufuna-CodeCamp-July-2020
+# Dufuna-CodeCamp-2021
 This README explains how to get started with this repository.
 
 ## How to get started
