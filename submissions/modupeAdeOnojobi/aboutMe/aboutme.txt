@@ -1,4 +1,4 @@
 Hello World,
 At the end of the program:
 1) I hope to learn how to write clean codes.
-2) I hope to learn how to write clean codes.
+2) I hope to become a sought-after fullstack developer.
