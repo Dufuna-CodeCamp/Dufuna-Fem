@@ -1,0 +1,3 @@
+﻿Hello World!
+My name is Saidat Atanda. I am a graduate of University Of Lagos, studied Marine Biology. You might probably be wondering what I am doing here learning software development...lol. Well, I love the concept of acquiring new skills and knowledge and since the world seems to be going global, this is the perfect oppportunity for me to get on the moving train. This could even be a complete career change for me in few months to come. I love to read books and meet new people in my leisure time. That is pretty much everything to know about Saidat.
+I have been able to push my first task to GitHub. I had some issues while doing that because my browser was not supported by Git but I have been able to succesfully upload it now,yay.   
