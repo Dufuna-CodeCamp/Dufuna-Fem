@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>Contact Form</title>
+</head>
+<body>
+    <nav>
+     <h1>Style By Bori</h1>
+        <a href="#">Home</a><br>
+        <a href="#">Categories</a><br>
+        <a href="#">About us</a>
+    </nav>
+    <hr>
+    <!--This section is for the contact form-->
+    <h1>Contact Form</h1>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <fieldset>
+         <legend>Contact Form</legend>
+            <label for="Full name">Full name:</label>
+            <input type="text" name="fullname" id="full name" placeholder="First name"/>
+            <input type="text" name="fullname" id="full name" placeholder="Last name"/> <br><br>
+         <!--This section is for the email address-->
+            <label>Email:</label>
+            <input type="text" name="email" id="email" placeholder="e.g.Esther@gmail.com"/><br><br>
+         <!--Subject of the form-->
+            <label for="Subject">Subject</label>
+          <select name="Subject" id="subject">
+            <option value="Order cancellation">Order cancellation</option>
+            <option value="Can't input payment details"> Cannot input Payment details</option>
+            <option value="Returns & Refunds">Returns & Refunds</option>
+            <option value="Bulk orders" selected>Bulk Orders</option>
+            <option value="other">Other</option>
+          </select>
+         <br><br>
+         <!--This section is for typing the message-->
+            <label for="Message">Message:</label><br>
+           <textarea name="message" id="message" cols="50" rows="10"></textarea><br><br>
+         <!--This houses the submit button-->
+           <button type="Submit">Submit</button> 
+        </fieldset>   
+    </form>
+</body>
+</html>
