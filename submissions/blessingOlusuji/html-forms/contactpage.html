@@ -1,0 +1,40 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Contact Page</title>
+</head>
+<body>
+   <!---Codes for the form begins here-->
+   <nav>
+      <ul>
+        <li><a href="../html-forms/contactpage.html">Contact Form</a></li>
+        <li><a href="../HTML/product.html">Product</a></li>
+      </ul>
+   </nav>
+   <h1>Contact Form Page</h1>
+   <form>
+       <fieldset>
+         <legend>Contact Form</legend>
+         <!---Code for fullname box-->
+         <label for="fullname">Enter Your Fullname:</label>
+         <input type="text" name="fullname" id="fullname"/><br><br>
+         <!---Code for email box-->
+         <label for="email">Enter Your Email:</label>
+         <input type="text" name="email" id="email" placeholder="youremail@gmail.com"/><br><br>
+         <!---Code for subject box-->
+         <label for="subject">Select Subject:</label>
+         <select name="subject" id="subject">
+         <option value="place order">Place Order</option>
+         <option value="make enquiries">Make Enquires</option>
+         <option value="complaint">Complaint</option>
+         </select><br><br>
+         <!---Code for message box begins here-->
+         <label for="comments">Drop Your Comments Here:</label><br>
+         <textarea name="comments" id ="comments" cols="50" rows="20"></textarea><br><br>
+         <!---code for submit button-->
+         <button type="submit">Submit</button>
+       </fieldset>
+  </form>
+</body>
+</html>
