@@ -4,56 +4,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="images/favicon.ico">
     <title>Sneak Nation</title>
 </head>
 
 <body>
-    <h1>Sneak Nation</h1>
     <nav>
+        <span>Sneak Nation</span>
         <ul>
-            <li><a href="products.html">Product</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><a href="products.html">Product Page</a></li>
             <li><a href="../html-forms/contact.html">Contact Us</a></li>
-            <li><a href="#">Cart</a></li>
+            <li><a href="#">Sign Up</a></li>
         </ul>
     </nav>
-    <img src="images/bg-sneaker.jpg" alt="sneakers">
     <main>
         <!-- Product section -->
-        <section>
-            <div>
-                <img src="images/sneaker.jfif" alt=""> <br>
-                <span>Victoria Sneaker</span> <br>
-                <span>₦10,000</span> <br>
-                <span>Multicolor boyfriend sneaker</span>
+        <section class="container-1">
+            <div class="first-product">
+                <img src="images/sneaker.jfif" alt="multi-color sneaker" class="img1">
+                <div class="float">
+                    <span class="p-name">Victoria Sneaker</span> <br>
+                    <div class="f-items">
+                        <span>Brand: Victoria</span> <br>
+                        <span>Quantity: <t>2</t></span> <br>
+                        <span>₦ 19,900</span> <br>
+                        <button class="btn">Buy now</button>
+                    </div>
+                </div>
+                <h5>Description</h5>
+                <p>This is a shoe you can put on all day.
+                    This victoria designed sneaker guarantees maximum comfort for whoever wears.
+                    The strength of material assures that it is long lasting from the moment
+                    it goes off the shelf.
+                </p>
             </div>
-            <div>
-                <img src="images/sneaker2.jfif" alt="white sneaker"> <br>
-                <span>Adidas Grand Court Sneaker</span> <br>
-                <span>₦7,000</span> <br>
-                <span>White and black stripes Adidas Grand Court Sneaker</span>
-            </div>
+
         </section>
         <!-- Similar Products -->
-        <section>
-            <div>
-                <p>Similar Product</p>
-                <ol>
-                    <li><a href="#">Meline Sneaker</a></li>
-                    <li><a href="#">Adidas Bases Sneaker</a></li>
-                    <li><a href="#">Airel Sneaker</a></li>
-                </ol>
+        <section class="similar-product">
+            <h5>Similar Product</h5>
+            <div class="row">
+                <div class="column">
+                    <img src="images/sneaker2.jpg" alt="white sneaker"><br>
+                    <div class="desc">
+                        <p>Adidas Grand Court Sneaker</p>
+                        <p>₦ 20,000</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <img src="images/sneakers.jpg" alt="white sneaker"> <br>
+                    <div class="desc">
+                        <p>Victoria Totem Pelo</p>
+                        <p>₦ 23,000</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <img src="images/sneaker3.jpg" alt="white sneaker"> <br>
+                    <div class="desc">
+                        <span>Victoria Totem 1491</span> <br>
+                        <span>₦ 25,000</span> <br>
+                    </div>
+                </div>
             </div>
+
         </section>
     </main>
     <footer>
-        <ul>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
-        </ul>
-        <hr>
-        <p>&copy; 2020 Made with ❤️ by Modupe </p>
+        <div class="container-2">
+            <div class=" container-2 row-2">
+                <div class="nav-2 column-2 col">
+                    <p>Contact Us</p>
+                    <p>About Us</p>
+                    <p>Terms and Conditions</p>
+                </div>
+                <div class="sign-up col">
+                    <span>Sign up for our Newsletter</span> <br>
+                    <input type="email" name="email" placeholder="Enter your email address">
+                    <button class="btn btn-1">SUBMIT</button>
+                </div>
+                <!-- <div class="> -->
+                <ul class="col">
+                    <span class="contact-us">CONNECT WITH US</span> <br>
+                    <li><a href="#"><img src="images/facebook.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/twitter.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/instagram.png" alt=""></a></li>
+                </ul>
+                <!-- </div> -->
+            </div>
+            <p class="copy-right">Copyright 2020 sneaknation.com <span> All rights reserved</span>.</p>
+        </div>
     </footer>
 </body>
 
