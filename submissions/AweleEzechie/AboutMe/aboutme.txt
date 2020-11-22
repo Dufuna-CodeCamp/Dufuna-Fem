@@ -1,0 +1,5 @@
+Hello, my name is Awele.
+I am learning from Dufuna.
+we are currently learning git.
+
+This is my first task.
