@@ -1,3 +1,0 @@
-Hello world!
-My name is Tosin Kolawole
-I have been able to push my first task to Github
