@@ -1,3 +1,2 @@
-Hello world
-I am very delighted to be here because I had lots of issues before getting to this stage but thank God i'm here now. At the end of this program, i hope that i would have been equiped with all the necessary informations to become a good developer. I also hope that i'll be able to get a placement for experience.
-Thank you.
+Hello World,
+My name is Amoo Kaozarat and the main thing I hope to achieve at the end of this program is to become a proficient front end developer and also get a placement after the program.
