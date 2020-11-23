@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="images/favicon.ico">
     <title>Contact</title>
 </head>
+
 <body>
     <nav>
         <span>Sneak Nation</span>
@@ -15,29 +18,61 @@
             <li><a href="#">Sign Up</a></li>
         </ul>
     </nav>
-    <section>
-         
-    </section>
-    <form action="">
-        <fieldset>
-            <legend>Contact Form</legend>
-            <label for="firstName">First Name: </label> 
-            <input type="text" name="firstName" id="firstName"> <br><br>
-            <label for="lastName">Last Name: </label> 
-            <input type="text" name="lastName" id="lastName"> <br><br>
-            <label for="email">Email: </label> 
-            <input type="email" name="email" id="email"> <br><br>
-            <label for="subject">Subject: </label> 
-            <select name="subject" id="subject">
-                <option value="Can't make payment">Can't make payment</option>
-                <option value="Yet to recieve my orders">Yet to receive my orders</option>
-                <option value="Refund and return">Refund and return</option>
-                <option value="Other">Other</option>
-            </select><br><br>
-            <label for="msg">Message: </label><br>
-            <textarea name="msg" id="msg" cols="30" rows="10"></textarea><br><br>
-            <input type="submit" value="submit">
-        </fieldset>
-    </form>
+    <main class="container-3">
+
+        <div class="rows">
+            <div class="columns">
+                <p><img src="../html/images/telephone.png" alt="call icon" class="c-icon"><br> Please contact us
+                    via these numbers: </p>
+                <p class="lite">+234 890 900 0000</p>
+                <p class="lite">+234 458 589 3290</p> <br>
+                <p><img src="../html/images/email.png" alt="email icon" class="c-icon"><br> Email Address:</p>
+                <p class="lite">support@sneaknation.com</p> <br>
+                <p>Or Connect with us:</p>
+                <div>
+                    <ul class="icons">
+                        <li><a href="#"><img src="../html/images/facebook.png" alt="facebook icon"></a></li>
+                        <li><a href="#"><img src="../html/images/twitter.png" alt="twitter icon"></a></li>
+                        <li><a href="#"><img src="../html/images/instagram.png" alt="instagram icon"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <form class="columns"> 
+                <span><img src="../html/images/email.png" alt="email icon" class="c-icon"> <br> 
+                    Or better still send us a message
+                </span> <br><br>
+                <input type="text" name="firstName" id="firstName" placeholder=" Full Name"> <br><br>
+                <input type="email" name="email" id="email" placeholder=" Email Address"> <br><br>
+                <input type="text" name="subject" id="subject" placeholder=" Subject"> <br><br>
+                <label for="msg" class="msg">Message </label><br>
+                <textarea name="msg" id="msg" cols="38" rows="7"></textarea><br><br>
+                <button class="btn btn-1">SUBMIT</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="container-2">
+            <div class=" container-2 row-2">
+                <div class="nav-2 column-2 col">
+                    <p>Contact Us</p>
+                    <p>About Us</p>
+                    <p>Terms and Conditions</p>
+                </div>
+                <div class="sign-up col">
+                    <span>Sign up for our Newsletter</span> <br>
+                    <input type="email" name="email" placeholder="Enter your email address">
+                    <button class="btn btn-1">SUBMIT</button>
+                </div>
+                <ul class="col">
+                    <span class="contact-us">CONNECT WITH US</span> <br>
+                    <li><a href="#"><img src="../html/images/facebook.png" alt=""></a></li>
+                    <li><a href="#"><img src="../html/images/twitter.png" alt=""></a></li>
+                    <li><a href="#"><img src="../html/images/instagram.png" alt=""></a></li>
+                </ul>
+            </div>
+            <p class="copy-right">Copyright 2020 sneaknation.com <span> All rights reserved</span>.</p>
+        </div>
+    </footer>
 </body>
+
 </html>

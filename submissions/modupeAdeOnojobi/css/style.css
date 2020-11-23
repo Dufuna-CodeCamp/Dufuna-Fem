@@ -431,5 +431,159 @@ footer {
         font-weight: 400;
     }
 
+}
+
+
+/* ===================================================== Contact Us CSSS ============================================ */
+.container-3 {
+    width: 95%;
+    text-align: center;
+    padding: 2em 0;
+}
+
+.container-3 input {
+    height: 1.8rem;
+    width: 18rem;
+    margin-right: .9em;
+    border: 1px solid black;
+}
+
+.container-3 button {
+    margin-left: 14rem;
+    background-color: #bce6eb;
+    color: white;
+    margin-top: 0;
+}
+
+form {
+    border: 1px solid black;
+    padding: 1em;
+    width: 90%;
+    margin-left: 7%;
+}
+
+.icons {
+    margin: .9em 0;
+}
+.icons li {
+    display: inline;
+    padding: .2em;
+}
+
+textarea {
+    border: .9px solid black;
+}
+
+.msg {
+    margin-right: 15em;
+}
+
+.lite {
+    color:  #5f5f5f;
+    font-weight: 100;
+}
+
+@media (min-width: 48rem) {
+    .container-3 input {
+        height: 2.4rem;
+        width: 39rem;
+        margin-right: .9em;
+        border: 1px solid black;
+    }
+
+    textarea {
+        width: 39rem;
+    }
+
+    .msg {
+        margin-right: 34rem;
+    }
+
+    .container-3 button {
+        margin-left: 31rem;
+        
+    }
+
+    .container-3 p, container-3 span {
+        font-size: 1.5rem;
+    }
+
+    .icons img, .c-icons {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 64rem) {
+    .container-3 input {
+        height: 2.8rem;
+        width: 50rem;
+        margin-right: .9em;
+        border: 1px solid black;
+    }
+
+    textarea {
+        width: 50rem;
+    }
+
+    .msg {
+        margin-right: 45rem;
+    }
+
+    .container-3 button {
+        margin-left: 46rem;
+        
+    }
+
+    .container-3 p, .container-3 span {
+        font-size: 2.5rem;
+    }
+
+    .container-3 img {
+        width: 2.3rem;
+    }
+}
+
+@media (min-width: 94rem) {
+    .rows{
+        display: flex;
+        
+    }
+
+    .columns {
+        flex: 50%;
+    }
+    textarea {
+        width: 36rem;
+        height: 10rem;
+    }
+
+    .container-3 input {
+        height: 2.3rem;
+        width: 36rem;
+        margin-right: .9em;
+        border: 1px solid black;
+    }
+    
+    .container-3 button {
+        margin-left: 31rem;
+        background-color: #bce6eb;
+        color: white;
+        margin-top: 0;
+    }
+
+    .c-icons {
+        margin-top: 0;
+    }
+    .container-3 p, .container-3 span {
+        font-size: 1.5rem;
+    }
+    .msg {
+        margin-right: 31em;
+    }
+
+    .container-3 img {
+        width: 2.3rem;
+    }
+    
 
 }
