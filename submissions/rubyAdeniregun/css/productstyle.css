@@ -64,6 +64,7 @@ a {
   
 h1 h2 {
     text-align: left;
+    font-weight: bold;
 }
 
 .column3 {
@@ -143,7 +144,7 @@ h1 h2 {
        padding: 0px;
        width: 80%;
        margin-top: 10px;
-       margin-right: 100px;
+       margin-right: 90px;
     }
 
     .text1, .text2, .text3 {
@@ -176,18 +177,18 @@ h1 h2 {
         display: grid;
         grid-template-rows: 50% 50%;
         margin-left: 0px;
-        margin-right: 40px;
-        gap: 10px;
+        margin-right: 100px;
+        gap: 5px;
         justify-content: center;
         margin-top: 10px;
     }
 
     h1, h2 {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     #img {
-        max-width: 15rem;        
+        max-width: 13rem;        
     }
 
     body{
