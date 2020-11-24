@@ -82,7 +82,50 @@ h1 h2 {
     text-align: center;
 }
 
-.
+.column4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.related1 {
+    position: relative;
+}
+  
+.text1 {
+    position: absolute;
+    bottom: 10px;
+    color: black;
+    left: 50px;
+    text-align: center;
+}
+
+.related2 {
+    position: relative;
+}
+  
+.text2 {
+    position: absolute;
+    bottom: 10px;
+    color:black;
+    left: 60px;
+    text-align: center;
+}
+
+.related3 {
+    position: relative;
+}
+  
+.text3 {
+    position: absolute;
+    bottom: 10px;
+    color: black;
+    text-align: center;
+    left: 50px;
+}
+
 /* mobile View */
 @media only screen and  (max-width: 768px) {
 
@@ -162,57 +205,9 @@ h1 h2 {
 /* Laptop View */
 @media only screen and (min-width: 992px) {
     
-    .column4 {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin-bottom: 20px;
-        justify-content: space-evenly;
-        align-items: center;
-        gap: 10px;
-        width: 100%;
-    }
+    
 
-    .related1 {
-        position: relative;
-    }
-      
-    .text1 {
-        position: absolute;
-        bottom: 10px;
-        right: 20px;
-        color: black;
-        padding-left: 20px;
-        padding-right: 20px;
-        text-align: center;
-    }
-    
-    .related2 {
-        position: relative;
-    }
-      
-    .text2 {
-        position: absolute;
-        bottom: 10px;
-        right: 20px;
-        color:black;
-        padding-left: 20px;
-        padding-right: 20px;
-        text-align: center;
-    }
-    
-    .related3 {
-        position: relative;
-    }
-      
-    .text3 {
-        position: absolute;
-        bottom: 10px;
-        right: 20px;
-        color: black;
-        padding-left: 20px;
-        padding-right: 20px;
-        text-align: center;
-    }
+   
     
     .footer {
     background-color: rgb(100, 121, 8);
