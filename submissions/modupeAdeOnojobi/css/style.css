@@ -5,12 +5,10 @@
     margin: 0;
     padding: 0;
     z-index: 1;
-
 }
 
 body {
     font-family: 'Solway', serif;
-
 }
 
 /* ============================================ Navbar section =========================================== */
@@ -131,7 +129,6 @@ nav a:focus {
     font-weight: 600;
     font-size: .8em;
     color: #5f5f5f;
-
 }
 
 .f-items t {
@@ -156,8 +153,7 @@ nav a:focus {
 .btn:focus {
     border-color: #fca3cc;
     cursor: pointer;
-    background-color: #fd4b9e;
-    
+    background-color: #fd4b9e; 
 }
 
 .first-product p{
@@ -297,7 +293,7 @@ nav a:focus {
 } 
 
 
-/* ====================================== Similar Product========================================== */
+/* ====================================== Footer ========================================== */
 footer {
     background-color: #bce6eb;
     font-family: 'Merriweather', serif;
@@ -432,10 +428,6 @@ footer {
     }
 
 }
-
-/* ===================
-======================
-====================== */
 
 /* ===================================================== Contact Us CSS ============================================ */
 .container-3 {
@@ -590,10 +582,6 @@ textarea {
     
 }
 
-/* ===================
-======================
-====================== */
-
 /* =====================================================  Sign-Up CSS ============================================ */
 .reg  {
     width: 19rem;
@@ -727,8 +715,7 @@ textarea {
         position: relative;
         left: 50px;
         top: -4px;
-    }
-    
+    }  
 }
 
 
