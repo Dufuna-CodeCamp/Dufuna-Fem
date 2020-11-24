@@ -118,15 +118,7 @@ input[type=password] {
 
 @media screen and (min-width: 600px) {
 
-@media screen and (min-width: 992px) {
-    
-.footer {
-    clear: both;
-    margin-bottom: 0 auto;
-    padding: 0;
-    bottom: 0;
-}
-}
+@media screen and (min-width: 992px) {}
     
 footer {
     background-color:rgb(100, 121, 8);
