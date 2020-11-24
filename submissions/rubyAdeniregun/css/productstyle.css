@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Encode Sans', sans-serif;
+    background: white
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin: 0 50px;
+    padding-top: 30px;
+    display: inline-block;
+    float: right;
+}
+
+.header {
+    background-color: rgb(100, 121, 8);
+    font-size: 20px;  
+    width: 100%;
+    height: 90px;
+    margin-bottom: 45px;
+}
+
+#logo {
+    display: inline-block;
+    float: left;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+#quantity{
+    width: 80px;
+}
+
+#buynow {
+    font-size: 25px;
+    border-radius: 12px;
+    padding: 10px;
+    color: white;
+    background-color: rgb(100, 121, 8);
+    border: none;
+}
+
+#quantity{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    justify-content: center
+    padding: 10px;
+    padding-top: 20px;
+    margin-left: 80px;
+}
+  
+h1 h2 {
+    text-align: left;
+}
+
+.column3 {
+    text-align: left;
+    padding: 75px;
+    padding-top: 5px;
+    margin-top: 5px;
+}
+
+#paragraph {
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+#header2 {
+    text-align: center;
+}
+
+.
+/* mobile View */
+@media only screen and  (max-width: 768px) {
+
+/* Tablet View */
+@media only screen and  (min-width: 768px) {
+    .header {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .column4 {
+       grid-template-columns: 2fr 1fr;
+       justify-content: space-evenly;
+       margin: 0px;
+       padding: 0px;
+       width: 80%;
+       margin-top: 10px;
+       margin-right: 100px;
+    }
+
+    .text1, .text2, .text3 {
+        font-size: 14px;
+    }
+
+    .relatedimage {
+        max-width: 15rem;
+    }
+
+    .column3 {
+        padding: 0px;
+        padding-top: 10px;
+        padding-right: 80px;
+        width: 90%;
+        padding: 15px;
+        margin: 0px;
+    }
+
+    #header2 {
+        padding-top: 20px;
+    }
+
+    a { margin: 20px;
+        text-align: left;
+        margin-left: 0px;
+    }
+    
+    .container {
+        display: grid;
+        grid-template-rows: 50% 50%;
+        margin-left: 0px;
+        margin-right: 40px;
+        gap: 10px;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    h1, h2 {
+        font-size: 15px;
+    }
+
+    #img {
+        max-width: 15rem;        
+    }
+
+    body{
+        width: 70%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    footer {
+        width: 80%;
+        position: relative;
+    }
+}
+
+/* Laptop View */
+@media only screen and (min-width: 992px) {
+    
+    .column4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 20px;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .related1 {
+        position: relative;
+    }
+      
+    .text1 {
+        position: absolute;
+        bottom: 10px;
+        right: 20px;
+        color: black;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+    }
+    
+    .related2 {
+        position: relative;
+    }
+      
+    .text2 {
+        position: absolute;
+        bottom: 10px;
+        right: 20px;
+        color:black;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+    }
+    
+    .related3 {
+        position: relative;
+    }
+      
+    .text3 {
+        position: absolute;
+        bottom: 10px;
+        right: 20px;
+        color: black;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+    }
+    
+    .footer {
+    background-color: rgb(100, 121, 8);
+    position: static;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: white;
+}
+    
+.footcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    padding: 5px; 
+    align-items: center;
+    padding-top: 5px;
+}
+    
+.footer-link {
+    display: table;
+    vertical-align: left;
+}
+    
+#email {
+    padding: 10px 60px;
+    text-align: left;
+}
+    
+#submit{
+    padding: 10px;
+    font-weight: bold;
+    color: rgb(100, 121, 8);
+    width: 100px;
+    font-size: 24x;
+}
+    
+.footform {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    align-items: center;
+    padding-top: 10px;
+}
+    
+#footp {
+    text-align: center;
+}
+
+.list5 {
+    list-style-type: none;
+    columns: 4;
+    width: 200px;
+}
+
+

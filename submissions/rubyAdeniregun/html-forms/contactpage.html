@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact Page</title>
+    <link rel="stylesheet" type="text/css" href="contactstyle.css">
 </head>
 <body>
   <nav>
-    <ul>
+    <ul class="toplist">
       <li><a href="../html-forms/contactpage.html">Contact Form</a></li>
       <li><a href="../HTML/productpage.html">Product</a></li>
     </ul>
@@ -14,14 +15,14 @@
   <h1>Contact Page Form</h1>
   <form action="#" method="post" enctype="multipart/form-data">
     <fieldset>
-      <legend>Contact Page</legend>
-  <label for="firstname">First Name</label><br>
+      <legend id="contactpage">Contact Page</legend>
+  <label class="headtext" for="firstname">First Name</label><br>
   <input type="textarea" name="firstname" id="firstname"/><br><br>
-  <label for="firstname">Last name</label><br>
+  <label class="headtext" for="firstname">Last name</label><br>
   <input type="textarea" name="lastname" id="lastname"/><br><br>
-  <label for="emailaddress">Email Address</label><br>
+  <label class="headtext" for="emailaddress">Email Address</label><br>
   <input type="text" name="emailaddress" id="emailaddress"><br><br>
-  <label>Message Subject</label>
+  <label class="headtext">Message Subject</label><br>
   <select name="Subject" id="subject">
     <option value="enquiry">Enquiry</option>
     <option value="Complaint">Complaint</option>
@@ -30,7 +31,7 @@
     <option value="Other" selected>Other</option>
   </select>
   <br><br>
-  <label for="comment">Message</label><br>
+  <label class="headtext" for="comment">Message</label><br>
   <textarea name="comments" id="comments" cols="50" rows="15"></textarea><br><br>
   <button onclick="alert('Thank you for your message. We will get back to you shortly')">SUBMIT</button>
    </fieldset>

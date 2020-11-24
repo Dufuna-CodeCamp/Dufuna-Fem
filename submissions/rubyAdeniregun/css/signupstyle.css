@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Encode Sans', sans-serif;
+    background: white;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    margin: 0 50px;
+    padding-top: 30px;
+    display: inline-block;
+    float: right;
+}
+
+.header {
+    background-color:rgb(100, 121, 8);
+    font-size: 20px;  
+    width: 100%;
+    height: 90px;
+    margin-bottom: 45px;
+}
+
+#logo {
+    display: inline-block;
+    float: left;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    justify-content: center
+    padding: 10px;
+    padding-top: 20px;
+    margin-left: 80px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 40px;
+    color: rgb(100, 121, 8);
+}
+
+.column1 {
+    display: block;
+    float: left;
+    margin right: 20px;
+    padding-right: 20px;
+    margin: 150px;
+    margin-top: 130px;
+}
+
+.register {
+    position: relative;
+}
+
+.register a {
+    color: rgb(100, 121, 8);
+    position: absolute;
+    top: 0;
+    left: 175px;
+    padding-bottom: 300px;
+    font-weight: bold;
+}
+
+.form {
+    text-align: left;
+    border: none;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    margin: 50px;
+}
+
+input[type=text] {
+    border-radius: 5px;
+    width: 500px;
+    font-size: 25px;
+}
+
+input[type=password] {
+    border-radius: 5px;
+    width: 500px;
+    font-size: 25px;
+}
+
+.formbase {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    color:rgb(100, 121, 8);
+    font-weight: bold;
+    gap: 10px;
+}
+
+#signup {
+    background-color: rgb(100, 121, 8);
+    float: center;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    width: 100px;
+    margin-left: 200px;
+}
+
+@media screen and (max-width: 600px) {}
+
+@media screen and (min-width: 600px) {
+
+@media screen and (min-width: 992px) {
+    
+.footer {
+    clear: both;
+    margin-bottom: 0 auto;
+    padding: 0;
+    bottom: 0;
+}
+}
+    
+footer {
+    background-color:rgb(100, 121, 8);
+    position: static;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: white;
+}
+    
+.footcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    padding: 5px; 
+    align-items: center;
+    padding-top: 5px;
+}
+
+.footcontainer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 50px;
+    padding-top: 30px;
+    display: inline-block;
+    float: right;
+}
+    
+.footer-link {
+    display: table;
+    vertical-align: left;
+}
+    
+.footsignup {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    align-items: center;
+}
+    
+#footp {
+    text-align: center;
+}
+
+.list5 {
+    list-style-type: none;
+    columns: 4;
+    width: 200px;
+}
+
+.newsletter input[type=text] {
+    width: 250px;
+    border: none;
+    border-radius: 0%;
+    font-size: 15px;
+    padding: 12px;
+}
+
+.footerform button {
+    padding: 12px;
+}
+    
