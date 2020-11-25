@@ -291,7 +291,7 @@ footer {
 
 /* Tablet View */
 @media only screen and  (min-width: 768px) {
-   /* .header {
+    .header {
         width: 90%;
         margin-bottom: 10px;
     }
@@ -512,4 +512,4 @@ footer {
         margin-bottom: 0px;
         margin-left: 2%;
         margin-top: 5%;
-    }*\
+    }

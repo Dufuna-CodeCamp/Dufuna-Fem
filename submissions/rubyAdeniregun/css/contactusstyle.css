@@ -264,19 +264,11 @@ footer {
 /* for Mobile Phones*/
 @media screen and (max-width: 600px) {
     body{
-        width: 100%;
+        width: 70%;
     }
 
-    .logo {
-        display: inline;
-    }
-
-    .header .header-link a {
-        display: table;
-        vertical-align: left;
-        text-decoration: none;
-        padding-top: 30px;
-        margin-top: 80%;
+    .logo, .header-link {
+        display: block;
     }
 
     .footer-distributed {
