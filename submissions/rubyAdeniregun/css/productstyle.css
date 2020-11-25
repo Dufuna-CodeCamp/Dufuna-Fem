@@ -126,10 +126,6 @@ h1 h2 {
     text-align: center;
     left: 50px;
 }
-
-/* mobile View */
-@media only screen and  (max-width: 768px) {
-
 /* Tablet View */
 @media only screen and  (min-width: 768px) {
     .header {
@@ -196,6 +192,30 @@ h1 h2 {
         margin: 0 auto;
         padding: 0;
     }
+    .footcontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+        margin: 0 auto;
+        width: 70%;
+    }
+    .footer-link {
+        display: table;
+        vertical-align: auto;
+    }
+
+    footer {
+        background-color:rgb(100, 121, 8);
+        bottom: 0;
+        width: 90%;
+        height: 200px;
+        margin-bottom: 0;
+        color: white;
+        display: flex
+        fles
+    }
+
 }
 
 /* Laptop View */
@@ -234,6 +254,7 @@ footer {
     padding-top: 30px;
     display: inline-block;
     float: right;
+    padding-left: 10px;
 }
     
 .footer-link {
