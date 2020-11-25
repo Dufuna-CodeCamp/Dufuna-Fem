@@ -10,7 +10,36 @@ body {
     background: white;
 }
 
-.header a {
+a {
+    color: white;
+    text-decoration: none;
+    margin: 0 50px;
+    display: inline-block;
+    float: right;
+}
+
+.header {
+    background-color:rgb(100, 121, 8);
+    font-size: 20px;  
+    height: 90px;
+    margin-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.header-link {
+    margin-top: 30px;
+    margin-left: 50%;
+}
+
+.logo {
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+
+/*.header a {
     color: white;
     text-decoration: none;
     margin: 0 50px;
@@ -32,7 +61,7 @@ body {
     float: left;
     margin-left: 50px;
     margin-top: 15px;
-}
+}*/
 
 .container {
     display: grid;
@@ -114,63 +143,78 @@ input[type=password] {
     margin-left: 200px;
 }
 
-@media screen and (max-width: 600px) {}
-
-@media screen and (min-width: 600px) {
-
-@media screen and (min-width: 992px) {}
-    
 footer {
-    background-color:rgb(100, 121, 8);
-    position: static;
     bottom: 0;
+}
+
+.footer-distributed {
+    background-color: rgb(100, 121, 8);
+    box-shadow: 0 1px 1px 1 rgba(0, 0, 0, 0, 12);
+    box-sizing: border-box;
     width: 100%;
-    height: 200px;
-    margin-top: 30px;
-    margin-bottom: 0;
-    color: white;
-}
-    
-.footcontainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 10px;
-    padding: 5px; 
-    align-items: center;
-    padding-top: 5px;
 }
 
-.footcontainer a {
-    color: white;
-    text-decoration: none;
-    margin: 0 50px;
-    padding-top: 30px;
+.footer-distributed .footer-right {
     display: inline-block;
-    float: right;
-}
-    
-.footer-link {
-    display: table;
-    vertical-align: left;
-}
-    
-.footsignup {
-    display: flex;
-    justify-content: space-between;
-    gap: 5px;
-    align-items: center;
-}
-    
-#footp {
-    text-align: center;
+    vertical-align: middle;
+    margin-right: 5%;
+    margin-left: 60px;
+    margin-bottom: 60px;
 }
 
-.list5 {
-    list-style-type: none;
-    columns: 4;
-    width: 200px;
+.footer-distributed .footer-center {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-left{
+    width: 20%;
+}
+
+.footer-distributed .footer-link a {
+    float: left;
+    vertical-align: left;
+    text-decoration: none;
+    padding-top: 30px;
+}
+
+.footer-distributed .footer-company-about {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-right i {
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    vertical-align: center;
+}
+
+.footer-center {
+    display: block;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 120px;
+}
+
+.sign-up{
+    color: #ffffff;
+    text-align: left;
+    padding-right: 140px;
+}
+
+.footer-input {
+    padding-top: 10px;
 }
 
 .newsletter input[type=text] {
@@ -181,7 +225,83 @@ footer {
     padding: 12px;
 }
 
-.footerform button {
-    padding: 12px;
+.newsletter {
+    display: block;
+    float: left;
 }
-    
+
+.footer-center button {
+    padding: 12px; 
+    font-weight: bold;
+    color: rgb(100, 121, 8);
+}
+
+.copyright {
+    color: white;
+    margin-top: 20%;
+}
+
+.footer-distributed .footer-center i {
+    font-size: 17px;
+    line-height: 38px;
+}
+.footer-distributed .footer-right p{
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: left;
+    margin: 0;
+}
+
+.footer-distributed .footer-right p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    margin bottom: 80px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.footer-distributed .footer-icons i {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 2px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+
+.footer-distributed h3 {
+    color: white;
+}
+
+.footp {
+    text-align: center;
+    color: white;
+    margin-bottom: 0px;
+    margin-left: 2%;
+    margin-top: 5%;
+}
+
+@media screen and (max-width: 600px) {}
+
+@media screen and (min-width: 600px) {

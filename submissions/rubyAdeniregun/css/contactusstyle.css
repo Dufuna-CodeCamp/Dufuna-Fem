@@ -16,7 +16,6 @@ a {
     color: white;
     text-decoration: none;
     margin: 0 50px;
-    padding-top: 30px;
     display: inline-block;
     float: right;
 }
@@ -24,26 +23,31 @@ a {
 .header {
     background-color:rgb(100, 121, 8);
     font-size: 20px;  
-    width: 100%;
     height: 90px;
     margin-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-#logo {
-    display: inline-block;
-    float: left;
-    margin-left: 50px;
+.header-link {
+    margin-top: 30px;
+    margin-left: 50%;
+}
+
+.logo {
     margin-top: 15px;
+    margin-left: 10px;
 }
 
 .secondhead {
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     margin-bottom: 5px;
 }
 
 .thirdhead {
-    font-size: 20px;
+    font-size: 15px;
     margin-bottom: 50px;
 }
 
@@ -55,7 +59,7 @@ a {
 
 .fourthhead {
     margin:0 auto;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     display: table;
     margin-bottom: 30px;
@@ -89,8 +93,14 @@ a {
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    float: center;
+    margin: 0, auto;
+    gap: 100px;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+    margin-left: 180px;
 }
 
 footer {
@@ -108,6 +118,7 @@ footer {
     display: inline-block;
     vertical-align: middle;
     margin-right: 5%;
+    margin-left: 60px;
     margin-bottom: 60px;
 }
 
@@ -120,13 +131,12 @@ footer {
     width: 20%;
 }
 
-
 .footer-distributed .footer-link a {
     float: left;
     vertical-align: left;
     text-decoration: none;
+    padding-top: 30px;
 }
-
 
 .footer-distributed .footer-company-about {
     color: #8f9296;
@@ -154,6 +164,7 @@ footer {
     display: block;
     align-items: center;
     margin-top: 30px;
+    margin-left: 120px;
 }
 
 .sign-up{
@@ -250,14 +261,28 @@ footer {
     margin-left: 2%;
     margin-top: 5%;
 }
-@media (max-width: 880px) {
+/* for Mobile Phones*/
+@media screen and (max-width: 600px) {
+    body{
+        width: 100%;
+    }
+
+    .logo {
+        display: inline;
+    }
+
+    .header .header-link a {
+        display: table;
+        vertical-align: left;
+        text-decoration: none;
+        padding-top: 30px;
+        margin-top: 80%;
+    }
 
     .footer-distributed {
         font: bold 14px sans-serif;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        float: left;
+        display: grid;
+        grid-template-rows: 50% 50% 50%;
     }
 
     .footer-distributed .footer-center,
@@ -274,7 +299,7 @@ footer {
     }
 
     .footer-distributed .footer-center i{
-        margin-left: 0;
+        margin-left: 20px;
     }
 
     .footer-link a {
@@ -283,74 +308,11 @@ footer {
 }
 
 
-/* Laptop View */
-@media screen and (min-width: 992px) {
-        
-/*footer {
-    background-color:rgb(100, 121, 8);
-    position: static;
-    bottom: 0;
-    width: 100%;
-    height: 200px;
-    margin-top: 30px;
-    margin-bottom: 0;
-    color: white;
-}
-    
-.footcontainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 10px;
-    padding: 5px; 
-    align-items: center;
-    padding-top: 5px;
-}
+/* Tablet View */
+@media only screen and  (min-width: 600px) {
 
-.footcontainer a {
-    color: white;
-    text-decoration: none;
-    margin: 0 50px;
-    padding-top: 30px;
-    display: inline-block;
-    float: right;
+    .footer-distributed {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
-    
-.footer-link {
-    display: table;
-    vertical-align: left;
-}
-    
-.footsignup {
-    display: flex;
-    justify-content: space-between;
-    gap: 5px;
-    align-items: center;
-}
-    
-#footp {
-    text-align: center;
-}
-
-.list5 {
-    list-style-type: none;
-    columns: 4;
-    width: 200px;
-}
-
-.newsletter input[type=text] {
-    width: 250px;
-    border: none;
-    border-radius: 0%;
-    font-size: 15px;
-    padding: 12px;
-}
-
-.footerform button {
-    padding: 12px;
-}
-
-.footerform {
-    text-align: left;
-}*\
