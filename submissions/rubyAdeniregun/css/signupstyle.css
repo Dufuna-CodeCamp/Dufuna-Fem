@@ -12,7 +12,6 @@ body {
 
 a {
     color: white;
-    text-decoration: none;
     margin: 0 50px;
     display: inline-block;
     float: right;
@@ -31,6 +30,10 @@ a {
 .header-link {
     margin-top: 30px;
     margin-left: 50%;
+}
+
+.header-link a {
+    text-decoration: none;
 }
 
 .logo {
@@ -95,9 +98,10 @@ h2 {
     color: rgb(100, 121, 8);
     position: absolute;
     top: 0;
-    left: 175px;
+    left: 125px;
     padding-bottom: 300px;
     font-weight: bold;
+    text-decoration: line;
 }
 
 .form {
