@@ -12,12 +12,12 @@ body {
     background: white
 }
 
-a {
+.header-link a {
     color: white;
-    text-decoration: none;
-    margin: 0 50px;
+    margin: 0 20px;
     display: inline-block;
     float: right;
+    text-decoration: none;
 }
 
 .header {
@@ -117,24 +117,36 @@ footer {
 .footer-distributed .footer-right {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 5%;
-    margin-left: 60px;
-    margin-bottom: 60px;
+    width: 30%;
+    margin-bottom: 40px;
+    margin-right: 80px;
+    margin-left: 0px;
 }
 
 .footer-distributed .footer-center {
     display: inline-block;
     vertical-align: middle;
+    margin-left: 20px;
+    width: 40%;
+    padding-top: 30px;
+    margin-left: 20px;
 }
 
 .footer-distributed .footer-left{
-    width: 20%;
+    width: 30%;
+}
+
+.footer-distributed .footer-link {
+    color: white
 }
 
 .footer-distributed .footer-link a {
+    display: inline-block;
     float: left;
     vertical-align: left;
     text-decoration: none;
+    color: white;
+    margin: 0 70px;  
     padding-top: 30px;
 }
 
@@ -142,11 +154,7 @@ footer {
     color: #8f9296;
     font-size: 14px;
     font-weight: normal;
-    margin: 0;
-}
-
-.footer-distributed .footer-center {
-    width: 35%;
+    margin: 10px;
 }
 
 .footer-distributed .footer-right i {
@@ -156,25 +164,24 @@ footer {
     height: 38px;
     border-radius: 50%;
     text-align: center;
-    line-height: 42px;
     vertical-align: center;
+    margin-right: 10px;
 }
 
 .footer-center {
     display: block;
     align-items: center;
-    margin-top: 30px;
-    margin-left: 120px;
 }
 
 .sign-up{
     color: #ffffff;
     text-align: left;
-    padding-right: 140px;
+    padding-right: 90px;
+    padding-top: 70px;
 }
 
 .footer-input {
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 .newsletter input[type=text] {
@@ -183,11 +190,12 @@ footer {
     border-radius: 0%;
     font-size: 15px;
     padding: 12px;
+    margin-left: 55px;
 }
 
 .newsletter {
     display: block;
-    float: left;
+    float: left; 
 }
 
 .footer-center button {
@@ -196,46 +204,35 @@ footer {
     color: rgb(100, 121, 8);
 }
 
-.copyright {
-    color: white;
-    margin-top: 20%;
-}
-
-.footer-distributed .footer-center i {
-    font-size: 17px;
-    line-height: 38px;
-}
 .footer-distributed .footer-right p{
     display: inline-block;
     color: #ffffff;
     vertical-align: left;
-    margin: 0;
+    margin-top: 40px;
+    margin-right: 90px;
 }
 
 .footer-distributed .footer-right p span {
     display: block;
     font-weight: normal;
     font-size: 14px;
-    line-height: 2;
 }
 
 .footer-distributed .footer-company-about {
     line-height: 20px;
-    color: #92999f;
     font-size: 13px;
     font-weight: normal;
-    margin: 0;
 }
 
 .footer-distributed .footer-company-about span {
     display: block;
     color: #ffffff;
-    margin bottom: 80px;
 }
 
 .footer-distributed .footer-icons {
     margin-top: 10px;
-    margin-left: 15px;
+    margin-left: 10px;
+    margin-right: 70px;
 }
 
 .footer-distributed .footer-icons i {
@@ -246,21 +243,23 @@ footer {
     border-radius: 2px;
     color: #ffffff;
     text-align: center;
-    margin-bottom: 5px;
-    margin-left: 15px;
 }
 
-.footer-distributed h3 {
+h3 {
     color: white;
 }
 
-.footp {
+.copyright {
     text-align: center;
     color: white;
-    margin-bottom: 0px;
-    margin-left: 2%;
-    margin-top: 5%;
 }
+
+.footer-bottom {
+    display: inline;
+    margin-bottom: 10px;
+}
+
+
 /* for Mobile Phones*/
 @media screen and (max-width: 600px) {
     body{
@@ -297,14 +296,27 @@ footer {
     .footer-link a {
         margin: 0;
     }
-}
-
 
 /* Tablet View */
-@media only screen and  (min-width: 600px) {
+@media (max-width: 880px) {
 
     .footer-distributed {
-        display: flex;
-        flex-wrap: wrap;
+       font: bold 14px sans-serif;
     }
-}
+    
+
+    .footer-distributed .footer-left {
+        width: 50%;
+    }
+
+    .footer-distributed .footer-center {
+        width: 50%;
+    }
+
+    .footer-distributed .footer-link a {
+        margin: 0 60px;
+    }
+
+    .newsletter {
+        padding-top: 60px;
+    }
