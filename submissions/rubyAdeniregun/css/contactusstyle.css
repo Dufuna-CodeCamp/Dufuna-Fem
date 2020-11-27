@@ -119,7 +119,7 @@ footer {
     vertical-align: middle;
     width: 30%;
     margin-bottom: 40px;
-    margin-right: 80px;
+    margin-right: 50px;
     margin-left: 0px;
 }
 
@@ -129,7 +129,7 @@ footer {
     margin-left: 20px;
     width: 40%;
     padding-top: 30px;
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
 .footer-distributed .footer-left{
@@ -245,8 +245,9 @@ footer {
     text-align: center;
 }
 
-h3 {
+.footer-distributed h3 {
     color: white;
+    margin-right: 90px;
 }
 
 .copyright {
@@ -255,8 +256,8 @@ h3 {
 }
 
 .footer-bottom {
-    display: inline;
-    margin-bottom: 10px;
+    display: inline-block;
+    float: center;
 }
 
 
