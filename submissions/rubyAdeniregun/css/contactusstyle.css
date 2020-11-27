@@ -257,10 +257,9 @@ footer {
 .footp {
     text-align: center;
     color: white;
-    margin-bottom: 0px;
-    margin-left: 2%;
-    margin-top: 5%;
+
 }
+
 /* for Mobile Phones*/
 @media screen and (max-width: 600px) {
     body{
