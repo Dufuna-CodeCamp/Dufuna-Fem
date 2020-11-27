@@ -117,8 +117,8 @@ footer {
 .footer-distributed .footer-right {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 5%;
-    margin-left: 60px;
+    margin-right: 50px
+    margin-left: 40px;
     margin-bottom: 60px;
 }
 
@@ -157,7 +157,7 @@ footer {
     border-radius: 50%;
     text-align: center;
     line-height: 42px;
-    vertical-align: center;
+    vertical-align: right;
 }
 
 .footer-center {
@@ -198,7 +198,6 @@ footer {
 
 .copyright {
     color: white;
-    margin-top: 20%;
 }
 
 .footer-distributed .footer-center i {
@@ -254,10 +253,10 @@ footer {
     color: white;
 }
 
-.footp {
-    text-align: center;
+.copyright {
+    display: inline-block;
+    float: center;   
     color: white;
-
 }
 
 /* for Mobile Phones*/
@@ -302,8 +301,15 @@ footer {
 /* Tablet View */
 @media only screen and  (min-width: 600px) {
 
-    .footer-distributed {
-        display: flex;
-        flex-wrap: wrap;
+    .footer-distributed .footer-center {
+        width: 50%;
     }
+
+    .footer-distributed .footer-right {
+        width: 50%;
+    }
+
+    body{
+        width: 100%;
+    
 }
