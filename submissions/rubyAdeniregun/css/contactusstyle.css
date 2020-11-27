@@ -18,6 +18,7 @@ body {
     display: inline-block;
     float: right;
     text-decoration: none;
+    margin-top: 10px;
 }
 
 .header {
@@ -43,12 +44,12 @@ body {
 .secondhead {
     font-size: 15px;
     text-align: center;
-    margin-bottom: 5px;
+    margin-bottom: 30px;
 }
 
 .thirdhead {
     font-size: 15px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 
 .list3 {
@@ -62,14 +63,17 @@ body {
     font-size: 15px;
     text-align: center;
     display: table;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .formleft {
     text-align: left;
     border: none;
-    margin: 10px;
-    padding: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 0px;
     display: inline-block;
 }
 
@@ -97,10 +101,11 @@ body {
     flex-direction: row;
     float: center;
     margin: 0, auto;
-    gap: 100px;
+    gap: 150px;
     flex-wrap: wrap;
     margin-bottom: 80px;
-    margin-left: 180px;
+    margin-left: 200px;
+    margin-right: 20px;
 }
 
 footer {
@@ -184,13 +189,13 @@ footer {
     padding-top: 5px;
 }
 
-.newsletter input[type=text] {
+.form-email {
     width: 250px;
     border: none;
     border-radius: 0%;
     font-size: 15px;
     padding: 12px;
-    margin-left: 55px;
+    margin-left: 55px;'
 }
 
 .newsletter {
@@ -230,9 +235,7 @@ footer {
 }
 
 .footer-distributed .footer-icons {
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 70px;
+    margin-right: 100px;
 }
 
 .footer-distributed .footer-icons i {
@@ -247,7 +250,7 @@ footer {
 
 .footer-distributed h3 {
     color: white;
-    margin-right: 90px;
+    margin-right: 110px;
 }
 
 .copyright {
@@ -257,7 +260,6 @@ footer {
 
 .footer-bottom {
     display: inline-block;
-    float: center;
 }
 
 
@@ -299,7 +301,7 @@ footer {
     }
 
 /* Tablet View */
-@media (max-width: 880px) {
+@media (min-width: 600px) {
 
     .footer-distributed {
        font: bold 14px sans-serif;
@@ -318,6 +320,11 @@ footer {
         margin: 0 60px;
     }
 
-    .newsletter {
-        padding-top: 60px;
+    .container {
+        float: middle;
+        margin: 0, auto;
+    }
+
+    .column1, .column2 {
+        margin-left: 40px;
     }
