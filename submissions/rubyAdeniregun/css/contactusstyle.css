@@ -181,12 +181,11 @@ footer {
 .sign-up{
     color: #ffffff;
     text-align: left;
-    padding-right: 90px;
-    padding-top: 70px;
+    padding-right: 110px;
 }
 
 .footer-input {
-    padding-top: 5px;
+    padding-top: 10px;
 }
 
 .form-email {
@@ -195,12 +194,13 @@ footer {
     border-radius: 0%;
     font-size: 15px;
     padding: 12px;
-    margin-left: 55px;'
+    margin-left: 35px;'
 }
 
 .newsletter {
     display: block;
     float: left; 
+    margin-bottom: 30px;
 }
 
 .footer-center button {
@@ -213,7 +213,7 @@ footer {
     display: inline-block;
     color: #ffffff;
     vertical-align: left;
-    margin-top: 40px;
+    margin-top: 10px;
     margin-right: 90px;
 }
 
@@ -235,7 +235,8 @@ footer {
 }
 
 .footer-distributed .footer-icons {
-    margin-right: 100px;
+    margin-right: 60px;
+    margin-top: 10px;
 }
 
 .footer-distributed .footer-icons i {
@@ -250,12 +251,13 @@ footer {
 
 .footer-distributed h3 {
     color: white;
-    margin-right: 110px;
+    margin-right: 85px;
 }
 
 .copyright {
     text-align: center;
     color: white;
+    margin-bottom: 20px;
 }
 
 .footer-bottom {
@@ -265,40 +267,7 @@ footer {
 
 /* for Mobile Phones*/
 @media screen and (max-width: 600px) {
-    body{
-        width: 70%;
-    }
-
-    .logo, .header-link {
-        display: block;
-    }
-
-    .footer-distributed {
-        font: bold 14px sans-serif;
-        display: grid;
-        grid-template-rows: 50% 50% 50%;
-    }
-
-    .footer-distributed .footer-center,
-    .footer-distributed .footer-right {
-         display: inline-block;
-         vertical-align: center;
-    }
-
-    .footer-distributed .footer-left{
-        display: inline-block;
-        width: 20%;
-        margin-bottom: 80px;
-        text-align: left;
-    }
-
-    .footer-distributed .footer-center i{
-        margin-left: 20px;
-    }
-
-    .footer-link a {
-        margin: 0;
-    }
+    
 
 /* Tablet View */
 @media (min-width: 600px) {

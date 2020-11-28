@@ -281,3 +281,15 @@ footer {
     text-align: center;
     color: white;
 }
+}
+
+header-link a {
+    display: block;
+    float: left;
+    vertical-align: left;
+
+    .header { 
+        height: 150px;
+        float: left;
+        
+    }
