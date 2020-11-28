@@ -8,9 +8,17 @@
 </head>
 
 <body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="../HTML/">Products</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
     <fieldset>
         <legend>Contact Us</legend>
-        <form action="">
+        <form action="#">
             <label for="fname">First Name</label>
             <input type="text"><br>
             <br>
@@ -20,30 +28,25 @@
             <label for="country">Country</label>
             <input list="country-list" id="country1" name="country">
             <datalist id="country-list">
-                <option value="Nigeria">Nigeria</option>
-                <option value="Nigeria">Ghana</option>
-                <option value="Nigeria">South Africa</option>
-                <option value="Nigeria">Kenya</option>
-            </datalist> <br><br>
+            <option value="Nigeria">Nigeria</option>
+            <option value="Ghana">Ghana</option>
+            <option value="South Africa">South Africa</option>
+            <option value="Kenya">Kenya</option>
+        </datalist> <br><br>
             <label for="email">Email</label>
-            <input type="text"><br>
-            <br>
+            <input type="text"><br><br>
             <label for="number">Contact number</label>
-            <input type="tel"><br>
-            <br>
+            <input type="tel"><br><br>
             <label for="subject">Subject</label>
             <select name="" id="">
-                <option value="Complaint">Advertise product</option>
-                <option value="Complaint">Enquiry</option>
-                <option value="Complaint">Complaint</option>
-                <option value="Complaint">Purchase</option>
-            </select><br>
-            <br>
+            <option value="advertise">Advertise product</option>
+            <option value="enquiry">Enquiry</option>
+            <option value="complaint">Complaint</option>
+            <option value="purchase">Purchase</option>
+        </select><br><br>
             <label for="">Leave a message</label><br>
-            <textarea name="" id="" cols="" rows=" 5 "></textarea><br>
-            <br>
+            <textarea name="" id="" cols="" rows=" 5 "></textarea><br><br>
             <input type="button" value="Submit">
-
         </form>
     </fieldset>
 </body>
