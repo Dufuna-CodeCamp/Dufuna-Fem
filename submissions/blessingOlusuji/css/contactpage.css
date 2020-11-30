@@ -44,7 +44,7 @@ margin-left: 10px;
 ul li a{
 color: white;
 text-decoration:none;
-margin:20px;
+margin:5px;
 }
 .side ul li {
   display: inline-block;
@@ -72,7 +72,8 @@ margin-top:5px;
   margin-bottom:5px;
 }
 #btn{
-  margin-right:10px;
+  float:right;
+  margin-right:45px;
   width:70px;
   background-color:#0066f5;
   color:white;
@@ -99,8 +100,8 @@ footer .info div:not(:first-child) {
 .foot{
 height:140px;
 }
-#socials {
-  padding: 0;
+#socials ul {
+  padding: 0px;
 }
 #socials li {
   display: inline-block;
@@ -111,10 +112,12 @@ height:140px;
 #quick-links li a{
 color: #fff;
 text-decoration:none;
+
 }
 .foot ul li a img{
 margin-left:5px;
 }
+
 footer #copyright {
   text-align: center;
   margin: 0;
@@ -133,7 +136,6 @@ footer #copyright {
   height:40px;
   margin-bottom:5px;
 }
-
 
 @media (max-width: 992px) {
   .container{
