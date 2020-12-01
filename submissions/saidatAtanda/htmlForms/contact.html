@@ -2,43 +2,45 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Venister BookStore</title>
+    <title>Contact Page</title>
   </head>
   <body>
     <header>
       <nav>
         <div class="nav-header">
           <!--I designed the logo myself-->
-          <a href="#">
             <img src="../html/images/my-logo.jpg" width="30">
-            <h1>VENISTER</h1></a>
+            <h1><a href="#">VENISTER</a></h1>
             <h6>YourFavOnlineBookStore</h6></div>
         <div class="nav-content">
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Orders</a></li>
-            <li><a href="#">Sign Up</a></li>
-            <li><a href="#">Contact Us</a></li>
+              <li><a href="..\html\products.html">Products</a></li>
+                <li><a href="#">Orders</a></li>
+                  <li><a href="sign-up.html">Sign Up</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
           </ul>
-          <p><b>Search: </b>
-              <input type="text" placeholder="Title or Author of Book">
-              <button type="submit">Submit</button>
-          </p></div>
-    </header><hr>
+        </div>
+      </nav>
+    </header>
     <section>
       <div class="contact">
         <div class="contact-form">
           <h1>CONTACT US</h1>
           <h3>We are just a click away!</h3>
             <form action="product.html" method="post" enctype="application/x-www-form-urlencoded"><br>
-          <h4>
+          <p>
             <label for="firstname">FIRST NAME</label><br>
               <input type="text" name="fullname" id="firstname" required><br>
+          </p>
+          <p>
             <label for="lastname">LAST NAME</label><br>
               <input type="text" name="fullname" id="lastname" required><br>
+          <p>
+          <p>
             <label for="email">EMAIL ADDRESS</label><br>
               <input type="email" name="email" id="email" required>
+          </p>
           <p>Are you an existing customer?<br>
             <input type="radio" name="yes-no" id="yes" value="yes">
               <label for="yes">Yes</label>
@@ -54,14 +56,15 @@
                   <option value="Unable to purchase products"</option>
                   <option value="Others"</option>
                 </datalist><br>
-            <label for="comments">Additional Details</label><br>
+            <p>
+            <label for="comments">Additional Details</label>
               <textarea name="comments" rows="5" cols="50"></textarea><br>
             <button type="submit">Submit</button>
-          </h4>
+          </p>
           </form>
         </div>
         <aside class="contact-us">
-          <h3>Venister Bookstore</h3>
+          <h3>VENISTER BOOKSTORE</h3>
             <p><a href="+2349000000000">+234 9000000000</a></p>
             <p><a href="+2348022222222">+234 8022222222</a></p>
             <p><a href="email">hello@venister.com</p>
