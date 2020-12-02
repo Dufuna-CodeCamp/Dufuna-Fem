@@ -1,0 +1,197 @@
+@media  only screen and (min-device-width: 1200px) {
+    * {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+ /*This section targets the container for the header  */
+#header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: yellowgreen;
+    padding: 10px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+}
+/* This section targets the nav elements themeselves */
+ #nav{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    line-height:1.5;
+} 
+/* This section removes the underline from the nav elements and also sets the text color to white */
+nav a {
+    text-decoration: none;
+    color: white;
+} 
+/* This is for the picture of the main dress. it also serves as the container for the other elements*/
+#col1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+    line-height: 2;
+    margin-left:30px;
+}
+/* This section brings the details about the dress closer to the picture by adjusting the margin */
+ #col2 {
+    margin-right:800px;
+}
+/* This section specifies the border and width properties of the Magenta Dress */
+  #image {
+    border: solid 1px;
+    color: white;
+    width: 200px;
+    height: 150px;
+    top:10%;
+    margin-left:100px;
+    background: white;
+} 
+/* This section creates a border box for the text input box for quantity */
+#quantity {
+    border:solid 1px;
+    color: black;
+    width: 40px;
+    height: 20px;
+    line-height: 1.5;
+    margin: 10px;
+} 
+/* This section is for styling the BUY NOW button */
+#button {
+    border: solid 1px;
+    margin: 10px;
+    width: 80px;
+    height:30px;
+    background-color: green;
+    color:white;
+    padding: 5px;
+    border-radius: 10px;
+}
+/* This section is for the Product description */
+ #product {
+    margin-left: 130px;
+    padding-bottom: 10px;
+}
+#note {
+    margin-left: 130px;
+} 
+/* This section is for putting border around the Related Products Division */
+.RelProd {
+    margin-top: 20px;
+    /* margin-left: 50px; */
+    /* padding: 20px;
+    text-align: center;
+    /* justify-content:space-between; */
+    background-color: #ebebeb;
+} 
+/* This section is for the pictures of the related products */
+#ColA { 
+    display: flex;
+    justify-content: space-around;
+}
+/* This section is for the pictures of the dresses */
+.Rel {
+    width:240px;
+    height:220px;
+    margin:10px 25px 40px 25px;
+}
+/* This positions the details about the dress directly under the picture. it also puts the pictures in a box */
+#B {
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+    border: 1px solid white;
+    background-color: white;
+    margin-left: 40px;
+}
+ #J {
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+    border: 1px solid white;
+    background-color: white;
+}
+#M {
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+    border: 1px solid white;
+    background-color: white;
+    margin-right: 40px;
+} 
+/* This section positions the footer elements */
+ #footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+ }
+/* This section targets the navigation links at the footer */
+.nav {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    line-height: 1.75;
+    margin-left: 20px;
+} 
+/* This targets the nav links at the footer by removing the underline and changing the colour*/
+.nav a {
+    text-decoration: none;
+    color:white
+} 
+/* This section is for the email section */
+.email {
+    display:flex;
+    flex-direction: row;
+    line-height: 1.5;
+    margin-top: 10px;
+} 
+/* This section targets the email box */
+ #email {
+    line-height: 1.8;
+    height: fit-content;
+
+}
+/* This section is for the 'email box itself' */
+#E {
+    line-height:2;
+}
+#Submit {
+    border: solid 1px;
+    width: 80px;
+    height: fit-content;
+    background-color:white;
+    color:white;
+    padding: 5px;
+    color: yellowgreen;
+    line-height: 1.1;
+    margin-left: 3px;
+}
+::placeholder {
+    color: yellowgreen;
+    text-align: left;
+}
+#Copyright {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+/* This targets the footer section */
+footer {
+    background-color: yellowgreen;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.icons {
+    width:35px;
+    height:30px;
+    object-fit: contain;
+    border-radius: 9px;
+    margin: 9px 8px 2px;
+}
+#Icons {
+    text-align: center;
+}
