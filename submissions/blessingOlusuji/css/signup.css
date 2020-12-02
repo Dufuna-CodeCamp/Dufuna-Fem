@@ -55,8 +55,7 @@ margin-top:20px;
 #agree{
 	height:15px;
 	border-radius:none;
-	width:20px;
-       margin-left:250px;
+	width:20px;      
 }
 .foot input{
   color:blue;
@@ -131,7 +130,7 @@ margin-bottom:5px;
 	height:40px;
 	background-color:#0066f5;
 	color:white;
-        margin-left:350px;
+       
        }
 
 @media (max-width: 992px) {
