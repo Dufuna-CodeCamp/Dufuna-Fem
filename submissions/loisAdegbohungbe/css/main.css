@@ -199,16 +199,21 @@ input:focus, button:focus{
     margin-right: 0px;
 }
 /* Contact-Us Page */
-.contact-box .left{
+.contact-box .left, .signup-box .left{
     width: 53%;
 }
-.contact-box .right{
+.contact-box .right, .signup-box .right{
     width: 38%;
 }
-.contact-box h3, .contact-box p, .contact-box label{
+.contact-box h3, 
+.contact-box p, 
+.contact-box label,
+.signup-box h1,
+.signup-box p,
+.signup-form label{
     color: #5f5f5f;
 }
-.contact-box{
+.contact-box, .signup-box{
     padding: 40px 40px;
     box-sizing: border-box;
     display: flex;
@@ -253,9 +258,68 @@ input:focus, button:focus{
     border-radius: 4px; 
 }
 .contact-form button:hover{
-    background-color: #8e83d1;
-    color: black;
+    background-color: #3a1573;
 }
 .contact-form p, .contact-form h3{
     text-align: center;
+}
+.signup-box h1{
+    color: #28104e;
+    font-weight: bold;
+    font-size: xxx-large;
+}
+.signup-box .left p{
+    font-size: larger;
+}
+.signup-box .left, .signup-box .right{
+    margin-left: auto;
+    margin-right: auto;
+}
+.signup-box .left{
+    padding-top: 119px;
+    padding-bottom: 119px;
+}
+.signup-form input{
+    width: 97%;
+    padding-left: 8px;
+    height: 30px;
+    border: 2px solid #5f5f5f;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+#terms-agreement{
+    height: 16px;
+    border-radius: 0;  
+    width: auto;
+    text-align: center;
+}
+label[for="terms-agreement"]{
+    color: #28104e;
+    font-weight: bold;
+}
+.signup-form{ 
+    border: 1px solid #707070;
+    border-radius: 23px;
+    padding: 20px 30px;
+}
+.checkbox{
+    text-align: center;
+    margin: 20px 0;
+}
+.signup-form button{   
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    padding: 14px 36px;
+    color: #ffffff;
+    background: #28104e;
+    border-radius: 10px;  
+    margin-left: auto;
+    margin-right: auto;
+}
+.signup-form button:hover{
+    background-color: #3a1573;
+}
+.signup-box .left .content{
+    width: 75%;
+    margin: auto;
 }
