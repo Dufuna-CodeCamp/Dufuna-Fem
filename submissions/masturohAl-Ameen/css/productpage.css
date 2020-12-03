@@ -241,15 +241,18 @@ footer {
     background-color: plum;
 }
 
-.newsletter {
-    margin-top: 10px;
-    padding: 15px 0;
-    font-size: 15px;
+.about {
+    display: flex;
+    display: block;
+    margin-left: 10px;
+    padding-right: 160px;
 }
 
+.newsletter {
+    padding-right: 160px;
+}
 .newsletter input {
-    width: 250px;
-    height: 40px;
+    display: inline-flex;
     font-size: 15px;
 }
 
@@ -260,15 +263,18 @@ footer {
     height: 40px;
 }
 
-footer p {
+#copy {
+    flex-direction: row;
     text-align: center;
     font-size: 16px;
-    padding: 10px;
+    padding-top: 20px;
     margin: auto;
     color: white;
 }
 
 .footer {
+    display: flex;
+    flex-direction: row;
     padding: 30px;
     margin: auto;
     display: flex;
@@ -282,32 +288,28 @@ footer ul {
 
 footer img {
     height: 50px;
+    width: 50px;
 }
 
 /**Padding of the footer flex**/
 .connect {
-    padding-top: 0;
-    padding-left: 150px;
+    padding-right: 200px;
+}
+
+#line {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
 }
 
 .newsletter {
-    padding-top: -250px;
-    padding-left: 100px;
+    display: flex;    
 }
 
-.contact {
-    padding-right: 50px;
-}
-
-.connect p {
-    font-size: 17px;
-    margin: 0;
-    text-align: left;
-}
-
-.line {
+#con {
     display: flex;
-    flex-direction: row;
+    font-size: 16px;
+    margin: 0;
 }
 
 .news {
@@ -315,42 +317,76 @@ footer img {
     flex-direction: row;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (max-width: 640px) {
     body {
         margin: 0;
     }
 
     nav {
         padding: 25px 35px;
+    }
+
+    nav {
+        height: 220px;
+        padding: 10px;
+        background-color: plum;
+        color: white;
+    }
     
+    #logo {
+        padding-left: 30px;
     }
     
     nav li {
-        display: inline;
-        padding: 8px;
-        margin-right: 50px;
-        float: right;
+        position: static;
+        margin-top: 0px;
+        margin-left: 30px;
+        padding: 5px;
+    }
+    
+    #menu {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
     }
 
     .goods {
-        flex-direction: row;
-        justify-content: left;
+        display: flex;
+        flex-direction: column;
+        position: static;
+        margin-top: 0px;
+        padding-bottom: 0px;
+        margin-left: -5px;
     }
-
+    
+    .goods-set {
+        padding-top: 50px;
+        margin-left: 30px;
+        line-height: 1;
+        position: relative;
+    }
+    
+    .brand1 {
+        margin-right: 50px;
+    }
+    
     .goods img {
-        height: 186px;
-        width: 12%;
+        width: 339px;
+        height: 254px;
         border: 1px solid gray;
         margin: 30px 30px 0 30px;
     }
     
-    .footer > div {
-        padding: 50px 140px 0 40px ;
+    .description {
+        width: 101px;
+        height: 18px;
+        margin: -20px 237px 4px 22px;
     }
-
-    .newsletter {
-        padding: 48px 140px 0 40px;
-        font-size: 20px;
+    
+    .actual {
+        width: 450px;
+        height: 104px;
+        margin: 10px 16px 3px 23px;
     }
 
     .relatedproducts {
@@ -367,6 +403,17 @@ footer img {
         background-color: white;
         font-weight: bold;
         line-height: 0.5;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+
+    #connect {
+        margin-top: 10px;
+        margin-left: -370px;
     }
 }
 
@@ -378,7 +425,7 @@ footer img {
     nav {
         padding: 25px 35px;
     }
-    
+
     nav li {
         display: inline;
         padding: 8px;
@@ -392,19 +439,10 @@ footer img {
     }
 
     .goods img {
-        height: 186px;
-        width: 20%;
+        height: 220;
+        width: 50%;
         border: 1px solid gray;
         margin: 30px 30px 0 30px;
-    }
-
-    .footer > div {
-        padding: 50px 150px 0 40px ;
-    }
-
-    .newsletter {
-        padding: 48px 140px 0 45px;
-        font-size: 20px;
     }
 
     .relatedproducts {
@@ -412,7 +450,7 @@ footer img {
         background-color: rgb(202, 210, 221);
         padding: 10px;
     }
-    
+
     .relatedproducts li {
         display: inline-grid;
         padding: 30px;
@@ -421,5 +459,19 @@ footer img {
         background-color: white;
         font-weight: bold;
         line-height: 0.5;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 30px;
+        margin: auto;
+        display: flex;
+        color: white;
+    }
+
+    #connect {
+        padding-left: 370px;
     }
 }

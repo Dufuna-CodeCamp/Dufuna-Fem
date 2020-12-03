@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    font-family: Montserrat;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+nav ul,
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    padding: 10px;
+    background-color: plum;
+    color: white;
+    position: relative;
+}
+
+#menu {
+    float: right;
+}
+
+section,
+footer {
+    padding: 20px 35px;
+}
+
+nav li {
+    display: inline;
+    position: relative;
+    margin-right: 50px;
+    top: -35px;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a,
+footer a {
+    color: white;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: whitesmoke;
+}
+
+a:visited {
+    color: none;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    font-family: 'Montserrat', sans-serif;;
+    line-height: 1;    
+}
+
+.contact img {
+    width: 69px;
+    height: 43px;
+    margin: 9px 0 0 20px;
+    object-fit: contain;
+    border-radius: 11px;
+}
+
+.contact ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.connect {
+    padding-top: 40px;
+    padding-right: 20px;
+    margin: 10px 43px 23px 51px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#message {
+   text-align: center;
+}s
+
+#paragraph {
+    text-align: center;
+}
+
+.field {
+    margin-left: 35px;
+    padding: 24px 66px 32px 44.5px;
+    border: solid 1px #707070;
+    background-color: #ffffff;
+    font-size: 20px;
+}
+
+#btn {
+    float: right;
+    font-size: 16px;
+    color: white;
+    background-color: plum;
+    border: 10px;
+}
+
+footer {
+    background-color: plum;
+}
+
+.about {
+    display: flex;
+    display: block;
+    margin-left: 10px;
+    padding-right: 160px;
+}
+
+.newsletter {
+    padding-right: 160px;
+}
+.newsletter input {
+    display: inline-flex;
+    font-size: 15px;
+}
+
+.newsletter button {
+    color: plum;
+    font-size: inherit;
+    font-weight: bold;
+    height: 40px;
+}
+
+#copy {
+    flex-direction: row;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 20px;
+    margin: auto;
+    color: white;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    margin: auto;
+    display: flex;
+    color: white;
+}
+
+footer ul {
+    margin: 5px;
+    font-size: 18px;
+}
+
+footer img {
+    height: 50px;
+    width: 50px;
+}
+
+/**Padding of the footer flex**/
+.connect {
+    padding-right: 200px;
+}
+
+#line {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+}
+
+.newsletter {
+    display: flex;    
+}
+
+#con {
+    display: flex;
+    font-size: 16px;
+    margin: 0;
+}
+
+.news {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 640px) {
+    body {
+        margin: 0;
+    }
+
+    nav {
+        padding: 25px 35px;
+    }
+
+    nav {
+        height: 220px;
+        padding: 10px;
+        background-color: plum;
+        color: white;
+    }
+    
+    #logo {
+        padding-left: 30px;
+    }
+    
+    nav li {
+        position: static;
+        margin-top: 0px;
+        margin-left: 30px;
+        padding: 5px;
+    }
+    
+    #menu {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+
+    #connect {
+        margin-top: 10px;
+        margin-left: -370px;
+    }
+
+    
+}
+
+@media screen and (min-width: 640px) and (max-width: 1050px) {
+    body {
+        margin: 0;
+    }
+
+    nav {
+        padding: 25px 35px;
+    }
+
+    nav li {
+        display: inline;
+        padding: 8px;
+        margin-right: 50px;
+        float: right;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: space-around;
+        font-family: 'Montserrat', sans-serif;;
+        line-height: 1;    
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 30px;
+        margin: auto;
+        display: flex;
+        color: white;
+    }
+
+    #connect {
+        padding-left: 370px;
+    }
+
+}
