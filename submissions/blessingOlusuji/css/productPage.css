@@ -18,6 +18,7 @@ display:flex;
 justify-content: space-between;
 padding: 14px 60px;
 }
+
 .look li{
 display:inline-block;
 margin-left: 10px;
