@@ -20,7 +20,8 @@ ul {
     font-size: 16px;
     display:flex;
     justify-content: space-between;
-    padding: 14px 60px;
+    padding: 14px 60px; 
+    padding-top: 30px;   
 }
 
 .firstc {
@@ -102,6 +103,7 @@ footer {
     color:white;
     background-color:palevioletred;
     margin-top: 80px;
+    font-size: 18px;
 }
   
 footer .phone2 {
@@ -165,7 +167,27 @@ footer #copyright {
 }
 
 @media (max-width: 992px) {
-    
+
+.logo {
+    display: block;
+    height: 100px;
+    padding: 22px 10px;
+}
+      
+.logo img{
+        margin: 0;
+}
+      
+.headerc {
+        padding: 0;
+        margin-top: 10px;
+}
+      
+.logo ul li {
+        display: block;
+        margin: 0;
+}
+
 .row {
     grid-template-columns: 1fr 1fr;
 }
