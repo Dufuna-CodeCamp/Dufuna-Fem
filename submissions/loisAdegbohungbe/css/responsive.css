@@ -5,8 +5,19 @@
     .footer .col-4{
         margin-right: 25px;
     }
+    .contact-box .left, .contact-box .right{
+        width: 77%;
+        margin: auto;
+    }   
+    .contact-box .left{
+        margin-bottom: 20px;
+    }
 }
-@media only screen and (max-width : 768px) { 
+@media only screen and (max-width : 768px) {    
+    .contact-box{
+        display: flex;
+        flex-direction: row;
+    }
     .other-products .col-4{
         margin-right: 20px;
         margin-left: 20px;
@@ -88,6 +99,9 @@
     .footer .col-4{
         width: auto;
     }
+    .contatc .col-6{
+        width: 100%;
+    }
 }
 @media only screen and (max-width : 480px) {
     .product-section{
@@ -117,5 +131,14 @@
     .footer .copyright {
         width: 278px;
         margin: auto;
+    }
+    .contact-box ul li {
+        padding: 2px;
+    }
+    .contact-box .left, .contact-box .right {
+        width: 100%;
+    }
+    .contact-form{
+        padding: 5px 26px;
     }
 }
