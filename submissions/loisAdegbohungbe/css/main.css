@@ -227,6 +227,7 @@ input:focus, button:focus{
 .contact-form textarea{
     padding: 4px 4px 4px 8px;
     width: 95%;
+    border: 1px solid #707070;
 }
 .contact-form input, .contact-form::placeholder, .contact label{
     font-family: 'Montserrat', sans-serif;
