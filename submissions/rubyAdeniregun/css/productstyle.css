@@ -112,8 +112,11 @@ h1, h2 {
     color: white;
     left: 10px;
     text-align: center;
-    margin: 15%;
-    margin-left: 130px;
+    margin: 10%;
+    margin-left: 100px;
+    font-size: 15px;
+    outline: black;
+    
 }
 
 footer {
@@ -353,6 +356,8 @@ footer {
     
     .footer-distributed .footer-center {
         width: 100%;
+         margin: 10px;
+        margin-left: 80px;
     }
     
     .footer-distributed .footer-left {
@@ -412,6 +417,10 @@ footer {
         height: 20px;
         margin-right: 20%;
         margin-top: 15px;
+    }
+
+    .main-image {
+        max-width: 25rem;
     }
 
     .column4 {
