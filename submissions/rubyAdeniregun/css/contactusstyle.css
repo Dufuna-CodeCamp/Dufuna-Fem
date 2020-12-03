@@ -365,7 +365,7 @@ footer {
     .header {
         display: flex;
         align-items: center;
-        background-color: #cc2900;
+        background-color: rgb(100, 121, 8);
         justify-content: space-between;
     }
 
