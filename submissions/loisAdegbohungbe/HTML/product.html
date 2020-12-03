@@ -2,51 +2,101 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maxi 4-Burner Gas Cooker | Louissa Store</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/responsive.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Louissa Store</h1>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Categories</a></li>
-            <li><a href="#">Blog</a></li>          
-            <li><a href="../HTML/product.html">Product</a></li>
-            <li><a href="../html-forms/contactForm.html">Contact Us</a></li>
+    <div class="navbar"> 
+        <h3>Louissa Store</h3>   
+        <ul class="nav-links"> 
+            <li><a href="../HTML/product.html">Product Page</a></li>
+            <li><a href="../html-forms/contactForm.html">Contact Us</a></li>      
+            <li><a href="#">Sign-up</a></li>  
         </ul>
-    </nav>
-    <hr>
-    <h2>Maxi 4-Burner Gas Cooker</h2>
-    <!--This section is for product images and price-->
-    <section>
-        <div>
-            <img src="images/image1.jpg" width="300" alt="image1"/>
-            <img src="images/image2.jpg" width="300" alt="image2"/>
+    </div>
+    <div class="mobile-navbar">
+        <h3>Louissa Store</h3>   
+        <ul class="nav-links"> 
+            <li><a href="../HTML/product.html">Product Page</a></li>
+            <li><a href="../html-forms/contactForm.html">Contact Us</a></li>      
+            <li><a href="#">Sign-up</a></li>  
+        </ul>
+    </div>
+    <div class="container">
+        <!--Product Details Section-->
+        <div class="product-section">
+            <div class="product-box">
+                <div class="col-4 img-box">
+                    <img src="images/others/cooker7.jpg"image1" />
+                </div>
+                <div class="col-8 product-details">               
+                    <p class="product-name">Maxi 4-Burner Gas Cooker</p> 
+                    <p>Brand: Fast Burner Series</p>
+                    <p>Quantity: <span style="font-weight:normal"><input type="text" name="quantity" value="2" /></span></p>
+                    <p>Price: &#8358;50,400</p>
+                    <button class="buy-btn">BUY NOW</button>
+                </div>
+            </div>
+            <div class="product-description">
+                <h3>Description</h3>
+                <p>Maxi 4-Burner is a omfortable and easy to use gas cooker. 
+                Cook your meals faster with this appliance and enjoy neatness and ease.
+                Its durability is sure and getting this, you have made a rich step to cooking your delicious meals.
+                </p>
+            </div>
         </div>
-        <h1>Price: &#8358;50,400</h1>
-    </section>
-    <!--This section is for product description-->
-    <section>
-        <h3>Product Description</h3>
-        <p>Maxi 4-Burner is a omfortable and easy to use gas cooker. 
-            Cook your meals faster with this appliance and enjoy neatness and ease.
-            Its durability is sure and getting this, you have made a rich step to cooking your delicious meals.
-        </p>
-    </section>
-    <!--This section displays other related products-->
-    <section>
-        <p>You may also like</p>
-        <ol>
-            <li><a href="#">Scanfrost Gas Cooker</a></li>
-            <li><a href="#">Nexus 4-Burner Gas Cooker</a></li>
-            <li><a href="#">Maxi 60*60 Standing Cooker 3 Gas 1 Electric</a></li>
-            <li><a href="#">THERMOCOOL GAS COOKER MY DIVA 604G OG-6840 INX</a></li>
-        </ol>
-    </section>
-    <hr>
-    <footer>
-        <p><a href="https://www.facebook.com">Facebook</a></p>
-        <p>&copy; 2020 Louissa Store</p>
-    </footer>
+        <!--Related Products Section-->
+        <div class="other-products">
+            <h3>Related Products</h3>
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/others/cooker2.jpg" alt="image2" />
+                    <p>Gas stove GS-2008 GES</p>
+                    <p>Price: &#8358;72,900</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/others/cooker3.jpg" alt="image3" />
+                    <p>Century 3-Gas Burner Steel Gas Stove CGS 301-A</p>
+                    <p>Price: &#8358;30,000</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/others/cooker10.jpg" alt="image4" />
+                    <p>Skyrun Gas Cooker + Eletric Hot Plate</p>
+                    <p>Price: &#8358;103,880</p>
+                </div>
+            </div>
+        </div>      
+    </div>   
+    <div class="footer">
+        <div class="row">
+            <div class="col-4 links">
+                <ul>
+                    <li><a href="../html-forms/contactForm.html">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <p>Sign Up for our Newsletter</p>
+                <div><input type="text" name="email" placeholder="Enter your email address"/>
+                    <span><button type="submit" id="submit"><strong>submit</strong></button></span>
+                </div>
+            </div>
+            <div class="col-4 connect">
+                <p>Connect with Us</p>
+                <ul>
+                    <li><a><img src="images/logos/facebook logo.png"></a></li>
+                    <li><a><img src="images/logos/twiiter logo.png"></a></li>
+                    <li><a><img src="images/logos/gmail logo.png"></a></li>
+                    <li><a><img src="images/logos/youtube logo.png"></a></li>
+                </ul>
+            </div>
+        </div>          
+        <p class="copyright">Copyright 2020 louissastore.com All rights reserved.</p>
+    </div>
 </body>
 </html>
