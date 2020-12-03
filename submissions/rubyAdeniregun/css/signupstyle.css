@@ -40,13 +40,12 @@ body {
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    justify-content: center;
+    display: flex;
+    flex-direction: row; 
     padding: 10px;
-    padding-top: 20px;
-    margin-left: 60px;
-    margin-bottom: 50px;
+    padding-top: 40px;
+    margin-left: 70px;
+    gap: 40px;
 }
 
 h2 {
@@ -314,6 +313,11 @@ footer {
         display: block;
         height: 50px;
         margin: 30px 0 10px 20px;
+    }
+
+    .container {
+        flex-direction: column;
+        float: center;
     }
 
     .footer-distributed {
