@@ -10,18 +10,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <div class="header">
+  <nav class="nav-bar">
     <div class="logo-img">
       <img src="..\Images\IMG-20190221-WA0000.jpg" alt="phoneicon" style="width: 60px; height: 60px;">
     </div>
-    <div class="header-link">
-      <p>
-        <a href="https://github.com/Dufuna-CodeCamp/Dufuna-Fem/issues/52#issue-744623341">Sign-up</a>
-        <a href="..\css\contact.html">Contact us</a>
-        <a href="..\css\productstyle.css">Product Page</a>
-      </p>
-    </div>
-  </div>
+    <ul class="look">
+        <li><a href="https://github.com/Dufuna-CodeCamp/Dufuna-Fem/issues/52#issue-744623341">Sign-up</a></li>
+        <li><a href="..\css\contact.html">Contact us</a></li>
+        <li><a href="..\css\productstyle.css">Product Page</a></li>
+    </ul>
+    </nav>
     <div class="container">
         <div class="column1">
             <img class="main-image" src="../Images/IMG-20201001-WA0129.jpg" alt="Fresh Body Wash">
@@ -72,35 +70,34 @@
         </div>
       </div>
     </div>
-    <footer class="footer-distributed">
-      <div class="footer-left">
-        <p class="footer-link" >
-          <a href="../html-forms/contactpage.html">Contact Us</a>
-          <a href="#">About Us</a>
-          <a href="#">Terms and Conditions</a>
-        </p>
-      </div>
-    
-      <div class="footer-center">
-        <form class="newsletter" action="#" method="POST" enctype="multipart/form-data">
-          <label for="signup" class="sign-up">Sign up for our Newsletter</label><br>
-          <div class="footer-input">
-          <input type="text" name="form-email" placeholder="Enter your email address" class="form-email">
-          <button name="submit" type="submit">SUBMIT</button>
+    <footer>
+      <div class="info">
+          <div class="foot1">
+              <ul id="quick-links" >
+                  <li><a href="../html-forms/contactpage.html">Contact Us</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li> <a href="#">Terms and Conditions</a></li>
+              </ul>
           </div>
-          <p class="copyright">Copyright 2020 Skinperfection.com All rights reserved.</p>
-       </form>
-      </div>
-       <div class="footer-right">
-        <p class="footer-company-about"><h3>CONNECT WITH US</h3>
-          <div class="footer-icons">
-            <i class="fa fa-facebook-official" style="font-size:40px;color:blue;"></i>
-            <i class="fa fa-twitter-square" style="font-size:40px;color:rgb(39, 135, 190"></i>
-            <i class="fa fa-envelope" style="font-size:40px;color:red;"></i>
-            <i class="fa fa-youtube-play" style="font-size:40px;color:red;"></i>
+          <div class="foot2">
+              <p>Sign up for our Newsletter</p>
+              <form>
+                  <input type="email" name="email" placeholder="Enter your email address" id="foot-email"/>
+                  <button class="styling" type="submit">SUBMIT</button>
+              </form>
           </div>
-        </p>
+          <div class="foot3">
+              <p>CONNECT WITH US</p>
+              <ul class="socials">
+                  <li><i class="fa fa-facebook-official" style="font-size:30px;color:blue;"></i></li>
+                  <li><i class="fa fa-twitter-square" style="font-size:30px;color:rgb(39, 135, 190"></i></li>
+                  <li><i class="fa fa-envelope" style="font-size:30px;color:red;"></i></li>
+                  <li><i class="fa fa-youtube-play" style="font-size:30px;color:red;"></i></li>
+              </ul>
+          </div>
       </div>
-    </footer> 
+      <p id="copyright">Copyright 2020 Skinperfection.com
+          <span> All rights reserved.</span></p> 
+  </footer> 
 </body>
 </html>

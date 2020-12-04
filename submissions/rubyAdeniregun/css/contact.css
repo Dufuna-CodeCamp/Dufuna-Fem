@@ -158,6 +158,7 @@ footer .info div:not(:first-child) {
 footer #copyright {
     text-align: center;
     margin: 0;
+    margin-right: 20px;
 }
 
 .styling {
@@ -268,7 +269,8 @@ footer #copyright {
     }
 }
 
-@media screen and (min-width: 700px) { 
+/* Tablet View */
+@media screen and (min-width: 700px) {
     .nav-bar {
         height: 50px;
     }
@@ -277,16 +279,28 @@ footer #copyright {
         flex-wrap: wrap;
     }
 
+    #foot-email {
+        color: rgb(100,121,8);
+        height: 40px;
+        padding: 0 10px;
+        margin-bottom: 5px;
+    }
+
+    .styling {
+        height: 40px;
+        color: rgb(100,121,8);
+        width: 70px;
+        background-color: white;
+        border: none;
+    }
+
     .footer .info {
-        width: 100%;
         flex-wrap: wrap;
+        float: center;
     }
 
-    .foot1 {
-        width: 50%;
-    }
-
-    .foot2 {
-        width: 50%;
+    #copyright {
+        margin-top: 150px;
+        
     }
 }
