@@ -142,6 +142,9 @@ footer .info div:not(:first-child) {
     display: inline-block;
 }
 
+ul #quick-links {
+    padding-left: 10px;
+}
 #quick-links li {
     margin-bottom: 10px;
 }
@@ -297,6 +300,10 @@ footer #copyright {
     .footer .info {
         flex-wrap: wrap;
         float: center;
+    }
+
+    ul #quick-links {
+        padding-left: 10px;
     }
 
     #copyright {

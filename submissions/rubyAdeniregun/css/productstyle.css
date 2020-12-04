@@ -1,19 +1,11 @@
 body {
     margin: 0px;
     font-family: 'Encode Sans', sans-serif;
+    width: 100%;
 }
 
 ul {
     list-style-type: none;
-}
-
-.container {
-    display: flex;
-    justify-content: space-around;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 80px;
-    text-align: center;
 }
 
 nav ul li a {
@@ -55,7 +47,7 @@ ul li a {
 
 
 .main-image { 
-    max-width: 35rem;
+    max-width: 30rem;
 }
 
 .buynow {
@@ -67,7 +59,12 @@ ul li a {
     border: none;
 }
 
-.quantity{
+#quantity {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.quantity-box{
     font-size: 28px;
     font-weight: bold;
     width: 80px;
@@ -78,26 +75,22 @@ ul li a {
     flex-direction: row; 
     padding: 10px;
     padding-top: 40px;
-    margin-left: 70px;
+    margin-left: 80px;
     gap: 40px;
 }
   
 h1, h2 {
     text-align: left;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 26px;
 }
 
 .column3 {
     text-align: left;
-    padding: 75px;
+    padding: 95px;
     padding-top: 5px;
     margin-top: 5px;
-}
-
-#paragraph {
-    text-align: left;
-    margin-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 #header2 {
@@ -107,13 +100,14 @@ h1, h2 {
 .column4 {
     display: flex;
     flex-direction: row;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     gap: 100px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .relatedimage {
-    max-width: 20rem;
+    max-width: 22rem;
     margin: 12%;
 }
 
@@ -123,15 +117,15 @@ h1, h2 {
   
 .text1, .text2, .text3 {
     position: absolute;
-    bottom: 10px;
+    bottom: 5px;
     color: white;
     left: 10px;
     text-align: center;
     margin: 10%;
-    margin-left: 100px;
-    font-size: 15px;
-    outline: black;
-    
+    margin-left: 90px;
+    font-size: 16px;
+    font-weight: bold;
+    outline-color: black;
 }
 
 footer {
@@ -139,7 +133,6 @@ footer {
     padding-bottom: 20px;
     color: white;
     background-color: rgb(100, 121, 8);
-    margin-top: 80px;
 }
 
 footer .info {
@@ -220,11 +213,11 @@ footer #copyright {
 
 @media screen and (max-width: 700px) {
     .container {
-        display: block;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 40px;
-        font-size: 10px;
+        flex-direction: column;
+    }
+    
+    .column4 {
+        justify-content: center;
     }
 
     .nav-bar {
@@ -311,75 +304,32 @@ footer #copyright {
     }
 }
 
-@media only screen and (max-width:1085px) and (min-width: 600px) {
-    .header {
-        display: flex;
-        align-items: center;
-        background-color: rgb(100, 121, 8);
-        justify-content: space-between;
-    }
-
-    .header-link {
-        display: inline-block;
-        list-style-type: none;
-        margin-right: 20px;
-        font-size: 16px;
-        line-height: 19px;
-        color: #ffffff;
-    }
-
-    .header-link a {
-        text-decoration: none;
-        color: #ffffff;
-        font-family: 'montesrrat', sans-serif;
-    }
-
-    .header .logo-img {
-        height: 50px;
-        margin: 15px 0 10px 10px;
-    }
-}
-
 /* Tablet View */
-@media screen and (min-width: 700px) {
-    .header {
-        flex-direction: column;
-    }
-    
-    .header-link a {
-        margin: 0 10px;
-        margin-bottom: 10%;
-    }
-    
-    .header { 
-        align-items: left;
-    }
-    
-    .header-link {
-        margin-left: 10%;
-    }
-    
-    .header .logo-img {
-        height: 20px;
-        margin-right: 20%;
-        margin-top: 15px;
+@media screen and (min-width: 701px) {
+    .nav-bar {
+        height: 50px;
     }
 
-    .main-image {
-        max-width: 25rem;
+    h1, h2 {
+        font-size: 16px;
     }
 
-    .column4 {
-        flex-wrap: wrap;
+    #foot-email {
+        color: rgb(100,121,8);
+        height: 40px;
+        padding: 0 10px;
+        margin-bottom: 5px;
     }
 
-    .footer-distributed .footer-left{
-       width: 50%;
+    .styling {
+        height: 40px;
+        color: rgb(100,121,8);
+        width: 70px;
+        background-color: white;
+        border: none;
     }
 
-    .footer-distributed .footer-center{
-        width: 50%;
-        margin-right: 50px;
-        margin-bottom: 0px;
-     }
+    #copyright {
+        margin-top: 150px;  
+    }
 }
