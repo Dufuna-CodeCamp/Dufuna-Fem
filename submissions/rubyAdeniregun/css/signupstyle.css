@@ -45,14 +45,21 @@ ul li a {
     border: 1px solid;
     color: rgb(100,121,8);
     padding-bottom: 10px;
-    height: 500px;
+    height: 700px;
 }
 
 .side input {
-    border: none;
-    border-bottom: 1px solid rgb(100,121,8);
     width: 80%;
     border-radius: 5px;
-    width: 500px;
+    width: 200px;
     font-size: 25px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 80px;
+    text-align: center;
 }
