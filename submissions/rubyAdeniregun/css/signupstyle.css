@@ -39,9 +39,9 @@ ul li a {
 .side1 {
     display: block;
     float: right;
-    margin-left: 50px;
+    margin-left: 20px;
     padding-right: 10px;
-    margin: 120px;
+    margin: 220px;
     margin-top: 80px; 
     font-size: 20px;
 }
@@ -104,11 +104,12 @@ input[type=radio] {
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-between;
-    padding-right: 120px;
+    padding-right: 20px;
     padding-top: 10px;
+    padding-left: 20px;
 }
 
 footer {
@@ -298,15 +299,14 @@ footer #copyright {
     }
 }
 
-
 /* Tablet View */
-@media screen and (min-width: 700px) {
-    .nav-bar {
-        height: 50px;
+@media (min-width: 700px) {
+    .container {
+        grid-row: 1fr 1fr;
     }
 
-    .container {
-        flex-wrap: wrap;
+    .nav-bar {
+        height: 50px;
     }
 
     #foot-email {
@@ -334,7 +334,6 @@ footer #copyright {
     }
 
     #copyright {
-        margin-top: 150px;
-        
+        margin-top: 150px;  
     }
 }

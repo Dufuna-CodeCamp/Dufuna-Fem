@@ -9,6 +9,7 @@ ul {
 
 .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding-left: 40px;
     padding-right: 40px;
