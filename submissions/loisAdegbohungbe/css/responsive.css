@@ -50,6 +50,15 @@
     .footer .connect{
         margin-left: auto;
     }
+    .signup-box .left{
+        width: 100%;
+        margin-bottom: 30px;
+        padding: 0;
+        text-align: center;
+    }
+    .signup-box .right{
+        width: 70%;
+    }
 }
 @media only screen and (max-width : 540px) {
     .product-box{       
@@ -102,6 +111,13 @@
     .contatc .col-6{
         width: 100%;
     }
+    .signup-box .left .content {
+        width: 100%;
+        margin: auto;
+    }
+    .signup-box .right{
+        width: 80%;
+    }
 }
 @media only screen and (max-width : 480px) {
     .product-section{
@@ -140,5 +156,8 @@
     }
     .contact-form{
         padding: 5px 26px;
+    }
+    .signup-box .right{
+        width: 100%;
     }
 }
