@@ -241,6 +241,7 @@ footer {
     background-color: plum;
 }
 
+
 .about {
     display: flex;
     display: block;
@@ -373,6 +374,7 @@ footer img {
     .goods img {
         width: 339px;
         height: 254px;
+
         border: 1px solid gray;
         margin: 30px 30px 0 30px;
     }
@@ -387,6 +389,7 @@ footer img {
         width: 450px;
         height: 104px;
         margin: 10px 16px 3px 23px;
+
     }
 
     .relatedproducts {
@@ -426,7 +429,7 @@ footer img {
         padding: 25px 35px;
     }
 
-    nav li {
+  nav li {
         display: inline;
         padding: 8px;
         margin-right: 50px;
