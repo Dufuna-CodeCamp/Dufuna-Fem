@@ -37,8 +37,7 @@ ul li a {
 }
 
 .side1 {
-    display: block;
-    float: right;
+    display:  inline-block;
     margin-left: 20px;
     padding-right: 10px;
     margin: 220px;
@@ -46,20 +45,26 @@ ul li a {
     font-size: 20px;
 }
 
+h2 {
+    font-weight: bold;
+    font-size: 34px;
+}
+
 .side form {
     border: 1px solid;
     border-radius: 30px;
     color: rgb(100,121,8);
     padding-bottom: 10px;
-    height: 600px;
+    height: 570px;
     width: 400px;
     text-align: left;
-    margin: 10px;
-    padding: 10px;
+    margin: 40px;
+    padding: 40px;
     display: inline-block;
-    margin: 90px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-left: 5%;
+    margin-right: 100px;
+    margin-top: 40px;
+    margin-bottom: 5px;
 }
 
 .side input {
@@ -71,8 +76,12 @@ ul li a {
     margin-left: 40px;
 }
 
-.side label {
+form label {
     margin-left: 40px;
+}
+
+#agree {
+    margin-left: 0px;
 }
 
 .formbase {
@@ -80,14 +89,16 @@ ul li a {
     flex-direction: row;
     color:rgb(100, 121, 8);
     font-weight: bold;
-    font-size: 15px;
+    font-size: 16px;
+    justify-content: center;
 }
 
 input[type=radio] {
     margin-right: 1px;
     height: 13px;
     width: 20px;
-    margin-left: 100px;
+    margin-left: 60px;
+    border-radius: 40%;
 }
 
 #btn {
@@ -104,8 +115,7 @@ input[type=radio] {
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     justify-content: space-between;
     padding-right: 20px;
     padding-top: 10px;
@@ -210,9 +220,9 @@ footer #copyright {
 
     .side1 {
         margin-bottom: 0px;
-        font-size: 15px;
-        margin-right: 50px;
+        font-size: 20px;
         text-align: center;
+        margin-left: 110px;
     }
 
     .nav-bar {
@@ -299,14 +309,23 @@ footer #copyright {
     }
 }
 
-/* Tablet View */
-@media (min-width: 700px) {
+@media screen and (max-width: 992px) {
     .container {
-        grid-row: 1fr 1fr;
+        flex-wrap: wrap;
+        justify-content: center;
+      
     }
 
-    .nav-bar {
-        height: 50px;
+    .side1 {
+        margin-right: 200px;
+        margin-bottom: 0px;
+        justify-content: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .side form {
+        margin-right: 20px;
     }
 
     #foot-email {
