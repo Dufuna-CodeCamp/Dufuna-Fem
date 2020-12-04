@@ -1,0 +1,292 @@
+body {
+    margin: 0px;
+    font-family: 'Encode Sans', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 80px;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding-top: 10px;
+    margin-top: 5px;
+}
+
+.styling {
+    border-radius: 0px;
+    color: rgb(100,121,8);
+    width: 70px;
+    background-color: white;
+    text-transform: uppercase;
+}
+
+.nav-bar {
+    background-color: rgb(100,121,8);
+    color: white;
+    height: 80px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 60px;
+}
+
+.look li {
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.side ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.side form {
+    border: 1px solid;
+    color: rgb(100,121,8);
+    padding-bottom: 10px;
+    height: 420px;
+}
+
+.side input {
+    border: none;
+    border-bottom: 1px solid rgb(100,121,8);
+    width: 80%;
+}
+
+form img {
+    margin-top: 10px;
+}
+
+#comments {
+    width: 80%;
+}
+
+#btn {
+    background-color: rgb(100, 121, 8);
+    float: right;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 35px;
+}
+
+footer {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: white;
+    background-color: rgb(100, 121, 8);
+    margin-top: 80px;
+}
+
+footer .info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    align-items: center;
+    width: 100%;
+}
+
+.info .foot1 {
+    width: 30%;
+}
+
+.info .foot2 {
+    width: 40%;
+}
+
+.info .foot3 {
+    width: 30%;
+}
+
+#foot-email {
+    color: rgb(100,121,8);
+    height: 40px;
+    padding: 0 50px;
+    margin-bottom: 5px;
+}
+
+footer .info div:not(:first-child) {
+    text-align: left;
+}
+
+.foot1, .foot2, .foot3 {
+    height: 140px
+}
+
+.socials {
+    padding: 0px;
+}
+
+.socials li {
+    display: inline-block;
+}
+
+#quick-links li {
+    margin-bottom: 10px;
+}
+
+#quick-links li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.foot1 ul li a img {
+    margin-left: 10px;
+}
+
+footer #copyright {
+    text-align: center;
+    margin: 0;
+}
+
+.styling {
+    height: 40px;
+    color: rgb(100,121,8);
+    width: 70px;
+    background-color: white;
+    border: none;
+}
+
+.logo-img {
+    display: block;
+    height: 30px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        display: block;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 40px;
+        font-size: 10px;
+    }
+
+    .nav-bar {
+        display: block;
+        height: 130px;
+        padding: 12px 10px;
+    }
+
+    .nav-bar h2 {
+        margin: 0;
+    }
+
+    .look {
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    .nav-bar ul li {
+        display: block;
+        margin: 0;
+    }
+
+    footer .info div:not(:first-child) {
+        text-align: inherit;
+    }
+
+    footer .info div {
+        margin-left: 20px;
+    }
+
+    footer #copyright {
+        text-align: center;
+        margin-left: 20px;
+    }
+
+    #foot-email {
+        color: rgb(100,121,8);
+        height: 40px;
+        padding: 0 10px;
+        margin-bottom: 5px;
+    }
+
+    .styling {
+        height: 40px;
+        color: rgb(100,121,8);
+        width: 70px;
+        background-color: white;
+        border: none;
+    }
+
+    footer .info {
+        flex-direction: column;
+        align-items: left;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .info .foot1 {
+        width: 100%;
+    }
+    
+    .info .foot2 {
+        width: 100%;
+    }
+    
+    .info .foot3 {
+        width: 100%;
+    }
+
+    .foot {
+        height: auto;
+    }
+
+    #quick-links {
+        padding: 0;
+    }
+
+    ul li a {
+        margin-left: 0;
+    }
+
+    ul .socials {
+        padding: 0px;
+    }
+}
+
+@media screen and (min-width: 700px) { 
+    .nav-bar {
+        height: 50px;
+    }
+
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .footer .info {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .foot1 {
+        width: 50%;
+    }
+
+    .foot2 {
+        width: 50%;
+    }
+}
