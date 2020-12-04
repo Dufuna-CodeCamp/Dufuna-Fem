@@ -39,7 +39,6 @@ ul li a {
 .side1 {
     display: block;
     float: right;
-    margin-left: 50px;
     padding-right: 10px;
     margin: 120px;
     margin-top: 80px; 
@@ -205,13 +204,14 @@ footer #copyright {
         padding-left: 10px;
         padding-right: 10px;
         font-size: 10px;
+        justify-content: center;
     }
 
     .side1 {
         margin-bottom: 0px;
-        font-size: 15px;
-        margin-right: 50px;
+        font-size: 20px;
         text-align: center;
+        margin-left: 110px;
     }
 
     .nav-bar {
@@ -298,15 +298,23 @@ footer #copyright {
     }
 }
 
-
-/* Tablet View */
-@media screen and (min-width: 700px) {
-    .nav-bar {
-        height: 50px;
-    }
-
+@media screen and (max-width: 992px) {
     .container {
         flex-wrap: wrap;
+        justify-content: center;
+      
+    }
+
+    .side1 {
+        margin-right: 200px;
+        margin-bottom: 0px;
+        justify-content: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .side form {
+        margin-right: 20px;
     }
 
     #foot-email {
@@ -334,7 +342,6 @@ footer #copyright {
     }
 
     #copyright {
-        margin-top: 150px;
-        
+        margin-top: 150px;  
     }
 }
