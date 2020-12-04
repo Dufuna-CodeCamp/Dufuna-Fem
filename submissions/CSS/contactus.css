@@ -28,7 +28,7 @@ ul {
     text-decoration:none;
 }
 
-.phone1 {
+.contactpage1 {
     display: flex;
     justify-content: space-around;
     padding-left: 40px;
@@ -36,24 +36,24 @@ ul {
     padding-top: 80px;
     text-align: center;
 }
-.firstc h2{
+.firstcolumn h2{
     font-size: 25px;
     font-weight: bold;
 }
 
-.firstc p{
+.firstcolumn p{
     font-size: 18px;
     font-weight: bold;
 }
 
-.firstc ul li {
+.firstcolumn ul li {
     display: inline-block;
     color: white;
     text-decoration:none;
     margin:10px;
 }
   
-.firstc form{
+.firstcolumn form{
     border:2px solid palevioletred;
     padding-bottom:10px;
     height:550px;
@@ -63,7 +63,7 @@ ul {
     border-bottom: none;
 }
   
-.firstc input{
+.firstcolumn input{
     border:none;
     border-bottom:2px solid palevioletred;
     width:85%;
@@ -103,14 +103,14 @@ footer {
 }
   
   
-footer .phone2 {
+footer .contactpage2 {
     display: flex;
     justify-content: space-between;
     padding: 0 50px;
     align-items: center;
 }
   
-footer .phone2 div:not(:first-child) {
+footer .contactpage2 div:not(:first-child) {
     text-align: center;
 }
 
@@ -164,7 +164,7 @@ footer #copyright {
 }
 
 @media (max-width: 992px) {
-.phone1{
+.contactpage1{
     display: block;
 }
     
@@ -194,12 +194,12 @@ footer #copyright {
     width: 500px;
 }
     
-footer .phone2 {
+footer .contactpage2 {
     display: block;
     padding: 0 20px;
 }
     
-footer .phone2 div:not(:first-child) {
+footer .contactpage2 div:not(:first-child) {
     text-align: inherit;
 }
     
