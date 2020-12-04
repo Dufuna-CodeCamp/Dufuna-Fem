@@ -23,14 +23,6 @@ nav ul li a {
     margin-top: 5px;
 }
 
-.styling {
-    border-radius: 0px;
-    color: rgb(100,121,8);
-    width: 70px;
-    background-color: white;
-    text-transform: uppercase;
-}
-
 .nav-bar {
     background-color: rgb(100,121,8);
     color: white;
@@ -124,6 +116,14 @@ footer .info {
     height: 40px;
     padding: 0 50px;
     margin-bottom: 5px;
+}
+
+.styling {
+    border-radius: 0px;
+    color: rgb(100,121,8);
+    width: 70px;
+    background-color: white;
+    text-transform: uppercase;
 }
 
 footer .info div:not(:first-child) {
@@ -302,7 +302,7 @@ footer #copyright {
         float: center;
     }
 
-    ul #quick-links {
+    ul#quick-links {
         padding-left: 10px;
     }
 

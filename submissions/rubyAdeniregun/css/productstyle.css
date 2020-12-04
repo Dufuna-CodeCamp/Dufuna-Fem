@@ -60,14 +60,14 @@ ul li a {
 }
 
 #quantity {
-    font-size: 28px;
+    font-size: 20px;
     font-weight: bold;
 }
 
 .quantity-box{
-    font-size: 28px;
+    font-size: 20px;
     font-weight: bold;
-    width: 80px;
+    width: 60px;
 }
 
 .container {
@@ -75,19 +75,19 @@ ul li a {
     flex-direction: row; 
     padding: 10px;
     padding-top: 40px;
-    margin-left: 80px;
-    gap: 40px;
+    margin-left: 40px;
+    gap: 20px;
 }
   
 h1, h2 {
     text-align: left;
     font-weight: bold;
-    font-size: 26px;
+    font-size: 20px;
 }
 
 .column3 {
     text-align: left;
-    padding: 95px;
+    padding: 45px;
     padding-top: 5px;
     margin-top: 5px;
     padding-bottom: 30px;
@@ -305,13 +305,9 @@ footer #copyright {
 }
 
 /* Tablet View */
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 700px) {
     .nav-bar {
         height: 50px;
-    }
-
-    h1, h2 {
-        font-size: 16px;
     }
 
     #foot-email {
