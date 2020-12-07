@@ -37,7 +37,15 @@ ul li a {
 }
 
 .side1 {
+HEAD
     display:  inline-block;
+=======
+HEAD:submissions/rubyAdeniregun/css/signup.css
+    display:  inline-block;
+========
+    display: inline-block;
+csstask2:submissions/rubyAdeniregun/css/signupstyle.css
+csstask2
     margin-left: 20px;
     padding-right: 10px;
     margin: 220px;
@@ -51,7 +59,11 @@ h2 {
 }
 
 .side form {
+HEAD
     border: 1px solid;
+=======
+    border: 1px solid; 
+csstask2
     border-radius: 30px;
     color: rgb(100,121,8);
     padding-bottom: 10px;
@@ -99,7 +111,10 @@ input[type=checkbox] {
     width: 20px;
     margin-left: 60px;
     border-radius: 40%;
+HEAD
     width: 21px;
+=======
+csstask2
 }
 
 #btn {
@@ -314,7 +329,10 @@ footer #copyright {
     .container {
         flex-wrap: wrap;
         justify-content: center;
+HEAD
       
+=======
+csstask2
     }
 
     .side1 {
