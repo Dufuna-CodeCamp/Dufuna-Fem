@@ -176,6 +176,7 @@ footer .info div:not(:first-child) {
 ul #quick-links {
     padding-left: 10px;
 }
+
 #quick-links li {
     margin-bottom: 10px;
 }
@@ -313,7 +314,6 @@ footer #copyright {
     .container {
         flex-wrap: wrap;
         justify-content: center;
-      
     }
 
     .side1 {
