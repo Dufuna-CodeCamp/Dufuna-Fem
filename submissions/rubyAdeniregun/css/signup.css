@@ -59,11 +59,7 @@ h2 {
 }
 
 .side form {
-HEAD
-    border: 1px solid;
-=======
     border: 1px solid; 
-csstask2
     border-radius: 30px;
     color: rgb(100,121,8);
     padding-bottom: 10px;
