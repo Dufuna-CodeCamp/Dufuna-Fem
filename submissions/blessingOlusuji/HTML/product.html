@@ -1,71 +1,97 @@
 <!Doctype html>
 <html lang ="en">
 <head>
-    <meta charset ="UTF-8">
-    <title>Spotless-B Mobile Page</title>
+       <meta charset ="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1" />
+       <title>Spotless-B Mobile Page</title>
+       <link rel="stylesheet" type="text/css" href="../css/productPage.css">
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
 </head>
 <body>
-   <h2><i>Spotless-B Mobile</i></h2>
-   <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Cart</a></li>
-        <li><a href="../html-forms/contactpage.html">Contact Form</a></li>
-        <li><a href="../HTML/product.html">Product</a></li>
-      </ul>
-   </nav>
-
-<!--This session is about company's description-->
-<section>
-       <article>
-           <p>
-              Spotless-B Mobiles is one of the best phone namufacturing company in the world. 
-              Our goal is to provide affordable and easy to use mobile gadgets for everyone,
-              our products are built to solve real-life problems and are built to meet individual preferences.
-          </p>
-      </article>
- </section>
- <hr>
- <!---This session is about product name and image-->
- <section>
-      <div>
-          <img src="images/mobile1.jpg" width="300px" height ="300px">
-          <h4><u>Nokia Edge</u> : <strong>#110,000</strong></h4>
-          <p> Nokia Edge smartphone runs on Android v7.0 (Nougat) operating system. <br>
-              The phone is powered by octa core (2 GHz, quad core, cortex A53 + 1.2 GHz,<br>
-              quad core, cortex A53) processor. It runs on the mediaTek MT6755 chipset. <br>
-              It has 3GB RAM and 32 GB internal storage.
-          </P>
+       <nav class="nav-bar">
+         <h2 style="color:yellow;margin-left:2px"><i>Spotless-B</i></h2>
+         <ul class="look">
+             <li><a href="../HTML/product.html">Product Page</a></li>
+             <li><a href="../html-forms/contactpage.html">Contact Us</a></li>
+             <li><a href="../css/signup.html">Sign-up</a></li>
+        </ul>
+      </nav>
+<!---This session is about product name and image-->
+      <div class="main">
+        <section class="container">
+          <div class="product">
+              <img src="images/set1.jpg">
+          </div>
+          <div class="product" style="margin-left:20px; padding-top:20px">
+              <h2>NOKIA EDGES</h2>
+              <h4>Brand:Nokia</h4>
+              <form>
+                   <label for="number">Quantity:</label>
+                   <input type="text" name="number" id="number" style ="height:30px;width:60px"/>
+              </form>
+              <h3>Price:<strong>#110,000</strong></h3>
+              <button type="submit">BUY NOW</button/>
+         </div>
+      </section>
+<!---Code for description-->
+    <div class="description">
+       <h3>DESCRIPTION</h3>
+       <p>  Nokia Edge smartphone runs on Android v7.0 (Nougat) operating system.
+           The phone is powered by octa core (2 GHz, quad core, cortex A53 + 1.2 GHz,
+           quad core, cortex A53) processor. It runs on the mediaTek MT6755 chipset.
+           It has 3GB RAM and 32 GB internal storage.
+       </p>
+    </div>
+<!---section for related products-->
+    <section class="related-products">
+        <h4> RELATED PRODUCTS</h4>
+        <div class="similar">
+        <div class="card">
+            <img src="images/jacket.jpg">
+            <p>Nokia Edge Jacket</p>
+            <p>Price:#5000</P>
+        </div>
+        <div class="card">
+          <img src="images/charger.jpg">
+          <p>Nokia Edge charger</p>
+          <p>Price:#3500</P>
+        </div>
+        <div class="card">
+          <img src="images/earpiece.jpg">
+          <p>Nokia Edge Earpiece</p>
+          <p>Price:#1500</P>
+        </div>
        </div>
-       <div>
-           <img src="images/set1.jpg" width="300px" height ="300px">
-           <h4><u>Iphone7</u> : <strong>#150,000</strong></h4>
-           <p> Phone7 is the good phone with fast processor, water resistance and durable skin.<br>
-               In this, have good cameras with rear optical image stabilisation.
-           </p>
-      </div>
-</section>
-<!---This session is for similar products-->
-<section>
-       <div>
-           <h3>Check out other similar Products:</h3>
-           <ol>
-              <li> Iphone 8</li>
-              <li> Iphone 10</li>
-              <li> Noke Edge Max</li>
-           </ol>
-      </div>
-</section>
-<!---footer session-->
+   </section>
+</div> 
 <footer>
-   <div>
-        <ul>
-            <li><a href ="#"> Reviews</a></li> 
-            <li><a href ="#"> FAQs</a></li> 
-            <li><a href ="#"> Blogs</a></li> 
+  <div class="info">
+      <div class="foot">
+        <ul id="quick-links">
+           <li><a href="#">About Us</a></li>
+           <li><a href="#">Contact Us</a></li>
+           <li><a href="#">Terms and Conditions</a></li>
        </ul>
-       <p>&copy:Spotless-B 2020;</p>
-  </div>
+     </div>
+     <div class="foot">
+         <p>Sign up for our Newsletters</p>
+         <form>
+            <input type="email" name="email" id="email" placeholder="Enter your email address"/>
+            <button type="submit" class="styling">Submit</button>
+         </form>
+    </div>
+    <div class="foot">
+         <p>CONNECT WITH US</p>
+         <ul id="socials">
+            <li><a href="#"><img src="images/facebook.png" width="30px" height="30px"></a></li>
+            <li><a href="#"><img src="images/twitter.png" width="30px" height="30px"></a></li>
+            <li><a href="#"><img src="images/gmail.png" width="30px" height="30px"></a></li>
+            <li><a href="#"><img src="images/youtube.png" width="35px" height="35px"></a></li>
+         </ul>
+   </div>
+ </div>  
+ <p id="copyright">&copy; Copyright 2020 spotlessB.com <span> All rights reserved</span></p>
 </footer>
 </body>
 </html>
