@@ -41,6 +41,11 @@ ul {
     margin-top:20px;
 }
 
+.secondcolumn p {
+    text-align: left;
+    margin-left: 10px;
+}
+
 .secondcolumn h1 {
     font-weight: bold;
     font-size: 34px;
