@@ -14,6 +14,6 @@ if (str / 3 === 0) {
     } if (str / 5 === 0) {
     console.log("developer");
     } if (str / 3 === 0 && str / 5 === 0); {
-    console.log("SoftwareDeveloper")
+    console.log("softwareDeveloper")
     }
 }
