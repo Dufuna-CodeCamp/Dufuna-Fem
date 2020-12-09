@@ -59,7 +59,7 @@ ul {
 .secondcolumn form{
     padding: 20px;
     border:1px solid #0066f5;
-    height:520px;
+    height: auto;
     border-radius:7px;
     line-height: 1;
 }
