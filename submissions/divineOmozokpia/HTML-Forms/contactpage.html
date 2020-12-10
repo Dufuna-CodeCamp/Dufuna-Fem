@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact Form</title>
+    </head>
+    <body>
+        <h1>Contact Form</h1>
+            <p><strong>For all enquiries, please email us by using the form below.</strong></p>
+        <form action="#" method="POST" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Complete the following</legend>
+
+                <!--This is the field section using form element-->
+
+                <label><strong>Full Name</strong></label><br><br>
+                <input type="text" name="Fullname" id="Fullname" placeholder="Full Name"/><br><br>
+                <label><strong>Email</strong></label><br><br>
+                <input type="text" name="Email" id="Email" placeholder="youremail@xyz.com"/><br><br>
+                
+                <!--This is the subject section using select element-->
+
+                <label><strong>How can we help you?</strong></label><br><br>
+            <select name="help" id="help">
+                <option value="Select" selected>Select</option>
+                <option value="Complaints">Complaints</option>
+                <option value="Enquiries">Enquiries</option>   
+            </select>
+            <br><br>
+
+                <!--This is the message input section-->
+
+                <label><strong>Write your feedback about our products here:</strong></label><br><br>
+                <textarea name="feedback" id="feedback" cols="50" rows="=10"></textarea><br><br>
+    
+                <button onclick="alert('Thank you for the feedback')">Send Message</button>
+            </fieldset>
+        </form>
+    </body>
+</html>
