@@ -1,21 +1,31 @@
-var str = "";
+//positive difference between 7 and 123
+
+let firstNumber = 7
+let lastNumber = 123
+positiveDiff = lastNumber - firstNumber
+console.log(positiveDiff)
+
+/*to print out the numbers between 1 and 116,
+lets create a var named prog */
+
+var prog= "";
     i = 0
 
 do {
     i++;
-    str +=i;
+    prog +=i;
 }
 while (i < 116)
+console.log(prog);
 
-console.log(str);
-for (var str = ""; str < 116; str+=i) {
-if (str / 3 === 0) { 
+for (var prog = ""; prog < 116; prog+=i) {
+if (prog / 3 === 0) { 
     console.log("software");
 
-    } if (str / 5 === 0) {
+    } if (prog / 5 === 0) {
     console.log("developer");
-    
-    } else if (str / 3 === 0 && str / 5 === 0); {
+
+    } else if (prog / 3 === 0 && prog / 5 === 0); {
     console.log("softwareDeveloper")
     }
 }
