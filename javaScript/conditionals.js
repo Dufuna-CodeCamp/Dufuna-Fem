@@ -21,11 +21,11 @@ console.log(prog);
 for (var prog = ""; prog < 116; prog+=i) {
 if (prog / 3 === 0) { 
     console.log("software");
-
-    } if (prog / 5 === 0) {
+    }
+    if (prog / 5 === 0) {
     console.log("developer");
-
-    } else if (prog / 3 === 0 && prog / 5 === 0); {
+    }
+    else if (prog / 3 === 0 && prog / 5 === 0); {
     console.log("softwareDeveloper")
     }
 }
