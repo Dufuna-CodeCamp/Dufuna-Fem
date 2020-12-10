@@ -1,0 +1,246 @@
+/* This section is for the media screen query*/
+@media  only screen and (min-device-width: 200px) { 
+*{
+        margin: 0;
+        border: 0;
+        box-sizing: border-box;
+}
+body {
+    font-size: 22px;
+     font-family: 'Montserrat', sans-serif;      
+}
+
+ #header {
+    background-color: yellowgreen;
+    padding: 15px;
+    color:white;
+    margin-bottom:40px; 
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    line-height:1.75;
+}
+#image {
+    border:solid 1px;
+    margin-left:20px;
+    margin-right:30px; 
+    width:85%;
+    margin-bottom:20px
+   
+}
+#col2 {
+    line-height:2;
+    margin-left:20px;
+}
+#quantity {
+    border:solid 2px;
+    width: 40px;
+    line-height:1.6;
+}
+#button {
+    border: solid 1px;
+    background-color: green;
+    color:white;
+    padding: 14px;
+    border-radius: 10px;
+    font-size:17px;
+    margin-bottom:15px;
+}
+#product {
+    margin-left:20px;
+    margin-bottom:10px;
+}
+#note {
+    margin-left:20px;
+    margin-bottom:10px;
+    line-height:1.4;
+    font-size:25px;
+
+}
+.RelProd {
+        background-color:#ebebeb;
+        padding-bottom:50px;
+    }
+    #R {
+        text-align:center;
+        padding:30px;
+        font-size:22px;
+    }
+#B {
+    border:1px solid white;
+    background-color:white;
+    text-align:center;
+    margin-left:40px;
+    margin-right:30px;
+    margin-bottom:23px;
+    line-height:0.75;
+}
+.price {
+    margin-bottom:25px
+}
+#J {
+    border:1px solid white;
+    background-color:white;
+    text-align:center;
+    margin-left:40px;
+    margin-right:30px;
+    margin-bottom:23px;
+    line-height:0.75;
+}
+#M {
+    border:1px solid white;
+    background-color:white;
+    text-align:center;
+    margin-left:40px;
+    margin-right:30px;
+    /* margin-bottom:23px; */
+    line-height:0.75;
+    height:60%;
+}
+.Rel {
+    margin-bottom:25px;
+}
+footer {
+            background-color:yellowgreen;
+               padding:20px;
+              color:white; 
+     }
+     .nav a {
+        text-decoration:none;
+        color:white;
+        line-height:1.5;
+  }
+  .nav {
+      margin-bottom:20px;
+  }
+.email {
+      display:flex;
+     margin-top:10px;
+     margin-bottom:15px;
+  }
+  #email {
+      width:80%;
+      margin-right:10px;
+      height:40px
+  }
+#Submit {
+     width:23%;
+     color:yellowgreen;
+     font-size: 10px;
+     height:40px;
+  }
+::placeholder {
+      color:yellowgreen;
+      font-size:20px;
+  }
+#connect {
+     margin-bottom:10px
+  }
+  .icons {
+      margin:3px
+}
+#Copyright {
+  text-align:center;
+  margin-top:15px;
+  
+}
+}
+
+
+
+
+ @media  only screen and (min-device-width: 600px) {
+    #header {
+        display:flex;
+        justify-content:space-between;
+    } 
+    #nav {
+        display:flex;
+        justify-content: space-around;
+        width:50%;
+    } 
+    #col1 {
+        display:flex;
+   
+    }
+    #image {
+        width:40%
+    }
+    #ColA {
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+    
+    }
+    #B {
+        width:41%;
+        margin-left:25px
+    }
+    #J {
+        width:41%;
+        margin-left:20px
+    }
+    #M {
+        width:41%;
+        margin-left:25px;
+    }
+    #footer {
+        display:flex;
+        justify-content:space-around;
+        flex-wrap:wrap;
+    }
+    #Copyright {
+        display:flex;
+        justify-content:center;
+        margin-top:20px;
+    }
+    #email {
+       width:fit-content;
+       }
+        #Submit {
+        width:40%;
+        font-size:20px;
+    }
+       #Icons {
+         margin:5px;
+         margin-left:50%;
+       }
+       .nav {
+         margin-right:20%
+       }
+    /* .email { */
+}
+
+
+
+
+
+
+
+
+  @media  only screen and (min-device-width: 992px) {
+    #product {
+        margin-left:40px
+    }
+    #note {
+        margin-left:40px
+    }
+    #ColA {
+        display:flex;
+        flex-direction:row;
+        flex-wrap:nowrap;
+}
+#footer {
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:space-evenly;
+  }
+  #Icons {
+    margin-left:0
+  }
+  .email{
+    margin-right:0%;
+  /* width:fit-content
+  } */
+  ]

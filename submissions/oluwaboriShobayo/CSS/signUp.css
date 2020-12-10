@@ -6,7 +6,6 @@
         margin:0;
         border:0;
         box-sizing:border-box;
-    
     }
 #note {
      text-align:center;
@@ -16,7 +15,6 @@ body {
         font-size: 22px;
          font-family: 'Montserrat', sans-serif;      
     }
-    
      #header {
         background-color: yellowgreen;
         padding: 15px;
@@ -29,12 +27,9 @@ body {
     }
     H1 {
         color:yellowgreen;
-        /* flex-wrap: wrap; */
         font-size: 45px;
         text-align:center;
         padding:20px;
-        /* margin-left:40px;
-        margin-right:40px; */
     }
     #signin {
         padding:20px;
@@ -145,7 +140,6 @@ body {
             color:yellowgreen;
             font-size:15px;
         }
-   
         #connect {
            margin-bottom:10px
         }
@@ -154,8 +148,7 @@ body {
     }
     #Copyright {
         text-align:center;
-        
-    }
+        }
 }
 
 
@@ -228,8 +221,7 @@ body {
 #form {
     margin-top:50px;
     width:80%;
-    margin-right: 5%;
-   
+    margin-right: 5%; 
 }
 #firstname {
     font-size:30px;
@@ -250,8 +242,7 @@ body {
     font-size:30px;
 }
 #container {
-    
-   margin-top:50px;
+     margin-top:50px;
     margin-left:50px;
     font-size:30px;
 }
@@ -263,8 +254,7 @@ H1 {
 #note {
     text-align:justify;
     width:60%;
-    margin-left: 50px;
-   
+    margin-left: 50px; 
 }
 #signin {
     width:70%;
@@ -286,7 +276,6 @@ H1 {
 }
 #email {
     width:fit-content;
-/*     margin-left:50% */
 }
 .nav a{
     width:1000%;
