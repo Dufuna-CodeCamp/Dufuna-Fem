@@ -729,4 +729,17 @@ textarea {
     font-size: 12px !important;
 }
 
+#submitNewsletter {
+    border: none;
+}
+
+
+#submitNewsletter .news {
+    font-size: 11px;
+}
+
+.letter {
+    font-size: 1px;
+}
+
 

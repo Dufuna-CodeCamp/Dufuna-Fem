@@ -79,9 +79,12 @@
                     <p>Terms and Conditions</p>
                 </div>
                 <div class="sign-up col">
-                    <span>Sign up for our Newsletter</span> <br>
-                    <input type="email" name="email" placeholder="Enter your email address">
-                    <button class="btn btn-1">SUBMIT</button>
+                    <form id="submitNewsletter">
+                        <h3>Sign up for the Newsletter</h3>
+                        <input type="text" placeholder=" Enter your mail address" id="email">
+                        <button type="submit" class="btn btn-1"> SUBMIT</button> <br>
+                        <span class="error-block news"></span>
+                    </form>
                 </div>
                 <!-- <div class="> -->
                 <ul class="col">
@@ -95,6 +98,7 @@
             <p class="copy-right">Copyright 2020 sneaknation.com <span> All rights reserved</span>.</p>
         </div>
     </footer>
+    <script src="../dom/newsletter.js"></script>
 </body>
 
 </html>
