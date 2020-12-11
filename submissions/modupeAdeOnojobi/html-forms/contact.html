@@ -37,15 +37,19 @@
                     </ul>
                 </div>
             </div>
-            <form class="columns"> 
+            <form class="columns" id="contactForm"> 
                 <span><img src="../html/images/email.png" alt="email icon" class="c-icon"> <br> 
                     Or better still send us a message
                 </span> <br><br>
-                <input type="text" name="firstName" id="firstName" placeholder=" Full Name"> <br><br>
-                <input type="email" name="email" id="email" placeholder=" Email Address"> <br><br>
-                <input type="text" name="subject" id="subject" placeholder=" Subject"> <br><br>
+                <input type="text" name="firstName" id="fullName" placeholder=" Full Name"> 
+                <p class="error-block error"></p><br> <br>
+                <input type="email" name="email" id="email" placeholder=" Email Address">
+                <p class="error-block error"></p><br> <br>
+                <input type="text" name="subject" id="subject" placeholder=" Subject"> 
+                <p class="error-block error"></p><br> <br>
                 <label for="msg" class="msg">Message </label><br>
-                <textarea name="msg" id="msg" cols="38" rows="7"></textarea><br><br>
+                <textarea name="msg" id="msg" cols="38" rows="7"></textarea>
+                <p class="error-block error"></p><br> <br>
                 <button class="btn btn-1">SUBMIT</button>
             </form>
         </div>
@@ -73,6 +77,7 @@
             <p class="copy-right">Copyright 2020 sneaknation.com <span> All rights reserved</span>.</p>
         </div>
     </footer>
+    <script src="../dom/contact.js"></script>
 </body>
 
 </html>
