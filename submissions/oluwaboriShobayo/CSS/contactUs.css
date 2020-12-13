@@ -21,7 +21,6 @@ body {
         text-decoration: none;
         color: white;
         line-height:1.75;
-        /* margin-left:30px; */
     }
     #numbers {
         text-align:center;
@@ -77,7 +76,6 @@ body {
             width:85%;
           }
 .message{
-         /* font-size:40px; */
          margin-left:20px;
     }
 #send {
@@ -138,8 +136,6 @@ footer {
      #header {
             display:flex;
             justify-content:space-between;
-            /* padding:20px;
-            font-size:25px; */
         } 
  #nav {
             display:flex;
