@@ -30,29 +30,58 @@
           </div>
         </div>
         <div class="side">
-          <form>
-            <label for="firstname">First Name</label><br>
-            <input type="text" name="fullname" id="fullname"><br><br>
-            <label for="lastname">Last name</label><br>
-            <input type="text" name="Lastname" id="Lastname"><br><br>
-            <label for="othername">Other Names</label><br>
-            <input type="text" name="othername" id="othername"><br><br>
-            <label for="phonenumber">Phone Number</label><br>
-            <input type="text" name="phonenumber" id="phonenumber"><br><br>
-            <label for="email">Email address</label><br>
-            <input type="text" name="email" id="email"><br><br>
-            <label for="password">Password</label><br>
-            <input type="password" name="password" id="password"><br><br>
-            <label for="confirmpassword">Confirm Password</label><br>
-            <input type="password" name="c-password" id="c-password"><br><br>
-            <div class="formbase">
-              <input type="checkbox" name="agree" value="agree" id="agree" >
-              <label for="agree">I agree to the Terms and Conditions</label>
-            </div>
+            <form id="validateForm" method="post">
+              <div class="row">
+                <div class="part1">
+                  <label for="firstname">First Name</label>
+                  <input type="text" name="fullname" id="firstName">
+                  <span class="error-block"></span>
+                </div>
+                
+                <div class="part2">
+                  <label for="lastname">Last name</label>
+                  <input type="text" name="Lastname" id="lastName">
+                  <span class="error-block"></span>
+                </div>
+            
+                <div class="part3">
+                  <label for="othername">Other Names</label>
+                  <input type="text" name="othername" id="othername">
+                  <span class="error-block"></span>
+                </div>
+
+                <div class="part4">
+                  <label for="phonenumber">Phone Number</label>
+                  <input type="text" name="phonenumber" id="phoneNumber">
+                  <span class="error-block"></span>
+                </div>
+
+                <div class="part5">
+                  <label for="email">Email address</label>
+                  <input type="text" name="email" id="email">
+                  <span class="error-block"></span>
+                </div>
+
+                <div class="part6">
+                  <label for="password">Password</label>
+                  <input type="password" name="password" id="password">
+                  <span class="error-block"></span>
+                </div>
+
+                <div class="part7">
+                  <label for="confirmpassword">Confirm Password</label>
+                  <input type="password" name="c-password" id="confirmPassword">
+                  <span class="error-block"></span>
+                </div>
+              </div>
+              <div class="formbase">
+                <input type="checkbox" name="agree" value="agree" id="agree" >
+                <label for="agree">I agree to the Terms and Conditions</label>
+              </div>
               <button id="btn" type="submit">SIGN UP</button>
-          </form>
+            </form>
+          </div>
         </div>
-    </div>
     <footer>
       <div class="info">
           <div class="foot1">
@@ -80,6 +109,7 @@
             </div>
           </div>
           <p id="copyright">Copyright 2020 Skinperfection.com<span> All rights reserved.</span></p> 
-      </footer> 
+    </footer> 
+<script src="../DOM/signup.js"></script>
 </body>
 </html>

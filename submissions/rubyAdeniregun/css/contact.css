@@ -52,14 +52,17 @@ ul li a {
 }
 
 .error-block {
-    display: block
+    display: block;
+    font-size: 10px;
+    font-weight: bold;
+    color: red;
 }
 
 .side form {
     border: 1px solid;
     color: rgb(100,121,8);
     padding-bottom: 10px;
-    height: 500px;
+    height: 420px;
     font-size: 15px;
 }
 
@@ -70,7 +73,7 @@ ul li a {
 }
 
 form .field1, .field2, .field3 {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 form .field4 {
