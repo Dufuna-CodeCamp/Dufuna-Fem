@@ -35,16 +35,32 @@
             </ul>
         </div>
         <div class="side">
-            <form>
+            <div class="row">
+            <form id="validateForm" method="post">
+            <div>
                 <img src="../Images/small-mail-icon-2.jpg" alt="mailicon" style="width:10%;">
                 <p>Or better still send us a message:</p>
-                <input type="text" name="fullname" id="fullname" placeholder="Full Name"><br><br>
-                <input type="text" name="email" id="email" placeholder="Email Address"><br><br>
-                <input type="text" name="subject" id="subject" placeholder="Subject"><br><br>
-                <label for="comments">Message</label><br><br>
-                <textarea name="comments" id="comments" cols="55" rows="7"></textarea><br>
+            </div>
+            <div class="field1">
+                <input type="text" name="fullname" id="fullName" class="contactForm" placeholder="Full Name">
+                <span class="error-block"></span>
+            </div>
+            <div class="field2">
+                <input type="text" name="email" id="email" placeholder="Email Address">
+                <span class="error-block"></span>
+            </div>
+            <div class="field3">
+                <input type="text" name="subject" id="subject" placeholder="Subject">
+                <span class="error-block"></span>
+            </div>
+            <div class="field4">
+                <label id="message" for="comments">Message</label>
+                <textarea name="comments" id="comments" cols="35" rows="7"></textarea>
+                <span class="error-block"></span>
+            </div>
                 <button id="btn" type="submit">SEND</button>
             </form>
+            </div>
         </div>
     </div>
     <footer>
@@ -60,6 +76,7 @@
                 <p>Sign up for our Newsletter</p>
                 <form>
                     <input type="email" name="email" placeholder="Enter your email address" id="foot-email"/>
+                    <span class="error-block1"></span>
                     <button class="styling" type="submit">SUBMIT</button>
                 </form>
             </div>
@@ -74,7 +91,8 @@
             </div>
         </div>
         <p id="copyright">Copyright 2020 Skinperfection.com<span> All rights reserved.</span></p> 
-    </footer> 
+    </footer>
+    <script src="../javaScript/contact.js"></script>
 </body>
 </html>
       
