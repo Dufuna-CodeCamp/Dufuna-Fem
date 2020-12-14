@@ -718,4 +718,9 @@ textarea {
     }  
 }
 
+.error-block {
+    font-size: 12px;
+    color: red;
+}
+
 
