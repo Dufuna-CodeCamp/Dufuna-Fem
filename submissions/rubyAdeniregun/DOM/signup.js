@@ -1,6 +1,7 @@
 let submitForm = document.getElementById('validateForm'),
     firstName = document.getElementById('firstName'),
     lastName = document.getElementById('lastName'),
+    otherName = document.getElementById('otherName'),
     phoneNumber = document.getElementById('phoneNumber'),
     email = document.getElementById('email');
     password = document.getElementById('password');
@@ -14,9 +15,9 @@ function required(field, event) {
     if (lastName.value == '')
             lastName.nextElementSibling.innerHTML = "Please enter your Last Name";
             event.preventDefault();
-    
-    if (phoneNumber.value == '')
-            phoneNumber.nextElementSibling.innerHTML = "Please enter your Phone Number";
+
+    if (otherName.value == '')
+            otherName.nextElementSibling.innerHTML = "";
             event.preventDefault();
 
     if (password.value == '')
@@ -34,6 +35,7 @@ function required(field, event) {
     }
 }
 
+//firstname and lastname field validation
 function nameValidation(event) {
     let lettersRegex =   /^[A-Za-z]+$/;;
         if (!firstName.value.match(lettersRegex)) {
@@ -53,21 +55,7 @@ function nameValidation(event) {
     
 }
 
-function phoneValidation(event) {
-    let phoneRegex =  /^\+?\d*$/;;
-    if (!phoneNumber.value.match(phoneRegex)) {
-        phoneNumber.nextElementSibling.innerHTML = "Please enter a valid Phone Number";
-        event.preventDefault();
-        return false;
-    }    
-    
-    else {
-        phoneNumber.nextElementSibling.innerHTML = "";
-        return true;
-    }
-
-}
-
+//email field validation
 function emailfieldvalidation(event) {
     let emailRegex =  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     if (!email.value.match(emailRegex)) {
@@ -86,11 +74,31 @@ function emailfieldvalidation(event) {
     }
 }
 
+//phonenumber field validation
+function phonefieldvalidation(event) {
+    let numbersRegex =  /^\+?\d*$/;
+    if (phoneNumber.value.match(numbersRegex)) {
+        phoneNumber.nextElementSibling.innerHTML = "please enter a valid phone number";
+        event.preventDefault();
+
+    if (phoneNumber.value == '')
+    phoneNumber.nextElementSibling.innerHTML = "Please enter your phone number";
+    event.preventDefault();
+    return false;
+
+    }   
+    
+    else {
+        phoneNumber.nextElementSibling.innerHTML = "";
+        return true;
+    }
+}
+
 // password field validation
 function passwordvalidation(event) {
     let pwdRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*(_|[^\w])).+$/;
     if (!password.value.match(pwdRegex)) {
-    password.nextElementSibling.innerHTML = "Please password should contain at least 1 letter, 1number and 1special character";
+    password.nextElementSibling.innerHTML = "Your password should have a minimum of 6 characters, 1 capital letter, 1 special character eg @ and 1 number.";
     event.preventDefault();
     return false;
     }   
@@ -131,19 +139,17 @@ function cwordvalidation(event) {
         
 }
 
-
-    
 function validateForm(e){
     required(firstName, e);
     required(lastName, e);
-    required(phoneNumber, e);
+    required(otherName, e);
     required(email, e);
     required(password, e);
     required(confirmPassword, e);
-    phoneValidation(e);
     cwordvalidation(e)
     nameValidation(e);
     emailfieldvalidation(e);
+    phonefieldvalidation(e)
     passwordvalidation(e);
     return true;  
 }
