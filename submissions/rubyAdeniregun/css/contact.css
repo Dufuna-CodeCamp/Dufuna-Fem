@@ -134,11 +134,23 @@ footer .info {
     width: 30%;
 }
 
-#foot-email {
+#footerEmail {
     color: rgb(100,121,8);
     height: 40px;
     padding: 0 50px;
     margin-bottom: 5px;
+}
+
+.field5 {
+    display: inline-block;
+    position: relative;
+}
+
+.error-block1 {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    color: red;
 }
 
 .styling {
@@ -147,6 +159,9 @@ footer .info {
     width: 70px;
     background-color: white;
     text-transform: uppercase;
+    clear: inline-start;
+    position: absolute;
+    margin-left: 10px;
 }
 
 footer .info div:not(:first-child) {
@@ -185,14 +200,6 @@ footer #copyright {
     text-align: center;
     margin: 0;
     margin-right: 20px;
-}
-
-.styling {
-    height: 40px;
-    color: rgb(100,121,8);
-    width: 70px;
-    background-color: white;
-    border: none;
 }
 
 .logo-img {
