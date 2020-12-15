@@ -723,4 +723,10 @@ textarea {
     color: red;
 }
 
+.error{
+    text-align: left;
+    margin-left: 22px;
+    font-size: 12px !important;
+}
+
 
