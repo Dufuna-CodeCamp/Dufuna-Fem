@@ -29,7 +29,7 @@
         <form class="column" id="form" method="post">
             <div class="label">
                 <label for="firstName">First Name</label> <br>
-                <input type="text" name="firstName" id="firstName"> 
+                <input type="text" name="firstName" id="firstName">
                 <span class="error-block"></span><br> <br>
                 <label for="lastName">Last Name</label> <br>
                 <input type="text" name="lastName" id="lastName">
@@ -38,20 +38,20 @@
                 <input type="text" name="otherName" id="otherName">
                 <span class="error-block"></span><br> <br>
                 <label for="phoneNumber">Phone Number</label><br>
-                <input type="text" name="phoneNumber" id="phoneNumber"> 
+                <input type="text" name="phoneNumber" id="phoneNumber">
                 <span class="error-block"></span><br> <br>
                 <label for="email">Email Address</label><br>
-                <input type="email" name="email" id="email"> 
+                <input type="email" name="email" id="email">
                 <span class="error-block"></span><br><br>
                 <label for="password">Password</label><br>
                 <input type="password" name="password" id="password">
                 <span class="error-block"></span><br> <br>
                 <label for="confirmPassword">Confirm Password</label><br>
-                <input type="password" name="confirmPassword" id="confirmPassword"> 
+                <input type="password" name="confirmPassword" id="confirmPassword">
                 <span class="error-block"></span><br> <br>
                 <div class="spec">
                     <input type="checkbox" name="agree" id="agree">
-                    <label for="agree" > I agree to to the Terms and Conditions</label>
+                    <label for="agree"> I agree to to the Terms and Conditions</label>
                 </div><br><br>
             </div>
             <button type="submit" class="btn btn-3" id="submitBtn">Sign Up</button>
@@ -66,9 +66,12 @@
                     <p>Terms and Conditions</p>
                 </div>
                 <div class="sign-up col">
-                    <span>Sign up for our Newsletter</span> <br>
-                    <input type="email" name="newsletter" id="newsletter" placeholder="Enter your email address">
-                    <button class="btn btn-1" >SUBMIT</button>
+                    <form method="post" id="submitNewsletter">
+                        <span>Sign up for our Newsletter</span> <br>
+                        <input type="email" name="newsletter" id="newsletter" placeholder="Enter your email address">
+                        <button type="submit" class="btn btn-1">SUBMIT</button> <br>
+                        <span class="error-block news"></span>
+                    </form>
                 </div>
                 <ul class="col">
                     <span class="contact-us">CONNECT WITH US</span> <br>
@@ -80,7 +83,8 @@
             <p class="copy-right">Copyright 2020 sneaknation.com <span> All rights reserved</span>.</p>
         </div>
     </footer>
-   <script src="../dom/signup.js"></script>
+    <script src="../dom/signup.js"></script>
+    <script src="../dom/newsletter.js"></script>
 </body>
 
 </html>
