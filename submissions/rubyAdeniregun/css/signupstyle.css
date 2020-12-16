@@ -205,12 +205,26 @@ footer #copyright {
     margin-right: 20px;
 }
 
+.error-block1 {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    color: red;
+}
+
+.field5 {
+    display: inline-block;
+    position: relative;
+}
+
 .styling {
     height: 40px;
     color: rgb(100,121,8);
     width: 70px;
     background-color: white;
     border: none;
+    position: absolute;
+    margin-left: 10px;
 }
 
 .logo-img {
