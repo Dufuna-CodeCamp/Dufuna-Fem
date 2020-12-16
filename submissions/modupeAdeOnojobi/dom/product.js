@@ -3,7 +3,7 @@ let price = document.getElementById('price');
 let shippingCost = document.getElementById('shipping-cost');
 let cost = document.getElementById('total-cost');
 let button = document.getElementById('pricing-btn');
-let sumPricePrice = Number(price.textContent) * quantity.value;
+let sumPrice = Number(price.textContent) * quantity.value;
 
 productPrice = (event) => {
     if(quantity.value <= 0) {
