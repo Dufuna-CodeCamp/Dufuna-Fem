@@ -11,11 +11,14 @@
   .logo img {
     width: 90px;
     height: 90px;
-    margin-left: 25px;
+    margin-left: -70px;
+    margin-top: 15px;
+   
   }
   .nav-link {
     list-style: none;
     margin-left: 40px;
+    margin-right: -50px;
   }
   .nav-link a {
     text-decoration: none;
@@ -23,6 +26,7 @@
     font-size: 14px;
     padding-bottom: 10px;
     display: block;
+    margin-left: 40px;
   }
 
 .cont1 img, .email img{
@@ -57,7 +61,7 @@
 }
 fieldset{
     margin: 20px 30px ;
-    height: 400px;
+    height: 450px;
 }
 fieldset img{
     width: 30px;
@@ -79,6 +83,7 @@ input{
     border-left-style: hidden;
     border-right-style: hidden;
     width: 250px;
+    margin-bottom: 30px;
    
 }
 label{
@@ -101,6 +106,7 @@ form button{
     background-color:#0066f5 ;
     color: white;
     margin-left: 190px;
+    margin-bottom: 50px;
 }
 
 
@@ -186,6 +192,12 @@ form button{
   }
 
   @media only screen and (max-width:600px){
+    .logo img {
+        width: 70px;
+        height: 70px;
+        margin-left: 70px;
+        margin-top: 15px;
+      }
     .cont1 img, .email img{
         width: 30px;
         height: 30px;
