@@ -50,7 +50,7 @@ ul li a {
     max-width: 30rem;
 }
 
-.buynow {
+#buyNow {
     font-size: 20px;
     border-radius: 12px;
     padding: 10px;
@@ -59,15 +59,22 @@ ul li a {
     border: none;
 }
 
-#quantity {
+label {
     font-size: 20px;
     font-weight: bold;
 }
 
-.quantity-box{
+#quantityBox{
     font-size: 20px;
     font-weight: bold;
     width: 60px;
+}
+
+.error-block {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
 }
 
 .container {
