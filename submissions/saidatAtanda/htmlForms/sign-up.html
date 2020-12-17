@@ -3,62 +3,77 @@
   <head>
     <meta charset="utf-8">
     <title>Sign up Page</title>
+    <link href="../css/sign-up.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="nav-header">
-          <!--I designed the logo myself-->
-            <img src="../html/images/my-logo.jpg" width="30">
-            <h1><a href="#">VENISTER</a></h1>
-            <h6>YourFavOnlineBookStore</h6></div>
-        <div class="nav-content">
-          <ul>
-            <li><a href="#">Home</a></li>
-              <li><a href="../html/products.html">Products</a></li>
-                <li><a href="#">Orders</a></li>
-                  <li><a href="sign-up.html">Sign Up</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <section>
-              <form action="#" method="post" enctype="application/x-www-form-urlencoded">
-                <div class="sign-up">
-                  <fieldset>
-                    <legend>
-                      <h3>SIGN UP</h3>
-                    </legend>
-                        <p>
-                          <label for="firstname">FIRST NAME </label>
-                            <input type="text" name="firstname" id="firstname">
-                        </p>
-                        <p>
-                          <label for="lastname">LAST NAME </label>
-                            <input type="text" name="lastname" id="lastname">
-                        </p>
-                        <p>
-                          <label for="username">PREFERRED USERNAME </label>
-                            <input type="text" name="username" id="username">
-                        </p>
-                        <p>
-                          <label for="password">PASSWORD</label>
-                            <input type="password" name="password" id="password">
-                        </p>
-                        <p>
-                          <label for="c-password">CONFIRM PASSWORD</label>
-                            <input type="password" name="c-password" id="c-password">
-                        </p>
+        <header class="header">
+          <nav id="navbar">
+                <a href="#">
+                  <h1 class="brand-name">VENISTER <span>YourFavOnlineBookStore</span></h1>
+                </a>
+              <ul id="pages">
+                  <li><a href="products.html">Products</a></li>
+                      <li><a href="../htmlForms/sign-up.html">Sign Up</a></li>
+                        <li><a href="../htmlForms/contact.html">Contact Us</a></li>
+              </ul>
+          </nav>
+        </header>
+    <section class="container">
+      <div class="main">
+      <h2>Register your Account</h2>
+      <p>Registering your account gives you<br>access to sweet promo and events<br>available to only registered<br>customers</p>
+      <h4><em>Already got an account? </em></strong><span><a href="#" id="sign-in">Sign in</a>
+    </h4>
+  </div>
+  <div class="aside">
+              <form action="#" method="post" enctype="application/x-www-form-urlencoded" id="form">
+                <div class="form-detail">
+                          <label for="firstname">First Name </label><br>
+                            <input type="text" name="firstname" id="firstname"><br><br>
+                          <label for="lastname">Last Name </label><br>
+                            <input type="text" name="lastname" id="lastname"><br><br>
+                          <label for="others">Other Names </label><br>
+                            <input type="text" name="others" id="others"><br><br>
+                        <label for="phone-no">Phone Number </label><br>
+                          <input type="tel" name="phone-no" id="phone-no"><br><br>
+                        <label for="email">Email Address </label><br>
+                          <input type="email" name="email" id="email"><br><br>
+                          <label for="password">Password</label><br>
+                            <input type="password" name="password" id="password"><br><br>
+                          <label for="c-password">Confirm Password</label><br>
+                            <input type="confirm-password" name="c-password" id="c-password"><br><br>
                           <br>
-                        <p><input type="checkbox">I agree to the <a href="#">Terms and Conditions</a></p>
-                          <button type="submit" name="signup" id="signup" value="submit-1"
-                            <a class="signup">Sign Up</a>
-                          </button>
-                  </h4>
-                  </fieldset>
+                        <input type="checkbox" name="checkbox" id="checkbox">
+                        <label>I agree to the <a href="#" class="i-agree">Terms and Conditions</a></label><br><br>
+                          <button type="submit" name="submit" id="submit-form"><a class="signup">Sign up</a></button>
                 </div>
-                <div class="sign-in">
-                  <p><strong><em>Already Have an Account?</em></strong></p>
-                  <h4><a href="#">Sign In</a></h4>
+              </div>
+            </section>
+            <footer class="footer">
+              <div>
+                <ul id="contact">
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+              </div>
+              <form class="subscribe">
+                <div>
+                <label for="newsletter">Sign up for our Newsletter</label><br>
+                  <input type="email" name="newsletter" id="newsletter" placeholder="1234@email.com">
+                  <button type="submit" class="news-submit">Submit</button>
+              </form>
                 </div>
+            <div class="connect">
+              <h4>Connect with Us</h4>
+              <ul class="social">
+                <li><a href="www.gmail.com"><img src="../html/images/gmail-logo.png" width="25"></a></li>
+                <li><a href="www.twitter.com"><img src="../html/images/twitter-logo.png" width="20"></a></li>
+                <li><a href="www.facebook.com"><img src="../html/images/facebook-logo.png" width="20"></a></li>
+              </ul>
+              </div>
+          <p>&copy;Copyright 2020 venister.com All rights reserved.</p>
+          </footer>
+              </body>
+          </html>
