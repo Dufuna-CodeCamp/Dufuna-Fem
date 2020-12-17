@@ -1,0 +1,275 @@
+body {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  color: #7e685a;
+}
+.header {
+  margin-bottom: 20px;
+  line-height: 3.0;
+}
+#navbar ul,
+.footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.header #navbar,
+.footer {
+  background-color: #E7717D;
+  color: white;
+  padding: 10px;
+  position: relative;
+}
+#navbar a,
+.footer a {
+  text-decoration: none;
+  margin: 0;
+  color: white;
+}
+#navbar h1 {
+  margin: 0;
+  padding: 0;
+}
+.brand-name span {
+  font-weight: normal;
+  font-size: 10px;
+}
+#navbar li {
+  display: inline;
+  position: relative;
+  float: right;
+  padding: 0;
+  margin-top: -40px;
+  margin-right: 10px;
+}
+#pages a:hover,
+#contact a:hover {
+  color: #314455;
+}
+.container {
+  overflow: hidden;
+  padding: 30px 0;
+  margin: auto;
+  width: 90%;
+}
+.contact-us {
+  float: left;
+  text-align: center;
+  width: 45%;
+  font-weight: bold;
+  letter-spacing: normal;
+  line-height: 1.0;
+  font-style: normal;
+  font-stretch: normal;
+}
+.contact-us h2 {
+  font-size: 40px;
+}
+.contact-us h3 {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+.contact-us li {
+  list-style-type: none;
+  margin-top: 5px;
+}
+.contact-us a {
+  text-decoration: none;
+  color: #E7717D;
+  letter-spacing: 1px;
+  font-size: 25px;
+}
+.media li {
+  display: inline;
+  margin-left: 5px;
+  margin-top: 10px;
+  padding-right: 5px;
+}
+.media img {
+  width: 40px;
+  height: 30px;
+}
+.aside {
+  width: 40%;
+  float: left;
+  margin-left: 10px;
+}
+#contact-form {
+  display: block;
+  margin-top: auto;
+  width: 90%;
+}
+#contact-form label {
+  width: 80px;
+  height: 20px;
+  font-size: 20px;
+}
+.aside fieldset {
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px;
+  }
+.aside h3 {
+  font-size: 30px;
+}
+ .aside input[type="text"],
+ .aside input[type="email"]  {
+  width: 400px;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid #7e685a;
+  font-size: 20px;
+  line-height: 30px;
+}
+textarea {
+  width: 500px;
+  height: 250px;
+  border-color: #7e685a;
+  margin-top: 10px;
+}
+.aside button {
+  width: 95px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #E7717D;
+  padding: 0;
+  border: 2px solid #E7717D;
+  font-size: 18px;
+  color: white;
+  float: right;
+  margin-top: 10px;
+  margin-right: 100px;
+}
+#contact {
+  padding-left: 30px;
+  line-height: 2.0;
+}
+.subscribe {
+  text-align: center;
+  margin-top: -70px;
+}
+.connect {
+  margin-top: -50px;
+  margin-right: 80px;
+  float: right;
+  padding: 0;
+}
+.connect h4 {
+  text-align: right;
+  text-transform: uppercase;
+}
+ .connect li {
+  display: inline-block;
+  float: right;
+  margin-top: -15px;
+  padding: 5px;
+}
+.news-submit {
+  color: #E7717D;
+  text-transform: uppercase;
+  background-color: white;
+  border-style: none;
+}
+.footer p {
+  display: block;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 1200px) {
+/* For tablets */
+    .brand-name {
+      font-size: 40px;
+    }
+    .brand-name span {
+      font-size: 20px;
+    }
+    #navbar li {
+      padding-left: 30px;
+      font-size: 25px;
+    }
+    .contact-us {
+      width: 90%;
+      text-align: center;
+      margin-left: 20px;
+    }
+    .contact-us h3 {
+      font-size: 35px;
+    }
+    .contact-us a {
+      font-size: 30px;
+    }
+    .media img {
+      width: 50px;
+      height: 40px;
+    }
+    .aside {
+        width: 90%;
+        margin-left: 50px;
+    }
+    .aside h3 {
+      font-size: 35px;
+      padding: 10px;
+    }
+     .aside input[type="text"],
+     .aside input[type="email"]  {
+     }
+      width: 500px;
+    .aside placeholder {
+      font-size: 30px;
+    }
+.aside p {
+  font-size: 30px;
+}
+.footer {
+  font-size: 25px;
+  height: 250px;
+}
+#contact {
+  margin-bottom: 70px;
+}
+.subscribe {
+  text-align: right;
+  margin-top: -200px;
+  margin-right: 20px;
+}
+.connect {
+  margin-top: -10px;
+  padding-left: 50px;
+  padding: 0;
+  float: right;
+}
+.connect h4 {
+  text-align: right;
+  float: right;
+}
+ .connect li {
+  display: inline-block;
+  margin-top: -10px;
+  padding: 5px;
+}
+.connect img {
+  width: 40px;
+  height: 40px;
+}
+.footer p {
+  padding-top: 70px;
+  margin-bottom: 0;
+  text-align: center;
+}
+}
+@media screen and (max-width: 600px) {
+  /* For mobile phones */
+  .brand-name {
+    font-size: 45px;
+  }
+  .brand-name span {
+    font-size: 25px;
+  }
+  #navbar ul {
+    font-size: 30px;
+  }
+}

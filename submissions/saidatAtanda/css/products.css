@@ -1,0 +1,272 @@
+@media screen and (max-width: 1200px) {
+/* For tablets */
+    .brand-name {
+      font-size: 40px;
+    }
+    .brand-name span {
+      font-size: 20px;
+    }
+    #navbar li {
+      padding-left: 30px;
+      font-size: 25px;
+    }
+    .product-details h5 {
+      line-height: 1.0;
+    }
+    .product-details p {
+    margin-top: 15px;
+    line-height: 2.0;
+  }
+    .product-details button {
+    margin-bottom: 0;
+  }
+  .other-books li {
+    margin-left: 40px;
+  }
+  #book-1,
+  #book-2,
+  #book-3,
+  #book-4,
+  #book-5 {
+    font-size: 25px;
+  }
+  .footer {
+    font-size: 25px;
+    height: 250px;
+  }
+  #contact {
+    margin-bottom: 70px;
+  }
+  .subscribe {
+    text-align: right;
+    margin-top: -200px;
+    margin-right: 20px;
+  }
+  .connect {
+    margin-top: -50px;
+    padding-left: 50px;
+    padding: 0;
+    float: right;
+  }
+  .connect h4 {
+    text-align: right;
+    float: right;
+  }
+   .connect li {
+    display: inline-block;
+    margin-top: -10px;
+    padding: 5px;
+  }
+  .connect img {
+    width: 40px;
+    height: 40px;
+  }
+  .footer p {
+    padding-top: 70px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  }
+body {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  color: #7e685a;
+  background-color: rga (255, 255, 255);
+}
+.header {
+  margin-bottom: 20px;
+  line-height: 3.0;
+}
+#navbar ul,
+.footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.header #navbar,
+.footer {
+  background-color: #E7717D;
+  color: white;
+  padding: 10px;
+  position: relative;
+}
+#navbar a,
+.footer a {
+  text-decoration: none;
+  margin: 0;
+  color: white;
+}
+#navbar h1 {
+  margin: 0;
+  padding: 0;
+}
+.brand-name span {
+  font-size: 10px;
+  font-weight: normal;
+}
+#navbar li {
+  display: inline;
+  position: relative;
+  float: right;
+  padding: 0;
+  margin-top: -40px;
+  margin-right: 10px;
+}
+#pages a:hover,
+#contact a:hover {
+  color: #7e685a;
+}
+.header #search-option {
+  color: #c2b9b0;
+  position: fixed;
+  overflow: hidden;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  text-align: right;
+}
+section {
+  margin-bottom: 30px;
+}
+.product-details {
+  display: inline;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+}
+.product-details h5 {
+  font-size:  15px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+.product-details p  {
+  margin-bottom: 10px;
+  padding-top: 5px;
+  line-height: 1.0;
+  color: #7e685a;
+}
+.product-details button {
+margin-bottom: 30px;
+}
+.first-product img {
+  border: 1px solid #E7717D;
+  width: 170px;
+  height: 220px;
+  margin-top: auto;
+  margin-left: 30px;
+  margin-right: 10px;
+  float: left;
+}
+#quantity {
+  width: 20px;
+  height: 30px;
+}
+div.product-price {
+  line-height: 2.0;
+}
+#controls {
+  margin-bottom: 30px;
+}
+.product-price li {
+  display: block;
+  list-style-type: none;
+}
+.description {
+  margin-left: 40px;
+}
+.similar-products {
+  background-color: #f3e0dc;
+  color: #7e685;
+}
+.similar-products h3 {
+  text-transform: uppercase;
+  color: white;
+}
+.similar-products li {
+  list-style: none;
+  display: inline-grid;
+}
+.other-books a {
+  padding-left: 60px;
+}
+.other-books img {
+  width: 140px;
+  height: 200px;
+}
+#book-1,
+#book-2,
+#book-3,
+#book-4,
+#book-5 {
+  background-color: white;
+  padding-top: 30px;
+  padding-right: 50px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.category {
+  padding-top: 20px;
+  padding-bottom: 170px;
+  background-color: #f3e0dc;
+  color: white;
+  padding-left: 30px;
+  text-transform: uppercase;
+}
+.footer {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+#contact {
+  padding-left: 30px;
+  line-height: 2.0;
+}
+.subscribe {
+  text-align: center;
+  margin-top: -70px;
+}
+.connect {
+  margin-top: -50px;
+  margin-right: 80px;
+  float: right;
+  padding: 0;
+}
+.connect h4 {
+  text-align: right;
+  text-transform: uppercase;
+}
+ .connect li {
+  display: inline-block;
+  float: right;
+  margin-top: -15px;
+  padding: 5px;
+}
+.news-submit {
+  color: #E7717D;
+  text-transform: uppercase;
+  background-color: white;
+  border-style: none;
+}
+.footer p {
+  display: block;
+  text-align: center;
+  margin-bottom: 0;
+}
+.btn {
+  color: white;
+  background-color: #E7717D;
+  border-radius: 10%;
+  height: 50px;
+  width: 85px;
+  text-transform: uppercase;
+  border-style: none;
+}
+.submit {
+  color: white;
+  text-transform: uppercase;
+  background-color: #E7717D;
+  border-style: none;
+}
