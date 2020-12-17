@@ -266,20 +266,23 @@ footer #copyright {
     }
 
     footer .info div {
-        margin-left: 20px;
+        margin-left: 0px;
     }
 
     footer #copyright {
         text-align: center;
-        margin-left: 20px;
+        margin-left: 0px;
     }
 
-    #foot-email {
+    #footerEmail {
         color: rgb(100,121,8);
         height: 40px;
         padding: 0 10px;
         margin-bottom: 5px;
+        width: 180px;
+        padding-left: 0px;
     }
+
 
     .styling {
         height: 40px;
@@ -302,6 +305,7 @@ footer #copyright {
     
     .info .foot2 {
         width: 100%;
+        margin-left: 0px;
     }
     
     .info .foot3 {
@@ -323,6 +327,7 @@ footer #copyright {
     ul .socials {
         padding: 0px;
     }
+
 }
 
 /* Tablet View */
