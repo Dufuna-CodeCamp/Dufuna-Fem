@@ -2,15 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Product Page</title>
     <link href="../css/products.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header class="header">
-      <header class="header">
-        <nav id="navbar">
+    <header class="header"[]>
+        <nav class="navbar">
               <a href="#">
                 <h1 class="brand-name">VENISTER <span>YourFavOnlineBookStore</span></h1>
               </a>
@@ -33,7 +33,7 @@
               </div>
                       <!--Product name is 'How To Win Friends And Influence People'-->
                       <div class="product-details">
-                        <h5>How to win friends and influence people</h5>
+                        <h5 id="product-name">How to win friends and influence people</h5>
                           <p>Author: Dale Carnegie</p>
                             <p>HardCover: <em>$100</em></p>
                               <p>Quantity:<input type="text" value="1" name="quantity" id="quantity" maxlength="2"></p>
@@ -49,7 +49,6 @@
                         <button class="btn">Buy Now</button>
                       </ul>
                       </div>
-                  </section>
                   <div class="description">
                         <!--Description of product-->
                       <h3>DESCRIPTION</h3>
@@ -60,7 +59,7 @@
                           <br>As relevant as ever before, Dale Carnegie's principles endure, and will help you achieve your maximum potential in the complex and competitive modern age.
                         </p>
                   </div>
-                <section>
+                </section>
                     <!--Ordered list of more items on product page-->
                     <div class="similar-products">
                   <h3>More Books For You To Explore</h3>
@@ -96,7 +95,6 @@
                         <option value=10>Comics</option>
                     </select>
             </div>
-          </section>
           <footer class="footer">
             <div>
               <ul id="contact">
@@ -119,7 +117,9 @@
               <li><a href="www.facebook.com"><img src="../html/images/facebook-logo.png" width="20"></a></li>
             </ul>
             </div>
-        <p>&copy;Copyright 2020 venister.com All rights reserved.</p>
+        <div id="copyright">
+          <p>&copy;Copyright 2020 venister.com All rights reserved.</p>
+        </div>
         </footer>
 </body>
 </html>

@@ -1,16 +1,6 @@
 @media screen and (max-width: 1200px) {
 /* For tablets */
-    .brand-name {
-      font-size: 40px;
-    }
-    .brand-name span {
-      font-size: 20px;
-    }
-    #navbar li {
-      padding-left: 30px;
-      font-size: 25px;
-    }
-    .product-details h5 {
+    #product-name {
       line-height: 1.0;
     }
     .product-details p {
@@ -23,50 +13,91 @@
   .other-books li {
     margin-left: 40px;
   }
-  #book-1,
-  #book-2,
-  #book-3,
-  #book-4,
-  #book-5 {
-    font-size: 25px;
+  .category {
+    margin-top: -17px;
   }
   .footer {
-    font-size: 25px;
+    margin-top: -30px;
     height: 250px;
-  }
-  #contact {
-    margin-bottom: 70px;
+    margin-bottom: 0;
   }
   .subscribe {
-    text-align: right;
-    margin-top: -200px;
-    margin-right: 20px;
-  }
-  .connect {
-    margin-top: -50px;
-    padding-left: 50px;
-    padding: 0;
     float: right;
+    text-align: right;
+    padding-top: 0;
+    margin-right: 20px;
+    margin-bottom: 0;
   }
   .connect h4 {
-    text-align: right;
-    float: right;
+    margin-top: 10px;
   }
    .connect li {
     display: inline-block;
     margin-top: -10px;
     padding: 5px;
+    margin-bottom: 0;
   }
-  .connect img {
-    width: 40px;
-    height: 40px;
-  }
-  .footer p {
-    padding-top: 70px;
+  #copyright {
+    margin-top: 50px;
+    padding-top: 40px;
     margin-bottom: 0;
     text-align: center;
   }
   }
+@media screen and (max-width: 600px) {
+  .navbar {
+    height: 100px;
+    flex-direction: column;
+  }
+#pages li {
+  display: flex;
+  float: left;
+  padding: 10px;
+  margin-top: 0px;
+  margin-right: 0;
+  line-height: 1.0;
+}
+.first-product img {
+  display: inline;
+  width: 120px;
+  height: 200px;
+  float: left;
+}
+.footer {
+  margin-top: -30px;
+  height: 300px;
+  margin-bottom: 0;
+}
+.subscribe {
+  float: left;
+  text-align: left;
+  padding-top: 70px;
+  margin-left: 20px;
+  margin-top: 0px;
+}
+.connect {
+  float: left;
+  text-align: left;
+  margin-top: 5px;
+  margin-right: 0;
+}
+.connect h4 {
+
+}
+ .connect li {
+  display: inline-block;
+  margin-top: px;
+  padding: 5px;
+  margin-bottom: 0;
+}
+#copyright {
+  margin-top: 80px;
+  padding-top: 40px;
+  margin-bottom: 0;
+  text-align: center;
+}
+}
+
 body {
   font-size: 16px;
   padding: 0;
@@ -74,32 +105,32 @@ body {
   font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
   color: #7e685a;
-  background-color: rga (255, 255, 255);
+  background-color: rgb (255, 255, 255);
 }
 .header {
   margin-bottom: 20px;
   line-height: 3.0;
 }
-#navbar ul,
+.navbar ul,
 .footer ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-.header #navbar,
+.header .navbar,
 .footer {
   background-color: #E7717D;
   color: white;
   padding: 10px;
   position: relative;
 }
-#navbar a,
+.navbar a,
 .footer a {
   text-decoration: none;
   margin: 0;
   color: white;
 }
-#navbar h1 {
+.navbar h1 {
   margin: 0;
   padding: 0;
 }
@@ -107,7 +138,7 @@ body {
   font-size: 10px;
   font-weight: normal;
 }
-#navbar li {
+.navbar li {
   display: inline;
   position: relative;
   float: right;
@@ -132,13 +163,12 @@ section {
   margin-bottom: 30px;
 }
 .product-details {
-  display: inline;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   letter-spacing: normal;
 }
-.product-details h5 {
+#product-name {
   font-size:  15px;
   font-weight: bolder;
   text-transform: uppercase;
@@ -151,6 +181,9 @@ section {
 }
 .product-details button {
 margin-bottom: 30px;
+}
+.first-product {
+  display: inline;
 }
 .first-product img {
   border: 1px solid #E7717D;
@@ -215,10 +248,12 @@ div.product-price {
   color: white;
   padding-left: 30px;
   text-transform: uppercase;
+  margin-top: -17px;
 }
 .footer {
+  margin-top: -30px;
+  height: 250px;
   margin-bottom: 0;
-  padding-bottom: 0;
 }
 #contact {
   padding-left: 30px;
@@ -228,32 +263,29 @@ div.product-price {
   text-align: center;
   margin-top: -70px;
 }
-.connect {
-  margin-top: -50px;
-  margin-right: 80px;
-  float: right;
-  padding: 0;
-}
 .connect h4 {
+  margin-top: 0px;
   text-align: right;
   text-transform: uppercase;
 }
  .connect li {
   display: inline-block;
-  float: right;
-  margin-top: -15px;
+  margin-top: -10px;
   padding: 5px;
+  margin-bottom: 0;
+  float: right;
+}
+#copyright {
+  margin-top: 50px;
+  padding-top: 60px;
+  margin-bottom: 0;
+  text-align: center;
 }
 .news-submit {
   color: #E7717D;
   text-transform: uppercase;
   background-color: white;
   border-style: none;
-}
-.footer p {
-  display: block;
-  text-align: center;
-  margin-bottom: 0;
 }
 .btn {
   color: white;
