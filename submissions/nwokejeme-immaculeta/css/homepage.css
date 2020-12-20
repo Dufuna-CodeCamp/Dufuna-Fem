@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+   
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;     
+}
+  
+nav {
+    flex: 1;
+    text-align: right;
+}
+ 
+nav ul {
+    display: inline-block; 
+    list-style-type: none; 
+}  
+  
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+ 
+/* HEADER */
+
+header {
+    background: rgb(53, 2, 2);
+    padding-top: 10px;
+    min-height: 25px;
+    border-bottom: sienna 3px solid;
+}
+ 
+header a {
+    color: white;
+    font-size: 16px;
+}
+ 
+header li {
+    display: inline;
+    padding: 0 30px;
+}
+
+#navbranding h2,
+#navbranding p {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+ 
+nav {
+    float: right;
+    margin-top: ;
+}
+ 
+header a:hover {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+
+/* THE SIGN_UP FORM INFORMATION */
+
+.container {
+    overflow: hidden;
+    padding: 40px 0;
+    margin: auto;
+    width: 90%;
+}
+
+
+/* MAIN FRAME */
+
+main {
+    float: left;
+    text-align: left;
+    width: 43%;
+    height: 300;
+}
+
+main h1 {
+    color: rgb(53, 2, 2);
+    font-size: 35px;
+    height: 60px;
+}
+
+main p {
+    color: rgb(146, 144, 144);
+    font-size: 25px;
+    padding: inherit;
+}
+
+main p a {
+    color: rgb(53, 2, 2);
+    font-size: 22px;
+}
+
+
+/* ASIDE FRAME */
+
+aside {
+    float: left;
+    width: 50%;
+    margin-left: 5%;
+}
+
+aside .form-details {
+    padding: 20px;
+    width: 90%;
+    border: 1px solid rgb(129, 129, 129);
+    border-radius: 3%;
+    margin-bottom: 10px;
+}
+
+.form-details label {
+    color: rgb(146, 144, 144);
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.form-details input[type="text"],
+.form-details input[type="tel"],
+.form-details input[type="email"],
+.form-details input[type="password"] {
+    width: 95%;
+    height: 25px;
+    border: 1px solid rgb(129, 129, 129);
+    border-radius: 8px;
+    margin-bottom: 7px;
+}
+
+.form-details input[type="checkbox"] {
+    margin-left: 25%;
+    margin-bottom: 15px;
+}
+
+.form-details label[for="terms-conditions"] {
+    font-weight: bolder;
+    color: sienna 3px solid;
+}
+
+.form-details button {
+    width: 95px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(53, 2, 2);
+    color: #fff;
+    margin: 0 auto;
+    display: block;
+    border: none;
+    font-size: 18px;
+}
+
+.error-block {
+    color: red;
+    font-size: 12px;
+}
+
+.errorMessage {
+    color: red;
+    font-weight: bold;
+}
+
+
+/* THE FOOTER */
+
+footer {
+    overflow: hidden;
+    background-color: rgb(53, 2, 2);
+    padding: 20px 0 0 50px;
+    color: white;
+}
+
+.footer-box-1,
+.footer-box-2,
+.footer-box-3 {
+    float: left;
+    width: 33.3%;
+}
+
+.footer-box-1 ul li,
+.footer-box-3 ul li {
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+.footer-box-1 ul li a {
+    text-decoration: none;
+    display: inline;
+    color: white;
+}
+
+.footer-box-2 button[type="submit"] {
+    height: 30px;
+    padding: 0 5%;
+    font-size: 12px;
+    color: rgb(53, 2, 2);
+    font-weight: bold;
+}
+
+.footer-box-2 input[type="email"] {
+    height: 20px;
+    padding: 3px 18px 3px;
+    font-size: 11px;
+}
+
+.footer-box-3 h5 {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-box-3 ul li {
+    display: inline-flex;
+    padding: 10px;
+}
+
+.footer-box-3 ul li img {
+    width: 35px;
+}
+
+footer p {
+    display: block;
+}
+
+
+/* HANDLING RESPONSIVENESS / RESOLUTIONS */
+
+@media screen and (max-width: 600px) {
+    main {
+        margin: auto;
+    }
+    .form-details input[type="checkbox"] {
+        margin-left: 5px;
+    }
+    .footer-box-1,
+    .footer-box-2,
+    .footer-box-3 {
+        float: none;
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 809px) {
+    header #navbranding,
+    header nav,
+    header .navbar nav li {
+        float: none;
+        text-align: center;
+        padding: 0 3%;
+    }
+    main,
+    aside {
+        float: none;
+        width: 80%;
+        margin: auto;
+        padding-bottom: 15px;
+    }
+    main {
+        text-align: center;
+    }
+    .form-details input[type="checkbox"] {
+        margin-left: 50px;
+    }
+    .footer-box-1,
+    .footer-box-2 {
+        width: 50%;
+    }
+    .footer-box-3 {
+        float: none;
+        width: 50%;
+    }
+    .footer-box-3 ul li {
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .footer-box-1,
+    .footer-box-2 {
+        width: 50%;
+        margin-bottom: 15px;
+    }
+    .footer-box-3 {
+        float: none;
+        width: 50%;
+        margin-bottom: 15px;
+    }
+    .footer-box-3 ul li {
+        display: inline;
+    }
+}
