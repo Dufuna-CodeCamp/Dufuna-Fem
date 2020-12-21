@@ -77,8 +77,7 @@ header a:hover {
 main {
     float: left;
     text-align: left;
-    width: 43%;
-    height: 300;
+    width: 43%;  
 }
 
 main h1 {
@@ -91,6 +90,7 @@ main p {
     color: rgb(146, 144, 144);
     font-size: 25px;
     padding: inherit;
+    height: 100px;
 }
 
 main p a {
