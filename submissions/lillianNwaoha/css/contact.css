@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+  }
+  nav {
+    background-color: #0066f5;
+    height: 190px;
+  }
+  .logo img {
+    width: 90px;
+    height: 90px;
+    margin-left: -70px;
+    margin-top: 15px;
+   
+  }
+  .nav-link {
+    list-style: none;
+    margin-left: 40px;
+    margin-right: -50px;
+  }
+  .nav-link a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    padding-bottom: 10px;
+    display: block;
+    margin-left: 40px;
+  }
+
+.cont1 img, .email img{
+    width: 30px;
+    height: 30px;
+    margin: 20px 0px 0px 150px;
+}
+.cont1 p, .email p{
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    text-transform: capitalize;
+    color: #5f5f5f;
+}
+.images img{
+       width: 40px;
+       height: 25px;
+ }
+ .images p{
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 20px;
+    text-transform: capitalize;
+    color: #5f5f5f;
+ }
+.images{
+    margin: 0px 0px 0px 90px;
+}
+.img{
+    margin-left: -5px;
+    margin-top: -5px;
+}
+fieldset{
+    margin: 20px 30px ;
+    height: 450px;
+}
+fieldset img{
+    width: 30px;
+    height: 30px;
+    margin: 20px 0px 0px 120px;
+}
+fieldset p{
+    font-weight: bold;
+    color: #5f5f5f;
+    font-size: 14px;
+    text-align: center;
+}
+form{
+    margin: 40px 0px 0px 20px;
+   
+}
+input{
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    width: 250px;
+    margin-bottom: 30px;
+   
+}
+label{
+    text-transform: capitalize;
+    color: #5f5f5f;
+}
+label >.number{
+    border-left-style: solid;
+    border-top-style: solid;
+    border-right-style: solid;
+    height: 100px;
+}
+::placeholder{
+    font-size: 14px;
+    color: #5f5f5f;
+    text-transform: capitalize;
+}
+form button{
+    padding: 4px;
+    background-color:#0066f5 ;
+    color: white;
+    margin-left: 190px;
+    margin-bottom: 50px;
+}
+
+
+  .footer {
+    background-color: #0066f5;
+    padding-top: 50px;
+  }
+  .foot {
+    display: block;
+    margin: 0px 60px 0px 30px;
+  }
+  .footer-link {
+    margin-left: 20px;
+    list-style: none;
+    margin-top: 2px;
+  }
+  .footer-link a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.22;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fcf8f8;
+  }
+  .news {
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+  .news p {
+    color: #ebebeb;
+    text-transform: capitalize;
+    font-size: 12px;
+  }
+  .news button {
+    color: #0066f5;
+    background-color: #ebebeb;
+    border-radius: 0px;
+    
+    font-size: 14px;
+    padding: 8px;
+  }
+  .news input {
+    padding: 2px;
+  }
+  
+  .social {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .social h2 {
+    color: white;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.22;
+    letter-spacing: normal;
+    margin: 10px;
+    text-transform: capitalize;
+  }
+  .social img {
+    width: 25px;
+    height: 21px;
+    font-size: 12px;
+  }
+  .news button{
+      text-transform: uppercase;
+  }
+  .news> input{
+      padding: 8px;
+  }
+  .copy {
+    color: white;
+    margin-left: 50px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    font-size: 12px;
+    padding: 0px 80px 0px 60px;
+    text-align: center;
+  }
+
+  @media only screen and (max-width:600px){
+    .logo img {
+        width: 70px;
+        height: 70px;
+        margin-left: 70px;
+        margin-top: 15px;
+      }
+    .cont1 img, .email img{
+        width: 30px;
+        height: 30px;
+        margin: 20px 0px 0px 220px;
+    }
+    .images p{
+        margin-left: 78px;
+     }
+     .img{
+        margin-left: 60px;
+        margin-top: -5px;
+    }
+    fieldset img{
+        margin: 20px 0px 0px 190px;
+    }
+    form{
+        margin: 40px 0px 0px 40px;
+    }
+    form input{
+        width: 350px;
+    }
+    fieldset button {
+        margin-left: 280px;
+        padding: 7px 16px 7px 16px;
+        border-radius: 4px;
+       
+      }
+  }
+
+  @media only screen and (min-width:600px){
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 70px;
+      }
+      .nav-link {
+        display: flex;
+        justify-content: space-around;
+        width: auto;
+        margin-left: 150px;
+      }
+      .nav-link a {
+        letter-spacing: 1px;
+        font-size: 12px;
+        padding-right: 25px;
+        margin-top: 10px;
+      }
+    .cont1 img, .email img{
+        margin: 20px 0px 0px 260px;
+    }
+    .images p{
+        margin-left: 120px;
+     }
+     .img{
+        margin-left: 105px;
+        margin-top: -5px;
+    }
+    fieldset img{
+        margin: 20px 0px 0px 230px;
+    }
+    form{
+        margin: 40px 0px 0px 40px;
+    }
+    form input{
+        width: 430px;
+    }
+    fieldset button {
+        margin-left: 350px;
+        padding: 7px 16px 7px 16px;
+        border-radius: 4px;
+      }
+      .foot{
+        display: grid;
+        grid-column-gap: 30px;
+        grid-template-columns:  100px 150px 150px;
+        margin: 50px 100px 0px 100px;
+    }
+    .footer-link{
+        margin-top: -60px;
+        font-size: 18px;
+        margin-left: -40px; 
+    }
+    .news {
+        margin-top: -60px;
+        margin-left: 20px;
+        width: 330px;
+        
+      }
+    .social{
+        margin-left: -160px;
+        margin-top:-15px;   
+    }
+  }
+
+  @media only screen and (min-width:992px){
+    .cont1{
+        margin-top: 60px;
+    }
+    .cont1 p, .email p{
+        margin-left: -450px;
+    }
+    fieldset{
+        width: 50%;
+        margin-left: 470px;
+        margin-top: -300px;
+    }
+    .foot{
+        display: grid;
+        grid-column-gap: 70px;
+        grid-template-columns:  150px 250px 250px;
+        margin: 50px 100px 0px 150px;
+    }
+    .footer-link{
+        margin-top: -60px;
+        font-size: 18px;  
+    }
+    .social{
+        margin-left: 50px;
+        margin-top:-68px;
+        padding: 0px 40px 0px 40px;
+        
+    }
+    }
+
+    @media only screen and (min-width:1200px){
+        .cont1 p, .email p{
+            margin-left: -650px;
+            margin-right: 130px;
+            font-size: 20px;
+        }
+        fieldset{
+            width: 40%;
+           margin: -350px 0px 60px 670px;
+        }
+        .images p{
+            font-size: 20px;
+            margin-left: 90px;
+            margin-top: 30px;
+        }
+        .foot{
+            display: grid;
+            grid-column-gap: 250px;
+            grid-template-columns:  150px 250px 250px;
+            margin: 50px 100px 0px 150px;
+        }
+    }
+  
+  
