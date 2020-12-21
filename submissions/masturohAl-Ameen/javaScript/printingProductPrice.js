@@ -15,6 +15,7 @@ var productList = [
         productPrice: "#12,000",
     }
 ]
+
 productList.forEach(function(product) {
     console.log(product.productName + " with " + product.imageURL + " is sold for " + product.productPrice)
 })
