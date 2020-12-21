@@ -68,6 +68,8 @@ label {
     font-size: 20px;
     font-weight: bold;
     width: 60px;
+    margin-bottom: 10px;
+    display: inline;
 }
 
 .error-block {
@@ -85,11 +87,26 @@ label {
     margin-left: 40px;
     gap: 20px;
 }
+
+#productname, #productbrand {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
   
-h1, h2 {
+#price, #shippingCost, #totalCost {
     text-align: left;
     font-weight: bold;
     font-size: 20px;
+}
+
+.pricing {
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.pricing1{
+    margin-bottom: 10px;
 }
 
 .column3 {

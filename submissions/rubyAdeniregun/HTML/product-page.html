@@ -25,18 +25,24 @@
             <img class="main-image" src="../Images/IMG-20201001-WA0129.jpg" alt="Fresh Body Wash">
         </div>
         <div class="column2">
-            <h1>SKIN PERFECTION BODY WASH</h1>
-            <h2>Brand: Skin Perfection</h2>
+            <h1 id="productname">SKIN PERFECTION BODY WASH</h1>
+            <h2 id="productbrand">Brand: Skin Perfection</h2>
             <div class="row">
             <form id="validateForm" method="POST">
-              <label for="quantity">Quantity:</label>
               <div>
+                <label for="quantity">Quantity:</label>
                 <input type="text" id="quantityBox" name="quantity" placeholder="1">
                 <span class="error-block"></span>
               </div>
-              <h2 id="price">Price: $ 2,500</h2>
-              <h2 id="shippingCost">Shipping Cost: $ 100</h2>
-              <h2 id="totalCost">Total Cost: $ 2,600</h2>
+              <div class="pricing1">
+              <span class="pricing"> Price : $ <span id='price'> 2500</span></span>
+              </div>
+              <div class="pricing1">
+              <span class="pricing"> Price : $ <span id='shippingCost'> 100</span></span>
+              </div>
+              <div class="pricing1">
+              <span class="pricing"> Price : $ <span id='totalCost'> 2600</span></span>
+              </div>
               <button id="buyNow" type="submit">BUY NOW</button>
             </form>
             </div>    

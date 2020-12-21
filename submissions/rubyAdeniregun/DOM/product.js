@@ -53,7 +53,7 @@ function calculateQuantity() {
 }
 function calculatePrice() {
     if (item.value >= 1) {
-        let perPrice = "$ " + (2500 * item.value)
+        let perPrice = (2500 * item.value)
         price.innerHTML = perPrice
     } else if (item.value === "") {
         price.innerHTML = priceValue
@@ -85,7 +85,7 @@ function calculateTotalPrice() {
     if (item.value >= 1) {
         let perPrice = (2500 * item.value);
             shipCost = Number(shippingCost.innerHTML);
-        cost.innerHTML = "$ " + (perPrice + shipCost);
+        cost.innerHTML = (perPrice + shipCost);
     } else {
         return false;
     }
