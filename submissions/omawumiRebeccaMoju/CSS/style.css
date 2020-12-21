@@ -1,0 +1,115 @@
+
+* {
+    box-sizing: border-box;
+}
+
+input {
+    padding: 10px 20px 10px 20px;
+}
+
+input {
+    margin: 10px 20px 10px 20px;
+}
+
+nav a [href*='/'] {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav ul, 
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+section,
+footer {
+    float: inherit;
+    padding: 15px 20px;
+}
+
+nav,
+footer {
+    padding: 15px;
+    background-color:lightcoral;
+    color:lightgrey;
+}
+
+@media screen and (min-width: 640px) {
+    nav{
+        padding: 25px 35px;
+    }
+    nav li{
+        display: inline;
+        padding: 10px;
+        float: right;
+    }
+}
+
+footer a {
+    float: right;
+    padding: 8px;
+}
+
+body {
+    margin: 5px;
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+    line-height: 1.5;
+    color:black;
+    background-color:burlywood;
+}
+ 
+a {
+    text-decoration: none;
+    color: lightgray;
+}
+
+a:hover {
+    color: inherit;
+}
+
+a:visited {
+    color: lightskyblue;
+}
+
+.body li {
+    display: inline-grid;
+    padding: 20px;
+    float: right;
+}
+img.lulu {
+    height: 150px;
+    width: 150px;
+    float: left;
+    border-style: hidden;
+    margin: 5px;
+}
+
+.oma {
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.oma h3::first-line {
+    font: bold;
+    font-size: 15px;
+}
+div.products img {
+    padding: 10px;
+    margin-bottom: 5px;
+    margin-left: inherit;
+    border: 2px solid #deb887;
+    display: inline-grid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0.2);
+    border-radius: 5px;
+    height: 150px;
+    width: 150px;
+}
+div.desc {
+    padding: 8px;
+    text-align: inherit;
+}
