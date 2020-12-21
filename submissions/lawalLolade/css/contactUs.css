@@ -20,11 +20,7 @@ body{
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-size: 22px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.23;
-    letter-spacing: normal;
 }
 
 nav{
@@ -43,11 +39,7 @@ nav a{
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.19;
-    letter-spacing: normal;
 }
     /* contact */
 .contact {
@@ -96,8 +88,6 @@ nav a{
     font-family: 'Montserrat', sans-serif;
     font-size: 25px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.2;
     letter-spacing: 1.25px;
 }
@@ -106,9 +96,6 @@ nav a{
     margin-bottom: 3%;
     font-family: 'Montserrat', sans-serif;
     font-size: 25px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.2;
     letter-spacing: 1.25px;
 }
@@ -125,9 +112,6 @@ nav a{
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 25px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.2;
     letter-spacing: 1.25px;
 }
@@ -174,10 +158,7 @@ textarea {
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 0.67;
-    letter-spacing: normal;
 }
 
    /* footer */
@@ -187,11 +168,7 @@ footer{
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.22;
-    letter-spacing: normal;
 }
 
 .footer {
@@ -224,11 +201,7 @@ footer ::placeholder{
     color: #f765a3;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.19;
-    letter-spacing: normal;
 }
 
 .footer-form [type=button] {
@@ -239,10 +212,7 @@ footer ::placeholder{
     color: #f765a3;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.22;
-    letter-spacing: normal;
 }
 
 .media p {
