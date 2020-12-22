@@ -8,7 +8,7 @@
 nav {
   background-color: #0066f5;
   height: 190px;
-  width: auto;
+  
 }
 .logo img {
   width: 90px;
@@ -56,7 +56,6 @@ nav {
 
 .forms {
   margin: 40px 0px 0px 20px;
-  border-radius: 10px;
 }
 fieldset {
   border: 1px solid black;
@@ -72,8 +71,10 @@ fieldset {
 label {
   margin-left: 30px;
   padding-top: 30px;
-  margin-top: 70px;
+  margin-top: -30px;
   font-weight: lighter;
+  display: block;
+  
 }
 input {
   margin-left: 30px;
@@ -86,11 +87,14 @@ input[type='checkbox'] {
   width: 20px;
   height: 20px;
   margin-top: 10px;
+  display: block;
 }
 label[for='checkbox'] {
   color: #0066f5;
   font-size: 14px;
-  margin-left: 10px;
+  margin-left: 60px;
+  margin-top: -70px;
+  
 }
 fieldset > button {
   margin-left: 120px;
@@ -98,6 +102,7 @@ fieldset > button {
   background-color: #0066f5;
   color: white;
   border-radius: 6px;
+  margin-top: 20px;
   border: none;
 }
 .footer {
@@ -117,11 +122,7 @@ fieldset > button {
 .footer-link a {
   text-decoration: none;
   font-size: 12px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.22;
-  letter-spacing: normal;
   text-align: left;
   color: #fcf8f8;
 }
@@ -154,11 +155,9 @@ fieldset > button {
 .social h2 {
   color: white;
   font-size: 12px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
+
   line-height: 1.22;
-  letter-spacing: normal;
+
   margin: 10px;
   text-transform: capitalize;
 }
@@ -223,12 +222,15 @@ fieldset > button {
     width: 40px;
     height: 20px;
     margin-top: 20px;
-    margin-left: 50px;
+    margin-left: 110px;
   }
   label[for='checkbox'] {
     color: #0066f5;
     font-size: 16px;
-    margin-left: 10px;
+    margin-left: 160px;
+  }
+  fieldset >button{
+    margin-left: 200px;
   }
   .news {
     margin-top: -50px;
