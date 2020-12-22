@@ -54,8 +54,9 @@ function calculateQuantity() {
 function calculatePrice() {
     if (item.value >= 1) {
         let perPrice = (2500 * item.value)
-        calculateShippingPrice(perPrice)
-        price.innerHTML = perPrice
+        calculateShippingPrice(perPrice);
+        calculateTotalPrice(perPrice);
+        price.innerHTML = perPrice;
     } else if (item.value === "") {
         price.innerHTML = priceValue
         cost.innerHTML = costValue
@@ -64,6 +65,7 @@ function calculatePrice() {
         return false
     }
 }
+
 function calculateShippingPrice(perPrice) {
     if (perPrice < 1000) {
         let shippingRange = 100;
@@ -81,10 +83,10 @@ function calculateShippingPrice(perPrice) {
         return false
     }
 }
-function calculateTotalPrice() {
+
+function calculateTotalPrice(perPrice) {
     if (item.value >= 1) {
-        let perPrice = (2500 * item.value);
-            shipCost = Number(shippingCost.innerHTML);
+        let shipCost = Number(shippingCost.innerHTML);
         cost.innerHTML = (perPrice + shipCost);
     } else {
         return false;
@@ -94,9 +96,6 @@ function calculateTotalPrice() {
 function calculate() {
     calculateQuantity();
     calculatePrice();
-    calculateShippingPrice();
-    calculateTotalPrice();
-
 }
 
 item.addEventListener("input", calculate);
