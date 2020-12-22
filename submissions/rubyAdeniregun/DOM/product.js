@@ -28,7 +28,7 @@ let submitForm1 = document.getElementById('verifyForm'),
 submitForm1.addEventListener("submit", verifyForm);
 
 
-//EXAMPLE
+//calculations
 
 let item = document.getElementById("quantityBox")
     button = document.getElementById("buyNow");
@@ -54,6 +54,7 @@ function calculateQuantity() {
 function calculatePrice() {
     if (item.value >= 1) {
         let perPrice = (2500 * item.value)
+        calculateShippingPrice(perPrice)
         price.innerHTML = perPrice
     } else if (item.value === "") {
         price.innerHTML = priceValue
@@ -63,8 +64,7 @@ function calculatePrice() {
         return false
     }
 }
-function calculateShippingPrice() {
-    let perPrice = (2500 * item.value)
+function calculateShippingPrice(perPrice) {
     if (perPrice < 1000) {
         let shippingRange = 100;
         shippingCost.innerHTML = shippingRange;
