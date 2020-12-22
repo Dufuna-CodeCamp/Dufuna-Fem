@@ -6,6 +6,7 @@
 
 body{
     overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .menu {
@@ -18,7 +19,6 @@ body{
 
 .menu > h1{
     color: #fff;
-    font-family: 'Montserrat', sans-serif;
     font-size: 22px;
     line-height: 1.23;
 }
@@ -31,33 +31,31 @@ nav{
 nav li {
     display: inline-block;
     list-style: none;
-    margin-right: 6%;
+    margin-right: 20px;
 }
 
 nav a{
     text-decoration: none;
     color: #fff;
-    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 1.19;
 }
 
 .slidder {
-    margin: 2% 0;
+    margin: 20px 0;
     padding: 0 2rem;
 }
 
 .slidder h2 {
     text-align: center;
     color: #5f5f5f;
-    font-family: 'Montserrat', sans-serif;
     font-size: 25px;
     font-weight: bold;
     line-height: 1.2;
 }
 
 .services {
-    padding: 2% 7%;
+    padding: 25px 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -83,31 +81,28 @@ nav a{
 
 .quantity input{
     width: 20%;
-    padding: 3%;
-    margin-left: 3%;
+    padding: 10px;
+    margin-left: 7px;
     border: none;
     outline: none;
 }
 
 .product-info h3{
-    margin-bottom: 5%;
-    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 16px;
     font-size: 25px;
     font-weight: bold;
     line-height: 1.2;
 }
 
 .product-info .quantity{
-    margin-bottom: 5%;
-    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 16px;
     font-size: 22px;
     font-weight: bold;
     line-height: 1.23;
 }
 
 .product-info p{
-    margin-bottom: 5%;
-    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 16px;
     font-size: 22px;
     font-weight: bold;
     line-height: 1.2;
@@ -115,7 +110,7 @@ nav a{
 
 .product-info button{
     background-color: #f765a3;
-    padding: 7%;
+    padding: 12px;
     border: none;
     outline: none;
     border-radius: 10px;
@@ -123,13 +118,12 @@ nav a{
 }
 
 .prod-details{
-    margin-top: 5%;
+    margin-top: 16px;
     width: 80%;
 }
 
 .prod-details h3{
-    margin-bottom: 3%;
-    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 12px;
     font-size: 22px;
     font-weight: bold;
     line-height: 1.23;
@@ -137,26 +131,24 @@ nav a{
 
 .prod-details p{
     line-height: 1.375rem;
-    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     line-height: 1.25;
 }
 
 .related-items {
-    padding: 2% 0 3%;
+    padding: 14px 0 20px;
     color: #5f5f5f;
 }
 
 .related-items h3{
     text-align: center;
-    margin-bottom: 2%;
-    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 15px;
     font-size: 25px;
     font-weight: bold;
     line-height: 1.2;
 }
 .related-items .items-list{
-    padding: 3%;
+    padding: 16px;
     background-color: #f9e9e5;
     display: flex;
     justify-content: space-around;
@@ -166,7 +158,7 @@ nav a{
 .items{
     width: 25%;
     background-color: #fff;
-    padding: 3%;
+    padding: 30px;
 }
 .items img{
     width: 100%;
@@ -176,9 +168,8 @@ nav a{
 
 .items p{
     margin: auto;
-    margin-top: 2%;
+    margin-top: 15px;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
     font-size: 22px;
     font-weight: bold;
     line-height: 1.23;
@@ -186,13 +177,11 @@ nav a{
     /* footer */
 footer{
     background-color: #f765a3;
-    padding: 2% 3% 2%;
+    padding: 15px 28px 15px;
     color: #fff;
-    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     line-height: 1.22;
 }
-
 
 .footer {
     display: flex;
@@ -211,11 +200,11 @@ footer{
 }
 
 .footer-link li{
-    margin-bottom: 7%;
+    margin-bottom: 12px;
 }
 
 .footer-form [type=email] {
-    margin-top: 7%;
+    margin-top: 14px;
     padding: 0.9rem;
     outline: none;
     border: none;
@@ -223,7 +212,6 @@ footer{
 
 footer ::placeholder{
     color: #f765a3;
-    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 1.19;
 }
@@ -234,14 +222,13 @@ footer ::placeholder{
     outline: none;
     border: none;
     color: #f765a3;
-    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: bold;
     line-height: 1.22;
 }
 
 .media p {
-    margin-bottom: 7%;
+    margin-bottom: 15px;
 }
 
 .social-media {
@@ -256,7 +243,7 @@ footer ::placeholder{
 
 footer > p{
     text-align: center;
-    margin-top: 5%;
+    margin-top: 28px;
 }
 
 @media screen and (max-width: 767px) {
@@ -269,11 +256,11 @@ footer > p{
         margin-bottom: 7%;
     }
     nav li:last-child {
-        margin-bottom: 0%;
+        margin-bottom: 0;
     }
     nav{
-        margin-left: 0rem;
-        margin-top: 5%;
+        margin-left: 0;
+        margin-top: 18px;
     }
     .services {
         flex-direction: column;
@@ -281,14 +268,14 @@ footer > p{
     }
     .product{
         width: 100%;
-        margin-top: 5%;
+        margin-top: 18px;
     }
     .prod1 {
         flex-direction: column;
         align-items: flex-start;
     }
     .product-info{
-        margin-top: 5%;
+        margin-top: 18px;
     }
     .prod-details{
         width: 100%;
@@ -329,7 +316,7 @@ footer > p{
         width: 100%;
     }
     .product:last-child {
-        margin-top: 5%;
+        margin-top: 18px;
     }
     .prod-details{
         width: 90%;

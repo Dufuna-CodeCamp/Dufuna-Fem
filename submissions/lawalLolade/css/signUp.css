@@ -6,6 +6,7 @@
 
 body{
     overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .menu {
@@ -18,7 +19,6 @@ body{
 
 .menu > h1{
     color: #fff;
-    font-family: 'Montserrat', sans-serif;
     font-size: 22px;
     line-height: 1.23;
 }
@@ -31,13 +31,12 @@ nav{
 nav li {
     display: inline-block;
     list-style: none;
-    margin-right: 6%;
+    margin-right: 20px;
 }
 
 nav a{
     text-decoration: none;
     color: #fff;
-    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 1.19;
 }
@@ -60,15 +59,12 @@ nav a{
 .register-intro h3 {
     margin-bottom: 3%;
     color: #f765a3;
-    font-family: 'Montserrat', sans-serif;
     font-size: 50px;
     font-weight: bold;
     line-height: 1.22;
-    /* text-align: left; */
 }
 .register-intro p {
     margin-bottom: 3%;
-    font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     line-height: 1.23;
     text-align: left;
@@ -84,7 +80,6 @@ nav a{
     margin-bottom: 3%;
 }
 .form-content label {
-    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     line-height: 1.23;
 }
@@ -110,7 +105,6 @@ form div:last-child {
 }
 
 .sign-up label {
-    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: bold;
     line-height: 1.22;
@@ -133,9 +127,8 @@ form div:last-child {
    /* footer */
 footer{
     background-color: #f765a3;
-    padding: 2% 3% 2%;
+    padding: 15px 28px 15px;
     color: #fff;
-    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     line-height: 1.22;
 }
@@ -157,18 +150,17 @@ footer{
 }
 
 .footer-link li{
-    margin-bottom: 7%;
+    margin-bottom: 12px;
 }
 
 .footer-email {
-    margin-top: 7%;
+    margin-top: 14px;
     padding: 0.9rem;
     outline: none;
     border: none;
 }
 footer ::placeholder{
     color: #f765a3;
-    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 1.19;
 }
@@ -178,14 +170,13 @@ footer ::placeholder{
     outline: none;
     border: none;
     color: #f765a3;
-    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: bold;
     line-height: 1.22;
 }
 
 .media p {
-    margin-bottom: 7%;
+    margin-bottom: 15px;
 }
 
 .social-media {
@@ -200,7 +191,7 @@ footer ::placeholder{
 
 footer > p{
     text-align: center;
-    margin-top: 5%;
+    margin-top: 28px;
 }
 
 @media screen and (max-width: 767px) {
@@ -213,11 +204,11 @@ footer > p{
         margin-bottom: 7%;
     }
     nav li:last-child {
-        margin-bottom: 0%;
+        margin-bottom: 0;
     }
     nav{
-        margin-left: 0rem;
-        margin-top: 5%;
+        margin-left: 0;
+        margin-top: 18px;
     }
     .container{
         flex-direction: column;
