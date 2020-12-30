@@ -165,12 +165,11 @@ aside .form-details {
     font-weight: bold;
 }
 
-
 /* THE FOOTER */
 
 footer {
     overflow: hidden;
-    background-color: rgb(53, 2, 2);
+    background-color:rgb(53, 2, 2);
     padding: 20px 0 0 50px;
     color: white;
 }
@@ -195,17 +194,17 @@ footer {
 }
 
 .footer-box-2 button[type="submit"] {
-    height: 30px;
+    height: 20px;
     padding: 0 5%;
     font-size: 12px;
-    color: rgb(53, 2, 2);
+    color:rgb(53, 2, 2);
     font-weight: bold;
 }
 
 .footer-box-2 input[type="email"] {
     height: 20px;
     padding: 3px 18px 3px;
-    font-size: 11px;
+    font-size: 15px;
 }
 
 .footer-box-3 h5 {
@@ -219,7 +218,8 @@ footer {
 }
 
 .footer-box-3 ul li img {
-    width: 35px;
+    width: 40px;
+    height: 25px;
 }
 
 footer p {
@@ -245,9 +245,9 @@ footer p {
 }
 
 @media screen and (max-width: 809px) {
-    header #navbranding,
+    header #nav-branding,
     header nav,
-    header .navbar nav li {
+    header .nav-container nav li {
         float: none;
         text-align: center;
         padding: 0 3%;
@@ -291,5 +291,4 @@ footer p {
     }
     .footer-box-3 ul li {
         display: inline;
-    }
 }
