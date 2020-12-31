@@ -1,0 +1,91 @@
+$tablet: 768px; //md
+$phone: 480px; //sm
+
+body{
+    background-color:white;
+    border:rgb(138, 184, 69) solid 2px;
+}
+#nav{
+    background-color: rgb(138, 184, 69);
+    position: static
+}
+a {
+    text-decoration-line: none;
+    background-color: rgb(138, 184, 69);
+    color:white;
+}
+#nav li{
+    list-style: none; 
+    float:right;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 20px;
+}
+.logo {
+    padding:2px;
+}
+.reg {
+    color:rgb(138, 184, 69); 
+}
+#register {
+    float:left;
+    width: 30%;
+    margin-top: 100px;
+    padding:10px;
+}
+#allform {
+    float:right;
+    width: 50%;
+    border:rgb(138, 184, 69) solid 2px;
+    margin:30px;
+    border-radius:2%;
+    padding: 20px;   
+}
+ .active {
+     font-weight: bold;
+     color:rgb(3, 73, 3)
+ }
+#clr {
+    clear:both;
+}
+input {
+    width:90%
+}
+.agree {
+    width: auto;
+}
+.sign {
+    background-color:rgb(138, 184, 69); color: white;
+}
+#clr
+{
+    background-color:rgb(138, 184, 69);
+}
+#con li{ 
+    list-style: none;
+}
+.email { width:auto}
+#newsletter {text-align: center;
+}
+a:hover {
+    color:black;
+    font-weight: bolder;
+}
+#con {
+    float:left;
+    width:20%;
+    padding:10px
+}
+#newsletter {
+            float:left;
+            width: 50%;
+            padding-top:30px;
+}
+.connect {
+    padding-top:30px;
+    padding-right: 10px;
+}
+.copy {
+    text-align: center;
+}
+
