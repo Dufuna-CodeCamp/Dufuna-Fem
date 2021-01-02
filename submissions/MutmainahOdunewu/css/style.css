@@ -1,0 +1,345 @@
+*{
+    padding: 0;
+    margin: 0;
+  
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+.container {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.nav-bar{
+  background-color: #55c57a;
+  color:white;
+  
+  font-size: 16px;
+  display:flex;
+  justify-content: space-between;
+  padding: 14px 60px;
+  text-align: center;
+  }
+  .look li{
+    display:inline-block;
+    margin-left: 10px;
+    }
+    
+    .look li a{
+    color:white;
+    text-decoration:none;
+    }
+  
+  .goods {
+      display: flex;
+      font-family: 'Montserrat', sans-serif;;
+      font-size: medium;
+      font-weight: bolder;
+      text-transform: capitalize;
+      line-height: 0.5;
+  }
+  
+  .goods-set {
+      padding-top: 40px;
+      margin-left: 35px;
+      line-height: 1;
+  }
+  .product1 {
+    width: 423px;
+    height: 30px;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #5f5f5f;
+}
+
+.brand1 {
+    width: 195px;
+    height: 27px;
+    margin: 17px 682px 10px 0px;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: normal;
+    text-align: left;
+    color: #5f5f5f;
+}
+.word1 {
+  width: 107px;
+  height: 27px;
+  margin: 17px 12px 17px 0px;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5f5f5f; 
+}
+
+#quantity {
+  width: 96px;
+  height: 27px;
+  margin: 4px 200px 4px 0px;
+  padding: 11px 64px 12px 22px;
+  border: solid 1px #707070;
+  background-color: #ffffff;
+}
+
+.price1 {
+  width: 250px;
+  height: 27px;
+  margin: 17px 12px 17px 0px;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5f5f5f;
+}
+#buy1 {
+    
+  width: 174px;
+  height: 64px;
+  margin: 5px 703px 21px 0px;
+  padding: 19px 25px 18px 33px;
+  border-radius: 20px;
+  background-color: #f79521;
+}
+
+.buy2 {
+  width: 80x;
+  height: 27px;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.description {
+  width: 159px;
+  height: 27px;
+  margin: 5px 346px 8px 58px;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5f5f5f;
+}
+.actual {
+  width: 1305px;
+  height: 49px;
+  margin: 8px 78px 28px 57px;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5f5f5f;
+}
+.related-products {
+  background-color: #ebebeb;
+  padding: 30px 20px;
+}
+.related-products h4{
+  margin: 0 auto;
+  text-align: center;
+}
+.similar{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin-top:50px;
+}
+.similar .card img {
+  padding-top:30px;
+  width:200px;
+  height:200px;
+}
+.card{
+height:320px;
+background-color:white;
+border:2px solid white;
+text-align:center;
+margin-left: 0 20px;
+}
+
+#email{
+  color:#55c57a;
+  height:40px;
+  padding: 0 50px;
+  margin-bottom:5px;
+}
+footer{
+  padding-top:10px;
+  padding-bottom: 20px;
+  color:white;
+  background-color:#55c57a;
+  margin-top: 80px;
+}
+footer .info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  align-items: center;
+}
+footer .info div:not(:first-child) {
+  text-align: center;
+}
+
+.foot{
+height:140px;
+}
+#socials {
+  padding: 0;
+}
+#socials li {
+  display: inline-block;
+}
+#quick-links li {
+  margin-bottom: 10px;
+}
+#quick-links li a{
+  color: white;
+  text-decoration:none;
+  }
+  .foot ul li a img{
+  margin-left:5px;
+  }
+  footer #copyright {
+    text-align: center;
+    margin: 0;
+  }
+  
+  .styling{
+    height:40px;
+    columns: #55c57a;
+    width:70px;
+    background-color:white;
+  }
+  
+  #mail{
+    color:#55c57a;
+    width:250px;
+    height:40px;
+    margin-bottom:5px;
+  }
+  .foot{
+  height:140px;
+  }
+  #socials {
+    padding: 0;
+  }
+  #socials li {
+    display: inline-block;
+  }
+  #quick-links  {
+    padding-left: 0;
+  }
+  #quick-links li {
+    margin-bottom: 10px;
+  }
+  #quick-links li a{
+  color: #fff;
+  text-decoration:none;
+  }
+  .foot ul li a img{
+  margin-left:5px;
+  }
+  footer #copyright {
+    text-align: center;
+    margin: 0;
+  }
+  @media (max-width: 992px) {
+    .similar{
+      grid-template-columns: 1fr 1fr;
+    }
+    .related-products {
+      padding-bottom: 30px;
+    }
+    footer .info div:nth-child(1) {
+      grid-area: foot1;
+    }
+    footer .info div:nth-child(2) {
+      grid-area: foot2;
+    }
+    footer .info div:nth-child(3) {
+      grid-area: foot3;
+    }
+    footer .info {
+      display: grid;
+      grid-template-areas: "foot1 foot2"
+                           ".     foot3";
+    }
+    footer .info div:not(:first-child) {
+      text-align: inherit;
+    }
+    #email {
+      padding: 0 30px;
+    }
+  }
+  @media (max-width: 480px) {
+    .nav-bar {
+      display: block;
+      height: 100px;
+      padding: 12px 10px;
+    }
+    .nav-bar h2{
+      margin: 0;
+    }
+    .look {
+      padding: 0;
+      margin-top: 10px;
+    }
+    .nav-bar ul li {
+      display: block;
+      margin: 0;
+    }
+    .similar {
+      grid-template-columns: 1fr;
+    }
+    #email {
+      padding: 0 30px;
+    }
+    footer .info {
+      display: block;
+      padding: 0 20px;
+    }
+    .foot {
+      height: auto;
+    }
+    #quick-links {
+      padding: 0;
+    }
+  }
+  
+
