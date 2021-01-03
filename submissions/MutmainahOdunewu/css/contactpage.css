@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+  
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+.container {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.nav-bar{
+  background-color: #55c57a;
+  color:white;
+  
+  font-size: 16px;
+  display:flex;
+  justify-content: space-between;
+  padding: 14px 60px;
+  text-align: center;
+  }
+  .look li{
+    display:inline-block;
+    margin-left: 10px;
+    }
+    
+    .look li a{
+    color:white;
+    text-decoration:none;
+    }

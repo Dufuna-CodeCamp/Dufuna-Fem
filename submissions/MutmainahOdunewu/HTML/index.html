@@ -10,7 +10,7 @@
 </head>
 <body>
     <nav class="nav-bar">
-        <h2><i>SandalsbyMo</i></h2>
+        <h2 style="margin-left:2px"><i>SandalsbyMo</i></h2>
         <ul class="look">
             <li><a href="./index.html"></a>Product Page</a></li>
             <li><a href="../html-forms/contact.html">Contact Us</a></li>
@@ -19,24 +19,31 @@
      </nav>
      
      <!-- product -->
-    <section>
-        <section class="goods">
-            <img src="images/Brooks.jpg" alt="shoes">
-            <div class="goods-set">
-                <h2 class="product1">BROOKS</h2><span class="brand1">Brand:H&M</span><br><br>
-                    <label for="quantity" class="word1">Quantity:</label>
-                    <input type="text" name="quantity" id="quantity" value="1"/>
-                <p class="price1"><span>Price: &#x20A6;20,000</span></p>
-                <button type="submit" id="buy1"><span class="buy2">BUY NOW</span></button>
+       <div class="main">
+        <section class="container">
+            <div class="product">
+                <img src="images/Brooks.jpg">
             </div>
+            <div class="product" style="margin-left:20px; padding-top:20px">
+                <h2>BROOKS</h2>
+                <h4>Brand:H&M</h4>
+                <form>
+                     <label for="number">Quantity:</label>
+                     <input type="text" name="number" id="number" value="2"style ="height:30px;width:60px"/>
+                </form>
+                <h3>Price:<strong>#30,000</strong></h3>
+                <button type="submit">BUY NOW</button>
+           </div>
         </section>
-        <section>
-            <h3 class="description">DESCRIPTION</h3>
-            <p class="actual">This is a shoe you can put on all day for cooperate meetings and outings.
-                This H&M designed Brooks guarantees maximum comfort for whoever wears.
-                The strength of material assures that it is long lasting from the moment
-                it goes off the shelf.</p>
-        </section>
+  <!---Code for description-->
+      <div class="description">
+         <h3>DESCRIPTION</h3>
+         <p> This is a shoe you can put on all day for cooperate meetings and outings.
+            This H&M designed Brooks guarantees maximum comfort for whoever wears.
+            The strength of material assures that it is long lasting from the moment
+            it goes off the shelf.
+         </p>
+      </div>
 
         <!-- similar product -->
         <section class="related-products">
@@ -59,6 +66,7 @@
             </div>
            </div>
        </section>
+    </div>
        <footer>
         <div class="info">
             <div class="foot">
