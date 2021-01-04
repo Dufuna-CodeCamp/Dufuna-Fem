@@ -7,6 +7,7 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+
 ul {
   list-style-type: none;
 }
@@ -23,13 +24,16 @@ ul {
   justify-content: space-between;
   padding: 14px 60px;
   }
+  .nav-bar h2{
+    margin-left:2px;
+  }
   
-  .look li{
+  .bar li{
   display:inline-block;
   margin-left: 10px;
   }
   
-  .look li a{
+  .bar li a{
   color:white;
   text-decoration:none;
   }
@@ -38,6 +42,8 @@ ul {
   color: #5f5f5f;
   float:left;
   margin-left:5px;
+  margin-left:20px; 
+  padding-top:20px;
   }
   .product img {
     width:300px;
@@ -89,6 +95,11 @@ margin-left: 0 20px;
   padding: 0 50px;
   margin-bottom:5px;
 }
+.input{
+  height:30px;
+  width:60px;
+}
+
 footer{
   padding-top:10px;
   padding-bottom: 20px;
@@ -151,6 +162,11 @@ height:140px;
   }
   #socials li {
     display: inline-block;
+   
+  }
+  #socials img {
+    width: 30px;
+    height: 30px;
   }
   #quick-links  {
     padding-left: 0;
@@ -206,7 +222,7 @@ height:140px;
     .nav-bar h2{
       margin: 0;
     }
-    .look {
+    .bar {
       padding: 0;
       margin-top: 10px;
     }
