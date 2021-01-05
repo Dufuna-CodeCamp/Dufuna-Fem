@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+}
+
+input {
+    margin: 50px;
+    padding: 10px;
+}
+
+/* navbar styling */
+nav a [href*='/'] {
+    font-size: 25px;
+    font-weight: bold;
+    color: plum;
+}
+
+nav {
+    padding: 10px;
+    background-color: brown;
+    color: plum; 
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 5px;
+}
+
+nav li {
+    float: right;
+    padding: 8px;
+}
+
+.header1 {
+    font-size: 35px;
+}
+/* End of navbar styling */
+
+
+
+/* unvisited link */
+a:link {
+   text-decoration: none;
+   color: plum;
+}
+/* visited link */
+a:visited {
+    text-decoration: none;
+    color: plum;
+}
+/* when mouse is on link */
+a:hover {
+    text-decoration: underline;
+    color: hotpink;
+}
+/* selected link */
+a:active {
+    text-decoration: underline;
+    color: burlywood;
+}
+
+
+
+/* body styling */
+body {
+    margin: 25px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    background-color: wheat;
+    color: black;
+    padding-bottom: 0;
+}
+
+h2,
+h3,
+h4 {
+    font-size: 18px;
+}
+
+img.SHMPOO {
+    height: 250px;
+    width: 350px;
+    float: left;
+    border-style: hidden;
+    margin: inherit;
+    padding: 0;
+}
+
+.Specs {
+    display: inherit;
+    padding-top: 10px;
+    padding-bottom: 0%;
+    margin: inherit;
+}
+
+.Specs::first-line {
+    font-size: 15px;
+}
+
+.QTY {
+    margin: 0 0 5px 0;
+}
+#Quantity {
+    width: 5%;
+    margin-left: 5px;
+}
+
+.PRCE {
+    margin: 8px 0 0 0;
+}
+
+.desc {
+    padding-top: 30px;
+}
+
+.btn {
+    background-color: brown;
+    color: plum;
+    text-align: center;
+    border: 2px solid bisque;
+    padding: 5px 7px;
+    text-decoration: none;
+}
+
+h4 {
+    text-align: center;
+}
+
+img.SOIL {
+    height: 300px;
+    width: 300px;
+    border: 20px solid #ffffff;
+}
+
+img.VMOSE {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    border: 20px solid #ffffff;
+    display: inline-block;
+    left: 600px;
+    bottom: 380px;
+    text-align: inherit;
+}
+
+.VM {
+    position: relative;
+    left: 600px;
+    bottom: 380px;
+    text-align: center;
+}
+
+.products ul {
+    list-style-type: none;
+    display: inline;
+}
+.products {
+    padding-top: 0%;
+}
+/* End of body styling */
+
+
+/* Footer styling */
+footer {
+    padding: 2px;
+    background-color: brown;
+    color: plum; 
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+img.FBK {
+    height: 50px;
+    width: 50px;
+}
+img.TWTR {
+    height: 50px;
+    width: 50px;
+}
+img.GML {
+    height: 50px;
+    width: 50px;
+}
+img.YTUB {
+    height: 50px;
+    width: 50px;
+}
+
+.email {
+    text-align: center;
+}
+
+.sites {
+    text-align: right;
+}
+
+.copyright {
+    text-align: center;
+}
