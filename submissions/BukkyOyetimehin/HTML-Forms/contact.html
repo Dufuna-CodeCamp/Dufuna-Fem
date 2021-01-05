@@ -1,31 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form in HTML</title>            
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">             
+	<title>Contact Us | Fashi</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/contact.css">
 </head>
-<body>	
-	<nav>
-		<ul>
-			<li><a href="../html/product.html">Product</a></li>
-			<li><a href="contact.html">Contact Us</a></li>
-	</nav>  	
-	<hr>			
-	<form action="#" method="post" enc="multipart/form-data">
-		<fieldset>
-			<legend><strong>Contact Us</strong></legend> 
-			<p><h6>*required fields</h6><p> 
-		    <label for="yourfullname">Your Full Name*:</label> <br>
-		    <input type="text" name="yourfullname" id="yourfullname" placeholder="your full name.."> <br><br>
-		    <label for="email">Email Address*: </label> <br>
-		    <input type="email" name="email" id="email" placeholder="your email address.."> <br><br>
-		    <label for="subject">Subject*:</label> <br>
-		    <input type="text" name="subject" id="subject"> <br><br>		    	
-		    <label for="comments">Message:</label> <br>
-		    <textarea name="comments" id="comments" cols="40" rows="10" placeholder="Write something.."></textarea> <br>
-		    <input type="submit" value="Submit" name="submit">
-		</fieldset>
-    </form>
+<body>
+		<div class="navbar">
+			<img src="images/logo.png" class="logo" alt="navigation-logo">
+			<div class="navbar-link"> 
+				<a href="../html/product.html">Product page</a>
+				<a href="contact.html">Contact Us</a>
+				<a href="../html-forms/cta.html">Sign Up</a>
+			</div>
+		</div>
+	<!-- form-main-body-->
+		<section id="name-parent">
+			<div class="column-one">
+				<img src="images/phone-call.svg">
+				<h2>Please contact us via these numbers:</h2>
+				<p>+123 803 303 0000 <br> +123 816 710 6842</p>
+				<img src="images/email.svg">
+				<h2>Email Address:</h2>
+				<p>support@domain.com</p>
+				<h2>Or Connect with us:</h2>
+				<a href="facebook.com"><img src="images/facebook logo.png" alt="fb-logo"></a>
+				<a href="twitter.com"><img src="images/twitter logo.png" alt="twitter-logo"></a>
+				<a href="gmail.com"><img src="images/gmail logo.png" alt="gmail-logo"> </a>
+				<a href="youtube.com"><img src="images/youtube logo.png" alt="youtube-logo"></a>
+			</div>		
+			<!--Form Contact -->		
+			<div class="column-two">
+				<form action="">
+				    <div class="message">
+					    <img src="images/envelope.svg">								
+					    <h2>Or better still send us a message</h2>
+				    </div>			
+					<input type="text" name="fullname" placeholder="Full Name"><br> 
+					<input type="email" name="email" placeholder="Email Address"><br> 
+					<input type="text" name="subject" placeholder="Subject"> <br><br>
+					<label for="message">Message</label> <br>		
+					<textarea cols="58" rows="5" name="address"></textarea> 
+			    	<button type="button">SEND</button>	
+			    </form>	
+			</div>
+		</section>
+	<!-- footer -->
+	<div class="main-footer">
+		<div class="first-column">
+			<ul>
+				<li><a href="#">Contact Us</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Terms and Condition</a></li>
+			</ul>			
+		</div>
+		<div class="second-column">
+			<h3>Sign up for our Newsletter</h3>
+			<input type="email"  placeholder="Enter your email address" id="footer-signup">
+			<input type="submit" value="SUBMIT" id="footer-signup-btn">			
+		</div>
+		<div class="third-column">
+			<h3>CONNECT WITH US</h3>
+			<a href="facebook.com"><img src="images/facebook logo.png"> </a>
+			<a href="twitter.com"><img src="images/twitter logo.png"> </a>
+			<a href="gmail.com"><img src="images/gmail logo.png"> </a>
+			<a href="youtube.com"><img src="images/youtube logo.png"> </a>
+		</div>
+		<p>Copyright 2020 Fashi.com. All rights reserved</p>
+	</div>
 </body>
 </html>
+
