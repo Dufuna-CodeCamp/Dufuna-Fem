@@ -253,7 +253,7 @@ footer > p{
     }
     nav li {
         display: block;
-        margin-bottom: 7%;
+        margin-bottom: 15px;
     }
     nav li:last-child {
         margin-bottom: 0;
@@ -281,14 +281,14 @@ footer > p{
         width: 100%;
     }
     .related-items .items-list{
-        padding: 10%;
+        padding: 15px;
         flex-direction: column;
         align-items: flex-start;
     }
     .items{
         width: 100%;
-        padding: 10%;
-        margin-top: 10%;
+        padding: 20px;
+        margin-top: 20px;
     }
     .footer {
         flex-direction: column;
@@ -296,11 +296,11 @@ footer > p{
         align-items: flex-start;
     }
     .footer > div {
-        margin-bottom: 8%;
+        margin-bottom: 12px;
     }
     .footer-form [type=email]{
         width: 50%;
-        margin-right: 3%;
+        margin-right: 15px;
     }
 }
 
@@ -326,17 +326,17 @@ footer > p{
     }
     .items{
         width: 40%;
-        margin-bottom: 4%;
+        margin-bottom: 10px;
     }
     .footer {
         flex-wrap: wrap;
     }
     .footer > div {
         width: 40%;
-        margin-bottom: 8%;
+        margin-bottom: 18px;
     }
     .footer-form [type=email]{
         width: 50%;
-        margin-right: 3%;
+        margin-right: 10px;
     }
 }
