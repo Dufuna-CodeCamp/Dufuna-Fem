@@ -1,0 +1,177 @@
+body{
+    background-color:white;
+    border:rgb(138, 184, 69) solid 2px;
+}
+#nav{
+    background-color: rgb(138, 184, 69);
+    position: static
+}
+a {
+    text-decoration-line: none;
+    background-color: rgb(138, 184, 69);
+    color:white;
+}
+#nav li{
+    list-style: none; 
+    float:right;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 20px;
+
+}
+.logo {
+    padding:2px;
+}
+.reg {
+    color:rgb(138, 184, 69); 
+}
+#register {
+    float:left;
+    width: 30%;
+    margin-top: 100px;
+    padding:10px;
+}
+#allform {
+    float:right;
+    width: 50%;
+    border:rgb(138, 184, 69) solid 2px;
+    margin:30px;
+    border-radius:2%;
+    padding: 20px;   
+}
+ .active {
+     font-weight: bold;
+     color:rgb(3, 73, 3)
+ }
+#clear {
+    clear:both;
+}
+input {
+    width:90%
+}
+.agree {
+    width: auto;
+}
+.sign {
+    background-color:rgb(138, 184, 69); color: white;
+}
+#clear
+{
+    background-color:rgb(138, 184, 69);
+}
+#contact li{ 
+    list-style: none;
+}
+.email { width:auto}
+#newsletter {text-align: center;
+}
+a:hover {
+    color:black;
+    font-weight: bolder;
+}
+#contact {
+    float:left;
+    width:20%;
+    padding:10px
+}
+#newsletter {
+            float:left;
+            width: 50%;
+            padding-top:30px;
+}
+.connect {
+    padding-top:30px;
+    padding-right: 10px;
+}
+.copy {
+    text-align: center;
+}
+@media screen and (min-width: 480px) {
+#nav li{
+    list-style:block; 
+    float:none;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 20px;   
+    }
+    #register {
+        float:none;
+        width: auto;
+        margin-top: 100px;
+        padding:10px;
+        text-align: center;
+    } 
+    #allform {
+        float:none;
+        width: auto;
+        border:rgb(138, 184, 69) solid 2px;
+        margin:30px;
+        border-radius:2%;
+        padding: 20px;   
+    }
+    #contact {
+        float:none;
+        width:auto;
+        padding-left:30px
+    }
+    #newsletter {
+                float:none;
+                width: auto;
+                padding-top:30px;
+                padding-left:30px;
+    }
+    .email { width:50%;
+            margin-left:30px}
+
+    .connect {
+        padding-top:10px;
+        padding-right: 10px;
+        padding-left:30px;
+    }
+    .copy {
+        text-align: center;}
+    .social {
+        padding-left:30px
+    }
+    .rights{
+        text-align: center;
+    }
+}
+@media screen and (min-width: 768px) {
+    #nav li{
+        list-style:none; 
+        float:right;
+        padding-top: 40px;
+        padding-left: 40px;
+        padding-right: 20px;   
+        }
+        #contact {
+            float:left;
+            width:20%;
+            padding:10px
+        }
+    .email { 
+        width:auto;
+        padding-top: 0px;
+    }
+      
+    .social{
+        padding-left:0px;
+    }
+    .rights{
+        display: inline;
+    }
+    .copy {
+        display: inline;
+        text-align: center;
+    }
+    .connect{
+        padding-left: 230px;
+    }
+    .social {
+        padding-left: 230px;
+    }
+}
+
+
+
