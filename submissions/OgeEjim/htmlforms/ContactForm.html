@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset= "UTF-8">
+   <title>Enquires</title>
+</head>
+<body style="background-color: lavenderblush;">
+    <div>
+        <a href="productpageforcinnamoncakes.html">Product Page</a>
+        <a href="ContactForm.html">Contact Form</a>
+    </div>
+    <form action="#" method="POST" enctype="application/x-www-form-urlencoded" style="width: 500px;margin: 0 auto; background-color:indianred">
+        <fieldset>
+          <legend>CONTACT FORM</legend>
+        <label for="fullname">Fullname &nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" name="fullname" id="fullname"/> <br> <br>
+        <label for="email">Email  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="email" name="email" id="email"/> <br>
+        <p>
+            <label for="subject">Subject &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</label>
+            <select name="Subject" id="subject"><br>
+               <option value="cakeorder">Cake Order</option>
+               <option value="Complaints">Complaints</option>
+               <option value="other">others</option> 
+            </select>  
+        </p>
+             <label>Message &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</label>
+             <textarea name="comments" id="comments" cols="60" rows="6"></textarea> <br><br>
+             <button onclick="alert('Thank You for contacting us! We will be in touch shortly')">Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>
