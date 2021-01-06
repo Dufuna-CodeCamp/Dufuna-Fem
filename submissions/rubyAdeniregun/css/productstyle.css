@@ -1,0 +1,374 @@
+body {
+    margin: 0px;
+    font-family: 'Encode Sans', sans-serif;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding-top: 10px;
+    margin-top: 5px;
+}
+
+.styling {
+    border-radius: 0px;
+    color: rgb(100,121,8);
+    width: 70px;
+    background-color: white;
+    text-transform: uppercase;
+}
+
+.nav-bar {
+    background-color: rgb(100,121,8);
+    color: white;
+    height: 80px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 60px;
+}
+
+.look li {
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+}
+
+
+.main-image { 
+    max-width: 30rem;
+}
+
+#buyNow {
+    font-size: 20px;
+    border-radius: 12px;
+    padding: 10px;
+    color: white;
+    background-color: rgb(100, 121, 8);
+    border: none;
+}
+
+label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#quantityBox{
+    font-size: 20px;
+    font-weight: bold;
+    width: 60px;
+    margin-bottom: 10px;
+    display: inline;
+}
+
+.error-block {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+
+.container {
+    display: flex;
+    flex-direction: row; 
+    padding: 10px;
+    padding-top: 40px;
+    margin-left: 40px;
+    gap: 20px;
+}
+
+#productname, #productbrand {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+  
+#price, #shippingCost, #totalCost {
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.pricing {
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.pricing1{
+    margin-bottom: 10px;
+}
+
+.column3 {
+    text-align: left;
+    padding: 45px;
+    padding-top: 5px;
+    margin-top: 5px;
+    padding-bottom: 30px;
+}
+
+#header2 {
+    text-align: center;
+}
+
+.column4 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    gap: 100px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.relatedimage {
+    max-width: 22rem;
+    margin: 12%;
+}
+
+.related1, .related2, .related3 {
+    position: relative;
+}
+  
+.text1, .text2, .text3 {
+    position: absolute;
+    bottom: 5px;
+    color: white;
+    left: 10px;
+    text-align: center;
+    margin: 10%;
+    margin-left: 90px;
+    font-size: 16px;
+    font-weight: bold;
+    outline-color: black;
+}
+
+footer {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: white;
+    background-color: rgb(100, 121, 8);
+}
+
+footer .info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    align-items: center;
+    width: 100%;
+}
+
+.info .foot1 {
+    width: 30%;
+}
+
+.info .foot2 {
+    width: 40%;
+}
+
+.info .foot3 {
+    width: 30%;
+}
+
+#footerEmail {
+    color: rgb(100,121,8);
+    height: 40px;
+    padding: 0 50px;
+    margin-bottom: 5px;
+}
+
+footer .info div:not(:first-child) {
+    text-align: left;
+}
+
+.foot1, .foot2, .foot3 {
+    height: 140px
+}
+
+.socials {
+    padding: 0px;
+}
+
+.socials li {
+    display: inline-block;
+}
+
+#quick-links li {
+    margin-bottom: 10px;
+}
+
+#quick-links li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.foot1 ul li a img {
+    margin-left: 10px;
+}
+
+footer #copyright {
+    text-align: center;
+    margin: 0;
+}
+
+.field5 {
+    display: inline-block;
+    position: relative;
+}
+
+.error-block1 {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    color: red;
+}
+
+.styling {
+    height: 40px;
+    color: rgb(100,121,8);
+    width: 70px;
+    background-color: white;
+    border: none;
+    position: absolute;
+    margin-left: 10px;
+}
+
+.logo-img {
+    display: block;
+    height: 30px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .column4 {
+        justify-content: center;
+    }
+
+    .nav-bar {
+        display: block;
+        height: 130px;
+        padding: 12px 10px;
+    }
+
+    .nav-bar h2 {
+        margin: 0;
+    }
+
+    .look {
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    .nav-bar ul li {
+        display: block;
+        margin: 0;
+    }
+
+    footer .info div:not(:first-child) {
+        text-align: inherit;
+    }
+
+    footer .info div {
+        margin-left: 0px;
+    }
+
+    footer #copyright {
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    #footerEmail {
+        color: rgb(100,121,8);
+        height: 40px;
+        padding: 0 10px;
+        margin-bottom: 5px;
+        width: 180px;
+        padding-left: 0px;
+    }
+
+
+    .styling {
+        height: 40px;
+        color: rgb(100,121,8);
+        width: 70px;
+        background-color: white;
+        border: none;
+    }
+
+    footer .info {
+        flex-direction: column;
+        align-items: left;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .info .foot1 {
+        width: 100%;
+    }
+    
+    .info .foot2 {
+        width: 100%;
+        margin-left: 0px;
+    }
+    
+    .info .foot3 {
+        width: 100%;
+    }
+
+    .foot {
+        height: auto;
+    }
+
+    #quick-links {
+        padding: 0;
+    }
+
+    ul li a {
+        margin-left: 0;
+    }
+
+    ul .socials {
+        padding: 0px;
+    }
+
+}
+
+/* Tablet View */
+@media screen and (min-width: 700px) {
+    .nav-bar {
+        height: 50px;
+    }
+
+    #foot-email {
+        color: rgb(100,121,8);
+        height: 40px;
+        padding: 0 10px;
+        margin-bottom: 5px;
+    }
+
+    .styling {
+        height: 40px;
+        color: rgb(100,121,8);
+        width: 70px;
+        background-color: white;
+        border: none;
+    }
+
+    #copyright {
+        margin-top: 150px;  
+    }
+}
