@@ -3,8 +3,8 @@
 }
 
 input {
-    margin: 50px;
     padding: 10px;
+    margin: 50px;
 }
 
 /* navbar styling */
@@ -17,7 +17,8 @@ nav a [href*='/'] {
 nav {
     padding: 10px;
     background-color: brown;
-    color: plum; 
+    color: plum;
+    margin: 0px;
 }
 
 nav ul {
@@ -62,13 +63,12 @@ a:active {
 
 /* body styling */
 body {
-    margin: 25px;
+    margin: 20px;
     font-family: 'Lato', sans-serif;
     font-size: 15px;
     line-height: 1.5;
     background-color: wheat;
     color: black;
-    padding-bottom: 0;
 }
 
 h2,
@@ -129,25 +129,46 @@ h4 {
 img.SOIL {
     height: 300px;
     width: 300px;
-    border: 20px solid #ffffff;
+    border: 70px solid brown;
 }
 
 img.VMOSE {
     height: 300px;
     width: 300px;
     position: relative;
-    border: 20px solid #ffffff;
+    border: 70px solid brown;
     display: inline-block;
-    left: 600px;
+    left: 700px;
     bottom: 380px;
     text-align: inherit;
 }
 
+img.GEL {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    border: 70px solid brown;
+    display: inline-block;
+    bottom: 760px;
+    left: 350px;
+}
+
+.SL {
+    position: relative;
+    bottom: 80px;
+    left: 40px;
+}
+
 .VM {
     position: relative;
-    left: 600px;
-    bottom: 380px;
-    text-align: center;
+    left: 740px;
+    bottom: 460px;
+}
+
+.EG {
+    position: relative;
+    bottom: 840px;
+    left: 420px;
 }
 
 .products ul {
@@ -165,20 +186,23 @@ footer {
     padding: 2px;
     background-color: brown;
     color: plum; 
+    margin: 0px;
 }
 
 footer ul {
     list-style-type: none;
-    padding: 0;
+    padding: 10px;
 }
 
 img.FBK {
     height: 50px;
     width: 50px;
+    padding: 10px;
 }
 img.TWTR {
     height: 50px;
     width: 50px;
+    padding: 10px;
 }
 img.GML {
     height: 50px;
@@ -187,16 +211,24 @@ img.GML {
 img.YTUB {
     height: 50px;
     width: 50px;
+    padding: 10px;
 }
 
 .email {
     text-align: center;
+    position: relative;
+    bottom: 100px;
 }
 
 .sites {
     text-align: right;
+    position: relative;
+    bottom: 280px;
 }
 
 .copyright {
     text-align: center;
+    position: relative;
+    bottom: 200px;
 }
+/* End of Footer Styling */
