@@ -3,60 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
     <title>SandalsbyMo</title>
 </head>
 <body>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="./index.html">product</a>
-        <a href="../html-forms/contact.html">contact</a>
-    </nav>
-    
-    <h1>SandalsbyMo</h1>
-    <nav>
-        <ul>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Cart</a></li>
-        </ul>
-    </nav>
-     <!-- Product section --> 
-    <section>
-        <div>
-            <img src="images/Brooks.jpg" alt="shoe"> <br>
-            <span><b>Brooks</span> </b><br>
-            <span>₦15,000</span> <br>
-            <span>For Corporate outift</span>
-        </div>
-        <div>
-            <img src="images/Boots.jpg" alt="shoe"> <br>
-            <span><b>BOOT</b></span> <br>
-            <span>₦10,000</span> <br>
-            <span>Shoes suitable for all occations</span>
-        </div>
-    </section>
-    <!-- Similar Products -->
-    <section>
-        <div>
-            <p><b>Similar Product you may like</b></p>
-            <ol>
-                <li><a href="#">Sneakers</a></li>
-                <li><a href="#">sandals</a></li>
-                <li><a href="#">Half shoe</a></li>
-            </ol>
-        </div>
-    </section>
-</main>
-<footer>
-    <ul>
-        <li><a href="https://www.Instagram.com">Instagram</a></li>
-        <li><a href="https://www.Facebook.com">Facebook</a></li>
-        <li><a href="https://www.Twitter.com">Twitter</a></li>
-    </ul>
-    <hr>
-    <p>&copy; 2020 by Mutmainah odunewu</p>
-</footer>
+    <nav class="nav-bar">
+        <h2 ><i>SandalsbyMo</i></h2>
+        <ul class="bar">
+            <li><a href="./index.html"></a>Product Page</a></li>
+            <li><a href="../html-forms/contact.html">Contact Us</a></li>
+            <li><a href="#">Sign-up</a></li>
+       </ul>
+     </nav>
+     
+     <!-- product -->
+       <div class="main">
+        <section class="container">
+            <div class="product">
+                <img src="images/Brooks.jpg">
+            </div>
+            <div class="product">
+                <h2>BROOKS</h2>
+                <h4>Brand:H&M</h4>
+                <form>
+                     <label for="number">Quantity:</label>
+                     <input type="text" name="number" id="number" value="2"/>
+                </form>
+                <h3>Price:<strong>#30,000</strong></h3>
+                <button type="submit">BUY NOW</button>
+           </div>
+        </section>
+  <!---Code for description-->
+      <div class="description">
+         <h3>DESCRIPTION</h3>
+         <p> This is a shoe you can put on all day for cooperate meetings and outings.
+            This H&M designed Brooks guarantees maximum comfort for whoever wears.
+            The strength of material assures that it is long lasting from the moment
+            it goes off the shelf.
+         </p>
+      </div>
+
+        <!-- similar product -->
+        <section class="related-products">
+            <h4> RELATED PRODUCTS</h4>
+            <div class="similar">
+            <div class="card">
+                <img src="images/Boots.jpg">
+                <p>Boots</p>
+                <p>Price:#20000</P>
+            </div>
+            <div class="card">
+              <img src="images/sneakers.jpeg">
+              <p>Sneakers</p>
+              <p>Price:#15000</P>
+            </div>
+            <div class="card">
+              <img src="images/Halfshoe.jpg">
+              <p>Halfshoe</p>
+              <p>Price:#10000</P>
+            </div>
+           </div>
+       </section>
+    </div>
+       <footer>
+        <div class="info">
+            <div class="foot">
+              <ul id="quick-links">
+                 <li><a href="#">About Us</a></li>
+                 <li><a href="#">Contact Us</a></li>
+                 <li><a href="#">Terms and Conditions</a></li>
+             </ul>
+           </div>
+           <div class="foot">
+               <p>Sign up for our Newsletters</p>
+               <form>
+                  <input type="email" name="email" id="email" placeholder="Enter your email address"/>
+                  <button type="submit" class="styling">Submit</button>
+               </form>
+          </div>
+          <div class="foot">
+               <p>CONNECT WITH US</p>
+               <ul id="socials">
+                  <li><a href="#"><img src="./images/facebooklogo.png"></a></li>
+                  <li><a href="#"><img src="./images/twitterlogo.png"></a></li>
+                  <li><a href="#"><img src="./images/gmaillogo.png" ></a></li>
+                  <li><a href="#"><img src="./images/youtubelogo.png"></a></li>
+               </ul>
+         </div>
+       </div>  
+       <p id="copyright">&copy; Copyright 2020 sandalsbymo.com <span> All rights reserved</span></p>
+      </footer>
 </body>
 </html>
