@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="../css/signUp.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="productpage.html"><h1 id="logo"><b>INNER GLAMOUR</b></h1></a>
+        <ul id="menu">
+            <li><a href="../HTML/productpage.html">Product Page</a></li>
+            <li ><a href="contactUs.html">Contact Us</a></li>
+            <li><a href="#">Sign-up</a></li>
+        </ul>
+    </nav>
+
+    <section class="customers-form">
+        <div class="register">
+            <h2>Register your Account</h2>
+            <P>Registering an account gives you the opportunity to get information and access to promos and 
+                events available to only registered customers</p>
+            <p>Already got an account? <a href="#">Sign in</a></p>
+        </div>
+        <div class="container">
+            <form class="sign-up-form">
+                <label class="firstname" for="firstname">First Name</label><br>
+                <input type="text" name="firstname" id="firstname" required><br>
+                <label class="lastname" for="lastname">Last Name</label><br>
+                <input type="lastname" name="lastname" id="lastname" required><br>
+                <label class="othername" for="othername">Other Name</label><br>
+                <input type="text" name="othername" id="othername"><br>
+                <label class="email" for="email">Email</label><br>
+                <input type="email" name="email" id="email" required><br>
+                <label class="number" for="number">Phone Number</label><br>
+                <input type="number" name="number" id="number"><br>
+                <label class="password" for="password">Password</label><br>
+                <input type="password" name="password" id="password" required><br>
+                <label class="confirm-password for="confirm-password">Confirm Password</label><br>
+                <input type="password" name="confirm-password" id="confirm-password" required><br><br>
+            </form>
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label for="checkbox" class="terms-and-agreement">I agree to the Terms and Conditions</label><br>
+            <button type="submit" id="button"><span class="sign">SIGN UP</span></button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div id="tablet">
+                <ul class="about">
+                    <Li><a href="#"></a>Contact Us</a></Li>
+                    <li><a href="#"></a>About Us</li>
+                    <li><a href="#"></a>Terms and Conditions</a></li>
+                </ul>
+            </div>
+            <br><br>
+            <div class="newsletter">
+            <form>
+                <label for="newsletter">Sign up for our Newsletter</label>
+                <div class="news">
+                <input type="email" id="newsletter" name="newsletter" placeholder="Enter your email address"/>
+                    <div class="error-block" id="error"></div>
+                    <button type="submit" id="submit">SUBMIT</button>
+                </div>
+            </form>
+            </div>
+            <br><br>
+            <div id="connect">
+                <p id="con">CONNECT WITH US</p>
+                <ul id="line">
+                    <li class="facebook"><a href="https://www.facebook.com"><img src="..//HTML/Images/facebook logo.png"></a></li>
+                    <li class="twitter"><a href="https://www.twitter.com"><img src="..//HTML/Images/twitter logo.png"></a></li>
+                    <li class="gmail"><a href="https://instagram.com"><img src="..//HTML/Images/gmail logo.png"></a></li>
+                    <li class="youtube"><a href="https://youtube.com"><img src="..//HTML/Images/youtube logo.png"></a></li>
+                </ul>
+            </div>
+        </ul>         
+        </div>
+        <p id="copy"> &copy; 2020 innerglamour.com All rights reserved</p>
+    </footer>
+</body>
+</html>
