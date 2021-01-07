@@ -12,8 +12,6 @@ def test_get_title():
     driver.find_element_by_link_text("Contact Us").click()
     driver.find_element_by_link_text("Sign Up").click()
 
-
     driver.close()  # closes the browser once it has completed
-
 
 test_get_title()
