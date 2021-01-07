@@ -115,6 +115,10 @@
       #socials li {
         display: inline-block;
       }
+      #socials img {
+        width: 30px;
+        height: 30px;
+      }
       #quick-links li {
         margin-bottom: 10px;
       }
