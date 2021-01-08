@@ -34,4 +34,13 @@ PRIMARY KEY (id),
 FOREIGN KEY (registered_passengers_id) REFERENCES registered_passengers (id)
 );
 
-SHOW TABLES;
+ALTER TABLE accident_records MODIFY passenger_survived_yes_or_no TINYINT NOT NULL;
+
+ALTER TABLE accident_records CHANGE passenger_survived_yes_or_no passenger_survived TINYINT NOT NULL;
+
+SELECT * FROM accident_records;
+
+
+
+
+
