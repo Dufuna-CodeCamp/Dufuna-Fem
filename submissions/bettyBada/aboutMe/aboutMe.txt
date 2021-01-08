@@ -1,5 +1,5 @@
 Hello World!!!
-My name is Betty Bada.
+My name is Betty Bada..
 
 I want to be able to learn the processes involved in Software Development and have world class skills.
 
