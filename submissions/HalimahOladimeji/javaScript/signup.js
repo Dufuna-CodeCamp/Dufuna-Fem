@@ -119,6 +119,7 @@ function confirmPasswordValidation(event) {
     }
 }
 
+
 function validateForm(e) {
     required(firstName, e);
     required(lastName, e);
