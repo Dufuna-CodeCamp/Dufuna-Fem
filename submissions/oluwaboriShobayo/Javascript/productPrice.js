@@ -19,7 +19,6 @@ let object2 = {
 }
 console.log(object2.greeting())
 
-
 let object3 = {
     name: "magentaDress",
     imageurl: " magentadress.url ",
