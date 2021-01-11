@@ -19,12 +19,12 @@ let object2 = {
 }
 console.log(object2.greeting())
 
-let object3 = {
+ let object3 = {
     name: "magentaDress",
     imageurl: " magentadress.url ",
     productPrice: 10000 ,
     greeting: function(){
-                return "magentaDress " + "with" + this.imageurl  +  "is sold for "  +  this.productPrice  + '.'
+            return "magentaDress " + "with" + this.imageurl  +  "is sold for "  +  this.productPrice  + '.'
 }
 }
 console.log(object3.greeting())
