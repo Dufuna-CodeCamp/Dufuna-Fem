@@ -1,55 +1,8 @@
-CREATE DATABASE funa_travels;
-
-use funa_travels;
-
-CREATE TABLE registered_passengers (
-id INT NOT NULL AUTO_INCREMENT,
-full_name VARCHAR(100) NOT NULL,
-sex VARCHAR(10) NOT NULL,
-age INT,
-created_at datetime,
-primary key(id)
-);
-
-ALTER TABLE registered_passengers MODIFY age VARCHAR(100);
-
-SELECT * FROM registered_passengers;
-
-CREATE TABLE passengers_records (
-id INT NOT NULL AUTO_INCREMENT,
-registered_passengers_id INT NOT NULL,
-passenger_class TINYINT NOT NULL,
-passenger_ticket_number VARCHAR(100) NOT NULL,
-trip_fare DECIMAL (10,2) NOT NULL,
-assigned_cabin VARCHAR(100),
-number_of_parents_children_aboard INT NOT NULL,
-number_of_siblings_spouses_aboard INT NOT NULL,
-point_of_embarkation VARCHAR(100) NOT NULL,
-created_at DATETIME,
-PRIMARY KEY (id),
-FOREIGN KEY (registered_passengers_id) REFERENCES registered_passengers (id)
-);
-
-SELECT * FROM passengers_records;
-
-
-CREATE TABLE accident_records (
-id INT NOT NULL AUTO_INCREMENT,
-registered_passengers_id INT NOT NULL,
-passenger_survived_yes_or_no VARCHAR(10) NOT NULL,
-PRIMARY KEY (id),
-FOREIGN KEY (registered_passengers_id) REFERENCES registered_passengers (id)
-);
-
-ALTER TABLE accident_records MODIFY passenger_survived_yes_or_no TINYINT NOT NULL;
-
-ALTER TABLE accident_records CHANGE passenger_survived_yes_or_no passenger_survived TINYINT NOT NULL;
-
-SELECT * FROM accident_records;
 
 /* Question 1: Query to find the total number of passengers that survived 
 The total number of passengers who survived = 290. */
 SELECT * FROM accident_records WHERE passenger_survived LIKE 1; 
+
 
 /* Question2: Query to find the total number of passengers who did not survive
 The total number of passengers who did not survive = 424. */
