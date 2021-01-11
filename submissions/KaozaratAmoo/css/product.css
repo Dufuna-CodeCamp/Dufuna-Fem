@@ -175,7 +175,7 @@ input {
         padding-left: 35px;
     }
 }
-/*@media screen and (max-width:768px) {  
+@media screen and (max-width:768px) {  
     #nav ul{  
         height: 155px;  
     }
