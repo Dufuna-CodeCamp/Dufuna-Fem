@@ -24,7 +24,7 @@ console.log(object2.greeting())
     imageurl: " magentadress.url ",
     productPrice: 10000 ,
     greeting: function(){
-             return "magentaDress " + "with" + this.imageurl  +  "is sold for "  +  this.productPrice  + '.'
+              return "magentaDress " + "with" + this.imageurl  +  "is sold for "  +  this.productPrice  + '.'
 }
 }
 console.log(object3.greeting())
