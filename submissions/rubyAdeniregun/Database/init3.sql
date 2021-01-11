@@ -11,6 +11,8 @@ created_at datetime,
 primary key(id)
 );
 
+ALTER TABLE registered_passengers MODIFY age VARCHAR(100);
+
 SELECT * FROM registered_passengers;
 
 CREATE TABLE passengers_records (
@@ -56,7 +58,7 @@ SELECT * FROM accident_records WHERE passenger_survived LIKE 0;
 
 /* Question 3: Query to get the name and sex of passengers under 
 the age of 27 that embarked at Queenstown and Cherbourg? */
-SELECT registered_passengers.full_name, registered_passengers.sex, registered_passengers.age < 27, passengers_records.point_of_embarkation = 'C' AND 'Q'
+SELECT registered_passengers.full_name, registered_passengers.sex, registered_passengers.age < '27', passengers_records.point_of_embarkation = 'C' AND 'Q'
 FROM registered_passengers LEFT JOIN passengers_records 
 ON registered_passengers.id = passengers_records.id;
 
@@ -70,6 +72,6 @@ ON passengers_records.registered_passengers_id = accident_records.registered_pas
 
 /* Question 5: Query to get the id, name and the total number of passengers who paid a fare greater 
 than $100 and above the age of 35 had siblings or spouses on board. */
-SELECT registered_passengers.id, registered_passengers.full_name, registered_passengers.age > 35, passengers_records.trip_fare > 100, passengers_records.number_of_siblings_spouses_aboard >= 1
+SELECT registered_passengers.id, registered_passengers.full_name, registered_passengers.age > '35', passengers_records.trip_fare > 100, passengers_records.number_of_siblings_spouses_aboard >= 1
 FROM registered_passengers LEFT JOIN passengers_records 
 ON registered_passengers.id = passengers_records.registered_passengers_id;
