@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Contact Form Page</title>
+    <title>SIGN-UP</title>
     <link href="../CSS/signup.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <nav class="logo">
         <img src="images/logo.png" alt="log" style="width: 75px; height: 50px;">
@@ -25,27 +27,52 @@
             <p>Already got an account?<span><a href="#" style="color:#0066f5; font-size:30px">Sign in</a></span></p>
         </div>
         <div class="secondcolumn">
-            <form>
-                <label for="firstname">First Name</label>
-                <input type="text" name="firstname" id="firstname" />
-                <label for="lastname">Last Name</label>
-                <input type="text" name="lastname" id="lastname" />
-                <label for="othername">Other Names</label>
-                <input type="text" name="othername" id="othername" />
-                <label for="phonenumber">Phone Number</label>
-                <input type="text" name="phonenumber" id="phonenumber" />
-                <label for="emailaddress">Email Address</label>
-                <input type="email" name="emailaddress" id="emailaddress" />
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" />
-                <label for="confirmpassword">Confirm Password</label>
-                <input type="password" name="confirm" id="confirm" />
-                <input type="checkbox" name="iagree" id="iagree" value="iagree" />
-                <label for="iagree" id="terms" style="color:palevioletred">I agree to the Terms and
-                    Conditions</label>
-                <button type="submit" id="b2">SIGN UP</button>
-            </form>
+            <form id="validateForm" method="post">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" name="firstname" id="firstName" />
+                        <span class="error-block"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" name="lastname" id="lastName" />
+                        <span class="error-block"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="otherName">Other Names</label>
+                        <input type="text" name="othername" id="otherName" />
+                    </div>
+                    <div class="form-group">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="text" name="phonenumber" id="phoneNumber" />
+                        <span class="error-block"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="emailAddress">Email Address</label>
+                        <input type="email" name="emailaddress" id="emailAddress" />
+                        <span class="error-block"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" />
+                        <span class="error-block"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" name="confirm" id="confirmPassword" />
+                        <span class="error-block"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" name="iagree" id="iAgree" value="iagree" />
+                        <label for="iAgree" id="terms" style="color:palevioletred">I agree to the Terms and
+                            Conditions</label>
+                        <span class="error-block"></span>
+                    </div>
+                    <button type="submit" id="b2">SIGN UP</button>
+                </div>
         </div>
+        </form>
     </div>
     <footer>
         <div class="signup2">
@@ -79,5 +106,7 @@
         </div>
         <p id="copyright"> &copy; Copyright 2020 premium.com <span> All rights reserved.</span></p>
     </footer>
+    <script src="../javaScript/signup.js"></script>
 </body>
+
 </html>
