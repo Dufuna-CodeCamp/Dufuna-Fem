@@ -1,11 +1,11 @@
 
 /* Question 1: Query to find the total number of passengers that survived 
-The total number of passengers who survived = 290. */
+The total number of passengers who survived = 342. */
 SELECT * FROM accident_records WHERE passenger_survived LIKE 1; 
 
 
 /* Question2: Query to find the total number of passengers who did not survive
-The total number of passengers who did not survive = 424. */
+The total number of passengers who did not survive = 549. */
 SELECT * FROM accident_records WHERE passenger_survived LIKE 0; 
 
 
@@ -17,7 +17,7 @@ ON registered_passengers.id = passengers_records.id;
 
   
 /* Question 4: Query to get how many of the passengers that embarked at Southampton survived? 
-Passengers that embarked at Southampton survived = 714 */
+Passengers that embarked at Southampton survived = 891 */
 SELECT passengers_records.point_of_embarkation LIKE 'S', accident_records.passenger_survived LIKE 1
 FROM passengers_records INNER JOIN accident_records 
 ON passengers_records.registered_passengers_id = accident_records.registered_passengers_id;
