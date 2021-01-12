@@ -3,12 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
     overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
 }
-
 .menu {
     display: flex;
     justify-content: space-between;
@@ -16,142 +14,98 @@ body{
     padding: 1.875rem;
     background-color: #f765a3;
 }
-
 .menu > h1{
     color: #fff;
     font-size: 22px;
     line-height: 1.23;
 }
-
 nav{
     margin-left: -20rem;
     width: 35%;
 }
-
 nav li {
     display: inline-block;
     list-style: none;
     margin-right: 20px;
 }
-
 nav a{
     text-decoration: none;
     color: #fff;
     font-size: 16px;
     line-height: 1.19;
 }
-    /* contact */
-.contact {
+    /* register account */
+.container {
     display: flex;
-    margin: 20px 80px ;
-    padding: 15px;
+    margin: 20px 65px;
     justify-content: space-between;
     align-items: center;
     color: #5f5f5f;
 }
-
-.contact-details{
-    width: 45%;
+.register-intro {
+    width: 40%;
+    margin: auto;
 }
-.contact-details > div {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.contact-details > div:last-child {
-    margin-bottom: 0;
-}
-
-.contact-media {
-    display: flex;
-    margin-top: 20px;
-    justify-content: space-between;
-}
-
-.contact-media li {
-    list-style: none;
-}
-
-.contact-media img {
-    width: 80%;
-    height: auto;
-    object-fit: contain;
-}
-
-.contact-items > img {
-    margin-bottom: 15px;
-}
-
-.contact-items > h3 {
-    margin-bottom: 15px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
-    font-weight: bold;
-    line-height: 1.2;
-    letter-spacing: 1.25px;
-}
-
-.contact-items p {
-    margin-bottom: 15px;
-    font-size: 25px;
-    line-height: 1.2;
-    letter-spacing: 1.25px;
-}
-
-.form-field {
+.register-account {
     width: 50%;
 }
-
-.form-field div:first-child {
-    text-align: center;
+.register-intro h3 {
+    margin-bottom: 15px;
+    color: #f765a3;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1.22;
 }
-
-.form-field div:first-child h3 {
-    text-align: center;
-    font-size: 25px;
-    line-height: 1.2;
-    letter-spacing: 1.25px;
+.register-intro p {
+    margin-bottom: 15px;
+    font-size: 30px;
+    line-height: 1.23;
+    text-align: left;
 }
-
-.form-field  fieldset {
-    padding: 40px;
-    position: relative;
+.register-account form{
+    border: 1px solid #5f5f5f;
+    border-radius: 20px;
+    padding: 18px;
+    width: 100%;
 }
-
-fieldset img {
+.form-content {
     margin-bottom: 15px;
 }
-
-fieldset h3 {
-    margin-bottom: 12px;
+.form-content label {
+    font-size: 18px;
+    line-height: 1.23;
 }
-
-.form-item {
-    margin-bottom: 20px;
+form div:last-child {
+    text-align: center;
 }
-
-.form-field [type=email],[type=text] {
+.form-content  [type=text],[type=number],[type=password] {
     width: 100%;
-    padding: 10px 8px;
+    padding: 15px 20px;
     outline: none;
-    border: none;
-    border-bottom: 2px solid #707070;
+    border: 1px solid #707070;
+    border-radius: 10px;
 }
-
-textarea {
-    margin-top: 15px;
-    resize: none;
+.form-content  [type=email] {
     width: 100%;
+    padding: 15px 20px;
+    outline: none;
+    border: 1px solid #707070;
+    border-radius: 10px;
 }
-
-.form-field [type=submit] {
+.sign-up label {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.22;
+}
+.sign-up [type=submit] {
     background-color: #f765a3;
     border: none;
     outline: none;
     color: #fff;
-    padding: 20px;
-    margin-left: 75%;
-    border-radius: 10px;
+    padding: 12px;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 32%;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: bold;
@@ -166,14 +120,12 @@ footer{
     font-size: 18px;
     line-height: 1.22;
 }
-
 .footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-
 .footer li{
     list-style: none;
 }
@@ -187,7 +139,7 @@ footer{
     margin-bottom: 12px;
 }
 
-.footer-form [type=email] {
+.footer-email {
     margin-top: 14px;
     padding: 0.9rem;
     outline: none;
@@ -198,7 +150,6 @@ footer ::placeholder{
     font-size: 16px;
     line-height: 1.19;
 }
-
 .footer-form [type=button] {
     background-color: #fff;
     padding: 0.71rem;
@@ -245,18 +196,21 @@ footer > p{
         margin-left: 0;
         margin-top: 18px;
     }
-    .contact {
+    .container{
         flex-direction: column;
     }
-    .contact-details {
-        width: 100%;
+    .register-intro {
+        width: 83%;
     }
-    .form-field {
-        margin-top: 20px;
-        width: 100%;
+    .register-intro h3 {
+        text-align: center;
     }
-    .form-field [type=submit] {
-        margin-left: 25%;
+    .register-intro p {
+        text-align: center;
+    }
+    .register-account {
+        margin-top: 18px;
+        width: 100%;
     }
     .footer {
         flex-direction: column;
@@ -273,14 +227,20 @@ footer > p{
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .contact {
+    .container{
         flex-direction: column;
     }
-    .contact-details {
-        width: 100%;
+    .register-intro {
+        width: 83%;
     }
-    .form-field {
-        margin-top: 15px;
+    .register-intro h3 {
+        text-align: center;
+    }
+    .register-intro p {
+        text-align: center;
+    }
+    .register-account {
+        margin-top: 3%;
         width: 100%;
     }
     .footer {
