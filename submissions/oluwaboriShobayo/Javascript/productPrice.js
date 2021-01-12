@@ -1,31 +1,20 @@
-const productList = Array("object1", "object2", "object3");
-let object1 = {
+const productList = [ 
+{
+    name:"miraDress",
+    imageurl: "miradress.url ",
+    productPrice: 8000
+},
+{
     name: "bellaDress",
-    imageurl: " belladress.url ",
-    productPrice: 8500 ,
-    greeting: function(){
-                return "bellaDress " + "with" + this.imageurl  +  "is sold for "  +  this.productPrice  + '.'
-}
-}
-console.log(object1.greeting())
-
-let object2 = {
-    name: "miraDress",
-    imageurl: " miradress.url ",
-    productPrice: 8000 ,
-    greeting: function(){
-                return "miraDress " + "with" + this.imageurl  +  "is sold for "  +  this.productPrice  + '.'
-}
-}
-console.log(object2.greeting())
-
- let object3 = {
+    imageurl:"magentadress.url ",
+    productPrice: 10000    
+},
+{
     name: "magentaDress",
     imageurl: " magentadress.url ",
-    productPrice: 10000 ,
-    greeting: function(){
-              return "magentaDress " + "with" + this.imageurl  +  "is sold for "  +  this.productPrice  + '.'
-}
-}
-console.log(object3.greeting())
-
+    productPrice: 10000 
+ }
+]
+productList.forEach(function(list) {
+    console.log(list.name + " with " + list.imageurl  + "is sold for " + list.productPrice + '.');
+})
