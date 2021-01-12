@@ -9,7 +9,7 @@ body {
 }
 
 .navbar {
-    background-color: rgb(17, 124, 10);
+    background-color: rgb(82, 99, 81);
     overflow: hidden;
 }
 
@@ -94,19 +94,12 @@ main {
 }
 
 
-/* .btn {
-    background-color: rgb(87, 87, 117);
-    color: white;
-    font: bold;
-    border-radius: 5px;
-} */
-
 .btn {
-    background-color: rgb(17, 124, 10);
+    background-color: rgb(92, 99, 91);
     color: #fff;
     font-weight: bold;
     padding: 5px 5px 5px 5px;
-    border: 1px solid rgb(17, 124, 10);
+    border: 1px solid rgb(82, 99, 91);
     border-radius: 5px;
     font-size: 16px;
 }
@@ -118,7 +111,7 @@ main {
 }
 
 .btn1 {
-    background-color: rgb(17, 124, 10);
+    background-color: rgb(82, 99, 91);
     color: white;
     font-weight: bold;
     padding: 5px 5px 5px 5px;
@@ -135,7 +128,7 @@ main {
 
 .more h3 {
     padding-left: 40px;
-    color: rgb(17, 124, 10);
+    color: rgb(82, 99, 91);
     font-weight: bold;
     font-size: 25px;
     text-align: center;
@@ -158,7 +151,7 @@ aside {
 }
 
 aside h3 {
-    color: rgb(17, 124, 10);
+    color: rgb(82, 99, 91);
     font-size: 20px;
     font-weight: bold;
 }
@@ -170,21 +163,13 @@ aside h3 {
 }
 
 
-/* .img-slide {
-    display: block;
-    float: left;
-    width: 30%;
-    background-color: white;
-    height: 200px;
-    margin: 18px 0 0 20px;
-} */
-
 .img-slide {
     display: inline-block;
     flex-wrap: wrap;
     justify-content: center;
     background-color: white;
     padding: 0 15px 0 15px;
+    margin-right: 20px;
 }
 
 .img-slide p {
@@ -192,6 +177,7 @@ aside h3 {
     margin-bottom: 15px;
     color: rgb(124, 6, 6);
     font-size: 20px;
+
 }
 
 .slide-btn {
@@ -202,7 +188,7 @@ aside h3 {
 /* Footer */
 
 .footer1 {
-    background-color: rgb(17, 124, 10);
+    background-color: rgb(82, 99, 91);
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -211,19 +197,19 @@ aside h3 {
 }
 #newsletter{
     background-color: white;
-    color:rgb(17, 124, 10) ;
+    color:rgb(82, 99, 91) ;
     margin: 20px;
 }
 
 .btn2{
     background-color: white;
-    color: rgb(17, 124, 10);
+    color: rgb(82, 99, 91);
 }
 .footer1 p {
     text-decoration: none;
     color: white;
     margin-top: 18px;
-    /* margin-bottom: 18px; */
+
 }
 
 .footer2 {
@@ -303,11 +289,7 @@ aside h3 {
 }
 
 @media screen and(max-width:940px) {
-    /* .img-slide1,
-.img-slide2,
-.img-slide3{
-  width: 340px;
-} */
+
     .footer1,
     .footer2 .footer3 {
         width: 300px;
