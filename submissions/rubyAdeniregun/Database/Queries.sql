@@ -17,10 +17,12 @@ the age of 27 that embarked at Queenstown and Cherbourg? */
 
   
 /* Question 4: Query to get how many of the passengers that embarked at Southampton survived? 
-Passengers = 891 */
-SELECT passengers_records.point_of_embarkation LIKE 'S', accident_records.passenger_survived LIKE 1
-FROM passengers_records RIGHT JOIN accident_records 
-ON passengers_records.registered_passengers_id = accident_records.registered_passengers_id;
+Passengers that embarked at southampthon = 342 */
+SELECT passengers_records.point_of_embarkation LIKE 'S'
+FROM passengers_records INNER JOIN accident_records 
+ON passengers_records.registered_passengers_id = accident_records.registered_passengers_id
+WHERE accident_records.passenger_survived LIKE 1;
+
 
 
 /* Question 5: Query to get the id, name and the total number of passengers who paid a fare greater 
