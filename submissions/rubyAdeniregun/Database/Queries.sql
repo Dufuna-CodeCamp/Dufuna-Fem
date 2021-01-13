@@ -1,7 +1,7 @@
-
 /* Question 1: Query to find the total number of passengers that survived 
 The total number of passengers who survived = 342. */
 SELECT * FROM accident_records WHERE passenger_survived LIKE 1; 
+
 
 /* Question2: Query to find the total number of passengers who did not survive
 The total number of passengers who did not survive = 549. */
@@ -12,24 +12,22 @@ SELECT * FROM accident_records WHERE passenger_survived LIKE 0;
 the age of 27 that embarked at Queenstown and Cherbourg? */
  SELECT registered_passengers.full_name, registered_passengers.sex 
  FROM registered_passengers LEFT JOIN passengers_records 
- ON passengers_records.registered_passengers_id = passengers_records.registered_passengers_id
- WHERE age < '27' AND point_of_embarkation= 'Q' OR point_of_embarkation = 'C';
+ ON registered_passengers.id = passengers_records.registered_passengers_id
+ WHERE age < 27 AND (point_of_embarkation= 'Q' OR point_of_embarkation = 'C');
 
   
 /* Question 4: Query to get how many of the passengers that embarked at Southampton survived? 
-Passengers that embarked at southampthon = 342 */
-SELECT passengers_records.point_of_embarkation LIKE 'S'
+Passengers that embarked at Southampton survived = 218 */
+SELECT passengers_records.registered_passengers_id
 FROM passengers_records INNER JOIN accident_records 
 ON passengers_records.registered_passengers_id = accident_records.registered_passengers_id
-WHERE accident_records.passenger_survived LIKE 1;
-
+WHERE point_of_embarkation LIKE 'S' AND passenger_survived LIKE 1;
 
 
 /* Question 5: Query to get the id, name and the total number of passengers who paid a fare greater 
 than $100 and above the age of 35 had siblings or spouses on board.
-Total number of passengers = 295 */
-SELECT registered_passengers.id, registered_passengers.full_name
+Total number of passengers = 9 */
+SELECT registered_passengers.id, registered_passengers.full_name, registered_passengers_id
 FROM registered_passengers LEFT JOIN passengers_records 
 ON registered_passengers.id = passengers_records.registered_passengers_id
-WHERE registered_passengers.age > '35' AND passengers_records.trip_fare > 100 OR passengers_records.number_of_siblings_spouses_aboard >= 1;
-
+WHERE passengers_records.trip_fare > 100 AND registered_passengers.age > '35' AND passengers_records.number_of_siblings_spouses_aboard >= 1;
