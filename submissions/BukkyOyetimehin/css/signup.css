@@ -82,6 +82,7 @@ form input{
     height: 4rem;
     margin-top: 0.5rem;
     border-radius: 1rem;
+    margin-bottom: 1rem;
 }
 form input[type="checkbox"]{
     width: 1rem;
@@ -110,7 +111,9 @@ form button{
     border-radius: 1rem;
 }
 /*footer */
-.column{
+.column-first,
+.column-second,
+.column-third{
     float: left;
     width: 33.3%;
     color: #fff;
@@ -175,16 +178,16 @@ footer p{
         margin-right: auto;
     }
     /*footer*/
-    .column.first,
-    .column.second{
+    .column-first,
+    .column-second{
         width: fit-content;
         float: left;
     }
-    .column.second{
+    .column-second{
         margin-bottom: 4rem;
         margin-left: 4rem;
     }
-    .column.third{
+    .column-third{
         float: none;
         width: fit-content;
         padding-right: 0;
@@ -195,7 +198,7 @@ footer p{
         margin-left: 18rem;
         margin-right: 0;
     }
-    .column.second p{
+    .column-second p{
         text-align: left;
     }
 }
@@ -213,12 +216,12 @@ footer p{
         margin-left: 4rem;
     }
     /*footer*/
-    .column.first,
-    .column.second{
+    .column-first,
+    .column-second{
         width: 45%;
         float: left;
     }
-    .column.third{
+    .column-third{
         padding-left: 33rem;
     }
 }
@@ -276,15 +279,15 @@ footer p{
     footer{
         padding-top: 4rem;
     }
-    .column.first,
-    .column.second,
-    .column.third{
+    .column-first,
+    .column-second,
+    .column-third{
         width: fit-content;
         float: none;
         padding: 0;
         margin: 0 0 0 4rem;
     }
-    .column.first{
+    .column-first{
         padding-bottom: 1.5rem;
     }
     .column.third{
@@ -296,7 +299,7 @@ footer p{
         margin: auto;
         width: 60%;
     }
-    .column.second p{
+    .column-second p{
         width: 100%;
     }
 }
