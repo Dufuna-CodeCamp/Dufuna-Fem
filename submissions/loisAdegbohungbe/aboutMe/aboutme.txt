@@ -1,0 +1,6 @@
+Hello.
+
+My name is Lois Adegbohungbe.
+I am on the Mobile Development Track.
+By the end of this programme, I hope to have learnt the necessary basics of Mobile Development and have built at least one functioning application.
+
