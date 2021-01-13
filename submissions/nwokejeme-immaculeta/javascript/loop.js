@@ -3,7 +3,6 @@ const diff = 123 - 7;
 
 //to print out the numbers between 1 and 116,lets create a var named count //
 var  count = 1;
-i = 0
 
 while (count < diff) {
     switch (true) {
