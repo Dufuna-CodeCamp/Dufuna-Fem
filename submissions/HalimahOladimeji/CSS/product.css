@@ -36,6 +36,12 @@ ul {
     padding-top:10px;
 }
 
+.error-block {
+    font-size: 12px;
+    color: red;
+    padding: 0;
+}
+
 .b2{
     background-color:palevioletred;
     border-radius:20px;
