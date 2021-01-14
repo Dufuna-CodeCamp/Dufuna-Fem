@@ -25,13 +25,27 @@
             <img class="main-image" src="../Images/IMG-20201001-WA0129.jpg" alt="Fresh Body Wash">
         </div>
         <div class="column2">
-            <h1>SKIN PERFECTION BODY WASH</h1>
-            <h2>Brand: Skin Perfection</h2>
-            <form action="#" method="POST" enctype="multipart/form-data"></form>
-            <label for="quantity" id="quantity">Quantity:</label>
-            <input type="text" class="quantity-box" name="quantity" placeholder="2">
-            <h2>Price:&#8358; 2,500</h2>
-            <button class="buynow" type="submit">BUY NOW</button>
+            <h1 id="productname">SKIN PERFECTION BODY WASH</h1>
+            <h2 id="productbrand">Brand: Skin Perfection</h2>
+            <div class="row">
+            <form id="validateForm" method="POST">
+              <div>
+                <label for="quantity">Quantity:</label>
+                <input type="text" id="quantityBox" name="quantity" placeholder="1">
+                <span class="error-block"></span>
+              </div>
+              <div class="pricing1">
+              <span class="pricing"> Price : $ <span id='price'> 2500</span></span>
+              </div>
+              <div class="pricing1">
+              <span class="pricing"> Shipping Cost : $ <span id='shippingCost'> 375</span></span>
+              </div>
+              <div class="pricing1">
+              <span class="pricing"> Total Cost : $ <span id='totalCost'> 2875</span></span>
+              </div>
+              <button id="buyNow" type="submit">BUY NOW</button>
+            </form>
+            </div>    
         </div>
     </div>
     <div class="column3">
@@ -80,10 +94,15 @@
           </div>
           <div class="foot2">
               <p>Sign up for our Newsletter</p>
-              <form>
-                  <input type="email" name="email" placeholder="Enter your email address" id="foot-email"/>
-                  <button class="styling" type="submit">SUBMIT</button>
-              </form>
+              <div class= "footer-row">
+                <form id="verifyForm" method="post">
+                    <div class="field5">
+                        <input type="email" name="email" placeholder="Enter your email address" id="footerEmail"/>
+                        <span class="error-block1"></span>
+                    </div>
+                    <button class="styling" id="btn2" type="submit">SUBMIT</button>
+                </form>
+            </div>
           </div>
             <div class="foot3">
               <p>CONNECT WITH US</p>
@@ -95,7 +114,8 @@
               </ul>
             </div>
           </div>
-          <p id="copyright">Copyright 2020 Skinperfection.com<span> All rights reserved.</span></p>
+          <p id="copyright">Copyright 2020 Skinperfection.com<br><span> All rights reserved.</span></p>
+          <script src="..\DOM\product.js"></script>
     </footer>
   </body>
 </html>
