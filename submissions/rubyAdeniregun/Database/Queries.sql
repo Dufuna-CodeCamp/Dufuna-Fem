@@ -22,15 +22,10 @@ the age of 27 that embarked at Queenstown and Cherbourg? */
   
 /* Question 4: Query to get how many of the passengers that embarked at Southampton survived? 
 Passengers that embarked at Southampton survived = 218 */
-SELECT registered_passengers.id, registered_passengers.full_name
-FROM registered_passengers LEFT JOIN passengers_records 
-ON registered_passengers.id = passengers_records.registered_passengers_id
-WHERE passengers_records.trip_fare > 100 AND registered_passengers.age > '35' AND passengers_records.number_of_siblings_spouses_aboard >= 1;
-
-SELECT COUNT(registered_passengers_id)
-FROM registered_passengers LEFT JOIN passengers_records 
-ON registered_passengers.id = passengers_records.registered_passengers_id
-WHERE passengers_records.trip_fare > 100 AND registered_passengers.age > '35' AND passengers_records.number_of_siblings_spouses_aboard >= 1;
+SELECT COUNT(passengers_records.registered_passengers_id)
+FROM passengers_records INNER JOIN accident_records 
+ON passengers_records.registered_passengers_id = accident_records.registered_passengers_id
+WHERE point_of_embarkation LIKE 'S' AND passenger_survived LIKE 1;
  
 
 /* Question 5: Query to get the id, name and the total number of passengers who paid a fare greater 
@@ -39,8 +34,11 @@ Total number of passengers = 9 */
 SELECT registered_passengers.id, registered_passengers.full_name
 FROM registered_passengers LEFT JOIN passengers_records 
 ON registered_passengers.id = passengers_records.registered_passengers_id
-WHERE passengers_records.trip_fare > 100 AND registered_passengers.age > '35' AND passengers_records.number_of_siblings_spouses_aboard >= 1
+WHERE (passengers_records.trip_fare > 100 AND registered_passengers.age > '35') AND passengers_records.number_of_siblings_spouses_aboard >= 1;
 
-SELECT COUNT(*)
-FROM registered_passengers
-WHERE passengers_records.trip_fare > 100 AND registered_passengers.age > '35' AND passengers_records.number_of_siblings_spouses_aboard >= 1;
+-- Total number of passengers = 9
+SELECT COUNT(registered_passengers_id)
+FROM registered_passengers LEFT JOIN passengers_records 
+ON registered_passengers.id = passengers_records.registered_passengers_id
+WHERE passengers_records.trip_fare > 100 AND registered_passengers.age > 35 AND passengers_records.number_of_siblings_spouses_aboard >= 1;
+ 
