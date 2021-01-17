@@ -108,16 +108,22 @@ p,li{
     margin: 25px;
     color: var(--white-color);
     font-size: 20px;
+   
 }
 .omen-descri{
     margin-left: 43px;
     text-align: left;
     font-size: 20px;
 }
-.omen-descri>h3, .omen-descri>h4, .price, .qty{
-    margin-bottom: 17px;
+.omen-descri>h3,.omen-descri>p,.omen-descri>label,.qty,.price,.button{
+    margin-bottom: 10px;
     font-size: 20px;
+    /* padding-bottom: 20px; */
 }
+.qty{
+    font-weight: 600;
+}
+
 .qty>input{
     width: 96px;
     height: 47px;
@@ -127,7 +133,7 @@ p,li{
 .buy-button{
     width: 174px;
     height: 64px;
-    /* margin: 16px 703px 21px 43px; */
+    /* margin: 25px 703px 21px 43px; */
     padding: 19px 25px 18px 33px;
     border-radius: 20px;
     outline: none;
@@ -154,7 +160,7 @@ p,li{
 .descript>h3{
     width: 159px;
     height: 27px;
-    margin: 21px 346px 8px 58px;
+    margin: 21px 346px 8px 75px;
     font-family: Montserrat;
     font-size: 22px;
     font-weight: bold;
@@ -167,7 +173,7 @@ p,li{
 .descript>p{
     width: 1305px;
     height: 49px;
-    margin: 8px 78px 28px 57px;
+    margin: 8px 78px 28px 75px;
     font-family: Montserrat;
     font-size: 20px;
     font-weight: normal;
@@ -325,19 +331,16 @@ footer {
     text-align: left;
 }
 
-.button {
-    /* height: 37px;
-    width: 90px; */
+
+.button{
+    width: 108px;
+    height: 44px;
     color: var(--white-color);
     background-color: #fff;
     outline: none;
     border: none;
-    width: 108px;
-    height: 44px;
-    /* margin: 5px 205px 3px 4px; */
-    padding: 11px 16px 11px 18px;
-    /* border: solid 1px #707070; */
     cursor: pointer;
+    margin-top: 9px;
 }
 
 .button:hover {
@@ -429,7 +432,9 @@ footer {
         font-size: 18px;
        
     }
-      
+    .omen-descri{
+        margin-top: 40px;
+    }
     .omen-descri>h3,
     .omen-descri>h4{
         margin-left: 25px;
@@ -440,7 +445,7 @@ footer {
         width: 99px;
         height: 41px;
         margin: 9px 238px 11px 25px;
-        padding: 12px 13px 12px 12px;
+        padding: 12px 13px 26px 12px;
         border-radius: 12px;
         font-size: 18px;
     }
@@ -537,7 +542,7 @@ footer {
     .descript>p{
         width: 321px;
         height: 104px;
-        margin: 4px 16px 3px 23px;
+        margin: 4px 16px 3px 70px;
         font-family: Montserrat;
         font-size: 14px;
         line-height: 1.43;
@@ -545,7 +550,7 @@ footer {
     .descript>h3{
         width: 101px;
         height: 18px;
-        margin: 11px 237px 4px 22px;
+        margin: 11px 237px 4px 70px;
         font-family: Montserrat;
         font-size: 14px;    
         line-height: 1.29; 
@@ -553,21 +558,26 @@ footer {
     .description{
         height: 70vh;
     }
-    /* .description>div {
-        width: 100%;
-        padding: 50px 0 50px 0;
-        left: 0;
-    } */
+ 
+    .omen-descri>h3,.omen-descri>p,.omen-descri>label,.qty,.price,.button{
+        margin-bottom: 10px;
+        font-size: 14px;
+        margin-left: 22px;
+        /* padding-bottom: 20px; */
+    }
     .omen-descri>h3,
     .omen-descri>h4{
         margin-left: 22px;
         text-align: left;
         font-size: 14px;
     }
+    .qty{
+        font-weight: 600;
+    }
     .buy-button{
         width: 99px;
         height: 41px;
-        margin: 9px 238px 11px 3px;
+        margin: 9px 238px 11px 23px;
         padding: 12px 13px 12px 12px;
         border-radius: 12px;
         font-size: 14px;
