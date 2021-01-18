@@ -8,13 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <nav class="logo">
         <img src="images/logo.png" alt="log" style="width: 75px; height: 50px;">
         <ul class="headerc">
             <li><a href="../HTML-forms/index.html">Product Page</a></li>
             <li><a href="../HTML-forms/contactus.html">Contact Us</a></li>
-            <li><a href="#">Sign-up</a></li>
+            <li><a href="../HTML-forms/signup.html">Sign-up</a></li>
         </ul>
     </nav>
     <main>
@@ -22,15 +23,28 @@
             <div class="firstc">
                 <img src="images/zflip.jpg" alt="SAMSUNG GALAXY Z Fold 2" class="image1">
             </div>
-            <div class="brand" style="margin-left:20px; padding-top:20px">
+            <div class="brand">
                 <h2>SAMSUNG GALAXY Z Fold 2</h2>
                 <h4>Brand:Samsung</h4>
-                <form>
-                    <label for="quantity">Quantity:</label>
-                    <input type="text" name="quantity" id="quantity" placeholder="2" style="height:30px;width:60px" />
-                </form>
-                <h3>Price:<strong>₦ 895,000</strong></h3>
-                <button type="buynow" class="b2">BUY NOW</button>
+                <div class="row">
+                    <form id="validateForm" method="POST">
+                        <div>
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" name="quantity" id="quantity" placeholder="1">
+                            <span class="error-block"></span>
+                        </div>
+                        <div class="shipping">
+                            <span class="pricing"> Price : ₦ <span id='price'> 895000</span></span>
+                        </div>
+                        <div class="shipping">
+                            <span class="pricing"> Shipping Cost : ₦ <span id='shippingCost'> 100</span></span>
+                        </div>
+                        <div class="shipping">
+                            <span class="pricing"> Total Cost : ₦ <span id='totalCost'> 895100</span></span>
+                        </div>
+                        <button class="submit" id="btn">BUY NOW</button>
+                    </form>
+                </div>
             </div>
         </section>
         <div class="description">
@@ -95,5 +109,7 @@
         <p id="copyright"> &copy; Copyright 2020 premiumtechnologies.com <span> All rights reserved.</span></p>
     </footer>
     <script src="../javaScript/newsletter.js"></script>
+    <script src="../javaScript/productShippingCost.js"></script>
 </body>
+
 </html>
