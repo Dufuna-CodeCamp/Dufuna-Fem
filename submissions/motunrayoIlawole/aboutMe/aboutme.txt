@@ -1,0 +1,1 @@
+At the end of this program, I hope to have achieved mastering of the core concepts of client-side and server-side web development.
