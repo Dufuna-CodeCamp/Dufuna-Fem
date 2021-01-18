@@ -24,23 +24,47 @@
      </div>
       <section id="form">
           <form action="#" method="post" enctype="multipart/form-data" id="sign">
-             <label for="Firstname">First name</label><br>
-             <input type="text" name="firstname" id="firstname"/><br><br>
-             <label for="last name">Last name</label><br>
-             <input type="text" name="lastname" id="lastname"/> <br><br>
-             <label for="Other names">Other names</label><br>
-             <input type="text" name="othername" id="othername"/> <br><br>
-             <label for="phone number">Phone number</label><br>
-             <input type="number" name="phone number" id="phonenumber"/> <br><br>
-             <label for="email">Email Address</label><br>
-             <input type="text" name="email" class="mail"/> <br><br>
-             <label for="password">Password</label><br>
-             <input type="password" name="password" id="password"/> <br><br>
-             <label for="password">Confirm Password</label><br>
-             <input type="password" name="password" id="password"/> <br><br>
-             <b><input type="checkbox" name="agree" id="agree"/></b>
-             <label id="terms">I agree to the Terms and Conditions</label><br><br>
-             <button type="Submit" class="submit"><strong>SIGN UP</strong></button> 
+                <div class="form-group">
+                       <label for="Firstname">First name</label><br>
+                        <input type="text" name="firstname" id="firstname"/>
+                        <span class="error-block"></span>
+                </div>
+                <div class="form-group">
+                        <label for="last name">Last name</label><br>
+                        <input type="text" name="lastname" id="lastname"/> 
+                        <span class="error-block"></span>
+                </div>
+                <div class="form-group">
+                        <label for="Other names">Other names</label><br>
+                         <input type="text" name="othername" id="othername"/> 
+                         <span class="error-block"></span>
+                </div>
+               <div class="form-group">
+                        <label for="phone number">Phone number</label><br>
+                        <input type="number" name="phone number" id="phonenumber"/> 
+                        <span class="error-block"></span>
+                </div>
+                <div class="form-group">
+                        <label for="email">Email Address</label><br>
+                        <input type="email" name="email" class="mail"/> 
+                        <span class="error-block"></span>
+                </div>
+                <div class="form-group">
+                        <label for="password">Password</label><br>
+                        <input type="password" name="password" id="password"/> 
+                        <span class="error-block"></span>
+                </div>
+                <div class="form-group">
+                        <label for="password">Confirm Password</label><br>
+                        <input type="password" name="password" id="password2"/> 
+                        <span class="error-block"></span>
+                </div>
+                <div class="form-group">
+                        <b><input type="checkbox" name="agree" id="agree"/></b>
+                        <label id="terms">I agree to the Terms and Conditions</label>
+                        <span class="error-block"></span>
+                </div>
+                <button type="Submit" class="submit"><strong>SIGN UP</strong></button> 
           </form>
      </section>
   </section> 
@@ -73,5 +97,6 @@
              <p>All rights reserved.</p>
         </div>
   </footer>
+  <script src="signUp.js"></script>
 </body>
 </html>
