@@ -50,24 +50,37 @@ body {
   }
   #info {
     font-size:22px;
-    text-align:center
+    text-align:center;
+    margin-bottom:15px;
   }
  .email_logo {
    margin-left:45%;
    margin-top:20px;
-   margin-bottom:20px
+   margin-bottom:20px;
 }
-#name {
+#full {
+    margin-left:10px;
+}
+#fullName {
         border-bottom:solid 1px;
         margin:20px;
+        width:55%;
        }
+#em {
+    margin-left:10px;
+}
 #mail {
         border-bottom:solid 1px;
         margin:20px;
+        width:50%;
        }
+#sub {
+        margin-left:10px;
+    }
 #subject {
         border-bottom:solid 1px;
         margin:20px;
+        width:60%;
        }
 #message {
          border:solid 1px;
@@ -146,7 +159,7 @@ footer {
             width:80%;
             margin-left:10%
           }
-#name {
+#fullName {
              margin:30px;
             }
  #mail {
@@ -207,6 +220,9 @@ footer {
             margin-right:5%;
             margin-bottom:30px;
           } 
+    #fullName {
+        /* margin-top:20px; */
+    }
     #footer {
             display:flex;
             flex-wrap:nowrap;
