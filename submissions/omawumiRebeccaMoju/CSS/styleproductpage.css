@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: brown;
+}
+/* header styling */
+
+nav {
+    padding: 10px;
+    background-color: wheat;
+    color: brown;
+    margin: auto;    
+}
+    
+nav ul {
+    list-style-type: none;
+    padding: 5px;
+}
+    
+nav li {
+    float: right;
+    padding: 10px;
+}
+    
+.nav-bar {
+width: 100%;
+margin: auto;
+overflow: hidden;
+}
+
+.header nav {
+    float: right;
+    margin: 15px;
+}
+    
+.header1 {
+    float: left;
+    margin: 15px;
+    font-size: 20px;
+}
+    
+header li {
+    display: inline;
+    padding: 0 30px;
+}
+    
+/* End of header styling */
+
+
+/* links styling */
+   /* unvisited link */
+a:link {
+    text-decoration: none;
+    color: brown;
+ }
+   /* when mouse is on link */
+ a:hover {
+     text-decoration: underline;
+     color: hotpink;
+ }
+   /* selected link */
+ a:active {
+     text-decoration: underline;
+     color: burlywood;
+ }
+/* end of link styling */
+ 
+
+/* Footer styling */
+.FOOTER {
+    width: 100%;
+    padding: 10px;
+    background-color: wheat;
+    color: brown;
+    margin: auto;
+    overflow: hidden;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+img.FBK,
+img.TWTR,
+img.GML,
+img.YTUB {
+    height: 50px;
+    width: 50px;
+}
+
+.email {
+    text-align: center;
+}
+
+.sites {
+    text-align: right;
+}
+
+footer ul,
+.email,
+.sites {
+    float: left;
+    display: inline;
+    padding: 0 20px;
+    width: 33.3%;
+}
+
+.submit {
+    background-color: whitesmoke;
+    float: right;
+    color: brown;
+    border: 3px solid whitesmoke;
+    font-weight: bold;
+}
+
+.copyright {
+    text-align: center;
+}
+
+/* End of Footer Styling */
+
+
+/* Body Styling */
+body {
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    background-color: whitesmoke;
+    color: brown;
+}
+
+img.SOIL,
+img.VMOSE,
+img.GEL {
+    height: 250px;
+    width: 300px;
+}
+
+img.SHMPOO {
+    width: 400px;
+    height: 190px;
+    border: 2px solid wheat;
+}
+
+.Specs {
+    float: right;
+    display: inherit;
+    overflow: hidden;
+    margin: 0;
+    padding: 35px 16px;
+    width: 58%;
+}
+
+#Quantity {
+    padding: 3px;
+}
+
+.btn {
+    font-weight: bold;
+    background-color: wheat;
+    color: brown;
+    border: 4px solid wheat;
+    border-radius: 3px;
+}
+
+h4 {
+    text-align: center;
+    font-size: 15px;
+}
+
+.IMG1,
+.IMG2,
+.IMG3 {
+    float: left;
+    display: inline;
+    width: 33.3%;
+}
+
+.SL,
+.VM,
+.EG {
+    position: relative;
+    left: 50px;
+    text-align: center;
+}
+
+img.SOIL,
+img.VMOSE,
+img.GEL {
+    border: 20px solid wheat; 
+}
+
+.products::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Media Responsiveness */
+@media only screen and (max-width: 600px) {
+    .IMG1,
+    .IMG2,
+    .IMG3 {
+        width: 100%;
+    }
+    .header nav {
+        float:  none;
+        width: 100%;
+    }
+}
+
+
+
