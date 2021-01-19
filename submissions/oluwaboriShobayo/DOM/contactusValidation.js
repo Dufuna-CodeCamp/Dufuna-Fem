@@ -4,21 +4,12 @@ let formValidation = document.getElementById('form');
      subject = document.getElementById("subject");
      message = document.getElementById("message");
 
-     function required (field, event) {
-        if (fName.value == "") {
-            fName.nextElementSibling.innerHTML = "Please enter your Fullname";
-            event.preventDefault();
-
-        if (email.value == "") 
-                email.nextElementSibling.innerHTML = "Please enter your Email Address";
-                event.preventDefault();
-           return false;
-     } else {
-        field.nextElementSibling.innerHTML = "";
-        return true;
-    }
-}        
     function nameValidation (event) {
+        if (fName.value == '') {
+            fName.nextElementSibling.innerHTML = "Please enter your firstname";
+            event.preventDefault()
+            return false;
+        } 
         let nameRegex = /^[A-Za-z]+$/;
         if (!fName.value.match(nameRegex)) {
             fName.nextElementSibling.innerHTML = "Special characters are not allowed";
@@ -29,7 +20,13 @@ let formValidation = document.getElementById('form');
             return true;
         }
     }
+
     function emailValidation (event) {
+        if (email.value == '') {
+            email.nextElementSibling.innerHTML = "Please enter your email Address";
+            event.preventDefault()
+            return false;
+        }   
         let emailRegex = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/;
          if (!email.value.match(emailRegex)) {
          email.nextElementSibling.innerHTML = "Please enter a valid email";
@@ -40,6 +37,7 @@ let formValidation = document.getElementById('form');
          return true;
      }
      } 
+     
      function subjectValidation (event) {
         if (subject.value == '') {
         subject.nextElementSibling.innerHTML = "Please enter a message subject";
@@ -61,8 +59,6 @@ let formValidation = document.getElementById('form');
 }
     
      function validateForm(e) {
-         required(fName, e);
-         required(email, e);
          nameValidation(e);
          emailValidation(e);
          subjectValidation(e);

@@ -224,11 +224,24 @@ footer {
             width:45%;
           } 
      #box {
-            width:45%;
+            width:35%;
             margin-top:8%;
             margin-right:5%;
             margin-bottom:30px;
           } 
+ #full {
+            font-size:25px;
+        
+          }  
+ #em {
+             font-size:25px;
+         } 
+     #sub {
+             font-size:25px;
+         } 
+    .message {
+        font-size:25px;
+    }
     #footer {
             display:flex;
             flex-wrap:nowrap;
