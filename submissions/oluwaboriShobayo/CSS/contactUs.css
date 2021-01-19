@@ -11,8 +11,8 @@
 .error-block {
     font-size:15px;
     color:red;
-    /* display:block;
-    text-align:center; */
+    display:block;
+    text-align:center;
 }
 body {
         font-size: 22px;
@@ -229,9 +229,6 @@ footer {
             margin-right:5%;
             margin-bottom:30px;
           } 
-    #fullName {
-        /* margin-top:20px; */
-    }
     #footer {
             display:flex;
             flex-wrap:nowrap;
@@ -246,4 +243,7 @@ footer {
      #image {
             width:45%;
           } 
+body{
+    font-size:15px;
+}
 }        
