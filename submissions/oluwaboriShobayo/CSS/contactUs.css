@@ -8,6 +8,12 @@
      text-align:center;
     line-height:1.4;
     }
+.error-block {
+    font-size:15px;
+    color:red;
+    /* display:block;
+    text-align:center; */
+}
 body {
         font-size: 22px;
          font-family: 'Montserrat', sans-serif;      
@@ -65,6 +71,7 @@ body {
         border-bottom:solid 1px;
         margin:20px;
         width:55%;
+        padding:10px;
        }
 #em {
     margin-left:10px;
@@ -73,6 +80,7 @@ body {
         border-bottom:solid 1px;
         margin:20px;
         width:50%;
+        padding:10px;
        }
 #sub {
         margin-left:10px;
@@ -81,6 +89,7 @@ body {
         border-bottom:solid 1px;
         margin:20px;
         width:60%;
+        padding:10px;
        }
 #message {
          border:solid 1px;
