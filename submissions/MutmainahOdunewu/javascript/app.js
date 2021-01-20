@@ -1,9 +1,9 @@
-// 7-123
-for (let i = 7; i <= 123; i++) {
+let x = 123 - 7;
+for (let i = 1; i <= x; i++) {
   if (i % 3 === 0 && i % 5 === 0) {
-    console.log("software Developer");
+    console.log("Software Developer");
   } else if (i % 3 === 0) {
-    console.log("softwear");
+    console.log("Softwear");
   } else if (i % 5 === 0) {
     console.log("Developer");
   } else {
