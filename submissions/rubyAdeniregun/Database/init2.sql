@@ -11,6 +11,8 @@ created_at datetime,
 primary key(id)
 );
 
+ALTER TABLE registered_passengers MODIFY age VARCHAR(255);
+
 CREATE TABLE passengers_records (
 id INT NOT NULL AUTO_INCREMENT,
 registered_passengers_id INT NOT NULL,
