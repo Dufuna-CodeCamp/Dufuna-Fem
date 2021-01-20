@@ -5,6 +5,6 @@ I have been able to push my first task to Github.
 
 At the end of this program, I hope to become a full stack developer.
 I want to be able to design reactive and responsive websites.
-I want to be able to build my portfolio and get a high paying full stack developer job.
+I want to be able to build my portfolio and I want to get a high paying full stack developer job.
 I also want to be able to work remotely rather than have a 9-5 job.
 Finally, I want to be a freelance designer so I can have another source of income apart from my salary.
