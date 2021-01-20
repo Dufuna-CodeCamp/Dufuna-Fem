@@ -1,0 +1,3 @@
+I hope to have acquired skills that will make me stand out as a great mobile app developer at the end of this programme.
+I currently have frontend web development skills and hope to be able to use React native in making lovely user-friendly 
+and problem-solving applications
