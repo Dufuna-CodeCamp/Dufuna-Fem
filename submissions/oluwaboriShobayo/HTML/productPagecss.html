@@ -22,12 +22,22 @@
     <article>  
         <div id="col2">
               <h2><b>MAGENTA DRESS</b></h2>
-           <form>
-               <label for="quantity"><strong>Quantity:</strong></label>
-                <input type="number" name="quantity" value="1" min = "1" id="quantity"/> 
-                <p><strong>Price:&#x20A6;8000</strong></p>
-                <p><b>Shipping cost:&#x20A6;2000</b></p>
-                <p><b>Total cost:&#x20A6;10000</b></p>
+           <form id="form" method="post">
+              <div class="field1">
+                  <label for="quantity"><strong>Quantity:</strong></label>
+                  <input type="number" name="quantity" id="quantity"> 
+                  <span class="error-block"></span>
+               </div>
+               <div class="field2">
+                <p id="p"><strong>Price:&#x20A6;<span id ='price'>8000</span></strong></p>
+                <span></span>
+              </div>
+              <div class="field3">
+                  <p><b>Shipping cost: &#x20A6;<span id="shippingCost">1200</span></b></p>
+              </div>
+              <div class="field4">
+                  <p id="total"><b>Total cost: &#x20A6; <span id="totalCost">9200</span>  </b></p>
+              </div>
                 <button type="submit" id="button"><strong>BUY NOW</strong></button>
           </form>
      </div>
@@ -88,5 +98,6 @@
       <p>All rights reserved.</p>
   </div>
   </footer>
+  <script src="../HTML/DOM/productPage.js"></script>
 </body>
 </html>
