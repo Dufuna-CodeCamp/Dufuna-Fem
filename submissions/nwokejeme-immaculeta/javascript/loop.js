@@ -22,6 +22,7 @@ while (count < diff) {
 };
 
 
+
 // Second Task
 let productList = [
     { productName: 'Palissy Briefcase', imageUrl: 'leather-palissy-25hour-bag-chocolate-1.jpg', productPrice: '₦27,500' },
