@@ -22,26 +22,21 @@ var product_price = [
     '500.00'
 ];
 
-/*to check the length of the product names */
-
-for (i=0; i < products.length; i++) {
-console.log(products[i].length);
-    
-}
-
 /*create a function called calculate price to check the length of the
 products names and perform the required function */
 
 function calculatePrice(products) {
-for (i=0; i < products.length; i++) {
-    if (products[i].length % 2 == 0) {
-        product_price[i] = Math.pow(product_price[i], y = 2);
-        console.log("The price of " + products[i] + " is " + product_price[i]);
-    }
-    else {
+    for (i=0; i < products.length; i++) {
+        
+        if (products[i].length % 2 == 0) {
+            product_price[i] = (product_price[i] * 2);
+            console.log("The price of " + products[i] + " is " + product_price[i]);
+        }
+
+        else {
         product_price[i] = product_price[i] / 2;
         console.log("The price of " + products[i] + " is " + product_price[i]);
-    }
+        }
     }
     return product_price;
 }
