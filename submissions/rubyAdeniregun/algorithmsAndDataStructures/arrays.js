@@ -26,16 +26,15 @@ var product_price = [
 products names and perform the required function */
 
 function calculatePrice(products) {
-    for (i=0; i < products.length; i++) {
-        
-        if (products[i].length % 2 == 0) {
-            product_price[i] = (product_price[i] * 2);
+  for (i=0; i < products.length; i++) {
+      
+    if (products[i].length % 2 == 0) {
+          product_price[i] = (product_price[i] * 2);
             console.log("The price of " + products[i] + " is " + product_price[i]);
-        }
-
-        else {
-        product_price[i] = product_price[i] / 2;
-        console.log("The price of " + products[i] + " is " + product_price[i]);
+        
+        } else {
+            product_price[i] = product_price[i] / 2;
+              console.log("The price of " + products[i] + " is " + product_price[i]);
         }
     }
     return product_price;
