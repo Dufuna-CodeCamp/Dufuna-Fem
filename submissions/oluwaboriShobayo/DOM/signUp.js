@@ -7,25 +7,28 @@ let form = document.getElementById("sign");
      password = document.getElementById("password");
      password2 = document.getElementById("password2");
       
-// firstname VALIDATION
-function firstnameValidation (event) {
+
+// // firstname VALIDATION
+function emptyField (event) {
 let nameRegex = /^[A-Za-z]+$/;
 if (firstname.value == '') {
     firstname.nextElementSibling.innerHTML = "Please enter your firstname";
     event.preventDefault()
     return false;
-} 
-if (!firstname.value.match(nameRegex)) {
+
+} if (!firstname.value.match(nameRegex)) {
     firstname.nextElementSibling.innerHTML = "Special characters are not allowed";
     event.preventDefault();
     return false;
 } else {
     firstname.nextElementSibling.innerHTML = "";
+    lastname.nextElementSibling.innerHTML = "";
     return true;
 }
 }
+
 // Lastname validation
-function lastnameValidation (event) {
+function nameValidation (event) {
     let nameRegex = /^[A-Za-z]+$/;
     if (lastname.value == '') {
     lastname.nextElementSibling.innerHTML = "Please enter your lastname";
@@ -41,6 +44,7 @@ function lastnameValidation (event) {
         return true;
     }
 }
+
 
 //  Phone Number Validation
  function numberValidation(event) {
@@ -122,12 +126,13 @@ function password2Validation(event) {
 }
 
     function forms(e) {
+        emptyField(e);
+        nameValidation(e);
         emailFieldValidation(e);
-        firstnameValidation(e);
-        lastnameValidation(e);
         numberValidation(e);
         passwordValidation(e);
         password2Validation(e);
+    
         return true;
     }
  form.addEventListener("submit", forms);
