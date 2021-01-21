@@ -1,0 +1,299 @@
+body {
+    height: 100%;
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: rgb(82, 99, 81);
+    overflow: hidden;
+}
+
+.navbar a,
+li {
+    list-style: none;
+    display: inline-block;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 5px;
+    float: right;
+}
+ .navbar a:hover{
+    background-color: rgb(124, 6, 6);
+}
+
+.navbrand {
+    color: white;
+    float: left;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+p {
+    margin-top: 30px;
+    padding-left: 10px;
+}
+
+.description {
+    margin-top: 35px;
+}
+
+
+/* product page */
+
+main {
+    margin: 20px;
+    padding: 15px;
+    overflow: hidden;
+}
+
+.image {
+    float: left;
+    height: 300px;
+    width: 300px;
+    margin: 2px 0 4px 7px;
+    border: 1px solid #818181;
+}
+
+.image img {
+    width: 250px;
+    padding: 5px 10px;
+}
+
+
+/* details */
+
+.img-detail {
+    line-height: 30px;
+    float: left;
+    width: 200px;
+    margin-left: 20px;
+}
+
+.img-detail p {
+    margin-top: 5px;
+}
+
+#quantity {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    width: 20px;
+}
+
+.description h4 {
+    padding: 0;
+    margin-bottom: 8px;
+}
+
+
+.btn {
+    background-color: rgb(92, 99, 91);
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 5px 5px 5px;
+    border: 1px solid rgb(82, 99, 91);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: rgb(124, 6, 6);
+    color: #fff;
+    border: 1px solid rgb(124, 6, 6);
+}
+
+.btn1 {
+    background-color: rgb(82, 99, 91);
+    color: white;
+    font-weight: bold;
+    padding: 5px 5px 5px 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.btn1:hover {
+    background-color: rgb(17, 124, 10);
+    color: #fff;
+    border: 1px solid rgb(17, 124, 10);
+}
+
+.more h3 {
+    padding-left: 40px;
+    color: rgb(82, 99, 91);
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
+
+.more p {
+    padding-left: 40px;
+}
+
+/* Aside product */
+
+aside {
+    overflow: hidden;
+    background-color: rgb(221, 213, 213);
+    margin: auto;
+    padding: 18px 0;
+    margin-top: 35px;
+    text-align: center;
+}
+
+aside h3{
+    color: rgb(82, 99, 91);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.span {
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.img-slide {
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    padding: 0 15px 0 15px;
+    margin-right: 20px;
+}
+
+.img-slide p {
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: rgb(124, 6, 6);
+    font-size: 20px;
+
+}
+
+.slide-btn{
+    margin-bottom: 15px;
+}
+
+
+/* Footer */
+.footer1 {
+    background-color: rgb(82, 99, 91);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+#newsletter{
+    background-color: white;
+    color:rgb(82, 99, 91) ;
+    margin: 20px;
+}
+
+.btn2{
+    background-color: white;
+    color: rgb(82, 99, 91);
+}
+.footer1 p {
+    text-decoration: none;
+    color: white;
+    margin-top: 18px;
+
+}
+
+.footer2 {
+    text-align: center;
+}
+
+.footer3 {
+    text-align: right;
+    padding-right: 10px;
+    overflow: hidden;
+}
+.sign-up{
+    padding-top: 15px;
+}
+
+.footer3 h5 {
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.foot-p {
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.facebook{
+    padding-right: 15px;
+}
+.twitter{
+    padding-right: 15px;
+}
+.gmail{
+    padding-right: 15px;
+}
+
+.youtube{
+    padding-right: 15px;
+}
+@media screen and (max-width: 600px) {
+    .navbar,
+    .navbrand,
+    .navbar a,
+    li {
+        float: none;
+        text-align: left;
+        display: block;
+    }
+    .img-img {
+        padding: 0 20px;
+    }
+    aside {
+        padding-bottom: 40px;
+        margin: auto;
+        margin-top: 40px;
+    }
+    .img-slide {
+        margin-bottom: 20px;
+        width: 30%;
+        height:200px;
+        margin-top: 20px;
+        display:inline;
+    }
+    .img-slide p {
+        text-align: center;
+        font-weight:bold;
+        margin-bottom: 80px;
+    }
+    .container {
+        float: none;
+        display: inline;
+    }
+    .slide-btn {
+        margin-bottom: 15px;
+    }
+
+}
+@media screen and(max-width:940px) {
+
+    .footer1,
+    .footer2 .footer3 {
+        width: 300px;
+        margin-bottom: 10px;
+    }
+    .foot-p {
+        text-align:center;
+    }
+}
