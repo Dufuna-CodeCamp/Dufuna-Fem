@@ -16,30 +16,25 @@ function emptyField (event) {
     if (firstname.value == '') {
         firstname.nextElementSibling.innerHTML = "Please enter your firstname";
         event.preventDefault();
-        return false;
 }
      if (lastname.value == '') {
             lastname.nextElementSibling.innerHTML = "Please enter your lastname";
             event.preventDefault()
-            return false;
         }
     
     if (phonenumber.value == '') {
                 phonenumber.nextElementSibling.innerHTML = "Please enter your phone number";
                 event.preventDefault()
-                return false;
             }
     
      if (mail.value == '') {
             mail.nextElementSibling.innerHTML = "Please enter your email Address";
          event.preventDefault()
-         return false;
         }
     
      if (password.value == '') {
             password.nextElementSibling.innerHTML = "Please enter your password";
-            event.preventDefault()
-            return false;
+            event.preventDefault();
         }
         
      if (password2.value == '') {
@@ -94,11 +89,7 @@ function fieldValidation (event) {
         }
         
 
-        
-    function forms(e) {
-        emptyField(e);
-        fieldValidation(e);
-
-        return true;
-    }
- form.addEventListener("submit", forms);
+   
+    form.addEventListener("submit", fieldValidation);
+    form.addEventListener("submit", emptyField);
+ 
