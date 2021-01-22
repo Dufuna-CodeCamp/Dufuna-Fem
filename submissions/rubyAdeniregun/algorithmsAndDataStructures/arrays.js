@@ -23,7 +23,7 @@ var product_price = [
 ];
 
 /*create a function called calculate price to check the length of the
-products names and perform the required function */
+products names*/
 
 function calculatePrice(products) {
   for (i=0; i < products.length; i++) {
