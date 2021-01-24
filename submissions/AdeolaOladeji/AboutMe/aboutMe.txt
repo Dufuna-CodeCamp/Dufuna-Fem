@@ -1,5 +1,0 @@
-Hi, my name is Adeola Oladeji, a budding front-end developer.
-I'm enrolled in Dufuna Code Camp to develop my skills in web development and so far it has been an awesome experience being here.
-I look forward to getting the best from this program as regards the learning process, and getting hands-on practical steps in development process.
-I hope by the end of this program, I would have acquired skills that will help me kick start a promising career in the tech workspace as a front-end developer.
-Thank you!

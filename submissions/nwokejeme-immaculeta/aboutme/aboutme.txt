@@ -1,2 +1,0 @@
-Hello world! My name is Immaculeta
-I have been able to push my first task to github

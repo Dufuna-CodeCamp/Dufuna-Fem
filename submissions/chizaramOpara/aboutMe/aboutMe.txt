@@ -1,3 +1,0 @@
-Hello World!
-I hope to be able to gain at elast 80% proficiency at front end engineering.
-I hope to be able to apply the knowledge gained to solve practical situations.

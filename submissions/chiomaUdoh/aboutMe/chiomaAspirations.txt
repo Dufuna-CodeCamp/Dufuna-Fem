@@ -1,4 +1,0 @@
-My name is Chioma Udoh.
-By the end of the Dufuna Fem program, I hope to become an expert in a building a complete website using html, css, javascript and php.
-During the program, I hope to build 3 -5 projects that will give me a decent portfolio enough to be called a software developer and engineer.
-Thank you.

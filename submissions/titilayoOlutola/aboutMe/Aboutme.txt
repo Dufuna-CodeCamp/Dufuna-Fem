@@ -1,4 +1,0 @@
-Hello world. My name is Titilayo Olutola.
-I am grateful for the opportunity given to me to learn software development.
-At the end of this program, I hope to have become a software developer with capable skills and adequate knowledge.
-Thank you.
