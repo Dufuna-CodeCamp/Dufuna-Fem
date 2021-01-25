@@ -6,40 +6,41 @@ let formValidation = document.getElementById('form');
      nameRegex = /^[A-Za-z]+$/;
      emailRegex = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/;
 
-     function emptyField(event) {
-         if (subject.value == '') {
-            subject.nextElementSibling.innerHTML = "Please enter a message subject";
+     function emptyField( fieldName, errorMessage, event) {
+         if (fieldName.value == '') {
+            fieldName.nextElementSibling.innerHTML = errorMessage;
             event.preventDefault();
-           
-          } 
-          if (email.value == '') {
-            email.nextElementSibling.innerHTML = "Please enter your email Address";
-            event.preventDefault()
-           
-        }   
-            if (message.value == '') {
-            message.nextElementSibling.innerHTML = "Please enter your Message";
-            event.preventDefault()
-            return false;
+            return false
         } else {
-            field.nextElementSibling.innerHTML = "";
+            fieldName.nextElementSibling.innerHTML = "";
             return true;
         }
     }
-     function nameValidation (event) {
-        if (!fName.value.match(nameRegex)) {
-            fName.nextElementSibling.innerHTML = "Special characters are not allowed";
-            event.preventDefault()
-        }
-         if (!email.value.match(emailRegex)) {
-            email.nextElementSibling.innerHTML = "Please enter a valid email";
-            event.preventDefault()
+    function regex (fieldName, Regex,errorMessage, event) {
+        if (!fieldName.value.match(Regex)) {
+            fieldName.nextElementSibling.innerHTML = errorMessage
+            event.preventDefault();
             return false;
         } else {
-            field.nextElementSibling.innerHTML = "";
+            fieldName.nextElementSibling.innerHTML = "";
             return true;
         }
     }
 
-     formValidation.addEventListener("submit", nameValidation);
-     formValidation.addEventListener("submit", emptyField);
+    function forms (e) {
+    emptyField(fName, "Please enter your first name", e)
+    emptyField(email,"Please enter your email address", e)
+    emptyField(subject, "Please enter a message subject", e)
+    emptyField(message, "Please enter your message", e)
+    }
+
+    function form (e) {
+        regex(fName, nameRegex, "Special characters are not allowed", e)
+        regex(email, emailRegex, "Please enter a valid email")
+    }
+    
+    formValidation.addEventListener("submit", forms)
+    formValidation.addEventListener("submit", form)
+    
+    
+    
