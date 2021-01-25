@@ -24,7 +24,6 @@ function emptyField (fieldName, Regex, errorMessage1, errorMessage2, event) {
       fieldName.nextElementSibling.innerHTML = "";
       return true;
   }
-
 }
 function forms(e) {
     emptyField(firstname, nameRegex, "Please enter your first name", "Special characters are not acceptable",e)
