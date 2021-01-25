@@ -22,6 +22,11 @@ ul {
     display:inline-block;
     margin-left: 10px;
 }
+
+.error-block {
+    font-size: 12px;
+    color: red;
+}
     
 .headerc li a{
     color:white;
@@ -71,7 +76,7 @@ ul {
     border: solid 1px #707070;
 }
 
-#iagree{
+#iAgree{
     height:15px;
     border-radius:none;
     width:10px;
@@ -188,7 +193,7 @@ footer #copyright {
     margin-left: 50px;
 }
 
-#iagree {
+#iAgree {
     margin-left: 0;
 }
 
