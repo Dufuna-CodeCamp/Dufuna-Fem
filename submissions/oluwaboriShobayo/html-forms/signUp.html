@@ -24,23 +24,47 @@
      </div>
       <section id="form">
           <form action="#" method="post" enctype="multipart/form-data" id="sign">
-             <label for="Firstname">First name</label><br>
-             <input type="text" name="firstname" id="firstname"/><br><br>
-             <label for="last name">Last name</label><br>
-             <input type="text" name="lastname" id="lastname"/> <br><br>
-             <label for="Other names">Other names</label><br>
-             <input type="text" name="othername" id="othername"/> <br><br>
-             <label for="phone number">Phone number</label><br>
-             <input type="number" name="phone number" id="phonenumber"/> <br><br>
-             <label for="email">Email Address</label><br>
-             <input type="text" name="email" class="mail"/> <br><br>
-             <label for="password">Password</label><br>
-             <input type="password" name="password" id="password"/> <br><br>
-             <label for="password">Confirm Password</label><br>
-             <input type="password" name="password" id="password"/> <br><br>
-             <b><input type="checkbox" name="agree" id="agree"/></b>
-             <label id="terms">I agree to the Terms and Conditions</label><br><br>
-             <button type="Submit" class="submit"><strong>SIGN UP</strong></button> 
+                <div class="form-group">
+                       <label for="Firstname">First name</label><br>
+                        <input type="text" name="firstname" id="firstname"/>
+                        <span class="error-block"></span>
+                </div>
+                <div class="form-group">
+                        <label for="last name">Last name</label><br>
+                        <input type="text" name="lastname" id="lastname"/> 
+                        <span class="error-block"></span>
+                </div>
+                <div class="form-group">
+                        <label for="Other names">Other names</label><br>
+                         <input type="text" name="othername" id="othername"/> 
+                         <span class="error-block"></span>
+                </div>
+               <div class="form-group">
+                        <label for="phone number">Phone number</label><br>
+                        <input type="number" name="phone number" id="phonenumber"/> 
+                        <span class="error-block"></span>
+                </div>
+                <div class="form-group">
+                        <label for="email">Email Address</label><br>
+                        <input type="text" name="email" id="mail"/> 
+                        <span class="error-block"></span><br>
+                </div>
+                <div class="form-group">
+                        <label for="password">Password</label><br>
+                        <input type="password" name="password" id="password"/> 
+                        <span class="error-block"></span>
+                </div>
+                <div class="form-group">
+                        <label for="password">Confirm Password</label><br>
+                        <input type="password" name="password" id="password2"/> 
+                        <span class="error-block"></span>
+                </div>
+                <div class="form-group">
+                        <b><input type="checkbox" name="agree" id="agree"/></b>
+                        <span class="error-block"></span>
+                        <label id="terms">I agree to the Terms and Conditions</label>   
+                </div>
+                <button type="submit" class="submit"><strong>SIGN UP</strong></button> 
           </form>
      </section>
   </section> 
@@ -62,7 +86,7 @@
          </div>
          <div id="Icons">
               <p id="connect">CONNECT WITH US</p>
-              <img src="../HTML/IMAGES/facebook _logo.jpg" alt="Facebook logo" width="35px" height="31px" class="icons">
+              <img src="..HTML/IMAGES/facebook _logo.jpg" alt="Facebook logo" width="35px" height="31px" class="icons">
               <img src="../HTML/IMAGES/twitter _logo.jpg" alt="Twitterlogo" width="35px" height="31px" class="icons">
               <img src="../HTML/IMAGES/gmail _logo.jpg" alt="Gmail logo" width="35px" height="31px"class="icons">
               <img src="../HTML/IMAGES/youtube _logo.png" alt="Youtube logo" width="35px" height="31px"class="icons">
@@ -73,5 +97,6 @@
              <p>All rights reserved.</p>
         </div>
   </footer>
+  <script src="../DOM/signUp.js"></script>
 </body>
 </html>

@@ -12,6 +12,11 @@ body {
         font-size: 22px;
          font-family: 'Montserrat', sans-serif;      
     }
+.error-block {
+    font-size:12px;
+    color:red;
+    margin-bottom:10px;
+}
      #header {
         background-color: yellowgreen;
         padding: 15px;
@@ -53,43 +58,51 @@ body {
     width:100%;
     border:solid 2px;
     font-size:33px;
-    margin-top:15px;
+    margin-top:10px;
     border-radius:10px;
 }
 #lastname {
     width:100%;
     border:solid 2px;
     font-size:33px;
-    margin-top:15px;
+    margin-top:10px;
     border-radius:10px;
 }
 #othername {
     width:100%;
     border:solid 2px;
     font-size:33px;
-    margin-top:15px;
+    margin-top:10px;
     border-radius:10px;
 }
 #phonenumber {
     width:100%;
     border:solid 2px;
     font-size:33px;
-    margin-top:15px;
+    margin-top:10px;
     border-radius:10px;
 }
-.mail {
+#mail {
     width:100%;
     border:solid 2px;
     font-size:33px;
-    margin-top:15px;
+    margin-top:10px;
     border-radius:10px;
 }
 #password {
     width:100%;
     border:solid 2px;
     font-size:33px;
-    margin-top:15px;
+    margin-top:10px;
     border-radius:10px;
+}
+#password2 {
+    width:100%;
+    border:solid 2px;
+    font-size:33px;
+    margin-top:10px;
+    border-radius:10px;
+   
 }
  #agree {
     width: 20px;
@@ -225,10 +238,13 @@ body {
 #phonenumber {
     font-size:30px;
 }
-.mail {
+#mail {
     font-size:30px;
 }
 #password {
+    font-size:30px;
+}
+#password2 {
     font-size:30px;
 }
 #container {
