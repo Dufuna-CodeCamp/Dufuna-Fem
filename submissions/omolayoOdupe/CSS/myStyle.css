@@ -407,8 +407,7 @@ body{
     .signup-fieldset{
         margin-left:0px;
     }
-
-
+    
     .footer-wrapper{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -417,10 +416,3 @@ body{
     }   
 
 }
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width:1200px){
-
-}
-
-
-    
