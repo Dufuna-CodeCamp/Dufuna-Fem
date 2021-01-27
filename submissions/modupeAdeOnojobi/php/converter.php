@@ -6,7 +6,7 @@ function converter($type,$num) {
     } elseif ($type == 'meter') {
         echo "$num meter = " .$num * 1.094 . " Yards <br>";
     } elseif ($type == 'celsius') {
-        echo "$num celsius = ", ($num * 9/5 + 32) , " Pounds";    
+        echo "$num celsius = ", ($num * 9/5 + 32) , " Fahrenheit";    
     } else {
         echo "Not a valid value";
     }
