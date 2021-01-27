@@ -48,6 +48,10 @@ h2 {
     font-size: 2.5rem;
 }
 
+h3 {
+    font-weight: 700;
+}
+
 label {
     display: block;
     font-size: 0.8rem;
@@ -73,7 +77,7 @@ nav ul li a:hover {
 
 main {
     width: 100%;
-    padding: 30px;
+    padding: 50px 30px;
     display: grid;
     grid-template-columns: repeat(2, 50%);
     column-gap: 10px;
@@ -135,7 +139,7 @@ main {
     text-align: center
 }
 
-.btn-signup {
+.btn-signup, .btn-contact {
     text-transform: uppercase;
     background-color: purple;
     color: #FFF;
@@ -143,7 +147,7 @@ main {
     padding: 10px 30px;
 }
 
-.btn-signup:hover {
+.btn-signup:hover, .btn-contact:hover {
     background-color: #FFF;
     color: purple;
     border: 1px solid purple;
@@ -211,6 +215,51 @@ footer {
     margin-top: 30px;
 }
 
+/* Contact page styles */
+.contact-main {
+    width: 100%;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.contacts {
+    margin-bottom: 30px;
+}
+
+.form-container2 {
+    width: 100%;
+    border: 1px solid #888;
+    padding: 30px;
+}
+
+.form-top {
+    text-align: center;
+}
+
+.contact-input, .contact-input input, .contact-input textarea  {
+    width: 100%;
+}
+
+.contact-input {
+    margin-bottom: 15px;
+}
+
+.contact-input input {
+    padding: 7px 5px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #888;
+}
+
+.contact-input label {
+    margin-bottom: 5px;
+}
+
+.contact-btn {
+    text-align: right;
+}
+
 @media screen and (max-width: 768px) {
     main {
         display: block;
@@ -233,6 +282,10 @@ footer {
 
     .newsletter {
         margin-bottom: 20px;
+    }
+
+    .contact-main {
+        padding: 0 0;
     }
 }
 
@@ -266,6 +319,10 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+    h3 {
+        font-size: 1rem;
+    }
+
     main {
         padding: 5px 30px 20px 30px;
     }
@@ -276,5 +333,27 @@ footer {
 
     .check-input label a {
         font-size: 0.8rem;
+    }
+
+    .contact-info {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .form-container2 {
+        padding: 30px 10px;
+    }
+    .social-links img {
+        width: 30px;
+        height: 25px;
+    }
+
+    .copyright {
+        font-size: 0.9rem;
+    }
+
+    .footer-links li a {
+        font-size: 0.9rem;
     }
 }
