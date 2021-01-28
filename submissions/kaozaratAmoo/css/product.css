@@ -1,0 +1,241 @@
+body{
+    background-color:white;
+    border:rgb(138, 184, 69) solid 2px;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration-line: none;
+    background-color: rgb(138, 184, 69);
+    color:white;
+    font-size: large;
+}
+#nav ul{
+    background-color:rgb(138, 184, 69); 
+    display: flex;
+    justify-content: space-between; 
+    height: 152px;
+    margin-top: 0;    
+}
+.click {
+    padding: 70px 30px 10px 30px;
+}
+.active {
+    font-weight: bold;
+    color:rgb(3, 73, 3)
+}
+a:hover {
+    color:black;
+    font-weight: bolder;
+}
+.cucumberimage {
+    border: rgb(138, 184, 69) solid 1px;
+    padding: 0 20px 0 5px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+#cucumber {
+    display: flex;
+    justify-content: space-between; 
+}
+.productname {
+    padding-top: 50px ;
+    padding-right:1000px;
+    padding-left: 50px;
+}
+.cart {
+    padding:7px;
+    background-color:rgb(138, 184, 69);
+    color:white;
+}
+input {
+    width: 20%;
+    height: 20px;
+}
+.Description {
+    padding-left: 30px;
+}
+#related {
+    text-align: center;
+    font-size: large;
+}
+#others {
+    display: flex;
+    justify-content: space-between;
+}
+.similar{
+    background-color:rgb(248, 245, 245);
+    margin-top: 30px;
+    padding: 4px  20px 20px 30px
+}
+#product2 {
+    display: block;
+    background-color: white;
+    padding:15px 50px 5px 50px;
+}
+.product2name {
+    text-align: center;
+}
+#product3 {
+    display: block;
+    background-color: white;
+    padding:15px 50px 5px 50px;
+}
+.product3name{
+    text-align: center;
+}
+#product4 {
+    display: block;
+    background-color: white;
+    padding:15px 50px 5px 50px;
+}
+.product4name{
+    text-align: center;
+}
+#clear {
+    display: flex;
+    justify-content:space-around;
+    padding-top: auto;
+ }
+#foot {
+    background-color:rgb(138, 184, 69); 
+    height:150px;
+}
+.email {
+    padding: 10px;
+    width:auto
+}
+.submit{
+    padding: 10px;
+}
+.copy {
+    text-align: center;
+}
+@media screen and (max-width:480px) {
+    #nav  ul{
+        display: block; 
+        height: auto;  
+    }    
+    .click {
+        padding: 5px 10px 10px 10px;
+    }
+    #cucumber {
+        display: block; 
+    }
+    .productname {
+        padding-top: 5px ;
+        padding-right:0;
+        padding-left: 30px;
+    }
+    input {
+        width:5%;
+        height: 8px;
+        padding-left: 2px;
+    }
+    #others{
+        display:block
+    }
+    #product2 {
+        padding-left: 100px;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+    }
+    .product2name {
+        text-align:justify
+    }
+    #product3 {
+        padding-left: 100px;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+    }
+    .product3name {
+        text-align:justify
+    }
+    #product4 {
+        padding-left: 100px;
+        padding-bottom:5px;
+        margin-bottom: 15px;
+    }
+    .product4name {
+        text-align:justify
+    }
+    #clear {
+        display: block;
+    }
+    #foot { 
+        height:300px;
+    }
+    .contact {
+        padding-top: 5px;
+    }
+    .newsletter {
+        padding-left: 35px;
+    }
+    .connect {
+        padding-left: 35px;
+    }
+}
+@media screen and (max-width:768px) {  
+    #nav ul{  
+        height: 155px;  
+    }
+    .productname {
+        padding-right:200px;
+    }
+    input {
+        width:10%;
+        height: 6px;
+    }
+    #others {
+        display:block
+    }
+    #prouct2{
+        display:inline;
+        float:left
+    }
+    #product2 {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 5px;
+        margin-bottom: 30px;
+        margin-right: 0px;
+    }
+    .product2name {
+        text-align:center
+        }
+     #product3 {
+        padding-left: 50px;
+        padding-bottom: 5px;
+        margin-bottom: 30px;
+        margin-left:400px;
+     }
+    .product3name{
+        text-align:center
+     }
+     #product4 {
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-right:400px;
+        padding-bottom:5px;
+        margin-bottom: 15px;
+    }
+    .product4name {
+        text-align:center
+        }
+    #clear {
+        display: block;
+    }
+    #foot { 
+        height:305px;
+    }
+    .contact {
+        padding-top: 5px;
+    }
+    .newsletter {
+        padding-left: 35px;
+    }
+    .connect {
+        padding-left: 35px;
+    }
+}
