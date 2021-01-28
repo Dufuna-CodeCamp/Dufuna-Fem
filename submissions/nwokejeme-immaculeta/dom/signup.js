@@ -21,6 +21,21 @@ let submitForm = document.getElementById('validateForm'),
             return true;
         }
     }
+
+    function confirmPasswordVal(event){
+        if (confirmPassword.value == ''){
+            confirmPassword.nextElementSibling.innerHTML = confirmPasswordEmpty;
+            event.preventDefault();
+            return false;
+        } else if (!(confirmPassword.value == password.value)){
+            confirmPassword.nextElementSibling.innerHTML = confirmPasswordUnmatched;
+            event.preventDefault();
+            return false;
+        }else{
+            confirmPassword.nextElementSibling.innerHTML = '';
+            return true;
+        }
+    }
     
     formValidation =(event) => {
         const nameRegex = /^[a-zA-Z]/,
