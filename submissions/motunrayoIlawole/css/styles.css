@@ -49,6 +49,7 @@ h2 {
 }
 
 h3 {
+    color: #1B0000;
     font-weight: 700;
 }
 
@@ -81,6 +82,12 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 50%);
     column-gap: 10px;
+}
+
+aside {
+    background-color: #CE9DD9;
+    text-align: center;
+    padding: 30px;
 }
 
 .main-text {
@@ -260,6 +267,72 @@ footer {
     text-align: right;
 }
 
+/*Product page*/
+.container {
+    padding: 50px 30px;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    column-gap: 10px;
+}
+
+.product-image {
+    width: 90%;
+    height: 300px;
+    background-image: url('../html/assets/brown-brim.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.product-details {
+    padding: 20px 0;
+}
+
+.product-details p input {
+    width: 50px;
+    padding: 5px;
+}
+
+.product-desc p {
+    line-height: 1.5;
+}
+
+.buy-now {
+    display: inline-block;
+    background-color: purple;
+    color: #FFF;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.other-products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.other-product {
+    background-color: #FFF;
+    margin: 10px 20px;
+}
+
+.other-image {
+    display: block;
+    padding: 10px;
+}
+
+.other-image img {
+    width: 100%;
+    height: 300px;
+}
+
 @media screen and (max-width: 768px) {
     main {
         display: block;
@@ -309,12 +382,20 @@ footer {
         margin-bottom: 10px;
     }
 
+    aside {
+        padding: 30px 0;
+    }
+
     .footer-top {
         display: block;
     }
 
     .footer-form input {
         width: 80%;
+    }
+
+    .product {
+        display: block;
     }
 }
 
