@@ -7,33 +7,24 @@ let submitForm = document.getElementById('validateForm'),
     password = document.getElementById('password');
     confirmPassword = document.getElementById('confirmPassword');
 
-function required(field, event) {
-    if (firstName.value == '') {
-            firstName.nextElementSibling.innerHTML = "Please enter your Full Name";
+    function required(field, event) {
+        if (field.value === '') {
+            field.nextElementSibling.innerHTML = "Please enter your Full Name";
             event.preventDefault();
-        
-    if (lastName.value == '')
-            lastName.nextElementSibling.innerHTML = "Please enter your Last Name";
+            
+        if (field.value === '')
+            field.nextElementSibling.innerHTML = "Please enter your Last Name";
             event.preventDefault();
-
-    if (otherName.value == '')
-            otherName.nextElementSibling.innerHTML = "";
-            event.preventDefault();
-
-    if (password.value == '')
-            password.nextElementSibling.innerHTML = "Please enter your password";
-            event.preventDefault();
-
-    if (confirmPassword.value == '')
-            confirmPassword.nextElementSibling.innerHTML = "Please confirm your password";
-            event.preventDefault();
-            return false;
-        
-    }   else { 
+    
+        if (field.value == '')
             field.nextElementSibling.innerHTML = "";
-            return true;
+            event.preventDefault();
+    
+        }   else { 
+            field.nextElementSibling.innerHTML = "";
+                return true;
+        }
     }
-}
 
 //firstname and lastname field validation
 function nameValidation(event) {
