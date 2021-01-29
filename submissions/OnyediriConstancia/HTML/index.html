@@ -4,40 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopfood</title>
+    <link rel="stylesheet" href="/product.css">
 </head>
 <body>
-  <h2>SHOPFOOD</h2>  
-  <a href="#">view other foodstuff here</a> <br>
+  <header>
+    <div  class="navbar">
+    <div class="navbrand">
+  <h1>SHOPFOOD</h1> 
+   <h6>Home of quality and fresh food stuff.</h6>
+</div>
+ <ul>
+       <a href="aboutUs.html"> <li>About Us</li></a>
+       <a href="ContactForm.html">  <li>Contact Form</li></a>
+       <a href="product.html"> <li>Product</li></a>   
+   </ul>
+       </div>
+   </header>
+   <section>
+       <div class="description">
+   <p> <strong>  Welcome to shopfood your number one online store for fresh food.</strong> </p> 
+  </div>
+</section>
+ <!-- product and description -->
+ <main>
+  <div class="image">
+      <img src="/Images/Fish.jpg" alt="Titus Fish" width="270px" height="270px">
+  </div>
+  <div class="img-detail">
+      <h3 class="title">Titus fish</h3>
+      <p> Brand:Fresh Fish</p>
+      <span id="quantity:">
+          <label for="quantity">Quantity:</label>
+          <input type="number" name="quantity" id="quantity" value="1">
+      </span>
+      <p>price: <span id="price">#1,000</span></p>
+      <p>Shipping cost: <span id="shippingCost">#5,000</span> </p>
+      <button class="btn">BUY NOW</button>
+  </div>
+</main>
+<section>
+  <div class="more">
+      <h3>DESCRIPTION</h3>
+      <p> Titus fish is rich in omega-3 polyunsaturated fatty acids which reduces inflammation and potentially lower the risk of heart disease, cancer, and arthritis.</p>
+  </div>
+  <aside>
+      <h3>OTHER FOODSTUFF TYPES</h3>
+      <div class="img-slide">
+          <img src="/Images/tomatoes.jpg" alt="" width="250px" height="200px">
+          <p>Tomatoes <br> <span class="span"> Price:#600</span></p> 
+      </div>
+      <div class="img-slide">
+          <a href=""><img src="/Images/uguleaf.jpg" alt="ugu leaf" width="250px" height="200px"></a>
+          <p>Ugu leaf <br> <span class="span">price:#500</span>
+          </p>  
+      </div>
+ <div class="img-slide">
+          <a href=""><img src="/Images/stockfish.jpg" alt="" width="250px" height="200px"></a>
+          <p>Stockfish <br><span class="span"> Price:#2,000</span></p>
  
-  <img src="/Images/tomatoes.jpg" alt="Tomatoes" width="190px" height="100px">
-   <h4>Tomatoes, 1kg</h4>
- 
-  <h4><strong>price:</strong>2000 NGN</h4>
+      </div>
+  </aside>
+</section><br>
+   <!-- Footer section -->
+<footer class="footer1 ">
+  <div class="container ">
+      <div class="row ">
+          <div class="col-md-12 ">
+              <a href=" ">
+                  <p>About Us</p>
+              </a>
 
-  <h3>Description</h3>
-<p>Tomato is the edible berry of the plant Solanum lycoperisicum, commnly known as a tomato plant.</p>
-<a href="#">Add to cart</a><br>
+              <a href=" ">
 
+                  <p> Contact Us</p>
+              </a>
 
-<img src="/Images/Fish.jpg" alt="Titus Fish">
-  <h4>Titus fish, 1kg</h4>
-  <h4><b>Price:</b> 1500 NGN</h4>
-  <h3>Description </h3>
+              <a href=" ">
+                  <p> Terms and Condition</p>
+              </a>
 
-<p>Titus fish is rich in omega-3 polyunsaturated fatty acids which reduces inflammation and potentially lower risk of heart disease,cancer, and arthritis.</p>
-  <a href="#">Add to cart</a>
-<hr>
+          </div>
+      </div>
+  </div><br>
 
-  <h3>You can also check other foodstuff items such as;</h3>
-<ol>
-   <a href=""> <li> Egusi</li></a>
-   <a href="">  <li>Ogbono</li></a>
-   <a href=""> <li>Rice</li></a>
-</ol>
+  <div class="footer2 ">
+      <form id="requiredfield ">
+          <label for="newsletter " class="sign-up">Sign up for our news letter</label> <br>
 
-   <a href="http://">Instagram</a>
-   <a href="http://">Linkedin</a>
-   <a href="http://">Twitter</a>
-   <p>&copy;Shopfood, 2020</p>
+          <input type="email " name="newsletter " id="newsletter " placeholder="Enter your email address ">
+          <button type="submit " class="btn2"> Submit </button><br>
+          <span class="errormessage "></span>
+
+      </form>
+
+      <div class="footer3 ">
+          <footer3>
+              <h5>CONNECT WITH US</h5>
+
+              <a href="# " class="facebook">
+
+                  <img src="/images/facebook.jpg " alt=" " width="30px ">
+              </a>
+
+              <a href="# " class="twitter">
+                  <img src="/images/twitter.jpg " alt=" " width="30px ">
+              </a>
+
+              <a href=" " class="gmail">
+                  <img src="/images/gmail.jpg " alt=" " width="30px " height="30px">
+
+              </a>
+
+              <a href=" " target="_blank " rel="noopener noreferrer " class="youtube">
+                  <img src="/images/youtube.jpg " alt=" " width="30px ">
+              </a>
+          </footer3>
+      </div>
+  </div>
+
+</div>
+<p class="foot-p "> copy 2020 ShopFood all rights reserved.
+</p>
+
+</footer>
+
 </body>
 </html>
