@@ -7,7 +7,7 @@ let  Sform = document.getElementById("form");
  
 
     function numberValidation (event) {
-    if (quantity.value == '') {
+    if (quantity.value == '')  {
         button.disabled = true;
         button.style.backgroundColor = "#808080"
         quantity.nextElementSibling.innerHTML = "Please enter a valid quantity";
