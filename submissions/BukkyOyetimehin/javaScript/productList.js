@@ -5,5 +5,5 @@ var productList = [
 ]
 
 for (let i in productList) {	
-console.log((productList[i].productName) + (" with url of ") + (productList[i].imageUrl) + (" is sold for ") + (productList[i].productPrice)); 
+console.log((productList[i].productName) + (" with url of ") + (productList[i].imageUrl) + (" is sold for ") + (productList[i].productPrice + (" only"))); 
 }
