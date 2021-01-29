@@ -3,7 +3,7 @@
 	USE premium_technologies;
 
 --// CREATE TABLES FOR E-COMMERCE STORE DATABASE
---// Create the admins table
+		--// Create the admins table
 		CREATE TABLE admins (
 			admin_id INT NOT NULL AUTO_INCREMENT,
 			name VARCHAR(100) NOT NULL,
@@ -21,7 +21,7 @@
 				('Aliyah Bello', 'belloaliyah@yahoo.com', '14thaliyah', '07014789632');
 
 --// CATEGORIES
---// Created categories table
+		--// Created categories table
 		CREATE TABLE categories (
 			category_id INT NOT NULL AUTO_INCREMENT,
 			category_name VARCHAR(20) NOT NULL,
@@ -33,10 +33,10 @@
 			VALUES 	('samsung'), ('tecno'), ('apple'), ('infinix'),('redmi');
                     
 --// PRODUCTS
---// Create products table
+		--// Create products table
 		CREATE TABLE products (
 			product_id INT NOT NULL AUTO_INCREMENT,
-            category_id INT NOT NULL,
+            		category_id INT NOT NULL,
 			admin_id INT NOT NULL,
 			name VARCHAR(50) NOT NULL,
 			description VARCHAR(255) NOT NULL,
@@ -49,13 +49,13 @@
 			FOREIGN KEY (admin_id) REFERENCES admins (admin_id)
 		);
         
-	--// Insert records into the products table
+		--// Insert records into the products table
 		INSERT INTO products (category_id, admin_id,name, description, image, unit_price, stock_level, status)
 			VALUES 	(1,2,'Samsung S20', 'A mind-blending glass screen that folds like a book.', ('D:\Dufuna-Fem\submissions\HalimahOladimeji\HTML-forms\images/samsungs20.jpg'),265000.00, 40, 'in stock'),
 				(3,4,'Samsung Galaxy Note 20', 'A hands-free camera that shoots when you wave',('D:\Dufuna-Fem\submissions\HalimahOladimeji\HTML-forms\images/NOTE-20.jpg'),350000.00, 25, 'in stock');
 				
 --// CUSTOMERS
---// Create customers table
+		--// Create customers table
 		CREATE TABLE customers (
 			customer_id INT NOT NULL AUTO_INCREMENT,
 			first_name VARCHAR(50) NOT NULL,
@@ -65,7 +65,7 @@
 			PRIMARY KEY (customer_id)
 		);
         
-	--// Insert records into the customers table
+		--// Insert records into the customers table
 		INSERT INTO customers (first_name, last_name, email, password)
 			VALUES 	('Joseph', 'Akinola', 'josephakin@gmail.com', 'bookworm24'),
 				('Ajayi', 'Coker', 'cokerajayi@gmail.com', 'snickers77'),
@@ -73,10 +73,10 @@
 				('Matthew', 'Gbenga', 'gbengamatt@yahoo.com', 'bodycare20');
                     
 --// CUSTOMERS CONTACTS 
---// Create the customers contacts table
+		--// Create the customers contacts table
 		CREATE TABLE customer_contacts (
 			contact_id INT NOT NULL AUTO_INCREMENT,
-            customer_id INT NULL,
+            		customer_id INT NULL,
 			street VARCHAR(50) NOT NULL,
 			city VARCHAR(40) NOT NULL,
 			state VARCHAR(30) NOT NULL,
@@ -87,7 +87,7 @@
 			FOREIGN KEY (customer_id) REFERENCES customers (customer_id) 
 		);
         
-	--// Insert records into the customers address table
+		--// Insert records into the customers address table
 		INSERT INTO customer_contacts (customer_id, street, city, state, zip_code, country, phone)
 			VALUES  (1, '77 Hamilton Street', 'Magodo', 'Lagos', 55667 , 'Nigeria', '08045223669'),
 				(2, 'House 317 Flat 2 Gowon Estate', 'Alimosho', 'Lagos', 12355 , 'Nigeria', '07099665558'),
@@ -95,7 +95,7 @@
 				(4, '6 Bolaji Road', 'Mokola', 'Oyo', 02278 , 'Nigeria', '09033444778');
                     
 --// ORDERS
---// Create the orders table
+		--// Create the orders table
 		CREATE TABLE orders (
 			order_id INT NOT NULL AUTO_INCREMENT,
 			clients INT NOT NULL,
@@ -105,7 +105,7 @@
 			FOREIGN KEY (clients) REFERENCES customers (customer_id)
 		);
 
-	--// Insert values into the orders table
+		--// Insert values into the orders table
 		INSERT INTO orders (clients, order_amount, order_created_at)
 			VALUES  (2, 265000.00, now()),
 				(3, 350000.00, now()),
