@@ -1,3 +1,9 @@
+/*{
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0;
+}*/
+
 body{
     background-color:white;
     border:rgb(138, 184, 69) solid 2px;
@@ -41,15 +47,24 @@ a:hover {
 #form {
     border:rgb(138, 184, 69) solid 1px;
     padding: 30px;
-    text-align: center;
     margin-top:50px;
     font-size: large;
     margin-right:30px;
 }
-input{
-    width:70%;
-    height:30px
+.center{
+    text-align: center;
 }
+
+.dye{
+    width:70%;
+    outline: 0;
+    height:0;
+    border: 0;
+    border-bottom: 1px solid black;
+    padding-top:0;
+}
+
+
 textarea{
     height:120px;
 }
@@ -93,7 +108,6 @@ textarea{
     #form {
         border:rgb(138, 184, 69) solid 1px;
         padding: 30px;
-        text-align: center;
         margin:80px;
         font-size: large;
     }
