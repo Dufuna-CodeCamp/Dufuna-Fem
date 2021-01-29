@@ -3,7 +3,7 @@
 	USE premium_technologies;
 
 --// CREATE TABLES FOR E-COMMERCE STORE DATABASE
-	--// Create the admins table
+--// Create the admins table
 		CREATE TABLE admins (
 			admin_id INT NOT NULL AUTO_INCREMENT,
 			name VARCHAR(100) NOT NULL,
@@ -21,7 +21,7 @@
 				('Aliyah Bello', 'belloaliyah@yahoo.com', '14thaliyah', '07014789632');
 
 --// CATEGORIES
-	--// Created categories table
+--// Created categories table
 		CREATE TABLE categories (
 			category_id INT NOT NULL AUTO_INCREMENT,
 			category_name VARCHAR(20) NOT NULL,
@@ -33,7 +33,7 @@
 			VALUES 	('samsung'), ('tecno'), ('apple'), ('infinix'),('redmi');
                     
 --// PRODUCTS
-	--// Create products table
+--// Create products table
 		CREATE TABLE products (
 			product_id INT NOT NULL AUTO_INCREMENT,
             category_id INT NOT NULL,
@@ -55,7 +55,7 @@
 				(3,4,'Samsung Galaxy Note 20', 'A hands-free camera that shoots when you wave',('D:\Dufuna-Fem\submissions\HalimahOladimeji\HTML-forms\images/NOTE-20.jpg'),350000.00, 25, 'in stock');
 				
 --// CUSTOMERS
-	--// Create customers table
+--// Create customers table
 		CREATE TABLE customers (
 			customer_id INT NOT NULL AUTO_INCREMENT,
 			first_name VARCHAR(50) NOT NULL,
@@ -73,7 +73,7 @@
 				('Matthew', 'Gbenga', 'gbengamatt@yahoo.com', 'bodycare20');
                     
 --// CUSTOMERS CONTACTS 
-	--// Create the customers contacts table
+--// Create the customers contacts table
 		CREATE TABLE customer_contacts (
 			contact_id INT NOT NULL AUTO_INCREMENT,
             customer_id INT NULL,
@@ -95,7 +95,7 @@
 				(4, '6 Bolaji Road', 'Mokola', 'Oyo', 02278 , 'Nigeria', '09033444778');
                     
 --// ORDERS
-	--// Create the orders table
+--// Create the orders table
 		CREATE TABLE orders (
 			order_id INT NOT NULL AUTO_INCREMENT,
 			clients INT NOT NULL,
@@ -113,7 +113,7 @@
 				(4, 265000.00, now());
                     
 --// ORDER ITEMS
-	--// Create the order items table
+--// Create the order items table
 		CREATE TABLE order_items (
 			item_id INT NOT NULL AUTO_INCREMENT,
 			order_id INT NOT NULL,
@@ -130,4 +130,4 @@
 			VALUES  (1, 1, 5, 265000.00, 1325000.00),
 				(2, 2, 1, 350000.00, 350000.00),
 				(3, 2, 10, 350000.00, 3500000.00),
-                (3, 1, 2, 265000.00, 530000.00);
+                		(3, 1, 2, 265000.00, 530000.00);
