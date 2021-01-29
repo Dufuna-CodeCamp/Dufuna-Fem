@@ -18,3 +18,8 @@ const productList = [
 productList.forEach(function(list) {
     console.log(list.name + " with " + list.imageurl  + "is sold for " + list.productPrice + '.');
 })
+
+output.forEach(function(list) {
+    console.log
+})
+

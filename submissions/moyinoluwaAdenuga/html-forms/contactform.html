@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../HTML/index.html">Product</a></li>
+            <li><a href="contactform.html">Contact Form</a></li>
+        </ul>
+    </nav>
+    <h1>Contact Form</h1>
+    <form action="#" method="post" enctype="application/x-www-form-urlencoded">
+        <fieldset>
+            <legend>Contact AMOD</legend>
+
+            <label for="fullname">Fullname</label><br>
+            <input type="text" name="fullname" id="fullname" placeholder="Enter your fullname"><br><br>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" placeholder="Enter your email address"><br><br>
+
+            <label>How would you rate our services?</label><br>
+            <input type="radio" name="ratings" id="ratings1" value="ratings1">
+            <label for="ratings1">Very Good</label><br>
+            <input type="radio" name="ratings" id="ratings2" value="ratings2">
+            <label for="ratings2">Good</label><br>
+            <input type="radio" name="ratings" id="ratings3" value="ratings3">
+            <label for="ratings3">Average</label><br>
+            <input type="radio" name="ratings" id="ratings4" value="ratings4">
+            <label for="ratings4">Fair</label><br><br>
+
+            <label for="enquiry-title">Enquiry or Request Title</label><br>
+            <input type="text" name="enquiry-title" id="enquiry-title"><br><br>
+            <label for="enquiry-message">Enquiry/Requests</label><br>
+            <textarea cols="50" rows="10" placeholder="Type your enquiry/request here..."></textarea><br><br>
+
+            <button type="submit">Submit Form</button>
+
+        </fieldset>
+    </form>
+</body>
+</html>
