@@ -338,6 +338,7 @@ body{
 
     .contactpage-container{
         flex-direction: column;
+        align-items: center;
         margin-top: 20px;
     }
 
@@ -386,6 +387,7 @@ body{
 
     .contactpage-container{
         flex-direction: column;
+        align-items: center;
         margin-top: 20px;
     }
 
