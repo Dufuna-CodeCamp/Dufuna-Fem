@@ -12,7 +12,7 @@
 			phone_number VARCHAR(20) NOT NULL,
 			PRIMARY KEY (admin_id)
 		);
-	--// Insert records into the admins table
+		--// Insert records into the admins table
 		INSERT INTO admins (name, email, password, phone_number) 
 			VALUES  ('Halimah Oladimeji', 'halimaholadimeji@gmail', 'mathematics', '08022445566'),
 				('Bose Joshua', 'bosejoshua@gmail.com', 'yoruba44', '09044579621'),
@@ -28,7 +28,7 @@
 			PRIMARY KEY (category_id)
 		);
         
-	--// Inserted records into the categories table
+		--// Inserted records into the categories table
 		INSERT INTO categories (category_name)
 			VALUES 	('samsung'), ('tecno'), ('apple'), ('infinix'),('redmi');
                     
@@ -113,7 +113,7 @@
 				(4, 265000.00, now());
                     
 --// ORDER ITEMS
---// Create the order items table
+		--// Create the order items table
 		CREATE TABLE order_items (
 			item_id INT NOT NULL AUTO_INCREMENT,
 			order_id INT NOT NULL,
@@ -125,7 +125,7 @@
 			FOREIGN KEY (order_id) REFERENCES orders (order_id),
 			FOREIGN KEY (product_id) REFERENCES products (product_id)
 		);
-	--// Insert records into the order items table
+		--// Insert records into the order items table
 		INSERT INTO order_items (order_id, product_id, quantity, unit_price, total_amount) 
 			VALUES  (1, 1, 5, 265000.00, 1325000.00),
 				(2, 2, 1, 350000.00, 350000.00),
