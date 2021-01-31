@@ -131,9 +131,16 @@ nav a:focus {
     color: #5f5f5f;
 }
 
+<<<<<<< HEAD
 .f-items t {
     border: 1px solid black;
     padding: 0 19px;
+=======
+.f-items input{
+    width: 14%;
+    height: 30%;
+  
+>>>>>>> 17a854775b699bb4b4c9c56e13b455853db6095c
 }
 
 .btn {
@@ -230,7 +237,12 @@ nav a:focus {
 
     .float {
         float: right;
+<<<<<<< HEAD
         margin-right: 30em;
+=======
+        position: relative;
+        right: 27em;
+>>>>>>> 17a854775b699bb4b4c9c56e13b455853db6095c
         margin-top: 2em;
         line-height: 2;
     }
@@ -257,6 +269,25 @@ nav a:focus {
     }
 }
 
+<<<<<<< HEAD
+=======
+@media (min-width: 45rem) {
+    .float {
+        position: relative;
+        right: 8rem;
+
+    }
+}
+
+@media (min-width: 64rem) { 
+    .float {
+        position: relative;
+        right: 23rem;
+
+    }
+}
+
+>>>>>>> 17a854775b699bb4b4c9c56e13b455853db6095c
 @media (min-width: 67rem) { 
     .container-1 {
         max-width: 90rem;
@@ -282,8 +313,13 @@ nav a:focus {
     }
     .float {
         float: right;
+<<<<<<< HEAD
         margin-right: 55em;
         margin-top: 2em;
+=======
+        position: relative;
+        right: 48rem;
+>>>>>>> 17a854775b699bb4b4c9c56e13b455853db6095c
         line-height: 2;
     }
 
@@ -718,4 +754,41 @@ textarea {
     }  
 }
 
+<<<<<<< HEAD
+=======
+.error-block {
+    font-size: 12px;
+    color: red;
+}
+
+.error{
+    text-align: left;
+    margin-left: 22px;
+    font-size: 12px !important;
+}
+
+#submitNewsletter {
+    border: none;
+}
+
+
+#submitNewsletter .news {
+    font-size: 11px;
+}
+
+.letter {
+    font-size: 1px;
+}
+
+.disable {
+    background-color: gray;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.prodmsg {
+    display: block;
+}
+
+>>>>>>> 17a854775b699bb4b4c9c56e13b455853db6095c
 
