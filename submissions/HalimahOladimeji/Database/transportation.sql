@@ -23,7 +23,7 @@ CREATE TABLE trips (
 	number_of_siblings_spouses INT NOT NULL,
 	point_of_embarkation VARCHAR(25) NOT NULL,
 	PRIMARY KEY (trip_id),
-	FOREIGN KEY (passenger_id) REFERENCES passengers (id)
+	FOREIGN KEY (passenger_id) REFERENCES passengers (passenger_id)
 );
 
 --// Create table for accidents
@@ -32,5 +32,5 @@ CREATE TABLE accidents (
 	passenger_id INT NOT NULL,
 	survival_status BOOLEAN NOT NULL,
 	PRIMARY KEY (id),
-	FOREIGN KEY (passenger_id) REFERENCES passengers (id)
+	FOREIGN KEY (passenger_id) REFERENCES passengers (passenger_id)
 );
