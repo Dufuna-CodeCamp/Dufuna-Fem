@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="images/favicon.ico">
+<<<<<<< HEAD
     <title>Contact</title>
+=======
+    <title>Sign Up</title>
+>>>>>>> 17a854775b699bb4b4c9c56e13b455853db6095c
 </head>
 
 <body>
@@ -26,6 +30,7 @@
             </p> <br>
             <p>Already got an account? <span><a href="#">Sign in</a></span></p>
         </div>
+<<<<<<< HEAD
         <form class="column">
             <div class="label">
                 <label for="first name">First Name</label> <br>
@@ -48,6 +53,37 @@
                 </div><br><br>
             </div>
             <button class="btn btn-3">Sign Up</button>
+=======
+        <form class="column" id="form" method="post">
+            <div class="label">
+                <label for="firstName">First Name</label> <br>
+                <input type="text" name="firstName" id="firstName">
+                <span class="error-block"></span><br> <br>
+                <label for="lastName">Last Name</label> <br>
+                <input type="text" name="lastName" id="lastName">
+                <span class="error-block"></span><br><br>
+                <label for="otherNames">Other Names</label><br>
+                <input type="text" name="otherName" id="otherName">
+                <span class="error-block"></span><br> <br>
+                <label for="phoneNumber">Phone Number</label><br>
+                <input type="text" name="phoneNumber" id="phoneNumber">
+                <span class="error-block"></span><br> <br>
+                <label for="email">Email Address</label><br>
+                <input type="email" name="email" id="email">
+                <span class="error-block"></span><br><br>
+                <label for="password">Password</label><br>
+                <input type="password" name="password" id="password">
+                <span class="error-block"></span><br> <br>
+                <label for="confirmPassword">Confirm Password</label><br>
+                <input type="password" name="confirmPassword" id="confirmPassword">
+                <span class="error-block"></span><br> <br>
+                <div class="spec">
+                    <input type="checkbox" name="agree" id="agree">
+                    <label for="agree"> I agree to to the Terms and Conditions</label>
+                </div><br><br>
+            </div>
+            <button type="submit" class="btn btn-3" id="submitBtn">Sign Up</button>
+>>>>>>> 17a854775b699bb4b4c9c56e13b455853db6095c
         </form>
     </main>
     <footer>
@@ -59,9 +95,18 @@
                     <p>Terms and Conditions</p>
                 </div>
                 <div class="sign-up col">
+<<<<<<< HEAD
                     <span>Sign up for our Newsletter</span> <br>
                     <input type="email" name="email" placeholder="Enter your email address">
                     <button class="btn btn-1">SUBMIT</button>
+=======
+                    <form method="post" id="submitNewsletter">
+                        <span>Sign up for our Newsletter</span> <br>
+                        <input type="email" name="newsletter" id="newsletter" placeholder="Enter your email address">
+                        <button type="submit" class="btn btn-1">SUBMIT</button> <br>
+                        <span class="error-block news"></span>
+                    </form>
+>>>>>>> 17a854775b699bb4b4c9c56e13b455853db6095c
                 </div>
                 <ul class="col">
                     <span class="contact-us">CONNECT WITH US</span> <br>
@@ -73,6 +118,11 @@
             <p class="copy-right">Copyright 2020 sneaknation.com <span> All rights reserved</span>.</p>
         </div>
     </footer>
+<<<<<<< HEAD
+=======
+    <script src="../dom/signup.js"></script>
+    <script src="../dom/newsletter.js"></script>
+>>>>>>> 17a854775b699bb4b4c9c56e13b455853db6095c
 </body>
 
 </html>

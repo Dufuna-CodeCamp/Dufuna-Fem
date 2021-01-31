@@ -241,6 +241,7 @@ footer {
     background-color: plum;
 }
 
+<<<<<<< HEAD
 .newsletter {
     margin-top: 10px;
     padding: 15px 0;
@@ -250,6 +251,21 @@ footer {
 .newsletter input {
     width: 250px;
     height: 40px;
+=======
+
+.about {
+    display: flex;
+    display: block;
+    margin-left: 10px;
+    padding-right: 160px;
+}
+
+.newsletter {
+    padding-right: 160px;
+}
+.newsletter input {
+    display: inline-flex;
+>>>>>>> 17a854775b699bb4b4c9c56e13b455853db6095c
     font-size: 15px;
 }
 
@@ -260,15 +276,28 @@ footer {
     height: 40px;
 }
 
+<<<<<<< HEAD
 footer p {
     text-align: center;
     font-size: 16px;
     padding: 10px;
+=======
+#copy {
+    flex-direction: row;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 20px;
+>>>>>>> 17a854775b699bb4b4c9c56e13b455853db6095c
     margin: auto;
     color: white;
 }
 
 .footer {
+<<<<<<< HEAD
+=======
+    display: flex;
+    flex-direction: row;
+>>>>>>> 17a854775b699bb4b4c9c56e13b455853db6095c
     padding: 30px;
     margin: auto;
     display: flex;
@@ -282,10 +311,15 @@ footer ul {
 
 footer img {
     height: 50px;
+<<<<<<< HEAD
+=======
+    width: 50px;
+>>>>>>> 17a854775b699bb4b4c9c56e13b455853db6095c
 }
 
 /**Padding of the footer flex**/
 .connect {
+<<<<<<< HEAD
     padding-top: 0;
     padding-left: 150px;
 }
@@ -308,6 +342,25 @@ footer img {
 .line {
     display: flex;
     flex-direction: row;
+=======
+    padding-right: 200px;
+}
+
+#line {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+}
+
+.newsletter {
+    display: flex;    
+}
+
+#con {
+    display: flex;
+    font-size: 16px;
+    margin: 0;
+>>>>>>> 17a854775b699bb4b4c9c56e13b455853db6095c
 }
 
 .news {
@@ -315,13 +368,18 @@ footer img {
     flex-direction: row;
 }
 
+<<<<<<< HEAD
 @media screen and (min-width: 640px) {
+=======
+@media screen and (max-width: 640px) {
+>>>>>>> 17a854775b699bb4b4c9c56e13b455853db6095c
     body {
         margin: 0;
     }
 
     nav {
         padding: 25px 35px;
+<<<<<<< HEAD
     
     }
     
@@ -340,10 +398,63 @@ footer img {
     .goods img {
         height: 186px;
         width: 12%;
+=======
+    }
+
+    nav {
+        height: 220px;
+        padding: 10px;
+        background-color: plum;
+        color: white;
+    }
+    
+    #logo {
+        padding-left: 30px;
+    }
+    
+    nav li {
+        position: static;
+        margin-top: 0px;
+        margin-left: 30px;
+        padding: 5px;
+    }
+    
+    #menu {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+    }
+
+    .goods {
+        display: flex;
+        flex-direction: column;
+        position: static;
+        margin-top: 0px;
+        padding-bottom: 0px;
+        margin-left: -5px;
+    }
+    
+    .goods-set {
+        padding-top: 50px;
+        margin-left: 30px;
+        line-height: 1;
+        position: relative;
+    }
+    
+    .brand1 {
+        margin-right: 50px;
+    }
+    
+    .goods img {
+        width: 339px;
+        height: 254px;
+
+>>>>>>> 17a854775b699bb4b4c9c56e13b455853db6095c
         border: 1px solid gray;
         margin: 30px 30px 0 30px;
     }
     
+<<<<<<< HEAD
     .footer > div {
         padding: 50px 140px 0 40px ;
     }
@@ -351,6 +462,19 @@ footer img {
     .newsletter {
         padding: 48px 140px 0 40px;
         font-size: 20px;
+=======
+    .description {
+        width: 101px;
+        height: 18px;
+        margin: -20px 237px 4px 22px;
+    }
+    
+    .actual {
+        width: 450px;
+        height: 104px;
+        margin: 10px 16px 3px 23px;
+
+>>>>>>> 17a854775b699bb4b4c9c56e13b455853db6095c
     }
 
     .relatedproducts {
@@ -368,6 +492,20 @@ footer img {
         font-weight: bold;
         line-height: 0.5;
     }
+<<<<<<< HEAD
+=======
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+
+    #connect {
+        margin-top: 10px;
+        margin-left: -370px;
+    }
+>>>>>>> 17a854775b699bb4b4c9c56e13b455853db6095c
 }
 
 @media screen and (min-width: 640px) and (max-width: 1050px) {
@@ -378,8 +516,13 @@ footer img {
     nav {
         padding: 25px 35px;
     }
+<<<<<<< HEAD
     
     nav li {
+=======
+
+  nav li {
+>>>>>>> 17a854775b699bb4b4c9c56e13b455853db6095c
         display: inline;
         padding: 8px;
         margin-right: 50px;
@@ -392,12 +535,18 @@ footer img {
     }
 
     .goods img {
+<<<<<<< HEAD
         height: 186px;
         width: 20%;
+=======
+        height: 220;
+        width: 50%;
+>>>>>>> 17a854775b699bb4b4c9c56e13b455853db6095c
         border: 1px solid gray;
         margin: 30px 30px 0 30px;
     }
 
+<<<<<<< HEAD
     .footer > div {
         padding: 50px 150px 0 40px ;
     }
@@ -407,12 +556,18 @@ footer img {
         font-size: 20px;
     }
 
+=======
+>>>>>>> 17a854775b699bb4b4c9c56e13b455853db6095c
     .relatedproducts {
         text-align: center;
         background-color: rgb(202, 210, 221);
         padding: 10px;
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 17a854775b699bb4b4c9c56e13b455853db6095c
     .relatedproducts li {
         display: inline-grid;
         padding: 30px;
@@ -422,4 +577,21 @@ footer img {
         font-weight: bold;
         line-height: 0.5;
     }
+<<<<<<< HEAD
+=======
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 30px;
+        margin: auto;
+        display: flex;
+        color: white;
+    }
+
+    #connect {
+        padding-left: 370px;
+    }
+>>>>>>> 17a854775b699bb4b4c9c56e13b455853db6095c
 }

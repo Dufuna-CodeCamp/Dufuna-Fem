@@ -1,0 +1,9 @@
+Hello World!
+
+My name is Cindy Emeh.
+
+At the end of this program:
+
+I hope to have learned the skills that will enable be a Front End developer.
+
+I hope to have gathered experiences that will make me relevant in the Tech Industry.
