@@ -55,7 +55,7 @@
             </div>
         </div>
         <div class="form-field">
-            <form action="">
+            <form method="post" id="contactForm">
                 <fieldset>
                     <div>
                         <img src="../html/images/email.png" class="message" alt="phone-icon">
@@ -63,16 +63,20 @@
                     </div>
                     <div class="form-item">
                         <input type="text" name="fullname" id="fullname" placeholder="Full Name"/>
+                        <small></small>
                     </div>
                     <div class="form-item">
                         <input type="email" name="email" id="email" placeholder="Email Address"/>
+                        <small></small>
                     </div>
                     <div class="form-item">
                         <input type="text" name="subject" id="subject" placeholder="Subject"/>
+                        <small></small>
                     </div>
                     <label for="message">Message</label>
-                    <textarea name="message" id="message" cols="40" rows="8" ></textarea> <br><br>
-                    <button type="submit" id="btn" onclick="alert('Thank you, we will response shortly.')">Submit</button>
+                    <textarea name="message" id="message" cols="40" rows="8" ></textarea>
+                    <small></small>
+                    <button type="submit" id="btn" >Submit</button>
                 </fieldset>
             </form>
         </div>
@@ -88,10 +92,13 @@
                 </ul>
             </div>
             <div class="newsletter">
-                <form class="footer-form">
-                    <label for="newsletter">Sign up for our Newsletter</label><br>
-                    <input type="email"  name="newsletter" placeholder="Enter your email address"/>
-                    <input type="button" value="SUBMIT">
+                <label for="newsletter">Sign up for our Newsletter</label>
+                <form class="footer-form" id="footerForm" method="post">
+                    <div class="newletter-form">
+                        <input type="email"  name="newsletter" id="newsletterEmail" placeholder="Enter your email address"/>
+                        <small></small>
+                    </div>
+                    <input type="submit" value="SUBMIT">
                 </form>
             </div>
             <div class="media">
@@ -107,5 +114,8 @@
         <p id="copy"> &copy; 2020 Flawa.com All rights reserved</p>
     </footer>
         <!-- Footer Ends -->
+        <!-- scripts -->
+    <script src="../DOM/Contact.js"></script>
+    <script src="../DOM/Newsletter.js"></script>
 </body>
 </html>
