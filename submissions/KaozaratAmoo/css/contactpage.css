@@ -50,13 +50,14 @@ a:hover {
     margin-top:50px;
     font-size: large;
     margin-right:30px;
+    padding: right 0;
 }
 .center{
     text-align: center;
 }
 
 .dye{
-    width:70%;
+    width:100%;
     outline: 0;
     height:0;
     border: 0;
