@@ -24,7 +24,7 @@ let  Sform = document.getElementById("form");
 
 function calculateproductPrice () {
     let priceperUnit = 8000;
-    if    (quantity.value >=1) {
+    if (quantity.value >=1) {
     let   productPrice = (priceperUnit * quantity.value)
           price.innerHTML = productPrice
           calculateShippingCost(productPrice)
@@ -33,19 +33,19 @@ function calculateproductPrice () {
 }
     
 function calculateShippingCost(productPrice) {
-    if          (productPrice < 1000) {
+    if (productPrice < 1000) {
                 calculatedShipping = 100
                 shippingCost.innerHTML = calculatedShipping
         } 
-    else if    (productPrice >= 1000 && productPrice <= 20000) {
+    else if (productPrice >= 1000 && productPrice <= 20000) {
                calculatedShipping = productPrice * 15/100
                shippingCost.innerHTML = calculatedShipping
     } 
-    else if     (productPrice >= 20000 && productPrice <= 100000) {
+    else if (productPrice >= 20000 && productPrice <= 100000) {
                 calculatedShipping = productPrice * 20/100
                 shippingCost.innerHTML = calculatedShipping
     }
-    else if     (productPrice > 100000)
+    else if (productPrice > 100000)
                 calculatedShipping = 25000
                 shippingCost.innerHTML = calculatedShipping;
 }
