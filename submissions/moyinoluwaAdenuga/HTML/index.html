@@ -3,71 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/bf8153cdc2.js"></script>
     <title>AMOD</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <nav>
-        <a href="index.html">AMOD</a>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Collection</a></li>
-            <li><a href="index.html">Product</a></li>
-            <li><a href="../html-forms/contactform.html">Contact Form</a></li>
-            <li><a href="../html-forms/signup.html">Sign Up</a> </li>
-        </ul>
-    </nav>
+    <header>
+        <img src="images/amod_logo.png" alt="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Product Page</a></li>
+                <li><a href="../html-forms/contactform.html">Contact Us</a></li>
+                <li><a href="../html-forms/signup.html">Sign-up</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!--This is the about section-->
-    <section>
-        <h2>About AMOD</h2>
-        <p>This is a company that offers quality and affordable clothing items. Lorem ipsum dolor 
-            sit amet consectetur adipisicing elit. Atque deleniti numquam corrupti molestias officiis
-             qui voluptates magnam adipisci facilis saepe voluptatem modi, at veniam vitae? Eveniet 
-             culpa beatae consequatur temporibus.
-        </p>
-    </section>
-
-    <!--This is the product section-->
-    <section>
-        <h2>Product Collection</h2>
-        <div>
-            <h3>Face Masks</h3>
-            <div>
-                <img src="images/mask.png" alt="Face mask" >
-                <p>Price: <strong>&#8358; 500</strong></p>
-                <p>Get protected with our quality and comfortable masks</p>
-                <button>Purchase Now</button>
+    <main id="product-main">
+        <section class="product-section">
+            <div class="about-product">
+                <div class="image-div">
+                    <img class="product-img" src="images/amod1.png" alt="Ankara top mixed with lace">
+                </div>
+                <div>
+                    <h3 class="uppercase">Laced Ankara top</h3>
+                    <p class="reduce-margin">Collection: 2020</p>
+                    <p class="reduce-margin">Quantity: <span class="border-round">10</span></p>
+                    <p class="reduce-margin">Price: &#8358; 5000</p>
+                    <button class="buy-btn uppercase">Buy now</button>
+                </div>
             </div>
-        </div>
-        <div>
-            <h3>Face Towel</h3>
             <div>
-                <img src="images/facetowel.png" alt="Face towel" >
-                <p>Price: <strong>&#8358; 500</strong></p>
-                <p>Suitable for wiping your face and keeping them dry</p>
-                <button>Purchase Now</button>
+                <h3 class="uppercase description">Description</h3>
+                <p class="description-text">
+                    A simple and classy wear for all occasions. This top is a clothing that can be worn at all seasons. 
+                    It is made of light-weight material which makes it comfortable to wear. It is made up of high quality
+                    fabric which guarantees a long life span for the cloth. It does not fade or change color with wash.
+                </p>
             </div>
-        </div>
-    </section>
+        </section>
 
-        <!--Similar products-->
-    <aside>
-        <p>Other items you might be interested in includes:</p>
-        <ol >
-            <li><a href="#">Socks</a></li>
-            <li><a href="#">Hair net</a></li>
-            <li><a href="#">Durag</a></li>
-        </ol>
-    </aside>
+        <section class="related-products">
+            <h3 class="uppercase">related products</h3>
+            <div class="grid-container">
+                <div class="product">
+                    <img class="other-prdt-img" src="images/amod2.png" alt="">
+                    <p>Off-shoulder Ankara Top</p>
+                    <p>Price: &#8358; 5000</p>
+                </div>
+                <div class="product">
+                    <img class="other-prdt-img" src="images/amod3.png" alt="">
+                    <p>Ankara Top with Belt</p>
+                    <p>Price: &#8358; 4000</p>
+                </div>
+                <div class="product">
+                    <div class="img-container">
+                        <img class="other-prdt-img different-height-img" src="images/amod4.png" alt="">
+                    </div>
+                    <p>Flare Ankara Blouse</p>
+                    <p>Price: &#8358; 5000 </p>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>Connect with us</p>
-        <ul>
-            <li><a href="https://instagram.com">Instagram</li>
-            <li><a href="https://facebook.com">Facebook</a></li>
-            <li><a href="https://twitter.com">Twitter</li>    
-        </ul>
-        <p> &copy; 2021 AMOD</p>
+        <div class="footer-sections">
+            <ul>
+                <li class="one"><a class="footer-nav" href="contactform.html">Contact Us</a></li>
+                <li><a class="footer-nav" href="#">About Us</a></li>
+                <li><a class="footer-nav" href="#">Terms and Conditions</a></li>
+            </ul>
+
+            <div class="footer-side">
+                <div class="footer-fill">
+                    <p>Sign up for our Newsletter</p>
+                    <input type="email" class="footer-email" name="emailaddress" placeholder="Enter your email address" required>
+                    <button class="footer-btn" type="submit">SUBMIT</button>
+                </div>
+
+                <div>
+                    <p class="convert-uppercase">connect with us</p>
+                    <ul class="contact-icons">
+                        <li><a href="#" class="contact-icon fb-icon"><i class="fa fa-facebook-square icon" aria-hidden="true"></i></a></li>
+                        <li><a href="#" class="contact-icon tw-icon"><i class="fa fa-twitter-square icon" aria-hidden="true"></i></a></li>
+                        <li><a href="#" class="contact-icon gmail-icon"><img class="gmail-pic" src="https://img.icons8.com/fluent/48/fa314a/gmail--v1.png"/></a></li>
+                        <li><a href="#" class="contact-icon yt-icon"><i class="fa fa-youtube-play icon" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright 2021 amod.com</p>
+            <p>All rights reserved.</p>
+        </div>
+
     </footer>
     
 </body>
