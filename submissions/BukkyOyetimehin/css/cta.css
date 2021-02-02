@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+html {
+    font-size: 62.5%;
+}
+.clear {
+    clear: both;
+}
+h1 {
+    font-size: 5rem;
+    color: #a79edd;
+}
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+h3 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+nav,
+footer {
+    background-color: #a79edd;
+    font-size: 2rem;
+}
+nav {
+    padding: 6rem 4rem;
+}
+nav .logo {
+    float: left;
+}
+nav ul {
+    float: right;
+    list-style: none;
+}
+nav li {
+    float: left;
+    margin: 0rem 4rem;
+}
+#name-parent {
+    background-color: #fff;
+    overflow: hidden;
+    margin-bottom: 4rem;
+    font-size: 2rem;
+    padding: 4rem 2rem;
+}
+.column-one {
+    float: left;
+    width: 40%;
+    margin: 6rem 0 4rem 10rem;
+    padding-top: 8rem;
+    text-align: left;
+    font-size: 2.8rem;
+}
+.column-one a {
+    color: #a79edd;
+    font-weight: bold;
+    text-decoration: underline;
+}
+/*form*/
+.column-two {
+    float: right;
+    width: 45%;
+    border: 0.2rem solid grey;
+    padding: 4rem 3rem 1rem 3rem;
+    margin: 2rem 4rem 0 0;
+    border-radius: 2rem;
+}
+form {
+    margin-left: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+form input {
+    width: 100%;
+    height: 4rem;
+    margin-top: 0.5rem;
+    border-radius: 1rem;
+}
+form input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+    margin-left: 2.5rem;
+}
+form label:last-of-type {
+    color: #a79edd;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 3rem;
+    margin-left: 0.5rem;
+}
+form button {
+    background-color: #a79edd;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 2rem;
+    cursor: pointer;
+    display: block;
+    border: none;
+    padding: 2rem 6rem;
+    text-align: center;
+    margin: 2.5rem 4rem 0rem 12rem;
+    border-radius: 1rem;
+}
+/*footer */
+.column {
+    float: left;
+    width: 33.3%;
+    color: #fff;
+    margin-bottom: 1rem;
+    padding: 1rem 3rem 0 3rem;
+    margin-top: 5rem;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+footer ul {
+    list-style: none;
+}
+footer li {
+    margin-bottom: 2rem;
+}
+input {
+    width: 10rem;
+    height: 4rem;
+    color: #a79edd;
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-align: center;
+}
+:placeholder-shown {
+    width: 25rem;
+}
+::placeholder {
+    color: #a79edd;
+    font-size: 1.6rem;
+}
+footer p {
+    padding-bottom: 1rem;
+    text-align: center;
+    color: #ffffff;
+}
+/* @media query */
+@media screen and (max-width: 800px) {
+    nav {
+        padding-bottom: 0;
+    }
+    #name-parent {
+        width: 100%;
+    }
+    .column-one {
+        float: none;
+        width: 80%;
+        margin-top: 2rem;
+        padding-top: 0;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        text-align: center;
+    }
+    #name-parent .column-two {
+        float: none;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /*footer*/
+    .column.first,
+    .column.second {
+        width: fit-content;
+        float: left;
+    }
+    .column.second {
+        margin-bottom: 4rem;
+        margin-left: 4rem;
+    }
+    .column.third {
+        float: none;
+        width: fit-content;
+        padding-right: 0;
+        margin-right: 0;
+        padding-left: 34rem;
+    }
+    form button.signup-btn {
+        margin-left: 18rem;
+        margin-right: 0;
+    }
+    .column.second p {
+        text-align: left;
+    }
+}
+
+
+/*@media query */
+
+@media screen and (max-width: 650px) {
+    .column-one p {
+        font-size: 2.5rem;
+    }
+    /*form*/
+    form button.signup-btn {
+        margin-left: 13rem;
+    }
+    /*footer*/
+    .column.first,
+    .column.second {
+        width: 40%;
+        float: left;
+    }
+    .column.third {
+        padding-left: 33rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    /*nav*/
+    nav .logo,
+    nav ul,
+    nav li {
+        width: 100%;
+        float: none;
+        padding-bottom: 1rem;
+        padding-top: 0.5rem;
+    }
+    nav .logo {
+        width: fit-content;
+    }
+    nav li {
+        margin-left: 0;
+    }
+    .column-one {
+        width: fit-content;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        text-align: center;
+        font-size: 2.2rem;
+    }
+    .column-two {
+        width: 90%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    form input {
+        width: 100%;
+    }
+    form input[type="checkbox"] {
+        margin-left: 0;
+    }
+    form label:last-of-type {
+        margin-top: 0;
+        display: inline;
+        margin-left: 0;
+        font-size: 1.7rem;
+    }
+    form button.signup-btn {
+        margin-left: 9rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    /*footer*/
+    footer {
+        padding-top: 4rem;
+    }
+    .column.first,
+    .column.second,
+    .column.third {
+        width: fit-content;
+        float: none;
+        padding: 0;
+        margin: 0 0 0 4rem;
+    }
+    .column.first {
+        padding-bottom: 1.5rem;
+    }
+    .column.third {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    footer p {
+        align-content: center;
+        margin: auto;
+        width: 60%;
+    }
+    .column.second p {
+        width: 100%;
+    }
+}

@@ -6,11 +6,11 @@ let pdiff = (b - a)
 while (++n <= pdiff) {
 	if (n % 5 == 0 && n % 3 == 0) {			
 		console.log("Software Developer");
-	} else if (n % 3 == 0) {		
+	} 	else if (n % 3 == 0) {		
 		console.log("Software");
-	} else if (n % 5 == 0) {
+	}	else if (n % 5 == 0) {
 		console.log("Developer");
-	} else {
+	}	else {
 		console.log(n)
 	}
 }
