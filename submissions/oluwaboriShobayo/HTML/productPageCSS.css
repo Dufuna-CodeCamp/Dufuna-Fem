@@ -9,10 +9,7 @@ body {
     font-size: 22px;
      font-family: 'Montserrat', sans-serif;      
 }
-.error-block {
-    color:red;
-    font-size:12px;
-}
+
  #header {
     background-color: yellowgreen;
     padding: 15px;
@@ -29,7 +26,8 @@ nav a {
     margin-left:20px;
     margin-right:30px; 
     width:85%;
-    margin-bottom:20px  
+    margin-bottom:20px
+   
 }
 #col2 {
     line-height:2;
@@ -40,16 +38,6 @@ nav a {
     width: 40px;
     line-height:1.6;
 }
-/* #shipping {
-    border:solid 2px;
-    width: 40px;
-    line-height:1.6;
-}
-#total {
-    border:solid 2px;
-    width: 40px;
-    line-height:1.6;
-} */
 #button {
     border: solid 2px;
     background-color: green;
@@ -68,6 +56,7 @@ nav a {
     margin-bottom:10px;
     line-height:1.4;
     font-size:25px;
+
 }
 .RelProd {
         background-color:#ebebeb;
@@ -152,6 +141,10 @@ footer {
   text-align:center;
 }
 }
+
+
+
+
  @media  only screen and (min-device-width: 600px) {
     #header {
         display:flex;
@@ -164,6 +157,7 @@ footer {
     } 
     #col1 {
         display:flex;
+   
     }
     #image {
         width:40%
@@ -172,6 +166,7 @@ footer {
         display:flex;
         flex-direction:row;
         flex-wrap:wrap;
+    
     }
     #Bella {
         width:41%;
@@ -207,7 +202,10 @@ footer {
          margin-left:40%;
        }
 }
-@media  only screen and (min-device-width: 992px) {
+
+
+
+  @media  only screen and (min-device-width: 992px) {
     #product {
         margin-left:40px
     }
@@ -233,4 +231,3 @@ footer {
   #image {
       width:45%;
   }
-}
