@@ -1,9 +1,9 @@
 /* This section is for the media screen query*/
 @media  only screen and (min-device-width: 200px) { 
 *{
-        margin: 0;
-        border: 0;
-        box-sizing: border-box;
+     margin: 0;
+     border: 0;
+     box-sizing: border-box;
 }
 body {
     font-size: 22px;
@@ -12,6 +12,7 @@ body {
 .error-block {
     color:red;
     font-size:12px;
+    margin-left: 10px;
 }
  #header {
     background-color: yellowgreen;
@@ -40,16 +41,6 @@ nav a {
     width: 40px;
     line-height:1.6;
 }
-/* #shipping {
-    border:solid 2px;
-    width: 40px;
-    line-height:1.6;
-}
-#total {
-    border:solid 2px;
-    width: 40px;
-    line-height:1.6;
-} */
 #button {
     border: solid 2px;
     background-color: green;
@@ -124,7 +115,7 @@ footer {
      line-height: 1.6;
      margin-bottom:30px
   }
-.email {
+#footerForm {
       display:flex;
      margin-top:15px;
      margin-bottom:15px;

@@ -64,3 +64,29 @@ function  validateForm(e) {
 Sform.addEventListener("input", validateForm);
 Sform.addEventListener("submit", validateForm);
 
+// / FOOTER VALIDATION
+let form1 = document.getElementById("footerForm");
+    footeremail = document.getElementById("Submit");
+    emailRegex = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/;
+
+    function emptyField (fieldName, Regex, errorMessage1, errorMessage2, event) {
+        if (fieldName.value == '') {
+            fieldName.nextElementSibling.innerHTML = errorMessage1;
+            event.preventDefault()
+            return false
+        } if (!fieldName.value.match(Regex)) {
+            fieldName.nextElementSibling.innerHTML = errorMessage2
+            event.preventDefault();
+            return false;
+        } else {
+            fieldName.nextElementSibling.innerHTML = "";
+            return true;
+        }
+      }
+
+function Validation(e) {
+    emptyField(footeremail, emailRegex, "Please enter your email address", "Please enter a valid email",e);
+    return true;
+}
+form1.addEventListener("submit", Validation);
+
