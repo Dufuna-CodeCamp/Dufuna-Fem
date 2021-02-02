@@ -1,9 +1,9 @@
 /* This section is for the media screen query*/
 @media  only screen and (min-device-width: 200px) { 
 *{
-        margin: 0;
-        border: 0;
-        box-sizing: border-box;
+     margin: 0;
+     border: 0;
+     box-sizing: border-box;
 }
 body {
     font-size: 22px;
