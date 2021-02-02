@@ -1,3 +1,8 @@
+:root {
+    --success-color:#2ecc71;
+    --error-color: #e74c3c;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -202,12 +207,27 @@ footer{
 .footer-link li{
     margin-bottom: 12px;
 }
+.footer-form{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
 
 .footer-form [type=email] {
-    margin-top: 14px;
     padding: 0.9rem;
     outline: none;
     border: none;
+    width: 95%;
+}
+.newletter-form label{
+    display: block;
+}
+.newletter-form small {
+    color: var(--error-color);
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 8px;
 }
 
 footer ::placeholder{
@@ -216,7 +236,7 @@ footer ::placeholder{
     line-height: 1.19;
 }
 
-.footer-form [type=button] {
+.footer-form [type=submit] {
     background-color: #fff;
     padding: 0.71rem;
     outline: none;
@@ -225,6 +245,8 @@ footer ::placeholder{
     font-size: 18px;
     font-weight: bold;
     line-height: 1.22;
+    cursor: pointer;
+    align-self: flex-start;
 }
 
 .media p {
