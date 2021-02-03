@@ -22,10 +22,22 @@
     <article>  
         <div id="col2">
               <h2><b>MAGENTA DRESS</b></h2>
-           <form>
-               <label for="quantity"><strong>Quantity:</strong></label>
-                <input type="text" name="quantity" id="quantity"/> 
-                <p><strong>Price:&#x20A6;6500</strong></p>
+           <form id="form" method="post">
+              <div class="field1">
+                  <label for="quantity"><strong>Quantity:</strong></label>
+                  <input type="number" name="quantity" id="quantity" placeholder="1" value="1"> 
+                  <span class="error-block"></span>
+               </div>
+               <div class="field2">
+                <p id="p"><strong>Price:&#x20A6;<span id ='price'>8000</span></strong></p>
+                <span></span>
+              </div>
+              <div class="field3">
+                  <p><b>Shipping cost: &#x20A6;<span id="shippingCost">1200</span></b></p>
+              </div>
+              <div class="field4">
+                  <p class="total"><b>Total cost: &#x20A6;<span id="totalCost">9200</span></b></p>
+              </div>
                 <button type="submit" id="button"><strong>BUY NOW</strong></button>
           </form>
      </div>
@@ -48,7 +60,7 @@
          <p class="price">Bella Dress <br><br>Price: &#x20A6;7500</p>
      </div>
       <div id="Jacket">
-           <img src="../HTML/IMAGES/Jacket.jpg" alt="Jacket" width="200" height="200" class="Rel">
+           <img src="../HTML/IMAGES/jacket.jpg" alt="Jacket" width="200" height="200" class="Rel">
            <p class="price">Bomber-Jacket <br> <br>Price: &#x20A6;5000</p>
      </div>
       <div id="Mira">
@@ -68,9 +80,10 @@
     </div>
       <div id="newsletter">
           <p>Sign up for our newsletter</p>
-         <form class="email">
+         <form id="footerForm">
             <input type="text" name="email" id="email" placeholder="Enter your email address"/><br><br>
             <button type="submit" id="Submit"><strong>SUBMIT</strong></button>
+            <span class="error-block"></span>
         </form>
         </div>
      <div id="Icons">
@@ -86,5 +99,6 @@
       <p>All rights reserved.</p>
   </div>
   </footer>
+  <script src="../DOM/productPage.js"></script>
 </body>
 </html>

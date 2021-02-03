@@ -33,6 +33,9 @@ CREATE TABLE accidents (
 	PRIMARY KEY (id),
 	FOREIGN KEY (passenger_id) REFERENCES passengers (passenger_id)
 );
+<<<<<<< HEAD
 
 USE transportation;
 SHOW TABLES;
+=======
+>>>>>>> master
