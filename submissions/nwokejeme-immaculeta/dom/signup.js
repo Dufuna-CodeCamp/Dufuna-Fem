@@ -22,7 +22,9 @@ let validate = (field, event, regEx, result, output) => {
     }
 }
 
-let passwordValidation = (password1, password2, event) => {
+let passwordValidation = (
+    password1, password2, event,'Please enter your password','Your password should have a minimum of 6 characters, 1 capital letter, 1 special character eg @ and 1 number');
+   
     if (!(confirmPassword.value == password.value)){
         confirmPassword.nextElementSibling.innerHTML = confirmPasswordUnmatched;
         event.preventDefault();
@@ -31,20 +33,19 @@ let passwordValidation = (password1, password2, event) => {
         confirmPassword.nextElementSibling.innerHTML = '';
         return true;
     } 
-} 
-
+ 
 formValidation =(event) => {
     const nameRegex = /^[a-zA-Z]/,
       phoneRegex = /^[\+]?[0-9]{8,14}$/i,
       emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,10})+$/,
       passwordRegex = /(?=.*\d)(?=.*[a-z])(?=.*[a-zA-Z]).{6,}$/;
       
-    validate(firstName, event, nameRegex, "Please enter your First Name", "Please enter a valid First Name");
-    validate(lastName, event, nameRegex, "Please enter your Last Name", "Please enter a valid Last Name");
-    validate(phoneNumber, event, phoneRegex, "Please enter your Phone Number", "Please enter a valid Phone Number");
-    validate(email, event, emailRegex, "Please enter your Email", "Please enter a valid Email");
-    validate(password, password, event, "Please enter your password", "Your password should have a minimum of 6 characters, 1 capital letter, 1 special character eg @ and 1 number");
-    validate(password, confirmPassword, event,"Please confirm your password", "Your passwords do not match")  
+    validate(field, event, regEx, result, output, "Please enter your First Name", "Please enter a valid First Name");
+    validate(field, event, regEx, result, output, "Please enter your Last Name", "Please enter a valid Last Name");
+    validate(field, event, regEx, result, output, "Please enter your Phone Number", "Please enter a valid Phone Number");
+    validate(field, event, regEx, result, output, "Please enter your Email", "Please enter a valid Email");
+    validate(field, event, regEx, result, output, "Please enter your password", "Your password should have a minimum of 6 characters, 1 capital letter, 1 special character eg @ and 1 number");
+    validate(field, event, regEx, result, output,"Please confirm your password", "Your passwords do not match")  
     return true;  
 
 }  
