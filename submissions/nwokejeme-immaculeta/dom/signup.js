@@ -23,8 +23,13 @@ let validate = (field, event, regEx, result, output) => {
 }
 
 let passwordValidation = (
-    password1, password2, event,'Please enter your password','Your password should have a minimum of 6 characters, 1 capital letter, 1 special character eg @ and 1 number');
-   
+    password,
+    passwordRegex,
+    'Please enter your password',
+    'Your password should have a minimum of 6 characters, 1 capital letter, 1 special character eg @ and 1 number',
+    event
+  );
+
     if (!(confirmPassword.value == password.value)){
         confirmPassword.nextElementSibling.innerHTML = confirmPasswordUnmatched;
         event.preventDefault();
