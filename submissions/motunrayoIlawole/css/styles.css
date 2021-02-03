@@ -289,6 +289,7 @@ footer {
 
 .product-details {
     padding: 20px 0;
+    font-weight: 700;
 }
 
 .product-details p input {
@@ -300,6 +301,15 @@ footer {
     line-height: 1.5;
 }
 
+.error {
+    color: red;
+    display: none;
+}
+
+.error.show {
+    display: block;
+}
+
 .buy-now {
     display: inline-block;
     background-color: purple;
@@ -308,6 +318,10 @@ footer {
     padding: 10px 20px;
     border-radius: 10px;
     margin-top: 10px;
+}
+
+.buy-now.disabled {
+    opacity: 0.6;
 }
 
 .other-products {
