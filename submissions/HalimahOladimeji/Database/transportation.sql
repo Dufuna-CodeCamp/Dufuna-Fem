@@ -1,8 +1,8 @@
---// CREATE DATABASE FOR TRANSPORTATION COMPANY
+-- CREATE DATABASE FOR TRANSPORTATION COMPANY
 CREATE DATABASE transportation;
 USE transportation;
 
---// CREATE TABLES
+-- CREATE TABLES
 CREATE TABLE passengers (
 	passenger_id INT NOT NULL AUTO_INCREMENT,
 	full_name VARCHAR(70) NOT NULL,
@@ -11,7 +11,7 @@ CREATE TABLE passengers (
 	PRIMARY KEY (passenger_id)
 );
 
---// Create table for trips
+-- Create table for trips
 CREATE TABLE trips (
 	trip_id INT NOT NULL AUTO_INCREMENT,
 	passenger_id INT NOT NULL,
@@ -25,8 +25,7 @@ CREATE TABLE trips (
 	PRIMARY KEY (trip_id),
 	FOREIGN KEY (passenger_id) REFERENCES passengers (passenger_id)
 );
-
---// Create table for accidents
+-- Create table for accidents
 CREATE TABLE accidents (
 	id INT NOT NULL AUTO_INCREMENT,
 	passenger_id INT NOT NULL,
