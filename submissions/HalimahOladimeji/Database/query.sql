@@ -1,6 +1,6 @@
 USE transportation;
 
--- 1) What is the total number of survived passengers?
+-- 1) What is the total number of passengers who survived?
 SELECT COUNT(*)
 FROM accidents 
 WHERE survival_status = 1;
