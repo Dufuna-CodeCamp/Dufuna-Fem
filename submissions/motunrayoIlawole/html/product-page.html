@@ -30,9 +30,12 @@
                     <h3>BROWN BRIM</h3>
                     <p>Brand: Hat</p>
                     <p>Quantity: 
-                        <input type = "text" placeholder="2" />
+                        <input class = "quantity" type = "number" placeholder="1" />
                     </p>
-                    <p>Price: $150</p>
+                    <small class = "error">Please enter a valid quantity</small>
+                    <p>Price: $ <span class = "price">150</span></p>
+                    <p>Shipping cost: $ <span class = "ship-cost">100</span></p>
+                    <p>Total cost: $ <span class = "total-cost">250</span></p>
                     <a href = "#" class = "buy-now">BUY NOW</a>
                 </div>
             </div>
@@ -118,5 +121,7 @@
         <p class = "copyright">Copyright 2020 Top-Clothing. All rights reserved</p>
     </footer>
     
+
+    <script src = "../Dom/product.js"></script>
 </body>
 </html>
