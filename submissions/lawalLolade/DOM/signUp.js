@@ -20,7 +20,23 @@ validation = (field, regEx, error1, error2, event) => {
         field.nextElementSibling.innerHTML = '';
         return true;
     }
-  }
+}
+
+required = (input1, message1, message2, event) => {
+    if (input1.value === '') {
+        input1.nextElementSibling.innerHTML = message1;
+        event.preventDefault();
+        return false;
+    } else if(input1.value !== password.value) {
+        input1.nextElementSibling.innerHTML = message2;
+        event.preventDefault();
+        return false;
+    } else {
+        input1.nextElementSibling.innerHTML = '';
+        return true;
+    }
+}
+
   
 signUpValidation =(event) => {
 
@@ -49,10 +65,11 @@ signUpValidation =(event) => {
       'Your password should have a minimum of 6 characters, 1 capital letter, 1 special character eg @ and 1 number',
       event
     );
-    validation(
-        password2, passwordRegex, 'Please confirm your Password',
+    required(
+        password2, 'Please confirm your Password',
         'Your password do not match', event
     );
+    
     return true;
   }
   
