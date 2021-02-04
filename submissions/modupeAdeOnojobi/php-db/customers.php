@@ -2,13 +2,13 @@
 
 require_once("connection.php");
 try{
-    $sql = "SELECT * FROM customers";
+    $sql = "SELECT * FROM customer";
     $result = $pdo->query($sql);
    setcookie('customers',  json_encode($result), time() + 3600);
 
     if($result->rowCount() > 0){
         echo "<h3>Customer detail list</h3>";
-        echo "<table>";
+        echo "<table cellspacing=3 cellpadding=4>";
             echo "<tr>";
                 echo "<th>S/N</th>";
                 echo "<th>Full Name</th>";
@@ -22,7 +22,8 @@ try{
             echo "<td>" . $row['first_name'] . " " . $row['last_name'] . "</td>";
             echo "<td>" . $row['email'] . "</td>";
             echo "<td>" . $row['created_at'] . "</td>";
-            echo "<td><button>View</button></td>";
+            echo "<td> <a href='orders.php'><button>View</button></a></td>";
+           
         echo "</tr>";
     }
     echo "</table>";
@@ -33,7 +34,6 @@ try{
     }
 } catch(PDOException $e){
     die("ERROR: Could not execute $sql. " . $e->getMessage());
-
 }
 
 ?>
