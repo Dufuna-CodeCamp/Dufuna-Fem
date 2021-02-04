@@ -51,7 +51,7 @@ let productArray = (product, product_price) => {
         } else {
             product_price[i] /= 2;
         }
-        console.log("The price of" + product[i] + "is" + product_price[i]);
+        console.log("The price of " + product[i] + " is " + product_price[i]);
     }
 }
 
