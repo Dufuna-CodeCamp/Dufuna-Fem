@@ -24,7 +24,7 @@ nav li {
     padding: 10px;
 }
     
-.nav-bar {
+.navbar {
 width: 100%;
 margin: auto;
 overflow: hidden;
@@ -44,8 +44,7 @@ overflow: hidden;
 header li {
     display: inline;
     padding: 0 30px;
-}
-    
+}   
 /* End of header styling */
 
 
@@ -69,7 +68,7 @@ a:link {
  
 
 /* Footer styling */
-.FOOTER {
+.footer {
     width: 100%;
     padding: 10px;
     background-color: wheat;
@@ -82,12 +81,12 @@ footer ul {
     list-style-type: none;
 }
 
-img.FBK,
-img.TWTR,
-img.GML,
-img.YTUB {
-    height: 50px;
-    width: 50px;
+img.fbk,
+img.twtr,
+img.gml,
+img.ytub {
+    height: 30px;
+    width: 30px;
 }
 
 .email {
@@ -132,20 +131,20 @@ body {
     color: brown;
 }
 
-img.SOIL,
-img.VMOSE,
-img.GEL {
+img.soil,
+img.vmose,
+img.gel {
     height: 250px;
     width: 300px;
 }
 
-img.SHMPOO {
+img.shmpoo {
     width: 400px;
     height: 190px;
     border: 2px solid wheat;
 }
 
-.Specs {
+.specs {
     float: right;
     display: inherit;
     overflow: hidden;
@@ -154,7 +153,7 @@ img.SHMPOO {
     width: 58%;
 }
 
-#Quantity {
+#quantity {
     padding: 3px;
 }
 
@@ -171,46 +170,90 @@ h4 {
     font-size: 15px;
 }
 
-.IMG1,
-.IMG2,
-.IMG3 {
+.img-soil,
+.img-vmose,
+.img-gel {
     float: left;
     display: inline;
     width: 33.3%;
 }
 
-.SL,
-.VM,
-.EG {
+.sl,
+.vm,
+.eg {
     position: relative;
     left: 50px;
     text-align: center;
 }
 
-img.SOIL,
-img.VMOSE,
-img.GEL {
+img.soil,
+img.vmose,
+img.gel {
     border: 20px solid wheat; 
 }
 
 .products::after {
     content: "";
-    display: table;
+    display: inline;
     clear: both;
 }
-
+/* End of Body Styling */
 
 /* Media Responsiveness */
 @media only screen and (max-width: 600px) {
-    .IMG1,
-    .IMG2,
-    .IMG3 {
+    * {
+        width: 100%
+    }
+
+    .btn,
+    .submit,
+    .email {
+        width: initial;
+    }
+
+    img.shmpoo {
+        width: 100%;
+    }
+    .img-soil,
+    .img-vmose,
+    .img-gel {
+        float: none;
+        width: 100%;
+    }
+    .specs {
+        float: none;
+    }
+    .desc {
         width: 100%;
     }
     .header nav {
-        float:  none;
+        float: none;
         width: 100%;
+        position: initial;
+        padding: inherit;
     }
+    nav li {
+        float: none;
+        padding: inherit;
+    }
+    .navbar {
+        overflow: auto;
+    }
+
+    nav a {
+        display: flex;
+        direction: flex;
+    }
+    footer ul,
+    .email,
+    .sites {
+        float: none;
+        width: 100%;
+        position: inherit;
+    } 
+    .submit {
+        float: none;
+    }      
 }
 
 
