@@ -29,13 +29,26 @@
         </div>
         <div class="product">
           <h2>BROOKS</h2>
+          <br />
           <h4>Brand:H&M</h4>
-          <form>
+          <br />
+          <span id="quantity">
             <label for="number">Quantity:</label>
-            <input type="text" name="number" id="number" value="2" />
-          </form>
-          <h3>Price:<strong>#30,000</strong></h3>
-          <button type="submit">BUY NOW</button>
+            <input
+              type="number"
+              name="quantity"
+              id="quantity-input"
+              value="1"
+            />
+          </span>
+
+          <h3>Price: #<span id="price"> 10000</span></h3>
+          <br />
+          <h3>shippingCost: #<span id="shipping-cost"> 5000</span></h3>
+          <br />
+          <h3>Total Cost: #<span id="total-cost"></span></h3>
+          <br />
+          <button id="pricing-btn" type="submit">BUY NOW</button>
         </div>
       </section>
       <!---Code for description-->
@@ -56,17 +69,17 @@
           <div class="card">
             <img src="images/Boots.jpg" />
             <p>Boots</p>
-            <p>Price:#20000</p>
+            <p>Price:20000</p>
           </div>
           <div class="card">
             <img src="images/sneakers.jpeg" />
             <p>Sneakers</p>
-            <p>Price:#15000</p>
+            <p>Price:15000</p>
           </div>
           <div class="card">
             <img src="images/Halfshoe.jpg" />
             <p>Halfshoe</p>
-            <p>Price:#10000</p>
+            <p>Price:10000</p>
           </div>
         </div>
       </section>
@@ -75,9 +88,9 @@
       <div class="info">
         <div class="foot">
           <ul id="quick-links">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Terms and Conditions</a></li>
           </ul>
         </div>
         <div class="foot">
@@ -96,16 +109,16 @@
           <p>CONNECT WITH US</p>
           <ul id="socials">
             <li>
-              <a href="#"><img src="./images/facebooklogo.png" /></a>
+              <a href=""><img src="./images/facebooklogo.png" /></a>
             </li>
             <li>
-              <a href="#"><img src="./images/twitterlogo.png" /></a>
+              <a href=""><img src="./images/twitterlogo.png" /></a>
             </li>
             <li>
-              <a href="#"><img src="./images/gmaillogo.png" /></a>
+              <a href=""><img src="./images/gmaillogo.png" /></a>
             </li>
             <li>
-              <a href="#"><img src="./images/youtubelogo.png" /></a>
+              <a href=""><img src="./images/youtubelogo.png" /></a>
             </li>
           </ul>
         </div>
@@ -114,6 +127,6 @@
         &copy; Copyright 2020 sandalsbymo.com <span> All rights reserved</span>
       </p>
     </footer>
-    <script src="../javascript/index.js"></script>
+    <script src="../DOM/product.js"></script>
   </body>
 </html>
