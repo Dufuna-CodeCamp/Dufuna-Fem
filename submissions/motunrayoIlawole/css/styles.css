@@ -160,6 +160,11 @@ aside {
     border: 1px solid purple;
 }
 
+.error-block {
+    color: red;
+    font-size: 0.7rem;
+}
+
 footer {
     padding: 20px 30px;
 }
