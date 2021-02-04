@@ -123,7 +123,7 @@
                     <h3>Cherry Blossom</h3>
                     <div class="quantity">
                         <label for="quantity"><strong>Quantity:</strong></label>
-                        <input type="text" name="quantity" id="quantity" value="5"/>
+                        <input type="text" name="quantity" id="quantitys" value="5"/>
                     </div>
                     <p><strong>Price: &#x20A6;20,000</strong></p>
                     <button type="submit">ORDER NOW</button>
@@ -193,10 +193,13 @@
                 </ul>
             </div>
             <div class="newsletter">
-                <form class="footer-form">
-                    <label for="newsletter">Sign up for our Newsletter</label><br>
-                    <input type="email"  name="newsletter" placeholder="Enter your email address"/>
-                    <input type="button" value="SUBMIT">
+                <label for="newsletter">Sign up for our Newsletter</label>
+                <form class="footer-form" id="footerForm" method="post">
+                    <div class="newletter-form" id="news">
+                        <input type="email"  name="newsletter" id="newsletterEmail" placeholder="Enter your email address"/>
+                        <small></small>
+                    </div>
+                    <input type="submit" value="SUBMIT">
                 </form>
             </div>
             <div class="media">
@@ -213,6 +216,6 @@
 >>>>>>> 17a854775b699bb4b4c9c56e13b455853db6095c
     </footer>
         <!-- Footer Ends -->
-
+    <script src="../DOM/Newsletter.js"></script>
 </body>
 </html>

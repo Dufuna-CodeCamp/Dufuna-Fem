@@ -3,44 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/bf8153cdc2.js"></script>
     <title>Contact Form</title>
+    <link rel="stylesheet" href="../css/style.css"
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="../HTML/index.html">Product</a></li>
-            <li><a href="contactform.html">Contact Form</a></li>
-            <li><a href="signup.html">Sign Up</a> </li>
-        </ul>
-    </nav>
-    <h1>Contact Form</h1>
-    <form action="#" method="post" enctype="application/x-www-form-urlencoded">
-        <fieldset>
-            <legend>Contact AMOD</legend>
+    <header>
+        <img src="../html/images/amod_logo.png" alt="logo">
+        <nav>
+            <ul>
+                <li><a href="../HTML/index.html">Product Page</a></li>
+                <li><a href="contactform.html">Contact Us</a></li>
+                <li><a href="signup.html">Sign-up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="contact-main">
+        <div class="contact-text">
+            <i class="fa fa-phone resize-icon" aria-hidden="true"></i>
+            <p class="heading">Please contact us via these numbers:</p>
+            <p>+123 803 303 0000</p>
+            <p>+123 816 710 6842</p>
+            <i class="fa fa-envelope-o resize-icon" aria-hidden="true"></i>
+            <p class="heading">Email Address:</p>
+            <p>support@domain.com</p>
+            <p class="heading space">Or Connect with us:</p>
+            <ul class="contact-icons" id="contact-icons">
+                <li><a href="#" class="contact-icon fb-icon"><i class="fa fa-facebook-square iconc" aria-hidden="true"></i></a></li>
+                <li><a href="#" class="contact-icon tw-icon"><i class="fa fa-twitter-square iconc" aria-hidden="true"></i></a></li>
+                <li><a href="#" class="contact-icon gmail-icon"><img class="gmail-pic" id="gmail-pic-contact" src="https://img.icons8.com/fluent/48/fa314a/gmail--v1.png"/></a></li>
+                <li><a href="#" class="contact-icon yt-icon"><i class="fa fa-youtube-play iconc" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+        <form action="#" method="post" enctype="application/x-www-form-urlencoded">
+            <fieldset id="contact-fieldset">
+                <div id="contact-form-text">
+                    <i class="fa fa-envelope-o resize-icon" aria-hidden="true"></i>
+                    <p class="heading">Or better still send us a message</p>
+                </div>
 
-            <label for="fullname">Fullname</label><br>
-            <input type="text" name="fullname" id="fullname" placeholder="Enter your fullname"><br><br>
-            <label for="email">Email</label><br>
-            <input type="email" name="email" id="email" placeholder="Enter your email address"><br><br>
+                <input type="text" name="fullname" class="contact-input" placeholder="Full Name">
+                <input type="email" name="email" class="contact-input" placeholder="Email Address">
+                <input type="text" name="subject" class="contact-input" id="msg-shift" placeholder="Subject">
+                <label class="message" for="message">Message</label>
+                <textarea id="message" rows="6" ></textarea>
+    
+                <button id="send-c-btn" type="submit">Send</button>
+    
+            </fieldset>
+        </form>
+    </main>
 
-            <label>How would you rate our services?</label><br>
-            <input type="radio" name="ratings" id="ratings1" value="ratings1">
-            <label for="ratings1">Very Good</label><br>
-            <input type="radio" name="ratings" id="ratings2" value="ratings2">
-            <label for="ratings2">Good</label><br>
-            <input type="radio" name="ratings" id="ratings3" value="ratings3">
-            <label for="ratings3">Average</label><br>
-            <input type="radio" name="ratings" id="ratings4" value="ratings4">
-            <label for="ratings4">Fair</label><br><br>
+    <footer>
+        <div class="footer-sections">
+            <ul>
+                <li class="one"><a class="footer-nav" href="contactform.html">Contact Us</a></li>
+                <li><a class="footer-nav" href="#">About Us</a></li>
+                <li><a class="footer-nav" href="#">Terms and Conditions</a></li>
+            </ul>
 
-            <label for="enquiry-title">Enquiry or Request Title</label><br>
-            <input type="text" name="enquiry-title" id="enquiry-title"><br><br>
-            <label for="enquiry-message">Enquiry/Requests</label><br>
-            <textarea cols="50" rows="10" placeholder="Type your enquiry/request here..."></textarea><br><br>
+            <div class="footer-side">
+                <div class="footer-fill">
+                    <p>Sign up for our Newsletter</p>
+                    <input type="email" class="footer-email" name="emailaddress" placeholder="Enter your email address" required>
+                    <button class="footer-btn" type="submit">SUBMIT</button>
+                </div>
 
-            <button type="submit">Submit Form</button>
+                <div>
+                    <p class="convert-uppercase">connect with us</p>
+                    <ul class="contact-icons">
+                        <li><a href="#" class="contact-icon fb-icon"><i class="fa fa-facebook-square icon" aria-hidden="true"></i></a></li>
+                        <li><a href="#" class="contact-icon tw-icon"><i class="fa fa-twitter-square icon" aria-hidden="true"></i></a></li>
+                        <li><a href="#" class="contact-icon gmail-icon"><img class="gmail-pic" src="https://img.icons8.com/fluent/48/fa314a/gmail--v1.png"/></a></li>
+                        <li><a href="#" class="contact-icon yt-icon"><i class="fa fa-youtube-play icon" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-        </fieldset>
-    </form>
+        <div class="copyright">
+            <p>Copyright 2021 amod.com</p>
+            <p>All rights reserved.</p>
+        </div>
+
+    </footer>
+    
 </body>
 </html>
