@@ -62,19 +62,23 @@
                 <form id = "form2">
                         <div class = "contact-input">
                             <input type = "text" name = "fullname" id = "fullname" placeholder = "Full Name" />
+                            <span class = "error-block"></span>
                         </div><br />
                         <div class = "contact-input">
                             <input type = "email" name = "email" id = "email2" placeholder = "Email Address" />
+                            <span class = "error-block"></span>
                         </div><br />
                         <div class = "contact-input">
                             <input type = "text" name = "subject" id = "subject" placeholder = "Enter the subject" />
+                            <span class = "error-block"></span>
                         </div><br />
                         <div class = "contact-input">
                             <label for = "message">Message:</label>
                             <textarea name = "message" id = "message" rows = "10"></textarea>
+                            <span class = "error-block"></span>
                         </div>
                         <div class = "contact-btn">
-                            <a href = "#" class = "btn-contact">send</a>
+                            <button type = "submit" class = "btn-contact">send</button>
                         </div>
                     </fieldset>
                 </form>
@@ -123,5 +127,7 @@
         <p class = "copyright">Copyright 2020 Top-Clothing. All rights reserved</p>
     </footer>
     
+
+    <script src = "../Dom/contact.js"></script>
 </body>
 </html>
