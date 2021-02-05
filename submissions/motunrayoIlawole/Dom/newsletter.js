@@ -4,7 +4,7 @@ const domElements2 = {
     errorBlock: document.querySelector('.error-block2')
 }
 
-const validateNewletter = (e) => {
+const validateNewsletter = (e) => {
     let reg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (domElements2.footerEmail.value === '') {
         domElements2.errorBlock.innerHTML = "Please enter your email address";
@@ -20,10 +20,4 @@ const validateNewletter = (e) => {
     }
 }
 
-const formValidate = (e) => {
-    validateNewletter(e);
-
-    return true;
-}
-
-domElements2.footerBtn.addEventListener('click', formValidate);
+domElements2.footerBtn.addEventListener('click', validateNewsletter);
