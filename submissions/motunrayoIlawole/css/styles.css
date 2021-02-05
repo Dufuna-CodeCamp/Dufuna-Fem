@@ -165,6 +165,11 @@ aside {
     font-size: 0.7rem;
 }
 
+.error-block2 {
+    color:tomato;
+    font-size: 0.8rem;
+}
+
 footer {
     padding: 20px 30px;
 }
