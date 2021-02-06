@@ -23,7 +23,7 @@ let validate = (field, event, regEx, result, output) => {
 }
 
 let passwordValidation = (
-    confirmPassword, password
+    confirmPassword, password, event
   ) => {
 
     if (!(confirmPassword.value == password.value)){
@@ -49,7 +49,7 @@ formValidation =(event) => {
       validate(email, event, emailRegex, "Please enter your Email", "Please enter a valid Email");
       validate(password, event, passwordRegex, 'Please enter your password','Your password should have a minimum of 6 characters, 1 capital letter, 1 special character eg @ and 1 number');
       validate(confirmPassword, event, passwordRegex, 'Please confirm your Password', 'Your password do not match')
-      passwordValidation(confirmPassword, password);
+      passwordValidation(confirmPassword, password, event);
 }  
 submitForm.addEventListener("submit", formValidation);
     
