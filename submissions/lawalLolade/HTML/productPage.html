@@ -41,10 +41,13 @@
                     <h3>Cherry Blossom</h3>
                     <div class="quantity">
                         <label for="quantity"><strong>Quantity:</strong></label>
-                        <input type="text" name="quantity" id="quantitys" value="5"/>
+                        <input type="number" name="quantity" id="quantity" value="1"/>
+                        <small></small>
                     </div>
-                    <p><strong>Price: &#x20A6;20,000</strong></p>
-                    <button type="submit">ORDER NOW</button>
+                    <p>Price: &#x20A6;<span id="price">15000</span></p>
+                    <p>Shipping Cost: &#x20A6;<span id="shippingCost">2250</span></p> 
+                    <p>Total Cost: &#x20A6;<span id="totalCost">17250</span></p>
+                    <button id="order-btn">ORDER NOW</button>
                 </div>
             </div>
             <div class="prod-details">
@@ -56,17 +59,20 @@
                 </p> 
             </div>
         </div>
-        <div class="product">
+        <!-- <div class="product">
             <div class="prod1">
                 <img src="images/Carnation4.png" alt="carnations">
                 <div class="product-info">
                     <h3>Carnation</h3>
                     <div class="quantity">
                         <label for="quantity"><strong>Quantity:</strong></label>
-                        <input type="text" name="quantity" id="quantity" value="5"/>
+                        <input type="number" name="quantity" id="quantity" value="1"/>
+                        <small></small>
                     </div>
-                    <p><strong>Price: &#x20A6;5,000</strong></p>
-                    <button type="submit">ORDER NOW</button>
+                    <p>Price: &#x20A6;<span  id="price">5000</span></p>
+                    <p>Shipping Cost: &#x20A6;<span id="shippingCost">750</span></p> 
+                    <p>Total Cost: &#x20A6;<span id="totalCost">5750</span></p>
+                    <button type="submit" id="order-btn" class="btn">ORDER NOW</button>
                 </div>
             </div>
             <div class="prod-details">
@@ -77,7 +83,7 @@
                     to white, the colors of carnations are truly spectacular.
                 </p> 
             </div>
-        </div>
+        </div> -->
     </section>
                 <!-- related items categories -->
     <section class="related-items">
@@ -133,6 +139,8 @@
         <p id="copy"> &copy; 2020 Flawa.com All rights reserved</p>
     </footer>
         <!-- Footer Ends -->
+
+    <script src="../DOM/shippingPrice.js"></script>
     <script src="../DOM/Newsletter.js"></script>
 </body>
 </html>
