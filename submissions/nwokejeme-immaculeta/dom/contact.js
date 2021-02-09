@@ -34,7 +34,7 @@ formValidation = (event) => {
     const nameRegex = /^[a-zA-Z]{4,}(?: [a-zA-Z]+){0,2}$/,
         emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,10})+$/;
 
-    validate(fullName, event, nameRegex, "Please enter your Full Name", "Please enter a valid Name");
+    validate(fullName, event, nameRegex, "Please enter a Full Name", "Please enter a valid Name");
     validate(email, event, emailRegex, "Please enter your Email", "Please enter a valid Email");
     messageValidation(subject, event, "Please enter a message Subject");
     messageValidation(description, event, "Please enter a Message");
