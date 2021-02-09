@@ -1,0 +1,217 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgb(255,255,255);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+.header {
+  background-color: rgb(100, 27, 27);
+  color: white;
+  height: 150px;
+  line-height: 0.5;
+  padding: 10px;
+  margin: 0;
+}
+.nav-bar h1 {
+  margin: ;
+}
+.brand-name span {
+  font-size: 16px;
+  font-weight: normal;
+}
+.nav-pages {
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-bar li {
+  margin-top: 10px;
+  list-style-type: none;
+  padding: 10px;
+}
+.nav-bar a,
+.contact a {
+  text-decoration: none;
+  color: white;
+}
+ a:hover {
+  cursor: pointer;
+  color: #c2b9b0;
+}
+.product {
+  padding: 10px;
+}
+.first-product {
+  display: flex;
+}
+.first-product img {
+  margin: 10px;
+  width: 300px;
+  height: 350px;
+  padding: 20px;
+  box-shadow: 1px 1px 1px 0.5px gray;
+}
+.product-details {
+margin: 15px;
+font-weight: bolder;
+line-height: 1.0;
+}
+#product-name {
+  text-transform: uppercase;
+}
+.product-details input {
+  width: 30px;
+  height: 30px;
+}
+.btn {
+  color: white;
+  background-color: #c96567;
+  border-radius: 5%;
+  border-style: none;
+  height: 60px;
+  width: 120px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+.product a {
+  color: #c96567;
+}
+#audio-link {
+  font-weight: normal;
+}
+.description h5 {
+  line-height: 0;
+}
+.similar-products {
+  background-color: #ebebeb;
+  color: black;
+  margin-top: 10px;
+}
+.similar-products h3 {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+}
+.other-books {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(5, 1fr);
+}
+.other-books a {
+text-decoration: none;
+color: black;
+}
+.other-books a:hover {
+  color: pink;
+}
+.other-books img {
+  width: 150px;
+  height: 180px;
+}
+.other-books li {
+  list-style: none;
+  background-color: white;
+  box-shadow: 1px 1px 1px gray;
+  width: 180px;
+  height: 270px;
+}
+.other-books p {
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0;
+  padding-top: 3px;
+}
+.book-genre {
+  height: 200px;
+  background-color: white;
+  color: black;
+}
+.book-genre h5 {
+  text-transform: uppercase;
+}
+footer {
+background-color: rgb(100, 27, 27);
+color: white;
+padding: 0;
+margin: 0;
+}
+.footer-properties {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-around;
+}
+footer ul {
+  padding: 0;
+  list-style-type: none;
+}
+footer p {
+  text-align: center;
+  margin: 0;
+}
+.connect img {
+  width: 25px;
+  height: 20px;
+}
+.connect li {
+  display: inline-block;
+  margin-left: 0;
+  padding-left: 5px;
+}
+.submit {
+  color: white;
+  text-transform: uppercase;
+  background-color: #E7717D;
+  border-style: none;
+}
+@media screen and (max-width: 998px) {
+  body {
+    font-size: 18px;
+  }
+  .nav-pages {
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+  }
+  .first-product img {
+    width: 200px;
+    height: 250px;
+  }
+  .other-books {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .footer-properties {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 600px) {
+body {
+    font-size: 16px;
+}
+.nav-pages {
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+}
+.first-product img {
+  width: 160px;
+  height: 200px;
+}
+.first-product {
+flex-direction: column;
+}
+.product-details {
+  margin: 0;
+}
+.other-books {
+  grid-template-columns: 1fr 1fr;
+  padding-left: 10px;
+  justify-content: space-around;
+}
+.footer-properties {
+  grid-template-columns: 1fr;
+}
+}
