@@ -3,7 +3,7 @@
 
 
 try{
-    $pdo = new PDO("mysql:host=localhost;dbname=ecommercesite", "root", "mysql");
+    $pdo = new PDO("mysql:host=localhost;dbname=ecommerce_database", "root", "mysql");
     
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
@@ -14,7 +14,7 @@ try{
 try{
     $sql = "CREATE TABLE customer_details(
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    s_n INT NOT NULL,
+    serial_number INT NOT NULL,
     full_name VARCHAR(100) NOT NULL,
     email_address VARCHAR(100) NOT NULL,
     created_at DATETIME,
