@@ -1,112 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Product Page</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="nav-header">
-          <!--I designed the logo myself-->
-            <img src="../html/images/my-logo.jpg" width="30">
-            <h1><a href="#">VENISTER</a></h1>
-            <h6>YourFavOnlineBookStore</h6></div>
-        <div class="nav-content">
-          <ul>
-            <li><a href="#">Home</a></li>
-              <li><a href="products.html">Products</a></li>
-                <li><a href="#">Orders</a></li>
-                  <li><a href="../htmlForms/sign-up.html">Sign Up</a></li>
-                    <li><a href="../htmlForms/contact.html">Contact Us</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-            <section>
-              <div class="search-option">
-                <p><b>Search: </b>
-                      <input type="text" placeholder="Title or Author of Book">
-                        <button type="submit">Submit</button>
-                <p><b>BOOKS BY CATEGORY</b></p>
-                  <label for="books">Choose a category: </label>
-                    <select name="books" id="books">
-                        <option value="1">Inspirational Books</option>
-                        <option value=2>Children's Books</option>
-                        <option value="3">Romance</option>
-                        <option value="4">Mystery And Suspense</option>
-                        <option value=5>Literature and Fiction</option>
-                        <option value=6>Teens And Young Adult</option>
-                        <option value=7>Cook Books</option>
-                        <option value=8>Historical Books</option>
-                        <option value=9>Biography And Memiors
-                        </option>
-                        <option value=10>Comics</option>
-                    </select>
-                  </div>
-              <div class="first-product">
-                    <!--Displayed Product Page showing 2 images of product-->
-                  <img src="images/book-1a.jpg" alt="How To Win Friends And Influence People" width="200">
-                  <img src="images/book-1b.jpg" width="200">
-                    <h2>HOW TO WIN FRIENDS AND INFLUENCE PEOPLE</h2>
-                      <!--Product name is 'How To Win Friends And Influence People'-->
-                      <p>By</p>
-                    <h3>Dale Carnegie</h3>
-                        <!--Product Prices of product-->
-                      <p><strong>Ebook: <em>$50</em></strong></p>
-                        <button class="btn">Buy Now</button>
-                      <p><strong>Audio Book: <em>$30</em></strong></p>
-                        <audio src=""controls></audio>
-                        <button class="btn">Buy Now</button>
-                      <p><strong>HardCover: <em>$100</em></strong></p>
-                        <p>Quantity: </p>
-                          <label>
-                            <input type="radio" name="1-2">1
-                            <input type="radio" name="1-2">2
-                          </label>
-                          <button class="btn">Buy Now</button>
-                  </div>
-                  <div class="description">
-                        <!--Description of product-->
-                      <h3>DESCRIPTION</h3>
-                        <p><b>Pages: </b>750</p>
-                        <p><b>Genre: </b>Inspirational Book</p>
-                        <p>You can go after the job you want...and get it! You can take the job you have...and improve it! You can take any situation you're in...and make it work for you!</p>
-                        <p>Since its release in 1936, How to Win Friends and Influence People has sold more than 15 million copies. Dale Carnegie's first book is a timeless bestseller, packed with rock-solid advice that has carried thousands of now famous people up the ladder of success in their business and personal lives.</p>
-                        <p>As relevant as ever before, Dale Carnegie's principles endure, and will help you achieve your maximum potential in the complex and competitive modern age.</p>
-                  </div><hr>
-                <div class="similar-products">
-                    <!--Ordered list of more items on product page-->
-                  <h3>More Books For You To Explore</h3>
-                    <ol>
-                      <li><img src="images/book-2.JPG" alt="Pride And Prejudice" width="50">
-                        <p><a href="#">Pride and Prejudice</a></p></li>
-                      <li><img src="images/book-3.JPG" alt="To All The Boys I've Loved Before" width="50">
-                        <p><a href="#">To All The Boys I've Loved Before</a></p></li>
-                      <li><img src="images/book-4.JPG" alt="The Summer I Turned Pretty" width="50">
-                        <p><a href="#">The Summer I Turned Pretty</a></p></li>
-                     <li><img src="images/book-5.JPG" alt="If Tomorrow Comes" width="50">
-                        <p><a href="#">If Tomorrow Comes</a></p></li>
-                     <li><img src="images/book-6.JPG" alt="Master Of The Game" width="50">
-                        <p><a href="#">Master Of The Game</a></p></li>
-                    </ol>
-                </div><hr>
-            </section>
-        <footer>
-          <p><b>Sign Up for our Newsletter</b></p>
-            <input type="text" placeholder="Tpe your email address">
-              <button type="submit">Submit</button>
-          <p><a href="#">Contact Us</a></p>
-          <p><a href="#">About Us</a></p>
-          <p><a href="#">Privacy</a></p>
-          <p><a href="#">Terms and Conditions</a></p>
-          <p><b>Connect with Us</b></p>
-            <a href="www.gmail.com"><img src="images/gmail-logo.png" width="25"></a>
-            <a href="www.twitter.com"><img src="images/twitter-logo.png" width="20"></a>
-            <a href="www.facebook.com"><img src="images/facebook-logo.png" width="20"></a>
-        </footer><hr>
-  </body>
-    <footer>
-      <p>&copy;Copyright 2020 venister.com All rights reserved.</p>
-    </footer>
-</html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/products.css" type="text/css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <title>venister</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav-bar">
+      <h1 class="brand-name">VENISTER <span>YourFavOnlineBookStore</span></h1>
+      <ul class="nav-pages">
+        <li><a href="products.html">Product Page</a></li>
+        <li><a href="../htmlForms/contact.html">Contact Us</a></li>
+        <li><a href="../htmlForms/sign-up.html">Sign-up</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="product">
+    <div class="first-product">
+      <div class="product-image">
+        <img src="images/book-1a.jpg" alt="How To Win Friends And Influence People">
+      </div>
+      <div class="product-details">
+        <h3 id="product-name">How to win friends and influence people</h3>
+        <p>Author: Dale Carnegie</p>
+        <p>Quantity: <input type="number" name="quantity" placeholder="1"></p>
+        <p>Ebook: <em>$50</em></p>
+        <p>HardCover: <em>$100</em></p>
+        <button class="btn">Buy Now</button>
+      </div>
+    </div>
+    <div class="description">
+      <!--Description of product-->
+      <h4>DESCRIPTION</h4>
+      <h5>Pages: 750</h5>
+      <h5>Genre: Inspirational Book</h5>
+      <p>You can go after the job you want...and get it! You can take the job you have...and improve it! You can take any situation you're in...and make it work for you! Since its release in 1936, How to Win Friends and Influence People has sold more than 15 million copies. Dale Carnegie's first book is a timeless bestseller, packed with rock-solid advice that has carried thousands of now famous people up the ladder of success in their business and personal lives. As relevant as ever before, Dale Carnegie's principles endure, and will help you achieve your maximum potential in the complex and competitive modern age.</p>
+    </div>
+  </section>
+  <section class="similar-products">
+    <!--Ordered list of more items on product page-->
+    <h3>More Books To Explore</h3>
+    <ol class="other-books">
+        <li><a href="#">
+          <img src="images/book-3.JPG" alt="The Summer I Turned Pretty" width="50">
+          <p>The Summer I Turned Pretty</p>
+          <p><em>$40</em></p></a></li>
+        <li><a href="#">
+          <img src="images/book-4.JPG" alt="To All The Boys I've Loved Before" width="50">
+          <p>To All The Boys I've Loved Before</p>
+          <p><em>$35</em></p></a></li>
+        <li><a href="#">
+          <img src="images/book-6.JPG" alt="Master Of The Game" width="50">
+          <p>Master Of The Game</p>
+          <p><em>$70</em></p></a></li>
+      </ol>
+      </section>
+            <footer>
+              <div class="footer-properties">
+                <div class="contact">
+                  <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                  </ul>
+                </div>
+                <div class="subscribe">
+                  <form>
+                    <h4>Sign Up for our Newsletter</h4>
+                    <input type="text" placeholder="Type your email address">
+                    <button type="submit" class="submit">Submit</button>
+                  </form>
+                </div>
+                <div class="connect">
+                  <h4>Connect with Us</h4>
+                  <ul>
+                    <li><a href="www.gmail.com"><img src="images/gmail-logo.png"></a></li>
+                    <li><a href="www.twitter.com"><img src="images/twitter-logo.png"></a></li>
+                    <li><a href="www.facebook.com"><img src="images/facebook-logo.png"></a></li>
+                    <li><a href="www.youtube.com"><img src="images/youtube-logo.jpg"></a></li>
+                  </ul>
+                </div>
+              </div>
+              <p>&copy;Copyright 2020 venister.com All rights reserved.</p>
+            </footer>
+    </body>
+ </html>
