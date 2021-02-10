@@ -14,9 +14,6 @@ body {
   padding: 10px;
   margin: 0;
 }
-.nav-bar h1 {
-  margin: ;
-}
 .brand-name span {
   font-size: 16px;
   font-weight: normal;
@@ -77,9 +74,6 @@ line-height: 1.0;
 .product a {
   color: #c96567;
 }
-#audio-link {
-  font-weight: normal;
-}
 .description h5 {
   line-height: 0;
 }
@@ -96,7 +90,7 @@ line-height: 1.0;
 .other-books {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 .other-books a {
 text-decoration: none;
@@ -108,28 +102,28 @@ color: black;
 .other-books img {
   width: 150px;
   height: 180px;
+  padding: 20px 0 0 45px;
+}
+.similar-products {
+  margin: 0;
+}
+.similar-products ol {
+  margin: 0;
 }
 .other-books li {
   list-style: none;
   background-color: white;
   box-shadow: 1px 1px 1px gray;
-  width: 180px;
+  width: 250px;
   height: 270px;
+  margin-bottom: 20px;
 }
 .other-books p {
   font-size: 16px;
   text-align: center;
   font-weight: bold;
-  margin-top: 0;
+  margin: 0;
   padding-top: 3px;
-}
-.book-genre {
-  height: 200px;
-  background-color: white;
-  color: black;
-}
-.book-genre h5 {
-  text-transform: uppercase;
 }
 footer {
 background-color: rgb(100, 27, 27);
@@ -142,30 +136,39 @@ margin: 0;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-around;
 }
-footer ul {
-  padding: 0;
+.contact ul {
   list-style-type: none;
 }
-footer p {
-  text-align: center;
-  margin: 0;
+.subscribe h4 {
+  margin-bottom: 0;
 }
-.connect img {
-  width: 25px;
-  height: 20px;
+.connect h4 {
+  margin-bottom: 0;
+}
+.connect ul {
+  margin: 5px;
+  padding: 0;
 }
 .connect li {
   display: inline-block;
   margin-left: 0;
   padding-left: 5px;
 }
+.connect img {
+  width: 30px;
+  height: 25px;
+}
 .submit {
-  color: white;
+  color: black;
   text-transform: uppercase;
-  background-color: #E7717D;
+  background-color: white;
   border-style: none;
 }
-@media screen and (max-width: 998px) {
+footer p {
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+@media screen and (max-width: 992px) {
   body {
     font-size: 18px;
   }
@@ -180,10 +183,13 @@ footer p {
     height: 250px;
   }
   .other-books {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   .footer-properties {
     grid-template-columns: 1fr 1fr;
+  }
+  .contact ul {
+    padding: 0;
   }
 }
 @media screen and (max-width: 600px) {
@@ -207,11 +213,13 @@ flex-direction: column;
   margin: 0;
 }
 .other-books {
-  grid-template-columns: 1fr 1fr;
-  padding-left: 10px;
-  justify-content: space-around;
+  grid-template-columns: 1fr;
+  padding-left: 160px;
 }
 .footer-properties {
   grid-template-columns: 1fr;
+}
+.contact ul {
+  padding: 0;
 }
 }
