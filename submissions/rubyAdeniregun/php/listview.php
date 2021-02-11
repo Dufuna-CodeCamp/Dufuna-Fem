@@ -47,6 +47,5 @@ unset($pdo);
     <body>
         <?php echo "<h4>Cookies is Set"."</h4><br/>"; ?>
         <h3>Please find list of <?php echo $_COOKIE["name"]. "<br/>"; ?></p>
-        <a href="customer_cookie2.php"><h5>Access cookies</h5></a>
     </body>
 </html>
