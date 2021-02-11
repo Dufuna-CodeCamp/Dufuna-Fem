@@ -4,6 +4,8 @@ require_once("db_connection.php");
 
 echo "<h5> List View Page </h5>";
 
+setcookie("name", "Customer Details", time()+3600, "/", "", false);
+
 try{
     $sql= "SELECT * FROM customer_details";
     $result= $pdo->query($sql);
@@ -23,7 +25,7 @@ try{
                 echo "<td>" . $row['email_address'] . "</td>";
                 echo "<td>" . $row['created_at'] . "</td>";
                 echo "<td>" . $row['actions'] . "</td>";
-                echo "<td><button type=button></button>" . $row['actions'] . "</td>";
+                echo "<td><button type=button>View</button>" . $row['actions'] . "</td>";
             echo "</tr>";
     }
         echo "</table>";
@@ -36,3 +38,15 @@ try{
 }
 
 unset($pdo);
+
+?>
+<html>
+    <head>
+        <title>List View Page</title>
+    </head>
+    <body>
+        <?php echo "<h4>Cookies is Set"."</h4><br/>"; ?>
+        <h3>Please find list of <?php echo $_COOKIE["name"]. "<br/>"; ?></p>
+        <a href="customer_cookie2.php"><h5>Access cookies</h5></a>
+    </body>
+</html>
