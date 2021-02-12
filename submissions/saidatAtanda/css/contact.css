@@ -36,14 +36,14 @@ body {
   cursor: pointer;
   color: #c2b9b0;
 }
-img {
-  width: 30px;
-  height: 25px;
-}
 section {
   display: flex;
   justify-content: space-evenly;
   font-size: 22px;
+}
+section img {
+  width: 30px;
+  height: 25px;
 }
 .contact-us {
   text-align: center;
@@ -111,6 +111,12 @@ margin: 0;
 .subscribe h4 {
   margin-bottom: 0;
 }
+.submit {
+  color: rgb(100, 27, 27);
+  text-transform: uppercase;
+  background-color: white;
+  border-style: none;
+}
 .connect h4 {
   margin-bottom: 0;
 }
@@ -123,11 +129,9 @@ margin: 0;
   margin-left: 0;
   padding-left: 5px;
 }
-.submit {
-  color: black;
-  text-transform: uppercase;
-  background-color: white;
-  border-style: none;
+.connect img {
+  width: 30px;
+  height: 25px;
 }
 footer p {
   text-align: center;
@@ -160,6 +164,9 @@ footer p {
     width: 98%;
     height: 200px;
   }
+  footer {
+    padding-left: 40px;
+  }
   .footer-properties {
     grid-template-columns: 1fr 1fr;
   }
@@ -184,6 +191,9 @@ body {
 .contact-form textarea {
   width: 98%;
   height: 150px;
+}
+footer {
+  padding-left: 20px;
 }
 .footer-properties {
   grid-template-columns: 1fr;

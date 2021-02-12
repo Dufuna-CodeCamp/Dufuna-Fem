@@ -36,94 +36,50 @@ body {
   cursor: pointer;
   color: #c2b9b0;
 }
-.product {
-  padding: 10px;
+section {
+    display: flex;
+    justify-content: space-around;
 }
-.first-product {
-  display: flex;
+aside {
+  width: 30%;
+  flex-wrap: nowrap;
 }
-.first-product img {
-  margin: 10px;
-  width: 300px;
-  height: 350px;
-  padding: 20px;
-  box-shadow: 1px 1px 1px 0.5px gray;
+main {
+  width: 60%;
 }
-.product-details {
-margin: 15px;
-font-weight: bolder;
-line-height: 1.0;
+.sign-in {
+  text-align: left;
+  margin-top: 80px;
+  font-size: 26px;
 }
-#product-name {
-  text-transform: uppercase;
+.sign-in h1 {
+  color: rgb(100, 27, 27);
+  font-size: 40px;
 }
-.product-details input {
-  width: 30px;
-  height: 30px;
+.signup-form {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 40px 0;
+  height: 700px;
+  width: 70%;
+  padding: 30px;
+}
+.form-details {
+  width: 98%;
+  height: 25px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 20px;
 }
 .btn {
   color: white;
   background-color: #c96567;
   border-radius: 5%;
   border-style: none;
-  height: 60px;
-  width: 120px;
   text-transform: uppercase;
-  margin-top: 10px;
-}
-.product a {
-  color: #c96567;
-}
-.description h5 {
-  line-height: 0;
-}
-.similar-products {
-  background-color: #ebebeb;
-  color: black;
-  margin-top: 10px;
-}
-.similar-products h3 {
-  text-transform: uppercase;
-  text-align: center;
-  padding: 10px;
-}
-.other-books {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(3, 1fr);
-}
-.other-books a {
-text-decoration: none;
-color: black;
-}
-.other-books a:hover {
-  color: pink;
-}
-.other-books img {
-  width: 150px;
-  height: 180px;
-  padding: 20px 0 0 45px;
-}
-.similar-products {
-  margin: 0;
-}
-.similar-products ol {
-  margin: 0;
-}
-.other-books li {
-  list-style: none;
-  background-color: white;
-  box-shadow: 1px 1px 1px gray;
-  width: 250px;
-  height: 270px;
-  margin-bottom: 20px;
-}
-.other-books p {
-  font-size: 16px;
-  text-align: center;
-  font-weight: bold;
-  margin: 0;
-  padding-top: 3px;
+  margin: 10px;
+  width: 100px;
+  height: 25px;
 }
 footer {
 background-color: rgb(100, 27, 27);
@@ -168,7 +124,7 @@ footer p {
   text-align: center;
   margin: 20px 0 0 0;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 998px) {
   body {
     font-size: 18px;
   }
@@ -178,12 +134,26 @@ footer p {
     margin: 0;
     padding: 0;
   }
-  .first-product img {
-    width: 200px;
-    height: 250px;
+  section {
+    flex-direction: column;
+    align-items: center;
   }
-  .other-books {
-    grid-template-columns: 1fr 1fr;
+  aside {
+    width: 60%;
+  }
+  main {
+    width: 80%;
+  }
+  .sign-in {
+    text-align: center;
+    margin-top: 40px;
+  }
+  .signup-form {
+    height: 600px;
+    width: 80%;
+  }
+  .signup-form div {
+    text-align: center;
   }
   footer {
     padding-left: 40px;
@@ -205,25 +175,31 @@ body {
   margin: 0;
   padding: 0;
 }
-.first-product img {
-  width: 160px;
-  height: 200px;
+aside {
+  width: 50%;
 }
-.first-product {
-flex-direction: column;
+main {
+  width: 70%;
 }
-.product-details {
-  margin: 0;
+.sign-in h1 {
+  font-size: 26px;
+  margin-bottom: 0;
 }
-.other-books {
-  grid-template-columns: 1fr;
-  padding-left: 160px;
+.sign-in p {
+  margin-top: 0;
+  font-size: 16px;
 }
-footer {
-  padding-left: 20px;
+.signup-form {
+  width: 90%;
+}
+.signup-form div {
+  text-align: left;
 }
 .footer-properties {
   grid-template-columns: 1fr;
+}
+footer {
+  padding-left: 20px;
 }
 .contact ul {
   padding: 0;
