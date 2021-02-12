@@ -164,6 +164,9 @@ footer p {
     width: 98%;
     height: 200px;
   }
+  footer {
+    padding-left: 40px;
+  }
   .footer-properties {
     grid-template-columns: 1fr 1fr;
   }
@@ -188,6 +191,9 @@ body {
 .contact-form textarea {
   width: 98%;
   height: 150px;
+}
+footer {
+  padding-left: 20px;
 }
 .footer-properties {
   grid-template-columns: 1fr;

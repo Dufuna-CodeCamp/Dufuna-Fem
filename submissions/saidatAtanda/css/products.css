@@ -185,6 +185,9 @@ footer p {
   .other-books {
     grid-template-columns: 1fr 1fr;
   }
+  footer {
+    padding-left: 40px;
+  }
   .footer-properties {
     grid-template-columns: 1fr 1fr;
   }
@@ -215,6 +218,9 @@ flex-direction: column;
 .other-books {
   grid-template-columns: 1fr;
   padding-left: 160px;
+}
+footer {
+  padding-left: 20px;
 }
 .footer-properties {
   grid-template-columns: 1fr;

@@ -155,6 +155,9 @@ footer p {
   .signup-form div {
     text-align: center;
   }
+  footer {
+    padding-left: 40px;
+  }
   .footer-properties {
     grid-template-columns: 1fr 1fr;
   }
@@ -194,6 +197,9 @@ main {
 }
 .footer-properties {
   grid-template-columns: 1fr;
+}
+footer {
+  padding-left: 20px;
 }
 .contact ul {
   padding: 0;
