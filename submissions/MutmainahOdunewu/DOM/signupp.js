@@ -81,6 +81,6 @@ const formValidation = (event) => {
     "Please confirm your Password",
     "Your password do not match"
   );
-  passwordValidation(confirmPassword, password, event);
+  return true;
 };
 form.addEventListener("click", formValidation);
