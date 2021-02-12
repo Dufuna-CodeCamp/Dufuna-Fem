@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-<head>
-    <title>List View Page</title>
-</head>
-<body>
-
 <?php
+
 require_once("db_connection.php");
 
 echo "<h5> List View Page </h5>";
 
-setcookie("name", "$result", time()+3600, "/", "", false);
+setcookie("name", " json_encode($result", time() + (86400 * 30), "/"); // 86400 = 1 day
 
 try{
     $sql= "SELECT * FROM customer_details";
@@ -44,12 +39,11 @@ try{
 
 unset($pdo);
 
-if (isset($_COOKIE["name"])) {
-    echo "<h1>Welcome " . $_COOKIE["name"] . "</h1><br />";
+$db_names = ["John Mark", "James Smith", "Jonathan Barnes", "Jack Bauer"];
+
+if(isset($_COOKIE['name']) ) {
+    $name = json_decode(stripslashes($_COOKIE['name']), true );
 } else {
-    echo "<h1>Sorry... Not recognized" . "</h1><br />";
+    $name = $db_names;
 }
 ?>
-
-</body>
-</html>
