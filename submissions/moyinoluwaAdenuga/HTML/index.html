@@ -29,9 +29,16 @@
                 <div>
                     <h3 class="uppercase">Laced Ankara top</h3>
                     <p class="reduce-margin">Collection: 2020</p>
-                    <p class="reduce-margin">Quantity: <span class="border-round">10</span></p>
-                    <p class="reduce-margin">Price: &#8358; 5000</p>
-                    <button class="buy-btn uppercase">Buy now</button>
+                    <p class="reduce-margin">Quantity: 
+                        <span>
+                            <input type="number" name="quantity" id="quantity" value=1 min=1 />
+                            <span class="error"></span>
+                        </span>
+                    </p>
+                    <p class="reduce-margin">Price: &#8358; <span id="price">5000</span></p>
+                    <p class="reduce-margin">Shipping cost: &#8358; <span id="shipping-cost">750</span></p>
+                    <p class="reduce-margin">Total cost: &#8358; <span id="total-cost">5750</span></p>
+                    <button class="buy-btn uppercase" id="buy-button">Buy now</button>
                 </div>
             </div>
             <div>
@@ -99,6 +106,8 @@
             <p>Copyright 2021 amod.com</p>
             <p>All rights reserved.</p>
         </div>
+
+        <script src="../DOM/product.js"></script>
 
     </footer>
     
