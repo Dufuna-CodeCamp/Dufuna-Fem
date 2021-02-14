@@ -71,6 +71,7 @@ ul li a {
   border: none;
   border-bottom: 1px solid #55c57a;
   width: 80%;
+  margin-bottom: 10px;
 }
 .error-block {
   color: red;
@@ -80,6 +81,7 @@ form img {
 }
 #comments {
   width: 80%;
+  margin-bottom: 5px;
 }
 .foot input {
   color: #55c57a;

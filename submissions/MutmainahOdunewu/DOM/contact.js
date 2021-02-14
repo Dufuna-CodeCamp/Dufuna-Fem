@@ -6,27 +6,25 @@ let message = document.getElementById("comments");
 
 let validate = (field, event, regEx, result, output) => {
   if (field.value === "") {
-    field.nextElementSibling.nextElementSibling.nextElementSibling.innerHTML = result;
+    field.nextElementSibling.nextElementSibling.innerHTML = result;
     event.preventDefault();
     return false;
   } else if (!field.value.match(regEx)) {
-    field.nextElementSibling.nextElementSibling.nextElementSibling.innerHTML = output;
+    field.nextElementSibling.nextElementSibling.innerHTML = output;
     event.preventDefault();
     return false;
   } else {
-    field.nextElementSibling.nextElementSibling.nextElementSibling.innerHTML =
-      "";
+    field.nextElementSibling.nextElementSibling.innerHTML = "";
     return true;
   }
 };
 let messageValidation = (field, event, result) => {
   if (field.value === "") {
-    field.nextElementSibling.nextElementSibling.nextElementSibling.innerHTML = result;
+    field.nextElementSibling.nextElementSibling.innerHTML = result;
     event.preventDefault();
     return false;
   } else {
-    field.nextElementSibling.nextElementSibling.nextElementSibling.innerHTML =
-      "";
+    field.nextElementSibling.nextElementSibling.innerHTML = "";
     return true;
   }
 };
