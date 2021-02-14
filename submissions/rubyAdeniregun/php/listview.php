@@ -4,7 +4,7 @@ require_once("db_connection.php");
 
 echo "<h5> List View Page </h5>";
 
-setcookie("name", " json_encode($result", time() + (86400 * 30), "/"); // 86400 = 1 day
+setcookie("name", "json_encode($result)", time() + (86400 * 30), "/"); // 86400 = 1 day
 
 try{
     $sql= "SELECT * FROM customer_details";
@@ -47,3 +47,4 @@ if(isset($_COOKIE['name']) ) {
     $name = $db_names;
 }
 ?>
+
