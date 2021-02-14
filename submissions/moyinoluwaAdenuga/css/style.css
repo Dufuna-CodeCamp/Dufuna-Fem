@@ -51,6 +51,9 @@ fieldset {
     border: 1px solid rgba(0,0,0,0.6);
     padding: 20px;
 }
+.form-field {
+    margin-bottom: 10px;
+}
 input[type="text"],
 input[type="number"],
 input[type="email"],
@@ -60,15 +63,22 @@ input[type="password"] {
     margin: 5px auto 10px;
     line-height: 30px;
     border: 1px solid rgba(0, 0, 0, 0.6);
-    padding: 0;
+    padding: 3px 10px;
 }
 .labels{
     display: block;
 }
+.error-block {
+    font-size: 14px;
+    color: red;
+}
+#tandcError {
+    display: inline-block;
+}
 .tandc {
     color:orange;
 }
-.signup-btn {
+#signup-btn {
     background-color: orange;
     margin: 15px auto 0;
     text-transform: uppercase;
@@ -363,22 +373,18 @@ footer p:last-of-type {
         border-radius: 10px;
         width: 100%;
         margin: 5px auto 10px;
-        line-height: 45px;
+        line-height: 30px;
+        font-size: 18px;
         border: 2px double rgba(0, 0, 0, 0.6);
-        padding: 0;
+        padding: 3px 15px;
     }
     fieldset div {
         margin-top: 1em;
-        text-align: center;
     }
     fieldset div input {
-        height: 18px;
         width: 18px;
     }
-    .tandc {
-        font-size: 22px;
-    }
-    .signup-btn {
+    #signup-btn {
         font-size: 20px;
         margin-top: 1em;
         padding: 0.5em 2.8em 0.7em;
