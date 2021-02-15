@@ -1,4 +1,3 @@
-
 <?php
 
 require_once("db_connection.php");
@@ -40,7 +39,7 @@ try{
 
 unset($pdo);
 
-$db_names = ["John Mark", "James Smith", "Jonathan Barnes", "Jack Bauer"];
+$db_names = '$result($sql)';
 
 if(isset($_COOKIE['name']) ) {
     $name = json_decode(stripslashes($_COOKIE['name']), true );
