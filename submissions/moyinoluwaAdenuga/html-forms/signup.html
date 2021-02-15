@@ -25,29 +25,51 @@
             <p>Registering an account gives you access to sweet promo and events available to only registered customers</p>
             <p>Already got an account? <a href="" >Sign in</a></p>
         </div>
-        <form>
+        <form id="validateForm">
             <fieldset>
-                <label class="labels" for="firstname">First Name</label>
-                <input class="labels" type="text" name="firstname" id="firstname" required>
-                <label class="labels" for="lastname">Last Name</label>
-                <input class="labels" type="text" name="lastname" id="lastname" required>
-                <label class="labels" for="othername">Other Names</label>
-                <input class="labels" type="text" name="othername" id="othername" required>
-                <label class="labels" for="phonenumber">Phone Number</label>
-                <input class="labels" type="number" name="phonenumber" id="phonenumber" required>
-                <label class="labels" for="emailaddress">Email Address</label>
-                <input class="labels" type="email" name="emailaddress" id="emailaddress" required>
-                <label class="labels" for="password">Password</label>
-                <input class="labels" type="password" name="password" id="password" required>
-                <label class="labels" for="password1">Confirm Password</label>
-                <input class="labels" type="password" name="password1" id="password1" required>
-
-                <div>
-                    <input type="checkbox" name="termsandcondition" id="tandc" required>
-                    <label for="tandc" class="tandc">I agree to the Terms and Conditions</label>
+                <div class="form-field">
+                    <label class="labels" for="firstname">First Name</label>
+                    <input class="labels" type="text" name="firstname" id="firstname" />
+                    <span class="error-block"></span>
+                </div>
+                <div class="form-field">
+                    <label class="labels" for="lastname">Last Name</label>
+                    <input class="labels" type="text" name="lastname" id="lastname" />
+                    <span class="error-block"></span>
+                </div>
+                <div class="form-field">
+                    <label class="labels" for="othername">Other Names</label>
+                    <input class="labels" type="text" name="othername" id="othername" />
+                    <span class="error-block"></span>
+                </div>
+                <div class="form-field">
+                    <label class="labels" for="phonenumber">Phone Number</label>
+                    <input class="labels" type="number" name="phonenumber" id="phonenumber" />
+                    <span class="error-block"></span>
+                </div>
+                <div class="form-field">
+                    <label class="labels" for="emailaddress">Email Address</label>
+                    <input class="labels" type="text" name="emailaddress" id="emailaddress" />
+                    <span class="error-block"></span>
+                </div>
+                <div class="form-field">
+                    <label class="labels" for="password">Password</label>
+                    <input class="labels" type="password" name="password" id="password" />
+                    <span class="error-block"></span>
+                </div>
+                <div class="form-field">
+                    <label class="labels" for="password1">Confirm Password</label>
+                    <input class="labels" type="password" name="password1" id="password1" />
+                    <span class="error-block"></span>
                 </div>
 
-                <button class="signup-btn">Sign up</button>
+                <div>
+                    <input type="checkbox" name="termsandcondition" id="tandc" >
+                    <label for="tandc" class="tandc">I agree to the Terms and Conditions</label>
+                    <span id="tandcError" class="error-block"></span>
+                </div>
+
+                <button id="signup-btn" type="submit">Sign up</button>
 
             </fieldset>
         </form>
@@ -86,6 +108,8 @@
         </div>
 
     </footer>
+
+    <script src="../DOM/signup.js"></script>
     
 </body>
 </html>
