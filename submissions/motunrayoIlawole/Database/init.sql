@@ -1,6 +1,6 @@
-CREATE DATABASE Top_clothing;
+CREATE DATABASE top_clothing;
 
-use Top_clothing;
+use top_clothing;
 
 /* Create the product categories table */
 CREATE TABLE product_categories (
