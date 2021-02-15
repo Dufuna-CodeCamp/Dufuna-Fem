@@ -43,6 +43,6 @@ const Validation = (event) => {
     "Please enter a valid Email"
   );
   messageValidation(subject, event, "Please enter a message Subject");
-  messageValidation(comments, event, "Please enter a Message");
+  messageValidation(comments, event, "Please enter your Message");
 };
 form.addEventListener("click", Validation);

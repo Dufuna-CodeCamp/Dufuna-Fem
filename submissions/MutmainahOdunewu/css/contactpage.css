@@ -75,6 +75,9 @@ ul li a {
 }
 .error-block {
   color: red;
+  padding-top: 0 !important;
+}
+.side span {
 }
 form img {
   margin-top: 5px;
