@@ -1,14 +1,11 @@
+
 <?php
 
 require_once("db_connection.php");
 
 echo "<h5> List View Page </h5>";
 
-setcookie("serial_number", "json_encode($result)", time() + (86400 * 30), "/"); // 86400 = 1 day
-setcookie("full_name", "json_encode($result)", time() + (86400 * 30), "/"); 
-setcookie("email_address", "json_encode($result)", time() + (86400 * 30), "/"); 
-setcookie("created_at", "json_encode($result)", time() + (86400 * 30), "/"); 
-setcookie("actions", "json_encode($result)", time() + (86400 * 30), "/"); 
+setcookie("name", "json_encode($result)", time() + (86400 * 30), "/"); // 86400 = 1 day
 
 try{
     $sql= "SELECT * FROM customer_details";
@@ -50,6 +47,5 @@ if(isset($_COOKIE['name']) ) {
 } else {
     $name = $db_names;
 }
-
 ?>
 
