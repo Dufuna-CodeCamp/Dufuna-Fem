@@ -71,6 +71,7 @@ input[type="password"] {
 .error-block {
     font-size: 14px;
     color: red;
+    display: block;
 }
 #tandcError {
     display: inline-block;
