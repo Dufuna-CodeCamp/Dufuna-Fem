@@ -221,11 +221,15 @@ footer p:last-of-type {
 }
 .message {
     color:rgba(0, 0, 0, 0.6);
+    display: block;
+    margin: 10px 0;
 }
 #message {
     width: 100%;
     margin-top: 0.5em;
+    margin-bottom: 8px;
     border:1px solid rgba(0, 0, 0, 0.6);
+    display: block;
 }
 #send-c-btn {
     background-color:  #ff8c00;
@@ -237,6 +241,7 @@ footer p:last-of-type {
     border-radius: 5px;
     font-size: 16px;
     float: right;
+    display: block;
 }
 
 /* Product styles */
