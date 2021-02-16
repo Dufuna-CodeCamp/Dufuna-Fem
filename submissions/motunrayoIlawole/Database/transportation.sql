@@ -37,3 +37,8 @@ CREATE TABLE accident_records (
     primary key (id),
     foreign key (passenger_id) references registered_passengers(id)
 );
+
+ALTER TABLE registered_passengers
+MODIFY COLUMN age VARCHAR(30);
+
+SELECT * FROM registered_passengers;
