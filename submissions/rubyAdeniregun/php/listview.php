@@ -25,8 +25,8 @@ try{
                 echo "<td>" . $row['email_address'] . "</td>";
                 echo "<td>" . $row['created_at'] . "</td>";
                 echo "<td>" . $row['actions'] . "</td>";
-                echo "<td><button type=button>View</button>" . $row['actions'] . "</td>";
-            echo "</tr>";
+                echo "<td><button type=button><a href='orderpage.php'>VIEW</a></button>" . $row['actions'] . "</td>";
+                echo "</tr>";
     }
         echo "</table>";
         unset($result);
