@@ -7,7 +7,6 @@ let  password = document.getElementById('password');
 let  confirmPassword = document.getElementById('confirmPassword');
 
 validation = (field, regExp, error1, error2, event) => {
-  event.preventDefault();
   if (field.value === '') {
     field.nextElementSibling.textContent = error1;
     event.preventDefault();
@@ -23,7 +22,6 @@ validation = (field, regExp, error1, error2, event) => {
 }
 
 confirmPasswordCheck = (passwordField, confirmPasswordField, error1, error2,  event) => {
-    event.preventDefault();
     if (confirmPasswordField.value === '') {
         confirmPasswordField.nextElementSibling.textContent = error1;
         event.preventDefault();
