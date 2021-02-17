@@ -1,12 +1,12 @@
-let sendForm = document.getElementById("btn");
-let email = document.getElementById("newsletter");
+let sendForm = document.getElementById("submit");
+let mail = document.getElementById("newsletter");
 let errorMessage = document.querySelector(".errormessage");
 
 let valide = (event) => {
   const emailRegex = /([a-z\d.-]+)@([a-z\d-]+)\.([a-z]{2,8})$/i;
 
   if (newsletter.value === "") {
-    errorMessage.innerHTML = "Please enter a your email";
+    errorMessage.innerHTML = "Please enter  your email";
     event.preventDefault();
     return false;
   } else if (!newsletter.value.match(emailRegex)) {

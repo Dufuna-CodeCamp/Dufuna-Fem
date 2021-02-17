@@ -28,6 +28,7 @@
           ><br />
         </p>
       </div>
+
       <div class="side" id="validateForm">
         <form id="validateForm" method="post">
           <label for="firstname">First Name</label><br />
@@ -99,6 +100,7 @@
         <button type="submit" id="btn">SIGN UP</button>
       </div>
     </div>
+
     <footer>
       <div class="info">
         <div class="foot">
@@ -110,14 +112,17 @@
         </div>
         <div class="foot">
           <p>Sign up for our Newsletters</p>
-          <form>
+          <form id="requiredfield">
             <input
               type="email"
               name="email"
-              id="email"
+              id="newsletter"
               placeholder="Enter your email address"
             />
-            <button type="submit" class="styling">Submit</button>
+            <button type="submit" class="styling" id="submit">Submit</button>
+            <br />
+
+            <span class="error-block errormessage"></span>
           </form>
         </div>
         <div class="foot">
@@ -144,5 +149,6 @@
     </footer>
 
     <script src="../DOM/signupp.js"></script>
+    <script src="../DOM/newsletter.js"></script>
   </body>
 </html>
