@@ -86,7 +86,7 @@ main {
 }
 
 aside {
-    background-color: #CE9DD9;
+    background-color: rgb(231, 160, 160);
     text-align: center;
     padding: 30px;
 }
@@ -289,10 +289,10 @@ h3 {
 .product-image {
     width: 90%;
     height: 300px;
-    background-image: url('../html/assets/brown-brim.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 
 .product-details {
@@ -348,6 +348,8 @@ h3 {
 .other-image {
     display: block;
     padding: 10px;
+    height: 267px;
+    width: 299px;
 }
 
 .other-image img {
