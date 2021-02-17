@@ -1,5 +1,5 @@
 let quantity = document.getElementById('quantity'),
-    price = document.getElementById('price1'),
+    price = document.getElementById('price'),
     shippingCost = document.getElementById('shippingCost'),
     totalCost = document.getElementById('totalCost'),
     button = document.getElementById('buy1'),
@@ -20,7 +20,7 @@ function quantityField() {
 
 function priceField() {
         if (quantity.value > 0) {
-        productPrice = pricePerUnit * quantity.value;
+        productPrice = pricePerunit * quantity.value;
         price.innerHTML = productPrice;
     } else {
         return false;
