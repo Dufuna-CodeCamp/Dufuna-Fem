@@ -87,8 +87,12 @@
             </div>
             <div class="col-4">
                 <p>Sign Up for our Newsletter</p>
-                <div><input type="text" name="email" placeholder="Enter your email address"/>
-                    <span><button type="submit" id="submit"><strong>submit</strong></button></span>
+                <div>
+                    <form id="newsletter-form">                       
+                        <span class="error-block"></span>
+                        <input type="text" name="email" id="newsEmail" placeholder="Enter your email address"/>
+                        <span><button type="submit" id="submit"><strong>submit</strong></button></span>
+                    </form>
                 </div>
             </div>
             <div class="col-4 connect">
@@ -104,5 +108,6 @@
         <p class="copyright">Copyright 2020 louissastore.com All rights reserved.</p>
     </div>
     <script src="../dom/product.js"></script>
+    <script src="../DOM//newsletter.js"></script></script>
 </body>
 </html>
