@@ -34,7 +34,7 @@ VALUES 	('Bag')
 					                   
 // CREATE PRODUCTS TABLE
 CREATE TABLE products (
-    id INT NOT NULL AUTO_INCREMENT,
+    product_id INT NOT NULL AUTO_INCREMENT,
 	categories_id INT NOT NULL,
 	admins_id INT NOT NULL,
 	product_name VARCHAR(50) NOT NULL,
@@ -72,7 +72,7 @@ INSERT INTO customers (first_name, last_name, email, password)
 
 // CREATE CUSTOMERS ADDRESS TABLE 
 CREATE TABLE customer_address (
-	id INT NOT NULL AUTO_INCREMENT,
+	product_id INT NOT NULL AUTO_INCREMENT,
  	street VARCHAR(50) NOT NULL, 
  	city VARCHAR(40) NOT NULL, 
  	state VARCHAR(40) NOT NULL, 
@@ -92,7 +92,7 @@ VALUES  (1, '45 Rasaki oseni Street', 'Adebayo', 'Ekiti', 23444 , 'Nigeria', '08
                     
 // CREATE ORDER TABLE
 CREATE TABLE orders (
-	id INT NOT NULL AUTO_INCREMENT,
+	product_id INT NOT NULL AUTO_INCREMENT,
 	amount DECIMAL(10,2) NOT NULL,
 	date DATETIME NOT NULL,
 	customer_id INT NOT NULL,
@@ -109,12 +109,12 @@ VALUES(6000 now(), 1),
 
 // CREATE ORDER ITEMS 
 CREATE TABLE order_items (
-	id INT NOT NULL AUTO_INCREMENT,
+	product_id INT NOT NULL AUTO_INCREMENT,
 	quantity INT NOT NULL,
 	unit_prices INT NOT NULL,
 	total_amount DECIMAL(10,2) NOT NULL,
 	order_id INT NOT NULL,
-	product_id INT NOT NULL,
+	customer_id INT NOT NULL,
 	PRIMARY KEY (id),
 	FOREIGN KEY (order_id) REFERENCES orders (id),
 	FOREIGN KEY (product_id) REFERENCES products (id)
