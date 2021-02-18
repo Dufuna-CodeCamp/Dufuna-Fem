@@ -137,7 +137,43 @@ a:visited {
     background-color: #ffffff;
 }
 
-.price1 {
+.error-block {
+    font-size: 15px;
+    color: red;
+    padding: 0;
+}
+
+#price {
+    width: 250px;
+    height: 27px;
+    margin: 17px 12px 17px 0px;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: #5f5f5f;
+}
+
+#shippingCost {
+    width: 250px;
+    height: 27px;
+    margin: 17px 12px 17px 0px;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: #5f5f5f;
+}
+
+#totalCost {
     width: 250px;
     height: 27px;
     margin: 17px 12px 17px 0px;
@@ -162,7 +198,7 @@ a:visited {
     background-color: #f79521;
 }
 
-.buy2 {
+#buy2 {
     width: 80x;
     height: 27px;
     font-family: Montserrat;
@@ -353,15 +389,14 @@ footer img {
 
     .goods {
         display: flex;
-        flex-direction: column;
-        position: static;
+        flex-direction: row;
         margin-top: 0px;
         padding-bottom: 0px;
         margin-left: -5px;
     }
     
     .goods-set {
-        padding-top: 50px;
+        padding-top: 290px;
         margin-left: 30px;
         line-height: 1;
         position: relative;
@@ -374,9 +409,9 @@ footer img {
     .goods img {
         width: 339px;
         height: 254px;
-
         border: 1px solid gray;
         margin: 30px 30px 0 30px;
+        position: absolute;
     }
     
     .description {
@@ -389,7 +424,6 @@ footer img {
         width: 450px;
         height: 104px;
         margin: 10px 16px 3px 23px;
-
     }
 
     .relatedproducts {
