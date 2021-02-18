@@ -15,24 +15,23 @@ function required(field, event) {
         event.preventDefault();
         return false;
     }
-
-    function required(field, event) {
-        if (lname.value === '') {
-            lname.nextElementSibling.innerHTML = "Please enter your Last Name.";
-            event.preventDefault();
-            return false;
-        }
-        if (phone.value === '') {
-            phone.nextElementSibling.innerHTML = "Please enter your Phone Number.";
-            event.preventDefault();
-            return false;
-        }
-        if (email.value === '') {
-            email.nextElementSibling.innerHTML = "Please enter your Email Address.";
-            event.preventDefault();
-            return false;
-        }
-        pwd.nextElementSibling.innerHTML = "Please enter your Password.";
+    if (lname.value === '') {
+        lname.nextElementSibling.innerHTML = "Please enter your Last Name.";
+        event.preventDefault();
+        return false;
+    }
+    if (phone.value === '') {
+        phone.nextElementSibling.innerHTML = "Please enter your Phone Number.";
+        event.preventDefault();
+        return false;
+    }
+    if (email.value === '') {
+        email.nextElementSibling.innerHTML = "Please enter your Email Address.";
+        event.preventDefault();
+        return false;
+    }
+    if (pwd.value === '') {
+        pwd.nextElementSibling.innerHTML = "Please enter your Password"
         event.preventDefault();
         return false;
     }
@@ -40,11 +39,11 @@ function required(field, event) {
         cpwd.nextElementSibling.innerHTML = "Please confirm your Password.";
         event.preventDefault();
         return false;
-    } else {
-        field.nextElementSibling.innerHTML = "";
-        return true;
     }
+    field.nextElementSibling.innerHTML = "";
+    return true;
 }
+
 //Validate Form
 function validateForm(e) {
     required(firstName, e);
