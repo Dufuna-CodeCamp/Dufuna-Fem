@@ -6,7 +6,6 @@ let signupForm = document.querySelector('#validateForm'),
     emailAddress = document.querySelector('#email'),
     password = document.querySelector('#pwd'),
     confirmPassword = document.querySelector('#cpwd'),
-    checkbox = document.querySelector('#terms'),
     error = document.querySelector('.error-block');
 //First of all, the form must be checked to make sure all the mandatory fields are filled in.
 function required(field, event) {
