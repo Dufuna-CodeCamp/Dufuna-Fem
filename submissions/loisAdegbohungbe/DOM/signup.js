@@ -1,4 +1,4 @@
-let  form = document.getElementById('signup-form');
+let  signUpForm = document.getElementById('signup-form');
 let  firstName = document.getElementById('firstName');
 let  lastName = document.getElementById('lastName');
 let  phoneNumber = document.getElementById('phone');
@@ -87,4 +87,4 @@ formValidation = (event) => {
   return true;
 }
 
-form.addEventListener('submit', formValidation);
+signUpForm.addEventListener('submit', formValidation);
