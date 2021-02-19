@@ -26,7 +26,7 @@
             <p>Already got an account? <a href="#">Sign in</a></p>
         </div>
         <div class="container">
-            <form class="signUp" method="POST">
+            <form class="information" method="POST">
                 <label class="firstname" for="firstname">First Name</label><br>
                 <input type="text" name="firstname" id="firstname" required><br>
                 <span class="error-block"></span><br>
@@ -66,12 +66,13 @@
             </div>
             <br><br>
             <div class="newsletter">
-            <form>
+            <form method="POST" class="newsletterForm">
                 <label for="newsletter">Sign up for our Newsletter</label>
                 <div class="news">
                 <input type="email" id="newsletter" name="newsletter" placeholder="Enter your email address"/>
                     <div class="error-block" id="error"></div>
                     <button type="submit" id="submit">SUBMIT</button>
+                    <div class="error-block"></div>
                 </div>
             </form>
             </div>
@@ -90,5 +91,6 @@
         <p id="copy"> &copy; 2020 innerglamour.com All rights reserved</p>
     </footer>
     <script src="../dom/signUpFormValidation.js"></script>
+    <script src="../dom/newsletterValidation.js"></script>
 </body>
 </html>
