@@ -11,7 +11,6 @@ use transportation;
 	 PRIMARY KEY (id)
  );
 
-
 // CREATE TRIPS TABLE
  CREATE TABLE trips (
  	id INT NOT NULL AUTO_INCREMENT,
