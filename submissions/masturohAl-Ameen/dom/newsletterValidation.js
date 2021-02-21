@@ -10,7 +10,7 @@ function newsletterValidation (event) {
     } else if (!newsletter.value.match(newsletterRegex)) {
         newsletter.nextElementSibling.innerHTML = "Please enter a valid mail";
         event.preventDefault();
-    } else{
+    } else {
         newsletter.innerHTML = "";
     }
 }
