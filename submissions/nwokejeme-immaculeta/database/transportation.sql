@@ -7,7 +7,7 @@ use transportation;
 	id INT NOT NULL AUTO_INCREMENT,
 	 full_name VARCHAR(100) NOT NULL, 
 	 sex VARCHAR(10) NOT NULL,
-	 age INT,
+	 age VARCHAR(11),
 	 PRIMARY KEY (id)
  );
 
