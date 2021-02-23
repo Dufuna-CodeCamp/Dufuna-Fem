@@ -5,9 +5,10 @@ let submitForm = document.getElementById("validateform");
     phonenumber = document.getElementById("phonenumber");
     emailaddress = document.getElementById("emailaddress");
     password = document.getElementById("password");
-    plus = document.getElementById("plus");
+    confirmPassword = document.getElementById("confirmPassword");
     agree = document.getElementById("lab");
     bttn= document.getElementById("bttn");
+    
 function required(field, e){
     e.preventDefault();
     if (field.value === ""){
@@ -85,18 +86,18 @@ function passwordValidation(event){
    }
 }
 function confirmPasswordValidation(event){
-    let plusRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/ ;
-    if (plus.value === ''){
-       plus.nextElementSibling.innerHTML ="Please confirm your password ";
+    let confirmPasswordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/ ;
+    if (confirmPassword.value === ''){
+       confirmPassword.nextElementSibling.innerHTML ="Please confirm your password ";
        return false;
-   }else if (!plus.value === password.value){
-       plus.nextElementSibling.innerHTML ="Your password should have a minimum of 6 characters, 1 capital letter, 1 special character eg @ and 1 number.";
+   }else if (!confirmPassword.value === password.value){
+       confirmPassword.nextElementSibling.innerHTML ="Your password should have a minimum of 6 characters, 1 capital letter, 1 special character eg @ and 1 number.";
        return false;
-   }else if (!plus.value.match(plusRegex)){
-    plus.nextElementSibling.innerHTML ="Your password dont match";
+   }else if (!confirmPassword.value.match(confirmPasswordRegex)){
+    confirmPassword.nextElementSibling.innerHTML ="Your password dont match";
     return false;
 }else{
-       plus.nextElementSibling.innerHTML =" ";
+       confirmPassword.nextElementSibling.innerHTML =" ";
        return true;
 }
 }
