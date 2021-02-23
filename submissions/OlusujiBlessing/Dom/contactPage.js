@@ -59,7 +59,7 @@ function commentsValidation(event){
     if (comments.value === '') {
        comments.nextElementSibling.innerHTML ="Please enter your message";
        return false;
-    } else {
+    }else{
        comments.nextElementSibling.innerHTML =" ";
        return true;
    }
