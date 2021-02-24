@@ -21,7 +21,7 @@ function fullnameValidation(event){
     if (fullname.value === '') {
        fullname.nextElementSibling.innerHTML = "Please enter your Name";
        return false;
-   }else if (!fullname.value.match(fullNameRegex)){
+   }else if(!fullname.value.match(fullNameRegex)){
        fullname.nextElementSibling.innerHTML ="Please enter a valid Name without special characters";
        return false;
    } else {
@@ -32,21 +32,21 @@ function fullnameValidation(event){
 function emailFieldValidation(event){
     event.preventDefault();
     let eemailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    if (emailaddress.value === '') {
+    if(emailaddress.value === '') {
        emailaddress.nextElementSibling.innerHTML ="Please enter your email address";
        return false;
    }
-    else if (!emailaddress.value.match(eemailRegex)){
+    else if(!emailaddress.value.match(eemailRegex)){
        emailaddress.nextElementSibling.innerHTML ="Please enter a valid email";
        return false;
-   } else  {
+   }else{
        emailaddress.nextElementSibling.innerHTML =" ";
        return true;
    }
 }
 function subjectValidation(event){
     event.preventDefault();
-    if (subject.value === '') {
+    if(subject.value === '') {
        subject.nextElementSibling.innerHTML ="Please enter message subject";
        return false;
     } else {
@@ -56,10 +56,10 @@ function subjectValidation(event){
 }
 function commentsValidation(event){
     event.preventDefault();
-    if (comments.value === '') {
+    if(comments.value === '') {
        comments.nextElementSibling.innerHTML ="Please enter your message";
        return false;
-    } else {
+    }else{
        comments.nextElementSibling.innerHTML =" ";
        return true;
    }
