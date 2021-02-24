@@ -1,3 +1,8 @@
+:root {
+    --success-color:#2ecc71;
+    --error-color: #e74c3c;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -69,11 +74,13 @@ nav a{
     width: 100%;
 }
 .form-content {
-    margin-bottom: 15px;
+    margin-bottom: 25px;
+    position: relative;
 }
 .form-content label {
     font-size: 18px;
     line-height: 1.23;
+    display: block;
 }
 form div:last-child {
     text-align: center;
@@ -92,6 +99,15 @@ form div:last-child {
     border: 1px solid #707070;
     border-radius: 10px;
 }
+
+small {
+    color: var(--error-color);
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
 .sign-up label {
     font-size: 18px;
     font-weight: bold;
@@ -139,18 +155,36 @@ footer{
     margin-bottom: 12px;
 }
 
-.footer-email {
-    margin-top: 14px;
+.footer-form{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.footer-form [type=email] {
     padding: 0.9rem;
     outline: none;
     border: none;
+    width: 95%;
 }
+.newletter-form label{
+    display: block;
+}
+small {
+    color: var(--error-color);
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
 footer ::placeholder{
     color: #f765a3;
     font-size: 16px;
     line-height: 1.19;
 }
-.footer-form [type=button] {
+
+.footer-form [type=submit] {
     background-color: #fff;
     padding: 0.71rem;
     outline: none;
@@ -159,7 +193,19 @@ footer ::placeholder{
     font-size: 18px;
     font-weight: bold;
     line-height: 1.22;
+    cursor: pointer;
+    align-self: flex-start;
 }
+.newletter-form label{
+    display: block;
+}
+.newletter-form small {
+    color: var(--error-color);
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+}
+
 
 .media p {
     margin-bottom: 15px;

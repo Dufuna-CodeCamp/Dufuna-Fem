@@ -1,76 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/contactpage.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/contactpage.css" />
     <title>Contact Page</title>
-</head>
-
-        <nav class="nav-bar">
-        <h2><i>SandalsbyMo</i></h2>
-        <ul class="bar">
-            <li><a href="../HTML/index.html">product Page</a></li>
-            <li><a href="./contact.html">Contact Us</a></li>
-            <li><a href="./signup.html">Sign-up</a></li>
-       </ul>
-     </nav>
-      <div class="container">
-         <div class="side">
-             <img src="../HTML/images/phone.png" alt="phone" >
-             <h2>please contact us via these numbers <br>+234 812 705 0557 <br>+234 905 267 8705 </h2>
-             <img src="../HTML/images/open-envelope.png" alt="email">
-             <h2>Email Address <br>support@sandalsbymo.com </h2>
-             <p>Or contact us with:</p>
-             <ul>
-                 <li><a href="#"><img src="../HTML/images/facebooklogo.png" alt="facebook"></a></li>
-                 <li><a href=""><img src="../HTML/images/twitterlogo.png" alt="twitter"></a></li>
-                 <li><a href=""><img src="../HTML/images/gmaillogo.png" alt="gmail"></a></li>
-                 <li><a href=""><img src="../HTML/images/youtubelogo.png" alt="youtube"></a></li>
-             </ul>
-         </div>
-         <div class="side">
-            <form>
-                <img src="../HTML/images/closed.png" alt="closed">
-                <p>Or better still send us a message</p>
-                <input type="text" name="fullname" id="fullname" placeholder="Fullname"/><br><br>
-                <input type="text" name="email"  placeholder="Email Address"/><br><br>
-                <input type="text" name="subject" id="subject" placeholder="Subject"/><br><br>
-                <label for="comments">Message</label><br><br>
-                <textarea name="comments" id="comments" cols="55" rows="7"></textarea><br><br>
-                <button type="submit" id="btn">Send</button>
-            </form>
-        </div>
-     </div>
-     <footer>
-        <div class="info">
-            <div class="foot">
-              <ul id="quick-links">
-                 <li><a href="#">About Us</a></li>
-                 <li><a href="#">Contact Us</a></li>
-                 <li><a href="#">Terms and Conditions</a></li>
-             </ul>
-           </div>
-     <div class="foot">
-        <p>Sign up for our Newsletters</p>
-        <form>
-           <input type="email" name="email" id="email" placeholder="Enter your email address"/>
-           <button type="submit" class="styling">Submit</button>
-        </form>
-   </div>
-   <div class="foot">
-        <p>CONNECT WITH US</p>
-        <ul id="socials">
-           <li><a href="#"><img src="../HTML/images/facebooklogo.png" width="30px" height="30px"></a></li>
-           <li><a href="#"><img src="../HTML/images/twitterlogo.png" width="30px" height="30px"></a></li>
-           <li><a href="#"><img src="../HTML/images/gmaillogo.png" width="30px" height="30px"></a></li>
-           <li><a href="#"><img src="../HTML/images/youtubelogo.png" width="35px" height="35px"></a></li>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <h2><i>SandalsbyMo</i></h2>
+      <ul class="bar">
+        <li><a href="../HTML/index.html">product Page</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+        <li><a href="./signup.html">Sign-up</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="side">
+        <img src="../HTML/images/phone.png" alt="phone" />
+        <h2>
+          please contact us via these numbers <br />+234 812 705 0557 <br />+234
+          905 267 8705
+        </h2>
+        <img src="../HTML/images/open-envelope.png" alt="email" />
+        <h2>Email Address <br />support@sandalsbymo.com</h2>
+        <p>Or contact us with:</p>
+        <ul>
+          <li>
+            <a href="#"
+              ><img src="../HTML/images/facebooklogo.png" alt="facebook"
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img src="../HTML/images/twitterlogo.png" alt="twitter"
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img src="../HTML/images/gmaillogo.png" alt="gmail"
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img src="../HTML/images/youtubelogo.png" alt="youtube"
+            /></a>
+          </li>
         </ul>
-  </div>
-</div>  
-<p id="copyright">&copy; Copyright 2020 sandalsbymo.com <span> All rights reserved</span></p>
-</footer>
-        
-        
-</body>
+      </div>
+      <div class="side">
+        <form id="validateForm">
+          <img src="../HTML/images/closed.png" alt="closed" />
+          <p>Or better still send us a message</p>
+          <input
+            type="text"
+            name="fullname"
+            id="fullName"
+            placeholder="Fullname"
+          /><br />
+          <span class="error-block error"></span><br /><br />
+          <input
+            type="text"
+            name="email"
+            id="emailAddress"
+            placeholder="Email Address"
+          /><br />
+          <span class="error-block error"></span><br /><br />
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            placeholder="Subject"
+          /><br />
+          <span class="error-block error"></span> <br />
+          <label for="comments">Message</label><br />
+          <textarea name="comments" id="comments" cols="55" rows="7"></textarea
+          ><br />
+          <span class="error-block error"></span> <br />
+          <button type="submit" id="btn">Send</button>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <div class="info">
+        <div class="foot">
+          <ul id="quick-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+          </ul>
+        </div>
+        <div class="foot">
+          <p>Sign up for our Newsletters</p>
+          <form id="requiredfield">
+            <input
+              type="email"
+              name="email"
+              id="newsletter"
+              placeholder="Enter your email address"
+            />
+            <button type="submit" class="styling" id="submit">Submit</button>
+            <br />
+            <span class="error-block errormessage"></span>
+          </form>
+        </div>
+        <div class="foot">
+          <p>CONNECT WITH US</p>
+          <ul id="socials">
+            <li>
+              <a href="#"
+                ><img
+                  src="../HTML/images/facebooklogo.png"
+                  width="30px"
+                  height="30px"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="../HTML/images/twitterlogo.png"
+                  width="30px"
+                  height="30px"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="../HTML/images/gmaillogo.png"
+                  width="30px"
+                  height="30px"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="../HTML/images/youtubelogo.png"
+                  width="35px"
+                  height="35px"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p id="copyright">
+        &copy; Copyright 2020 sandalsbymo.com <span> All rights reserved</span>
+      </p>
+    </footer>
+
+    <script src="../DOM/contact.js"></script>
+    <script src="../DOM/newsletter.js"></script>
+  </body>
 </html>

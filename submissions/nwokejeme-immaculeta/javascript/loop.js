@@ -20,3 +20,16 @@ while (count < diff) {
     }
     count++;
 };
+
+
+
+// Second Task
+let productList = [
+    { productName: 'Palissy Briefcase', imageUrl: 'leather-palissy-25hour-bag-chocolate-1.jpg', productPrice: '₦27,500' },
+    { productName: 'leather Belth', imageUrl: 'sku_brown_1_10.jpg', productPrice: '₦8,000' },
+    { productName: 'Wrist Watch', imageUrl: 'images1.jpg', productPrice: '₦10,000' }
+]
+
+productList.forEach((product) => {
+    console.log(`${product.productName} with ${product.imageUrl} is sold for ${product.productPrice}`);
+})

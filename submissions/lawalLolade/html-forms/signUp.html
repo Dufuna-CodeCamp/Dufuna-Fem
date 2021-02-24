@@ -36,14 +36,16 @@
             <p>Already got an account? <a href="#">Sign in</a></p>
         </div>
         <div class="register-account">
-            <form>
+            <form class="form" id="form" method="post">
                 <div class="form-content">
                     <label for="firstname">First Name</label>
                     <input type="text" name="firstname" id="firstname">
+                    <small></small>
                 </div>
                 <div class="form-content">
                     <label for="lastname">Last Name</label>
                     <input type="text" name="lastname" id="lastname">
+                    <small></small>
                 </div>
                 <div class="form-content">
                     <label for="othername">Other Name</label>
@@ -52,18 +54,22 @@
                 <div class="form-content">
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email">
+                    <small></small>
                 </div>
                 <div class="form-content">
-                    <label for="number">Phone Number</label><br>
+                    <label for="number">Phone Number</label>
                     <input type="number" name="number" id="number">
+                    <small></small>
                 </div>
                 <div class="form-content">
-                    <label for="psw">Password</label><br>
-                    <input type="password" name="psw" id="psw">
+                    <label for="psw">Password</label>
+                    <input type="password" name="password" id="password">
+                    <small></small>
                 </div>
                 <div class="form-content">
                     <label for="c-psw">Confirm Password</label>
-                    <input type="password" name="c-psw" id="c-psw">
+                    <input type="password" name="password2" id="password2">
+                    <small></small>
                 </div>
                 <div class="sign-up">
                     <input type="checkbox" name="checkbox" id="checkbox">
@@ -84,10 +90,13 @@
                 </ul>
             </div>
             <div class="newsletter">
-                <form class="footer-form">
-                    <label for="newsletter">Sign up for our Newsletter</label><br>
-                    <input class="footer-email" type="email"  name="newsletter" placeholder="Enter your email address"/>
-                    <input type="button" value="SUBMIT">
+                <label for="newsletter">Sign up for our Newsletter</label>
+                <form class="footer-form" id="footerForm" method="post">
+                    <div class="newletter-form">
+                        <input type="email"  name="newsletter" id="newsletterEmail" placeholder="Enter your email address"/>
+                        <small></small>
+                    </div>
+                    <input type="submit" value="SUBMIT">
                 </form>
             </div>
             <div class="media">
@@ -103,5 +112,8 @@
         <p id="copy"> &copy; 2020 Flawa.com All rights reserved</p>
     </footer>
         <!-- Footer Ends -->
+        <!-- scripts -->
+    <script src="../DOM/signUp.js"></script>
+    <script src="../DOM/Newsletter.js"></script>
 </body>
 </html>

@@ -1,12 +1,10 @@
-*{
-    padding: 0;
-    margin: 0;
-  
+* {
+  padding: 0;
+  margin: 0;
 }
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-
 
 ul {
   list-style-type: none;
@@ -15,96 +13,96 @@ ul {
   padding-left: 40px;
   padding-right: 40px;
 }
-.nav-bar{
-  background-color:#55c57a;
-  color:white;
-  height:70px;
+.nav-bar {
+  background-color: #55c57a;
+  color: white;
+  height: 70px;
   font-size: 16px;
-  display:flex;
+  display: flex;
   justify-content: space-between;
   padding: 14px 60px;
-  }
-  .nav-bar h2{
-    margin-left:2px;
-  }
-  
-  .bar li{
-  display:inline-block;
+}
+.nav-bar h2 {
+  margin-left: 2px;
+}
+
+.bar li {
+  display: inline-block;
   margin-left: 10px;
-  }
-  
-  .bar li a{
-  color:white;
-  text-decoration:none;
-  }
-  
-.product{
+}
+
+.bar li a {
+  color: white;
+  text-decoration: none;
+}
+
+.product {
   color: #5f5f5f;
-  float:left;
-  margin-left:5px;
-  margin-left:20px; 
-  padding-top:20px;
-  }
-  .product img {
-    width:300px;
-    height:300px;
-    padding-top:10px;
-  }
-  .product button{
-  background-color:orange;
-  border-radius:20px;
-  width:120px;
+  float: left;
+  margin-left: 5px;
+  margin-left: 20px;
+  padding-top: 20px;
+}
+.product img {
+  width: 300px;
+  height: 300px;
+  padding-top: 10px;
+}
+.product button {
+  background-color: orange;
+  border-radius: 20px;
+  width: 120px;
   padding: 12px;
-  }
-  .description{
-  clear:both;
-  padding:5px 40px;
+}
+.description {
+  clear: both;
+  padding: 5px 40px;
   color: #5f5f5f;
-  }
+}
 
 .related-products {
   background-color: #ebebeb;
   padding: 30px 20px;
 }
-.related-products h4{
+.related-products h4 {
   margin: 0 auto;
   text-align: center;
 }
-.similar{
+.similar {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
-  margin-top:50px;
+  margin-top: 50px;
 }
 .similar .card img {
-  padding-top:30px;
-  width:200px;
-  height:200px;
+  padding-top: 30px;
+  width: 200px;
+  height: 200px;
 }
-.card{
-height:320px;
-background-color:white;
-border:2px solid white;
-text-align:center;
-margin-left: 0 20px;
+.card {
+  height: 320px;
+  background-color: white;
+  border: 2px solid white;
+  text-align: center;
+  margin-left: 0 20px;
 }
 
-#email{
-  color:#55c57a;
-  height:40px;
+#email {
+  color: #55c57a;
+  height: 40px;
   padding: 0 50px;
-  margin-bottom:5px;
+  margin-bottom: 5px;
 }
-.input{
-  height:30px;
-  width:60px;
+.input {
+  height: 30px;
+  width: 60px;
 }
 
-footer{
-  padding-top:10px;
+footer {
+  padding-top: 10px;
   padding-bottom: 20px;
-  color:white;
-  background-color:#55c57a;
+  color: white;
+  background-color: #55c57a;
   margin-top: 80px;
 }
 footer .info {
@@ -117,8 +115,8 @@ footer .info div:not(:first-child) {
   text-align: center;
 }
 
-.foot{
-height:140px;
+.foot {
+  height: 140px;
 }
 #socials {
   padding: 0;
@@ -129,123 +127,124 @@ height:140px;
 #quick-links li {
   margin-bottom: 10px;
 }
-#quick-links li a{
+#quick-links li a {
   color: white;
-  text-decoration:none;
+  text-decoration: none;
+}
+.foot ul li a img {
+  margin-left: 5px;
+}
+footer #copyright {
+  text-align: center;
+  margin: 0;
+}
+
+.styling {
+  height: 40px;
+  columns: #55c57a;
+  width: 70px;
+  background-color: white;
+}
+.error-block {
+  color: red;
+}
+
+#mail {
+  color: #55c57a;
+  width: 250px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+.foot {
+  height: 140px;
+}
+#socials {
+  padding: 0;
+}
+#socials li {
+  display: inline-block;
+}
+#socials img {
+  width: 30px;
+  height: 30px;
+}
+#quick-links {
+  padding-left: 0;
+}
+#quick-links li {
+  margin-bottom: 10px;
+}
+#quick-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+.foot ul li a img {
+  margin-left: 5px;
+}
+footer #copyright {
+  text-align: center;
+  margin: 0;
+}
+@media (max-width: 992px) {
+  .similar {
+    grid-template-columns: 1fr 1fr;
   }
-  .foot ul li a img{
-  margin-left:5px;
+  .related-products {
+    padding-bottom: 30px;
   }
-  footer #copyright {
-    text-align: center;
+  footer .info div:nth-child(1) {
+    grid-area: foot1;
+  }
+  footer .info div:nth-child(2) {
+    grid-area: foot2;
+  }
+  footer .info div:nth-child(3) {
+    grid-area: foot3;
+  }
+  footer .info {
+    display: grid;
+    grid-template-areas:
+      "foot1 foot2"
+      ".     foot3";
+  }
+  footer .info div:not(:first-child) {
+    text-align: inherit;
+  }
+  #email {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 480px) {
+  .nav-bar {
+    display: block;
+    height: 100px;
+    padding: 12px 10px;
+  }
+  .nav-bar h2 {
     margin: 0;
   }
-  
-  .styling{
-    height:40px;
-    columns: #55c57a;
-    width:70px;
-    background-color:white;
+  .bar {
+    padding: 0;
+    margin-top: 10px;
   }
-  
-  #mail{
-    color:#55c57a;
-    width:250px;
-    height:40px;
-    margin-bottom:5px;
+  .nav-bar ul li {
+    display: block;
+    margin: 0;
   }
-  .foot{
-  height:140px;
+  .similar {
+    grid-template-columns: 1fr;
   }
-  #socials {
+  #email {
+    padding: 0 30px;
+  }
+  footer .info {
+    display: block;
+    padding: 0 20px;
+  }
+  .foot {
+    height: auto;
+  }
+  #quick-links {
     padding: 0;
   }
-  #socials li {
-    display: inline-block;
-   
-  }
-  #socials img {
-    width: 30px;
-    height: 30px;
-  }
-  #quick-links  {
-    padding-left: 0;
-  }
-  #quick-links li {
-    margin-bottom: 10px;
-  }
-  #quick-links li a{
-  color: #fff;
-  text-decoration:none;
-  }
-  .foot ul li a img{
-  margin-left:5px;
-  }
-  footer #copyright {
-    text-align: center;
-    margin: 0;
-  }
-  @media (max-width: 992px) {
-    .similar{
-      grid-template-columns: 1fr 1fr;
-    }
-    .related-products {
-      padding-bottom: 30px;
-    }
-    footer .info div:nth-child(1) {
-      grid-area: foot1;
-    }
-    footer .info div:nth-child(2) {
-      grid-area: foot2;
-    }
-    footer .info div:nth-child(3) {
-      grid-area: foot3;
-    }
-    footer .info {
-      display: grid;
-      grid-template-areas: "foot1 foot2"
-                           ".     foot3";
-    }
-    footer .info div:not(:first-child) {
-      text-align: inherit;
-    }
-    #email {
-      padding: 0 30px;
-    }
-  }
-  @media (max-width: 480px) {
-    .nav-bar {
-      display: block;
-      height: 100px;
-      padding: 12px 10px;
-    }
-    .nav-bar h2{
-      margin: 0;
-    }
-    .bar {
-      padding: 0;
-      margin-top: 10px;
-    }
-    .nav-bar ul li {
-      display: block;
-      margin: 0;
-    }
-    .similar {
-      grid-template-columns: 1fr;
-    }
-    #email {
-      padding: 0 30px;
-    }
-    footer .info {
-      display: block;
-      padding: 0 20px;
-    }
-    .foot {
-      height: auto;
-    }
-    #quick-links {
-      padding: 0;
-    }
-  }
-  
-
+}

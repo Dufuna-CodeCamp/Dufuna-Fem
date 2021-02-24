@@ -1,78 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/signup.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/signup.css" />
     <title>signup page</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="nav-bar">
-        <h2><i>sandalsbymo</i></h2>
-        <ul class="bar">
-            <li><a href="../HTML/index.html">Product Page</a></li>
-            <li><a href="../html-forms/contact.html">Contact Page</a></li>
-            <li><a href="./signup.html"></a>Sign Up</li>
-        
-        </ul>
+      <h2><i>sandalsbymo</i></h2>
+      <ul class="bar">
+        <li><a href="../HTML/index.html">Product Page</a></li>
+        <li><a href="../html-forms/contact.html">Contact Page</a></li>
+        <li><a href="./signup.html"></a>Sign Up</li>
+      </ul>
     </nav>
     <div class="container">
-        <div class="register" id ="register">
-            <h1>REGISTER YOUR ACCOUNT</h1>
-            <p>Registering an account gives you access to sweet promo and<br> events available to only registered customers</p>
-           <br><p>Already got an account?<span><a href="#">Sign in</a></span></p>
-        </div>
-        <div class="side">
-            <form>
-                <label for="firstname">First Name</label><br>
-          <input type="text" name="firstname" id="firstname"/><br>
-          <label for="lastname">Last Name</label><br>
-          <input type="text" name="lastname" id="lastname"/><br>
-          <label for="othername">Other Names</label><br>
-          <input type="text" name="othername" id="othername"/><br>
-          <label for="phonenumber">Phone Number</label><br>
-          <input type="text" name="phonenumber" id="phonenumber"/><br>
-          <label for="emailaddress">Email Address</label><br>
-          <input type="email" name="emailaddress" id="emailaddress"/><br>
-          <label for="password">Password</label><br>
-          <input type="password" name="password" id="password"/><br>
-          <label for="confirm">Confirm Password</label><br>
-          <input type="password" name="confirm" id="confirm"/><br>
-            </form>
-            <input type="checkbox" name="agree" id="agree" value="agree"/>
-          <label for="agree" id="lab">I agree to the Terms and Conditions</label><br>
-          <button type="submit" id="btn">SIGN UP</button>
-        </div>
-    </div>
-    <footer>
-        <div class="info">
-            <div class="foot">
-              <ul id="quick-links">
-                 <li><a href="#">About Us</a></li>
-                 <li><a href="#">Contact Us</a></li>
-                 <li><a href="#">Terms and Conditions</a></li>
-             </ul>
-           </div>
-     <div class="foot">
-        <p>Sign up for our Newsletters</p>
-        <form>
-           <input type="email" name="email" id="email" placeholder="Enter your email address"/>
-           <button type="submit" class="styling">Submit</button>
+      <div class="register" id="register">
+        <h1>REGISTER YOUR ACCOUNT</h1>
+        <p>
+          Registering an account gives you access to sweet promo and<br />
+          events available to only registered customers
+        </p>
+        <br />
+        <p>
+          Already got an account?<span><a href="#">Sign in</a></span
+          ><br />
+        </p>
+      </div>
+
+      <div class="side" id="validateForm">
+        <form id="validateForm" method="post">
+          <label for="firstname">First Name</label><br />
+          <input
+            type="text"
+            name="firstname"
+            class="firstName"
+            id="firstName"
+          /><br />
+          <span class="error-block"></span><br />
+
+          <label for="lastname">Last Name</label><br />
+          <input
+            type="text"
+            name="lastname"
+            class="lastName"
+            id="lastName"
+          /><br />
+          <span class="error-block"></span><br />
+
+          <label for="othername">Other Names</label><br />
+          <input
+            type="text"
+            name="othername"
+            class="otherName"
+            id="otherName"
+          /><br />
+          <span class="error-block"></span><br />
+
+          <label for="phonenumber">Phone Number</label><br />
+          <input
+            type="phone"
+            name="phonenumber"
+            class="phoneNumber"
+            id="phoneNumber"
+          /><br />
+          <span class="error-block"></span><br />
+
+          <label for="emailaddress">Email Address</label><br />
+          <input
+            type="email"
+            name="emailaddress"
+            class="emailAddress"
+            id="emailAddress"
+          /><br />
+          <span class="error-block"></span><br />
+
+          <label for="password">Password</label><br />
+          <input
+            type="password"
+            name="password"
+            class="password"
+            id="password"
+          /><br />
+          <span class="error-block"></span><br />
+
+          <label for="confirm">Confirm Password</label><br />
+          <input
+            type="password"
+            name="confirm"
+            class="confirmPassword"
+            id="confirmPassword"
+          /><br />
+          <span class="error-block" id="error"></span><br />
         </form>
-   </div>
-   <div class="foot">
-        <p>CONNECT WITH US</p>
-        <ul id="socials">
-           <li><a href="#"><img src="../HTML/images/facebooklogo.png"></a></li>
-           <li><a href="#"><img src="../HTML/images/twitterlogo.png"></a></li>
-           <li><a href="#"><img src="../HTML/images/gmaillogo.png"></a></li>
-           <li><a href="#"><img src="../HTML/images/youtubelogo.png"></a></li>
-        </ul>
-  </div>
-</div>  
-<p id="copyright">&copy; Copyright 2020 sandalsbymo.com <span> All rights reserved</span></p>
-</footer>
-    
-    
-</body>
+        <input type="checkbox" name="agree" id="agree" valclass="agree" />
+        <label for="agree" id="lab">I agree to the Terms and Conditions</label
+        ><br />
+        <button type="submit" id="btn">SIGN UP</button>
+      </div>
+    </div>
+
+    <footer>
+      <div class="info">
+        <div class="foot">
+          <ul id="quick-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+          </ul>
+        </div>
+        <div class="foot">
+          <p>Sign up for our Newsletters</p>
+          <form id="requiredfield">
+            <input
+              type="email"
+              name="email"
+              id="newsletter"
+              placeholder="Enter your email address"
+            />
+            <button type="submit" class="styling" id="submit">Submit</button>
+            <br />
+
+            <span class="error-block errormessage"></span>
+          </form>
+        </div>
+        <div class="foot">
+          <p>CONNECT WITH US</p>
+          <ul id="socials">
+            <li>
+              <a href="#"><img src="../HTML/images/facebooklogo.png" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="../HTML/images/twitterlogo.png" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="../HTML/images/gmaillogo.png" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="../HTML/images/youtubelogo.png" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p id="copyright">
+        &copy; Copyright 2020 sandalsbymo.com <span> All rights reserved</span>
+      </p>
+    </footer>
+
+    <script src="../DOM/signupp.js"></script>
+    <script src="../DOM/newsletter.js"></script>
+  </body>
 </html>

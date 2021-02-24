@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/bf8153cdc2.js"></script>
+    <title>Sign up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <img src="../html/images/amod_logo.png" alt="logo">
+        <nav>
+            <ul>
+                <li><a href="../HTML/index.html">Product Page</a></li>
+                <li><a href="contactform.html">Contact Us</a></li>
+                <li><a href="signup.html">Sign-up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="form-text">
+            <h1>Register your Account</h1>
+            <p>Registering an account gives you access to sweet promo and events available to only registered customers</p>
+            <p>Already got an account? <a href="" >Sign in</a></p>
+        </div>
+        <form id="validateForm">
+            <fieldset>
+                <div class="form-field">
+                    <label class="labels" for="firstname">First Name</label>
+                    <input class="labels" type="text" name="firstname" id="firstname" />
+                    <span class="error-block"></span>
+                </div>
+                <div class="form-field">
+                    <label class="labels" for="lastname">Last Name</label>
+                    <input class="labels" type="text" name="lastname" id="lastname" />
+                    <span class="error-block"></span>
+                </div>
+                <div class="form-field">
+                    <label class="labels" for="othername">Other Names</label>
+                    <input class="labels" type="text" name="othername" id="othername" />
+                    <span class="error-block"></span>
+                </div>
+                <div class="form-field">
+                    <label class="labels" for="phonenumber">Phone Number</label>
+                    <input class="labels" type="number" name="phonenumber" id="phonenumber" />
+                    <span class="error-block"></span>
+                </div>
+                <div class="form-field">
+                    <label class="labels" for="emailaddress">Email Address</label>
+                    <input class="labels" type="text" name="emailaddress" id="emailaddress" />
+                    <span class="error-block"></span>
+                </div>
+                <div class="form-field">
+                    <label class="labels" for="password">Password</label>
+                    <input class="labels" type="password" name="password" id="password" />
+                    <span class="error-block"></span>
+                </div>
+                <div class="form-field">
+                    <label class="labels" for="password1">Confirm Password</label>
+                    <input class="labels" type="password" name="password1" id="password1" />
+                    <span class="error-block"></span>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="termsandcondition" id="tandc" >
+                    <label for="tandc" class="tandc">I agree to the Terms and Conditions</label>
+                    <span id="tandcError" class="error-block"></span>
+                </div>
+
+                <button id="signup-btn" type="submit">Sign up</button>
+
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-sections">
+            <ul>
+                <li class="one"><a class="footer-nav" href="contactform.html">Contact Us</a></li>
+                <li><a class="footer-nav" href="#">About Us</a></li>
+                <li><a class="footer-nav" href="#">Terms and Conditions</a></li>
+            </ul>
+
+            <div class="footer-side">
+                <div class="footer-fill">
+                    <p>Sign up for our Newsletter</p>
+                    <input type="email" class="footer-email" name="emailaddress" placeholder="Enter your email address" required>
+                    <button class="footer-btn" type="submit">SUBMIT</button>
+                    <span class="error-block"></span>
+                </div>
+
+                <div>
+                    <p class="convert-uppercase">connect with us</p>
+                    <ul class="contact-icons">
+                        <li><a href="#" class="contact-icon fb-icon"><i class="fa fa-facebook-square icon" aria-hidden="true"></i></a></li>
+                        <li><a href="#" class="contact-icon tw-icon"><i class="fa fa-twitter-square icon" aria-hidden="true"></i></a></li>
+                        <li><a href="#" class="contact-icon gmail-icon"><img class="gmail-pic" src="https://img.icons8.com/fluent/48/fa314a/gmail--v1.png"/></a></li>
+                        <li><a href="#" class="contact-icon yt-icon"><i class="fa fa-youtube-play icon" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright 2021 amod.com</p>
+            <p>All rights reserved.</p>
+        </div>
+
+    </footer>
+
+    <script src="../DOM/signup.js"></script>
+    <script src="../DOM/newsletter.js"></script>
+    
+</body>
+</html>

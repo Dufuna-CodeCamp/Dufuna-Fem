@@ -46,12 +46,16 @@
         <div class="contact-form right">
             <p><img src="../HTML/images/logos/ic_email logo.png"></p>
             <h3>Or better still send us a message</h3>
-            <form action="#" method="POST" enctype="multipart/form-data">
-                <input type="text" name="fullname" id="fullname" placeholder="Full Name"/>
+            <form action="#" id="contact-form" method="POST" enctype="multipart/form-data">
+                <input type="text" name="fullname" id="fullName" placeholder="Full Name"/>
+                <span class="error-block"></span>
                 <input type="email" name="email" id="email" placeholder="Email Address" />
+                <span class="error-block"></span>
                 <input type="text" name="subject" id="subject" placeholder="Subject" /> 
+                <span class="error-block"></span>
                 <label for="message">Message</label> <br>
                 <textarea name="message" id="message" cols="50" rows="10"></textarea> 
+                <span class="error-block"></span>
                 <button type="submit">SEND</button>
             </form>
         </div>
@@ -67,8 +71,12 @@
             </div>
             <div class="col-4">
                 <p>Sign Up for our Newsletter</p>
-                <div><input type="text" name="email" placeholder="Enter your email address"/>
-                    <span><button type="submit" id="submit"><strong>submit</strong></button></span>
+                <div>
+                    <form id="newsletter-form">
+                        <input type="text" name="email" id="newsEmail" placeholder="Enter your email address"/>
+                        <span><button type="submit" id="submit"><strong>submit</strong></button></span>                                               
+                        <span class="error-block"></span>
+                    </form>
                 </div>
             </div>
             <div class="col-4 connect">
@@ -83,5 +91,7 @@
         </div>          
         <p class="copyright">Copyright 2020 louissastore.com All rights reserved.</p>
     </div>
+    <script src="../DOM/newsletter.js"></script>
+    <script src="../DOM/contactForm.js"></script>
 </body>
 </html>
