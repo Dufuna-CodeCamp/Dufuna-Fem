@@ -3,12 +3,9 @@ let fullName = document.getElementById('fullName');
 let email = document.getElementById('email');
 let subject = document.getElementById('subject');
 let message = document.getElementById('message');
-let fullNameRegex = /^[A-Za-z]+$/;
+let fullNameRegex = /^[A-Za-z ]+$/;
 let emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-let subjectRegex = /^[A-Za-z]+$/;
-let messageRegex = /^[A-Za-z]+$/;
-
-
+let subjectRegex = /^[A-Za-z ]+$/;
 //Checking the form fields
 function required(field, regex, first_error, sec_error, event) {
     if (field.value === "") {
@@ -25,11 +22,26 @@ function required(field, regex, first_error, sec_error, event) {
     }
 }
 
+function checkmessage(field, first_error, third_error, event) {
+    if (message.value === "") {
+        field.nextElementSibling.innerHTML = first_error;
+        event.preventDefault();
+        return false;
+    } else if (message.value.length <= 150) {
+        field.nextElementSibling.innerHTML = third_error;
+        event.preventDefault();
+        return false;
+    } else {
+        field.nextElementSibling.innerHTML = "";
+        return true;
+    }
+}
+//Form Validation
 function validateForm(e) {
     required(fullName, fullNameRegex, "Please enter your Name", "Please input alphabet characters only", e);
     required(email, emailRegex, "Please enter your Email Address", "Please enter a valid email", e);
-    required(subject, subjectRegex, "Please enter a message", "Please input alphabet characters only", e);
-    required(message, messageRegex, "Please enter your message", "Please input alphabet characters only", e);
+    required(subject, subjectRegex, "Please enter a subject message", "Please input alphabet characters only", e);
+    checkmessage(message, "Please enter you message", "not enough characters", e)
     return true;
 }
 submitForm.addEventListener("submit", validateForm);
