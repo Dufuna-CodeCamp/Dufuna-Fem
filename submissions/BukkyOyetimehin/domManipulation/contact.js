@@ -22,13 +22,13 @@ function required(field, regex, first_error, sec_error, event) {
     }
 }
 
-function checkmessage(message, event) {
+function checkmessage(event) {
     if (message.value === "") {
         message.nextElementSibling.innerHTML = "Please enter a subject message";
         event.preventDefault();
         return false;
     } else if (message.value.length <= 150) {
-        message.nextElementSibling.innerHTML = "not enough characters";
+        message.nextElementSibling.innerHTML = "Please input alphabet characters only";
         event.preventDefault();
         return false;
     } else {
@@ -41,7 +41,7 @@ function validateForm(e) {
     required(fullName, fullNameRegex, "Please enter your Name", "Please input alphabet characters only", e);
     required(email, emailRegex, "Please enter your Email Address", "Please enter a valid email", e);
     required(subject, subjectRegex, "Please enter a subject message", "Please input alphabet characters only", e);
-    checkmessage(message, e);
+    checkmessage(e);
     return true;
 }
 submitForm.addEventListener("submit", validateForm);
