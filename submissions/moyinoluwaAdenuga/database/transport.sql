@@ -7,7 +7,7 @@ CREATE TABLE passenger_details (
 	id INT NOT NULL AUTO_INCREMENT,
 	fullname VARCHAR(100) NOT NULL,
 	sex VARCHAR(8) NOT NULL,
-	age VARCHAR(3) NOT NULL,
+	age VARCHAR(5) ,
     created_at DATETIME DEFAULT NOW() NOT NULL,
 	PRIMARY KEY (id)
 );
