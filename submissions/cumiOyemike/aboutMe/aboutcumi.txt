@@ -1,0 +1,2 @@
+Hello World!
+My name is Cumi Oyemike. At the end of this program, I hope to have honed my software development skills to the point where I can get an entry-level role. I hope to be comfortable enough to work on both the front-end and back-end of web development projects. I also hope to have made awesome friends by the end of this program.

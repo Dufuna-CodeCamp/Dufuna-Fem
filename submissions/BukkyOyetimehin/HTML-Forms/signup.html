@@ -30,26 +30,51 @@
         </div>
         <!--Contact Form -->
         <div class="column-two">
-            <form action="">
-                <label for="fname">First Name:</label>
-                <input type="text" id="fname" name="fname">
-                <label for="lname">Last Name:</label>
-                <input type="text" id="lname" name="lname">
-                <label for="onames">Other Names:</label>
-                <input type="text" id="onames" name="onames">
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone">
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="phone">
-                <label for="pwd">Password:</label>
-                <input type="pwd" id="pwd" name="pwd">
-                <label for="pwd">Confirm Password:</label>
-                <input type="cpwd" id="cpwd" name="cpwd">
-                <input type="checkbox" id="terms" name="terms" value="terms">
-                <label for="terms">I agree to the Terms and Conditions</label>
-                <button type="button" class="signup-btn">SIGN UP</button>
+            <form id="validateForm" method="post">
+                <div class="form-field">
+                    <label for="firstname">First Name:</label>
+                    <input type="text" id="fname" name="firstname">
+                    <span class="error-block"></span>
+                </div>
+                <div class="form-field">
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" id="lname" name="lastname">
+                    <span class="error-block"></span>
+                </div>
+                <div class="form-field">
+                    <label for="othernames">Other Names:</label>
+                    <input type="text" id="onames" name="othernames">
+                    <span class="error-block"></span>
+                </div>
+                <div class="form-field">
+                    <label for="phonenumber">Phone Number:</label>
+                    <input type="tel" id="phone" name="phonenumber">
+                    <span class="error-block"></span>
+                </div>
+                <div class="form-field">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="phone">
+                    <span class="error-block"></span>
+                </div>
+                <div class="form-field">
+                    <label for="password">Password:</label>
+                    <input type="password" id="pwd" name="password">
+                    <span class="error-block"></span>
+                </div>
+                <div class="form-field">
+                    <label for="confirmpassword">Confirm Password:</label>
+                    <input type="password" id="cpwd" name="Confirm">
+                    <span class="error-block"></span>
+                </div>
+                <div class="form-field">
+                    <input type="checkbox" id="terms" name="terms" value="terms">
+                    <span class="error-block"></span>
+                    <label for="terms">I agree to the Terms and Conditions</label>
+                </div>
+                <button type="submit" id="signupbtn">SIGN UP</button>
             </form>
             <div class=" clear "></div>
+        </div>
     </section>
     <!-- footer -->
     <footer>
@@ -75,6 +100,7 @@
         <div class="clear"></div>
         <p>Copyright 2020 Fashi.com All rights reserved.</p>
     </footer>
+    <script src="../domManipulation/signUpForm.js"></script>
 </body>
 
 </html>

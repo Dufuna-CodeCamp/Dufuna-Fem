@@ -41,10 +41,13 @@
                     <h3>Cherry Blossom</h3>
                     <div class="quantity">
                         <label for="quantity"><strong>Quantity:</strong></label>
-                        <input type="text" name="quantity" id="quantity" value="5"/>
+                        <input type="number" name="quantity" id="quantity" value="1"/>
+                        <small></small>
                     </div>
-                    <p><strong>Price: &#x20A6;20,000</strong></p>
-                    <button type="submit">ORDER NOW</button>
+                    <p>Price: &#x20A6;<span id="price">15000</span></p>
+                    <p>Shipping Cost: &#x20A6;<span id="shippingCost">2250</span></p> 
+                    <p>Total Cost: &#x20A6;<span id="totalCost">17250</span></p>
+                    <button id="order-btn">ORDER NOW</button>
                 </div>
             </div>
             <div class="prod-details">
@@ -63,10 +66,13 @@
                     <h3>Carnation</h3>
                     <div class="quantity">
                         <label for="quantity"><strong>Quantity:</strong></label>
-                        <input type="text" name="quantity" id="quantity" value="5"/>
+                        <input type="number" name="quantity" id="quantity" value="1"/>
+                        <small></small>
                     </div>
-                    <p><strong>Price: &#x20A6;5,000</strong></p>
-                    <button type="submit">ORDER NOW</button>
+                    <p>Price: &#x20A6;<span  id="price">5000</span></p>
+                    <p>Shipping Cost: &#x20A6;<span id="shippingCost">750</span></p> 
+                    <p>Total Cost: &#x20A6;<span id="totalCost">5750</span></p>
+                    <button type="submit" id="order-btn" class="btn">ORDER NOW</button>
                 </div>
             </div>
             <div class="prod-details">
@@ -111,10 +117,13 @@
                 </ul>
             </div>
             <div class="newsletter">
-                <form class="footer-form">
-                    <label for="newsletter">Sign up for our Newsletter</label><br>
-                    <input type="email"  name="newsletter" placeholder="Enter your email address"/>
-                    <input type="button" value="SUBMIT">
+                <label for="newsletter">Sign up for our Newsletter</label>
+                <form class="footer-form" id="footerForm" method="post">
+                    <div class="newletter-form" id="news">
+                        <input type="email"  name="newsletter" id="newsletterEmail" placeholder="Enter your email address"/>
+                        <small></small>
+                    </div>
+                    <input type="submit" value="SUBMIT">
                 </form>
             </div>
             <div class="media">
@@ -131,5 +140,7 @@
     </footer>
         <!-- Footer Ends -->
 
+    <script src="../DOM/shippingPrice.js"></script>
+    <script src="../DOM/Newsletter.js"></script>
 </body>
 </html>

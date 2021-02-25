@@ -1,99 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
     <title>SandalsbyMo</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="nav-bar">
-        <h2 ><i>SandalsbyMo</i></h2>
-        <ul class="bar">
-            <li><a href="./index.html"></a>Product Page</a></li>
-            <li><a href="../html-forms/contact.html">Contact Us</a></li>
-            <li><a href="../html-forms/signup.html">Sign-up</a></li>
-       </ul>
-     </nav>
-     
-     <!-- product -->
-       <div class="main">
-        <section class="container">
-            <div class="product">
-                <img src="images/Brooks.jpg">
-            </div>
-            <div class="product">
-                <h2>BROOKS</h2>
-                <h4>Brand:H&M</h4>
-                <form>
-                     <label for="number">Quantity:</label>
-                     <input type="text" name="number" id="number" value="2"/>
-                </form>
-                <h3>Price:<strong>#30,000</strong></h3>
-                <button type="submit">BUY NOW</button>
-           </div>
-        </section>
-  <!---Code for description-->
+      <h2><i>SandalsbyMo</i></h2>
+      <ul class="bar">
+        <li><a href="./index.html">Product Page</a></li>
+        <li><a href="../html-forms/contact.html">Contact Us</a></li>
+        <li><a href="../html-forms/signup.html">Sign-up</a></li>
+      </ul>
+    </nav>
+
+    <!-- product -->
+    <div class="main">
+      <section class="container">
+        <div class="product">
+          <img src="images/Brooks.jpg" />
+        </div>
+        <div class="product">
+          <h2>BROOKS</h2>
+          <br />
+          <h4>Brand:H&M</h4>
+          <br />
+          <span id="quantity">
+            <label for="number">Quantity:</label>
+            <input
+              type="number"
+              name="quantity"
+              id="quantity-input"
+              value="1"
+            />
+          </span>
+
+          <h3>Price: #<span id="price"> 10000</span></h3>
+          <br />
+          <h3>shippingCost: #<span id="shipping-cost"> 5000</span></h3>
+          <br />
+          <h3>Total Cost: #<span id="total-cost"></span></h3>
+          <br />
+          <button id="pricing-btn" type="submit">BUY NOW</button>
+        </div>
+      </section>
+      <!---Code for description-->
       <div class="description">
-         <h3>DESCRIPTION</h3>
-         <p> This is a shoe you can put on all day for cooperate meetings and outings.
-            This H&M designed Brooks guarantees maximum comfort for whoever wears.
-            The strength of material assures that it is long lasting from the moment
-            it goes off the shelf.
-         </p>
+        <h3>DESCRIPTION</h3>
+        <p>
+          This is a shoe you can put on all day for cooperate meetings and
+          outings. This H&M designed Brooks guarantees maximum comfort for
+          whoever wears. The strength of material assures that it is long
+          lasting from the moment it goes off the shelf.
+        </p>
       </div>
 
-        <!-- similar product -->
-        <section class="related-products">
-            <h4> RELATED PRODUCTS</h4>
-            <div class="similar">
-            <div class="card">
-                <img src="images/Boots.jpg">
-                <p>Boots</p>
-                <p>Price:#20000</P>
-            </div>
-            <div class="card">
-              <img src="images/sneakers.jpeg">
-              <p>Sneakers</p>
-              <p>Price:#15000</P>
-            </div>
-            <div class="card">
-              <img src="images/Halfshoe.jpg">
-              <p>Halfshoe</p>
-              <p>Price:#10000</P>
-            </div>
-           </div>
-       </section>
-    </div>
-       <footer>
-        <div class="info">
-            <div class="foot">
-              <ul id="quick-links">
-                 <li><a href="#">About Us</a></li>
-                 <li><a href="#">Contact Us</a></li>
-                 <li><a href="#">Terms and Conditions</a></li>
-             </ul>
-           </div>
-           <div class="foot">
-               <p>Sign up for our Newsletters</p>
-               <form>
-                  <input type="email" name="email" id="email" placeholder="Enter your email address"/>
-                  <button type="submit" class="styling">Submit</button>
-               </form>
+      <!-- similar product -->
+      <section class="related-products">
+        <h4>RELATED PRODUCTS</h4>
+        <div class="similar">
+          <div class="card">
+            <img src="images/Boots.jpg" />
+            <p>Boots</p>
+            <p>Price:20000</p>
           </div>
-          <div class="foot">
-               <p>CONNECT WITH US</p>
-               <ul id="socials">
-                  <li><a href="#"><img src="./images/facebooklogo.png"></a></li>
-                  <li><a href="#"><img src="./images/twitterlogo.png"></a></li>
-                  <li><a href="#"><img src="./images/gmaillogo.png" ></a></li>
-                  <li><a href="#"><img src="./images/youtubelogo.png"></a></li>
-               </ul>
-         </div>
-       </div>  
-       <p id="copyright">&copy; Copyright 2020 sandalsbymo.com <span> All rights reserved</span></p>
-      </footer>
-</body>
+          <div class="card">
+            <img src="images/sneakers.jpeg" />
+            <p>Sneakers</p>
+            <p>Price:15000</p>
+          </div>
+          <div class="card">
+            <img src="images/Halfshoe.jpg" />
+            <p>Halfshoe</p>
+            <p>Price:10000</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="info">
+        <div class="foot">
+          <ul id="quick-links">
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Terms and Conditions</a></li>
+          </ul>
+        </div>
+        <div class="foot">
+          <p>Sign up for our Newsletters</p>
+          <form id="requiredfield">
+            <input
+              type="email"
+              name="email"
+              id="newsletter"
+              placeholder="Enter your email address"
+            />
+            <button type="submit" id="submit" class="styling">Submit</button>
+            <br />
+            <span class="error-block errormessage"></span>
+          </form>
+        </div>
+        <div class="foot">
+          <p>CONNECT WITH US</p>
+          <ul id="socials">
+            <li>
+              <a href=""><img src="./images/facebooklogo.png" /></a>
+            </li>
+            <li>
+              <a href=""><img src="./images/twitterlogo.png" /></a>
+            </li>
+            <li>
+              <a href=""><img src="./images/gmaillogo.png" /></a>
+            </li>
+            <li>
+              <a href=""><img src="./images/youtubelogo.png" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p id="copyright">
+        &copy; Copyright 2020 sandalsbymo.com <span> All rights reserved</span>
+      </p>
+    </footer>
+    <script src="../DOM/product.js"></script>
+    <script src="../DOM/newsletter.js"></script>
+  </body>
 </html>

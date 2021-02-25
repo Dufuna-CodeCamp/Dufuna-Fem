@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Form</title>
+    <link rel="icon" href="../html/Image/favicon1.png">
+    <link rel="stylesheet" href="../CSS/myStyle.css">
+</head>
+<body>
+    <!--header section-->
+    <div class="header-container">
+        <div class="leftside">
+            <span> BusyBasket Packaging</span>
+        </div>
+        <div class="rightside"> 
+            <a  class="nav-items" href="../html/productPage.html"> Product</a>
+            <a class="nav-list" href="contactPageForm.html"> Contact Us</a>
+            <a class="nav-items" href="signupPageForm.html"> SignUp</a>
+            </div>
+    </div>
+    <!--main section-->
+    <form action="#" method="POST" target="_self" enctype="multipart/form-data">
+        <div class="signup-container">
+            <div class="signup-comment">
+                <p class="header"> Register your Account</p>
+                <p> Registering an account gives you access to sweet promo and events available to only registered customers</p>
+                <p> Already got an account? <a href="#"> Sign In</a></p>            
+            </div>
+            <fieldset class="signup-fieldset">
+                <div class="first-input">
+                    <label for="First Name"> First Name</label>
+                    <input type="text" name="firstname" id="firstname"/>
+                    <label for="middlename"> Middle Name</label>
+                    <input type="text" name="middlename" id="middlename"/>
+                    <label for="Last Name"> Last Name</label>
+                    <input type="text" name="lastname" id="lastname"/>
+                    <label for="phonenumber"> Phone Number</label>
+                    <input type="text" name="phonenumber" id="phonenumber"/>
+                    <label for="email"> Email Address</label>
+                    <input type="text" name="email" id="email"/>
+                    <label for="password"> Password</label>
+                    <input type="password" name="password" id="password"/>
+                    <label for="password"> Confirm Password</label>
+                    <input type="password" name="password" id="password2"/>
+                </div>
+                <div class="second-input">
+                    <input type="checkbox" name="terms" id="terms"/>
+                    <label for="terms" class="iagree"> I agree to the Terms and Conditions</label>
+                </div>
+                <button> SIGN UP </button>
+            </fieldset>
+        </div>
+    </form>
+    <!-- footer section-->
+    <footer class="footer-container">
+        <div class="footer-wrapper"> 
+            <div class="footer-box1">
+                <span><a href="../html-forms/contactPageForm.html"> Contact Us</a></span>
+                <span><a href="#"> About Us</a></span>
+                <span><a href="#"> Terms and Conditions</a></span>
+            </div>
+            <div class="footer-box2">
+                <p>Sign up for our Newsletter</p>
+                <input type="email" placeholder="Enter your email address" name="email">
+                <button>SUBMIT</button>
+            </div>
+            <div class="footer-box3">
+                <p>CONNECT WITH US</p>
+                <span><a href=""><img src="../html/Image/facebooLogo.png" alt="facebook"></a></span>
+                <span><a href=""><img src="../html/Image/twitterLogo.png" alt="twitter"></a></span>
+                <span><a href=""><img src="../html/Image/gmailLogo.png" alt="gmail"></a></span>
+                <span><a href=""><img src="../html/Image/youtubeLogo.png" alt="youtube"></a></span>
+            </div>
+        </div>
+        <p class="copyright"> Copyright 2021 busybasket.com. All right reserved </p>
+    </footer>      
+</body>
+</html>
