@@ -22,17 +22,17 @@ function required(field, regex, first_error, sec_error, event) {
     }
 }
 
-function checkmessage(field, first_error, third_error, event) {
+function checkmessage(message, event) {
     if (message.value === "") {
-        field.nextElementSibling.innerHTML = first_error;
+        message.nextElementSibling.innerHTML = "Please enter a subject message";
         event.preventDefault();
         return false;
     } else if (message.value.length <= 150) {
-        field.nextElementSibling.innerHTML = third_error;
+        message.nextElementSibling.innerHTML = "not enough characters";
         event.preventDefault();
         return false;
     } else {
-        field.nextElementSibling.innerHTML = "";
+        message.nextElementSibling.innerHTML = "";
         return true;
     }
 }
@@ -41,7 +41,7 @@ function validateForm(e) {
     required(fullName, fullNameRegex, "Please enter your Name", "Please input alphabet characters only", e);
     required(email, emailRegex, "Please enter your Email Address", "Please enter a valid email", e);
     required(subject, subjectRegex, "Please enter a subject message", "Please input alphabet characters only", e);
-    checkmessage(message, "Please enter you message", "not enough characters", e)
+    checkmessage(message, e);
     return true;
 }
 submitForm.addEventListener("submit", validateForm);
