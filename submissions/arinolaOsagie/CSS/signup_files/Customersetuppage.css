@@ -1,0 +1,530 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px auto;
+}
+.Sign-up-page---Web {
+/* width: 1440px; 
+height: 1134px; */
+  padding: 10px 10px 0 0;
+  background-color: #ffffff;
+}
+.blue-bg {
+    background: blue;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 80px
+}
+.header base {
+  width: 1440px;
+  height: 70px;
+  margin: 0 0 46px;
+  padding: 14.7px 57.7px 15px 51px;
+  background-color: var(--bright-blue);
+}
+.LOGO {
+  width: 67px;
+  height: 27px;
+  margin: 6.3px 810px 7px 0px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+.Product-Page {
+  width: 110px;
+  height: 19px;
+  margin: 12.3px 86px 9px 810px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+.Contact-Us {
+  width: 88px;
+  height: 19px;
+  margin: 12.3px 86px 9px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+.Sign-Up {
+  width: 64px;
+  height: 19px;
+  margin: 12.3px 20.3px 9px 86px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+.Register-your-Account {
+    width: 365px;
+    height: 122px;
+    margin: 175px 257px 23px 137px;
+    font-family: Montserrat;
+    font-size: 50px;
+    font-weight: bold
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.22;
+    letter-spacing: normal;
+   text-align: left;
+    color: blue;
+}
+.Registering-an-account-gives-you-access-to-sweet-promo-and-events-available-to-only-registered-customers {
+  width: 528px;
+  height: 151px;
+  margin: 23px 94px 26px 137px;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5f5f5f;
+}
+.Already-got-an-account-Sign-in {
+  width: 481px;
+  height: 37px;
+  margin: 26px 136px 327px 142px;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5f5f5f;
+}
+.Rectangle-10 {
+  width: 4px;
+  height: 890px;
+/*  margin: 46px 74px 51px 94px;*/
+/*  padding: 39px 45px 15px 41px;*/
+  border-radius: 23px;
+  border: solid 1px #707070;
+  background-color: #ffffff;
+}
+.First-Name {
+  width: 99px;
+  height: 19px;
+  margin: 0 6px 5px 0;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5f5f5f;
+}
+ .Rectangle-11 {
+  width: 521px;
+  height: 50px;
+  margin: 5px 0 7px;
+  border-radius: 10px;
+  border: solid 2px #5f5f5f;
+}   
+.Last-Name {
+  width: 97px;
+  height: 22px;
+  margin: 7px 8px 5px 0;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5f5f5f;
+}
+.Rectangle-120 {
+  width: 521px;
+  height: 50px;
+  margin: 5px 0 7px;
+  border-radius: 10px;
+  border: solid 2px #5f5f5f;
+}
+.Other-Names {
+  width: 122px;
+  height: 22px;
+  margin: 7px 45px 5px 0;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5f5f5f;
+}
+.Rectangle-121 {
+  width: 521px;
+  height: 50px;
+  margin: 5px 0 9px;
+  border-radius: 10px;
+  border: solid 2px #5f5f5f;
+}
+.Phone-Number {
+  width: 140px;
+  height: 22px;
+  margin: 9px 27px 5px 0;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5f5f5f;
+}
+.Rectangle-122 {
+  width: 521px;
+  height: 50px;
+  margin: 5px 0 8px;
+  border-radius: 10px;
+  border: solid 2px #5f5f5f;
+}
+
+.Email-Address {
+  width: 129px;
+  height: 22px;
+  margin: 8px 38px 5px 0;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5f5f5f;
+}
+.Rectangle-123 {
+  width: 521px;
+  height: 50px;
+  margin: 5px 0 11px;
+  border-radius: 10px;
+  border: solid 2px #5f5f5f;
+}
+.Password {
+  width: 87px;
+  height: 22px;
+  margin: 11px 18px 5px 0;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5f5f5f;
+}
+.Rectangle-124 {
+  width: 521px;
+  height: 50px;
+  margin: 5px 0 11px;
+  border-radius: 10px;
+  border: solid 2px #5f5f5f;
+}
+.Confirm-Password {
+  width: 166px;
+  height: 22px;
+  margin: 11px 1px 5px 0;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5f5f5f;
+}
+.Rectangle-125 {
+  width: 521px;
+  height: 50px;
+  margin: 5px 0 27px;
+  border-radius: 10px;
+  border: solid 2px #5f5f5f;
+}
+.ic_crop_square_24px {
+  width: 16px;
+  height: 16px;
+  margin: 29px 11px 25px 78px;
+  background-color: #5f5f5f;
+}
+.I-agree-to-the-Terms-and-Conditions {
+  width: 337px;
+  height: 15px;
+  margin: 27px 79px 21px 6px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--bright-blue);
+}
+.Rectangle-119 {
+  width: 196px;
+  height: 48px;
+  margin: 21px 158px 0 1px;
+  padding: 11px 63px 16px 61px;
+  border-radius: 4px;
+  background-color: blue;
+}
+
+.SIGN-UP {
+  width: 72px;
+  height: 21px;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch:normal
+  font-style: normal;
+  line-height: 0.67;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+.Contact-Us {
+  width: 99px;
+  height: 22px;
+  margin: 4px 272px 5px 0;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  list-style-type: none !important;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fcf8f8;
+}
+.About-Us {
+  width: 84px;
+  height: 22px;
+  margin: 15px 287px 15px 0;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  list-style-type: none !important;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fcf8f8;
+}
+.Terms-and-Conditions {
+  width: 197px;
+  height: 22px;
+  margin: 2px 174px 26px 0;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  list-style-type: none !important;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fcf8f8;
+}
+.Sign-up-for-our-Newsletter {
+  width: 236px;
+  height: 22px;
+  margin: 0 21px 9px 174px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fcf8f8;
+}
+.Enter-your-email-address {
+  width: 199px;
+  height: 19px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  text-align: left;
+  color: blue;
+}
+.Rectangle-8 {
+  width: 253px;
+  height: 44px;
+  margin: 5px 4px 3px 174px;
+  padding: 12px 42px 13px 12px;
+  border: solid 1px #707070;
+  background-color: #ffffff;
+}
+.SUBMIT {
+  width: 74px;
+  height: 22px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: left;
+  color: blue;
+  background-color: white;
+}
+.Rectangle-9 {
+  width: 108px;
+  height: 44px;
+  margin: 5px 205px 3px 4px;
+  padding: 11px 16px 11px 18px;
+  border: solid 1px #707070;
+  background-color: #ffffff;
+}
+.CONNECT-WITH-US {
+  width: 177px;
+  height: 22px;
+  margin: 0 45px 9px 43px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fcf8f8;
+}
+.facebook-logo {
+  width: 45px;
+  height: 41px;
+  margin: 9px 20px 2px 49px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.twiiter-logo {
+  width: 48px;
+  height: 43px;
+  margin: 9px 20px 0;
+  object-fit: contain;
+  border-radius: 7px;
+}
+.gmail-logo {
+  width: 63px;
+  height: 41px;
+  margin: 9px 20px 2px;
+  object-fit: contain;
+  border-radius: 9px;
+}
+.youtube-logo {
+  width: 69px;
+  height: 43px;
+  margin: 9px 0 0 20px;
+  object-fit: contain;
+  border-radius: 11px;
+}
+.Copyright-2020-Yoursitecom-All-rights-reserved {
+  width: 630px;
+  height: 22px;
+  margin: 26px 43px 0 271px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch:  normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align-last: center;
+}   
+.column {
+  float: left;
+    width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+footer {
+padding-top:10px;
+padding-bottom: 20px;
+color:white;
+background-color: blue;
+margin-top: 80px;
+}
+footer .base {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  align-items: center;
+}
+
+@media (max-width: 992px){
+.Sign-up-page---Web {
+    display: block;
+    height: 100px;
+    padding: 12px 10px;
+    margin-top: 10px;
+}
+.container {
+    display: block;
+border-radius:100%;
+}
+
+
+.base {
+    display: block;
+    padding: 0 20px;
+}
+.Copyright-2020-Yoursitecom-All-rights-reserved {
+        text-align-last: center;
+        
+    }
+}
