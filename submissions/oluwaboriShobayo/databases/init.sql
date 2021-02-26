@@ -154,4 +154,3 @@ VALUES
     (3, 4, 2, 12000.00, 12000.00);
 
 SELECT * FROM order_items;
-SHOW TABLES
