@@ -40,16 +40,11 @@ section {
     display: flex;
     justify-content: space-around;
 }
-aside {
-  width: 30%;
-  flex-wrap: nowrap;
-}
-main {
-  width: 60%;
-}
 .sign-in {
   text-align: left;
-  margin-top: 80px;
+  flex-wrap: wrap;
+  margin: 100px;
+  margin-top: 150px;
   font-size: 26px;
 }
 .sign-in h1 {
@@ -58,18 +53,24 @@ main {
 }
 .signup-form {
   border: 1px solid black;
-  border-radius: 5px;
-  margin: 40px 0;
-  height: 700px;
-  width: 70%;
+  border-radius: 30px;
+  margin: 60px;
+  height: 650px;
+  width: 500px;
   padding: 30px;
 }
 .form-details {
-  width: 98%;
-  height: 25px;
+  width: 95%;
+  height: 40px;
   border: 1px solid black;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 20px;
+}
+.error-block {
+  color: red;
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
 }
 .btn {
   color: white;
@@ -138,21 +139,16 @@ footer p {
     flex-direction: column;
     align-items: center;
   }
-  aside {
-    width: 60%;
-  }
-  main {
-    width: 80%;
-  }
   .sign-in {
     text-align: center;
     margin-top: 40px;
   }
   .signup-form {
-    height: 600px;
-    width: 80%;
+    margin: 0;
+    margin-bottom: 50px;
+    height: 700px;
   }
-  .signup-form div {
+  div .checkbox {
     text-align: center;
   }
   footer {
@@ -175,12 +171,6 @@ body {
   margin: 0;
   padding: 0;
 }
-aside {
-  width: 50%;
-}
-main {
-  width: 70%;
-}
 .sign-in h1 {
   font-size: 26px;
   margin-bottom: 0;
@@ -190,7 +180,7 @@ main {
   font-size: 16px;
 }
 .signup-form {
-  width: 90%;
+  width: 80%;
 }
 .signup-form div {
   text-align: left;
