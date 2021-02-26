@@ -25,12 +25,12 @@ function fieldValidation(field, regex, error1, error2, event) {
     }
 }
 
-function confirmPasswordValidation(confirmPassword, error1, error2, event) {
+function confirmPasswordValidation(event) {
     if (confirmPassword.value == '') {
-        confirmPassword.nextElementSibling.innerHTML = error1;
+        confirmPassword.nextElementSibling.innerHTML = "Please confirm your Password";
         event.preventDefault;
     } else if (!(password.value == confirmPassword.value)) {
-        confirmPassword.nextElementSibling.innerHTML = error2;
+        confirmPassword.nextElementSibling.innerHTML = "Your passwords don't match";
         event.preventDefault();
         return false;
     } else {
@@ -44,7 +44,7 @@ function validateForm(e) {
     fieldValidation(phoneNumber, phoneNumberRegex, "Please enter your Phone Number", "Please enter a valid phone number", e);
     fieldValidation(emailAddress, emailAddressRegex, "Please enter your Email Address", "Please enter a valid email", e);
     fieldValidation(password, passwordRegex, "Please enter your Password", "Your password should have a minimum of 6 characters, 1 capital letter,1 special character eg @ and 1 number.", e);
-    confirmPasswordValidation(confirmPassword, "Please confirm your Password", "Your passwords don't match", e);
+    confirmPasswordValidation(e);
     return true;
 }
 
