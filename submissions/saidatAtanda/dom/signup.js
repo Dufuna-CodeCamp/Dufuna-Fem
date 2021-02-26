@@ -10,7 +10,7 @@ const phoneNumberRegex = /^[\+]?[0-9]{8,14}$/i;
 const emailAddressRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*(_|[^\w])).+$/;
 
-function required(field, regex, error1, error2, event) {
+function fieldValidation(field, regex, error1, error2, event) {
     if (field.value == ''){
         field.nextElementSibling.innerHTML = error1;
         event.preventDefault();
@@ -25,13 +25,26 @@ function required(field, regex, error1, error2, event) {
     }
 }
 
+function confirmPasswordValidation(confirmPassword, error1, error2, event) {
+    if (confirmPassword.value == '') {
+        confirmPassword.nextElementSibling.innerHTML = error1;
+        event.preventDefault;
+    } else if (!(password.value == confirmPassword.value)) {
+        confirmPassword.nextElementSibling.innerHTML = error2;
+        event.preventDefault();
+        return false;
+    } else {
+        confirmPassword.nextElementSibling.innerHTML = "";
+        return true;
+    }
+}
 function validateForm(e) {
-    required(firstName, nameRegex, "Please enter your First Name", "Please enter only letters",  e);
-    required(lastName, nameRegex, "Please enter your Last Name", "Please enter only letters", e);
-    required(phoneNumber, phoneNumberRegex, "Please enter your Phone Number", "Please enter a valid phone number", e);
-    required(emailAddress, emailAddressRegex, "Please enter your Email Address", "Please enter a valid email", e);
-    required(password, passwordRegex, "Please enter your Password", "Your password should have a minimum of 6 characters, 1 capital letter,1 special character eg @ and 1 number.", e);
-    required(confirmPassword, passwordRegex, "Please confirm your Password", "Your passwords don't match", e);
+    fieldValidation(firstName, nameRegex, "Please enter your First Name", "Please enter only letters",  e);
+    fieldValidation(lastName, nameRegex, "Please enter your Last Name", "Please enter only letters", e);
+    fieldValidation(phoneNumber, phoneNumberRegex, "Please enter your Phone Number", "Please enter a valid phone number", e);
+    fieldValidation(emailAddress, emailAddressRegex, "Please enter your Email Address", "Please enter a valid email", e);
+    fieldValidation(password, passwordRegex, "Please enter your Password", "Your password should have a minimum of 6 characters, 1 capital letter,1 special character eg @ and 1 number.", e);
+    confirmPasswordValidation(confirmPassword, "Please confirm your Password", "Your passwords don't match", e);
     return true;
 }
 
