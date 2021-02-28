@@ -135,6 +135,7 @@ footer{
 }    
 .nav-item{
     padding-left: 80px;
+    width: fit-content;
 }
 .new{
     height: 10px;
@@ -159,8 +160,7 @@ footer{
     height: 10px;
     width: fit-content;
     justify-content: space-around;
-    margin: auto;
-   
+    margin: auto;   
 }
 .register{
     margin: 30px;
@@ -169,17 +169,17 @@ footer{
     padding: 30px 30px 10px 30px;
     margin: 30px;
 }
+.contact{
+    margin-top: 16px;
+}
 .ending{
     display: grid;
     grid-template-columns: 1fr 1fr;
    
 }
 .copyrights{
-    padding-left: 150px;
+    padding-left: 50px;
     display: grid;
-}
-@media screen and (min-width: 768px) {
-    
 }
 @media screen and (min-width: 992px) {
     .register{
@@ -190,9 +190,6 @@ footer{
             padding: 40px 40px 40px;
             grid-template-columns: 1fr 1fr;
         }
-    .secondsection{
-        
-    }
     .first{
         background-color:blue;
         color:white;
@@ -214,7 +211,7 @@ footer{
         height: 10px;
         width: inherit;
         padding: 10px;
-    
+        padding-right: 50px;
     }
     .ending{
     grid-template-columns: 1fr 1fr 1fr;
@@ -227,5 +224,11 @@ footer{
     }
     .contact{
         padding-top: 15px;
+        margin-top: 5px;
     }
+    .copyrights{
+    padding-left: 10px;
+    padding-right: 40px;
+    display: grid;
+    } 
 }
