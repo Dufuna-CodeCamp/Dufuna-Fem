@@ -40,17 +40,23 @@
       </aside>
       <main class="contact-form">
         <div class="contact-message">
-        <img src="../html/images/message2-logo.png" alt="message logo">
-        <h3>Or better still send us a message</h3>
+          <img src="../html/images/message2-logo.png" alt="message logo">
+          <h3>Or better still send us a message</h3>
         </div>
-          <form action="#" method="post">
-              <p><input type="text" name="fullname" placeholder="Full Name" required></p>
-              <p><input type="text" name="email" placeholder="Email Address" required></p>
-              <p><input type="text" name="subject" placeholder="Subject" required></p>
-              <p>Message</p>
-              <textarea name="message-comments"></textarea>
-            <button type="submit" class="btn">Send</button>
+        <div>
+          <form action="#" method="post" id="contactform">
+              <input type="text" id="fullname" placeholder="Full Name">
+                <span class="error-block-contact"></span>
+              <input type="text" id="email" placeholder="Email Address">
+                <span class="error-block-contact"></span>
+              <input type="text" id="subject" placeholder="Subject">
+              <span class="error-block-contact"></span>
+              <label for ="msg" class="msg">Message</label><br>
+                <textarea id="message"></textarea>
+                <span class="error-block-contact"></span>
+              <button type="submit" class="btn">Send</button>
           </form>
+        </div>
       </main>
       </section>
         <footer>
@@ -81,5 +87,6 @@
           </div>
           <p>&copy;Copyright 2020 venister.com All rights reserved.</p>
         </footer>
-      </body>
+        <script src="../dom/contact.js"></script>
+    </body>
 </html>
