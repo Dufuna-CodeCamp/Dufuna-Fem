@@ -4,7 +4,7 @@ const domElements = {
     shippingCost: document.querySelector('.shipping-cost'),
     totalCost: document.querySelector('.total-cost'),
     buyBtn: document.querySelector('.buy-button'),
-    error: document.querySelector('.error-block')
+
 };
 const calculateShipCost = (price) => {
     let shippingCost = 0;
