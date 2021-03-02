@@ -27,10 +27,13 @@
       <div class="product-details">
         <h3 id="product-name">How to win friends and influence people</h3>
         <p>Author: Dale Carnegie</p>
-        <p>Quantity: <input type="number" name="quantity" placeholder="1"></p>
-        <p>Ebook: <em>$50</em></p>
-        <p>HardCover: <em>$100</em></p>
-        <button class="btn">Buy Now</button>
+        <p>Quantity: <input type="number" value="1" id="quantity">
+          <span class="error-block-qty"></span>
+        </p>
+        <p>Price: # <span id="price"></span>6000</p>
+        <p>Shipping Cost: # <span id="shipping-cost">900</span></p>
+        <p>Total Cost: # <span id="total-cost">6900</span></p>
+        <button type="submit" id="product-btn">Buy Now</button>
       </div>
     </div>
     <div class="description">
@@ -48,44 +51,48 @@
         <li><a href="#">
           <img src="images/book-3.JPG" alt="The Summer I Turned Pretty" width="50">
           <p>The Summer I Turned Pretty</p>
-          <p><em>$40</em></p></a></li>
+          <p>#2000</p></a></li>
         <li><a href="#">
           <img src="images/book-4.JPG" alt="To All The Boys I've Loved Before" width="50">
           <p>To All The Boys I've Loved Before</p>
-          <p><em>$35</em></p></a></li>
+          <p>#2500</p></a></li>
         <li><a href="#">
           <img src="images/book-6.JPG" alt="Master Of The Game" width="50">
           <p>Master Of The Game</p>
-          <p><em>$70</em></p></a></li>
+          <p>#6000</p></a></li>
       </ol>
       </section>
-            <footer>
-              <div class="footer-properties">
-                <div class="contact">
-                  <ul>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Terms and Conditions</a></li>
-                  </ul>
-                </div>
-                <div class="subscribe">
-                  <form>
-                    <h4>Sign Up for our Newsletter</h4>
-                    <input type="text" placeholder="Type your email address">
-                    <button type="submit" class="submit">Submit</button>
-                  </form>
-                </div>
-                <div class="connect">
-                  <h4>Connect with Us</h4>
-                  <ul>
-                    <li><a href="www.gmail.com"><img src="images/gmail-logo.png"></a></li>
-                    <li><a href="www.twitter.com"><img src="images/twitter-logo.png"></a></li>
-                    <li><a href="www.facebook.com"><img src="images/facebook-logo.png"></a></li>
-                    <li><a href="www.youtube.com"><img src="images/youtube-logo.jpg"></a></li>
-                  </ul>
-                </div>
+      <footer>
+        <div class="footer-properties">
+          <div class="contact">
+           <ul>         
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+          </div>
+          <div class="subscribe">
+            <form method="POST" id="newsletter">
+              <p>Sign Up for our Newsletter</p>
+              <div class="news">
+                <input type="email" id="newsletter-email" placeholder="Type your email address">
+                <span class="error-block-news"></span>
               </div>
-              <p>&copy;Copyright 2020 venister.com All rights reserved.</p>
-            </footer>
+              <button type="submit" id="newsletter-btn">Submit</button>
+            </form>
+          </div>
+          <div class="connect">
+            <p>Connect with Us</p>
+              <ul>
+                <li><a href="www.gmail.com"><img src="../html/images/gmail-logo.png"></a></li>
+                <li><a href="www.twitter.com"><img src="../html/images/twitter-logo.png"></a></li>
+                <li><a href="www.facebook.com"><img src="../html/images/facebook-logo.png"></a></li>
+                <li><a href="www.youtube.com"><img src="../html/images/youtube-logo.jpg"></a></li>
+              </ul>
+          </div>
+        </div>
+          <p>&copy;Copyright 2020 venister.com All rights reserved.</p>
+      </footer>  
+      <script src="../dom/newsletter.js"></script>
     </body>
  </html>
