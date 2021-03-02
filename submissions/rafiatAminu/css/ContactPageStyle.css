@@ -43,41 +43,62 @@ header{
 .first{
     background-color: blue;
 }
-.register{
+img{
+    height: 30px;
+    weight: 10px;
+}
+.middle{
     text-align: center;
 }
-.within input{
+
+ul.social{
+   display: flex;
+   flex-direction: row; 
+   padding-left: 160px;
+}
+.social a img{
+    border: 1px solid transparent;
+    border-radius: 7px; 
+}
+.nav-bot{
+    width: 35px;
+}
+.inside{
     border: 1px solid gray;
-    border-radius:6px;
     width:100%;
-    height:25px;
     padding-bottom: 10px;
     margin-bottom: 10px;
+    padding-left: 20px;
+    margin-top: 10px;
 }
-input[type=checkbox] {
-    margin-right: 1px;
-    margin-bottom: 10px;
-}
-#tandc{
-    font-weight: bold;
-}
-.tobefilled{
+.put{
+    margin-top: 10px;
     text-align: center;
 }
-.signup{
+input[type=text] {
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid grey;
+    margin-bottom: 5px;
+  }
+.inner{
+    padding-bottom: 10px;
+    padding-top: 0px;
+}
+#mess{
+   font-weight: lighter;
+}
+.submit{
     background-color: blue;
     color: white;
-    width:20%;
+    width:15%;
     padding-top: 5px;
     padding-bottom: 5px;
     margin-bottom: 10px;
+    margin-left: 76%;
+    border-radius: 6px;
 }
-.secondsection{
-    border: 1px solid gray;
-    border-radius:10px;
-    line-height:1;  
-    padding: 20px 20px 10px 20px;  
-}
+
 footer{
     margin: 20px;
 }
@@ -129,69 +150,73 @@ footer{
     padding-bottom: 5px;
 }
 @media screen and (min-width: 600px) {
-.nav-list{
-    flex-direction: row;  
-   
-}    
-.nav-item{
-    padding-left: 80px;
-    width: fit-content;
-}
-.new{
-    height: 10px;
-}
-.first{
-    background-color: blue;
-    color:white;
-    height:80px;
-    font-size: 16px;
-    display:flex;
-    justify-content: space-around;
-    padding-top: 10px;
-    padding-bottom: 5px;
-}
-.nav-list {
-    display:flex;
-    color: white;
-}
-.nav-item a{
-    display:flex;
-    justify-items:center;
-    height: 10px;
-    width: fit-content;
-    justify-content: space-around;
-    margin: auto;   
-}
-.register{
-    margin: 30px;
-}
-.secondsection{
-    padding: 30px 30px 10px 30px;
-    margin: 30px;
-}
-.contact{
-    margin-top: 16px;
-}
-.ending{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-   
-}
-.copyrights{
-    padding-left: 50px;
-    display: grid;
+    .nav-list{
+        flex-direction: row;     
+    }    
+    .nav-item{
+        padding-left: 80px;
+        width: fit-content;
+    }
+    .first{
+        background-color: blue;
+        color:white;
+        height:80px;
+        font-size: 16px;
+        display:flex;
+        justify-content: space-around;
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+    .nav-list {
+        display:flex;
+        color: white;
+    }
+    .nav-item a{
+        display:flex;
+        justify-items:center;
+        height: 10px;
+        width: fit-content;
+        justify-content: space-around;
+        margin: auto;  
+    }
+    ul.social{
+        padding-left: 215px;
+    }
+    .all{
+       padding: 30px 30px 10px 30px; 
+       margin: 30px;
+       margin-top: 5px;
+    }
+    .put{
+        margin-top: 10px;
+        text-align: center;
+    }
+    input[type=text] {
+        width: 90%;
+        border: none;
+        border-bottom: 1px solid grey;
+        margin-bottom: 5px;
+      }
+    .inner{
+        padding-bottom: 10px;
+        padding-top: 0px;
+    }
+    .contact{
+        margin-top: 16px;
+    }
+    .ending{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       
+    }
+    .copyrights{
+        padding-left: 50px;
+        display: grid;
+    }
 }
 @media screen and (min-width: 992px) {
-    .register{
-        text-align: left;
-    }
-    .secone{
-            display: grid;
-            padding: 40px 40px 40px;
-            grid-template-columns: 1fr 1fr;
-        }
     .first{
-        background-color:blue;
+        background-color: blue;
         color:white;
         height:80px;
         font-size: 16px;
@@ -213,22 +238,32 @@ footer{
         padding: 10px;
         padding-right: 50px;
     }
+    .middle{
+        margin-top: 30px;
+    }
+    .secone{
+        display: grid;
+        padding: 40px 40px 40px;
+        grid-template-columns: 1fr 1fr;
+    }
     .ending{
     grid-template-columns: 1fr 1fr 1fr;
     display: grid;
     padding: 20px 40px;
     padding-bottom: 0%;
     }
-    .socm{
-        padding-left: 100px;
-    }
-    .contact{
-        padding-top: 15px;
-        margin-top: 5px;
-    }
     .copyrights{
-    padding-left: 10px;
-    padding-right: 40px;
-    display: grid;
+        padding-left: 10px;
+        padding-right: 40px;
+        display: grid;
     } 
+    .all{
+        padding: 10px 10px 1px 1px; 
+        margin: 30px;
+        margin-top: 5px;
+        margin-bottom: 1px;
+    }
+    .socm{
+        padding-left: 150px;
+    }
 }
