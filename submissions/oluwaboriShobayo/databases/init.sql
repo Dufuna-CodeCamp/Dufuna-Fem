@@ -2,6 +2,7 @@ CREATE DATABASE StylebyBori;
 SHOW DATABASES;
 USE StylebyBori;
 
+-- This is the products table that references the admin and categories table
 CREATE TABLE PRODUCTS (
 		id INT NOT NULL AUTO_INCREMENT,
 		name VARCHAR(100) NOT NULL,
@@ -9,58 +10,59 @@ CREATE TABLE PRODUCTS (
 		image BLOB,
 		unit_price DECIMAL (10,2),
 		stock_level VARCHAR(50),
-        created_by VARCHAR(50) NOT NULL,
-        categories VARCHAR(50) NOT NULL,
+        created_by INT NOT NULL,
+        categories_id INT NOT NULL,
 		status VARCHAR(50),
-		primary key (id)
+		primary key (id),
+        foreign key(created_by) REFERENCES admins(id),
+        foreign key(categories_id) REFERENCES categories(id)
 );
 
 SHOW TABLES;
 SELECT * FROM products;
-INSERT INTO products (name, description, image, unit_price, stock_level, created_by, categories, status)
+INSERT INTO products (name, description, image, unit_price, stock_level, created_by, categories_id, status)
 VALUES 
-		('Mira dress', 'Perfect for every outing', 'Mira_image', 7000.00, '5 pieces', 'Tola', 'dresses', 'in stock'),
-		('Adara danshiki', 'Ideal for casual wear', 'adara_danshiki', 6500.00, '3 pieces', 'Bimbo', 'dresses', 'limited stock'),
-		('Bella dress', 'The bella dress is designed to enhance the female silhouette','bella_dress', 10000.00, '2 pieces', 'Segun', 'office wear','limited stock'),
-		('Adire wrap top', 'It can be worn on trousers, skirts, or a sleeveless dress', 'adire_top', 6000.00, '6 pieces', 'Sade', 'tops', 'in stock');
+		('Mira dress', 'Perfect for every outing', 'Mira_image', 7000.00, '5 pieces', 4, 2, 'in stock'),
+		('Adara danshiki', 'Ideal for casual wear', 'adara_danshiki', 6500.00, '3 pieces', 2, 1, 'limited stock'),
+		('Bella dress', 'The bella dress is designed to enhance the female silhouette','bella_dress', 10000.00, '2 pieces', 1, 4,'limited stock'),
+		('Adire wrap top', 'It can be worn on trousers, skirts, or a sleeveless dress', 'adire_top', 6000.00, '6 pieces', 3, 3, 'in stock');
 
+-- this is the categories table that links back to the product table
 CREATE TABLE categories (
 		id INT NOT NULL AUTO_INCREMENT,
-        products_id INT NOT NULL,
 		category VARCHAR(50) NOT NULL,
 		created_at DATETIME NOT NULL,
-		primary key(id),
-		foreign key(products_id) REFERENCES products(id)
+		primary key(id)
 );
 
-INSERT INTO categories (products_id, category, created_at)
+INSERT INTO categories (category, created_at)
 VALUES
-		(2, 'dresses', now()),
-		(1, 'dresses', now()),
-		(4, 'tops', now()),
-		(3, 'office wear', now());
+		('dresses', now()),
+		('dresses', now()),
+		('tops', now()),
+		('office wear', now());
 SELECT * FROM categories;
 
+-- This is the admins' table
 CREATE TABLE admins (
 	id INT NOT NULL AUTO_INCREMENT,
-	products_lists_id INT NOT NULL,
 	name VARCHAR(50) NOT NULL,
 	email VARCHAR(30) NOT NULL,
 	password VARCHAR(50) NOT NULL,
 	phone_number BIGINT NOT NULL,
-	primary key(id),
-	foreign key(products_lists_id) REFERENCES products(id)
+	primary key(id)
 );
 
-INSERT INTO admins (products_lists_id, name, email, password, phone_number)
+INSERT INTO admins (name, email, password, phone_number)
 VALUES 
-	(3, 'Segun', 'segun@gmail.com', '*****', 08112223334),
-	(2, 'Bimbo', 'bimbo@yahoo.com', '*****', 08112223334),
-	(4, 'Sade', 'sade@gmail.com', '*****', 08112223334),
-	(1, 'Tola', 'tola@gmail.com', '*****', 08112223334);
+	('Segun', 'segun@gmail.com', '*****', 08112223334),
+	('Bimbo', 'bimbo@yahoo.com', '*****', 08112223334),
+	('Sade', 'sade@gmail.com', '*****', 08112223334),
+	('Tola', 'tola@gmail.com', '*****', 08112223334);
 
 SELECT * FROM admins;
 
+-- This is the registered customers' table
 CREATE TABLE customers (
 	id INT NOT NULL AUTO_INCREMENT,
 	firstname VARCHAR(30) NOT NULL,
@@ -69,6 +71,7 @@ CREATE TABLE customers (
 	password VARCHAR(20) NOT NULL,
 	primary key(id)
 );
+
 INSERT INTO customers (firstname, lastname, email, password)
 VALUES
 	('Bola', 'Adeonajobi', 'bola@gmail.com', '*****'),
@@ -78,6 +81,7 @@ VALUES
 
 SELECT * FROM customers;
 
+-- This is the table for the contact addresses of the customers, it links back to the customers' table
 CREATE TABLE contact_addresses (
 	id INT NOT NULL AUTO_INCREMENT,
 	customers_id INT NOT NULL,
@@ -102,6 +106,7 @@ VALUES
     
 SELECT * FROM contact_addresses;
 
+-- this is the customer orders table; it references the customers
 CREATE TABLE orders (
 	id INT NOT NULL auto_increment,
 	customer_order INT NOT NULL,
@@ -121,6 +126,7 @@ VALUES
 SELECT * FROM orders;
 SHOW TABLES;
 
+-- This is the items that are included in the order 
 CREATE TABLE order_items (
 	id INT NOT NULL AUTO_INCREMENT,
 	order_items_lists INT NOT NULL,
@@ -141,4 +147,5 @@ VALUES
 	(3, 4, 2, 12000.00, 12000.00);
 
 SELECT * FROM order_items;
+
 SHOW TABLES
