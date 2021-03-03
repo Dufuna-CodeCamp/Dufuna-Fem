@@ -61,7 +61,7 @@ line-height: 1.0;
   width: 30px;
   height: 30px;
 }
-.btn {
+#product-btn {
   color: white;
   background-color: #c96567;
   border-radius: 5%;
@@ -134,22 +134,50 @@ margin: 0;
 .footer-properties {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .contact ul {
   list-style-type: none;
 }
-.subscribe h4 {
-  margin-bottom: 0;
+.subscribe {
+  margin-left: 50px;
 }
-.submit {
+.subscribe p {
+  margin-bottom: 10px;
+  text-align: left;
+}
+.news {
+  display: inline-block;
+  position: relative;
+}
+.news input {
+  height: 20px;
+  font-size: 16px;
+}
+.error-block-news,
+.error-block-product {
+  color: red;
+  display: block;
+  font-size: 12px;
+}
+#newsletter-btn {
   color: rgb(100, 27, 27);
   text-transform: uppercase;
   background-color: white;
   border-style: none;
+  position: absolute;
+  margin-left: 20px;
+  height: 25px;
 }
-.connect h4 {
+#newsletter:hover {
+  cursor: pointer;
+}
+.connect {
+  margin-left: 70px;
+}
+.connect p {
   margin-bottom: 0;
+  text-align: left;
 }
 .connect ul {
   margin: 5px;
@@ -190,6 +218,12 @@ footer p {
   }
   .footer-properties {
     grid-template-columns: 1fr 1fr;
+  }
+  .subscribe {
+    margin-left: 0;
+  }
+  .connect { 
+    margin-left: 0;
   }
   .contact ul {
     padding: 0;

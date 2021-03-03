@@ -68,9 +68,10 @@
                   </div>
                   <div class="checkbox">
                     <input type="checkbox"><a href="#">I agree to the Terms and Conditions</a></p>
-                    <button type="submit" name="signup" class="btn">Sign up</button>
+                    <button type="submit" id="signup-btn">Sign up</button>
                   </div>
                 </div>
+              </form>
           </div>
         </main>
       </section>
@@ -84,14 +85,17 @@
           </ul>
         </div>
         <div class="subscribe">
-          <form>
-            <h4>Sign Up for our Newsletter</h4>
-              <input type="text" placeholder="Type your email address">
-              <button type="submit" class="submit">Submit</button>
+          <form method="POST" id="newsletter">
+            <p>Sign Up for our Newsletter</p>
+            <div class="news">
+              <input type="email" id="newsletter-email" placeholder="Type your email address">
+              <span class="error-block-news"></span>
+            </div>
+            <button type="submit" id="newsletter-btn">Submit</button>
           </form>
         </div>
         <div class="connect">
-          <h4>Connect with Us</h4>
+          <p>Connect with Us</p>
             <ul>
               <li><a href="www.gmail.com"><img src="../html/images/gmail-logo.png"></a></li>
               <li><a href="www.twitter.com"><img src="../html/images/twitter-logo.png"></a></li>
@@ -103,5 +107,6 @@
         <p>&copy;Copyright 2020 venister.com All rights reserved.</p>
     </footer>
     <script src="../dom/signup.js"></script>
+    <script src="../dom/newsletter.js"></script>
   </body>
 </html>
