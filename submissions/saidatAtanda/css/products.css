@@ -64,12 +64,15 @@ line-height: 1.0;
 #product-btn {
   color: white;
   background-color: #c96567;
-  border-radius: 5%;
+  border-radius: 7%;
   border-style: none;
   height: 60px;
   width: 120px;
   text-transform: uppercase;
   margin-top: 10px;
+}
+#product-btn:disabled {
+  background-color: gray;
 }
 .product a {
   color: #c96567;
@@ -155,7 +158,8 @@ margin: 0;
   font-size: 16px;
 }
 .error-block-news,
-.error-block-product {
+.error-block-product,
+.error-block-qty {
   color: red;
   display: block;
   font-size: 12px;
