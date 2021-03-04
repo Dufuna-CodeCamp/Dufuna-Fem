@@ -21,7 +21,9 @@ quantityField = () => {
 
 shippingPrice = () => {
     productPrice = pricePerUnit * quantity.value;
-    console.log(productPrice);
+    if (quantity.value >= 1) {
+        price.innerHTML = productPrice;
+    }
     if (productPrice < 1000){
         shippingCost.innerHTML = 100;
     }else if (productPrice >= 1000 && productPrice <= 20000) {
