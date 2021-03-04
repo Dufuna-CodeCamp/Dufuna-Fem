@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact Page</title>
+</head>
+	<meta charset="utf-8">
+<body>
+	<form action="#" method="post" enctype="multipart/form-data">
+		<fieldset>
+		<legend><b>Contact Us</b></legend>
+		<label for="firstname">First Name</label> <br>
+		<input type="text" name="firstname" id="firstname" placeholder="enter your firstname"> <br><br>
+		<label for="middlename">Middle Name</label><br>
+		<input type="text" name="middlename" id="middlename" placeholder="enter your middlename"><br><br>
+		<label for="lastname">Last Name</label><br>
+		<input type="text" name="lastname" id="lastname" placeholder="enter your lastname"><br><br>
+		<label for="gender">Gender:</label><br>
+		<label for="male">Male</label>
+        <input type="radio" name="gender" value="male" id="male"><br>
+        <label for="female">Female</label>
+        <input type="radio" name="gender" value="female" id="female"><br><br>
+		<label for="email">Email:</label><br>
+		<input type="text" name="email" id="email" placeholder="Eg. Example@gmail.com"><br><br>
+		<label for="phonenumber">Phone Number</label><br>
+		<input type="text" name="phonenumber" id="phonenumber" placeholder="enter your phonenumber"><br><br>
+
+        <label>Why have you contacted us?</label><br>
+		<label for="messagesubject">Message Subject:</label>
+		<select name="subject" id="subject">
+			<option value="other">Other</option>
+			<option value="purchase">Purchase</option>
+			<option value="enquiry">Enquiry</option>
+			<option value="complaints">Complaints</option>
+			<option value="comment">Comments</option>
+			<option value="suggestions">Suggestions</option><br><br>
+			<option value="track order">Track Order</option>
+		</select><br><br>
+
+        <label for="message">Message:</label><br>
+		<textarea name="message" id="message" cols="70" rows="20"></textarea>
+		<input type="submit" name="submit" value="Submit">
+	    </fieldset>
+		
+	</form>
+</body>
+</html>

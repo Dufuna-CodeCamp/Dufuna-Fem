@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/contact.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>venister</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav-bar">
+        <h1 class="brand-name">VENISTER <span>YourFavOnlineBookStore</span></h1>
+        <ul class="nav-pages">
+          <li><a href="../html/products.html">Product Page</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="sign-up.html">Sign-up</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <aside>
+        <div class="contact-us">
+          <img src="../html/images/call-logo.png" alt="call logo">
+          <h3>Please contact us via these numbers:</h3>
+            <p><a href="tel:+2349000000000">+234 9000000000</a></p>
+            <p><a href="tel:+2348022222222">+234 8022222222</a></p>
+          <img src="../html/images/message-logo.png" alt="message logo">
+          <h3>Email Address:</h3>
+            <p><a href="www.gmail.com" target="blank">hello@venister.com</a></p>
+          <h3>Or Connect with us</h3>
+          <ul>
+            <li><a href="www.facebook.com"><img src="../html/images/facebook-logo.png"></a></li>
+            <li><a href="www.twitter.com"></a><img src="../html/images/twitter-logo.png"></li>
+            <li><a href="www.gmail.com"></a><img src="../html/images/gmail-logo.png"></li>
+            <li><a href="www.youtube.com"></a><img src="../html/images/youtube-logo.jpg"></li>
+        </ul>
+      </div>
+      </aside>
+      <main class="contact-form">
+        <div class="contact-message">
+          <img src="../html/images/message2-logo.png" alt="message logo">
+          <h3>Or better still send us a message</h3>
+        </div>
+        <div>
+          <form action="#" method="post" id="contactform">
+              <input type="text" id="fullname" placeholder="Full Name">
+                <span class="error-block-contact"></span>
+              <input type="email" id="email" placeholder="Email Address">
+                <span class="error-block-contact"></span>
+              <input type="text" id="subject" placeholder="Subject">
+              <span class="error-block-contact"></span>
+              <label for ="msg" class="msg">Message</label><br>
+                <textarea id="message"></textarea>
+                <span class="error-block-contact"></span>
+              <button type="submit" id="contact-btn">Send</button>
+          </form>
+        </div>
+      </main>
+      </section>
+        <footer>
+          <div class="footer-properties">
+            <div class="contact">
+              <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+              </ul>
+            </div>
+            <div class="subscribe">
+              <form method="POST" id="newsletter">
+                  <p>Sign Up for our Newsletter</p>
+                  <div class="news">
+                    <input type="email" id="newsletter-email" placeholder="Type your email address">
+                    <span class="error-block-news"></span>
+                  </div>
+                  <button type="submit" id="newsletter-btn">Submit</button>
+              </form>
+            </div>
+            <div class="connect">
+              <p>Connect with Us</p>
+              <ul>
+                <li><a href="www.gmail.com"><img src="../html/images/gmail-logo.png"></a></li>
+                <li><a href="www.twitter.com"><img src="../html/images/twitter-logo.png"></a></li>
+                <li><a href="www.facebook.com"><img src="../html/images/facebook-logo.png"></a></li>
+                <li><a href="www.youtube.com"><img src="../html/images/youtube-logo.jpg"></a></li>
+              </ul>
+            </div>
+          </div>
+          <p>&copy;Copyright 2020 venister.com All rights reserved.</p>
+        </footer>
+        <script src="../dom/contact.js"></script>
+        <script src="../dom/newsletter.js"></script>
+    </body>
+</html>

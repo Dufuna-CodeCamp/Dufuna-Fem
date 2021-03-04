@@ -1,0 +1,78 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>My Contact Page</title>
+  <link rel="stylesheet" type="text/css" href="../css/contactpage.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+</head>
+<body>
+ <!---Codes for the form begins here-->
+ <nav class= "nav-bar">
+   <h2 style="color:yellow;margin-left:2px"><i>Spotless-B</i></h2>
+   <ul class="look">
+      <li><a href="../HTML/product.html">Product Page</a></li>
+      <li><a href="../html-forms/contactpage.html">Contact Us</a></li>
+      <li><a href="../css/signup.html">Sign-up</a></li>
+    </ul>
+ </nav>
+ <!---New era--->
+  <div class="container">
+    <div class="side">
+      <img src="../HTML/images/phone.png" width="30px" height="30px" style="margin-top:5px">
+      <h2>Please contact us via these numbers<br>+234 809 391 0017<br>+234 816 710 6842</h2>
+      <img src="../HTML/images/open-envelope.png" width="30px" height="30px">
+      <h2>Email Address:<br> support@domain.com</h2>
+      <p>or Connect with us:</p>
+      <ul>
+        <li><a href="#"><img src="../HTML/images/facebook.png" width="30px" height="30"></a></li>
+        <li><a href="#"><img src="../HTML/images/twitter.png" width="30px" height="30px"></a></li>
+        <li><a href="#"><img src="../HTML/images/gmail.png" width="30px" height="30px"></a></li>
+        <li><a href="#"><img src="../HTML/images/youtube.png" width="35px" height="35px"></a></li>
+      </ul>
+    </div>
+    <div class="side">
+     <form>
+        <img src="../HTML/images/closed.png" width="30px" height="30px" >
+        <p>or better still send ud message</p>
+        <input type="text" name="fullname" id="fullname" placeholder="Full Name"/><br><br>
+        <input type="text" name="email" placeholder="Email Address"/><br><br>
+        <input type="text" name="subject" id="subject" placeholder="Subject"/><br><br>
+        <label for="comments">Message</label><br><br>
+        <textarea name="comments" id="comments" cols="55" rows="7"></textarea><br><br>
+        <button type="submit" id="btn">Send</button>
+     </form>
+  </div>
+</div> <!-- end container -->
+<footer>
+  <div class="info">
+    <div class="foot">
+      <ul id="quick-links">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Terms and Conditions</a></li>
+      </ul>
+    </div>
+    <div class="foot">
+      <p>Sign up for our Newsletters</p>
+      <form>
+        <input type="email" name="email" id="email" placeholder="Enter your email address"/>
+        <button type="submit" class="styling">Submit</button>
+      </form>
+    </div>
+    <div class="foot">
+      <p>CONNECT WITH US</p>
+      <ul id="socials">
+        <li><a href="#"><img src="../HTML/images/facebook.png" width="30px" height="30px"></a></li>
+        <li><a href="#"><img src="../HTML/images/twitter.png" width="30px" height="30px"></a></li>
+        <li><a href="#"><img src="../HTML/images/gmail.png" width="30px" height="30px"></a></li>
+        <li><a href="#"><img src="../HTML/images/youtube.png" width="35px" height="35px"></a></li>
+      </ul>
+    </div>
+  </div>  
+  <p id="copyright">&copy; Copyright 2020 spotlessB.com <span> All rights reserved</span></p>
+</footer>
+</body>
+</html>

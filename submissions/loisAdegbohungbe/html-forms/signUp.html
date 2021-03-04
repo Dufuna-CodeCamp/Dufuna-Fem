@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/responsive.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar"> 
+        <h3>Louissa Store</h3>   
+        <ul class="nav-links"> 
+            <li><a href="../HTML/product.html">Product Page</a></li>
+            <li><a href="../html-forms/contactForm.html">Contact Us</a></li>      
+            <li><a href="../html-forms/signUp.html">Sign-up</a></li>  
+        </ul>
+    </div>
+    <div class="mobile-navbar">
+        <h3>Louissa Store</h3>   
+        <ul class="nav-links"> 
+            <li><a href="../HTML/product.html">Product Page</a></li>
+            <li><a href="../html-forms/contactForm.html">Contact Us</a></li>      
+            <li><a href="../html-forms/signUp.html">Sign-up</a></li>  
+        </ul>
+    </div>
+    <div class="container signup-box">       
+        <div class="left">
+            <div class="content">
+                <h1>Register your Account</h1>
+                <p>Registering an account gives you access to sweet promo and events available to only registered customers</p>
+                <p>Already got an account? <a href="#">Sign in</a></p>
+            </div>
+        </div>
+        <div class="signup-form right">
+            <form action="#" id="signup-form" method="POST" enctype="multipart/form-data">
+                <label for="firstname">First Name</label> <br>
+                <input type="text" name="firstName" id="firstName" />
+                <span class="error-block"></span><br>
+                <label for="lastname">Last Name</label> <br>
+                <input type="text" name="lastName" id="lastName" />
+                <span class="error-block"></span><br>
+                <label for="othernames">Other Names</label> <br>
+                <input type="tel" name="otherNames" id="otherNames" /><br>
+                <label for="phone">Phone Number</label> <br>
+                <input type="text" name="phone" id="phone" />
+                <span class="error-block"></span><br>
+                <label for="email">Email Address</label> <br>
+                <input type="email" name="email" id="email" />
+                <span class="error-block"></span><br>
+                <label for="password">Password</label> <br>
+                <input type="password" name="password" id="password" />
+                <span class="error-block"></span><br>
+                <label for="confirm-password">Confirm Password</label> <br>
+                <input type="password" name="confirmPassword" id="confirmPassword" />
+                <span class="error-block"></span><br>
+                <div class="checkbox">                              
+                    <input type="checkbox" id="terms-agreement" name="terms-agreement" value="Agree">
+                    <label for="terms-agreement">I agree to the Terms and Conditions</label><br>
+                </div>
+                <button type="submit">SIGN UP</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="row">
+            <div class="col-4 links">
+                <ul>
+                    <li><a href="../html-forms/contactForm.html">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <p>Sign Up for our Newsletter</p>
+                <div>
+                    <form id="newsletter-form">
+                        <input type="text" name="email" id="newsEmail" placeholder="Enter your email address"/>
+                        <span><button type="submit" id="submit"><strong>submit</strong></button></span>                                              
+                        <span class="error-block"></span>
+                    </form>
+                </div>
+            </div>
+            <div class="col-4 connect">
+                <p>CONNECT WITH US</p>
+                <ul>
+                    <li><a><img src="../HTML/images/logos/facebook logo.png"></a></li>
+                    <li><a><img src="../HTML/images/logos/twiiter logo.png"></a></li>
+                    <li><a><img src="../HTML/images/logos/gmail logo.png"></a></li>
+                    <li><a><img src="../HTML/images/logos/youtube logo.png"></a></li>
+                </ul>
+            </div>
+        </div>          
+        <p class="copyright">Copyright 2020 louissastore.com All rights reserved.</p>
+    </div>
+    <script src="../DOM/signup.js"></script>  
+    <script src="../DOM/newsletter.js"></script>
+</body>
+</html>

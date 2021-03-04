@@ -1,0 +1,364 @@
+:root {
+    --success-color:#2ecc71;
+    --error-color: #e74c3c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.875rem;
+    background-color: #f765a3;
+}
+
+.menu > h1{
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.23;
+}
+
+nav{
+    margin-left: -20rem;
+    width: 35%;
+}
+
+nav li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.slidder {
+    margin: 20px 0;
+    padding: 0 2rem;
+}
+
+.slidder h2 {
+    text-align: center;
+    color: #5f5f5f;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.services {
+    padding: 25px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9e9e5;
+    color: #5f5f5f;
+}
+
+.product{
+    width: 50%;
+}
+
+.prod1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prod1 img{
+    width: auto; 
+    height: 100%;
+    object-fit: contain; 
+}
+
+.quantity input{
+    width: 20%;
+    padding: 10px;
+    margin-left: 7px;
+    border: none;
+    outline: none;
+}
+
+.product-info h3{
+    margin-bottom: 16px;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.product-info .quantity{
+    margin-bottom: 16px;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.23;
+}
+
+.product-info p{
+    margin-bottom: 16px;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.product-info button{
+    background-color: #f765a3;
+    padding: 12px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.prod-details{
+    margin-top: 16px;
+    width: 80%;
+}
+
+.prod-details h3{
+    margin-bottom: 12px;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.23;
+}
+
+.prod-details p{
+    line-height: 1.375rem;
+    font-size: 20px;
+    line-height: 1.25;
+}
+
+.related-items {
+    padding: 14px 0 20px;
+    color: #5f5f5f;
+}
+
+.related-items h3{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.related-items .items-list{
+    padding: 16px;
+    background-color: #f9e9e5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.items{
+    width: 25%;
+    background-color: #fff;
+    padding: 30px;
+}
+.items img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.items p{
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.23;
+}
+    /* footer */
+footer{
+    background-color: #f765a3;
+    padding: 15px 28px 15px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.22;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer li{
+    list-style: none;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-link li{
+    margin-bottom: 12px;
+}
+.footer-form{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.footer-form [type=email] {
+    padding: 0.9rem;
+    outline: none;
+    border: none;
+    width: 95%;
+}
+.newletter-form label{
+    display: block;
+}
+.newletter-form small {
+    color: var(--error-color);
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+footer ::placeholder{
+    color: #f765a3;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.footer-form [type=submit] {
+    background-color: #fff;
+    padding: 0.71rem;
+    outline: none;
+    border: none;
+    color: #f765a3;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.22;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.media p {
+    margin-bottom: 15px;
+}
+
+.social-media {
+    display: flex;
+}
+
+.social-media img {
+    width: 70%;
+    height: auto;
+    object-fit: contain;
+}
+
+footer > p{
+    text-align: center;
+    margin-top: 28px;
+}
+
+@media screen and (max-width: 767px) {
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav li {
+        display: block;
+        margin-bottom: 15px;
+    }
+    nav li:last-child {
+        margin-bottom: 0;
+    }
+    nav{
+        margin-left: 0;
+        margin-top: 18px;
+    }
+    .services {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .product{
+        width: 100%;
+        margin-top: 18px;
+    }
+    .prod1 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .product-info{
+        margin-top: 18px;
+    }
+    .prod-details{
+        width: 100%;
+    }
+    .related-items .items-list{
+        padding: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .items{
+        width: 100%;
+        padding: 20px;
+        margin-top: 20px;
+    }
+    .footer {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .footer > div {
+        margin-bottom: 12px;
+    }
+    .footer-form [type=email]{
+        width: 50%;
+        margin-right: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    nav{
+        margin-left: -10rem;
+    }
+    .services {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .product {
+        width: 100%;
+    }
+    .product:last-child {
+        margin-top: 18px;
+    }
+    .prod-details{
+        width: 90%;
+    }
+    .related-items .items-list{
+        flex-wrap: wrap;
+    }
+    .items{
+        width: 40%;
+        margin-bottom: 10px;
+    }
+    .footer {
+        flex-wrap: wrap;
+    }
+    .footer > div {
+        width: 40%;
+        margin-bottom: 18px;
+    }
+    .footer-form [type=email]{
+        width: 50%;
+        margin-right: 10px;
+    }
+}

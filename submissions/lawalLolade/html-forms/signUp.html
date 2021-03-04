@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flawa | Contant Us</title>
+    <!-- css links -->
+    <link rel="stylesheet" href="../css/signUp.css">
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+        <!-- header Begins -->
+    <header>
+        <div class="menu">
+            <h1>FLAWA</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../html/productPage.html">Product</a>
+                    </li>
+                    <li><a href="../html-forms/contactFormPage.html">Contact Us</a></li>
+                    <li><a href="../html-forms/signUp.html">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+        <!-- Header ends -->
+        <!-- sign Up Form -->
+    <section class="container">
+        <div class="register-intro">
+            <h3>Register your Account</h3>
+            <P>Registering an account gives you the access to sweet promo and 
+                events available to only registered customers.</p>
+            <p>Already got an account? <a href="#">Sign in</a></p>
+        </div>
+        <div class="register-account">
+            <form class="form" id="form" method="post">
+                <div class="form-content">
+                    <label for="firstname">First Name</label>
+                    <input type="text" name="firstname" id="firstname">
+                    <small></small>
+                </div>
+                <div class="form-content">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" name="lastname" id="lastname">
+                    <small></small>
+                </div>
+                <div class="form-content">
+                    <label for="othername">Other Name</label>
+                    <input type="text" name="othername" id="othername">
+                </div>
+                <div class="form-content">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                    <small></small>
+                </div>
+                <div class="form-content">
+                    <label for="number">Phone Number</label>
+                    <input type="number" name="number" id="number">
+                    <small></small>
+                </div>
+                <div class="form-content">
+                    <label for="psw">Password</label>
+                    <input type="password" name="password" id="password">
+                    <small></small>
+                </div>
+                <div class="form-content">
+                    <label for="c-psw">Confirm Password</label>
+                    <input type="password" name="password2" id="password2">
+                    <small></small>
+                </div>
+                <div class="sign-up">
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                    <label for="checkbox" class="tc">I agree to the Terms and Conditions</label><br>
+                    <button type="submit" id="button">Sign Up</button>
+                </div>
+            </form>            
+        </div>
+    </section>
+        <!-- Footer Begins -->
+    <footer>
+        <div class="footer">
+            <div class="footer-link">
+                <ul>
+                    <li><a href="../html-forms/contactFormPage.html">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                </ul>
+            </div>
+            <div class="newsletter">
+                <label for="newsletter">Sign up for our Newsletter</label>
+                <form class="footer-form" id="footerForm" method="post">
+                    <div class="newletter-form">
+                        <input type="email"  name="newsletter" id="newsletterEmail" placeholder="Enter your email address"/>
+                        <small></small>
+                    </div>
+                    <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+            <div class="media">
+                <p>CONNECT WITH US</p>
+                <ul class="social-media">
+                    <li class="facebook"><a href="#"><img src="../html/images/facebook-logo.png"></a></li>
+                    <li class="twitter"><a href="#"><img src="../html/images/twiiter-logo.png"></a></li>
+                    <li class="gmail"><a href="#"><img src="../html/images/gmail-logo.png"></a></li>
+                    <li class="youtube"><a href="3"><img src="../html/images/youtube-logo.png"></a></li>
+                </ul>
+            </div>
+        </div>
+        <p id="copy"> &copy; 2020 Flawa.com All rights reserved</p>
+    </footer>
+        <!-- Footer Ends -->
+        <!-- scripts -->
+    <script src="../DOM/signUp.js"></script>
+    <script src="../DOM/Newsletter.js"></script>
+</body>
+</html>

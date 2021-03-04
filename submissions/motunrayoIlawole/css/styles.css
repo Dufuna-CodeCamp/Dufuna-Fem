@@ -1,0 +1,464 @@
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    width: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    color: rgb(102, 70, 70);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    padding: 5px 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header, footer {
+    width: 100%;
+    background-color: purple;
+}
+
+h1 {
+    font-family: cursive;
+    color: #FFF;
+}
+
+h2 {
+    color: purple;
+    font-size: 2.5rem;
+}
+
+h3 {
+    color: #1B0000;
+    font-weight: 700;
+}
+
+label {
+    display: block;
+    font-size: 0.8rem;
+    margin-bottom: 2px;
+}
+
+header a, footer a, footer p {
+    color: #FFF;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 40px;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    color: plum;
+}
+
+main {
+    width: 100%;
+    padding: 50px 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    column-gap: 10px;
+}
+
+aside {
+    background-color: #CE9DD9;
+    text-align: center;
+    padding: 30px;
+}
+
+.main-text {
+    padding: 20% 15%;
+}
+
+.main-text p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.main-text a {
+    color: purple;
+    text-decoration: underline;
+}
+
+.main-text a:hover {
+    text-decoration: none;
+}
+
+.main-form {
+    padding-right: 20px;
+}
+
+.form-container {
+    width: 100%;
+    border: 1px solid #888;
+    border-radius: 10px;
+    padding: 30px 20px;
+}
+
+.form-input {
+    margin-bottom: 10px;
+}
+
+.form-input input {
+    width: 100%;
+    padding: 7px 5px;
+    border: 1px solid #888;
+    border-radius: 5px;
+}
+
+.check-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.check-input label a {
+    color: purple;
+    font-size: 1rem;
+}
+
+.btn-con {
+    text-align: center
+}
+
+.btn-signup, .btn-contact {
+    text-transform: uppercase;
+    background-color: purple;
+    color: #FFF;
+    font-size: 0.8rem;
+    padding: 10px 30px;
+}
+
+.btn-signup:hover, .btn-contact:hover {
+    background-color: #FFF;
+    color: purple;
+    border: 1px solid purple;
+}
+
+.error-block {
+    color: red;
+    font-size: 0.7rem;
+}
+
+.error-block2 {
+    color:tomato;
+    font-size: 0.8rem;
+}
+
+footer {
+    padding: 20px 30px;
+}
+
+.footer-top {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+}
+
+.footer-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.newsletter p, .social p {
+    margin-top: 0;
+}
+
+.footer-form {
+    display: flex;
+    align-items: center;
+}
+
+.footer-form input {
+    padding: 5px 10px;
+    margin-right: 5px;
+    width: 70%;
+}
+
+.footer-form button {
+    padding: 5px 7px;
+    color: purple;
+    background-color: #FFF;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.social p {
+    font-size: 0.9rem;
+}
+
+.social-links a {
+    margin-right: 10px;
+}
+
+.social-links img {
+    width: 40px;
+    height: 30px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Contact page styles */
+.contact-main {
+    width: 100%;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.contacts {
+    margin-bottom: 30px;
+}
+
+.form-container2 {
+    width: 100%;
+    border: 1px solid #888;
+    padding: 30px;
+}
+
+.form-top {
+    text-align: center;
+}
+
+.contact-input, .contact-input input, .contact-input textarea  {
+    width: 100%;
+}
+
+.contact-input {
+    margin-bottom: 15px;
+}
+
+.contact-input input {
+    padding: 7px 5px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #888;
+}
+
+.contact-input label {
+    margin-bottom: 5px;
+}
+
+.contact-btn {
+    text-align: right;
+}
+
+/*Product page*/
+.container {
+    padding: 50px 30px;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    column-gap: 10px;
+}
+
+.product-image {
+    width: 90%;
+    height: 300px;
+    background-image: url('../html/assets/brown-brim.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.product-details {
+    padding: 20px 0;
+    font-weight: 700;
+}
+
+.product-details p input {
+    width: 50px;
+    padding: 5px;
+}
+
+.product-desc p {
+    line-height: 1.5;
+}
+
+.error {
+    color: red;
+    display: none;
+}
+
+.error.show {
+    display: block;
+}
+
+.buy-now {
+    display: inline-block;
+    background-color: purple;
+    color: #FFF;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.buy-now.disabled {
+    opacity: 0.6;
+}
+
+.other-products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.other-product {
+    background-color: #FFF;
+    margin: 10px 20px;
+}
+
+.other-image {
+    display: block;
+    padding: 10px;
+}
+
+.other-image img {
+    width: 100%;
+    height: 300px;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        display: block;
+        padding: 30px 60px;
+    }
+
+    .main-text {
+        padding: 0;
+        text-align: center;
+    }
+
+    .footer-top {
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .footer-main {
+        display: block;
+        margin-top: 30px;
+    }
+
+    .newsletter {
+        margin-bottom: 20px;
+    }
+
+    .contact-main {
+        padding: 0 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    nav ul li {
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    header, nav ul {
+        display: block;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    aside {
+        padding: 30px 0;
+    }
+
+    .footer-top {
+        display: block;
+    }
+
+    .footer-form input {
+        width: 80%;
+    }
+
+    .product {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h3 {
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 5px 30px 20px 30px;
+    }
+
+    .main-form {
+        padding-right: 0;
+    }
+
+    .check-input label a {
+        font-size: 0.8rem;
+    }
+
+    .contact-info {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .form-container2 {
+        padding: 30px 10px;
+    }
+    .social-links img {
+        width: 30px;
+        height: 25px;
+    }
+
+    .copyright {
+        font-size: 0.9rem;
+    }
+
+    .footer-links li a {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,660 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: Montserrat, sans-serif;
+}
+ /* Small screen first */
+header {
+    background-color: black;
+    padding: 10px 20px 5px;
+}
+header img {
+    height: 30px;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0px;
+    padding: 10px 0 20px 10px;
+}
+nav li {
+    margin: 5px 0;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+}
+nav a:hover,
+nav a:active,
+nav a:focus {
+    color: orange;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+}
+main {
+    width: 86%;
+    margin: 0px auto 1em;
+}
+.form-text {
+    text-align: center;
+    padding: 0 10px;
+}
+.form-text h1,
+.form-text a {
+    color: orange;
+}
+fieldset {
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.6);
+    padding: 20px;
+}
+.form-field {
+    margin-bottom: 10px;
+}
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"] {
+    border-radius: 10px;
+    width: 100%;
+    margin: 5px auto 10px;
+    line-height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    padding: 3px 10px;
+}
+.labels{
+    display: block;
+}
+.error-block {
+    font-size: 14px;
+    color: red;
+    display: block;
+}
+#tandcError {
+    display: inline-block;
+}
+.tandc {
+    color:orange;
+}
+#signup-btn {
+    background-color: orange;
+    margin: 15px auto 0;
+    text-transform: uppercase;
+    color: white;
+    display: block;
+    padding: 10px 20px 7px;
+    border:none;
+    border-radius: 6px;
+}
+footer {
+    background-color: #ff8c00;
+    padding: 0.5em 1.3em 1em;
+}
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+footer li {
+    margin: 0.5em 0;
+}
+.footer-nav {
+    text-decoration: none;
+    color: white;
+}
+footer p {
+    color: white;
+    margin-bottom: 0;
+}
+footer p:last-of-type {
+    margin-top: 0;
+}
+.footer-email {
+    width: 70% !important;
+    border-radius: 0 !important;
+    padding: 0.2em 0.4em !important;
+    border: none !important;
+}
+.footer-btn {
+    padding: 0.68em 1em;
+    color:orange;
+    margin-left: 0.3em;
+    border: none !important;
+    background-color:white;
+}
+.footer-btn:hover {
+    background-color: orange;
+    color: white;
+}
+.convert-uppercase {
+    text-transform: uppercase;
+    margin: 0.6em 0 0.3em !important;
+}
+.contact-icons {
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    width: 50%;
+    padding: 0.1em 0.5em;
+    border-radius: 10px;
+    margin-top: 0;
+}
+.contact-icon {
+    text-decoration: none;
+}
+.fb-icon {
+    color:#1778f2;
+}
+.tw-icon {
+    color: #1da1f2;
+}
+.gmail-icon {
+    color: white;
+}
+.gmail-pic {
+    width: 35px;
+}
+.yt-icon {
+    color: red;
+}
+.icon {
+    font-size: 35px;
+}
+.copyright {
+    text-align:center;
+}
+.copyright p:first-child {
+    margin-top: 1.3em;
+}
+
+/* Contact styles */
+#contact-main {
+    width: 90%;
+}
+.contact-text {
+    text-align: center;
+    padding-top: 20px;
+    letter-spacing: 0.05em;
+}
+.resize-icon {
+    color: #ff8c00;
+    font-size: 40px;
+}
+.heading {
+    font-weight: bolder;
+    color:rgba(0, 0, 0, 0.8);
+}
+.space {
+    margin-top: 24px;
+}
+#contact-icons {
+    width: 75%;
+    justify-content: space-around;
+    margin: 10px auto 20px;
+}
+#contact-icons li {
+    list-style-type: none;
+}
+.iconc {
+    font-size: 40px;
+}
+#gmail-pic-contact {
+    width:41px;
+}
+#contact-fieldset {
+    border-radius: 0;
+    padding: 20px 25px;
+}
+#contact-form-text {
+    text-align: center;
+}
+.contact-input {
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+    border-radius: 0 !important;
+    padding-bottom: 0 !important;
+}
+#msg-shift {
+    margin-bottom: 1.2em;
+}
+.message {
+    color:rgba(0, 0, 0, 0.6);
+    display: block;
+    margin: 10px 0;
+}
+#message {
+    width: 100%;
+    margin-top: 0.5em;
+    margin-bottom: 8px;
+    border:1px solid rgba(0, 0, 0, 0.6);
+    display: block;
+}
+#send-c-btn {
+    background-color:  #ff8c00;
+    text-transform: uppercase;
+    border: 0;
+    color: white;
+    margin-top: 0.8em;
+    padding: 0.8em 1.2em 0.7em 1.6em;
+    border-radius: 5px;
+    font-size: 16px;
+    float: right;
+    display: block;
+}
+
+/* Product styles */
+#product-main {
+    width: 100%;
+    margin-bottom: 0;
+}
+.product-section {
+    margin-top: 1.5em;
+    padding: 10px 30px;
+}
+.image-div {
+    text-align: center;
+    width: 90%;
+}
+.product-img {
+    height: 430px;
+    width: 300px;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+#quantity {
+    width: 50px;
+    font-size: 16px;
+    border-radius: 0;
+    padding: 5px 10px;
+    line-height: 16px;
+    margin: 0;
+}
+.reduce-margin {
+    margin: 10px 0;
+}
+.error {
+    font-size: 14px;
+    line-height: 16px;
+    color: red;
+}
+.buy-btn {
+    color: white;
+    background-color: #ff8c00;
+    border: none;
+    font-size: 16px;
+    padding: 10px 17px;
+    border-radius: 10px;
+}
+.disable {
+    background-color: rgb(165, 159, 159);
+}
+.description {
+    margin-top: 30px;
+    margin-bottom: 8px;
+}
+.description-text {
+    margin-top: 8px;
+    text-align: justify;
+    letter-spacing: 0.1px;
+    line-height: 25px;
+}
+.related-products {
+    text-align: center;
+    background-color:#ededed;
+    padding-top: 0.8em;
+    padding-bottom: 3em;
+}
+.other-prdt-img {
+    height: 400px;
+    width: 300px;
+}
+.different-height-img {
+    height: 250px;
+}
+.grid-container {
+    display: grid;
+    row-gap : 20px;
+}
+.product {
+    width: 300px;
+    background-color: white;
+    margin: 0px auto;
+}
+.product p:first-of-type {
+    margin-bottom: 8px;
+}
+.product p:last-of-type {
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+
+/* Tablet screens */
+@media screen and (min-width: 500px) {
+    header {
+        padding: 15px 20px 15px 35px;
+        align-items: center;
+    }
+    nav {
+        float: right;
+        width: 65%;
+    }
+    nav ul {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+    }
+    nav li {
+        font-size: 20px;
+        margin-right: 0.5em;
+    }
+    main {
+        width: 78%;
+        padding-bottom: 1.7em;
+    }
+    .form-text {
+        padding: 1em 2.5em;
+    }
+    .form-text h1 {
+        font-size: 60px;
+    }
+    .form-text p {
+        font-size: 34px;
+    }
+    fieldset {
+        padding: 2.5em 2.5em 1em;
+        margin-left: 1em;
+    }
+    fieldset label {
+        font-size: 20px;
+    }
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    input[type="password"] {
+        border-radius: 10px;
+        width: 100%;
+        margin: 5px auto 10px;
+        line-height: 30px;
+        font-size: 18px;
+        border: 2px double rgba(0, 0, 0, 0.6);
+        padding: 3px 15px;
+    }
+    fieldset div {
+        margin-top: 1em;
+    }
+    fieldset div input {
+        width: 18px;
+    }
+    #signup-btn {
+        font-size: 20px;
+        margin-top: 1em;
+        padding: 0.5em 2.8em 0.7em;
+    }
+    footer {
+        padding: 1.5em 0.5em 1.5em 2.5em;
+        font-size: 18px;
+    }
+    .footer-sections {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        margin-bottom: 1em;
+    }
+    .copyright p {
+        display: inline;
+        margin-left: 0.2em;
+    }
+    .footer-sections ul:first-child {
+        margin-top: 9px
+    }
+    .footer-sections ul li {
+        margin-bottom: 1em;
+    }
+    .footer-fill {
+        margin-top: 18px;
+    }
+    .footer-email {
+        margin-top: 15px !important;
+        line-height: 35px !important;
+        font-size: 16px !important;
+        padding-left: 15px !important;
+    }
+    .footer-btn {
+        padding: 1em 1.5em 0.93em;
+    }
+    .contact-icons {
+        height: 60px;
+    }
+
+    /* Contact page styles */
+    #contact-main {
+        width: 80%;
+    }
+    .contact-text {
+        padding-top: 2.5em;
+        font-size: 26px;
+    }
+    .resize-icon {
+        font-size: 60px;
+    }
+    .space {
+        margin: 30px 0 0;
+    }
+    #contact-icons {
+        width: 65%;
+        margin: 0 auto 50px;
+    }
+    .iconc {
+        font-size: 65px;
+    }
+    #gmail-pic-contact {
+        width: 66px;
+    }
+    #contact-fieldset {
+        padding: 20px 65px 30px 45px;
+    }
+    .heading {
+        font-size: 26px;
+    }
+    .contact-input {
+        margin-bottom: 0.8em !important;
+    }
+    .contact-input,
+    .message {
+        font-size: 24px;
+    }
+    #message {
+        height: 150px;
+    }
+    #send-c-btn {
+        font-size: 20px;
+        padding: 0.6em 2em 0.5em;
+    }
+
+    /* Product page Styles */
+    #product-main {
+        padding-bottom: 0;
+    }
+    .about-product {
+        display: flex;
+    }
+    .about-product div {
+        width: 50%;
+    }
+    #quantity {
+        width: 60px;
+    }
+    .about-product div:last-of-type {
+        padding: 0 1.5em;
+        line-height: 1.5em;
+        letter-spacing: 0.2px;
+        font-size: 18px;
+    }
+    .product-img {
+        height: 350px;
+    }
+    .error {
+        display: block;
+        padding-top: 5px;
+    }
+    .product-section div:last-of-type {
+        font-size: 18px;
+        letter-spacing: 0.2px;
+        line-height: 1.7em;
+    }
+    .related-products {
+        padding: 1em 2.3em 3em;
+        font-size: 18px;
+    }
+    .related-products h3 {
+        margin-bottom: 24px;
+    }
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 350px;
+        gap: 30px 0;
+    }
+}
+
+/* Large screens */
+@media screen and (min-width: 992px) {
+    header {
+       padding :20px 40px 15px 40px;
+    }
+    nav ul {
+        width: 60%;
+        justify-content: space-between;
+        margin: 0 0 0 auto;
+    }
+    main {
+        display:flex;
+        margin: 0px;
+        width: 100%;
+        padding: 3em;
+    }
+    .form-text {
+        width: 50%;
+        text-align: left;
+        align-self: center;
+        padding: 0 60px 100px;
+    }
+    .form-text h1 {
+        margin-bottom: 15px;
+        margin-top: 0;
+        font-size: 52px;
+    }
+    .form-text p {
+        margin-top: 15px;
+        font-size: 32px;
+    }
+    form {
+        width: 50%;
+    }
+    footer {
+        padding: 2em 0.5em 1.5em 2.5em;
+    }
+    .footer-sections {
+        grid-template-columns: 25% 75%;
+        margin-bottom: 0;
+    }
+    .footer-sections ul:first-child {
+        margin-top:0;
+    }
+    .one {
+        margin-top: 0;
+    }
+    .footer-side {
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-side div {
+        width: 45%;
+    }
+    .footer-email {
+        width: 62% !important;
+    }
+    .footer-btn {
+        font-weight: 600 !important ;
+        font-size: 16px !important;
+        padding: 0.75em 0.7em 0.7em;
+        margin-left: 0.2em;
+    }
+    .contact-icons {
+        width: 60%;
+    }
+    
+    /* Contact page styles */
+    #contact-main {
+        width: 100%;
+    }
+    .contact-text {
+        width: 50%;
+    }
+
+    /* Product page styles */
+    #product-main {
+        flex-direction: column;
+        padding: 0;
+    }
+    .product-section {
+        padding-left: 50px;
+    }
+    .about-product div:first-of-type {
+        width: fit-content;
+    }
+    .about-product div:last-of-type {
+        padding-top: 1em;
+        padding-left: 3em;
+        font-size: 24px;
+    }
+    #quantity {
+        line-height: 30px;
+        font-size: 22px;
+        width: 80px;
+    }
+    .error {
+        font-size: 18px;
+        padding-top: 10px;
+    }
+    .buy-btn {
+        font-size: 22px;
+    }
+    .product-img {
+        width: 500px;
+        height: 500px;
+    }
+    .related-products,
+    .product-section div:last-of-type {
+        font-size: 24px;
+    }
+    .product-section div:last-of-type p {
+        line-height: 1.5em;
+    }
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .img-container {
+        height: 400px;
+        position: relative;
+    }
+    .different-height-img {
+        position: absolute;
+        bottom:70px;
+        left:0;
+        right:0;
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    .product {
+        width: 350px;
+    }
+    .other-prdt-img {
+        width: 100%;
+    }
+}
