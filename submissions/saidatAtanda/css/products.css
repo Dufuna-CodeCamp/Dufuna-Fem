@@ -9,10 +9,14 @@ body {
 .header {
   background-color: rgb(100, 27, 27);
   color: white;
-  height: 150px;
+  height: auto;
   line-height: 0.5;
   padding: 10px;
   margin: 0;
+}
+.brand-name {
+  margin: 0;
+  padding: 10px;
 }
 .brand-name span {
   font-size: 16px;
@@ -21,9 +25,10 @@ body {
 .nav-pages {
   display: flex;
   justify-content: flex-end;
+  margin: 0;
 }
 .nav-bar li {
-  margin-top: 10px;
+  margin-top: 0;
   list-style-type: none;
   padding: 10px;
 }
@@ -64,12 +69,15 @@ line-height: 1.0;
 #product-btn {
   color: white;
   background-color: #c96567;
-  border-radius: 5%;
+  border-radius: 7%;
   border-style: none;
   height: 60px;
   width: 120px;
   text-transform: uppercase;
   margin-top: 10px;
+}
+#product-btn:disabled {
+  background-color: gray;
 }
 .product a {
   color: #c96567;
@@ -155,10 +163,11 @@ margin: 0;
   font-size: 16px;
 }
 .error-block-news,
-.error-block-product {
+.error-block-product,
+.error-block-qty {
   color: red;
   display: block;
-  font-size: 12px;
+  font-size: 14px;
 }
 #newsletter-btn {
   color: rgb(100, 27, 27);
