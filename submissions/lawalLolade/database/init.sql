@@ -54,6 +54,12 @@ CREATE TABLE products (
 	FOREIGN KEY (product_categories_id) REFERENCES product_categories (id)
 );
 
+
+INSERT INTO products (admin_users_id, product_categories_id, product_name, product_description, product_image, unit_price, stock_level, product_status, created_at)
+VALUES
+	(1, 2, 'Cherry Blossom', 'A feminine arrangement of pale pink Asiatic Lilies alongside hot pink carnations, pink and white two tone spray carnations and white Freesias.', 'C:\Users\Mr L.O. Lawal\Desktop\Dufuna-Fem\submissions\lawalLolade\HTML\images\Prod2.jpeg', 15000, 8, 'in stock', now()),
+    (2, 1, 'Carnation', 'As vibrant as they are majestic, carnations cater to the joy of all through their color and fragrance.', 'C:\Users\Mr L.O. Lawal\Desktop\Dufuna-Fem\submissions\lawalLolade\HTML\images\Carnation4.png', 5000, 12, 'in stock', now());
+
 SELECT * FROM products;
 
 /* Creating a table for registered customers*/
