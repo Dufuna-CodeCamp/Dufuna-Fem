@@ -146,4 +146,13 @@ SELECT * FROM order_items;
 
 SHOW TABLES;
 
+UPDATE products
+SET product_image = 'images/Prod2.jpeg'
+WHERE id = 1;
+
+SELECT * FROM products;
+
+UPDATE products
+SET product_image = 'images/Carnation4.png'
+WHERE id = 2;
 
