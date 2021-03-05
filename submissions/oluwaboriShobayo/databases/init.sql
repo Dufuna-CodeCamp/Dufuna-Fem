@@ -2,31 +2,6 @@ CREATE DATABASE StylebyBori;
 SHOW DATABASES;
 USE StylebyBori;
 
--- This is the products table that references the admin and categories table
-CREATE TABLE PRODUCTS (
-		id INT NOT NULL AUTO_INCREMENT,
-		name VARCHAR(100) NOT NULL,
-		description VARCHAR(255) NOT NULL,
-		image BLOB,
-		unit_price DECIMAL (10,2),
-		stock_level VARCHAR(50),
-        created_by INT NOT NULL,
-        categories_id INT NOT NULL,
-		status VARCHAR(50),
-		primary key (id),
-        foreign key(created_by) REFERENCES admins(id),
-        foreign key(categories_id) REFERENCES categories(id)
-);
-
-SHOW TABLES;
-SELECT * FROM products;
-INSERT INTO products (name, description, image, unit_price, stock_level, created_by, categories_id, status)
-VALUES 
-		('Mira dress', 'Perfect for every outing', 'Mira_image', 7000.00, '5 pieces', 4, 2, 'in stock'),
-		('Adara danshiki', 'Ideal for casual wear', 'adara_danshiki', 6500.00, '3 pieces', 2, 1, 'limited stock'),
-		('Bella dress', 'The bella dress is designed to enhance the female silhouette','bella_dress', 10000.00, '2 pieces', 1, 4,'limited stock'),
-		('Adire wrap top', 'It can be worn on trousers, skirts, or a sleeveless dress', 'adire_top', 6000.00, '6 pieces', 3, 3, 'in stock');
-
 -- this is the categories table that links back to the product table
 CREATE TABLE categories (
 		id INT NOT NULL AUTO_INCREMENT,
@@ -61,6 +36,31 @@ VALUES
 	('Tola', 'tola@gmail.com', '*****', 08112223334);
 
 SELECT * FROM admins;
+
+-- This is the products table that references the admin and categories table
+CREATE TABLE PRODUCTS (
+		id INT NOT NULL AUTO_INCREMENT,
+		name VARCHAR(100) NOT NULL,
+		description VARCHAR(255) NOT NULL,
+		image BLOB,
+		unit_price DECIMAL (10,2),
+		stock_level VARCHAR(50),
+        created_by INT NOT NULL,
+        categories_id INT NOT NULL,
+		status VARCHAR(50),
+		primary key (id),
+        foreign key(created_by) REFERENCES admins(id),
+        foreign key(categories_id) REFERENCES categories(id)
+);
+
+SHOW TABLES;
+SELECT * FROM products;
+INSERT INTO products (name, description, image, unit_price, stock_level, created_by, categories_id, status)
+VALUES 
+		('Mira dress', 'Perfect for every outing', 'Mira_image', 7000.00, '5 pieces', 4, 2, 'in stock'),
+		('Adara danshiki', 'Ideal for casual wear', 'adara_danshiki', 6500.00, '3 pieces', 2, 1, 'limited stock'),
+		('Bella dress', 'The bella dress is designed to enhance the female silhouette','bella_dress', 10000.00, '2 pieces', 1, 4,'limited stock'),
+		('Adire wrap top', 'It can be worn on trousers, skirts, or a sleeveless dress', 'adire_top', 6000.00, '6 pieces', 3, 3, 'in stock');
 
 -- This is the registered customers' table
 CREATE TABLE customers (
