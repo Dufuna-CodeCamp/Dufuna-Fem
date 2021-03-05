@@ -10,17 +10,6 @@ use Psr\Http\Message\ServerRequestInterface as Request;
 
 class ArticleController
 {
-    #GET ALL ARTICLES
-    public function index(Request $request, Response $response, $args)
-    {
-        $articles = Article::where('articles.id', '>', 0)->join('admins', 'articles.created_by', 'admins.id')
-        ->select('articles.id', 'title', 'description', 'status', 'admins.name AS created_by')->get();
-     
-        $response->getBody()->write(json_encode(['status' => 'success', 'data' => $articles->toarray()]));
-        return $response->withHeader('Content-Type', 'application/json')
-            ->withStatus(200);
-    }
-
     #RETRIEVE ONE ARTICLE
     public function findById(Request $request, Response $response, $args)
     {
