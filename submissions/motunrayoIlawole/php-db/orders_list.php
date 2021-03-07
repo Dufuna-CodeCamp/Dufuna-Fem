@@ -6,7 +6,11 @@ $allOrders = "";
 
 function fetchOrders($database) {
     try {
-        $sql = "SELECT customer_orders.id, products.product_name, customer_order_items.unit_price, customer_order_items.quantity, customer_order_items.total_amount, customer_orders.created_at, customer_addresses.street_address, customer_addresses.city, customer_addresses.state, customer_addresses.country
+        $sql = "SELECT customer_orders.id, products.product_name, 
+        customer_order_items.unit_price, customer_order_items.quantity, 
+        customer_order_items.total_amount, customer_orders.created_at, 
+        customer_addresses.street_address, customer_addresses.city, 
+        customer_addresses.state, customer_addresses.country
         FROM customer_order_items
         LEFT JOIN customer_orders on customer_orders.id = customer_order_items.customer_order_id
         LEFT JOIN products on products.id = customer_order_items.customer_product_id
