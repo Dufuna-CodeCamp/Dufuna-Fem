@@ -118,12 +118,6 @@ input:focus {
 	justify-content: center;
 	flex-wrap: wrap;
 }
-.full_flex .product_list .quarter_page {
-	flex-flow: row;
-	display: flex;
-	justify-content: right;
-    align-items: center;
-}
 .half_page {
 	width: 50%;
 }
@@ -156,41 +150,31 @@ input:focus {
 	text-align: center;
 	padding: 30px 0;
 }
-.product_list {
+.full_flex.product_list {
 	display: flex;
-	width: 100%;
-	flex-wrap: wrap;
-	justify-content: space-around;
+	flex-wrap: nowrap;
+    flex-direction: row;
+	flex-grow: inherit;
 }
 .quarter_page {
-	flex-flow: wrap;
 	width: 30%;
 	background: #cfcfcf;
 	padding: 5px;
 	display: block;
-	grid-row:span;
-	align-items: center;
 	justify-content: space-evenly;
-	text-align: center; 
 	background-color: #fff;
 	margin: 0 auto;
-	flex-wrap: wrap;
-	flex-flow: row;
+	padding-right: 0;
 	text-align: center;
 	}
 .quarter_page img {
-	display: flex;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
 	width: 100%;
 	height: 150px;
-	justify-content: right;
-	display: flex;
-	flex-wrap: wrap;
-	justify-self: normal;
-	justify-items: normal;
-	text-align: justify;
-	
+	justify-self: stretch;
+	align-content: center;
 }
-
 /* Signup */
 .signup label {
   margin: 0 19px 6px 0;
