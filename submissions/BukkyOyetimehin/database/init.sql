@@ -1,17 +1,20 @@
--- Creating the db
+-- Creating the Databse
 CREATE DATABASE fashi_online_store;
 SHOW DATABASES;
+
 -- Creating the Tables
 
 USE fashi_online_store;
-
 -- Categories Table
 CREATE TABLE categories (
 	id INT NOT NULL AUTO_INCREMENT,
 	category_name VARCHAR(100) NOT NULL,
-    created_at DATETIME,
+    created DATETIME,
 	PRIMARY KEY (id)	
 );
+ALTER TABLE categories CHANGE created  created_at DATETIME;
+SHOW COLUMNS FROM categories;
+
 INSERT INTO categories (category_name, created_at)
 VALUES ('Men Apparel', now()),
 ('Women Apparel', now()),
@@ -25,12 +28,12 @@ SELECT * FROM categories;
 CREATE TABLE admin_Login (
 	id INT NOT NULL AUTO_INCREMENT,
 	full_name VARCHAR(40) NOT NULL,
-    admin_email VARCHAR (20) NOT NULL,
+    admin_email VARCHAR (30) NOT NULL,
     admin_password VARCHAR(20) NOT NULL,
-    admin_phone VARCHAR(20) NOT NULL,  
+    admin_phone VARCHAR(30) NOT NULL,  
     created_at DATETIME,
 	PRIMARY KEY (id)
-);
+    );
 INSERT INTO admin_Login (full_name, admin_email, admin_password, admin_phone, created_at)
 VALUES ('Ben Ellison', 'bellisongmail.com', 'info@1234', '950-830-3729', now()),
 ('Danika Marshall', 'dmarshall@gmail.com', 'workflow%#1105', '226-813-4145', now()),
@@ -46,7 +49,7 @@ CREATE TABLE products (
     category_id INT NOT NULL,
 	product_description VARCHAR(250) NOT NULL,
 	product_image BLOB NOT NULL,
-	product_price FLOAT(10,2) NOT NULL,    
+	product_price DECIMAL(10,2) NOT NULL,    
     stock_level INT NOT NULL,
     product_status VARCHAR(40) NOT NULL,
     admin_login_id INT NOT NULL,
@@ -55,9 +58,6 @@ CREATE TABLE products (
     FOREIGN KEY (category_id) REFERENCES categories (id),
 	FOREIGN KEY (admin_login_id) REFERENCES admin_login (id)
 );
-ALTER TABLE products
-MODIFY product_price DECIMAL(10, 2);
-
 INSERT INTO products (product_name, brand, category_id, product_description,
  product_image, product_price, stock_level, product_status, admin_login_id, created_at)
 VALUES ('Blue White Collar Tee Shirt', 'Polka Dot', '1', 
@@ -73,37 +73,17 @@ This polka dot designed shirt guarantees maximum comfort for whoever wears it.',
   
   SELECT * FROM products;
   
-  -- Customers Table
+   -- Customers Table
 CREATE TABLE customers (
-	id INT(11) NOT NULL AUTO_INCREMENT,
+	id INT NOT NULL AUTO_INCREMENT,
 	first_name VARCHAR(20) NOT  NULL,
 	last_name VARCHAR(30) NOT NULL,
-	customer_email VARCHAR(20) NOT NULL,   
-	customer_password VARCHAR (20) NOT NULL,
-    created_at DATETIME,
-    PRIMARY KEY(id)
-);
--- Customers Table
-CREATE TABLE customers (
-	id INT(11) NOT NULL AUTO_INCREMENT,
-	first_name VARCHAR(20) NOT  NULL,
-	last_name VARCHAR(30) NOT NULL,
-	customer_email VARCHAR(20) NOT NULL,   
+	customer_email VARCHAR(30) NOT NULL,   
 	customer_password VARCHAR (20) NOT NULL,
     created_at DATETIME,
     PRIMARY KEY(id)
 );
 
--- Customers Table
-CREATE TABLE customers (
-	id INT NOT NULL AUTO_INCREMENT,
-	first_name VARCHAR(20) NOT  NULL,
-	last_name VARCHAR(30) NOT NULL,
-	customer_email VARCHAR(20) NOT NULL,   
-	customer_password VARCHAR (20) NOT NULL,
-    created_at DATETIME,
-    PRIMARY KEY(id)
-);
 INSERT INTO customers (first_name, last_name, customer_email, customer_password, created_at)
 VALUES ('Ben', 'Chapman', 'bchapman@yahoo.com', 'Chapb*1234', now()),
 ('Rhett', 'Buckland', 'rbuckland@gmail.com', 'Burkr@0834', now()),
@@ -118,18 +98,19 @@ SELECT * FROM customers;
 CREATE TABLE customers_addresses (
 	id INT NOT NULL AUTO_INCREMENT,
     customer_id INT NOT NULL,
-	street_address VARCHAR(30) NOT NULL,
+	street_address VARCHAR(40) NOT NULL,
 	city VARCHAR(20) NOT NULL,
 	state VARCHAR(20) NOT NULL,
-	zip_code NCHAR (10),
+	zip_code NCHAR (15),
     country VARCHAR(20) NOT NULL,  
-    phone_number VARCHAR(20) NOT NULL,
+    phone_number VARCHAR(30) NOT NULL,
     created_at DATETIME,
 	PRIMARY KEY (id),
     FOREIGN KEY (customer_id) REFERENCES customers (id)
 );
-ALTER TABLE customers_addresses
-MODIFY phone_number VARCHAR(30);
+ALTER TABLE customers_addresses CHANGE zip_code zip_code NCHAR(10);
+SHOW COLUMNS FROM customers_addresses;
+
 INSERT INTO customers_addresses (customer_id, street_address, city, state, zip_code,
 country, phone_number, created_at)
 VALUES (1, '6, James Avenue', 'Hopkinsville', 'Syndney', '25289', 'Australia', '497-267-8777', now()),
@@ -145,14 +126,11 @@ SELECT * FROM customers_addresses;
 CREATE TABLE orders (
 	id INT NOT NULL AUTO_INCREMENT,
 	customer_id INT NOT NULL,
-    order_amount FLOAT NOT NULL,
+    order_amount DECIMAL(10,2) NOT NULL,
    	created_at DATETIME,
 	PRIMARY KEY (id),
 	FOREIGN KEY (customer_id) REFERENCES customers (id)
 );
-ALTER TABLE orders
-MODIFY order_amount DECIMAL(10, 2);
-
 INSERT INTO orders (customer_id, order_amount, created_at)
 VALUES (2, '10000', now()),
 (4, '25000', now()),
@@ -162,7 +140,6 @@ VALUES (2, '10000', now()),
 
 SELECT * FROM orders;
 
--- OrderDetail Table
 CREATE TABLE order_items (
 	id INT NOT NULL AUTO_INCREMENT,
 	order_id INT NOT NULL,
@@ -174,11 +151,14 @@ CREATE TABLE order_items (
     FOREIGN KEY (order_id) REFERENCES orders (id),
     FOREIGN KEY (product_id) REFERENCES products (id)
 );
-INSERT INTO order_items ( order_id, product_id, quantity, unit_price, total_amount)
-VALUES (1, 13, '2', '5000', 10000),
-(2, 14,'1', 10000, 20000),
-(3, 15, '1', 25000, 25000),
-(4, 16, '2', 18000, 36000),
-(5, 13, '3', 15000, 45000);
+
+INSERT INTO order_items (order_id, product_id, quantity, unit_price, total_amount)
+VALUES (1, 1, '2', '5000', '10000'),
+(2, 2,'1', '10000', '20000'),
+(3, 3, '1', '25000', '25000'),
+(4, 4, '2', '18000', '36000'),
+(5, 1, '4', '5000', '20000');
 
 SELECT * FROM order_items;
+
+
