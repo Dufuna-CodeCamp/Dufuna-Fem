@@ -161,6 +161,16 @@ aside {
     border: 1px solid rgb(134, 12, 12);
 }
 
+.error-block {
+    color: red;
+    font-size: 0.7rem;
+}
+
+.error-block2 {
+    color:tomato;
+    font-size: 0.8rem;
+}
+
 footer {
     padding: 20px 30px;
 }

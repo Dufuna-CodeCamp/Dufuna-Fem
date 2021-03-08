@@ -34,15 +34,17 @@
         </section>
 
         <section class = "main-form">
-            <form id = "form">
+            <form id = "form" method="POST">
                 <div class = "form-container">
                     <div class = "form-input">
                         <label for = "first-name">First Name</label>
                         <input type = "text" name = "first-name" id = "first-name" />
+                        <span class="error-block"></span>
                     </div>
                     <div class = "form-input">
                         <label for = "last-name">Last Name</label>
                         <input type = "text" name = "last-name" id = "last-name" />
+                        <span class="error-block"></span>
                     </div>
                     <div class = "form-input">
                         <label for = "other-name">Other Names</label>
@@ -51,18 +53,22 @@
                     <div class = "form-input">
                         <label for = "phone-number">Phone Number</label>
                         <input type = "tel" name = "phone-number" id = "phone-number" />
+                        <span class="error-block"></span>
                     </div>
                     <div class = "form-input">
                         <label for = "email">Email Address</label>
                         <input type = "email" name = "email" id = "email" />
+                        <span class="error-block"></span>
                     </div>
                     <div class = "form-input">
                         <label for = "password">Password</label>
                         <input type = "password" name = "password" id = "password" />
+                        <span class="error-block"></span>
                     </div>
                     <div class = "form-input">
                         <label for = "password2">Confirm Password</label>
                         <input type = "password" name = "password2" id = "password2" />
+                        <span class="error-block"></span>
                     </div>
                     <div class = "check-input">
                         <input type = "checkbox" id = "terms" name = "terms" />
@@ -72,7 +78,9 @@
                     </div>
 
                     <div class = "btn-con">
-                        <a href = "#" class = "btn-signup">SIGN UP</a>
+                        <div class = "btn-con">
+                            <button type = "submit" class = "btn-signup">sign up</button>
+                        </div>
                     </div>
                 </div>
             </form>
@@ -118,6 +126,7 @@
 
         <p class = "copyright">Copyright 2020 InfinitySparkles.com All rights reserved.</p>
     </footer>
-    
+    <script src="../DOM/signup.js"></script>
+
 </body>
 </html>
