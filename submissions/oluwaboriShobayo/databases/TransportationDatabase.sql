@@ -11,7 +11,6 @@ CREATE TABLE passengers (
 	primary key(id)
 );
 
-SELECT * FROM passengers;
 
 CREATE TABLE trips (
 	id INT NOT NULL AUTO_INCREMENT,
