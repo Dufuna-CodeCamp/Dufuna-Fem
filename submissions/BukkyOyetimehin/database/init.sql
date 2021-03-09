@@ -34,7 +34,12 @@ CREATE TABLE admin_Login (
     created_at DATETIME,
 	PRIMARY KEY (id)
     );
-INSERT INTO admin_Login (full_name, admin_email, admin_password, admin_phone, created_at)
+USE fashi_online_store;
+ALTER TABLE admin_Login
+RENAME TO admin_login;
+SHOW TABLES;
+
+INSERT INTO admin_login (full_name, admin_email, admin_password, admin_phone, created_at)
 VALUES ('Ben Ellison', 'bellisongmail.com', 'info@1234', '950-830-3729', now()),
 ('Danika Marshall', 'dmarshall@gmail.com', 'workflow%#1105', '226-813-4145', now()),
 ('Linda McGrath', 'lmcgrath@gmail.com', 'shalom**203', '430-646-2808', now());
