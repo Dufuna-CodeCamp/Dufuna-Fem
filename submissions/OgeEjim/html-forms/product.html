@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Product Page</title>
     <link rel="stylesheet" type="text/css" href="../CSS/style/styles.css">
     <link rel="stylesheet" type="text/css" href="../CSS/style/mediaquery.css">
     <link href="link" rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Imbue&display=swap" rel="stylesheet">
 </head>
-<body> 
+<body>
     <!-- The NavBar Section -->
     <nav> 
         <img src="../HTML/Images/logo.png" class="logo">
@@ -19,42 +19,43 @@
             <li><a href="signup.html" >Sign-Up</a></li>
         </ul>  
     </nav>
-    <section id="page">
-        <div class="half contact_left">
-            <img src="../HTML/Images/call.png" style="height: 35px !important">
-            <h3><strong>Please contact us via these numbers</strong></h3>
-            <p class="number">+123 803 303 0000<p>
-            <p class="number">+123 816 710 6842</p>
-            
-            <img src="../HTML/Images/mail.jpg" class="mail_icon" style="height: 85px !important">
-            <h3><strong>Email Address:</strong></h3>
-            <p style="padding-left: 75px;" class="p1">support@moreconfections.com</p>
-            
-            <h3>Or Connect with us:</h3>
-            <a href="facebook.com"><img src="../HTML/Images/facebook.png"></a>
-            <a href="twitter.com"><img src="../HTML/Images/twitter.png"></a>
-            <a href="gmail.com"><img src="../HTML/Images/gmail.png"></a>
-            <a href="youtube.com"><img src="../HTML/Images/youtube.png"></a>
-        </div>
-        <div class="half">
-            <div class="form_box">
-                <div class="centered">
-                    <img src="../html/Images/mail.jpg">
-                    <p><strong>Or better still send us a message</strong></p>
+
+    <!-- Page Content -->
+    <section>
+        <div class="page_content">
+            <div class="full_flex">
+                <div class="half_page">
+                    <div class="img_box"><img src="../HTML/Images/bluewhiteshirt.jpg"></div>
                 </div>
-                <form action="#" method="POST" enctype="application/x-www-form-urlencoded">
-                    <input type="text" name="fullname" placeholder="Fullname" id="fullname" /><br>
-                    <input type="text" name="email" placeholder="Email Address" id="email" /><br>
-                    <input type="text" name="subject" placeholder="Subject" id="subject"/><br>
-                    </p>
-                    <label>Message</label> <br>
-                    <textarea name="comments" id="comments" cols="70" rows="7"></textarea> <br><br>
-                    <button style="float: right;"><strong>SEND</strong></button>
-                 </form>
+                <div class='half_page'>
+                    <h3> BLUE-WHITE COLLAR TEE SHIRT</h3>
+                    <h3>Brand: Polka-dot</h3>
+                    <h3>Quantity:<input type="text" placeholder="2"></h3>
+                    <h3>Price: $150</h3>
+                    <button><strong>BUY NOW</strong></button>
+                </div>
+            </div>
+            <div class='full_page'>
+                <h3>DESCRIPTION</h3>
+                <p>This is a shirt you can put on all day. This polka dot designed shirt guarantees maximum comfort for whoever wears. The strength of material assures that it is long lasting from the moment it goes off the shelf.</p>
+            </div>
+            <div class="product_section">
+                <h3>RELATED PRODUCTS</h3>
+                <!-- <div class=""> -->
+                <div class="full_flex product_list">
+                    <div class="quarter_page">
+                        <img src="../HTML/Images/redtennisshoes.jpg"><br>Red Tennis shoes<br> Price: $200
+                    </div>
+                    <div class="quarter_page">
+                        <img src="../HTML/Images/blackofficeShoes.jpg"><br>Black Office shoes<br> Price: $350
+                    </div>
+                    <div class="quarter_page">
+                        <img src="../HTML/Images/redhighheeledshoes.jpg"><br>Red High-heeled shoes<br> Price: $230
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
     <!-- Footer Section starts -->
     <footer>
         <section class="footer">
