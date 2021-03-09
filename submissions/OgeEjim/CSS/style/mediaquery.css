@@ -131,7 +131,10 @@
     text-indent: 60px;
     margin-right: 0%;
     flex-direction: row;
-  
+      }
+    .centered {
+      padding-left: 50px;
+      text-align: center;
     }
   .footer .col {
     width: 100%;
