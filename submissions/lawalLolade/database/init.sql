@@ -147,12 +147,12 @@ SELECT * FROM order_items;
 SHOW TABLES;
 
 UPDATE products
-SET product_image = 'images/Prod2.jpeg'
+SET product_image = 'https://images.bunches.co.uk/products/large/spring-garden-1.jpg'
 WHERE id = 1;
 
 SELECT * FROM products;
 
 UPDATE products
-SET product_image = 'images/Carnation4.png'
+SET product_image = 'https://images.bunches.co.uk/products/large/spring-roses-1.jpg'
 WHERE id = 2;
 
