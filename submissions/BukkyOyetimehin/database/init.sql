@@ -63,6 +63,10 @@ CREATE TABLE products (
     FOREIGN KEY (category_id) REFERENCES categories (id),
 	FOREIGN KEY (admin_login_id) REFERENCES admin_login (id)
 );
+USE fashi_online_store;
+ALTER TABLE products CHANGE Brand brand VARCHAR(100);
+SHOW COLUMNS FROM products;
+
 INSERT INTO products (product_name, brand, category_id, product_description,
  product_image, product_price, stock_level, product_status, admin_login_id, created_at)
 VALUES ('Blue White Collar Tee Shirt', 'Polka Dot', '1', 
