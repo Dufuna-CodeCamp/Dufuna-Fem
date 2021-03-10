@@ -1,0 +1,152 @@
+@media(max-width: 768px) {
+  nav ul li {
+    font-size: 13px;
+    margin-right: 20px;
+  }
+  #page {
+    display: block;
+    max-width: 900px;
+    margin: 30px auto;
+    text-align: center;
+  }
+  #page .half {
+    width: 100%;
+    text-align: center;
+  }
+  #page .half h1 {
+    font-size: 40px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #0066F5;
+    margin: 120px 0 30px 50px;
+  }     
+  #page p {
+    margin: 10px 0 10px 50px;
+    font-size: 13px;
+    text-align: center;
+  }
+  .contact_left {
+    padding-bottom: 20px;
+  }
+  .contact_left p {
+    text-align: center;
+    padding-left: 0%;
+    padding-right: 65px;
+  }
+  .contact_left .p1 {
+    padding-right: 120px;
+    padding-left: 0%;
+    text-align: center;
+  }
+  .form_box {
+    margin: 22px 18px 18px 22px;
+  }
+  /* footer */
+  .footer {
+    padding:10px 0;
+  }
+  .footer .col {
+    width: 50%;
+    text-align: left;
+  }
+  .footer .col_center input  {
+    max-width: 160px;
+  }
+  .footer .col_right {
+    width: 100%;
+    margin-left: 50%;
+  }
+  .footer .col_right img {
+    width: 30px;
+    height: 20px;
+    padding: 3px;
+    padding-left: 0;
+    margin-right: 5px;
+    display: inline-block;
+    border-radius: 2px;
+  }
+}
+
+/* Mobile */
+@media(max-width: 556px){
+  nav {
+    margin-bottom: 130px;
+  }
+  nav ul {
+    display: block;
+    float: none;
+    background-color: #0066F5;
+    margin-top: -20px;
+    padding-bottom: 20px;
+  }
+  nav ul li {
+    display: block;
+    font-size: 13px;
+  }
+  .page_content {
+    padding: 30px 20px;
+  }
+  .full_flex {
+    display: block;
+  }
+  .half_page {
+    width: 100%;
+  }
+  .img_box {
+    display: block;
+    width: 100%;
+    height: 200px;
+  }
+  #page .half h1 {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  #page p {
+    margin-right: 20px;
+    text-align: left;
+  }
+  .product_section {
+    padding: 10px 0;
+  }
+  .quarter_page {
+    width: 45%;
+    margin: 0 auto 20px;
+  }
+  .quarter_page img {
+    display: inline-block;
+    width: 100%;
+    height: 150px;
+  }
+  .contact_left p {
+    padding-left: 175px;
+    text-align: center
+  }
+  .contact_left .p1 {
+    padding-right: 0%;
+    padding-left: 400px;
+    text-indent: 60px;
+    margin-right: 0%;
+    flex-direction: row;
+  }
+    .centered {
+      padding-left: 50px;
+      text-align: center;
+  }
+  .footer .col {
+    width: 100%;
+  }
+  .footer .col_center {
+    margin-left: 40px;
+  }
+  .footer .col_center input  {
+    max-width: 230px;
+  }
+  .footer .col_right {
+    width: 100%;
+    margin-left: 40px;
+  }
+}
