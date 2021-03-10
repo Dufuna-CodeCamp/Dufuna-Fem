@@ -24,8 +24,6 @@
                 }
         }
     }
-    //$data = new Data();
-    //$customer_orders = isset($_COOKIE['data']) ? unserialize($_COOKIE['data']) : $data->list($id);
     if (isset($_COOKIE["customer_orders"])) {
         $customer_orders = json_decode($_COOKIE["customer_orders"], true);
     } else {
