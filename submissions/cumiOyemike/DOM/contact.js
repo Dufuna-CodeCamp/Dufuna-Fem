@@ -50,7 +50,7 @@ function nameValidation(event) {
 
 
 
-function form2(e) {
+function contactForm(e) {
     emailFieldValidation(e);
     nameValidation(e);
     required(subject, e,"Please enter a message subject");
@@ -59,4 +59,4 @@ function form2(e) {
     return true;
 }
 
-submitForm.addEventListener("submit", form2);
+submitForm.addEventListener("submit", contactForm);
