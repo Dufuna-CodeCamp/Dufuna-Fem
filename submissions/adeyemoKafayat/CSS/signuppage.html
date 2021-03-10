@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="keywords"
+      content="create account, new customer, signup, new account"
+    />
+    <meta name="description" content="Sign Up Page" />
+    <meta name="author" content="Adeyemo Kafayat" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="../css/signup.css" />
+    <title>Create new Account</title>
+  </head>
+
+  <body class="container">
+    <div class="header">
+      <header>
+        <h2>AKA Wears</h2>
+      </header>
+
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li><a href="../html/product.html"> Shop </a></li>
+          <li><a href="./contactForm.html"> Contact </a></li>
+          <li><a href="./signupPage.html"> Sign Up </a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="inner-container">
+      <div class="main-block">
+        <h3>Register An Account</h3>
+        <p>Registering an account gives you access to sweet promo and events available to only registered customers</p>
+        <p>
+          Already got an account?
+          <a href="#" id="existing-account-signin"> Sign In </a>
+        </p>
+      </div>
+
+      <div class="side-bar">
+        <!--Signup Form-->
+      <form class="form">
+        <!--Customer Details-->
+        <label for="firstname"> First Name: </label> <br />
+        <input type="text" name="firstname" id="firstname" /> <br /><br />
+        <label for="lastname"> Last Name: </label> <br />
+        <input type="text" name="lastname" id="lastname" /> <br /><br />
+        <label for="email"> Email: </label>
+        <input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="Enter your email address here"
+        />
+        <br /><br />
+        <label for="address"> Address: </label> <br />
+        <textarea rows="5" cols="50" name="address" id="address"> </textarea>
+        <br /><br />
+        <!--Password-->
+        <label for="password"> Password: </label> <br />
+        <input type="password" name="password" id="password" /> <br /><br />
+        <label for="confirmpassword"> Confirm Password: </label> <br />
+        <input type="password" name="confirm password" id="cpassword" />
+        <br /><br />
+        <!--T&C-->
+          <input type="checkbox" name="termsandcondtions" id="termsandcondtions" /> 
+        <label class="termsandconditionsLabel" for="termsandcondtions"> I agree to the Terms and Conditions </label><br />
+        <!--SubmitButton-->
+        <button type="send" id="send">SIGN UP</button>
+        <br /><br />
+      </form>
+      </div>
+      <!-- </div> -->
+    </div>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-1-2">
+          <div class="footer-1">
+            <p>About Us</p>
+            <p>Contact Us</p>
+            <p>Terms and Conditions</p>
+          </div>
+
+          <div class="footer-2">
+            <form class="form-2">
+              <label for="newsletter"> Be the first to be in the know! </label>
+              <input
+                type="text"
+                name="email"
+                id="submit"
+                placeholder="Enter your email address here"
+              />
+              <br />
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-3">
+          <p>Find us on:</p>
+          <div class="footer-icons">
+            <a href="https://www.Twitter.com">
+              <img src="../css/twitter.png" />
+            </a>
+            <a href="https://www.Instagram.com">
+              <img src="../css/Instagram.png" />
+            </a>
+            <a href="https://www.Facebook.com">
+              <img src="../css/facebook.png" />
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>Copyright 2021 akawears.com. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

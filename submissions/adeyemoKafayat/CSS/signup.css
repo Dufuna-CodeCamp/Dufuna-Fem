@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: orange;
+}
+
+a:hover {
+    color: purple;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+.header {
+    background-color: black;
+    color: orange;
+    padding: 10px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.navbar {
+    text-align: right;
+    text-decoration: none;
+    color: orange;
+    margin-right: 40px;
+}
+
+.navbar-list {
+    list-style-type: none;
+}
+
+.navbar-list li {
+    display: inline;
+    margin: 15px;
+    text-decoration: none;
+}
+
+.container {
+    background-color: orange;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.6em;
+}
+
+.inner-container {
+    margin: 30px;
+    overflow: hidden;
+}
+
+.my-form {
+    display: block;
+}
+
+#existing-account-signin {
+    color: purple;
+    text-decoration: underline;
+}
+
+.main-block {
+    box-sizing: border-box;
+    float: left;
+    padding: 15px;
+    margin-top: 150px;
+    text-align: center;
+    width: 50%;
+}
+
+.side-bar {
+    float: right;
+    width: 50%;
+    padding: 25px;
+    columns: white;
+    border: 0.1px;
+    border-radius: 10px;
+    background-color: beige;
+    text-align: justify;
+}
+
+input,
+textarea {
+    width: 100%;
+    height: 50px;
+}
+
+#sidebar {
+    border-radius: 0.4em;
+    padding: 5px;
+    border: azure;
+}
+
+.termsandconditionsRow {
+    display: flex;
+}
+
+.termsandcondtionsLabel {
+    margin-left: 10px;
+}
+
+input[type="checkbox"] {
+    width: 5%;
+    height: auto;
+}
+
+#send {
+    background-color: black;
+    border: none;
+    color: orange;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.footer {
+    background-color: black;
+    color: orange;
+    width: 100%;
+    padding: 30px 10px 15px;
+    margin: auto;
+    position: relative;
+    bottom: 0;
+}
+
+.footer-1,
+.footer-2,
+.footer-3 {
+    float: left;
+}
+
+.footer-1 {
+    text-align: left;
+    width: 33.3%;
+}
+
+.footer-2 {
+    text-align: center;
+    width: 33.3%;
+}
+
+.footer-3 {
+    text-align: right;
+    width: 33.3%;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#submit {
+    text-align: center;
+}
+
+@media (max-width: 360px) {
+    .navbar {
+        text-align: left;
+    }
+    .navbar-list li {
+        display: block;
+    }
+    .main-block {
+        width: 100%;
+        margin-top: 0%;
+    }
+    .side-bar {
+        width: 100%;
+    }
+    input[type="checkbox"] {
+        width: 5%;
+        height: auto;
+    }
+    .footer-1 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .footer-2 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .footer-3 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .footer-bottom {
+        width: 100%;
+        text-align: center;
+    }
+}
