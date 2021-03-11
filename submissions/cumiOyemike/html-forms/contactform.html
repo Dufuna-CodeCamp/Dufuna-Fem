@@ -65,19 +65,23 @@
                     <form action="#" id="form2" method="POST" enctype="multipart/form-data">
                         <div class="contact-input">
                             <input type="text" name="fullname" id="fullname" placeholder="Full Name"/>
+                            <span class = "error-block"></span>
                         </div><br />
                         <div class="contact-input">
                             <input type="email" name="email" id="email" placeholder="Email Address"/>
+                            <span class = "error-block"></span>
                         </div><br />
                         <div class="contact-input">
                             <input type="text" name="subject" id="subject" placeholder="Subject"/>
+                            <span class = "error-block"></span>
                         </div><br />
                         <div class="contact-input">
                             <label for="comments">Message</label>
                             <textarea name="comments" id="comments" rows="10"></textarea>
+                            <span class = "error-block"></span>
                         </div>
                         <div class="contact-btn">
-                            <a href ="#" class="btn-contact">SEND</a>
+                            <button type="submit" class="btn-contact">SEND</a>
                         </div>
                     </form>
                 </div>
@@ -123,6 +127,6 @@
     
             <p class = "copyright">Copyright 2020 InfinitySparkles.com All rights reserved.</p>
         </footer>
-        
+        <script src="../DOM/contact.js"></script>
     </body>
 </html>
