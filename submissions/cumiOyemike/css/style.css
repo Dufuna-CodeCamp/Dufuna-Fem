@@ -144,16 +144,17 @@ aside {
 }
 
 .btn-con {
-    text-align: center
+    text-align: center;
+
 }
 
-.btn-signup, .btn-contact {
-    text-transform: uppercase;
-    background-color: rgb(134, 12, 12);
-    color: #FFF;
+.btn-signup, .contact-btn [type=submit] {
+    background-color:  rgb(134, 12, 12);
+    color: #fff;
     font-size: 0.8rem;
     padding: 10px 30px;
 }
+
 
 .btn-signup:hover, .btn-contact:hover {
     background-color: #FFF;
@@ -307,6 +308,16 @@ h3 {
 
 .product-desc p {
     line-height: 1.5;
+}
+
+.error-block {
+    color: red;
+    font-size: 0.7rem;
+}
+
+.error-block2 {
+    color:tomato;
+    font-size: 0.8rem;
 }
 
 .error {

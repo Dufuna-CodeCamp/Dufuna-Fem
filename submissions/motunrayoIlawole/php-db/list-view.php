@@ -1,6 +1,6 @@
 <?php
 
-require("connection.php");
+require_once("connection.php");
 
 $allCustomers = "";
 
@@ -29,6 +29,7 @@ if (isset($_COOKIE["customers"])) {
 }
 
 if (sizeof($allCustomers) > 0) {
+    
     echo "<h3>List of registered customers</h3>";
 
     echo "<table>";
@@ -40,13 +41,14 @@ if (sizeof($allCustomers) > 0) {
             echo "<th>Action</th>";
         echo "</tr>";
 
-        while ($row = $allCustomers) {
+        foreach ($allCustomers as $row) {
+
             echo "<tr>";
                 echo "<td>" . $row["id"] . "</td>";
                 echo "<td>" . $row["first_name"] . " " . $row["last_name"] . "</td>";
                 echo "<td>" . $row["email_address"] . "</td>";
                 echo "<td>" . $row["created_at"] . "</td>";
-                echo "<td> <a href = '#'><button>View</button></a> </td>";
+                echo "<td> <a href = 'orders_list.php'><button>View</button></a> </td>";
             echo "</tr>";
 
         }
