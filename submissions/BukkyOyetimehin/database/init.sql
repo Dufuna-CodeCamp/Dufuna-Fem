@@ -67,17 +67,22 @@ USE fashi_online_store;
 ALTER TABLE products CHANGE Brand brand VARCHAR(100);
 SHOW COLUMNS FROM products;
 
-INSERT INTO products (product_name, brand, category_id, product_description,
+USE fashi_online_store;
+ALTER TABLE products
+DROP COLUMN brand;
+SHOW COLUMNS FROM products;
+
+INSERT INTO products (product_name, category_id, product_description,
  product_image, product_price, stock_level, product_status, admin_login_id, created_at)
-VALUES ('Blue White Collar Tee Shirt', 'Polka Dot', '1', 
+VALUES ('Blue White Collar Tee Shirt', '1', 
 'This is a shirt you can put on all day.
 This polka dot designed shirt guarantees maximum comfort for whoever wears it.',
 '../html/images/shirt.jpg', '5000', '100', 'in stock', 1, now()),
-('Red Tennis Shoes', 'Adidas', 5, 'Original pair of Tennis Shoes. Light, Snappy and Fast; Easy ON/EASY OFF',
+('Red Tennis Shoes', 5, 'Original pair of Tennis Shoes. Light, Snappy and Fast; Easy ON/EASY OFF',
 '../html/images/shoes2.jpg', '10000', '200', 'in stock', 2, now()),
-('Black Office Shoes', 'Kenneth Cole', 3, '100% Synthetic, Synthetic sole, Classic Lace-up, Textile lining',
+('Black Office Shoes', 3, '100% Synthetic, Synthetic sole, Classic Lace-up, Textile lining',
    '../html/images/shoes3.jpg', '25000', '0', 'out of stock', 3, now()),
-('Red High-heeled Shoes', 'Steve Madden', 4, 'Faux Suede, Court heel, Pointed toe, Slip-on',
+('Red High-heeled Shoes', 4, 'Faux Suede, Court heel, Pointed toe, Slip-on',
 '../html/images/shoes.jpg', '18000', '50', 'low stock', 2, now());
   
   SELECT * FROM products;
