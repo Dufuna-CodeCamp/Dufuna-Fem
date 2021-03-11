@@ -1,3 +1,4 @@
+CREATE DATABASE transportation_company;
 USE transportation_company;
 
 -- table of passenger details
@@ -7,7 +8,7 @@ CREATE TABLE passenger_details (
     full_name VARCHAR(100) NOT NULL,
     sex VARCHAR(2) NOT NULL,
     age TINYINT unsigned,
-    PRIMARY KEY (passenger_id)
+    PRIMARY KEY (id)
     );
     
 -- table of trip details
