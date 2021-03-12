@@ -11,6 +11,7 @@ CREATE TABLE registered_passengers (
     created_at DATETIME,
     PRIMARY KEY(id)
 );
+ALTER TABLE registered_passengers MODIFY full_name VARCHAR(100);
 
 /* Creating a table for passengers trip record */
 CREATE TABLE trip_records (
@@ -40,14 +41,14 @@ CREATE TABLE accident_records (
 SHOW TABLES;
 SELECT * FROM accident_records;
 
-ALTER TABLE accident_records CHANGE trip_records_id registered_passengers_id INT NOT NULL;
-
 ALTER TABLE accident_records
 DROP FOREIGN KEY accident_records_ibfk_1;
+
+ALTER TABLE accident_records CHANGE trip_records_id registered_passengers_id INT NOT NULL;
 
 ALTER TABLE accident_records
 ADD FOREIGN KEY (registered_passengers_id) REFERENCES registered_passengers (id);
 
 
-show create table accident_records
+show create table accident_records;
 
