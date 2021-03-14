@@ -3,74 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BUSYBASKET PACKAGING</title>
+    <title>BusyBasket Packaging </title>
+    <link rel="stylesheet" href="../CSS/myStyle.css">
+    <link rel="icon" href="../html/Image/favicon1.png">
 </head>
 <body>
-    <h2> BusyBasket Packaging</h2>
-    <p> It is the festive season, we are your best option for that gift items to your loved ones </p>
-    <nav> 
-        <table>
-            <tr>
-                <th><h4> Home </h4></th>
-                <th><h4> About Us </h4></th>
-                <th><h4> FAQ </h4></th>
-                <th><h4> Blog </h4></th>
-                <th><h4> Customer Feedback </h4></th>
-                <th><h4><a href="../html-forms/contactForm.html"> Contact Form </a></h4></th>
-                <th><h4><a href="productPage.html"> Products </a></h4></th>
-            </tr>
-        </table>
-    </nav> 
-    <section>
-        <h3> Product Feature </h3>
-            <h3><strong><em> Our Preferred Pack </em></strong></h3>
-                <p> We already have a well packed hampers for you to choose from with varying price range </p>
-                <img src="productImage/hamperBasket.jpg" > Price: N15,000 - N45,000
-            <h3><strong><em> My Customized Basket </em></strong></h3>
-                <p>You get to choose your preferred items for your basket. You also get to choose your basket. This enables you choose your customised package </p>
-                <img src="productImage/baskets.jpg"> Price range for baskets: N1,000 - N10,000
-            <h3><strong><em> Hampers </em></strong></h3>
-                <ul>
-                    <li><a href="#"> Fruit Hampers </a></li>
-                    <li><a href="#"> Grocery Hampers </a></li>
-                    <li><a href="#"> Wine and Confectionery </a></li>
-                    <li><a href="#"> Mixed Hampers </a></li>
-                    <li><a href="#"> Food Basket </a></li>
-                    <li><a href="#"> Corporate Hampers </a></li>
-                </ul>
-            </section>
-            <hr>
-            <footer>
-                <table>
-                    <tr> 
-                        <th> Useful Links </th>
-                        <th> Footer Menu </th>
-                    </tr>
-                    <tr>
-                        <td> FAQs </td>
-                        <td> About Us</td>
-                    </tr>
-                    <tr>
-                        <td> Return and Exchange </td>
-                        <td> Contact Us</td>
-                    </tr>
-                    <tr>
-                        <td> Clients Feedback </td>
-                        <td> Privacy Policy</td>
-                    </tr>
-                    <tr>
-                        <td> Terms and Condition </td>
-                        <td> Shop </td>
-                    </tr>
-                </table>
-                <hr>
-                <p> You can reach us on any of our social handles </p>
-                <ul>
-                    <li><a href="#"> Twitter </a></li>
-                    <li><a href="#"> Instagram </a></li>
-                    <li><a href="#"> Facebook </a></li>
-                </ul>
-                <p> BUSYBASKET PACKAGING &copy; 2020</p>
-            </footer>
+    <!--header section-->
+    <div class="header-container">
+        <div class="leftside">
+            <span> BusyBasket Packaging</span>
+        </div>
+        <div class="rightside"> 
+            <a  class="nav-items" href="productPage.html"> Product</a>
+            <a class="nav-list" href="../html-form/contactForm.html"> Contact Us</a>
+            <a class="nav-items" href="../html-form/signupForm.html"> SignUp</a>
+        </div>
+    </div>
+    <!-- main section-->
+    <!-- First Product-->
+    <section class="firstproduct-container">
+        <div class="firstsection">
+            <div class="box1">
+                <img src="../html/Image/hamperBasket2.jpg" alt="hamperbasket"> 
+            </div>
+            <div class="box2">
+                <span>OUR PREFFERED PACK  </span><br>
+                <span> Brand: Pre-packed selection </span><br>
+                <span> Quantity: <t>2</t></span><br>
+                <span> Price: ₦ 25,000 </span><br>
+                <button> Buy Now</button> <br>       
+            </div>
+        </div >
+        <div class="desc">
+            <p class="desc1"> Description</p>
+            <p class="desc2"> We already have a well packed hampers for you to choose from with varying price range. 
+                A favourite choice for our customers. Includes, 2 bottled wine ( a red wine and a fruit wine), 
+                2 beverage, 2 pack of cereal, one vegetable oil (3.8kg), 3 variety of chocolate pack and 
+                either one electric kettle or native material (depending on the price). 
+            </p>    
+        </div>
+    </section>
+    <!--Related Product-->
+    <div class="relatedproduct-container">
+        <h3> Product Features </h3>
+        <div class="otherproducts-container">
+            <div class="otherproducts">
+                <img src="../html/Image/wineHamper.jpg" alt=" Wine Basket">
+                <p>Wine and Confectionery basket</p>
+                <p> Price: ₦ 30,000 </p>
+            </div>
+            <div class="otherproducts">
+                <img src="../html/Image/fruitHamper2.jpg" alt="fruit basket">
+                <p> Just Fruits Basket </p>
+                <p> Price: ₦ 15,000 </p>
+            </div>
+            <div class="otherproducts">
+                <img src="../html/Image/coporateGift2.jpg" alt="Corporate pack">
+                <p> Corporate Packing </p>
+                <p> Price: ₦ 20,000 </p>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <footer class="footer-container">
+        <div class="footer-wrapper"> 
+            <div class="footer-box1">
+                <span><a href="../html-form/contactForm.html"> Contact Us</a></span>
+                <span><a href="#"> About Us</a></span>
+                <span><a href="#"> Terms and Conditions</a></span>
+            </div>
+            <div class="footer-box2">
+                <p>Sign up for our Newsletter</p>
+                <input type="email" placeholder="Enter your email address" name="email">
+                <button>SUBMIT</button>
+            </div>
+            <div class="footer-box3">
+                <p>CONNECT WITH US</p>
+                <span><a href=""><img src="../html/Image/facebooLogo.png" alt="facebook"></a></span>
+                <span><a href=""><img src="../html/Image/twitterLogo.png" alt="twitter"></a></span>
+                <span><a href=""><img src="../html/Image/gmailLogo.png" alt="gmail"></a></span>
+                <span><a href=""><img src="../html/Image/youtubeLogo.png" alt="youtube"></a></span>
+            </div>
+        </div>
+        <p class="copyright"> Copyright 2021 busybasket.com.All right reserved </p>
+    </footer>
 </body>
 </html>

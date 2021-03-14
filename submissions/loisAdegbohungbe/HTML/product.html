@@ -31,19 +31,24 @@
         <div class="product-section">
             <div class="product-box">
                 <div class="col-4 img-box">
-                    <img src="images/others/cooker7.jpg"image1" />
+                    <img src="images/others/cooker7.jpg" />
                 </div>
                 <div class="col-8 product-details">               
                     <p class="product-name">Maxi 4-Burner Gas Cooker</p> 
                     <p>Brand: Fast Burner Series</p>
-                    <p>Quantity: <span style="font-weight:normal"><input type="text" name="quantity" value="2" /></span></p>
-                    <p>Price: &#8358;50,400</p>
-                    <button class="buy-btn">BUY NOW</button>
+                    <p>Quantity: 
+                        <input type="number" name="quantity" id="quantity" value="1" />    
+                        <span class="error-block quantity-error"></span>
+                    </p>
+                    <p>Price: &#8358;<span id='price'>50400</span></p>
+                    <p>Shipping Cost: &#8358;<span id='shipping-cost'>25000</span></p>
+                    <p>Total Price: &#8358;<span id='total-cost'>75400</span></p>
+                    <button class="buy-btn" id="buy-btn">BUY NOW</button>
                 </div>
             </div>
             <div class="product-description">
                 <h3>Description</h3>
-                <p>Maxi 4-Burner is a omfortable and easy to use gas cooker. 
+                <p>Maxi 4-Burner is a comfortable and easy to use gas cooker. 
                 Cook your meals faster with this appliance and enjoy neatness and ease.
                 Its durability is sure and getting this, you have made a rich step to cooking your delicious meals.
                 </p>
@@ -82,8 +87,12 @@
             </div>
             <div class="col-4">
                 <p>Sign Up for our Newsletter</p>
-                <div><input type="text" name="email" placeholder="Enter your email address"/>
-                    <span><button type="submit" id="submit"><strong>submit</strong></button></span>
+                <div>
+                    <form id="newsletter-form">
+                        <input type="text" name="email" id="newsEmail" placeholder="Enter your email address"/>
+                        <span><button type="submit" id="submit"><strong>submit</strong></button></span>                                              
+                        <span class="error-block"></span>
+                    </form>
                 </div>
             </div>
             <div class="col-4 connect">
@@ -98,5 +107,7 @@
         </div>          
         <p class="copyright">Copyright 2020 louissastore.com All rights reserved.</p>
     </div>
+    <script src="../dom/product.js"></script>
+    <script src="../DOM//newsletter.js"></script></script>
 </body>
 </html>

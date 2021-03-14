@@ -39,13 +39,28 @@
            <div id="box">
              <img src="../HTML/IMAGES/email_logo.png" alt="email_logo" width="35px" height="30px" class="email_logo">
               <h3 id="info">Or better still send us a message</h3>
-              <p id="name">Full Name</p>
-              <p id="mail">Email Address</p>
-              <p id="subject">Subject</p>
-              <form>
-                 <label for="Message" class="message">Message:</label><br>
-                  <textarea rows="5" cols="40" name="message" id="message"></textarea> <br><br>
-                  <button type="send" id="send"><strong>SEND</strong></button>
+              <form method="post" id="form">
+                 <div class="group1">
+                        <label for="Full name" id="full">Full name:</label>
+                        <input type="text" name="fullname" id="fullName"/>
+                        <span class="error-block"></span>
+                 </div>
+                 <div class="group2">
+                        <label for="email" id="em">Email Address:</label>
+                        <input type="text" name="email" id="mail"/>
+                        <span class="error-block"></span>
+                 </div>
+                 <div class="group3">
+                        <label for="subject" id="sub">Subject:</label>
+                        <input type="text" name="subject" id="subject"/>
+                        <span class="error-block"></span>
+                 </div>
+                 <div class="group4">
+                        <label for="Message" class="message">Message:</label>
+                        <textarea rows="5" cols="40" name="message" id="message"></textarea>
+                        <span class="error-block"></span>
+                 </div>
+                 <button type="submit" id="send"><strong>SEND</strong></button>
              </form>
          </div>
      </section>
@@ -76,5 +91,6 @@
                     <p>All rights reserved.</p>
              </div>
       </footer>
+      <script src="../DOM/contactusValidation.js"></script>
 </body>
 </html>

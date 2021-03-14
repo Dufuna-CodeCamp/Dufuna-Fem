@@ -1,0 +1,300 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: #faf6f2;
+    line-height: 1.5;
+    height: 100%;
+}
+
+
+/*Header*/
+
+.navbar {
+    overflow: hidden;
+    background-color: #a79edd;
+    padding: 25px 56px 0 20px;
+    line-height: 50px;
+}
+
+.navbar a {
+    float: left;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.nav-bar a .logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.navbar-link {
+    float: right;
+}
+
+
+/* Main*/
+
+#name-parent {
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.column-one {
+    float: left;
+    width: 40%;
+    margin: 20px 0 20px 45px;
+    padding-top: 80px;
+    text-align: center;
+}
+
+.column-one h2 {
+    padding: 0;
+    margin: 0;
+}
+
+.column-one p {
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+.column-one img {
+    width: 35px;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    margin-top: 12px;
+}
+
+.column-two {
+    float: right;
+    width: 45%;
+    border: 2px solid grey;
+    padding: 40px;
+    padding-top: 15px;
+    margin: 20px 50px 20px 0;
+    border-radius: 20px;
+}
+
+.letter {
+    text-align: center;
+}
+
+.column-two img {
+    width: 35px;
+    height: 35px;
+}
+
+.column-two h2 {
+    font-size: 20px;
+    margin: 0;
+    padding-bottom: 20px;
+    margin-top: 10px;
+}
+
+.input_field .error-block {
+    color: red;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.column-two input[type="text"],
+.column-two input[type="email"] {
+    width: 100%;
+    margin: 20px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid grey;
+}
+
+label {
+    margin: 10px 0;
+    color: grey;
+}
+
+.column-two button {
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+    width: 100px;
+    margin-top: 10px;
+    background-color: #a79edd;
+    color: #fff;
+    font-weight: bold;
+    float: right;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-top: 2px solid grey;
+    resize: none;
+    margin: 10px 0;
+}
+
+
+/* footer*/
+
+.main-footer {
+    background-color: #a79edd;
+}
+
+.first-column,
+.second-column,
+.third-column {
+    float: left;
+    width: 33.3%;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.main-footer p {
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.first-column ul {
+    list-style: none;
+}
+
+.main-footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.second-column input {
+    margin-top: 2px;
+    height: 30px;
+    border: 1px solid #555;
+}
+
+.second-column #footer-signup-btn {
+    color: #a79edd;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: #a79edd;
+    font-size: 14.7px;
+}
+
+.third-column img {
+    width: 35px;
+    height: 30px;
+    margin-right: 7px;
+}
+
+
+/* @media query */
+
+@media screen and (max-width: 800px) {
+    .column-one,
+    .column-two {
+        float: none;
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    #name-parent {
+        padding: 30px;
+    }
+    .column-one {
+        padding: 8px;
+        text-align: center;
+    }
+    .column-two button {
+        padding: 8px;
+        margin-top: 5px;
+    }
+    .column-two {
+        padding-bottom: 60px;
+    }
+    /* footer */
+    .first-column,
+    .second-column {
+        width: 50%;
+        float: left;
+    }
+    .third-column {
+        float: none;
+        margin-left: 38px;
+    }
+    .second-column input {
+        height: 40px;
+    }
+     ::placeholder {
+        font-size: 14.7px;
+    }
+    .main-footer p {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+
+/*@media query */
+
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        width: 70%%;
+        display: block;
+        text-align: left;
+        padding: 4px;
+    }
+    .navbar-link {
+        float: none;
+    }
+    /*name-parent*/
+    .column-one,
+    .column-two {
+        width: 100%;
+    }
+    .column-one {
+        text-align: center;
+        font-size: 12px;
+    }
+    .column-two h2 {
+        font-size: 14px;
+    }
+    /*footer*/
+    .first-column,
+    .second-column,
+    .third-column {
+        width: 80%;
+        margin-top: 8px;
+        display: block;
+        float: left;
+    }
+    .second-column,
+    .third-column {
+        margin-left: 35px;
+    }
+    .main-footer p {
+        margin-top: 20px;
+        padding-bottom: 30px;
+        font-size: 18px;
+        text-align: center;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}

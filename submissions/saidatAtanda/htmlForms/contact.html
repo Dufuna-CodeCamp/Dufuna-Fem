@@ -2,88 +2,84 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Contact Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/contact.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>venister</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="nav-header">
-          <!--I designed the logo myself-->
-            <img src="../html/images/my-logo.jpg" width="30">
-            <h1><a href="#">VENISTER</a></h1>
-            <h6>YourFavOnlineBookStore</h6></div>
-        <div class="nav-content">
-          <ul>
-            <li><a href="#">Home</a></li>
-              <li><a href="../html/products.html">Products</a></li>
-                <li><a href="#">Orders</a></li>
-                  <li><a href="sign-up.html">Sign Up</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </div>
+    <header class="header">
+      <nav class="nav-bar">
+        <h1 class="brand-name">VENISTER <span>YourFavOnlineBookStore</span></h1>
+        <ul class="nav-pages">
+          <li><a href="../html/products.html">Product Page</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="sign-up.html">Sign-up</a></li>
+        </ul>
       </nav>
     </header>
     <section>
-      <div class="contact">
-        <div class="contact-form">
-          <h1>CONTACT US</h1>
-          <h3>We are just a click away!</h3>
-            <form action="product.html" method="post" enctype="application/x-www-form-urlencoded"><br>
-          <p>
-            <label for="firstname">FIRST NAME</label><br>
-              <input type="text" name="fullname" id="firstname" required><br>
-          </p>
-          <p>
-            <label for="lastname">LAST NAME</label><br>
-              <input type="text" name="fullname" id="lastname" required><br>
-          <p>
-          <p>
-            <label for="email">EMAIL ADDRESS</label><br>
-              <input type="email" name="email" id="email" required>
-          </p>
-          <p>Are you an existing customer?<br>
-            <input type="radio" name="yes-no" id="yes" value="yes">
-              <label for="yes">Yes</label>
-            <input type="radio" name="yes-no" id="no" value="no">
-              <label for="yes">No</label>
-          <p>HOW CAN WE HELP YOU TODAY?</p>
-            <label for="message">Please choose whichever is applicable to you</label>
-              <input list="message-list" name="message" id="message">
-                <datalist id="message-list">
-                  <option value="How to create an account"</option>
-                  <option value="Log In issues"</option>
-                  <option value="Setting up my profile"</option>
-                  <option value="Unable to purchase products"</option>
-                  <option value="Others"</option>
-                </datalist><br>
-            <p>
-            <label for="comments">Additional Details</label>
-              <textarea name="comments" rows="5" cols="50"></textarea><br>
-            <button type="submit">Submit</button>
-          </p>
-          </form>
+      <aside>
+        <div class="contact-us">
+          <img src="../html/images/call-logo.png" alt="call logo">
+          <h3>Please contact us via these numbers:</h3>
+            <p><a href="tel:+2349000000000">+234 9000000000</a></p>
+            <p><a href="tel:+2348022222222">+234 8022222222</a></p>
+          <img src="../html/images/message-logo.png" alt="message logo">
+          <h3>Email Address:</h3>
+            <p><a href="www.gmail.com" target="blank">hello@venister.com</a></p>
+          <h3>Or Connect with us</h3>
+          <ul>
+            <li><a href="www.facebook.com"><img src="../html/images/facebook-logo.png"></a></li>
+            <li><a href="www.twitter.com"></a><img src="../html/images/twitter-logo.png"></li>
+            <li><a href="www.gmail.com"></a><img src="../html/images/gmail-logo.png"></li>
+            <li><a href="www.youtube.com"></a><img src="../html/images/youtube-logo.jpg"></li>
+        </ul>
+      </div>
+      </aside>
+      <main class="contact-form">
+        <div class="contact-message">
+        <img src="../html/images/message2-logo.png" alt="message logo">
+        <h3>Or better still send us a message</h3>
         </div>
-        <aside class="contact-us">
-          <h3>VENISTER BOOKSTORE</h3>
-            <p><a href="+2349000000000">+234 9000000000</a></p>
-            <p><a href="+2348022222222">+234 8022222222</a></p>
-            <p><a href="email">hello@venister.com</p>
-        </aside>
-        </div><hr>
+          <form action="#" method="post">
+              <p><input type="text" name="fullname" placeholder="Full Name" required></p>
+              <p><input type="text" name="email" placeholder="Email Address" required></p>
+              <p><input type="text" name="subject" placeholder="Subject" required></p>
+              <p>Message</p>
+              <textarea name="message-comments"></textarea>
+            <button type="submit" class="btn">Send</button>
+          </form>
+      </main>
+      </section>
         <footer>
-          <p><b>Sign Up for our Newsletter</b></p>
-            <input type="text" placeholder="Tpe your email address">
-              <button type="submit">Submit</button>
-          <p><a href="#">About Us</a></p>
-          <p><a href="#">Privacy</a></p>
-          <p><a href="#">Terms and Conditions</a></p>
-          <p><b>Connect with Us</b></p>
-            <a href="www.gmail.com"><img src="../html/images/gmail-logo.png" width="25"></a>
-            <a href="www.twitter.com"><img src="../html/images/twitter-logo.png" width="20"></a>
-            <a href="www.facebook.com"><img src="../html/images/facebook-logo.png" width="20"></a>
-        </footer><hr>
-  </body>
-    <footer>
-      <p>&copy;Copyright 2020 venister.com All rights reserved.</p>
-    </footer>
+          <div class="footer-properties">
+            <div class="contact">
+              <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+              </ul>
+            </div>
+            <div class="subscribe">
+              <form>
+                <h4>Sign Up for our Newsletter</h4>
+                <input type="text" placeholder="Type your email address">
+                <button type="submit" class="submit">Submit</button>
+              </form>
+            </div>
+            <div class="connect">
+              <h4>Connect with Us</h4>
+              <ul>
+                <li><a href="www.gmail.com"><img src="../html/images/gmail-logo.png"></a></li>
+                <li><a href="www.twitter.com"><img src="../html/images/twitter-logo.png"></a></li>
+                <li><a href="www.facebook.com"><img src="../html/images/facebook-logo.png"></a></li>
+                <li><a href="www.youtube.com"><img src="../html/images/youtube-logo.jpg"></a></li>
+              </ul>
+            </div>
+          </div>
+          <p>&copy;Copyright 2020 venister.com All rights reserved.</p>
+        </footer>
+      </body>
 </html>

@@ -26,25 +26,32 @@
             <p>Already got an account? <a href="#">Sign in</a></p>
         </div>
         <div class="container">
-            <form class="sign-up-form">
+            <form class="information" method="POST">
                 <label class="firstname" for="firstname">First Name</label><br>
                 <input type="text" name="firstname" id="firstname" required><br>
+                <span class="error-block"></span><br>
                 <label class="lastname" for="lastname">Last Name</label><br>
                 <input type="lastname" name="lastname" id="lastname" required><br>
+                <span class="error-block"></span><br>
                 <label class="othername" for="othername">Other Name</label><br>
                 <input type="text" name="othername" id="othername"><br>
+                <span class="error-block"></span><br>
                 <label class="email" for="email">Email</label><br>
                 <input type="email" name="email" id="email" required><br>
+                <span class="error-block"></span><br>
                 <label class="number" for="number">Phone Number</label><br>
                 <input type="number" name="number" id="number"><br>
+                <span class="error-block"></span><br>
                 <label class="password" for="password">Password</label><br>
                 <input type="password" name="password" id="password" required><br>
+                <span class="error-block"></span><br>
                 <label class="confirm-password for="confirm-password">Confirm Password</label><br>
                 <input type="password" name="confirm-password" id="confirm-password" required><br><br>
+                <span class="error-block"></span><br>
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <label for="checkbox" class="terms-and-agreement">I agree to the Terms and Conditions</label><br>
+                <button type="submit" id="button"><span class="sign">SIGN UP</span></button>
             </form>
-            <input type="checkbox" name="checkbox" id="checkbox">
-            <label for="checkbox" class="terms-and-agreement">I agree to the Terms and Conditions</label><br>
-            <button type="submit" id="button"><span class="sign">SIGN UP</span></button>
         </div>
     </section>
 
@@ -59,11 +66,13 @@
             </div>
             <br><br>
             <div class="newsletter">
-            <form>
+            <form method="POST" class="newsletterForm">
                 <label for="newsletter">Sign up for our Newsletter</label>
                 <div class="news">
-                <input type="email" id="newsletter" name="newsletter" placeholder="Enter your email address"/>
-                    <div class="error-block" id="error"></div>
+                    <div>
+                        <input type="email" id="newsletter" name="newsletter" placeholder="Enter your email address"/>
+                        <div class="error-block"></div>
+                    </div>
                     <button type="submit" id="submit">SUBMIT</button>
                 </div>
             </form>
@@ -82,5 +91,7 @@
         </div>
         <p id="copy"> &copy; 2020 innerglamour.com All rights reserved</p>
     </footer>
+    <script src="../dom/signUpFormValidation.js"></script>
+    <script src="../dom/newsletterValidation.js"></script>
 </body>
 </html>

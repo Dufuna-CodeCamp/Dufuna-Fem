@@ -29,6 +29,11 @@ ul {
     float:left;
     margin-left:5px;
 }
+
+.brand {
+    margin-left: 20px; 
+    padding-top: 20px;
+}
     
 .firstc img {
     width:300px;
@@ -36,7 +41,41 @@ ul {
     padding-top:10px;
 }
 
-.b2{
+.error-block {
+    color: red;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#quantity{
+    font-size: 20px;
+    font-weight: bold;
+    width: 60px;
+    margin-bottom: 10px;
+    display: inline;
+    height:30px;
+}
+
+.pricing {
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.shipping{
+    margin-bottom: 10px;
+}
+
+#price, #shippingCost, #totalCost {
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+#btn{
     background-color:palevioletred;
     border-radius:20px;
     width:120px;

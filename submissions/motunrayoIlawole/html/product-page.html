@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "../css/styles.css" />
+    <title>Top-Clothing</title>
+</head>
+<body>
+    <header>
+        <div class = "logo">
+            <h1>Top-Clothing</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href = "product-page.html">Product Page</a></li>
+                <li><a href = "../html-forms/contactform.html">Contact Us</a></li>
+                <li><a href = "../html-forms/signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class = "container">
+        <section class = "product-main">
+            <div class = "product">
+                <div class = "product-image">
+                    
+                </div>
+                <div class = "product-details">
+                    <h3>BROWN BRIM</h3>
+                    <p>Brand: Hat</p>
+                    <p>Quantity: 
+                        <input class = "quantity" type = "number" placeholder="1" />
+                    </p>
+                    <small class = "error">Please enter a valid quantity</small>
+                    <p>Price: $ <span class = "price">150</span></p>
+                    <p>Shipping cost: $ <span class = "ship-cost">100</span></p>
+                    <p>Total cost: $ <span class = "total-cost">250</span></p>
+                    <a href = "#" class = "buy-now">BUY NOW</a>
+                </div>
+            </div>
+            <div class = "product-desc">
+                <h3>DESCRIPTION</h3>
+                <p>A sturdy brown hat that goes with just about anything. The strength of the material ensures that it is long-lasting from the moment it gets off the shelf.</p>
+            </div>
+        </section>
+    </div>
+
+
+    <aside>
+        <h3>RELATED PRODUCTS</h3>
+
+        <div class = "other-products">
+            <div class = "other-product">
+                <div class = "other-image">
+                    <img src = "../html/assets/floral-blouse.png" alt = "Floral Blouse" />
+                </div>
+                <div class = "other-details">
+                    <p>Floral Blouse</p>
+                    <p>Price: $50</p>
+                </div>
+            </div>
+            <div class = "other-product">
+                <div class = "other-image">
+                    <img src = "../html/assets/red-polka-dot-dress.png" alt = "Red Polka-Dot Dress" />
+                </div>
+                <div class = "other-details">
+                    <p>Red Polka Dot Dress</p>
+                    <p>Price: $100</p>
+                </div>
+            </div>
+            <div class = "other-product">
+                <div class = "other-image">
+                    <img src = "../html/assets/floral-skirt (1).png" alt = "Floral Dress" />
+                </div>
+                <div class = "other-details">
+                    <p>Floral Dress</p>
+                    <p>Price: $100</p>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <footer>
+        <div class = "footer-top">
+            <div class = "footer-nav">
+                <ul class = "footer-links">
+                    <li><a href = "./contactform.html">Contact Us</a></li>
+                    <li><a href = "#">About Us</a></li>
+                    <li><a href = "#">Terms and Conditions</a></li>
+                </ul>
+            </div>
+            <div class = "footer-main">
+                <div class = "newsletter">
+                    <p>Sign up for our Newsletter</p>
+                    <div class = "footer-form">
+                        <input type = "email" id = "footer-email" placeholder="Enter your email address" />
+                        <button type = "submit" class = "footer-btn">SUBMIT</button>
+                    </div>
+                    <span class = "error-block2"></span>
+                </div>
+                <div class = "social">
+                    <p>CONNECT WITH US</p>
+                    <div class = "social-links">
+                        <a href = "facebook.com">
+                            <img src = "../html/assets/logos/facebook-logo.png" alt = "facebook" />
+                        </a>
+                        <a href = "twitter.com">
+                            <img src = "../html/assets/logos/twiiter-logo.png" alt = "twitter" />
+                        </a>
+                        <a href = "gmail.com">
+                            <img src = "../html/assets/logos/gmail-logo.png" alt = "gmail" />
+                        </a>
+                        <a href = "youtube.com">
+                            <img src = "../html/assets/logos/youtube-logo.png" alt = "youtube" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class = "copyright">Copyright 2020 Top-Clothing. All rights reserved</p>
+    </footer>
+    
+
+    <script src = "../Dom/product.js"></script>
+    <script src = "../Dom/newsletter.js"></script>
+</body>
+</html>

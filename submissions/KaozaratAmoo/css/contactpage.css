@@ -1,0 +1,173 @@
+
+*{
+    margin:0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding:0;
+}
+
+body{
+    background-color:white;
+    border:rgb(138, 184, 69) solid 2px;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration-line: none;
+    color:white;
+    font-size: large;
+}
+#nav  ul{
+    background-color:rgb(138, 184, 69); 
+    display: flex;
+    justify-content: space-between; 
+    height: 102px; 
+    margin-top: 0;   
+}
+.click {
+    padding: 50px 30px 10px 30px;
+}
+.active {
+    font-weight: bold;
+    color:rgb(3, 73, 3)
+}
+a:hover {
+    color:black;
+    font-weight: bolder;
+}
+#allbody {
+    display:flex;
+    justify-content: space-around;
+}
+.side{
+    text-align: center;
+    width:auto;
+    padding-top: 70px;
+    font-size: large;
+}
+#form {
+    border:rgb(138, 184, 69) solid 1px;
+    padding: 30px;
+    margin-top:50px;
+    font-size: large;
+    margin-right:30px;
+    padding: right 0;
+}
+.center{
+    text-align: center;
+}
+
+.dye{
+    width:100%;
+    outline: 0;
+    height:0;
+    border: 0;
+    border-bottom: 1px solid black;
+    padding-top:0;
+}
+
+
+textarea{
+    height:120px;
+}
+.send{
+    background-color:rgb(138, 184, 69);
+    width:30%;
+    height:30px;
+    color:white;
+    margin-left:300px
+}
+#clear {
+    display: flex;
+    justify-content:space-around;
+    padding-top: auto;
+ }
+#foot {
+    background-color:rgb(138, 184, 69); 
+    height:180px;
+}
+.email {
+    padding: 10px;
+    width:auto;
+    height:auto
+}
+.submit{
+    padding: 10px;
+}
+.copy {
+    text-align: center;
+}
+@media screen and (max-width:768px) {
+    #allbody {
+        display:block;
+    }
+    .side{
+        text-align: center;
+        width:auto;
+        padding-top: 15px;
+        font-size: large;
+    }
+    #form {
+        border:rgb(138, 184, 69) solid 1px;
+        padding: 30px;
+        margin:80px;
+        font-size: large;
+    }
+    textarea {
+        padding-bottom: 10px;
+    }
+    .send{
+        width:25%;
+        margin-left:280px
+    }
+   #clear {
+        display: block;
+    }
+    #foot { 
+        height:300px;
+    }
+    .contact {
+        padding-top: 5px;
+    }
+    .newsletter {
+        padding-left: 35px;
+    }
+    .connect {
+        padding-left: 35px;
+    }
+}
+@media screen and (max-width:480px) {
+    #nav  ul{
+        display: block; 
+        height: auto;  
+    }    
+    .click {
+        padding: 5px 10px 10px 10px;
+    }
+    input{
+        width:65%;
+        height:30px
+    }
+    textarea{
+        width:65%;
+        height:120px;
+    }
+    .send{
+        margin-left:130px
+    }
+    #clear {
+        display: block;
+    }
+    #foot { 
+        height:300px;
+    }
+    .contact {
+        padding-top: 5px;
+    }
+    .newsletter {
+        padding-left: 35px;
+    }
+    .connect {
+        padding-left: 35px;
+    }
+}

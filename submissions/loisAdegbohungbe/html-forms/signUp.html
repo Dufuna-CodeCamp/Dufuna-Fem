@@ -35,21 +35,27 @@
             </div>
         </div>
         <div class="signup-form right">
-            <form action="#" method="POST" enctype="multipart/form-data">
+            <form action="#" id="signup-form" method="POST" enctype="multipart/form-data">
                 <label for="firstname">First Name</label> <br>
-                <input type="text" name="firstname" id="firstname" /><br>
+                <input type="text" name="firstName" id="firstName" />
+                <span class="error-block"></span><br>
                 <label for="lastname">Last Name</label> <br>
-                <input type="text" name="lastname" id="lastname" /><br>
+                <input type="text" name="lastName" id="lastName" />
+                <span class="error-block"></span><br>
                 <label for="othernames">Other Names</label> <br>
-                <input type="text" name="othernames" id="othernames" /><br>
+                <input type="tel" name="otherNames" id="otherNames" /><br>
                 <label for="phone">Phone Number</label> <br>
-                <input type="text" name="phone" id="phone" /><br>
+                <input type="text" name="phone" id="phone" />
+                <span class="error-block"></span><br>
                 <label for="email">Email Address</label> <br>
-                <input type="email" name="email" id="email" /><br>
+                <input type="email" name="email" id="email" />
+                <span class="error-block"></span><br>
                 <label for="password">Password</label> <br>
-                <input type="password" name="password" id="password" /><br>
+                <input type="password" name="password" id="password" />
+                <span class="error-block"></span><br>
                 <label for="confirm-password">Confirm Password</label> <br>
-                <input type="password" name="confirm-password" id="confirm-password" /><br>
+                <input type="password" name="confirmPassword" id="confirmPassword" />
+                <span class="error-block"></span><br>
                 <div class="checkbox">                              
                     <input type="checkbox" id="terms-agreement" name="terms-agreement" value="Agree">
                     <label for="terms-agreement">I agree to the Terms and Conditions</label><br>
@@ -69,8 +75,12 @@
             </div>
             <div class="col-4">
                 <p>Sign Up for our Newsletter</p>
-                <div><input type="text" name="email" placeholder="Enter your email address"/>
-                    <span><button type="submit" id="submit"><strong>submit</strong></button></span>
+                <div>
+                    <form id="newsletter-form">
+                        <input type="text" name="email" id="newsEmail" placeholder="Enter your email address"/>
+                        <span><button type="submit" id="submit"><strong>submit</strong></button></span>                                              
+                        <span class="error-block"></span>
+                    </form>
                 </div>
             </div>
             <div class="col-4 connect">
@@ -85,5 +95,7 @@
         </div>          
         <p class="copyright">Copyright 2020 louissastore.com All rights reserved.</p>
     </div>
+    <script src="../DOM/signup.js"></script>  
+    <script src="../DOM/newsletter.js"></script>
 </body>
 </html>
