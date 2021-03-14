@@ -6,19 +6,19 @@ USE transportation_company;
 CREATE TABLE passenger_details (
 	id INT NOT NULL AUTO_INCREMENT,
     full_name VARCHAR(100) NOT NULL,
-    sex VARCHAR(2) NOT NULL,
-    age TINYINT unsigned,
+    sex VARCHAR(10) NOT NULL,
+    age VARCHAR(5),
     PRIMARY KEY (id)
     );
-    
+
 -- table of trip details
     
 CREATE TABLE trip_details (
 	id INT NOT NULL AUTO_INCREMENT,
     passenger_id INT NOT NULL,
     class TINYINT unsigned NOT NULL,
-    ticket_number VARCHAR(20) NOT NULL,
-    fare DECIMAL(10,2) NOT NULL,
+    ticket_number VARCHAR(25) NOT NULL,
+    fare DECIMAL(10,5) NOT NULL,
     assigned_cabin VARCHAR(10),
     number_of_parent_or_children_aboard TINYINT unsigned NOT NULL,
     number_of_siblings_or_spouses_aboard TINYINT unsigned NOT NULL,
@@ -41,9 +41,3 @@ SHOW TABLES;
 SHOW COLUMNS FROM trip_details;
 SHOW COLUMNS FROM passenger_details;
 SHOW COLUMNS FROM trip_accidents;
-    
-    
-    
-    
-    
-    
