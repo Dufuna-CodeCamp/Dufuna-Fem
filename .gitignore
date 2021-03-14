@@ -3,3 +3,6 @@
 
 # PhpStorm Project Files
 .idea
+
+# Vs Code project folder
+.vscode
