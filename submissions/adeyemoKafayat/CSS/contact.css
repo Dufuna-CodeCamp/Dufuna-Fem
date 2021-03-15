@@ -1,0 +1,306 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    box-sizing: border-box;
+    line-height: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+    /* HEADER  */
+header{
+    background-color: black;
+	color: orange;
+	padding-top: 30px;
+	min-height: 90px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header h1{
+    margin-right: auto;
+}
+
+header nav{
+	float: right;
+    margin-bottom: 20px;
+}
+
+.tm-class{
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.navbar-link{
+    list-style: none;
+}
+.navbar-link li {
+    display: inline-block;
+    line-height: 19px;
+    font-size: 20px;
+    margin-right: 86px;
+    color:orange;
+}
+.navbar-link a{
+    color: orange;
+    float: left;
+}
+.navbar-link li a:hover{
+    color: purple;
+}
+
+    /* CONTACT US */
+.container{
+    overflow: hidden;
+    padding: 30px 0;
+    margin: auto;
+    width: 90%;
+}
+.container img{
+    width: 35px;
+    text-align: center;
+    word-spacing: 2px;
+    height: 35px;
+}
+
+    /* MAIN SECTION*/
+main{
+    float: left;
+    text-align: center;
+    width: 45%;
+    padding-top: 20px;
+
+}
+
+main h3, aside h3{
+    color: rgb(58, 57, 57);
+}
+main ul li{
+    display: inline;
+    padding: 3px;
+}
+
+       /* ASIDE SECTION */
+aside{
+    float: left;
+    width: 48%;
+    margin-left: 50px;
+}
+.contact-us{
+    overflow: hidden;
+    padding: 20px;
+    margin: 30px 40px 30px 0px;
+    width: 92%;
+    border-radius: 20px;
+    border:1px solid black;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+.contact-us img{
+    padding:0px 0px 0px 200px;
+}
+.contact-us h4{
+    text-align: center;
+    width: 95%; 
+}
+.contact-us input{
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom: 1px groove rgb(129, 129, 129);
+    width: 95%;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.contact-us input:focus{
+    outline: none;
+
+  }
+.contact-us input::placeholder{
+    font-size: 19px;
+}
+.contact-us label{
+    padding-top: 20px;
+    color:orange ;
+}
+.contact-us textarea{
+    resize: none;
+    width: 95%; 
+}
+.contact-us button{
+    float: right;
+    width: 25%;
+    background-color: orange;
+    color: black;
+    margin: 5px 5px 0;
+    padding: 5px;
+    border: none;
+    font-size: 18px;
+}
+
+.error{
+    color: red;
+    font-size: 15px;
+}
+
+.errorBlock{
+    color: red;
+    font-size: 17px;
+}
+
+
+/* THE FOOTER */
+footer{
+    padding: 50px;
+    background-color: black;
+    color: orange;
+}
+.footer-link{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 37px;
+    flex-wrap: wrap;
+}
+.footer-link ul {
+    list-style: none;
+}
+.footer-link ul li{
+    color: orange;
+    line-height: 22px;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.footer-link ul a{
+    color: orange;
+}
+.footer-link input{
+    width: 253px;
+    height: 44px;
+    line-height: 19px;
+    font-size: 16px;
+    color: orange;
+    background-color: black;
+    border: none;
+}
+.footer-link button{
+    width: 108px;
+    height: 44px;
+    font-size:18px;
+    line-height: 22px;
+    margin-top: 9px;
+    color:  orange;
+    background-color: black;
+    border: none;
+}
+footer p{
+text-align: center;
+color: orange;
+}
+.social-link{
+    margin-top: 13px;
+    margin-left: auto;
+}
+.social h3, .footer-link h3{
+    color: orange;
+}
+.social-link li{
+    display: inline-block;
+    margin-left: 12px;
+}
+
+.text-p{
+    text-align: center;
+    font-size: 16px;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and ( max-width:1085px ){
+
+     header{
+         flex-flow:wrap;
+         justify-content: flex-end;
+     
+     }
+     .navbar-link li{
+         margin: 15px;
+     }
+
+    }
+
+
+@media screen and (max-width: 595px){
+
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+    .navbar-link li {
+        display: block;
+        text-align: left;
+        line-height: 19px;
+        font-size: 16px;
+        margin-left:10px ;
+        color:black;
+        position: relative;
+        right: 40px;
+    }
+    main{
+        margin: auto;
+    }
+
+    main h3{
+        line-height: 27px;
+    }
+
+    .contact-us img{
+        position: relative;
+        right:70px
+    }
+
+    .footer-box,
+    .footer-box-2,
+    .footer-box-3{
+        float:none;
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 809px) {
+    header #nav-branding,
+    header nav,
+    header .nav-container  nav li{
+        float: none;
+        text-align: center;
+        padding:0 15px;
+    }
+    main,
+    aside{
+        float:none;
+        width: 80%;
+        margin: auto;
+        padding-bottom: 30px;
+    }
+    main{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 920px){
+    .footer-box,
+    .footer-box-2{
+        width: 50%;
+    }
+    .footer-box-3{
+        float: none;
+        width: 50%;  
+    }
+    .footer-box-3 ul li{ 
+        display: inline;
+    }
+} 
