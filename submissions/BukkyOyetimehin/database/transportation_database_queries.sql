@@ -66,14 +66,13 @@ CREATE TABLE survivals (
 	survived BOOLEAN,       
 	PRIMARY KEY (id),	
 	FOREIGN KEY (passenger_detail_id) REFERENCES passenger_details (id)
-    );	
-    
+    );	    
 SHOW COLUMNS FROM survivals;
-SELECT * FROM survivals;
 
 -- BELOW ARE THE ANSWERS/SOLUTIONS TO THE QUESTIONS GIVEN
 
 -- 2. The total number of passengers who did not survive is 549
+SELECT * FROM survivals;
 SELECT * FROM survivals WHERE survived = 0;
 SELECT COUNT(*) FROM survivals WHERE survived = 0;	
 
