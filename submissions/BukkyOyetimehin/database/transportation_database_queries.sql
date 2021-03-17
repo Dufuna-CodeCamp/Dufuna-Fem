@@ -19,7 +19,8 @@ SELECT travel_details.passenger_detail_id, travel_details.embarkation_port, surv
 JOIN survivals ON travel_details.passenger_detail_id = survivals.passenger_detail_id
 WHERE embarkation_port = 'S' AND survived = '1';
 
--- 5. To get the id, name and the total number of passengers who paid a fare greater than $100 and above the age of 	35 had siblings or spouses on board:
+-- 5. To get the id, name of passengers who paid a fare greater than $100 and above the age of 35 had and siblings or spouses on board:
 SELECT passenger_details.id, passenger_details.full_name, passenger_details.age, travel_details.trip_fare, travel_details.sibsp_aboard FROM passenger_details 
 JOIN travel_details ON passenger_details.id = travel_details.passenger_detail_id
 WHERE  sibsp_aboard = '1' AND (trip_fare > '100' AND age > '35');
+-- The total number of passengers who paid a fare greater than $100 and above the age of 35 and had siblings or spouses on board is 8.
