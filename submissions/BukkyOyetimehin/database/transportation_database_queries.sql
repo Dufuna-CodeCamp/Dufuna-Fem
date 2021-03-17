@@ -23,17 +23,3 @@ WHERE embarkation_port = 'S' AND survived = '1';
 SELECT passenger_details.id, passenger_details.full_name, passenger_details.age, travel_details.trip_fare, travel_details.sibsp_aboard FROM passenger_details 
 JOIN travel_details ON passenger_details.id = travel_details.passenger_detail_id
 WHERE  sibsp_aboard = '1' AND (trip_fare > '100' AND age > '35');
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
