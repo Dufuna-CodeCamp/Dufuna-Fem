@@ -1,0 +1,170 @@
+.top-section {
+    background-color: orchid;
+}
+
+.top-height {
+    height: 250px;
+}
+
+.top-section h1 {
+    font-size: 36px;
+}
+
+input[type='text'],
+input[type='text']:hover {
+    border-radius: 8px;
+    border: none;
+    height: 36px;
+    width: 83%;
+    padding: 5px 1em;
+    margin-right: 0.5em;
+    outline: none;
+}
+
+.top-section button {
+    border-radius: 10px;
+    width: 13%;
+    height: 35px;
+    padding: 0.25em 0.7em;
+    background-color: mediumvioletred;
+    border: none;
+}
+
+.bottom-section {
+    background-color: lightpink;
+    min-height: 60vh;
+    position: relative;
+    /* overflow-y: scroll; */
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.todo-list {
+    padding-left: 0;
+}
+
+.todo-list li {
+    list-style-type: none;
+    background-color: #fff;
+    padding: 8px 15px;
+    border-radius: 8px;
+}
+
+.todo-list input {
+    border-color: red;
+    outline: red;
+}
+
+.filters {
+    width: 240px;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+.filters p:first-of-type {
+    color: purple;
+}
+
+.filters p:nth-of-type(2) {
+    color: red;
+}
+
+.filters p:last-of-type {
+    color: green;
+}
+
+.hi {
+    height: 50px;
+}
+
+.current {
+    background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+    .page {
+        width: 65%;
+        margin: 0 auto;
+    }
+
+    .top-section {
+        background-color: transparent;
+    }
+
+    .bg {
+        background-color: orchid;
+        height: 290px;
+    }
+
+    .bottom-section {
+        z-index: 1;
+        border-radius: 15px;
+        box-shadow: 0 1px 1px 1px #555;
+        padding-bottom: 65px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        font-size: 18px;
+    }
+
+    .page {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .top-section h1 {
+        font-size: 48px;
+    }
+
+    input[type='text'],
+    input[type='text']:hover {
+        border-radius: 10px;
+        height: 54px;
+        width: 88%;
+        padding: 5px 2em;
+        margin-right: 0.5em;
+        font-size: 18px;
+    }
+
+    .top-section button {
+        width: 10%;
+        height: 53px;
+    }
+
+    .fa-plus {
+        font-size: 24px;
+    }
+
+    .filters {
+        width: 280px;
+        font-size: 18px;
+        margin: 0;
+        column-gap: 15px;
+    }
+
+
+    .bottom-section {
+        border-radius: 15px;
+    }
+
+    .bottom {
+        width: 100%;
+        background-color: #fff;
+        padding: 16px 18px 6px;
+    }
+
+    .todo-list {
+        margin: 2em 3em;
+    }
+
+    .todo-list li {
+        padding: 15px 20px;
+    }
+}
