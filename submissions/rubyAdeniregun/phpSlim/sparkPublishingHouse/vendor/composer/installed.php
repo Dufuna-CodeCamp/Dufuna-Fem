@@ -7,7 +7,7 @@
     array (
     ),
     'reference' => NULL,
-    'name' => 'rubyade/article-endpoints',
+    'name' => 'rubyade/articleendpoints',
   ),
   'versions' => 
   array (
@@ -40,8 +40,8 @@
     ),
     'illuminate/collections' => 
     array (
-      'pretty_version' => 'v8.32.1',
-      'version' => '8.32.1.0',
+      'pretty_version' => 'v8.33.1',
+      'version' => '8.33.1.0',
       'aliases' => 
       array (
       ),
@@ -49,35 +49,35 @@
     ),
     'illuminate/container' => 
     array (
-      'pretty_version' => 'v8.32.1',
-      'version' => '8.32.1.0',
+      'pretty_version' => 'v8.33.1',
+      'version' => '8.33.1.0',
       'aliases' => 
       array (
       ),
-      'reference' => '3d6ce613f455093fdf8bd3c81b30104aef0b11e0',
+      'reference' => '0e38ee1632d470e56aece0079e6e22d13e6bea8e',
     ),
     'illuminate/contracts' => 
     array (
-      'pretty_version' => 'v8.32.1',
-      'version' => '8.32.1.0',
+      'pretty_version' => 'v8.33.1',
+      'version' => '8.33.1.0',
       'aliases' => 
       array (
       ),
-      'reference' => '9c7a9868d7485a82663d67109429094c8e4ed56d',
+      'reference' => '121cea1d8b8772bc7fee99c71ecf0f57c1d77b3b',
     ),
     'illuminate/database' => 
     array (
-      'pretty_version' => 'v8.32.1',
-      'version' => '8.32.1.0',
+      'pretty_version' => 'v8.33.1',
+      'version' => '8.33.1.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'f6a10cebd9bbd188ca66993168fb453439dbb50f',
+      'reference' => '5f5eda38a5a8080be666453e2f44f037afd82471',
     ),
     'illuminate/macroable' => 
     array (
-      'pretty_version' => 'v8.32.1',
-      'version' => '8.32.1.0',
+      'pretty_version' => 'v8.33.1',
+      'version' => '8.33.1.0',
       'aliases' => 
       array (
       ),
@@ -85,12 +85,12 @@
     ),
     'illuminate/support' => 
     array (
-      'pretty_version' => 'v8.32.1',
-      'version' => '8.32.1.0',
+      'pretty_version' => 'v8.33.1',
+      'version' => '8.33.1.0',
       'aliases' => 
       array (
       ),
-      'reference' => '2ef7ff288366a1ebe32f633196a1b90bd443acc3',
+      'reference' => 'cd8f6b6622b97cb63bfbe4d78a268b6956c82a22',
     ),
     'nesbot/carbon' => 
     array (
@@ -219,7 +219,7 @@
       ),
       'reference' => '120b605dfeb996808c31b6477290a714d356e822',
     ),
-    'rubyade/article-endpoints' => 
+    'rubyade/articleendpoints' => 
     array (
       'pretty_version' => '1.0.0+no-version-set',
       'version' => '1.0.0.0',
