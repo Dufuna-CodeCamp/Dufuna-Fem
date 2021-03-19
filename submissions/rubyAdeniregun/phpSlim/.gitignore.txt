@@ -1,0 +1,13 @@
+#Ignore env files
+.env
+
+#Ignore vendors folder
+sparkPublishingHouse/vendor
+
+#Ignore composer lock
+composer.lock
+
+#Ignore 
+.idea/
+
+
