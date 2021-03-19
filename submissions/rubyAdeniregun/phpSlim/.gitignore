@@ -1,7 +1,7 @@
 #Ignore env files
 .env
 
-#Ignore vendor folder
+#Ignore vendors folder
 vendor/
 
 #Ignore composer lock
