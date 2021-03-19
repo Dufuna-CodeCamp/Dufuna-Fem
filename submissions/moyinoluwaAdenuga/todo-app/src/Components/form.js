@@ -1,33 +1,44 @@
-import React, {useState} from 'react'
+import React, {Component} from 'react'
 
-const Index = ({todos, setTodos, setActive}) => {
-    const [input, setInput] = useState('')
-
-    const handleChange = (e) => {
-        setInput(e.target.value)
+class Form extends Component {
+    state = {
+        input: ''
     }
 
-    const handleSubmit = (e) => {
+    handleChange = (e) => {
+        this.setState({input: e.target.value})
+    }
+
+    handleSubmit = (e) => {
         e.preventDefault()
-        if (input === '') {
+        
+        if (this.state.input === '') {
             return false
         }
-        setTodos([{text: input, completed: false, id: Math.random() * 1000, active: true },...todos])
-        setInput('')
-        setActive(prevState => prevState + 1)
+
+        this.props.onSubmit({
+            text: this.state.input, 
+            completed: false, 
+            id: Math.random() * 1000, 
+            active: true 
+        })
+        
+        this.setState({input: ''})
     }
     
-    return (
-        <div className='mx-4 d-flex flex-column justify-content-between top-height pb-4 mx-md-0'>
-            <header>
-                <h1 className='text-uppercase pt-5 mt-4'>todo</h1>
-            </header>
-            <form onSubmit={handleSubmit} className='text-center'> 
-                <input type='text' name='text' value={input} placeholder='Create a new todo...' onChange={handleChange} />
-                <button><i className='fas fa-plus text-white' /></button>
-            </form>
-        </div>
-    )
+    render() {
+        return (
+            <div className='mx-4 d-flex flex-column justify-content-between top-height pb-4 mx-md-0'>
+                <header>
+                    <h1 className='text-uppercase pt-5 mt-4'>todo</h1>
+                </header>
+                <form onSubmit={this.handleSubmit} className='text-center'> 
+                    <input type='text' name='text' value={this.state.input} placeholder='Create a new todo...' onChange={this.handleChange} />
+                    <button><i className='fas fa-plus text-white' /></button>
+                </form>
+            </div>
+        )
+    }
 }
 
-export default Index
+export default Form
