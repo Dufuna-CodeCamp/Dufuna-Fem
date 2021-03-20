@@ -2,35 +2,59 @@
     box-sizing: border-box;
 }
 body {
-    margin: 0px auto;
+    margin: 0px;
+    padding: 0px 0px 0 0;
 }
-.Sign-up-page---Web {
-/* width: 1440px; 
-height: 1134px; */
-  padding: 10px 10px 0 0;
-  background-color: #ffffff;
+.header {
+    text-align: left;
+    padding: 12.7px 2px 15px 41px;
+    background-color: blue;
+    margin: 0 0 26px;
+    color: white;
+    display: block;
 }
-.blue-bg {
-    background: blue;
+.top-bar { 
+  background-color: blue;
+  color:white;
+  height:50px;
+  font-family: Montserrat;
+  font-size: 16px;
+  display:flex;
+  justify-content: space-between;
+  padding: 14px 60px;
 }
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 80px
+
+.link li {
+    display:inline-block;
+    margin-left: 10px;
 }
-.header base {
-  width: 1440px;
-  height: 70px;
-  margin: 0 0 46px;
-  padding: 14.7px 57.7px 15px 51px;
-  background-color: var(--bright-blue);
+
+ul li a{
+color: white;
+text-decoration:none;
+margin:5px;
 }
+
+/*
 .LOGO {
   width: 67px;
-  height: 27px;
-  margin: 6.3px 810px 7px 0px;
+  height: 6px;
+  margin: 6.3px 7810px 7px 0;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+*/
+.Product-Page {
+  width: 67px;
+  height: 6px;
+  margin: 12.3px 56px 7px 980px;
   font-family: Montserrat;
   font-size: 16px;
   font-weight: normal;
@@ -40,69 +64,57 @@ height: 1134px; */
   letter-spacing: normal;
   text-align: left;
   color: #ffffff;
-}
-.Product-Page {
-  width: 110px;
-  height: 19px;
-  margin: 12.3px 86px 9px 810px;
-  font-family: Montserrat;
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.19;
-  letter-spacing: normal;
-  text-align: left;
-  color: #ffffff;
+  text-decoration: none;
 }
 .Contact-Us {
-  width: 88px;
-  height: 19px;
-  margin: 12.3px 86px 9px;
+  width: 67px;
+  height: 6px;
   font-family: Montserrat;
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.19;
+  line-height: 1.23;
   letter-spacing: normal;
   text-align: left;
   color: #ffffff;
+  text-decoration: none;
 }
-.Sign-Up {
-  width: 64px;
-  height: 19px;
-  margin: 12.3px 20.3px 9px 86px;
+.Sign-up {
+  width: 67px;
+  height: 6px;
+  margin: 12.3px 20.3px 9px 60px;
   font-family: Montserrat;
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.19;
+  line-height: 1.23;
   letter-spacing: normal;
   text-align: left;
-  color: #ffffff;
+  color: white;
+  text-decoration: none;
 }
 .Register-your-Account {
-    width: 365px;
-    height: 122px;
-    margin: 175px 257px 23px 137px;
-    font-family: Montserrat;
-    font-size: 50px;
-    font-weight: bold
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.22;
-    letter-spacing: normal;
-   text-align: left;
-    color: blue;
+  width: 300px;
+  height: 100px;
+  margin: 175px 20px 23px 137px;
+  font-family: Montserrat;
+  font-size: 50px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: left;
+  color: blue;
 }
 .Registering-an-account-gives-you-access-to-sweet-promo-and-events-available-to-only-registered-customers {
-  width: 528px;
-  height: 151px;
-  margin: 23px 94px 26px 137px;
+  width: 380px;
+  height: 100px;
+  margin: 23px 20px 50px 137px;
   font-family: Montserrat;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -112,11 +124,11 @@ height: 1134px; */
   color: #5f5f5f;
 }
 .Already-got-an-account-Sign-in {
-  width: 481px;
+  width: 370px;
   height: 37px;
-  margin: 26px 136px 327px 142px;
+  margin: 26px 20px 30px 140px;
   font-family: Montserrat;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -125,18 +137,20 @@ height: 1134px; */
   text-align: left;
   color: #5f5f5f;
 }
+.Sign-in {
+    color: blue;
+}
 .Rectangle-10 {
-  width: 4px;
-  height: 890px;
-/*  margin: 46px 74px 51px 94px;*/
-/*  padding: 39px 45px 15px 41px;*/
+  margin: 6px 4px 51px 4px;
+  padding: 39px 45px 15px 41px;
+    width: 500px;
   border-radius: 23px;
   border: solid 1px #707070;
   background-color: #ffffff;
 }
 .First-Name {
   width: 99px;
-  height: 19px;
+  height: 22px;
   margin: 0 6px 5px 0;
   font-family: Montserrat;
   font-size: 18px;
@@ -148,13 +162,13 @@ height: 1134px; */
   text-align: left;
   color: #5f5f5f;
 }
- .Rectangle-11 {
-  width: 521px;
+.Rectangle-11 {
+  width: 421px;
   height: 50px;
   margin: 5px 0 7px;
   border-radius: 10px;
   border: solid 2px #5f5f5f;
-}   
+}
 .Last-Name {
   width: 97px;
   height: 22px;
@@ -170,7 +184,7 @@ height: 1134px; */
   color: #5f5f5f;
 }
 .Rectangle-120 {
-  width: 521px;
+  width: 421px;
   height: 50px;
   margin: 5px 0 7px;
   border-radius: 10px;
@@ -191,7 +205,7 @@ height: 1134px; */
   color: #5f5f5f;
 }
 .Rectangle-121 {
-  width: 521px;
+  width: 421px;
   height: 50px;
   margin: 5px 0 9px;
   border-radius: 10px;
@@ -212,13 +226,12 @@ height: 1134px; */
   color: #5f5f5f;
 }
 .Rectangle-122 {
-  width: 521px;
+  width: 421px;
   height: 50px;
   margin: 5px 0 8px;
   border-radius: 10px;
   border: solid 2px #5f5f5f;
 }
-
 .Email-Address {
   width: 129px;
   height: 22px;
@@ -234,7 +247,7 @@ height: 1134px; */
   color: #5f5f5f;
 }
 .Rectangle-123 {
-  width: 521px;
+  width: 421px;
   height: 50px;
   margin: 5px 0 11px;
   border-radius: 10px;
@@ -255,7 +268,7 @@ height: 1134px; */
   color: #5f5f5f;
 }
 .Rectangle-124 {
-  width: 521px;
+  width: 421px;
   height: 50px;
   margin: 5px 0 11px;
   border-radius: 10px;
@@ -276,21 +289,21 @@ height: 1134px; */
   color: #5f5f5f;
 }
 .Rectangle-125 {
-  width: 521px;
+  width: 421px;
   height: 50px;
-  margin: 5px 0 27px;
+  margin: 5px 0 7px;
   border-radius: 10px;
   border: solid 2px #5f5f5f;
 }
 .ic_crop_square_24px {
   width: 16px;
   height: 16px;
-  margin: 29px 11px 25px 78px;
+  margin: 29px 11px 25px 18px;
   background-color: #5f5f5f;
 }
 .I-agree-to-the-Terms-and-Conditions {
   width: 337px;
-  height: 15px;
+  height: 22px;
   margin: 27px 79px 21px 6px;
   font-family: Montserrat;
   font-size: 18px;
@@ -302,29 +315,40 @@ height: 1134px; */
   text-align: left;
   color: var(--bright-blue);
 }
-.Rectangle-119 {
-  width: 196px;
-  height: 48px;
-  margin: 21px 158px 0 1px;
-  padding: 11px 63px 16px 61px;
-  border-radius: 4px;
-  background-color: blue;
+.text-style-1 {
+  font-weight: bold;
+  color: blue;
 }
-
 .SIGN-UP {
-  width: 72px;
+  width: 150px;
   height: 21px;
   font-family: Raleway;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
-  font-stretch:normal
+  font-stretch: normal;
   font-style: normal;
   line-height: 0.67;
   letter-spacing: normal;
   text-align: center;
-  color: #ffffff;
+  color: white;
 }
-.Contact-Us {
+#Rectangle-119 {
+  width: 96px;
+  height: 28px;
+  padding: 8px 13px 16px 11px;
+ margin-left: 150px;
+  border-radius: 4px;
+  background-color: blue;
+  align-self: center;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+.Contact-US {
   width: 99px;
   height: 22px;
   margin: 4px 272px 5px 0;
@@ -332,12 +356,12 @@ height: 1134px; */
   font-size: 18px;
   font-weight: normal;
   font-stretch: normal;
-  list-style-type: none !important;
   font-style: normal;
   line-height: 1.22;
   letter-spacing: normal;
   text-align: left;
   color: #fcf8f8;
+  list-style-type: none; !important;
 }
 .About-Us {
   width: 84px;
@@ -347,12 +371,12 @@ height: 1134px; */
   font-size: 18px;
   font-weight: normal;
   font-stretch: normal;
-  list-style-type: none !important;
   font-style: normal;
   line-height: 1.22;
   letter-spacing: normal;
   text-align: left;
   color: #fcf8f8;
+    list-style-type: none; !important;
 }
 .Terms-and-Conditions {
   width: 197px;
@@ -362,17 +386,18 @@ height: 1134px; */
   font-size: 18px;
   font-weight: normal;
   font-stretch: normal;
-  list-style-type: none !important;
   font-style: normal;
   line-height: 1.22;
   letter-spacing: normal;
   text-align: left;
   color: #fcf8f8;
+ list-style-type: none; !important;
 }
+
 .Sign-up-for-our-Newsletter {
   width: 236px;
   height: 22px;
-  margin: 0 21px 9px 174px;
+  margin: 5px 21px 9px 94px;
   font-family: Montserrat;
   font-size: 18px;
   font-weight: normal;
@@ -393,13 +418,13 @@ height: 1134px; */
   font-style: normal;
   line-height: 1.19;
   letter-spacing: normal;
-  text-align: left;
+  text-align: center;
   color: blue;
 }
 .Rectangle-8 {
   width: 253px;
   height: 44px;
-  margin: 5px 4px 3px 174px;
+  margin: 5px 4px 3px 74px;
   padding: 12px 42px 13px 12px;
   border: solid 1px #707070;
   background-color: #ffffff;
@@ -408,28 +433,27 @@ height: 1134px; */
   width: 74px;
   height: 22px;
   font-family: Montserrat;
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 12px;
+  font-weight: bold;e
   font-stretch: normal;
   font-style: normal;
   line-height: 1.22;
   letter-spacing: normal;
-  text-align: left;
+  text-align: center;
   color: blue;
-  background-color: white;
 }
 .Rectangle-9 {
   width: 108px;
   height: 44px;
-  margin: 5px 205px 3px 4px;
-  padding: 11px 16px 11px 18px;
+  margin: 5px 75px 3px 1px;
+  padding: 11px 16px 11px 1px;
   border: solid 1px #707070;
   background-color: #ffffff;
 }
 .CONNECT-WITH-US {
   width: 177px;
   height: 22px;
-  margin: 0 45px 9px 43px;
+  margin: 10px 0px 9px 273px;
   font-family: Montserrat;
   font-size: 18px;
   font-weight: normal;
@@ -442,89 +466,121 @@ height: 1134px; */
 }
 .facebook-logo {
   width: 45px;
-  height: 41px;
-  margin: 9px 20px 2px 49px;
+  height: 39px;
+  margin: 3px 7px 2px 270px;
   object-fit: contain;
   border-radius: 10px;
 }
 .twiiter-logo {
-  width: 48px;
-  height: 43px;
-  margin: 9px 20px 0;
+  width: 45px;
+  height: 41px;
+  margin: 3px 5px 0;
   object-fit: contain;
   border-radius: 7px;
 }
 .gmail-logo {
-  width: 63px;
-  height: 41px;
-  margin: 9px 20px 2px;
+  width: 45px;
+  height: 39px;
+  margin: 9px 10px 2px;
   object-fit: contain;
   border-radius: 9px;
 }
 .youtube-logo {
-  width: 69px;
-  height: 43px;
-  margin: 9px 0 0 20px;
+  width: 45px;
+  height: 41px;
+  margin: 4px 0 0 10px;
   object-fit: contain;
   border-radius: 11px;
 }
-.Copyright-2020-Yoursitecom-All-rights-reserved {
+#Copyright-2020-Yoursitecom-All-rights-reserved {
   width: 630px;
   height: 22px;
-  margin: 26px 43px 0 271px;
+  margin: 26px 43px 0 471px;
   font-family: Montserrat;
   font-size: 18px;
   font-weight: normal;
-  font-stretch:  normal;
+  font-stretch: normal;
   font-style: normal;
   line-height: 1.22;
   letter-spacing: normal;
+  text-align: left;
+  color: white;
   text-align-last: center;
-}   
-.column {
-  float: left;
-    width: 33.33%;
+}
+.footer {
+    background-color: blue;
+    color: white;
 }
 
+.column {
+  float: left;
+}
 /* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-footer {
-padding-top:10px;
-padding-bottom: 20px;
-color:white;
-background-color: blue;
-margin-top: 80px;
+@media only screen and (max-width: 600px) {
+.nav-links {
+    margin-top : 10px;
+    display: flex;
+    flex-direction : column;
 }
-footer .base {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 50px;
-  align-items: center;
+    .container {
+        display: flex;
+       padding: 0px;
+    }
+    .Rectanglt-10 {
+        display: flex;
+    }
+    .footer
+   
+}
+@media only screen and (max-width: 768px) {
+    body {
+        box-sizing: border-box;
+    }
+    .header {
+  width: 768px;
+  height: 160px;
+        margin: 0px;
+  background-color: blue;
+}
+     .container {
+    display: flex;
+     padding-left: 0px;
+}
+    .footer {
+  width: 768px;
+  height: 40px;	
+  background-color: blue;
+        margin: auto;
+}
+    #Copyright-2020-Yoursitecom-All-rights-reserved {
+        text-align-last: left;
+        margin: auto;
+     
+    }
 }
 
-@media (max-width: 992px){
-.Sign-up-page---Web {
+@media (max-width: 992px) {
+    .top-bar{
     display: block;
     height: 100px;
     padding: 12px 10px;
+    }  
+    
+    .link {
+     padding: 0;
     margin-top: 10px;
-}
-.container {
-    display: block;
-border-radius:100%;
-}
-
-
-.base {
-    display: block;
-    padding: 0 20px;
-}
-.Copyright-2020-Yoursitecom-All-rights-reserved {
-        text-align-last: center;
-        
+    }
+    
+    .top-bar ul li {
+     display: block;
+    margin: 0;
+    }
+    #Copyright-2020-Yoursitecom-All-rights-reserved {
+        text-align-last: left;     
     }
 }
