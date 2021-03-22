@@ -2,18 +2,18 @@ import React from 'react'
 
 const Index = ({text, todo, completeTodo, incompleteTodo}) => {
     return (
-        <li className='my-3'>
+        <li className='todo-item'>
             {!todo.completed ?  
-                <div className='d-flex justify-content-between align-items-center'>
+                <div>
                     <span>{text}</span>
-                    <i className='far fa-square text-danger' 
+                    <i className='far fa-square red' 
                     onClick={() => completeTodo(todo.id)}
                     />
                 </div>
             :
-                <div className='d-flex justify-content-between align-items-center'>
-                    <span className='text-decoration-line-through text-success'>{text}</span>
-                    <i className="far fa-check-square text-success" 
+                <div>
+                    <span className='completed green'>{text}</span>
+                    <i className="far fa-check-square green" 
                     onClick={() => incompleteTodo(todo.id)}
                     />
                 </div>

@@ -19,18 +19,23 @@ class App extends Component {
 		})
 	}
 
-	// To move todoitem to completed task
-    completeTodo = (id) => {
-        let updatedTodos = this.state.todos.map((todo) => {
-            if (todo.id === id) {
+	// Toggle completed status
+	toggleStatus = (id) => {
+		let updatedTodos = this.state.todos.map((todo) => {
+			if (todo.id === id) {
                 todo.completed = !todo.completed
                 todo.active = !todo.active
             }
             return todo
-        })
+		})
+		return updatedTodos
+	}
+
+	// To move todoitem to completed task
+    completeTodo = (id) => {
 
 		this.setState({
-			todos: updatedTodos,
+			todos: this.toggleStatus(id),
 			active: this.state.active - 1
 		})
     }   
@@ -38,16 +43,9 @@ class App extends Component {
    
     // To move completed task back to todo item
     incompleteTodo = (id) => {
-        let updatedTodos = this.state.todos.map((todo) => {
-            if (todo.id === id) {
-                todo.completed = !todo.completed
-                todo.active = !todo.active
-            }
-            return todo
-        })
 
         this.setState({
-			todos: updatedTodos,
+			todos: this.toggleStatus(id),
 			active: this.state.active + 1
 		})
     }
@@ -78,9 +76,9 @@ class App extends Component {
 						<Form onSubmit={this.addTodo} />
 				  	</section>
 				  	<div>
-						<div className='px-4 pt-3 bottom-section px-lg-0' >
+						<div className='bottom-section' >
 					
-							<ul className='todo-list my-3'>
+							<ul className='todo-list'>
 								{todos.map((todo) => (
 									<Todo key={todo.id} 
 									text={todo.text} 
@@ -92,32 +90,32 @@ class App extends Component {
 							</ul>
 							
 
-							<div className='d-flex justify-content-between d-lg-none'>
+							<div className='active-status'>
 								<p>{this.state.active}{this.state.active > 1 ? ' items' : ' item'} left</p>
-								<p className='text-danger' onClick={this.clearCompleted}><i className='fas fa-times' /> Clear Completed</p>
+								<p className='red' onClick={this.clearCompleted}><i className='fas fa-times' /> Clear Completed</p>
 							</div>
 
 
 							{/* Change status of items for filtering *large screens*/}
-							<div className=' d-none d-lg-flex justify-content-between bottom'>
+							<div className='bottom large-screen-filter'>
 								<p>{this.state.active}{this.state.active > 1 ? ' items' : ' item'} left</p>
-								<span className='d-flex filters justify-content-center'>
+								<span className='screen-filter filters'>
 									<p onClick={() => this.setState({status: 'all'})}>All Items</p>
 									<p onClick={() => this.setState({status: 'active'})}>Active</p>
 									<p onClick={() => this.setState({status: 'completed'})}>Completed</p>
 								</span>
-								<p className='text-danger' onClick={this.clearCompleted}><i className='fas fa-times' /> Clear Completed</p>
+								<p className='red' onClick={this.clearCompleted}><i className='fas fa-times' /> Clear Completed</p>
 							</div>
 
 						</div>
 						
 						{/* Change status of items for filtering *small screens*/}
-						<div className='bg-white fixed-bottom d-lg-none'>
-							<span className='d-flex justify-content-between filters mt-2'>
+						<div className='small-screen-filter'>
+							<div className='screen-filter filters'>
 								<p onClick={() => this.setState({status: 'all'})}>All Items</p>
 								<p onClick={() => this.setState({status: 'active'})}>Active</p>
 								<p onClick={() => this.setState({status: 'completed'})}>Completed</p>
-							</span>
+							</div>
 						</div>
 						
 					</div>

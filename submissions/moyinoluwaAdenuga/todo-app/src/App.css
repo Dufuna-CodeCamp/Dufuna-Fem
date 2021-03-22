@@ -4,10 +4,22 @@
 
 .top-height {
     height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 .top-section h1 {
     font-size: 36px;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+    padding-top: 3rem;
+}
+
+form {
+    text-align: center;
 }
 
 input[type='text'],
@@ -19,6 +31,10 @@ input[type='text']:hover {
     padding: 5px 1em;
     margin-right: 0.5em;
     outline: none;
+}
+
+.white {
+    color: #fff;
 }
 
 .top-section button {
@@ -34,7 +50,7 @@ input[type='text']:hover {
     background-color: lightpink;
     min-height: 60vh;
     position: relative;
-    /* overflow-y: scroll; */
+    padding: 1rem 1.5rem 0;
 }
 
 .bottom {
@@ -46,6 +62,7 @@ input[type='text']:hover {
 
 .todo-list {
     padding-left: 0;
+    margin: 0 1rem;
 }
 
 .todo-list li {
@@ -60,9 +77,28 @@ input[type='text']:hover {
     outline: red;
 }
 
+.small-screen-filter {
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
+.large-screen-filter {
+    display: none;
+}
+
+.active-status,
+.screen-filter {
+    display: flex;
+    justify-content: space-between;
+}
+
 .filters {
     width: 240px;
-    margin: 0 auto;
+    margin: 0.5rem auto 0;
     font-size: 16px;
 }
 
@@ -86,10 +122,36 @@ input[type='text']:hover {
     background-color: transparent;
 }
 
+.todo-item {
+    margin: 1rem 0;
+}
+
+.todo-item div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: rgb(75, 161, 75);
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
 @media screen and (min-width: 768px) {
     .page {
         width: 65%;
         margin: 0 auto;
+    }
+
+    .top-height {
+        margin: 0;
     }
 
     .top-section {
@@ -142,6 +204,21 @@ input[type='text']:hover {
         font-size: 24px;
     }
 
+    .active-status,
+    .small-screen-filter {
+        display: none;
+    }
+
+    .large-screen-filter {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .screen-filter {
+        display: flex;
+        justify-content: center;
+    }
+
     .filters {
         width: 280px;
         font-size: 18px;
@@ -149,9 +226,9 @@ input[type='text']:hover {
         column-gap: 15px;
     }
 
-
     .bottom-section {
         border-radius: 15px;
+        padding: 1rem 0 0;
     }
 
     .bottom {
