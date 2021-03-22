@@ -40,10 +40,8 @@ CREATE TABLE registered_customers (
     last_name VARCHAR(50) NOT NULL,
     email VARCHAR(40) NOT NULL,
     password VARCHAR(20) NOT NULL,
-    customer_address_id INT NOT NULL, /* address from customer_addresses table*/
     created_at DATETIME NOT NULL,
-    PRIMARY KEY (id),
-    FOREIGN KEY (customer_address_id) REFERENCES contact_addresses(id) /* this links the customer to the contact_addresses table */
+    PRIMARY KEY (id)
 );
 /*inserting values into the registered_customers table*/
 INSERT INTO registered_customers (first_name, last_name, email, password, customer_address_id, created_at)
@@ -59,8 +57,10 @@ CREATE TABLE contact_addresses (
     zip_code VARCHAR(40) NOT NULL,
     country VARCHAR(20) NOT NULL,
     phone_number VARCHAR(20) NOT NULL,
+    registered_customer_id INT NOT NULL, /* id from registered_customers table */
     created_at DATETIME NOT NULL,
-    PRIMARY KEY (id)
+    PRIMARY KEY (id),
+    FOREIGN KEY (registered_customer_id) REFERENCES registered_customers(id) /* this links the customer to the registered_customers table */
 );
 /*inserting values into the contact_addresses table*/
 INSERT INTO contact_addresses (city, state, zip_code, country, phone_number, created_at)
