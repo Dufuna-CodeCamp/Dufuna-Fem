@@ -7,7 +7,7 @@
 }
 
 .top-height {
-    height: 250px;
+    height: 270px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -16,7 +16,7 @@
 }
 
 .top-section h1 {
-    font-size: 36px;
+    font-size: 50px;
     text-transform: uppercase;
     margin-top: 1.5rem;
     padding-top: 3rem;
@@ -32,11 +32,12 @@ input[type='text'],
 input[type='text']:hover {
     border-radius: 8px;
     border: none;
-    height: 36px;
+    height: 45px;
     width: 83%;
     padding: 5px 1em;
     margin-right: 0.5em;
     outline: none;
+    font-size: 18px;
 }
 
 .white {
@@ -46,10 +47,14 @@ input[type='text']:hover {
 .top-section button {
     border-radius: 10px;
     width: 13%;
-    height: 35px;
+    height: 45px;
     padding: 0.25em 0.7em;
     background-color: mediumvioletred;
     border: none;
+}
+
+.fa-plus {
+    font-size: 18px;
 }
 
 .bottom-section {
@@ -68,7 +73,6 @@ input[type='text']:hover {
 
 .todo-list {
     padding-left: 0;
-    margin: 0 1rem;
 }
 
 .todo-list li {
@@ -150,9 +154,21 @@ input[type='text']:hover {
     text-decoration: line-through;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 465px) {
+    .top-height {
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+
+    .bottom-section {
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+}
+
+@media screen and (min-width: 600px) {
     .page {
-        width: 65%;
+        width: 500px;
         margin: 0 auto;
     }
 
@@ -173,18 +189,18 @@ input[type='text']:hover {
         z-index: 1;
         border-radius: 15px;
         box-shadow: 0 1px 1px 1px #555;
-        padding-bottom: 65px;
+        padding: 1rem 1.5rem 65px;
+        /* padding-bottom: 65px; */
     }
 }
 
 @media screen and (min-width: 992px) {
     body {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .page {
-        width: 60%;
-        margin: 0 auto;
+        width: 700px;
     }
 
     .top-section h1 {
@@ -194,16 +210,16 @@ input[type='text']:hover {
     input[type='text'],
     input[type='text']:hover {
         border-radius: 10px;
-        height: 54px;
+        height: 60px;
         width: 88%;
-        padding: 5px 2em;
+        padding: 10px 2em;
         margin-right: 0.5em;
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .top-section button {
         width: 10%;
-        height: 53px;
+        height: 60px;
     }
 
     .fa-plus {
@@ -227,7 +243,7 @@ input[type='text']:hover {
 
     .filters {
         width: 280px;
-        font-size: 18px;
+        font-size: 20px;
         margin: 0;
         column-gap: 15px;
     }
