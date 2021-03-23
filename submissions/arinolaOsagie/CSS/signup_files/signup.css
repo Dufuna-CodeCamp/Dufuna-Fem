@@ -110,7 +110,7 @@ margin:5px;
 .Rectangle-10 {
   margin: 6px 4px 51px 4px;
   padding: 39px 45px 15px 41px;
-    width: 300px;
+    width: 500px;
   border-radius: 23px;
   border: solid 1px #707070;
   background-color: #ffffff;
@@ -389,15 +389,15 @@ margin:5px;
   color: blue;
 }
 .Rectangle-8 {
-  width: 100px;
-  height: 10px;
+  width: 200px;
+  height: 20px;
   margin: 5px 4px 3px 30px;
   padding: 12px 42px 13px 12px;
   border: solid 1px #707070;
   background-color: #ffffff;
 }
 .SUBMIT {
-  width: 44px;
+  width: 74px;
   height: 22px;
   font-family: Montserrat;
   font-size: 12px;
@@ -410,8 +410,8 @@ margin:5px;
   color: blue;
 }
 .Rectangle-9 {
-  width: 60px;
-  height: 34px;
+  width: 108px;
+  height: 44px;
   margin: 5px 75px 3px 1px;
   padding: 11px 16px 11px 1px;
   border: solid 1px #707070;
@@ -462,6 +462,7 @@ margin:5px;
 #Copyright-2020-Yoursitecom-All-rights-reserved {
   width: 630px;
   height: 22px;
+  margin: 26px 43px 0 471px;
   font-family: Montserrat;
   font-size: 18px;
   font-weight: normal;
@@ -469,6 +470,7 @@ margin:5px;
   font-style: normal;
   line-height: 1.22;
   letter-spacing: normal;
+  text-align: left;
   color: white;
   text-align-last: center;
 }
@@ -491,52 +493,15 @@ margin:5px;
     display: block;
     flex-direction : column;
 }
-    .link li {
-    display:inline-block;
-    margin-left: 10px;
-    }
     .container {
         display: block;
        padding: 0;
-}
-    .main {
+    }
+    .Rectanglt-10 {
         display: block;
-    }
+    }   
     
-}
-
-@media only screen and (max-width: 768px) {
-    body {
-        box-sizing: border-box;
-    }
-
- #Copyright-2020-Yoursitecom-All-rights-reserved {
-        text-align-last: left;
-        margin: auto;
-     
-    }
-    @media (max-width: 992px) {
-    .top-bar{
-    display: block;
-    height: 100px;
-    padding: 12px 10px;
-    }  
-    
-    .link {
-     padding: 0;
-    margin-top: 10px;
-    }
-    
-    .top-bar ul li {
-     display: block;
-    margin: 0;
-    }
-    .main {
-        flex-direction: column;
-        justify-content: center;
-    }
     #Copyright-2020-Yoursitecom-All-rights-reserved {
-        text-align-last: left;     
+        text-align: left;
     }
-}
 }
