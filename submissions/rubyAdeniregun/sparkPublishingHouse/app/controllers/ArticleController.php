@@ -87,15 +87,18 @@ public function update(Request $request, Response $response, $args) //An endpoin
         ->withStatus(200);
     }
 
-    public function publish(Request $request, Response $response, $args) //An endpoint to publish an unpublished article.
-    {
-        $data = $request->getParsedbody();
-        $id = $args['id'];
-        $article = Article::find($id);
-        $article->status = 'published';
-        $article->save();
-        $response->getBody()->write(json_encode(['status' => 'success', 'data' => $article,]));
-        return $response->withHeader(Constants::CONTENT_TYPE_HEADER, Constants::APPLICATION_JSON)
-        ->withStatus(200);
-    }
+    public function publish(Request $request, Response $response, $args) //An endpoint to update an existing article
+{
+    $data = $request->getParsedbody()['data'];
+    $id = $args['id'];
+    $article = Article::find($id);
+
+    $article->status = $data['status'];
+   
+    $article->save();
+
+    $response->getBody()->write(json_encode(['status' => 'success', 'data' => $article,]));
+    return $response->withHeader(Constants::CONTENT_TYPE_HEADER, Constants::APPLICATION_JSON)
+    ->withStatus(200);
+}
 }
