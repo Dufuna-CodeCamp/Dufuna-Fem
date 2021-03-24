@@ -8,7 +8,6 @@ class App extends Component {
 	state = {
 		todos: [],
 		active: 0,
-		status: 'all'
 	}
 
 	// Add new item to todo array on submit
@@ -59,15 +58,7 @@ class App extends Component {
     }
 
 	render() {
-		let todos = []
-
-		if (this.state.status === 'all') {
-			todos = this.state.todos
-		} else if (this.state.status === 'active') {
-			todos = this.state.todos.filter(todo => !todo.completed)
-		} else if (this.state.status === 'completed') {
-			todos = this.state.todos.filter(todo => todo.completed) 
-		}
+		let todos = this.state.todos
 
 		return (
 		  	<div className='bg'>
@@ -101,9 +92,9 @@ class App extends Component {
 							<div className='bottom large-screen-filter'>
 								<p>{this.state.active}{this.state.active > 1 ? ' items' : ' item'} left</p>
 								<span className='screen-filter filters'>
-									<p onClick={() => this.setState({status: 'all'})}>All Items</p>
-									<p onClick={() => this.setState({status: 'active'})}>Active</p>
-									<p onClick={() => this.setState({status: 'completed'})}>Completed</p>
+									<p>All Items</p>
+									<p>Active</p>
+									<p>Completed</p>
 								</span>
 								<p className='red' onClick={this.clearCompleted}><i className='fas fa-times' /> Clear Completed</p>
 							</div>
@@ -113,9 +104,9 @@ class App extends Component {
 						{/* Change status of items for filtering *small screens*/}
 						<div className='small-screen-filter'>
 							<div className='screen-filter filters'>
-								<p onClick={() => this.setState({status: 'all'})}>All Items</p>
-								<p onClick={() => this.setState({status: 'active'})}>Active</p>
-								<p onClick={() => this.setState({status: 'completed'})}>Completed</p>
+								<p>All Items</p>
+								<p>Active</p>
+								<p>Completed</p>
 							</div>
 						</div>
 						
