@@ -61,7 +61,7 @@ input[type='text']:hover {
     background-color: lightpink;
     min-height: 60vh;
     position: relative;
-    padding: 1rem 1.5rem 0;
+    padding: 1rem 1.5rem 62px;
 }
 
 .bottom {
@@ -89,7 +89,7 @@ input[type='text']:hover {
 
 .small-screen-filter {
     background-color: #fff;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
@@ -250,7 +250,7 @@ input[type='text']:hover {
 
     .bottom-section {
         border-radius: 15px;
-        padding: 1rem 0 0;
+        padding: 1rem 0 89px;
     }
 
     .bottom {

@@ -99,15 +99,15 @@ class App extends Component {
 								<p className='red' onClick={this.clearCompleted}><i className='fas fa-times' /> Clear Completed</p>
 							</div>
 
-						</div>
-						
-						{/* Change status of items for filtering *small screens*/}
-						<div className='small-screen-filter'>
-							<div className='screen-filter filters'>
-								<p>All Items</p>
-								<p>Active</p>
-								<p>Completed</p>
+							{/* Change status of items for filtering *small screens*/}
+							<div className='small-screen-filter'>
+								<div className='screen-filter filters'>
+									<p>All Items</p>
+									<p>Active</p>
+									<p>Completed</p>
+								</div>
 							</div>
+
 						</div>
 						
 					</div>
