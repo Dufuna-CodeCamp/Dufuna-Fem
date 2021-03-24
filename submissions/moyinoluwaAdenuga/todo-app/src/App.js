@@ -21,8 +21,8 @@ class App extends Component {
 
 	// Toggle completed status
 	toggleStatus = (id) => {
-		let updatedTodos = this.state.todos.map((todo) => {
-			if (todo.id === id) {
+		let updatedTodos = this.state.todos.map((todo, index) => {
+			if (id === index) {
                 todo.completed = !todo.completed
                 todo.active = !todo.active
             }
@@ -73,15 +73,16 @@ class App extends Component {
 		  	<div className='bg'>
 				<div className='page'>
 				  	<section className='top-section'>
-						<Form onSubmit={this.addTodo} />
+						<Form onSubmit={this.addTodo} todos={todos} />
 				  	</section>
 				  	<div>
 						<div className='bottom-section' >
 					
 							<ul className='todo-list'>
-								{todos.map((todo) => (
-									<Todo key={todo.id} 
+								{todos.map((todo,index) => (
+									<Todo key={index} 
 									text={todo.text} 
+									id = {index}
 									todo={todo} 
 									completeTodo={this.completeTodo} 
 									incompleteTodo={this.incompleteTodo}  

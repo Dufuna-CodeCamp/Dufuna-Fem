@@ -19,8 +19,6 @@ class Form extends Component {
         let newTodo = {
             text: this.state.input, 
             completed: false, 
-            id: Math.random() * 1000, 
-            active: true 
         }
 
         this.props.onSubmit(newTodo)
