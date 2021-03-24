@@ -96,31 +96,46 @@ main{
     height: 30px;
     border: none;
 }
+.copyright-div{
+    padding-bottom: 5px;
+}
 
 @media screen and (min-width:900px) {
     .footer-div{
         height: 200px;
+        margin-top: 20px;
     }
     .contact-div{
         width: 40%;
         float: left;
     }
-    .submit-div{
+    .submit-div,
+    .logos-div {
         width: 40%;
         float: right;
         text-align: center;
     }
-    .logos-div{
+    #message{
+        width: 90%;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-color: black;
+    }
+ 
+   /* .logos-div{
         float: right;
         margin-right: -200px;
-       
-    }
-    
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }*/
+
     .copyright-div{
         float: left;
         text-align: center;
-    }
-}
+        margin-left: 250px;
+}   }
+
 
 @media screen and (min-width:1200px) {
     section{
@@ -129,10 +144,11 @@ main{
     }
 
     .fieldset{
-        width: auto;
+        width: 50%;
         margin-right: 10px;
-        margin-bottom: 10px; 
+        margin-bottom: 10px;
     }
+
     #message{
         border: solid limegreen;
         height: 150px;
@@ -163,6 +179,11 @@ main{
     }
     .copyright-div{
         margin-top: 50px;
+        margin-left: -50px;
+    }
+    .nav-logo{
+        width: 70px;
+        height: 70px;
     }
 
 }
