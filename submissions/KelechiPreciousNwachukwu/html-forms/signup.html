@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset UTF="8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <title>PreciseSpice - Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="../css/signup.css">
+</head>
+
+<body>
+    <header>
+        <img src="../html/img/PreciseSpice.jpg" alt="PreciseSpice-icon">
+        <h1>Get Cooking with PreciseSpice!</h1>
+    </header>
+
+    <div class="g-sign-up-button">
+        <a href="#">
+            <img src="../html/img/google-icon.svg">
+            <span>Sign up with Google</span>
+        </a>
+    </div>
+
+    <p class="signUpOptionsOrText">
+        or
+    </p>
+    <form id="signupform" novalidate>
+        <div class="inputWrapper" title="Email">
+            <div class="inputArea">
+                <input type="email" name="email" placeholder="Email" id="email" maxlength="256" required
+                    autocomplete="email">
+                <div class="inputInfo">
+                    <div class="infoText"></div>
+                </div>
+                <label for="email" class="inputLabel">Email</label>
+                <div class="inputUnderline"></div>
+            </div>
+            <div class="extraInfo">
+                <span id="emailExtraInfo">We’ll send an email to this address for verification</span>
+                <a href="#" id="emailSuggestion" tabindex="-1"></a>
+            </div>
+        </div>
+        <div class="inputWrapper" title="Username">
+            <div class="inputArea">
+                <input type="text" name="username" placeholder="Username" id="username" pattern="\w{3,30}" minlength="3"
+                    maxlength="30" required autocapitalize="none" autocomplete="username">
+                <div class="inputInfo">
+                    <div class="infoText"></div>
+                </div>
+                <label for="username" class="inputLabel">Username</label>
+                <div class="inputUnderline"></div>
+            </div>
+        </div>
+        <div class="inputWrapper password" title="Password">
+            <div class="inputArea">
+                <input type="password" name="password" placeholder="Password" id="password" pattern=".{8,100}"
+                    minlength="8" maxlength="100" required autocomplete="new-password">
+                <label class="inputLabel">Password</label>
+                <label class="showPassword">
+                    <input type="checkbox" name="showPasswordCheckbox" class="showPasswordCheckbox">
+                    <span class="checkbox"></span>
+                    <span class="checkboxLabel">Show</span>
+                </label>
+                <div class="inputUnderline"></div>
+            </div>
+            <div class="extraInfo">Type 8 characters or more</div>
+        </div>
+        <label class="termsOfService noSelect">
+            <input type="checkbox" class="termsOfServiceCheckbox" required>
+            <span class="checkbox"></span>
+            <span>I agree to <a href="#" target="_blank" rel="noopener">PreciseSpice’s Terms of Service</a>.</span>
+        </label>
+        <button>
+            Sign up and get spiced
+        </button>
+    </form>
+
+    <footer>
+        <ul>
+            <li><a href="#">Forgot password?</a></li>
+            <li>Already have an account? <a href="#">Login</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
