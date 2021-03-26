@@ -6,3 +6,9 @@
 
 # Vs Code project folder
 .vscode
+
+*node_modules
+tests/assets
+tests/logfile.html
+tests/package-lock.json
+tests/setup/winos/package-lock.json
