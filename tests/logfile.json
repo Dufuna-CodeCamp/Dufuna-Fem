@@ -1,8 +1,8 @@
 {
   "stats": {
-    "tests": 3,
-    "passes": 3,
+    "tests": 100,
+    "passes": 100,
     "failures": 0,
-    "owner": "rubyAdeniregun"
+    "owner": "sampleuser"
   }
 }
