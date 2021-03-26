@@ -2,6 +2,8 @@
 
 $temperature;
 
+$temperature = 10;
+
 if ($temperature <= 20) {
     echo "It is freezing today";
 } elseif ($temperature > 20 && $temperature < 30) {
@@ -12,4 +14,4 @@ if ($temperature <= 20) {
     echo "Am I in the Sahara Desert?";
 };
 
-$temperature = 10;
+
