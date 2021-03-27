@@ -1,8 +1,8 @@
-{
-  "stats": {
-    "tests": 3,
-    "passes": 3,
-    "failures": 0,
-    "owner": "idowuMariam"
-  }
-}
+{ 
+  "stats": { 
+    "tests": 10, 
+    "passes": 10, 
+    "failures": 0, 
+    "owner": "sampleUser" 
+  } 
+} 
