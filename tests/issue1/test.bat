@@ -25,7 +25,6 @@ SET folder_name=%first_name%%last_name%
 
 SET path_to_folder="%submission_directory:"=%/%folder_name:"=%"
 SET path_to_aboutMe_folder="%path_to_folder:"=%/aboutMe"
-SET path_to_file="%path_to_aboutMe_folder:"=%/aboutMe"
 SET /A no_of_passes=0
 SET /A no_of_failures=0
 SET /A folder_exists=0
@@ -37,7 +36,7 @@ SET /A file_exists=0
 
 FOR /F "usebackq" %%i IN (`dir %submission_directory% ^| find "%folder_name:"=%" /c`) DO SET /A folder_count=%%i
 FOR /F "usebackq" %%i IN (`dir %path_to_folder% ^| find "aboutMe" /c`) DO SET /A aboutMe_folder_count=%%i
-FOR /F "usebackq" %%i IN (`dir %path_to_aboutMe_folder% ^| find "aboutMe" /c`) DO SET /A aboutMe_file_count=%%i
+FOR /F "usebackq" %%i in (`dir %path_to_aboutMe_folder% ^| find ".txt" /c`) DO SET /A txt_count=%%i
 
 IF %folder_count% EQU 1 (
     call :FolderExistence "1"
@@ -56,7 +55,7 @@ IF %folder_exists% GTR 0 (
     IF %aboutMe_folder_count% EQU 1 (
         call :AboutMeFolderExistence "1"
 
-        IF %aboutMe_file_count% EQU 2 (
+        IF %txt_count% GTR 0 (
             call :FileExistence "1"
         ) ELSE (
             call :FileExistence "0"

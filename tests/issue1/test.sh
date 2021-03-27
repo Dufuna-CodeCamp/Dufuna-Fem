@@ -27,8 +27,6 @@ set_folder
 submission_directory="$PWD/../../submissions"
 path_to_folder="$submission_directory/$folder_name"
 path_to_aboutMe_folder="$path_to_folder/aboutMe"
-path_to_file_with_extension="$path_to_aboutMe_folder/aboutMe.txt"
-path_to_file_without_extension="$path_to_aboutMe_folder/aboutMe"
 path_to_log="$submission_directory/../tests/logfile.json"
 
 check_folder_existence() {
@@ -59,30 +57,22 @@ check_aboutMe_folder_existence() {
 }
 
 check_file_existence() {
-    file_count=$(ls $path_to_aboutMe_folder | grep "aboutMe" -c)
-    if [ $file_count -eq 0 ]
-    then
-        file_exists=0
-        echo ""
-        echo -e "${BOLD}Checking the aboutMe text file ...${NONE}"
-        echo -e "${RED}1. You should create a text file named ${BOLD}\"aboutMe.txt\"${NONE}${RED} or ${BOLD}\"aboutMe\".${NONE}"
-        echo -e "${RED}2. Ensure your file is located in the ${BOLD}\"aboutMe\"${NONE} ${RED}folder you have created."
-    else
-        if [ -s "$path_to_file_with_extension" ]
+
+    for currentFile in $path_to_aboutMe_folder/*
+    do
+        if [ $(file -b --mime-type "$currentFile") == "text/plain" ]
         then
             file_exists=1
+            break
         else
-            if [ -s "$path_to_file_without_extension" ]
-            then
-                file_exists=1
-            else
-                file_exists=0
-                echo ""
-                echo -e "${BOLD}Checking the aboutMe text file ...${NONE}"
-                echo -e "${RED}1. Ensure your text file contains text."${NONE}
-            fi
-        fi   
-    fi
+            file_exists=0
+            echo ""
+            echo -e "${BOLD}Checking the text file ...${NONE}"
+            echo -e "${RED}1. You should create a text file."
+            echo -e "2. Ensure your text file is located in the ${BOLD}\"aboutMe\"${NONE} ${RED}folder you have created."
+            echo -e "3. Ensure your text file contains text."${NONE}
+        fi
+    done
 }
 
 write_json_response() {
