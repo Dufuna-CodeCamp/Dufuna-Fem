@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+}
+
+.top-section {
+    background-color: orchid;
+}
+
+.top-height {
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.top-section h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+    padding-top: 3rem;
+}
+
+form {
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+input[type='text'],
+input[type='text']:hover {
+    border-radius: 8px;
+    border: none;
+    height: 45px;
+    width: 83%;
+    padding: 5px 1em;
+    margin-right: 0.5em;
+    outline: none;
+    font-size: 18px;
+}
+
+.white {
+    color: #fff;
+}
+
+.top-section button {
+    border-radius: 10px;
+    width: 13%;
+    height: 45px;
+    padding: 0.25em 0.7em;
+    background-color: mediumvioletred;
+    border: none;
+}
+
+.fa-plus {
+    font-size: 18px;
+}
+
+.bottom-section {
+    background-color: lightpink;
+    min-height: 60vh;
+    position: relative;
+    padding: 1rem 1.5rem 62px;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.todo-list {
+    padding-left: 0;
+}
+
+.todo-list li {
+    list-style-type: none;
+    background-color: #fff;
+    padding: 8px 15px;
+    border-radius: 8px;
+}
+
+.todo-list input {
+    border-color: red;
+    outline: red;
+}
+
+.small-screen-filter {
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
+.large-screen-filter {
+    display: none;
+}
+
+.active-status,
+.screen-filter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filters {
+    width: 240px;
+    margin: 0.5rem auto 0;
+    font-size: 16px;
+}
+
+.filters p:first-of-type {
+    color: purple;
+}
+
+.filters p:nth-of-type(2) {
+    color: red;
+}
+
+.filters p:last-of-type {
+    color: green;
+}
+
+.hi {
+    height: 50px;
+}
+
+.current {
+    background-color: transparent;
+}
+
+.todo-item {
+    margin: 1rem 0;
+}
+
+.todo-item div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: rgb(75, 161, 75);
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+@media screen and (min-width: 465px) {
+    .top-height {
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+
+    .bottom-section {
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .page {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .top-height {
+        margin: 0;
+    }
+
+    .top-section {
+        background-color: transparent;
+    }
+
+    .bg {
+        background-color: orchid;
+        height: 290px;
+    }
+
+    .bottom-section {
+        z-index: 1;
+        border-radius: 15px;
+        box-shadow: 0 1px 1px 1px #555;
+        padding: 1rem 1.5rem 65px;
+        /* padding-bottom: 65px; */
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        font-size: 20px;
+    }
+
+    .page {
+        width: 700px;
+    }
+
+    .top-section h1 {
+        font-size: 48px;
+    }
+
+    input[type='text'],
+    input[type='text']:hover {
+        border-radius: 10px;
+        height: 60px;
+        width: 88%;
+        padding: 10px 2em;
+        margin-right: 0.5em;
+        font-size: 20px;
+    }
+
+    .top-section button {
+        width: 10%;
+        height: 60px;
+    }
+
+    .fa-plus {
+        font-size: 24px;
+    }
+
+    .active-status,
+    .small-screen-filter {
+        display: none;
+    }
+
+    .large-screen-filter {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .screen-filter {
+        display: flex;
+        justify-content: center;
+    }
+
+    .filters {
+        width: 280px;
+        font-size: 20px;
+        margin: 0;
+        column-gap: 15px;
+    }
+
+    .bottom-section {
+        border-radius: 15px;
+        padding: 1rem 0 89px;
+    }
+
+    .bottom {
+        width: 100%;
+        background-color: #fff;
+        padding: 16px 18px 6px;
+    }
+
+    .todo-list {
+        margin: 2em 3em;
+    }
+
+    .todo-list li {
+        padding: 15px 20px;
+    }
+}
