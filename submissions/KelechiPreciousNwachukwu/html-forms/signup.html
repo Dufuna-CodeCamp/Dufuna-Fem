@@ -4,82 +4,128 @@
 <head>
     <meta charset UTF="8">
     <meta name="viewport" content="width=device-width, initial-scale = 1.0">
-    <title>PreciseSpice - Sign Up</title>
     <link rel="stylesheet" type="text/css" href="../css/signup.css">
+    <title>PreciseSpice - Signup</title>
 </head>
 
 <body>
     <header>
-        <img src="../html/img/PreciseSpice.jpg" alt="PreciseSpice-icon">
-        <h1>Get Cooking with PreciseSpice!</h1>
+        <div class="logo">
+            <img class="nav-logo" src="../html/img/PreciseSpiceIcon.jpg" alt="PreciseSpice-icon" width="67px"
+                height="27px">
+        </div>
+        <nav>
+            <ul>
+                <li class="nav-item"><a href="../html/product-page.html">Product Page</a></li>
+                <li class="nav-item"><a href="../html-forms/contactform.html">Contact Us</a></li>
+                <li class="nav-item"><a href="../html-forms/signup.html">Sign-up</a></li>
+            </ul>
+        </nav>
     </header>
+    <main>
+        <section class="register-text">
+            <div class="main-text">
+                <h2>Register your Account</h2>
+                <p>Registering an account gives you access to sweet promo and events available to only registered customers.</p>
+                <p>Already got an account?
+                    <a href="#">Sign in</a>
+                </p>
+            </div>
+        </section>
+        <section class="main-form">
+            <form id="form">
+                <div class="form-container">
+                    <div class="form-input">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="first-name" />
+                        <span class="error-block"></span>
+                    </div>
+                    <div class="form-input">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name" />
+                        <span class="error-block"></span>
+                    </div>
+                    <div class="form-input">
+                        <label for="other-name">Other Names</label>
+                        <input type="text" name="other-name" id="other-name" />
+                        <span class="error-block"></span>
+                    </div>
+                    <div class="form-input">
+                        <label for="phone-number">Phone Number</label>
+                        <input type="tel" name="phone-number" id="phone-number" />
+                        <span class="error-block"></span>
+                    </div>
+                    <div class="form-input">
+                        <label for="email">Email Address</label>
+                        <input type="text" name="email" id="email" />
+                        <span class="error-block"></span>
+                    </div>
+                    <div class="form-input">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" />
+                        <span class="error-block"></span>
+                    </div>
+                    <div class="form-input">
+                        <label for="password2">Confirm Password</label>
+                        <input type="password" name="password2" id="password2" />
+                        <span class="error-block"></span>
+                    </div>
+                    <div class="check-input">
+                        <input type="checkbox" id="terms" name="terms" />
+                        <label for="terms">
+                            <a href="#"> I agree to the Terms and Conditions</a>
+                        </label>
+                        <span class="error-block"></span>
+                    </div>
 
-    <div class="g-sign-up-button">
-        <a href="#">
-            <img src="../html/img/google-icon.svg">
-            <span>Sign up with Google</span>
-        </a>
-    </div>
-
-    <p class="signUpOptionsOrText">
-        or
-    </p>
-    <form id="signupform" novalidate>
-        <div class="inputWrapper" title="Email">
-            <div class="inputArea">
-                <input type="email" name="email" placeholder="Email" id="email" maxlength="256" required
-                    autocomplete="email">
-                <div class="inputInfo">
-                    <div class="infoText"></div>
+                    <div class="btn-con">
+                        <button type="submit" class="btn-signup">sign up</button>
+                    </div>
                 </div>
-                <label for="email" class="inputLabel">Email</label>
-                <div class="inputUnderline"></div>
-            </div>
-            <div class="extraInfo">
-                <span id="emailExtraInfo">We’ll send an email to this address for verification</span>
-                <a href="#" id="emailSuggestion" tabindex="-1"></a>
-            </div>
-        </div>
-        <div class="inputWrapper" title="Username">
-            <div class="inputArea">
-                <input type="text" name="username" placeholder="Username" id="username" pattern="\w{3,30}" minlength="3"
-                    maxlength="30" required autocapitalize="none" autocomplete="username">
-                <div class="inputInfo">
-                    <div class="infoText"></div>
-                </div>
-                <label for="username" class="inputLabel">Username</label>
-                <div class="inputUnderline"></div>
-            </div>
-        </div>
-        <div class="inputWrapper password" title="Password">
-            <div class="inputArea">
-                <input type="password" name="password" placeholder="Password" id="password" pattern=".{8,100}"
-                    minlength="8" maxlength="100" required autocomplete="new-password">
-                <label class="inputLabel">Password</label>
-                <label class="showPassword">
-                    <input type="checkbox" name="showPasswordCheckbox" class="showPasswordCheckbox">
-                    <span class="checkbox"></span>
-                    <span class="checkboxLabel">Show</span>
-                </label>
-                <div class="inputUnderline"></div>
-            </div>
-            <div class="extraInfo">Type 8 characters or more</div>
-        </div>
-        <label class="termsOfService noSelect">
-            <input type="checkbox" class="termsOfServiceCheckbox" required>
-            <span class="checkbox"></span>
-            <span>I agree to <a href="#" target="_blank" rel="noopener">PreciseSpice’s Terms of Service</a>.</span>
-        </label>
-        <button>
-            Sign up and get spiced
-        </button>
-    </form>
+            </form>
+        </section>
+    </main>
 
     <footer>
-        <ul>
-            <li><a href="#">Forgot password?</a></li>
-            <li>Already have an account? <a href="#">Login</a></li>
-        </ul>
+
+        <div class="footer-top">
+            <div class="footer-nav">
+                <ul class="footer-links">
+                    <li><a href="./contactform.html">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-main">
+                <div class="newsletter">
+                    <p>Sign up for our Newsletter</p>
+                    <div class="footer-form">
+                        <input type="email" id="footer-email" placeholder="Enter your email address" />
+                        <button type="submit" class="footer-btn">SUBMIT</button>
+                    </div>
+                    <span class="error-block2"></span>
+                </div>
+                <div class="social">
+                    <p>CONNECT WITH US</p>
+                    <div class="social-links">
+                        <a href="facebook.com">
+                            <img src="../html/assets/logo/facebook-logo.png" alt="facebook" />
+                        </a>
+                        <a href="twitter.com">
+                            <img src="../html/assets/logo/twiiter-logo.png" alt="twitter" />
+                        </a>
+                        <a href="gmail.com">
+                            <img src="../html/assets/logo/gmail-logo.png" alt="gmail" />
+                        </a>
+                        <a href="youtube.com">
+                            <img src="../html/assets/logo/youtube-logo.png" alt="youtube" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class = "copyright">Copyright 2021 PreciseSpiceNG All rights reserved</p>
     </footer>
 
 </body>
