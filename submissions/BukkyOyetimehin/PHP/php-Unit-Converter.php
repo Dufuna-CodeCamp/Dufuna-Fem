@@ -15,7 +15,7 @@
         <input type="number" step="any" name="kilos"> <br>
         <input type="submit" name="submit" value=CONVERT><br>
     </form>
-    <h2>Metres(m)_to_Yards(lb)_Conversion</h2>
+    <h2>Metres(m)_to_Yards(yd)_Conversion</h2>
     <label>enter metres value</label>
     <form method="POST">
         <input type="number" step="any" name="metres"><br>
