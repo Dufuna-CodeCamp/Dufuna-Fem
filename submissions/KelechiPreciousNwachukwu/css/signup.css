@@ -45,6 +45,14 @@ h2 {
     font-size: 2.5rem;
 }
 
+h3 {
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 30px;
+    color: #5f5f5f;
+}
+
 label {
     display: block;
     font-size: 0.8rem;
@@ -175,6 +183,73 @@ input[type="checkbox" i] {
     font-size: 0.8rem;
 }
 
+/* Contact page style */
+
+.contact-main {
+    width: 100%;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.contacts {
+    margin-bottom: 30px;
+}
+
+p {
+    font-family: Montserrat;
+    font-size: 25px;
+    margin: 10px;
+}
+
+.form-container2 {
+    width: 100%;
+    border: 1px solid #888;
+    padding: 30px;
+}
+
+.form-top {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.contact-input, .contact-input input, .contact-input textarea  {
+    width: 100%;
+}
+
+img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin: 0px 0px 10px;
+}
+
+.social-links {
+    margin-top: 15px;
+}
+
+.contact-input {
+    margin-bottom: 15px;
+}
+
+.contact-input input {
+    padding: 7px 5px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #888;
+}
+
+.contact-input label {
+    margin-bottom: 5px;
+}
+
+.contact-btn {
+    text-align: right;
+}
+
+
+/* Footer style */
+
 footer {
     padding: 20px 30px;
 }
@@ -260,6 +335,10 @@ footer {
     .newsletter {
         margin-bottom: 20px;
     }
+
+    .contact-main {
+        padding: 0 0;
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -317,5 +396,9 @@ footer {
 
     .check-input label a {
         font-size: 0.8rem;
+    }
+
+    .contact-info {
+        margin-top: 20px;
     }
 }
