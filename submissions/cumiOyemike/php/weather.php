@@ -1,7 +1,5 @@
 <?php
 
-$temperature;
-
 $temperature = 10;
 
 if ($temperature <= 20) {
