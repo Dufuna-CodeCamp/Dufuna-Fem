@@ -3,14 +3,23 @@ let b= 7;
 let c= 123;
 let d= (c-b);
 
-while
-if ((d % 3 === 0) && (d % 5 === 0)) {
+for(i=1; i<=d; i++){
+
+if ((i % 3 === 0) && (i % 5 === 0)) {
+
     console.log("Software Developer"); 
-} else if (d % 3 === 0)  {
+
+} else if (i % 3 === 0)  {
+
     console.log("Software");
-} else if (d % 5 === 0) {
+
+} else if (i % 5 === 0) {
+
     console.log("Developer");
+
 } else{
-    console.log(a);
+
+    console.log(i);
+
 }
 };
