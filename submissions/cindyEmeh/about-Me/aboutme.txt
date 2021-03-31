@@ -1,3 +1,5 @@
-Hello world!
-My name is Desola Oluseye.I have been able to push my first task to github.
-By the end of the program,i want to be a proficient fullstack developer and stand up as a solution provider
+At the end of this program:
+
+I hope to have learned the skills that will enable be a Front End developer.
+
+I hope to have gathered experiences that will make me relevant in the Tech Industry.
