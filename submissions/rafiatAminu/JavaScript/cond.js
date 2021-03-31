@@ -1,9 +1,6 @@
-let a = 0;
-let b= 7;
-let c= 123;
-let d= (c-b);
+let diff= (123-7);
 
-for(i=1; i<=d; i++){
+for(i=1; i<=diff; i++){
 
 if ((i % 3 === 0) && (i % 5 === 0)) {
 
