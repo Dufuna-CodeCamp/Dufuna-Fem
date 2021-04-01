@@ -1,22 +1,22 @@
-let diff= (123-7);
+let diff = (123 - 7);
 
-for(i=1; i<=diff; i++){
+for (i = 1; i <= diff; i++) {
 
-if ((i % 3 === 0) && (i % 5 === 0)) {
+    if ((i % 3 === 0) && (i % 5 === 0)) {
 
-    console.log("Software Developer"); 
+        console.log("Software Developer");
 
-} else if (i % 3 === 0)  {
+    } else if (i % 3 === 0) {
 
-    console.log("Software");
+        console.log("Software");
 
-} else if (i % 5 === 0) {
+    } else if (i % 5 === 0) {
 
-    console.log("Developer");
+        console.log("Developer");
 
-} else{
+    } else {
 
-    console.log(i);
+        console.log(i);
 
-}
+    }
 };
