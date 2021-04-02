@@ -110,7 +110,7 @@ margin:5px;
 .Rectangle-10 {
   margin: 6px 4px 51px 4px;
   padding: 39px 45px 15px 41px;
-    width: 300px;
+    width: 200px;
   border-radius: 23px;
   border: solid 1px #707070;
   background-color: #ffffff;
@@ -484,59 +484,4 @@ margin:5px;
   content: "";
   display: table;
   clear: both;
-}
-@media only screen and (max-width: 600px) {
-.nav-links {
-    margin-top : 10px;
-    display: block;
-    flex-direction : column;
-}
-    .link li {
-    display:inline-block;
-    margin-left: 10px;
-    }
-    .container {
-        display: block;
-       padding: 0;
-}
-    .main {
-        display: block;
-    }
-    
-}
-
-@media only screen and (max-width: 768px) {
-    body {
-        box-sizing: border-box;
-    }
-
- #Copyright-2020-Yoursitecom-All-rights-reserved {
-        text-align-last: left;
-        margin: auto;
-     
-    }
-    @media (max-width: 992px) {
-    .top-bar{
-    display: block;
-    height: 100px;
-    padding: 12px 10px;
-    }  
-    
-    .link {
-     padding: 0;
-    margin-top: 10px;
-    }
-    
-    .top-bar ul li {
-     display: block;
-    margin: 0;
-    }
-    .main {
-        flex-direction: column;
-        justify-content: center;
-    }
-    #Copyright-2020-Yoursitecom-All-rights-reserved {
-        text-align-last: left;     
-    }
-}
 }
