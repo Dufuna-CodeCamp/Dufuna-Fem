@@ -1,7 +1,10 @@
+body {
+    margin: 0;
+}
 .top-bar { 
   background-color: blue;
   color:white;
-  height:50px;
+  height:20px;
   font-family: Montserrat;
   font-size: 16px;
   display:flex;
@@ -9,14 +12,14 @@
   padding: 14px 60px;
 }
 .link li {
-    display:inline-block;
+    display: inline-block;
     margin-left: 10px;
 }
 
-ul li a{
+ul li a {
 color: white;
-text-decoration:none;
-margin:5px;
+text-decoration: none;
+margin: 5px;
 }
 .Product-Page {
   width: 67px;
@@ -65,7 +68,7 @@ margin:5px;
 .Register-your-Account {
   width: 300px;
   height: 100px;
-  margin: 175px 20px 23px 137px;
+  margin: 15px 20px 23px 17px;
   font-family: Montserrat;
   font-size: 50px;
   font-weight: bold;
@@ -79,7 +82,7 @@ margin:5px;
 .Registering-an-account-gives-you-access-to-sweet-promo-and-events-available-to-only-registered-customers {
   width: 380px;
   height: 100px;
-  margin: 23px 20px 50px 137px;
+  margin: 23px 20px 50px 17px;
   font-family: Montserrat;
   font-size: 28px;
   font-weight: normal;
@@ -93,7 +96,7 @@ margin:5px;
 .Already-got-an-account-Sign-in {
   width: 370px;
   height: 37px;
-  margin: 26px 20px 30px 140px;
+  margin: 26px 20px 30px 17px;
   font-family: Montserrat;
   font-size: 28px;
   font-weight: normal;
@@ -108,9 +111,9 @@ margin:5px;
     color: blue;
 }
 .Rectangle-10 {
-  margin: 6px 4px 51px 4px;
+  margin: 6px 4px 51px 0px;
   padding: 39px 45px 15px 41px;
-    width: 200px;
+    width: 110px;
   border-radius: 23px;
   border: solid 1px #707070;
   background-color: #ffffff;
@@ -410,12 +413,15 @@ margin:5px;
   color: blue;
 }
 .Rectangle-9 {
-  width: 60px;
+  width: 90px;
   height: 34px;
   margin: 5px 75px 3px 1px;
   padding: 11px 16px 11px 1px;
   border: solid 1px #707070;
   background-color: #ffffff;
+}
+.register {
+    margin-top: 20px;
 }
 .CONNECT-WITH-US {
   width: 177px;
@@ -485,3 +491,55 @@ margin:5px;
   display: table;
   clear: both;
 }
+@media only screen and (max-width: 600px) {
+.nav-links {
+    margin-top : 10px;
+    display: flex;
+    flex-direction : column;
+}
+    .container {
+        display: block;
+        padding: 0;
+        margin: 0px;
+    }    
+    .footer {
+        display: block;
+    }
+    @media only screen and (max-width: 768px) {
+    body {
+        box-sizing: border-box;
+    }
+
+ #Copyright-2020-Yoursitecom-All-rights-reserved {
+        text-align-last: left;
+        margin: auto;
+     
+    }
+    }
+    @media (max-width: 992px) {
+    .top-bar{
+    display: block;
+    height: 100px;
+    padding: 12px 10px;
+    }  
+    
+    .link {
+     padding: 0;
+    margin-top: 10px;
+    }
+    
+    .top-bar ul li {
+     display: block;
+    margin: 0;
+    }
+    .main {
+        flex-direction: column;
+        justify-content: center;
+    }
+    #Copyright-2020-Yoursitecom-All-rights-reserved {
+        text-align-last: left;     
+    }
+}
+
+
+
