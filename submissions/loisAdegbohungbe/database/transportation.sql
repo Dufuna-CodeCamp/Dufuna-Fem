@@ -2,7 +2,7 @@ CREATE DATABASE transport;
 
 USE transport;
 
--- craete passengers tale
+-- create passengers tale
 CREATE TABLE passengers (
 	id INT NOT NULL AUTO_INCREMENT,
     full_name VARCHAR(250) NOT NULL,
