@@ -45,7 +45,7 @@ if(isset($_COOKIE['customers']) ) {
             echo "<td>" . $row['first_name'] . " " . $row['last_name'] . "</td>";
             echo "<td>" . $row['email'] . "</td>";
             echo "<td>" . $row['created_at'] . "</td>";
-            echo "<td> <a href='orders.php'><button>View</button></a></td>";
+            echo "<td> <a href='orders.php?id=" . $row['id'] . "'><button>View</button></a></td>";
            
         echo "</tr>";
     }
