@@ -45,6 +45,14 @@ h2 {
     font-size: 2.5rem;
 }
 
+h3 {
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 30px;
+    color: #5f5f5f;
+}
+
 label {
     display: block;
     font-size: 0.8rem;
@@ -77,7 +85,7 @@ main {
 }
 
 aside {
-    background-color: #416e1e;
+    background-color: rgb(255, 168, 137);
     text-align: center;
     padding: 30px;
 }
@@ -175,6 +183,166 @@ input[type="checkbox" i] {
     font-size: 0.8rem;
 }
 
+/* Contact page style */
+
+.contact-main {
+    width: 100%;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.contacts {
+    margin-bottom: 30px;
+}
+
+p {
+    font-family: Montserrat;
+    font-size: 25px;
+    margin: 10px;
+}
+
+.form-container2 {
+    width: 100%;
+    border: 1px solid #888;
+    padding: 30px;
+}
+
+.form-top {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.contact-input, .contact-input input, .contact-input textarea  {
+    width: 100%;
+}
+
+img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin: 0px 0px 10px;
+}
+
+.social-links {
+    margin-top: 15px;
+}
+
+.contact-input {
+    margin-bottom: 15px;
+}
+
+.contact-input input {
+    padding: 7px 5px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #888;
+}
+
+.contact-input label {
+    margin-bottom: 5px;
+}
+
+.contact-btn {
+    text-align: right;
+}
+
+/*Product page style*/
+
+.container {
+    padding: 50px 30px;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    column-gap: 10px;
+}
+
+.product-image {
+    width: 90%;
+    height: 300px;
+    background-image: url('../html/img/turmeric-root-powder.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.product-details {
+    font-family: Montserrat;
+    text-align: left;
+    padding: 20px 0;
+    font-weight: 700;
+    margin: 9px 0 0;
+}
+
+.product-details p input {
+    width: 50px;
+    padding: 5px;
+}
+
+h3 {
+    margin: 10px;
+}
+
+.product-desc p {
+    font-size: 20px;
+    line-height: 1.25;
+}
+
+.error {
+    color: red;
+    display: none;
+}
+
+.error.show {
+    display: block;
+}
+
+.buy-now {
+    display: inline-block;
+    background-color: orangered;
+    color: #FFF;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.buy-now.disabled {
+    opacity: 0.6;
+}
+
+.other-products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.other-product {
+    width: 330px;
+    margin: 5px 10px;
+    background-color: #ffffff;
+}
+
+aside {
+    display: block;
+}
+
+.other-image {
+    padding: 10px;
+}
+
+.other-image img {
+    width: 309px;
+    height: 226px;
+}
+
+/* Footer style */
+
 footer {
     padding: 20px 30px;
 }
@@ -260,6 +428,10 @@ footer {
     .newsletter {
         margin-bottom: 20px;
     }
+
+    .contact-main {
+        padding: 0 0;
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -318,4 +490,13 @@ footer {
     .check-input label a {
         font-size: 0.8rem;
     }
+
+    .contact-info {
+        margin-top: 20px;
+    }
+
+    .product {
+        display: block;
+    }
+    
 }
