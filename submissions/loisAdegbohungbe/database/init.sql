@@ -56,24 +56,6 @@ INSERT INTO products (name, description, imageUrl, unit_price, category_id, crea
 VALUES ('K32 electric kettle', 'make hot water reaily available when needed with K32 kettle', 'C:\\Users\\user\\Downloads\\bulb.jpg', 5000, 1, 2, 25, 'low stock'),
 		('Golden Morn 500g', 'delicious golden morn, ready to eat at aytime!', 'C:\\Users\\user\\Downloads\\oranges.jpg', 500, 3, 1, 150, 'in stock');
 
--- create table for customers addresses
-CREATE TABLE customers_addresses (
-    id INT NOT NULL AUTO_INCREMENT,
-    street_address VARCHAR(50) NOT NULL,
-    city VARCHAR(20) NOT NULL,
-    state VARCHAR(20) NOT NULL,
-    zip_code VARCHAR(20),
-    country VARCHAR(20) NOT NULL,
-    phone_number VARCHAR(15) NOT NULL,
-    PRIMARY KEY (id)
-);
-
--- insert values into customers addresses table
-INSERT INTO customers_addresses (street_address, city, state, zip_code, country, phone_number)
-VALUES ('23 Ayeni Close, Ile-Tuntun', 'Ibadan', 'Oyo', '100091', 'Nigeria' , '08102347878'),
-		('4 Abiola Estate', 'Lekki', 'Lagos', '100001', 'Nigeria' , '08146893667'),
-		('17 Fagbola Street, Isale General', 'Ilesha', 'Osun','100023', 'Nigeria' , '08134567832');
-
 -- create table for customers
 CREATE TABLE customers (
     id INT NOT NULL AUTO_INCREMENT,
@@ -81,17 +63,34 @@ CREATE TABLE customers (
     last_name VARCHAR(50) NOT NULL,
     email_address VARCHAR(50) NOT NULL,
     password VARCHAR(50) NOT NULL,
-    address_id INT NOT NULL,
-    PRIMARY KEY (id),
-    FOREIGN KEY (address_id)
-        REFERENCES customers_addresses (id)
+    PRIMARY KEY (id)
 );
 
 -- insert values into customers table
-INSERT INTO customers (first_name, last_name, email_address, password, address_id)
-VALUES ('Michael', 'James', 'michaeljames@mail.com', 'michael002', '3'),
-		('Olaoluwa', 'Nifemi', 'olaoluwanifemi@mail.com', 'olanifemi002', '1'),
-		('Ajayi', 'Mary', 'ajayimary@mail.com', 'mary002', '2');
+INSERT INTO customers (first_name, last_name, email_address, password)
+VALUES ('Michael', 'James', 'michaeljames@mail.com', 'michael002',
+		('Olaoluwa', 'Nifemi', 'olaoluwanifemi@mail.com', 'olanifemi002'),
+		('Ajayi', 'Mary', 'ajayimary@mail.com', 'mary002');
+
+-- create table for customers addresses
+CREATE TABLE customers_addresses (
+    id INT NOT NULL AUTO_INCREMENT,
+    customer_id INT NOT NULL,
+    street_address VARCHAR(50) NOT NULL,
+    city VARCHAR(20) NOT NULL,
+    state VARCHAR(20) NOT NULL,
+    zip_code VARCHAR(20),
+    country VARCHAR(20) NOT NULL,
+    phone_number VARCHAR(15) NOT NULL,
+    PRIMARY KEY (id),
+    FOREIGN KEY (customer_id) REFERENCES customers (id)
+);
+
+-- insert values into customers addresses table
+INSERT INTO customers_addresses (customer_id, street_address, city, state, zip_code, country, phone_number)
+VALUES (1, '23 Ayeni Close, Ile-Tuntun', 'Ibadan', 'Oyo', '100091', 'Nigeria' , '08102347878'),
+		(2, '4 Abiola Estate', 'Lekki', 'Lagos', '100001', 'Nigeria' , '08146893667'),
+		(3, '17 Fagbola Street, Isale General', 'Ilesha', 'Osun','100023', 'Nigeria' , '08134567832');
 
 -- create table for orders
 CREATE TABLE orders (
