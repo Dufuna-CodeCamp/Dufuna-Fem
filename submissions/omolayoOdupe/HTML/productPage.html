@@ -29,9 +29,14 @@
             <div class="box2">
                 <span>OUR PREFFERED PACK  </span><br>
                 <span> Brand: Pre-packed selection </span><br>
-                <span> Quantity: <t>2</t></span><br>
-                <span> Price: ₦ 25,000 </span><br>
-                <button> Buy Now</button> <br>       
+                <span> Quantity:
+                    <input type="number" name="qty" placeholder="1" id="quantity">
+                    <span class="error-block"></span>
+                </span><br>
+                <span> Price: ₦ <span id="price"> 25,000 </span></span><br>
+                <span> Shipping Cost: ₦ <span id="shippingCost"> 5,000 </span></span><br>
+                <span> Total Cost: ₦ <span id="totalCost"> 30,000 </span></span><br>
+                <button class="pricebtn" type="submit" id="buyNow"> Buy Now</button> <br>       
             </div>
         </div >
         <div class="desc">
@@ -87,5 +92,6 @@
         </div>
         <p class="copyright"> Copyright 2021 busybasket.com.All right reserved </p>
     </footer>
+<script src="../dom/productShippingCost.js" ></script>
 </body>
 </html>
