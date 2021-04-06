@@ -1,9 +1,9 @@
-let quantity = document.getElementById ('quantity'),
-    price = document.getElementById ('price'),
-    shippingCost = document.getElementById ('shippingCost'),
-    totalCost = document.getElementById ('totalCost'),
-    button = document.getElementById ('buyNow');
-    productPrice = Number (price.innerHTML) * quantity.value;
+let quantity = document.getElementById('quantity'),
+    price = document.getElementById('price'),
+    shippingCost = document.getElementById('shippingCost'),
+    totalCost = document.getElementById('totalCost'),
+    button = document.getElementById('buyNow');
+    productPrice = Number(price.innerHTML) * quantity.value;
     totalCost.innerHTML = Number(shippingCost.innerHTML) + productPrice;
 
 function productPriceCheck (event) {
