@@ -1,33 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
+    <link rel="stylesheet" href="../CSS/contact.css">
+    <title>Sign Up Page</title>
 </head>
+
 <body>
-    <a href="/Dufuna-Fem/submissions/bettyBada/HTML/index.html">Product Page</a>
-    <a href="/Dufuna-Fem/submissions/bettyBada/html-forms/contact.html">Contact Form</a>
+    <!--NAVBAR SECTION-->
+    <header>
+        <div class="container">
+            <h1 id="logo" class="highlight">Asterion Gadgets</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Product Page</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="/Dufuna-Fem/submissions/bettyBada/CSS/Sign Up Page/signup.html">Sign-Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <h1>Contact Form</h1>
-
-<form>
-    <label for="name">Full Name:</label><br>
-    <input type="text" name="name" id="name" placeholder="Enter your full name"><br><br>
-
-    <label for="email">Email:</label><br>
-    <input type="email" name="email" id="email" placeholder="Enter your email address"><br><br>
-
-    <label for="subject">Subject:</label><br>
-    <input type="text" name="subject" id="email" placeholder="Message subject"><br><br>
-
-    <label for="message">Message Input:</label><br>
-    <textarea rows="7" cols="50" name="message box"></textarea><br><br>
-
-    <button type="submit">Submit</button>
-
-</form>
+    <!--CONTACT SECTION-->
+    <div class="container-2">
+        <div class="text">
+            <div class="phone">
+            <img class="call" src="../HTML/Images/ic_call_24px_2021-04-02/ic_call_24px.png" alt="call icon">
+            <h2>Please contact us via these numbers:</h2>
+            <p>+123 803 303 0000</p>
+            <p>+123 816 710 6842</p>
+        </div>
+        <div class="email">
+            <img class="draft" src="../HTML/Images/ic_drafts_24px_2021-04-02/ic_drafts_24px.png" alt="drafts icon">
+            <h2>Email Address:</h2>
+            <p>support@domain.com</p>
+        </div>
+        <div class="connect">
+            <h2>Or Connect with us:</h2>
+            <div class="icons">
+                    <img class="iconia" src="../HTML/Images/facebooklogo.png" alt="">
+                    <img class="iconia" src="../HTML/Images/twiiterlogo.png" alt="">
+                    <img class="iconia" src="../HTML/Images/gmaillogo.png" alt="">
+                    <img class="iconia" src="../HTML/Images/youtubelogo.png" alt="">
+            </div>
+        </div>
+        </div>
+        <div class="box">
+            <form action="" method="post">
+                <img class="email-icon" src="../HTML/Images/ic_email_24px_2021-04-02/ic_email_24px.png" alt="email-icon">
+                <p class="email-text">Or better still send us a message</p>
+                
+                <div class="form-group">
+                    <input placeholder="Full Name" class="inputs" type="text" name="name" id="name">
+                </div>
+                <div class="form-group">
+                    <input placeholder="Email Address" class="inputs" type="email" name="email" id="email">
+                </div>
+                <div class="form-group">
+                    <input placeholder="Subject" class="inputs" type="text" name="name" id="name">
+                </div>
+                <div class="form-group" id="message">
+                    <label for="name" class="identify">Message</label><br>
+                    <textarea></textarea>
+                </div>
+            
+                <div class="sign-up">
+                    <input class="signup-button" type="submit" value="SEND" disabled>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <div style="background-color: teal;">
+        <div class="footer">
+            <div class="footer-1">
+                <a href="">Contact Us</a> <br/> <br/>
+                <a href="">About Us</a> <br/> <br/>
+                <a href="">Terms and Conditions</a> <br/> <br/>
+            </div>
+            <div class="footer-2">
+                <p>Sign up for our Newsletter</p>
+                <div class="newsletter">
+                    <input type="text" name="email" id="" placeholder="Enter your email address">
+                    <button>SUBMIT</button>
+                </div>
+            </div>
+            <div class="footer-3">
+                <p>CONNECT WITH US</p>
+                <div class="social-icons">
+                    <img src="../HTML/Images/facebooklogo.png" alt="">
+                    <img src="../HTML/Images/twiiterlogo.png" alt="">
+                    <img src="../HTML/Images/gmaillogo.png" alt="">
+                    <img src="../HTML/Images/youtubelogo.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright 2020 asteriongadgets.com All rights reserved.</p>
+        </div>
+    </div>
 
 </body>
+
 </html>
