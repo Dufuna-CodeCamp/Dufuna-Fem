@@ -1,9 +1,52 @@
-_<?php
+<?php
+// Include config file
+require_once "config.php";
+echo "<h1> List of Customers </h1>";
+// Attempt select query execution
+$sql = "SELECT id, first_name, last_name, customer_email, created_at FROM customers";
+$result = $pdo->query($sql);
+/* Table Construction */
+if ($result->rowCount() > 0) {
+    echo "<table>";
+    echo "<tr>";
+    echo "<th>S/N</th>";
+    echo "<th>First_Name</th>";
+    echo "<th>Last_Name</th>";
+    echo "<th>Customer_Email</th>";
+    echo "<th>Created_At</th>";
+    echo "<th>Actions</th>";
+    echo "</tr>";
+    /* PHP code to fetch data from rows.loop will iterate until all data is fetched */
+    while ($row = $result->fetch()) {
+        echo "<tr>";
+        echo "<td>" . $row['id'] . "</td>";
+        echo "<td>" . $row['first_name'] . "</td>";
+        echo "<td>" . $row['last_name'] . "</td>";
+        echo "<td>" . $row['customer_email'] . "</td>";
+        echo "<td>" . $row['created_at'] . "</td>";
+        echo "<td>" . "<button type=button class='update-btn'>Update Order</button>" . "  " .
+            "<button type=button class='delete-btn'>Delete Order</button>" . "</td>";
+        echo "</tr>";
+    }
+    echo "</table>";
 
-    // Include config file
-    require_once "config.php";
+    $customersList = $result->fetchAll();
 
-    ?>
+    //Setting the Cookie
+    setcookie("customersBrief", json_encode($customersList), time() + 3600);
+    if (isset($_COOKIE["customersBrief"])) {
+        echo $_COOKIE["customersBrief"];
+        //Free result test
+        unset($customersList);
+    } else {
+        echo "No records matching your query were found.";
+    }
+} else {
+    echo "Failed";
+}
+// Close connection
+unset($pdo);
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -68,62 +111,9 @@ _<?php
             background-color: #6F1E51;
         }
     </style>
-
 </head>
 
 <body>
-
-    <?php
-
-    echo "<h1> List of Customers </h1>";
-
-    // Attempt select query execution
-    $sql = "SELECT id, first_name, last_name, customer_email, created_at FROM customers";
-    $result = $pdo->query($sql);
-
-    /* Table Construction */
-    if ($result->rowCount() > 0) {
-        // Heading Formation
-        echo "<table>";
-        echo "<tr>";
-        echo "<th>S/N</th>";
-        echo "<th>First_Name</th>";
-        echo "<th>Last_Name</th>";
-        echo "<th>Customer_Email</th>";
-        echo "<th>Created_At</th>";
-        echo "<th>Actions</th>";
-        echo "</tr>";
-        /* PHP code to fetch data from rows.loop will iterate until all data is fetched */
-        while ($row = $result->fetch()) {
-            echo "<tr>";
-            echo "<td>" . $row['id'] . "</td>";
-            echo "<td>" . $row['first_name'] . "</td>";
-            echo "<td>" . $row['last_name'] . "</td>";
-            echo "<td>" . $row['customer_email'] . "</td>";
-            echo "<td>" . $row['created_at'] . "</td>";
-            echo "<td>" . "<button type=button class='update-btn'>Update Order</button>" . "  " .
-                "<button type=button class='delete-btn'>Delete Order</button>" . "</td>";
-            echo "</tr>";
-        }
-        echo "</table>";
-
-        $customersList = $result->fetchAll();
-
-        //Setting the Cookie
-        setcookie("customersBrief", json_encode($customersList), time() + 3600);
-        if (isset($_COOKIE["customersBrief"])) {
-            echo $_COOKIE["customersBrief"];
-            //Free result test
-            unset($customersList);
-        } else {
-            echo "No records matching your query were found.";
-        }
-    } else {
-        echo "Failed";
-    }
-    // Close connection
-    unset($pdo);
-    ?>
 </body>
 
 </html>
