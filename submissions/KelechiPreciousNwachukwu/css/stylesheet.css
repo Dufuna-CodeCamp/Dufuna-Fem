@@ -247,6 +247,100 @@ img {
     text-align: right;
 }
 
+/*Product page style*/
+
+.container {
+    padding: 50px 30px;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    column-gap: 10px;
+}
+
+.product-image {
+    width: 90%;
+    height: 300px;
+    background-image: url('../html/img/turmeric-root-powder.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.product-details {
+    font-family: Montserrat;
+    text-align: left;
+    padding: 20px 0;
+    font-weight: 700;
+    margin: 9px 0 0;
+}
+
+.product-details p input {
+    width: 50px;
+    padding: 5px;
+}
+
+h3 {
+    margin: 10px;
+}
+
+.product-desc p {
+    font-size: 20px;
+    line-height: 1.25;
+}
+
+.error {
+    color: red;
+    display: none;
+}
+
+.error.show {
+    display: block;
+}
+
+.buy-now {
+    display: inline-block;
+    background-color: orangered;
+    color: #FFF;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.buy-now.disabled {
+    opacity: 0.6;
+}
+
+.other-products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.other-product {
+    width: 330px;
+    margin: 5px 10px;
+    background-color: #ffffff;
+}
+
+aside {
+    display: block;
+}
+
+.other-image {
+    padding: 10px;
+}
+
+.other-image img {
+    width: 309px;
+    height: 226px;
+}
+
 /* Footer style */
 
 footer {
@@ -368,6 +462,7 @@ footer {
     .form-container2 {
         padding: 30px 10px;
     }
+
     .social-links img {
         width: 30px;
         height: 25px;
@@ -392,7 +487,7 @@ footer {
     .main-form {
         padding-right: 0;
     }
-
+    
     .check-input label a {
         font-size: 0.8rem;
     }
@@ -400,3 +495,9 @@ footer {
     .contact-info {
         margin-top: 20px;
     }
+
+    .product {
+        display: block;
+    }
+
+} 
