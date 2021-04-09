@@ -44,10 +44,10 @@ CREATE TABLE registered_customers (
     PRIMARY KEY (id)
 );
 /*inserting values into the registered_customers table*/
-INSERT INTO registered_customers (first_name, last_name, email, password, customer_address_id, created_at)
-VALUES ('Kunle', 'James', 'kunniejay@mail.com', 'safvcteeg', 1, now()),
-('Bello', 'Hassan', 'bellohassan@mail.com', '3fffffgwaq', 2, now()),
-('Oghenetega', 'Esiri', 'tegaesiri@mail.com', 'vbmukgfjnfi', 3, now());
+INSERT INTO registered_customers (first_name, last_name, email, password, created_at)
+VALUES ('Kunle', 'James', 'kunniejay@mail.com', 'safvcteeg', now()),
+('Bello', 'Hassan', 'bellohassan@mail.com', '3fffffgwaq', now()),
+('Oghenetega', 'Esiri', 'tegaesiri@mail.com', 'vbmukgfjnfi', now());
 
 /*create table for contact addresses of registered customers*/
 CREATE TABLE contact_addresses (
@@ -63,10 +63,10 @@ CREATE TABLE contact_addresses (
     FOREIGN KEY (registered_customer_id) REFERENCES registered_customers(id) /* this links the customer to the registered_customers table */
 );
 /*inserting values into the contact_addresses table*/
-INSERT INTO contact_addresses (city, state, zip_code, country, phone_number, created_at)
-VALUES ('Port Harcourt', 'Rivers', '500272', 'Nigeria', 09343667658, now()),
-('Asaba', 'Delta', '320242', 'Nigeria', 0754326489, now()),
-('Ibadan', 'Oyo', '200223', 'Nigeria', 0854363267, now());
+INSERT INTO contact_addresses (city, state, zip_code, country, phone_number, registered_customer_id, created_at)
+VALUES ('Port Harcourt', 'Rivers', '500272', 'Nigeria', 09343667658, 1, now()),
+('Asaba', 'Delta', '320242', 'Nigeria', 0754326489, 2, now()),
+('Ibadan', 'Oyo', '200223', 'Nigeria', 0854363267, 3, now());
 
 /*create table for products*/
 CREATE TABLE products (
@@ -81,7 +81,7 @@ CREATE TABLE products (
     status VARCHAR(20) NOT NULL, 
     created_at DATETIME NOT NULL,
     PRIMARY KEY (id),
-    FOREIGN KEY (product_category_id) REFERENCES product_category(id), /* this links the product to the product_categories table */
+    FOREIGN KEY (product_category_id) REFERENCES product_categories(id), /* this links the product to the product_categories table */
     FOREIGN KEY (admin_user_id) REFERENCES admin_users(id) /* this links the product to the admin_users table */
 );
 /*inserting values into the products table*/
@@ -106,7 +106,7 @@ VALUES (2, 500, now()),
 
 /*create table for order items*/
 CREATE TABLE order_items (
-    id INT NOT NULL,
+    id INT NOT NULL AUTO_INCREMENT,
     order_id INT NOT NULL, /* this id is from the orders table */
     product_id INT NOT NUll, /* this id is from the products table */
     quantity INT NOT NULL,
