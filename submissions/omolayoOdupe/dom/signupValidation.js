@@ -22,6 +22,21 @@ function inputCheck (field, regExp, error_block1, error_block2, event){
     }
 }
 
+function passwordMatchCheck (event){
+    if (confirmPassword.value == '') {
+    confirmPassword.nextElementSibling.innerHTML = "Please confirm your password";
+    event.preventDefault();
+    return false;
+    } else if (confirmPassword.value != password.value)  {
+        confirmPassword.nextElementSibling.innerHTML = 'your password do not match';
+        event.preventDefault();   
+        return false; 
+    } else  {
+        confirmPassword.nextElementSibling.innerHTML = "";
+        return true;
+    }        
+}
+
 function inputValidation (event){
     let nameRegex = /^[A-Za-z]+$/;
     let numberRegex = /^[\+]?[0-9]{8,14}$/;
@@ -32,9 +47,10 @@ function inputValidation (event){
     inputCheck (phoneNo, numberRegex, 'please enter your phone number', 'please enter a valid phone number', event);
     inputCheck (email, emailRegex, 'please enter your email address', 'please enter a valid email address', event);
     inputCheck (password, pwdRegex, 'please enter your password', 'password should have a minimum of 6 characters, 1 capital letter, 1 special character eg @ and 1 number', event);
-    inputCheck (confirmPassword, pwdRegex, 'please confirm your password', 'your password do no match', event);  
-    return true;  
+    passwordMatchCheck(event); 
+    return true;     
 }
+
 form.addEventListener('submit', inputValidation);
 
 
