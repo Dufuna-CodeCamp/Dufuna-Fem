@@ -19,3 +19,14 @@ let productList = [
 for (let i = 0; i < productList.length; i++) {
     console.log(productList[i].productName + " with " + productList[i].imageUrl + " is sold for " + productList[i].productPrice);
 }
+
+
+for (let i = 1; i < 116; i++) {
+    if (i % 3 == 0 & i % 5 == 0) {
+        console.log("Software Developer")
+    } else if (i % 3 == 0) {
+        console.log("Software")
+    } else if (i % 5 == 0) {
+        console.log("Developer")
+    }
+}
