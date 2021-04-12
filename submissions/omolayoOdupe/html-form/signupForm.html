@@ -20,7 +20,7 @@
             </div>
     </div>
     <!--main section-->
-    <form action="#" method="POST" target="_self" enctype="multipart/form-data">
+    <form action="#" method="POST" target="_self" enctype="multipart/form-data" id="form">
         <div class="signup-container">
             <div class="signup-comment">
                 <p class="header"> Register your Account</p>
@@ -31,18 +31,25 @@
                 <div class="first-input">
                     <label for="First Name"> First Name</label>
                     <input type="text" name="firstname" id="firstname"/>
+                    <span class="error-block" ></span><br><br>
                     <label for="middlename"> Middle Name</label>
                     <input type="text" name="middlename" id="middlename"/>
+                    <span class="error-block" ></span><br><br>
                     <label for="Last Name"> Last Name</label>
                     <input type="text" name="lastname" id="lastname"/>
+                    <span class="error-block" ></span><br><br>
                     <label for="phonenumber"> Phone Number</label>
                     <input type="text" name="phonenumber" id="phonenumber"/>
+                    <span class="error-block" ></span><br><br>
                     <label for="email"> Email Address</label>
                     <input type="text" name="email" id="email"/>
+                    <span class="error-block" ></span><br><br>
                     <label for="password"> Password</label>
                     <input type="password" name="password" id="password"/>
+                    <span class="error-block" ></span><br><br>
                     <label for="password"> Confirm Password</label>
                     <input type="password" name="password" id="password2"/>
+                    <span class="error-block" ></span><br><br>
                 </div>
                 <div class="second-input">
                     <input type="checkbox" name="terms" id="terms"/>
@@ -74,6 +81,7 @@
             </div>
         </div>
         <p class="copyright"> Copyright 2021 busybasket.com. All right reserved </p>
-    </footer>      
+    </footer> 
+<script src="../dom/signupValidation.js" ></script>     
 </body>
 </html>
