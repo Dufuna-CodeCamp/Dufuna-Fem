@@ -20,7 +20,7 @@
             </div>
     </div>
     <!--main section-->
-    <form action="#" method="post" target="_self" enctype="multipart/form-data">
+    <form action="#" method="post" target="_self" enctype="multipart/form-data" id="form">
         <div class="contactpage-container">
             <div class="reachout">
                 <div class="reachout-box"> 
@@ -49,9 +49,13 @@
                 </div>
                 <div>
                     <input type="text" name="name" id="fullname" placeholder="Full Name"/>
+                    <span class="error-block" ></span><br><br>
                     <input type="email" name="email" id="email" placeholder="Email address"/>
+                    <span class="error-block" ></span><br><br>
                     <input type="text" name="subject" id="subject" placeholder="Subject"/>
+                    <span class="error-block" ></span><br><br>
                     <textarea name="comment" id="comment" cols="83" rows="10" placeholder="Your Message"></textarea>
+                    <span class="error-block" ></span><br><br>
                     <button type="submit"> Send </button>
                 </div>
             </fieldset>
@@ -79,6 +83,7 @@
             </div>
         </div>
         <p class="copyright"> Copyright 2021 busybasket.com. All right reserved </p>
-    </footer>   
+    </footer> 
+    <script src="../dom/contactValidation.js"></script>  
 </body>
 </html>
