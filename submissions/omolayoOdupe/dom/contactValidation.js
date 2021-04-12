@@ -36,7 +36,7 @@ function contactInputValidation(event){
     contactInputCheck (fullName, nameRegex, 'please enter your name', 'please enter a valid name', event);
     contactInputCheck (email, emailRegex, 'please enter your email address', 'please enter a valid email', event);
     mandatory (subject, 'please enter a message subject', event);
-    mandatory (textMessage, 'please enter a message subject', event);
+    mandatory (textMessage, 'please enter your message', event);
     return true;     
 }
 
