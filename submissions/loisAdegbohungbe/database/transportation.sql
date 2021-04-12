@@ -33,4 +33,4 @@ CREATE TABLE accidents (
     passenger_survived BOOLEAN NOT NULL,
     PRIMARY KEY (id),
     FOREIGN KEY (passenger_id) REFERENCES passengers (id)
-)
+);
