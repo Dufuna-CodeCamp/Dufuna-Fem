@@ -4,16 +4,16 @@ let footersEmail = document.getElementById('footersemail');
 function newsletterCheck(event){
     let emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,10})+$/;
 
-    if (footersEmail.value == '') {
-        footersEmail.nextElementSibling.innerHTML = 'please enter your email address';
+    if (email.value == '') {
+        newsletterRequest.lastElementChild.innerHTML = 'please enter your email address';
         event.preventDefault();
         return false;
-    } else if (!footersEmail.value.match(emailRegex)){
-        footersEmail.nextElementSibling.innerHTML = 'please enter a valid email';
+    } else if (!email.value.match(emailRegex)){
+        newsletterRequest.lastElementChild.innerHTML = 'please enter a valid email';
         event.preventDefault();
         return false;
     } else {
-        footersEmail.nextElementSibling.innerHTML = "";
+        newsletterRequest.lastElementChild.innerHTML = "";
         return true;
     }
 }
