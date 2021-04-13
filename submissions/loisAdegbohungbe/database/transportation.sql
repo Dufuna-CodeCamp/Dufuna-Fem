@@ -7,7 +7,7 @@ CREATE TABLE passengers (
 	id INT NOT NULL AUTO_INCREMENT,
     full_name VARCHAR(250) NOT NULL,
     sex VARCHAR(25) NOT NULL,
-    age INT,
+    age VARCHAR(4),
     PRIMARY KEY (id)
 );
 
