@@ -6,6 +6,7 @@ CREATE TABLE passengers(
   sex ENUM('Male', 'Female') NOT NULL,
   ages varchar(10)
   );
+ALTER TABLE passengers MODIFY COLUMN sex VARCHAR(10) NOT NULL;
  ----This section is for trips table ---
 USE transportation;
  CREATE TABLE trips(
@@ -19,6 +20,11 @@ USE transportation;
    embarkation_point VARCHAR(100) NOT NULL
    );
 ALTER TABLE trips ADD COLUMN passenger_class ENUM('1','2', '3');
+ALTER TABLE trips MODIFY COLUMN ticket_numbers INT NOT NULL;
+ALTER TABLE trips MODIFY COLUMN trip_fares INT NOT NULL;
+ALTER TABLE trips MODIFY COLUMN cabin_number INT;
+ALTER TABLE trips MODIFY COLUMN  parentsorchildren_number INT NOT NULL;
+ALTER TABLE trips MODIFY COLUMN  spousesorsiblings_number  INT NOT NULL;
 
 ----This section is for survival table---
 USE transportation;
@@ -27,3 +33,4 @@ CREATE TABLE survival_status(
   passenger_id INT NOT NULL REFERENCES passengers(id),
   survival_status ENUM('Yes', 'No') NOT NULL
   );
+ALTER TABLE survival_status MODIFY COLUMN passenger_int TINYINT(10) NOT NULL;
