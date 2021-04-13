@@ -44,7 +44,7 @@ if (count($customers) > 0) {
                 echo "<td>" . $row["first_name"] . " " . $row["last_name"] . "</td>";
                 echo "<td>" . $row["email"] . "</td>";
                 echo "<td>" . $row["created_at"] . "</td>";
-                echo "<td> <a href = 'orders.php'><button>View</button></a> </td>";
+                echo "<td> <a href = 'order-list.php'><button>View</button></a> </td>";
             echo "</tr>";
 
         }

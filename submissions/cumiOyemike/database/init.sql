@@ -52,6 +52,7 @@ VALUES ('Kunle', 'James', 'kunniejay@mail.com', 'safvcteeg', now()),
 /*create table for contact addresses of registered customers*/
 CREATE TABLE contact_addresses (
     id INT NOT NULL AUTO_INCREMENT,
+    street VARCHAR(50) NOT NULL,
     city VARCHAR(50) NOT NULL,
     state VARCHAR(50) NOT NULL,
     zip_code VARCHAR(40) NOT NULL,
@@ -63,10 +64,11 @@ CREATE TABLE contact_addresses (
     FOREIGN KEY (registered_customer_id) REFERENCES registered_customers(id) /* this links the customer to the registered_customers table */
 );
 /*inserting values into the contact_addresses table*/
-INSERT INTO contact_addresses (city, state, zip_code, country, phone_number, registered_customer_id, created_at)
-VALUES ('Port Harcourt', 'Rivers', '500272', 'Nigeria', 09343667658, 1, now()),
-('Asaba', 'Delta', '320242', 'Nigeria', 0754326489, 2, now()),
-('Ibadan', 'Oyo', '200223', 'Nigeria', 0854363267, 3, now());
+INSERT INTO contact_addresses (street, city, state, zip_code, country, phone_number, registered_customer_id, created_at)
+VALUES ('Church street', 'Port Harcourt', 'Rivers', '500272', 'Nigeria', 09343667658, 1, now()),
+('Ike street', 'Asaba', 'Delta', '320242', 'Nigeria', 0754326489, 2, now()),
+('Serena avenue', 'Ibadan', 'Oyo', '200223', 'Nigeria', 0854363267, 3, now());
+
 
 /*create table for products*/
 CREATE TABLE products (
