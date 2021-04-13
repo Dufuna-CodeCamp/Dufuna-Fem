@@ -3,10 +3,9 @@ USE transportation;
 CREATE TABLE passengers(
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   full_names VARCHAR(100) NOT NULL,
-  sex ENUM('Male', 'Female') NOT NULL,
+  sex VARCHAR(10) NOT NULL,
   ages varchar(10)
   );
-ALTER TABLE passengers MODIFY COLUMN sex VARCHAR(10) NOT NULL;
  ----This section is for trips table ---
 USE transportation;
  CREATE TABLE trips(
@@ -15,19 +14,15 @@ USE transportation;
    ticket_numbers VARCHAR(50) NOT NULL,
    trip_fares VARCHAR(10) NOT NULL,
    cabin_number VARCHAR(5),
-   parentsorchildren_number VARCHAR(20) NOT NULL,
-   spousesorsiblings_number VARCHAR(20) NOT NULL,
+   parentsorchildren_number INT NOT NULL,
+   spousesorsiblings_number INT NOT NULL,
    embarkation_point VARCHAR(100) NOT NULL
+   passenger_class ENUM('1','2', '3')
    );
-ALTER TABLE trips ADD COLUMN passenger_class ENUM('1','2', '3');
-ALTER TABLE trips MODIFY COLUMN  parentsorchildren_number INT NOT NULL;
-ALTER TABLE trips MODIFY COLUMN  spousesorsiblings_number  INT NOT NULL;
-
 ----This section is for survival table---
 USE transportation;
 CREATE TABLE survival_status(
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   passenger_id INT NOT NULL REFERENCES passengers(id),
-  survival_status ENUM('Yes', 'No') NOT NULL
+  survival_status TINYINT(10) NOT NULL
   );
-ALTER TABLE survival_status MODIFY COLUMN survival_status TINYINT(10) NOT NULL;
