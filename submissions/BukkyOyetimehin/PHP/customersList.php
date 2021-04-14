@@ -24,8 +24,7 @@ if ($result->rowCount() > 0) {
         echo "<td>" . $row['last_name'] . "</td>";
         echo "<td>" . $row['customer_email'] . "</td>";
         echo "<td>" . $row['created_at'] . "</td>";
-        echo "<td>" . "<button type=button class='update-btn'>Update Order</button>" . "  " .
-            "<button type=button class='delete-btn'>Delete Order</button>" . "</td>";
+        echo "<td>" . "<a href='list-of-orders.php?id=$row[id]>$row[first_name]' class='view-btn'>View Order</a>" . "</td>";
         echo "</tr>";
     }
     echo "</table>";
@@ -42,7 +41,7 @@ if ($result->rowCount() > 0) {
         echo "No records matching your query were found.";
     }
 } else {
-    echo "Failed";
+    echo "No results to display";
 }
 // Close connection
 unset($pdo);
@@ -87,28 +86,17 @@ unset($pdo);
             font-weight: lighter;
         }
 
-        .update-btn {
+        .view-btn {
             color: black;
             background-color: #009432;
             font-weight: bold;
             padding: 0.5rem;
             font-size: medium;
+            text-decoration: none;
         }
 
-        .update-btn:hover {
+        .view-btn:hover {
             background: #006266;
-        }
-
-        .delete-btn {
-            color: white;
-            background-color: #EA2027;
-            font-weight: bold;
-            padding: 0.5rem;
-            font-size: medium;
-        }
-
-        .delete-btn:hover {
-            background-color: #6F1E51;
         }
     </style>
 </head>
