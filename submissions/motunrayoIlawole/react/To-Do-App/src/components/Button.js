@@ -1,9 +1,14 @@
 import React from 'react';
 
-const Button = () => {
+const Button = (props) => {
     return (
-        <button type = "button" className = "btn all" aria-pressed = {true}>
-			All items
+        <button 
+        type = "button" 
+        className = "btn all" 
+        aria-pressed = {props.isPressed}
+        onClick = {() => props.setFilter(props.name)}
+        >
+			{props.name}
 		</button>
     )
 }
