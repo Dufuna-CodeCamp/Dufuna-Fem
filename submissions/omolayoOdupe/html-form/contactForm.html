@@ -70,9 +70,12 @@
                 <span><a href="#"> Terms and Conditions</a></span>
             </div>
             <div class="footer-box2">
-                <p>Sign up for our Newsletter</p>
-                <input type="email" placeholder="Enter your email address" name="email">
-                <button>SUBMIT</button>
+                <form id="newsletterform">
+                    <p>Sign up for our Newsletter</p>
+                    <input type="email" placeholder="Enter your email address" name="email" id="footersemail">
+                    <button>SUBMIT</button> <br><br>
+                    <span class="error-block"></span>
+                </form>
             </div>
             <div class="footer-box3">
                 <p>CONNECT WITH US</p>
@@ -85,5 +88,6 @@
         <p class="copyright"> Copyright 2021 busybasket.com. All right reserved </p>
     </footer> 
     <script src="../dom/contactValidation.js"></script>  
+    <script src="../dom/newsletterValidation.js"></script>
 </body>
 </html>

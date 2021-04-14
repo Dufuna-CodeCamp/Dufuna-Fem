@@ -296,6 +296,11 @@ body{
     height: 25px;
 }
 
+.footer-box2 span{
+    line-height: 25px;
+}
+
+
 .footer-box3{
     line-height: 0.1;
 }
