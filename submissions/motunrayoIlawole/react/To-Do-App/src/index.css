@@ -80,10 +80,6 @@ form input {
   font-size: 0.9rem;
 }
 
-.not-checked {
-  border-color: red;
-}
-
 .todo-extras {
   display: flex;
   justify-content: space-between;
@@ -102,12 +98,21 @@ form input {
   color: blue;
 }
 
-.active, .clear {
+.active-button, .clear {
+  color: red;
+}
+
+.completed-button {
+  color: green;
+}
+
+.active {
   color: red;
 }
 
 .completed {
   color: green;
+  text-decoration: line-through;
 }
 
 .todo-extras2 {
