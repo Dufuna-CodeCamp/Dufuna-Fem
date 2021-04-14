@@ -98,16 +98,12 @@ form input {
   color: blue;
 }
 
-.active-button, .clear {
+.clear, .active {
   color: red;
 }
 
 .completed-button {
   color: green;
-}
-
-.active {
-  color: red;
 }
 
 .completed {
