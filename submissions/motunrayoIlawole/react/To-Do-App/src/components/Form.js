@@ -7,10 +7,13 @@ class Form extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
-        this.props.addTask(this.state.name);
-        this.setState({
-            name: ''
-        })
+
+        if (this.state.name !== '') {
+            this.props.addTask(this.state.name);
+            this.setState({
+                name: ''
+            })
+        }
     }
 
     render() {
