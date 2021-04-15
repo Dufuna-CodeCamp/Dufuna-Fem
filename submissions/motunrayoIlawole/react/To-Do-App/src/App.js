@@ -66,8 +66,7 @@ class App extends Component {
 			const theTasks = this.state.tasks
 			this.setState({
 				tasks: [ ...theTasks, newTask]
-			})
-			console.log(this.state.tasks);
+			});
 		}
 
 		const clearCompleted = () => {
@@ -78,8 +77,11 @@ class App extends Component {
 			})
 		};
 
-		const tasksNoun = tasklist.length !== 1 ? 'tasks' : 'task';
-		const taskRemaining = `${tasklist.length} ${tasksNoun} remaining`;
+		const activeTasks = tasks.filter(task => {
+			return task.status === 'active';
+		})
+		const tasksNoun = activeTasks.length > 1 ? 'tasks' : 'task';
+		const taskRemaining = `${activeTasks.length} ${tasksNoun} remaining`;
 
 		return (
 			<div className = "todoapp">
@@ -87,7 +89,7 @@ class App extends Component {
 				<Form addTask = {addTask} />
 				<div className = "todo-container">
 					<div className = "todo-list">
-						<ul role = "list" aria-labelledby = "list-heading">
+						<ul aria-labelledby = "list-heading">
 							{tasklist}
 						</ul>
 	
