@@ -63,6 +63,7 @@ main{
     border-radius: 10px;
     border-radius: 1px solid black;
     padding: 10px;
+    cursor: pointer;
 }
 #iphone{
     background-color: white;
@@ -71,12 +72,13 @@ main{
 }
 .beginning{
     background-color:rgb(226, 212, 212);
-    margin: none;
-    padding-bottom: 1px;
+    margin:none;
+    padding-left: 20px;
+    padding-bottom: 20px;
 }
 #secondsss{
     text-align: center;
-    padding-top: 20px;
+    margin-bottom: 10px;
 }
 .post{
     display: grid;
@@ -86,11 +88,14 @@ main{
     margin-top: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
     background-color: white;
-    padding: 10px 60px 0 100px;
+    padding: 10px 55px 0 100px;
+    align-content: center;
+    margin: 17px;
 }   
 #phones{
-    width:300px;
+    width:250px;
     height: 250px;
+    margin-left: 0px;
 }
 .insider{
     margin: 20px;
@@ -184,20 +189,12 @@ footer{
         margin: auto;   
         padding-top: 22px;
     }  
-    .inception{  
-        display: flex;
-    }
-    .firrs{
-    margin-left: 30px;
-    padding-bottom: 10px;
+    .inceptions{  
+        display: flex;    
     }
     #two{
         width: 30%;
-        padding-right: 25px;
-    }
-    ul.wrapper{
-        display: flex;
-        grid-template-columns: 1fr 1fr;
+        padding-right: 25px;  
     }
     .post{
         display: flex;
@@ -209,7 +206,10 @@ footer{
     .work2{
         padding-right: 20px;
     }
-
+.wrapp{
+    display: flex;
+    align-content: center;
+}
     #phones{
         width: 120px;
         height: 120px;
@@ -253,6 +253,16 @@ footer{
         width: inherit;
         padding: 10px;
         padding-right: 50px;
+        padding-top: 1px;
+    }
+    .beginning{
+        display: flex;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-top: 40px;
+        padding-right: 30px;
+    }
+    #related{
+        margin-top: -30px;
     }
     #two{
         width: 30%;
@@ -262,17 +272,6 @@ footer{
         width: 150px;
         height: 150px;
         }
-    ul.wrapper{
-        display: flex;
-        grid-template-columns: 1fr 1fr 1fr;
-        }       
-    .work3{
-        padding-left: 100px;
-        padding-right: 20px;    
-    }
-    .work2{
-        padding-left: 100px;  
-    }
     .ending{
     grid-template-columns: 1fr 1fr 1fr;
     display: grid;
