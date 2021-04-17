@@ -63,6 +63,8 @@ header a:hover{
 
 .picture{
     margin: 64px 0 17px 15px;
+    width: 504px;
+    height: 345px;
     padding-right: 20px;
 }
 
@@ -86,12 +88,41 @@ header a:hover{
   color: #5f5f5f;
 }
 
+.shipping {
+        height: 27px;
+        margin: 17px 0 10px 0;
+        font-family: Montserrat;
+        font-size: 22px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.23;
+        letter-spacing: normal;
+        text-align: left;
+        color: #5f5f5f;
+}
+
+.total {
+        height: 27px;
+        margin: 17px 0 10px 0;
+        font-family: Montserrat;
+        font-size: 22px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.23;
+        letter-spacing: normal;
+        text-align: left;
+        color: #5f5f5f;
+}
+
 .box{
   width: 96px;
   height: 47px;
   padding: 0.005px 0.05px;
   border: solid 1px #707070;
   background-color: #ffffff;
+  text-align: center;
 }
 
 .done {
@@ -110,6 +141,10 @@ header a:hover{
     font-style: normal;
     line-height: 1.23;
     letter-spacing: normal;
+  }
+
+  .disabled {
+    background-color: #b1b1b1;
   }
 
   .desc {
@@ -373,10 +408,10 @@ header a:hover{
     }
 
     .picture {
-width: 287px;
-  height: 169px;
-  margin: 45px 47px 14px 26px;
-  object-fit: contain;
+    width: 287px;
+    height: 169px;
+    margin: 45px 47px 14px 26px;
+    object-fit: contain;
     }
 
     .prod-name {
@@ -390,16 +425,24 @@ width: 287px;
     .brand {
         width: 124px;
         height: 18px;
-        margin: 3px 213px 5px 23px;
-        font-size: 14px;
+        margin: 15px 213px 5px 23px;
+        font-size: 15px;
     }
 
-    .quantity, .price{
-        width: 68px;
+    .quantity, .price, .shipping, .total{
+        width: 150px;
         height: 18px;
         margin: 8px 5px 9px 23px;
         font-family: Montserrat;
         font-size: 14px;
+    }
+
+    #quantity {
+            width: 39px;
+            height: 26px;
+            margin: 5px 20px 4px 5px;
+            border: solid 1px #707070;
+            background-color: #ffffff;
     }
 
     .box{

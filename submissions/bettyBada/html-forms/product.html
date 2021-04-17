@@ -34,9 +34,11 @@
             <h2 class="prod-name">BLUE-WHITE COLLAR TEE SHIRT</h2>
             <p class="brand">Brand: Polka-dot</p>
             <span class="quantity">Quantity:</span>
-            <input type="text" class="box">
-            <p class="price">Price: $150</p>
-            <input class="done" type="submit" value="BUY NOW">
+            <input type="number" class="box" value="1" min="1" id="quantity" onchange="total_cost()">
+            <p class="price" value="150" id="price">Price: $150</p>
+            <p class="shipping" value="100" id="shipping">Shipping Cost: $100</p>
+            <p class="total" id="total_cost">Total Cost: $350</p>
+            <input class="done" type="submit" value="BUY NOW" id="buy">
         </div>
     </div>
         <div>
@@ -95,5 +97,6 @@
             <p>Copyright 2020 asteriongadgets.com All rights reserved.</p>
         </div>
     </div>
+    <script src="product.js"></script>
 </body>
 </html>
