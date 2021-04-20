@@ -40,4 +40,9 @@ CREATE TABLE accidents_status(
 
 SHOW TABLES;
 
+ALTER TABLE passengers_record MODIFY age VARCHAR (20);
+
+SELECT * FROM passengers_record;
+
+
 
