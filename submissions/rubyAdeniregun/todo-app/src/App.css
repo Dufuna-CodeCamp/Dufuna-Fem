@@ -1,0 +1,264 @@
+body {
+  background-color: white;
+  color: white;
+  padding: 40px;
+  text-align: left;
+}
+
+#root {
+  background-color: rgb(102, 98, 98);
+  color: white;
+  padding: 40px;
+  font-family: Josefin Sans, serif;
+  text-align: left;
+  width: 100%;
+  height: 150px;
+}
+
+h1{
+  font-weight:bolder;
+}
+
+input {
+    padding: 22px;
+    border: none;
+    border-radius: 12px; 
+    width: 400px;
+
+}
+
+button {
+    padding: 21px;
+    border-radius: 12px; 
+    width: 100px;
+    border: solid;
+    margin-left: 10px;
+    background-color:rgb(122, 206, 202);
+}
+
+
+
+button[type="submit"]:disabled {
+  background: grey;
+}
+
+
+.icon {
+color:black;
+
+}
+
+.addTodoContainer {
+ margin-left: 30%;
+ margin-top: 0px;
+}
+
+
+.todoListContainer {
+  width: 550px;
+  height: 300px;
+  border-radius: 8px;
+  background-color: rgb(122, 206, 202);
+  margin-top: 20px;
+  padding-top: 20px;
+  align-items: center;
+  margin-left: 30%;
+}
+
+.log1 {
+  display: flex;
+  align-items: space-between;
+  gap: 300px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.container-log1 {
+  color: black;
+}
+
+.container-log2 {
+  color: red;
+}
+
+
+text{
+  align-items: center;
+}
+
+.box {
+  position: absolute;
+  margin-left: 27%;
+}
+
+.counter {
+  width: 550px;
+  height: 30px;
+  border: none;
+  border-radius: 8px;
+  color: black;
+  margin-left: 30%;
+  
+}
+
+.below-text{
+  display: flex;
+  align-items: space-between;
+  gap: 15px;
+  margin-left: 30%;
+  margin-bottom: 10px;
+}
+
+.toplog1 {
+  margin-top: 3px;
+  color: blue;
+  
+}
+
+.toplog2 {
+  margin-top: 3px;
+  color: rgb(179, 113, 113);
+  
+}
+.toplog3 {
+  margin-top: 3px;
+  color: rgb(54, 151, 94);
+  
+}
+
+.todoItem {
+  margin: 10px;
+  cursor: pointer;
+  width: 280px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: white;
+  padding-top: 10px;
+  margin-left: 40px;
+  display: flex;
+  padding-left: 10px;
+  color: black;
+
+ 
+}
+
+.completed {
+  text-decoration: line-through;
+  
+}
+
+@media screen and (max-width: 700px) {
+
+  body {
+    background-color: white;
+    padding-left: 0px;
+    color: white;
+    padding-top: 0px;
+    text-align: left;
+  }
+  
+  #root {
+    background-color:grey;
+    padding-top: 40px;
+    color: white; 
+    padding-left: 0px;  
+  }
+
+  h1 {
+    margin-left: 30px;
+  }
+ 
+  input {
+    padding: 14px;
+    border: none;
+    border-radius: 12px; 
+    width: 150px;
+    margin-left: 30px;
+}
+
+button {
+  padding: 12px;
+  border-radius: 12px; 
+  width: 50px;
+  border:solid;
+  margin-left: 10px;
+  background-color: rgb(183, 210, 211);
+}
+
+.addTodoContainer {
+margin-left: 0px;
+margin-top: 50px;
+}
+
+.todoListContainer {
+width: 320px;
+height: 300px;
+border-radius: 3px;
+background-color: rgb(122, 206, 202);
+margin-top: 7px;
+padding-top: 20px;
+align-items: center;
+margin-left: 0px
+}
+
+.log1 {
+  display: flex;
+  align-items: space-between;
+  gap: 35px;
+  color: black;
+  margin-left: 25px;
+  margin-top: 0px;
+  
+}
+
+.container-log1 {
+  color: black;
+  margin-top: 10px;
+}
+
+.container-log2 {
+  color: red;
+  margin-top: 10px;
+}
+
+.box {
+position: absolute;
+margin-left: 220px;
+
+}
+
+.counter {
+width: 20%px;
+height: 50px;
+border: none;
+border-radius: 8px;
+color: black;
+margin-left: 0px;
+margin-bottom: 80px;
+
+}
+
+.below-text{
+  display: flex;
+  align-items: space-between;
+  gap: 10px;
+  margin-left: 35px;
+  margin-bottom: 10px;
+}
+
+h6 {
+display: inline;
+margin-left: 15px;
+
+}
+
+.toplog {
+  margin-top: 10px;
+}
+
+
+
+}
+
+
