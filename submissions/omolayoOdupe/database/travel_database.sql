@@ -8,7 +8,7 @@ CREATE TABLE passengers_record (
 	id INT NOT NULL AUTO_INCREMENT,
 	full_name VARCHAR(100) NOT NULL, 
 	sex VARCHAR(10) NOT NULL,
-	age INT,
+	age VARCHAR (10),
 	PRIMARY KEY (id)
 );
 
@@ -40,9 +40,6 @@ CREATE TABLE accidents_status(
 
 SHOW TABLES;
 
-ALTER TABLE passengers_record MODIFY age VARCHAR (20);
-
-SELECT * FROM passengers_record;
-
+SHOW DATABASES;
 
 
