@@ -114,6 +114,7 @@ header a:hover{
     border-radius: 10px;
     outline: none;
     margin-top: 5px;
+    padding: 0 5px 0 5px;
 }
 
 .form-group {
