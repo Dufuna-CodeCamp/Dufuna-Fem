@@ -26,7 +26,6 @@ class Form extends Component {
         this.props.onSubmit(newItem)   
 
         this.setState( (prevState)=>({
-            // todos:prevState.todos.concat(newItem),
             inputText: "",
         }))
     }
