@@ -1,6 +1,4 @@
 import React from 'react'; 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
 class AddTodo extends React.Component {
 
@@ -23,9 +21,7 @@ class AddTodo extends React.Component {
         <h1>TODO</h1>
         <form className="formbox" onSubmit={(e) => this.submitTodo(e)}>
           <input id="addTodoInput" placeholder="create a new todo..." onChange={(e) => this.updateInput(e)} type="text"></input>
-          <button type="submit" className="btn" disabled={!enabled}>
-          <FontAwesomeIcon icon={faPlus} size='lg' className="icon"/>
-           </button>
+          <button type="submit" className="btn" disabled={!enabled}> +</button>
         </form>
       </div>
     );

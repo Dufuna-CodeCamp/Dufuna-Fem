@@ -9,14 +9,10 @@ body {
   background-color: rgb(102, 98, 98);
   color: white;
   padding: 40px;
-  font-family: Josefin Sans, serif;
+  font-family: 'Patrick Hand', cursive;
   text-align: left;
   width: 100%;
   height: 150px;
-}
-
-h1{
-  font-weight:bolder;
 }
 
 input {
@@ -24,18 +20,19 @@ input {
     border: none;
     border-radius: 12px; 
     width: 400px;
-
 }
 
 button {
-    padding: 21px;
+    padding: 5px;
     border-radius: 12px; 
     width: 100px;
     border: solid;
-    margin-left: 10px;
     background-color:rgb(122, 206, 202);
 }
 
+.btn {
+  font-size: 40px;
+}
 
 
 button[type="submit"]:disabled {
@@ -43,13 +40,16 @@ button[type="submit"]:disabled {
 }
 
 
-.icon {
-color:black;
+.formbox {
+align-items: center;
+display: flex;
+justify-content: space-between;
+width: 550px;
 
 }
 
 .addTodoContainer {
- margin-left: 30%;
+ margin-left: 390px;
  margin-top: 0px;
 }
 
@@ -65,7 +65,7 @@ color:black;
   margin-left: 30%;
 }
 
-.log1 {
+.container-text {
   display: flex;
   align-items: space-between;
   gap: 300px;
@@ -73,11 +73,11 @@ color:black;
   margin-top: 30px;
 }
 
-.container-log1 {
+.container-text1 {
   color: black;
 }
 
-.container-log2 {
+.container-text2 {
   color: red;
 }
 
@@ -88,7 +88,7 @@ text{
 
 .box {
   position: absolute;
-  margin-left: 27%;
+  margin-left: 370px;
 }
 
 .counter {
@@ -97,11 +97,11 @@ text{
   border: none;
   border-radius: 8px;
   color: black;
-  margin-left: 30%;
+  margin-left: 380px;
   
 }
 
-.below-text{
+.text-counter {
   display: flex;
   align-items: space-between;
   gap: 15px;
@@ -109,18 +109,18 @@ text{
   margin-bottom: 10px;
 }
 
-.toplog1 {
+.text1 {
   margin-top: 3px;
   color: blue;
   
 }
 
-.toplog2 {
+.text2 {
   margin-top: 3px;
   color: rgb(179, 113, 113);
   
 }
-.toplog3 {
+.text3 {
   margin-top: 3px;
   color: rgb(54, 151, 94);
   
@@ -139,13 +139,10 @@ text{
   display: flex;
   padding-left: 10px;
   color: black;
-
- 
 }
 
 .completed {
   text-decoration: line-through;
-  
 }
 
 @media screen and (max-width: 700px) {
@@ -175,90 +172,84 @@ text{
     border-radius: 12px; 
     width: 150px;
     margin-left: 30px;
-}
+  }
 
-button {
-  padding: 12px;
-  border-radius: 12px; 
-  width: 50px;
-  border:solid;
-  margin-left: 10px;
-  background-color: rgb(183, 210, 211);
-}
+  button {
+    padding: 12px;
+    border-radius: 12px; 
+    width: 50px;
+    border:solid;
+    margin-left: 10px;
+    background-color: rgb(183, 210, 211);
+  }
 
-.addTodoContainer {
-margin-left: 0px;
-margin-top: 50px;
-}
+  .addTodoContainer {
+    margin-left: 0px;
+    margin-top: 50px;
+  }
 
-.todoListContainer {
-width: 320px;
-height: 300px;
-border-radius: 3px;
-background-color: rgb(122, 206, 202);
-margin-top: 7px;
-padding-top: 20px;
-align-items: center;
-margin-left: 0px
-}
-
-.log1 {
-  display: flex;
-  align-items: space-between;
-  gap: 35px;
-  color: black;
-  margin-left: 25px;
-  margin-top: 0px;
   
-}
-
-.container-log1 {
-  color: black;
-  margin-top: 10px;
-}
-
-.container-log2 {
-  color: red;
-  margin-top: 10px;
-}
-
-.box {
-position: absolute;
-margin-left: 220px;
-
-}
-
-.counter {
-width: 20%px;
-height: 50px;
-border: none;
-border-radius: 8px;
-color: black;
-margin-left: 0px;
-margin-bottom: 80px;
-
-}
-
-.below-text{
-  display: flex;
-  align-items: space-between;
-  gap: 10px;
-  margin-left: 35px;
-  margin-bottom: 10px;
-}
-
-h6 {
-display: inline;
-margin-left: 15px;
-
-}
-
-.toplog {
-  margin-top: 10px;
-}
-
-
-
+   .todoListContainer {
+    width: 320px;
+    height: 300px;
+    border-radius: 3px;
+    background-color: rgb(122, 206, 202);
+    margin-top: 7px;
+    padding-top: 20px;
+    align-items: center;
+    margin-left: 0px
+  }
+  
+  .container-text {
+    display: flex;
+    align-items: space-between;
+    gap: 35px;
+    color: black;
+    margin-left: 25px;
+    margin-top: 0px;
+    
+  }
+  
+  .container-text1 {
+    color: black;
+    margin-top: 10px;
+  }
+  
+  .container-text2 {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .box {
+    position: absolute;
+    margin-left: 220px;
+  
+  }
+  
+  .counter {
+    width: 20%px;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    color: black;
+    margin-left: 0px;
+    margin-bottom: 80px;
+  
+  }
+  
+  .text-counter{
+    display: flex;
+    align-items: space-between;
+    gap: 10px;
+    margin-left: 35px;
+    margin-bottom: 10px;
+  }
+  
+  h6 {
+    display: inline;
+    margin-left: 15px;
+  }
+  
 }
 
 

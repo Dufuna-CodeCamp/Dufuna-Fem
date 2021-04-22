@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import './index.js';
 import TodoList from './components/TodoList'
 import AddTodo from './components/AddTodo'
 import TodoLog from './components/TodoLog'

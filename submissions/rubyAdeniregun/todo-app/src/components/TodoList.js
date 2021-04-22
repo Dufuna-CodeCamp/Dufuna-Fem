@@ -16,13 +16,13 @@ class TodoList extends React.Component {
             return(
                 <TodoItem updateTodoFn={this.updateTodo} key={_index} todo={_todo}>
             
-                </TodoItem>
+                </TodoItem> 
             )
           })       
         }
-        <div className='log1'>
-        <h4 className='container-log1'> 3 items left</h4>
-        <h4 className='container-log2'>X clear completed</h4>
+        <div className='container-text'>
+        <h4 className='container-text1'> 3 items left</h4>
+        <h4 className='container-text2'>X clear completed</h4>
         </div>
       </div>
     ); 
@@ -36,34 +36,3 @@ class TodoList extends React.Component {
 
 export default TodoList;
  
-
-
-/* import TodoItem from '../Todoitem/Todoitem';
-
-class TodoList extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = { todos: [
-        'Learn React',
-        'Write blog posts',
-        'Kick back and relax'
-      ]};
-    this.handleUpdate = this.handleUpdate.bind(this);
-  }
-
-  handleUpdate(todo) {
-    this.setState({ todo });
-  }
-
-  render() {
-    return (
-        <ul>
-        {this.state.todos.map((todo, index) => {
-          <TodoItem todo={todo} key={index} updateTodo={this.handleUdpate} />
-        })}
-      </ul>
-    );
-  }
-}*/
-
