@@ -49,26 +49,30 @@
         </div>
         </div>
         <div class="box">
-            <form action="" method="post">
+            <form action="" method="post" id="validateForm">
                 <img class="email-icon" src="../HTML/Images/ic_email_24px_2021-04-02/ic_email_24px.png" alt="email-icon">
                 <p class="email-text">Or better still send us a message</p>
                 
                 <div class="form-group">
-                    <input placeholder="Full Name" class="inputs" type="text" name="name" id="name">
+                    <input placeholder="Full Name" class="inputs" type="text" name="name" id="fullName">
+                    <span style="color: red;"></span>
                 </div>
                 <div class="form-group">
                     <input placeholder="Email Address" class="inputs" type="email" name="email" id="email">
+                    <span style="color: red;"></span>
                 </div>
                 <div class="form-group">
-                    <input placeholder="Subject" class="inputs" type="text" name="name" id="name">
+                    <input placeholder="Subject" class="inputs" type="text" name="name" id="subject">
+                    <span style="color: red;"></span>
                 </div>
                 <div class="form-group" id="message">
                     <label for="name" class="identify">Message</label><br>
-                    <textarea></textarea>
+                    <textarea id="textarea"></textarea>
+                    <span style="color: red;"></span>
                 </div>
             
                 <div class="sign-up">
-                    <input class="signup-button" type="submit" value="SEND" disabled>
+                    <input class="signup-button" type="submit" value="SEND">
                 </div>
             </form>
         </div>
@@ -102,7 +106,7 @@
             <p>Copyright 2020 asteriongadgets.com All rights reserved.</p>
         </div>
     </div>
-
+<script src="../javascript/contact.js"></script>
 </body>
 
 </html>
