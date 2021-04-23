@@ -266,7 +266,7 @@ textarea{
     margin-right: 10px;
 }
 
-.newsletter > button {
+.newsletter > .sign {
     width: 108px;
     background-color: white;
     color: teal;

@@ -177,9 +177,9 @@ header a:hover{
     margin-bottom: 10px;
 }
 
-.newsletter {
+/* .newsletter {
     display: flex
-}
+} */
 
 .newsletter > input {
     width: 253px;
@@ -188,7 +188,7 @@ header a:hover{
     margin-right: 10px;
 }
 
-.newsletter > button {
+.newsletter > .sign {
     width: 108px;
     background-color: white;
     color: teal;
