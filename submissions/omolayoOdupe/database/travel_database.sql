@@ -38,6 +38,7 @@ CREATE TABLE accidents_status(
 	FOREIGN KEY (passenger_id) REFERENCES passengers_record (id)
 );
 
+
 SHOW TABLES;
 
 SHOW DATABASES;
