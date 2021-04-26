@@ -1,8 +1,3 @@
-productList.forEach(function(product) {
-    console.log(product.productName + " with " + product.imageURL + " is sold for " + product.productPrice)
-})
-
-conditionals task
 var a = 123 - 7;
 for (var i = 1; i <= a; i++) {
     if (i % 3 === 0 && i % 5 === 0) {
