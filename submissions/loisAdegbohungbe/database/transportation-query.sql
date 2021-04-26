@@ -32,5 +32,5 @@ SELECT passengers.id, passengers.full_name FROM passengers
 SELECT COUNT(*) FROM passengers
 	LEFT JOIN trips ON passengers.id = trips.passenger_id
     WHERE trips.trip_fare > 100 AND passengers.age > 35 
-    AND trips.siblings_spouse_aboard > 0
+    AND trips.siblings_spouse_aboard > 0;
 -- 9
