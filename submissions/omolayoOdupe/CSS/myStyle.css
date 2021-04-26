@@ -8,6 +8,10 @@ body{
     margin: 0;
     font-family: 'Montserrat', sans-serif ;    
 }
+.error-block {
+    font-size: 12px;
+    color: red;
+}
 /* ============================================header section============================================*/
 
 .header-container{
@@ -61,9 +65,10 @@ body{
     padding: 20px 0px 0px 20px;
 }
 
-.firstsection t{
+.firstsection input {
     border: 1px solid #5f5f5f;
-    padding:  3px 20px;   
+    padding:  3px 20px;
+    width: 25%;   
 }
 
 .firstproduct-container button{
@@ -290,6 +295,11 @@ body{
     font-weight: bold;
     height: 25px;
 }
+
+.footer-box2 span{
+    line-height: 25px;
+}
+
 
 .footer-box3{
     line-height: 0.1;

@@ -9,10 +9,14 @@ body {
 .header {
   background-color: rgb(100, 27, 27);
   color: white;
-  height: 150px;
+  height: auto;
   line-height: 0.5;
   padding: 10px;
   margin: 0;
+}
+.brand-name {
+  margin: 0;
+  padding: 10px;
 }
 .brand-name span {
   font-size: 16px;
@@ -21,9 +25,10 @@ body {
 .nav-pages {
   display: flex;
   justify-content: flex-end;
+  margin: 0;
 }
 .nav-bar li {
-  margin-top: 10px;
+  margin-top: 0;
   list-style-type: none;
   padding: 10px;
 }
@@ -61,15 +66,18 @@ line-height: 1.0;
   width: 30px;
   height: 30px;
 }
-.btn {
+#product-btn {
   color: white;
   background-color: #c96567;
-  border-radius: 5%;
+  border-radius: 7%;
   border-style: none;
   height: 60px;
   width: 120px;
   text-transform: uppercase;
   margin-top: 10px;
+}
+#product-btn:disabled {
+  background-color: gray;
 }
 .product a {
   color: #c96567;
@@ -134,22 +142,51 @@ margin: 0;
 .footer-properties {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .contact ul {
   list-style-type: none;
 }
-.subscribe h4 {
-  margin-bottom: 0;
+.subscribe {
+  margin-left: 50px;
 }
-.submit {
+.subscribe p {
+  margin-bottom: 10px;
+  text-align: left;
+}
+.news {
+  display: inline-block;
+  position: relative;
+}
+.news input {
+  height: 20px;
+  font-size: 16px;
+}
+.error-block-news,
+.error-block-product,
+.error-block-qty {
+  color: red;
+  display: block;
+  font-size: 14px;
+}
+#newsletter-btn {
   color: rgb(100, 27, 27);
   text-transform: uppercase;
   background-color: white;
   border-style: none;
+  position: absolute;
+  margin-left: 20px;
+  height: 25px;
 }
-.connect h4 {
+#newsletter:hover {
+  cursor: pointer;
+}
+.connect {
+  margin-left: 70px;
+}
+.connect p {
   margin-bottom: 0;
+  text-align: left;
 }
 .connect ul {
   margin: 5px;
@@ -190,6 +227,12 @@ footer p {
   }
   .footer-properties {
     grid-template-columns: 1fr 1fr;
+  }
+  .subscribe {
+    margin-left: 0;
+  }
+  .connect { 
+    margin-left: 0;
   }
   .contact ul {
     padding: 0;

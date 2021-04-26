@@ -29,9 +29,14 @@
             <div class="box2">
                 <span>OUR PREFFERED PACK  </span><br>
                 <span> Brand: Pre-packed selection </span><br>
-                <span> Quantity: <t>2</t></span><br>
-                <span> Price: ₦ 25,000 </span><br>
-                <button> Buy Now</button> <br>       
+                <span> Quantity:
+                    <input type="number" name="qty" placeholder="1" id="quantity">
+                    <span class="error-block"></span>
+                </span><br>
+                <span> Price: ₦ <span id="price"> 25,000 </span></span><br>
+                <span> Shipping Cost: ₦ <span id="shippingCost"> 5,000 </span></span><br>
+                <span> Total Cost: ₦ <span id="totalCost"> 30,000 </span></span><br>
+                <button class="pricebtn" type="submit" id="buyNow"> Buy Now</button> <br>       
             </div>
         </div >
         <div class="desc">
@@ -73,9 +78,12 @@
                 <span><a href="#"> Terms and Conditions</a></span>
             </div>
             <div class="footer-box2">
-                <p>Sign up for our Newsletter</p>
-                <input type="email" placeholder="Enter your email address" name="email">
-                <button>SUBMIT</button>
+                <form id="newsletterform">
+                    <p>Sign up for our Newsletter</p>
+                    <input type="email" placeholder="Enter your email address" name="email" id="footersemail">
+                    <button>SUBMIT</button> <br><br>
+                    <span class="error-block"></span>
+                </form>
             </div>
             <div class="footer-box3">
                 <p>CONNECT WITH US</p>
@@ -87,5 +95,7 @@
         </div>
         <p class="copyright"> Copyright 2021 busybasket.com.All right reserved </p>
     </footer>
+<script src="../dom/productShippingCost.js" ></script>
+<script src="../dom/newsletterValidation.js"></script>
 </body>
 </html>

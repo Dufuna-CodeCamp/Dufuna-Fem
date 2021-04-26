@@ -85,7 +85,9 @@ input.quantity {
 
 .error-block {
     color: red;
-    display: none;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: bold;
 }
 
 .buy-button {
@@ -138,147 +140,61 @@ input.quantity {
 
 /* footer*/
 
-.main-footer {
+footer {
+    color: #ffffff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     background-color: #a79edd;
-    overflow: hidden;
 }
 
-.first-column a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
+.mainfooter {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: baseline;
 }
 
-.first-column ul {
+.column-first ul {
     list-style: none;
 }
 
-.first-column,
-.second-column,
-.third-column {
-    float: left;
-    width: 33.3%;
-    color: #fff;
-    margin-bottom: 30px;
+footer li {
+    margin-bottom: 1rem;
 }
 
-.second-column,
-.third-column {
-    font-size: 10px;
-}
-
-.first-column {
+.column-first li a {
+    text-decoration: none;
+    color: #ffffff;
     font-size: 20px;
 }
 
-.main-footer p {
-    margin: 0 auto;
-    display: block;
-    margin-top: 20px;
-    color: #fff;
+input {
+    color: #a79edd;
+    font-weight: bold;
+    font-size: 1.15rem;
+    text-align: center;
+    border-radius: 0.5rem;
 }
 
-.second-column input {
-    margin-top: 2px;
-    height: 30px;
-    border: 1px solid #555;
+:placeholder-shown {
+    width: 55%;
+}
+
+input#footer-signup-btn {
+    width: 25%;
 }
 
 ::placeholder {
     color: #a79edd;
-    font-size: 14.7px;
 }
 
-.second-column #footer-signup-btn {
-    color: #a79edd;
-    font-weight: bold;
-}
-
-.third-column img {
-    width: 35px;
-    height: 30px;
-    margin-right: 7px;
+footer p {
+    padding-bottom: 1rem;
+    text-align: center;
+    font-size: 20px;
 }
 
 
-/* @media query */
-
-@media screen and (max-width: 650px) {
-    .navbar a {
-        float: none;
-        display: block;
-        text-align: left;
-        padding: 4px;
-    }
-    .navbar-link {
-        float: none;
-    }
-    /* link second-column */
-    .banner-left,
-    .banner-right {
-        float: none;
-        width: 80%;
-        margin: 0 auto;
-        display: block;
-    }
-    .banner-left img {
-        width: 250px;
-        height: 180x;
-        padding-left: 0px;
-        margin-left: 0px;
-    }
-    .banner-right h1,
-    .banner-right h4 {
-        font-size: 18px;
-    }
-    .banner-1 {
-        width: 100%;
-        margin: auto 0;
-    }
-    .description {
-        width: 80%;
-    }
-    /* main-footer*/
-    .first-column,
-    .second-column,
-    .third-column {
-        float: none;
-        display: block;
-        font-size: 10px;
-    }
-    .first-column {
-        font-size: 15px;
-    }
-    .second-column,
-    .third-column {
-        width: 100%;
-        float: right;
-        padding-left: 40px;
-        padding-bottom: 20px;
-    }
-    .first-column {
-        padding-right: 40px;
-    }
-    .second-column h1,
-    .third-column h1 {
-        font-size: 16px;
-    }
-    .main-footer p {
-        margin-top: 20px;
-        margin-top: 20px;
-        padding-left: 40px;
-        padding-bottom: 30px;
-        font-size: 19px;
-    }
-    .third-column img {
-        width: 40px;
-        height: 35px;
-    }
-}
-
-
-/* @media query */
+/*media Query*/
 
 @media screen and (max-width: 800px) {
     /* Three-column */
@@ -311,25 +227,31 @@ input.quantity {
         padding-right: 7px;
     }
     /* footer */
-    .first-column,
-    .second-column {
-        width: 50%;
-        float: left;
+    .mainfooter {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
-    .third-column {
-        float: none;
-        margin-left: 38px;
-    }
-    .second-column input {
-        height: 42px;
+    .main-footer p {
+        font-size: 19px;
     }
      ::placeholder {
         font-size: 14.7px;
     }
-    .main-footer p {
-        text-align: center;
-        margin-top: 20px;
-        padding-bottom: 30px;
+    .column-third {
+        padding-left: 2.5rem;
+    }
+}
+
+
+/* @media query*/
+
+@media screen and (max-width: 650px) {
+    .mainfooter {
+        grid-template-columns: 1.2fr 1.8fr;
+    }
+    .column-third {
+        grid-column-start: 1;
+        grid-column-end: 3;
     }
 }
 
@@ -344,14 +266,25 @@ input.quantity {
         margin: 30.7px;
         display: block;
     }
-    .first-column,
-    .second-column,
-    .third-column {
-        width: 82%;
-        margin-top: 8px;
-        display: block;
+    .column-first {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 4;
     }
-    .third-column {
-        padding-left: 5px;
+    .column-second {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        padding-top: 1rem;
+        padding-left: 2.5rem;
+        padding-bottom: 1rem;
+    }
+    .column-third {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 4;
     }
 }

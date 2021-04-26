@@ -9,10 +9,14 @@ body {
 .header {
   background-color: rgb(100, 27, 27);
   color: white;
-  height: 150px;
+  height: auto;
   line-height: 0.5;
   padding: 10px;
   margin: 0;
+}
+.brand-name {
+  margin: 0;
+  padding: 10px;
 }
 .brand-name span {
   font-size: 16px;
@@ -21,9 +25,10 @@ body {
 .nav-pages {
   display: flex;
   justify-content: flex-end;
+  margin: 0;
 }
 .nav-bar li {
-  margin-top: 10px;
+  margin-top: 0;
   list-style-type: none;
   padding: 10px;
 }
@@ -40,16 +45,11 @@ section {
     display: flex;
     justify-content: space-around;
 }
-aside {
-  width: 30%;
-  flex-wrap: nowrap;
-}
-main {
-  width: 60%;
-}
 .sign-in {
   text-align: left;
-  margin-top: 80px;
+  flex-wrap: wrap;
+  margin: 100px;
+  margin-top: 150px;
   font-size: 26px;
 }
 .sign-in h1 {
@@ -58,20 +58,20 @@ main {
 }
 .signup-form {
   border: 1px solid black;
-  border-radius: 5px;
-  margin: 40px 0;
-  height: 700px;
-  width: 70%;
+  border-radius: 30px;
+  margin: 60px;
+  height: 650px;
+  width: 500px;
   padding: 30px;
 }
 .form-details {
-  width: 98%;
-  height: 25px;
+  width: 95%;
+  height: 40px;
   border: 1px solid black;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 20px;
 }
-.btn {
+#signup-btn {
   color: white;
   background-color: #c96567;
   border-radius: 5%;
@@ -95,17 +95,45 @@ margin: 0;
 .contact ul {
   list-style-type: none;
 }
-.subscribe h4 {
-  margin-bottom: 0;
+.subscribe {
+  margin-left: 50px;
 }
-.submit {
+.subscribe p {
+  margin-bottom: 10px;
+  text-align: left;
+}
+.news {
+  display: inline-block;
+  position: relative;
+}
+.news input {
+  height: 20px;
+  font-size: 16px;
+}
+.error-block,
+.error-block-news {
+  color: red;
+  display: block;
+  font-size: 14px;
+}
+#newsletter-btn {
   color: rgb(100, 27, 27);
   text-transform: uppercase;
   background-color: white;
   border-style: none;
+  position: absolute;
+  margin-left: 20px;
+  height: 25px;
 }
-.connect h4 {
+#newsletter:hover {
+  cursor: pointer;
+}
+.connect {
+  margin-left: 70px;
+}
+.connect p {
   margin-bottom: 0;
+  text-align: left;
 }
 .connect ul {
   margin: 5px;
@@ -138,21 +166,16 @@ footer p {
     flex-direction: column;
     align-items: center;
   }
-  aside {
-    width: 60%;
-  }
-  main {
-    width: 80%;
-  }
   .sign-in {
     text-align: center;
     margin-top: 40px;
   }
   .signup-form {
-    height: 600px;
-    width: 80%;
+    margin: 0;
+    margin-bottom: 50px;
+    height: 700px;
   }
-  .signup-form div {
+  div .checkbox {
     text-align: center;
   }
   footer {
@@ -175,12 +198,6 @@ body {
   margin: 0;
   padding: 0;
 }
-aside {
-  width: 50%;
-}
-main {
-  width: 70%;
-}
 .sign-in h1 {
   font-size: 26px;
   margin-bottom: 0;
@@ -190,7 +207,7 @@ main {
   font-size: 16px;
 }
 .signup-form {
-  width: 90%;
+  width: 80%;
 }
 .signup-form div {
   text-align: left;

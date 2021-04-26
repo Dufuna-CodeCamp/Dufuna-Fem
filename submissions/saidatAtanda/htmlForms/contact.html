@@ -40,17 +40,23 @@
       </aside>
       <main class="contact-form">
         <div class="contact-message">
-        <img src="../html/images/message2-logo.png" alt="message logo">
-        <h3>Or better still send us a message</h3>
+          <img src="../html/images/message2-logo.png" alt="message logo">
+          <h3>Or better still send us a message</h3>
         </div>
-          <form action="#" method="post">
-              <p><input type="text" name="fullname" placeholder="Full Name" required></p>
-              <p><input type="text" name="email" placeholder="Email Address" required></p>
-              <p><input type="text" name="subject" placeholder="Subject" required></p>
-              <p>Message</p>
-              <textarea name="message-comments"></textarea>
-            <button type="submit" class="btn">Send</button>
+        <div>
+          <form action="#" method="post" id="contactform">
+              <input type="text" id="fullname" placeholder="Full Name">
+                <span class="error-block-contact"></span>
+              <input type="email" id="email" placeholder="Email Address">
+                <span class="error-block-contact"></span>
+              <input type="text" id="subject" placeholder="Subject">
+              <span class="error-block-contact"></span>
+              <label for ="msg" class="msg">Message</label><br>
+                <textarea id="message"></textarea>
+                <span class="error-block-contact"></span>
+              <button type="submit" id="contact-btn">Send</button>
           </form>
+        </div>
       </main>
       </section>
         <footer>
@@ -63,14 +69,17 @@
               </ul>
             </div>
             <div class="subscribe">
-              <form>
-                <h4>Sign Up for our Newsletter</h4>
-                <input type="text" placeholder="Type your email address">
-                <button type="submit" class="submit">Submit</button>
+              <form method="POST" id="newsletter">
+                  <p>Sign Up for our Newsletter</p>
+                  <div class="news">
+                    <input type="email" id="newsletter-email" placeholder="Type your email address">
+                    <span class="error-block-news"></span>
+                  </div>
+                  <button type="submit" id="newsletter-btn">Submit</button>
               </form>
             </div>
             <div class="connect">
-              <h4>Connect with Us</h4>
+              <p>Connect with Us</p>
               <ul>
                 <li><a href="www.gmail.com"><img src="../html/images/gmail-logo.png"></a></li>
                 <li><a href="www.twitter.com"><img src="../html/images/twitter-logo.png"></a></li>
@@ -81,5 +90,7 @@
           </div>
           <p>&copy;Copyright 2020 venister.com All rights reserved.</p>
         </footer>
-      </body>
+        <script src="../dom/contact.js"></script>
+        <script src="../dom/newsletter.js"></script>
+    </body>
 </html>

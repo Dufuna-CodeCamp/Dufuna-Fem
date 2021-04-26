@@ -32,11 +32,14 @@
                         <h3>AMETHYST DIAMOND EARRINGS </h3>
                         <p>Brand: Marilyn Monroe Collection</p>
                         <p>Quantity:
-                            <input class="quantity" type="number" placeholder="2" />
+                            <input class="quantity" type="number" placeholder="1" />
                         </p>
-                        <p>Price:
-                            <span class="price">$499.99</span>
+                        <small class = "error">Please enter a valid quantity</small>
+                        <p>Price: $
+                            <span class="price">500</span>
                         </p>
+                        <p>Shipping cost: $ <span class = "ship-cost">100</span></p>
+                    <p>Total cost: $ <span class = "total-cost">600</span></p>
                         <a href = "#" class="buy-now">BUY NOW</a>
                     </div>
                 </div>
@@ -96,8 +99,9 @@
                         <p>Sign up for our Newsletter</p>
                         <div class = "footer-form">
                             <input type = "email" id = "footer-email" placeholder="Enter your email address" />
-                            <button type = "button">SUBMIT</button>
+                            <button type = "button" class="footer-btn">SUBMIT</button>
                         </div>
+                        <small class = "error-block2"></span>
                     </div>
                     <div class = "social">
                         <p>CONNECT WITH US</p>
@@ -121,6 +125,7 @@
 
             <p class = "copyright">Copyright 2020 InfinitySparkles.com All rights reserved.</p>
         </footer>
-        
+        <script src="../DOM/product-page.js"></script>
+        <script src="../DOM/newsletter.js"></script>
     </body>
 </html>

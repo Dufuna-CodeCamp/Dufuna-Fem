@@ -1,130 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-       <meta charset UTF="8">
-       <title>Spice Store</title>
-   </head>
-    
-    <body>
-        
-        <header>
-            <div>
-                <h1><a href = "#">PRECISE SPICE</a></h1>
-            </div>
-            <nav>
-                <p>
-                   <a href = "#">Account</a>
-                   <a href = "../html\product-page.html">Spice Store</a>
-                   <a href = "../html-forms\contactform.html">Contact Us</a>
-                   <a href = "#">Wishlist</a>
-                   <a href = "#">Cart</a>
-                </p>
-            </nav>
-        </header>
-        <br>
-        <hr>
-        <div>
-            <nav>
-                <a href="#">Ingredient for Recipe</a>
-                <a href="#">Nigerian Spice</a>
-                <a href="#">Kitchen Ware</a>
-            </nav>
-           <hr>
-        </div>
 
-        <header class="ccheader">
-            <h1>Contact Us</h1>
-            <p>Call:<a href="#">+2348019022021</a></p>
-            <p>Email:<a href="#">contact@precisespice.com</a></p><br>
-        </header>
-       <form>
-           <p>Please leave a message below. We will get back to you at the earliest!</p>
-           <fieldset>
-                <legend>Leave a Message</legend>
-                <div class="wrapper">
-                    <form method="post" action="" class="ccform">
-                    <div>
-                    <span class="ccform-addon"><i class="fa fa-user fa-2x"></i></span>
-                    <input class="ccformfield" type="text" placeholder="Full Name" required>
-                </div><br>
-                <div>
-                    <span class="ccform-addon"><i class="fa fa-envelope fa-2x"></i></span>
-                    <input class="ccformfield" type="text" placeholder="Email" required>
-                </div><br>
-                <div>
-                    <span class="ccform-addon"><i class="fa fa-info fa-2x"></i></span>
-                    <input class="ccformfield" type="text" placeholder="Subject">
-                </div><br>
-                <div>
-                    <span class="ccform-addon"><i class="fa fa-comment fa-2x"></i></span>
-                    <textarea class="ccformfield" name="comments" rows="8" placeholder="Message" required></textarea>
+<head>
+    <meta charset UTF="8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
+    <title>PreciseSpice - Contact</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img class="nav-logo" src="../html/img/PreciseSpiceIcon.jpg" alt="PreciseSpice-icon" width="67px"
+                height="27px">
+        </div>
+        <nav>
+            <ul>
+                <li class="nav-item"><a href="../html/product-page.html">Product Page</a></li>
+                <li class="nav-item"><a href="../html-forms/contactform.html">Contact Us</a></li>
+                <li class="nav-item"><a href="../html-forms/signup.html">Sign-up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class = "contact-info">
+            <div class = "contact-main">
+                <div class = "contacts tel-contact">
+                    <img src = "../html/assets/logo/call-icon.png" alt = "Telephone"/>
+                    <h3>Please contact us via these numbers:</h3>
+                    <p>+234 802 703 1992</p>
+                    <p>+234 802 903 2021</p>
                 </div>
-                <button type="send">Send</button>
-           </fieldset>
-        </form>
+                <div class = "contacts email-contact">
+                    <img src = "../html/assets/logo/email-inbox.png" alt = "Email"/>
+                    <h3>Email Address:</h3>
+                    <p>support@precisespice.com</p>
+                </div>
+                <div class = "contacts socials-connect">
+                    <h3>Or connect with us:</h3>
+                    <div class = "social-links">
+                        <a href = "facebook.com">
+                            <img src = "../html/assets/logo/facebook-logo.png" alt = "facebook" />
+                        </a>
+                        <a href = "twitter.com">
+                            <img src = "../html/assets/logo/twiiter-logo.png" alt = "twitter" />
+                        </a>
+                        <a href = "gmail.com">
+                            <img src = "../html/assets/logo/gmail-logo.png" alt = "gmail" />
+                        </a>
+                        <a href = "youtube.com">
+                            <img src = "../html/assets/logo/youtube-logo.png" alt = "youtube" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class = "form">
+            <div class = "form-container2">
+                <div class = "form-top">
+                    <img src = "../html/assets/logo/email-icon.png" />
+                    <h3>Or better still send us a message</h3>
+                </div>
+                <form id = "form2">
+                        <div class = "contact-input">
+                            <input type = "text" name = "fullname" id = "fullname" placeholder = "Full Name" />
+                            <span class = "error-block"></span>
+                        </div><br />
+                        <div class = "contact-input">
+                            <input type = "email" name = "email" id = "email2" placeholder = "Email Address" />
+                            <span class = "error-block"></span>
+                        </div><br />
+                        <div class = "contact-input">
+                            <input type = "text" name = "subject" id = "subject" placeholder = "Subject" />
+                            <span class = "error-block"></span>
+                        </div><br />
+                        <div class = "contact-input">
+                            <label for = "message">Message</label>
+                            <textarea name = "message" id = "message" rows = "10"></textarea>
+                            <span class = "error-block"></span>
+                        </div>
+                        <div class = "contact-btn">
+                            <button type = "submit" class = "btn-contact">send</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+        <div class="footer-top">
+            <div class="footer-nav">
+                <ul class="footer-links">
+                    <li><a href="./contactform.html">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-main">
+                <div class="newsletter">
+                    <p>Sign up for our Newsletter</p>
+                    <div class="footer-form">
+                        <input type="email" id="footer-email" placeholder="Enter your email address" />
+                        <button type="submit" class="footer-btn">SUBMIT</button>
+                    </div>
+                    <span class="error-block2"></span>
+                </div>
+                <div class="social">
+                    <p>CONNECT WITH US</p>
+                    <div class="social-links">
+                        <a href="facebook.com">
+                            <img src="../html/assets/logo/facebook-logo.png" alt="facebook" />
+                        </a>
+                        <a href="twitter.com">
+                            <img src="../html/assets/logo/twiiter-logo.png" alt="twitter" />
+                        </a>
+                        <a href="gmail.com">
+                            <img src="../html/assets/logo/gmail-logo.png" alt="gmail" />
+                        </a>
+                        <a href="youtube.com">
+                            <img src="../html/assets/logo/youtube-logo.png" alt="youtube" />
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-            <div class="post">
-            <p>For More Spicy Details Checkout Our Blog: <a href="#">precisespice.blog</a></p>
-        </div>
 
-        <br><br>
-        <footer>
+        <p class = "copyright">Copyright 2021 PreciseSpiceNG All rights reserved</p>
+    </footer>
 
-            <table>
-                
-                <tr>
-                    <th>ABOUT US</th>
-                    <th>PRODUCTS</th>
-                </tr>
-                    
-                <tr>
-                    <td>About Us</td>
-                    <td>Spices</td>
-                </tr>
-        
-                <tr>
-                    <td><a href = "../html-forms\contactform.html">Contact Us</a></td>
-                    <td>Leaf Tea</td>
-                </tr>
-                    
-                <tr>
-                    <td>Blog</td>
-                    <td>Mushrooms</td>
-                </tr>
-                    
-                <tr>
-                    <td></td>
-                    <td>Seeds</td>
-                </tr>
-
-                <tr>
-                    <td></td>
-                    <td>Seasoning</td>
-                </tr>
-
-                <tr>
-                    <td></td>
-                   <td>Roots</td>
-                </tr>
-            
-            </table>
-         <br><br>
-           <div>
-               <form>
-                   <input placeholder= "Enter your email address"> 
-                   <button>Subscribe</button>
-               </form>
-           </div>
-           <br>
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">Twitter</a>
-            <a href="#">Pintrest</a>
-         <br><br>
-            <span>&copy; 2021 PreciseSpiceNG    ·   T&C   ·   Privacy Policy</span>
-        
-        </footer>
-   
-    </body>
+</body>
 
 </html>

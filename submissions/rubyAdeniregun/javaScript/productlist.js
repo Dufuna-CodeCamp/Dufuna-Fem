@@ -36,3 +36,11 @@ let bodyCare = {
 }
 
 console.log(bodyCare.greeting())
+
+function convertMeterToYard(number) {
+    return number * 1.09361;
+}
+
+console.log(convertMeterToYard(20));
+console.log(convertMeterToYard(40));
+console.log(convertMeterToYard(60));
