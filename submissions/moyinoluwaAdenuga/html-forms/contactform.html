@@ -35,18 +35,22 @@
                 <li><a href="#" class="contact-icon yt-icon"><i class="fa fa-youtube-play iconc" aria-hidden="true"></i></a></li>
             </ul>
         </div>
-        <form action="#" method="post" enctype="application/x-www-form-urlencoded">
+        <form id="contact-form" action="#" method="post" enctype="application/x-www-form-urlencoded">
             <fieldset id="contact-fieldset">
                 <div id="contact-form-text">
                     <i class="fa fa-envelope-o resize-icon" aria-hidden="true"></i>
                     <p class="heading">Or better still send us a message</p>
                 </div>
 
-                <input type="text" name="fullname" class="contact-input" placeholder="Full Name">
-                <input type="email" name="email" class="contact-input" placeholder="Email Address">
+                <input type="text" name="fullname" class="contact-input" id="contact-fullname" placeholder="Full Name">
+                <span class="error-block"></span>
+                <input type="text" name="email" class="contact-input" id="contact-email" placeholder="Email Address">
+                <span class="error-block"></span>
                 <input type="text" name="subject" class="contact-input" id="msg-shift" placeholder="Subject">
+                <span class="error-block"></span>
                 <label class="message" for="message">Message</label>
                 <textarea id="message" rows="6" ></textarea>
+                <span class="error-block"></span>
     
                 <button id="send-c-btn" type="submit">Send</button>
     
@@ -67,6 +71,7 @@
                     <p>Sign up for our Newsletter</p>
                     <input type="email" class="footer-email" name="emailaddress" placeholder="Enter your email address" required>
                     <button class="footer-btn" type="submit">SUBMIT</button>
+                    <span class="error-block"></span>
                 </div>
 
                 <div>
@@ -87,6 +92,9 @@
         </div>
 
     </footer>
+
+    <script src="../DOM/contact.js"></script>
+    <script src="../DOM/newsletter.js"></script>
     
 </body>
 </html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/signup.css">
+    <title>Sign Up Page</title>
+</head>
+
+<body>
+    <!--NAVBAR SECTION-->
+    <header>
+        <div class="container">
+            <h1 id="logo" class="highlight">Asterion Gadgets</h1>
+            <nav>
+                <ul>
+                    <li><a href="../html-forms/product.html">Product Page</a></li>
+                    <li><a href="../html-forms/contact.html">Contact Us</a></li>
+                    <li><a href="#">Sign-Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--REGISTER SECTION-->
+    <div class="container-2">
+        <div class="text">
+            <h1>Register your <br> account</h1>
+            <h3>Registering your account gives you <br/> access to sweet promo and events <br/> only available to only registered <br/> customers</h3>
+            <h3>Already got an account? <a href=""> Sign in</a></h3>
+        </div>
+        <div class="box">
+            <form action="" method="post" id="validateForm">
+                <div class="form-group">
+                    <label for="name" class="identify">First Name</label><br>
+                    <input class="inputs" type="text" name="name" id="firstName">
+                    <span style="color: red;"></span>
+                </div>
+                <div class="form-group">
+                    <label for="name" class="identify">Last Name</label><br>
+                    <input class="inputs" type="text" name="name" id="lastName">
+                    <span style="color: red;"></span>
+                </div>
+                <div class="form-group">
+                    <label for="name" class="identify">Other Names</label><br>
+                    <input class="inputs" type="text" name="name" id="otherName">
+                    <span style="color: red;"></span>
+                </div>
+                <div class="form-group">
+                    <label for="name" class="identify">Phone Number</label><br>
+                    <input class="inputs" type="tel" name="name" id="number">
+                    <span style="color: red;"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="identify">Email Address</label><br>
+                    <input class="inputs" type="text" name="email" id="email">
+                    <span style="color: red;"></span>
+                </div>
+                <div class="form-group">
+                    <label for="subject" class="identify">Password</label><br>
+                    <input class="inputs" type="password" name="password" id="password">
+                    <span style="color: red;"></span>
+                </div>
+                <div class="form-group">
+                    <label for="subject" class="identify">Confirm Password</label><br>
+                    <input class="inputs" type="password" name="password" id="confirmPassword">
+                    <span style="color: red;"></span>
+                </div>
+                <div class="agree-check">
+                    <input class="check" type="checkbox" name="agree" id="">
+                    <p>I agree to the Terms and Conditions</p>
+                </div>
+                <div class="sign-up">
+                    <input class="signup-button" type="submit" value="SIGN UP">
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <div style="background-color: teal;">
+        <div class="footer">
+            <div class="footer-1">
+                <a href="">Contact Us</a> <br/> <br/>
+                <a href="">About Us</a> <br/> <br/>
+                <a href="">Terms and Conditions</a> <br/> <br/>
+            </div>
+            <div class="footer-2" >
+                <p>Sign up for our Newsletter</p>
+                <form action="" id="validateNews">
+                <div class="newsletter">
+                   
+                    <input type="text" name="email" id="newsletters" placeholder="Enter your email address">
+                    <!--<button type="submit">SUBMIT</button>-->
+                    <input class="sign" type="submit" value="SIGN UP">
+                </div>
+                <span style="color: red; font-size: medium;" id="error-message"></span>
+            </form>
+            </div>
+            <div class="footer-3">
+                <p>CONNECT WITH US</p>
+                <div class="social-icons">
+                    <img src="../HTML/Images/facebooklogo.png" alt="">
+                    <img src="../HTML/Images/twiiterlogo.png" alt="">
+                    <img src="../HTML/Images/gmaillogo.png" alt="">
+                    <img src="../HTML/Images/youtubelogo.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright 2020 asteriongadgets.com All rights reserved.</p>
+        </div>
+    </div>
+
+    <script src="../javascript/signup.js"></script>
+    <script src="../javascript/newsletter.js"></script>
+</body>
+
+</html>

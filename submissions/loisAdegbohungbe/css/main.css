@@ -93,7 +93,7 @@ input:focus, button:focus{
 .product-details p:not(:first-child){
     font-size: 20px;
 }
-.product-details .buy-btn{
+.buy-btn{
     background-color: #37a048;
     padding: 12px 14px;
     border-radius: 15px;
@@ -101,7 +101,7 @@ input:focus, button:focus{
     color:white;
     border: none;
 }
-.product-details .buy-btn:hover{
+.buy-btn:hover{
     background-color: #217c30;
 }
 .product-description{ 
@@ -245,8 +245,10 @@ input:focus, button:focus{
     border-top: 0;
     border-left: 0;
     border-right: 0;
-    margin-bottom: 30px;
     height: 30px;
+}
+.contact-form span {
+    margin-bottom: 30px;
 }
 .contact-form button{
     font-family: 'Montserrat', sans-serif;
@@ -322,4 +324,14 @@ label[for="terms-agreement"]{
 .signup-box .left .content{
     width: 75%;
     margin: auto;
+}
+.disable {
+    background-color: gray;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+.error-block {
+    font-size: 14px;
+    color: red;
+    display: block;
 }

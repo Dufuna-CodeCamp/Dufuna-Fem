@@ -1,0 +1,11 @@
+#Ignore env files
+.env
+
+#Ignore vendors folder
+vendor/
+
+#Ignore composer lock
+composer.lock
+
+#Ignore 
+.idea/

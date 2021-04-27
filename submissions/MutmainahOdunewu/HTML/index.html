@@ -95,14 +95,16 @@
         </div>
         <div class="foot">
           <p>Sign up for our Newsletters</p>
-          <form>
+          <form id="requiredfield">
             <input
               type="email"
               name="email"
-              id="email"
+              id="newsletter"
               placeholder="Enter your email address"
             />
-            <button type="submit" class="styling">Submit</button>
+            <button type="submit" id="submit" class="styling">Submit</button>
+            <br />
+            <span class="error-block errormessage"></span>
           </form>
         </div>
         <div class="foot">
@@ -128,5 +130,6 @@
       </p>
     </footer>
     <script src="../DOM/product.js"></script>
+    <script src="../DOM/newsletter.js"></script>
   </body>
 </html>

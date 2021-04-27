@@ -1,56 +1,72 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
 }
-html{
+
+html {
     font-size: 62.5%;
 }
-.clear{
+
+.clear {
     clear: both;
 }
-h1{
+
+h1 {
     font-size: 5rem;
     color: #a79edd;
 }
-a{
+
+a {
     color: #ffffff;
     text-decoration: none;
 }
-h3{
+
+h3 {
     font-size: 2rem;
     padding-bottom: 1rem;
 }
+
 nav,
-footer{
+footer {
     background-color: #a79edd;
     font-size: 2rem;
 }
+
+
 /*Header*/
-nav{
+
+nav {
     padding: 6rem 4rem;
 }
-nav .logo{
+
+nav .logo {
     float: left;
 }
-nav ul{
+
+nav ul {
     float: right;
     list-style: none;
 }
-nav li{
+
+nav li {
     float: left;
     margin: 0rem 4rem;
 }
+
+
 /* Mainbody*/
-#name-parent{
+
+#name-parent {
     background-color: #fff;
     overflow: hidden;
     margin-bottom: 4rem;
     font-size: 2rem;
     padding: 4rem 2rem;
 }
-.column-one{
+
+.column-one {
     float: left;
     width: 40%;
     margin: 6rem 0 4rem 10rem;
@@ -58,13 +74,17 @@ nav li{
     text-align: left;
     font-size: 2.8rem;
 }
-.column-one a{
+
+.column-one a {
     color: #a79edd;
     font-weight: bold;
     text-decoration: underline;
 }
+
+
 /*contact form*/
-.column-two{
+
+.column-two {
     float: right;
     width: 45%;
     border: 0.2rem solid grey;
@@ -72,32 +92,44 @@ nav li{
     margin: 2rem 4rem 0 0;
     border-radius: 2rem;
 }
-form{
+
+form {
     margin-left: 1rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
-form input{
+
+form input {
     width: 100%;
     height: 4rem;
     margin-top: 0.5rem;
     border-radius: 1rem;
     margin-bottom: 1rem;
 }
-form input[type="checkbox"]{
+
+form input[type="checkbox"] {
     width: 1rem;
     height: 1rem;
     display: inline-block;
     margin-left: 2.5rem;
 }
-form label: last-of-type{
+
+formlabel: last-of-type {
     color: #a79edd;
     font-weight: bold;
     display: inline-block;
     margin-top: 3rem;
     margin-left: 0.5rem;
 }
-form button{
+
+.error-block {
+    color: red;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+form button {
     background-color: #a79edd;
     color: #ffffff;
     font-weight: bold;
@@ -110,30 +142,29 @@ form button{
     margin: 2.5rem 4rem 0rem 12rem;
     border-radius: 1rem;
 }
-/*footer */
-.column-first,
-.column-second,
-.column-third{
-    float: left;
-    width: 33.3%;
-    color: #fff;
-    margin-bottom: 1rem;
-    padding: 1rem 3rem 0 3rem;
-    margin-top: 5rem;
+
+
+/*footer*/
+
+footer {
+    color: #ffffff;
+    padding: 1rem 2rem;
 }
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-footer ul{
+
+.column-first ul {
     list-style: none;
 }
-footer li{
+
+.mainfooter {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+footer li {
     margin-bottom: 2rem;
 }
-input{
+
+input {
     width: 10rem;
     height: 4rem;
     color: #a79edd;
@@ -141,28 +172,37 @@ input{
     font-size: 1.8rem;
     text-align: center;
 }
-:placeholder-shown{
-    width: 25rem;
+
+:placeholder-shown {
+    width: 45%;
 }
-::placeholder{
+
+input#footer-signup-btn {
+    width: 30%;
+}
+
+::placeholder {
     color: #a79edd;
     font-size: 1.6rem;
 }
-footer p{
+
+footer p {
     padding-bottom: 1rem;
     text-align: center;
-    color: #ffffff;
 }
+
+
 /* @media query */
-@media screen and (max-width: 800px){
+
+@media screen and (max-width: 800px) {
     nav {
         padding-bottom: 0;
     }
     /* mainbody*/
-    #name-parent{
+    #name-parent {
         width: 100%;
     }
-    .column-one{
+    .column-one {
         float: none;
         width: 80%;
         margin-top: 2rem;
@@ -171,135 +211,118 @@ footer p{
         padding-right: 3rem;
         text-align: center;
     }
-    #name-parent .column-two{
+    #name-parent .column-two {
         float: none;
         width: 90%;
         margin-left: auto;
         margin-right: auto;
     }
-    /*footer*/
-    .column-first,
-    .column-second{
-        width: fit-content;
-        float: left;
+    .mainfooter {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
     }
-    .column-second{
-        margin-bottom: 4rem;
-        margin-left: 4rem;
+    .column-third {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
     }
-    .column-third{
-        float: none;
-        width: fit-content;
-        padding-right: 0;
-        margin-right: 0;
-        padding-left: 34rem;
-    }
-    form button.signup-btn{
+    form button#signup-btn {
         margin-left: 18rem;
         margin-right: 0;
     }
-    .column-second p{
+    .column-second p {
         text-align: left;
     }
 }
+
+
 /*@media query */
 
-@media screen and (max-width: 650px){
-    .column-one p{
+@media screen and (max-width: 650px) {
+    .column-one p {
         font-size: 2.5rem;
     }
     /*form*/
-    form button.signup-btn{
+    form button#signup-btn {
         margin-left: 13rem;
     }
-    .column-one{
+    .column-one {
         margin-left: 4rem;
     }
-    /*footer*/
-    .column-first,
-    .column-second{
-        width: 45%;
-        float: left;
-    }
-    .column-third{
-        padding-left: 33rem;
+    .column-third {
+        grid-column-start: 1;
+        grid-column-end: 3;
     }
 }
-@media screen and (max-width: 500px){
+
+@media screen and (max-width: 500px) {
     /*Header*/
     nav .logo,
     nav ul,
-    nav li{
+    nav li {
         width: 100%;
         float: none;
         padding-bottom: 1rem;
         padding-top: 0.5rem;
     }
-    nav .logo{
+    nav .logo {
         width: fit-content;
     }
-    nav li{
+    nav li {
         margin-left: 0;
-    /* mainbody*/    }
-    .column-one{
+        /* mainbody*/
+    }
+    .column-one {
         width: fit-content;
         margin-left: 2rem;
         margin-right: 2rem;
     }
-    .column-one h1{
+    .column-one h1 {
         font-size: 3.1rem;
     }
     .column-one p {
         font-size: 1.7rem;
-    } 
-    .column-two{
+    }
+    .column-two {
         width: 90%;
         margin-left: 0;
         margin-right: 0;
     }
     /*form*/
-    form input{
+    form input {
         width: 100%;
     }
-    form input[type="checkbox"]{
+    form input[type="checkbox"] {
         margin-left: 0;
     }
-    form label:last-of-type{
+    form label:last-of-type {
         margin-top: 0;
         display: inline;
         margin-left: 0;
         font-size: 1.7rem;
     }
-    form button.signup-btn{
+    form button#signupbtn {
         margin-left: 9rem;
         padding-left: 2rem;
         padding-right: 2rem;
     }
     /*footer*/
-    footer{
-        padding-top: 4rem;
+    .column-first {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 4;
     }
-    .column-first,
-    .column-second,
-    .column-third{
-        width: fit-content;
-        float: none;
-        padding: 0;
-        margin: 0 0 0 4rem;
+    .column-second {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        padding-top: 1rem;
     }
-    .column-first{
-        padding-bottom: 1.5rem;
-    }
-    .column.third{
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    }
-    footer p{
-        align-content: center;
-        margin: auto;
-        width: 60%;
-    }
-    .column-second p{
-        width: 100%;
+    .column-third {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 4;
     }
 }

@@ -2,7 +2,9 @@
 
     require("connection.php");
 
-    function getAllData($pdo) {
+    $_id = $_GET['id'];
+
+    function getAllData($_id, $pdo) {
         try{
             $sql = "SELECT order_items.quantity, order_items.unit_prices, 
             order_items.total_amount, orders.date, orders.id,customer_address.street, customer_address.city,customer_address.state, 
@@ -11,11 +13,13 @@
             LEFT JOIN orders ON orders.id = order_items.order_id
             LEFT JOIN customer_address on orders.customer_id = customer_address.id
             LEFT JOIN products ON products.id = order_items.product_id 
-            WHERE orders.customer_id = order_items.id";
+            WHERE orders.customer_id = ' $_id' ";
             
                 $stmt = $pdo->query($sql);
                 $orders = $stmt->fetchAll();
 
+                setcookie('orders',  json_encode($orders), time() + 3600 );
+                 
                 cookieJar($orders);
                 return $orders;
         } catch (PDOException $e) {
@@ -24,27 +28,27 @@
     }
 
     function cookieJar($orders){
-        return setcookie("customers",  json_encode($orders), time() + 3600 );
+        return setcookie('orders',  json_encode($orders), time() + 3600 );
     }
 
-    $main = getAllData($pdo);
+    $main = getAllData($_id, $pdo);    
     if( isset($_COOKIE['orders']) ) {
         $orders = json_decode(stripslashes($_COOKIE['orders']), true );
     } else{
         $orders = $main;
    }
-   
-
-    if (count($orders) > 0) {
+    
+    if ($orders && count($orders) > 0) {
+        echo "<h3>Order detail list</h3>";
         echo "<table cellspacing=4 cellpadding=4>";
             echo "<tr>";
-                echo "<td>S/N</td>";
-                echo "<td>Product Name</td>";
-                echo "<td>Unit Price</td>";
-                echo "<td>Quantity</td>";
-                echo "<td>Total Price</td>";
-                echo "<td>Order Date</td>";
-                echo "<td>Customer Location</td>";
+                echo "<th>S/N</th>";
+                echo "<th>Product Name</th>";
+                echo "<th>Unit Price</th>";
+                echo "<th>Quantity</th>";
+                echo "<th>Total Price</th>";
+                echo "<th>Order Date</th>";
+                echo "<th>Customer Location</th>";
             echo "</tr>";
         foreach ($orders as $row) {
             echo "<tr>";

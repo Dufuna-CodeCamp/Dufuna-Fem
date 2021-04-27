@@ -1,72 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>
-        <BLK>
-    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLK_My Naturals.com</title>
+    <link href="../CSS/styleproductpage.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
 </head>
 
 <body>
-    <h1>BLK_ My Naturals</h1</a>
-        <nav>
-            <div>
+    <header>
+        <div class="navbar">
+            <nav>
+                <h1 class="header1">BLK_My Naturals</h1>
                 <ul>
-                    <li>About Us</li>
-                    <li>BLK_My Naturals</li>
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="productpage.html">BLK Products</a></li>
                 </ul>
+            </nav>
+        </div>
+    </header>
+    <br />
+    <main>
+        <div class="img1">
+            <img class="shmpoo" src="Images/N-SHAMPOO.jpg" controls></Images>
+            <div class="specs">
+                <p>
+                    <strong>BLK NOURISHING SHAMPOO: 250ml</strong><br>
+                    <strong class="qty">Quantity:</strong>
+                    <input type="number" name="quantity" id="quantity">
+                    <br>
+                    <strong class="prce">Price: &#x20A6; 3,500</strong>
+                    <br>
+                    <button class="btn" href="#">BUY NOW</button>
+                </p>
             </div>
-        </nav>
-        <header>
-            <h2>About Us</h2>
-            <section>
-                <article>
-                    <p>
-                        BLK_My Naturals is a haircare brand that is all about wearing your natural kinky hair with
-                        pride.
-                        Our products are made from strictly organic ingredients which helps give our naturals the
-                        healthy look it deserves.
-                        We have different products according to the different needs of the black natural hair.
-                        BLK helps you wear your natural curls like the Queen you are.
+            <p class="desc"><strong>PRODUCT DESCRIPTION</strong><br>
+                BLK_My Naturals Nourishing Shampoo is formulated specially for natural hair.
+                This product is made with a blend of jojoba oil, chebe powder and shea butter to nourish dry and
+                itchy scalp while effectively removing dirt and product build-up. Wash hair with ample amount of BLK_My
+                Naturals Nourishing
+                Shampoo alongsides BLK_My Naturals Nourishing Conditioner to attain best results. Then, dry.
+            </p>
+        </div>
+        <hr>
+        <div class="products">
+            <h4>SIMILAR PRODUCTS</h4>
+            <ul>
+                <div class="img-soil">
+                    <img class="soil" src="Images/S-OIL.jpg" controls>
+                    <p><strong class="img-descriptn">BLK-Strenghtening Oil: 50ml<br />
+                            PRICE:&#x20A6;1,799
+                        </strong></img>
                     </p>
-                </article>
-            </section>
-        </header>
-        <main>
-            <h3>BLK_My Naturals</h3>
-            <section>
-                <img src="Images/N-SHAMPOO.jpg" controls></image>
-                <p><strong>BLK_My Naturals NOURISHING SHAMPOO: </strong><em>250ml</em></p>
-                <p>
-                    BLK_My Naturals Nourishing Shampoo is formulated specially for natural hair.
-                    This product is made with a blend of jojoba oil, shea butter and chebe powder to nourish dry and
-                    itchy scalp while effectively removing dirt and product build-up.
-                <p><strong>PRICE: </strong><em>2500.00</em></p>
-                </p>
-                <img src="Images/S-OIL.jpg" controls></image>
-                <p><strong>BLK_My Naturals STRENGHTENING OIL: </strong><em>50ml</em></p>
-                <p>
-                    BLK_My Naturals Strenghtening Oil is enriched with a blend of castor, grapeseed, avocado, sweet
-                    almond and olive oils.
-                    This product assist in stimulating healthy hair growth, reducing frizz and adding shine. It also
-                    softens the hair while sealing in moisture.
-                <p><strong>PRICE: </strong><em>1500.00</em></p>
-                </p>
-                <h4>SIMILAR PRODUCTS</h4>
-                <p>
-                <ol>
-                    <li>BLK_My Naturals Hydrating Serum</li>
-                    <li>BLK_My Naturals Curls Activator</li>
-                    <li>BLK_My Naturals Nourishing Conditioner</li>
-                    <li>BLK_My Naturals Leave-in Conditioner</li>
-                </ol>
-                </p>
-            </section>
-        </main>
-        <footer>
-            <p> &copy; 2020 Online BLK_My Naturals</p>
-        </footer>
+                </div>
+                <div class="img-vmose">
+                    <img class="vmose" src="Images/V-MOOSE.jpg" controls>
+                    <p><strong class="img-descriptn">BLK-Voluminizing Moose: 200ml<br />
+                            PRICE:&#x20A6;2,999
+                        </strong></img>
+                    </p>
+                </div>
+                <div class="img-gel">
+                    <img class="gel" src="Images/Edge gel.jpg" controls>
+                    <p><strong class="img-descriptn">BLK-Edge Gel: 200ml<br />
+                            PRICE:&#x20A6;2,999
+                        </strong></img>
+                    </p>
+                </div>
+
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+            <div class="email">
+                <label for="E-mail">Sign up for our Newsletter</label><br>
+                <input type="text" name="E-mail" id="E-mail" placeholder="Enter your email address">
+                <button class="submit" href="#">SUBMIT</button>
+            </div>
+            <br />
+            <div class="sites">
+                <strong>CONNECT WITH US</strong><br>
+                <img class="fbk" src="Images/Facebook .png" href="www.facebook.com"></images>
+                <img class="twtr" src="Images/Twitter.png" href="www.twitter.com"></images>
+                <img class="gml" src="Images/Gmail.png" href="www.gmail.com"></images>
+                <img class="ytub" src="Images/Youtube.png" href="www.youtube.com"></images>
+            </div>
+            <div class="copyright">
+                <p> &copy;2020 Online BLK_My Naturals. All rights reserved. </p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
