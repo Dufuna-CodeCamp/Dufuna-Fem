@@ -2,11 +2,11 @@ USE transport;
 
 -- Total Number of passengers who survived
 SELECT COUNT(*) FROM accidents WHERE passenger_survived = 1;
--- 290
+-- 342
 
 -- Total Number of passengers who did not survive
 SELECT COUNT(*) FROM accidents WHERE passenger_survived = 0;
--- 424
+-- 549
 
 -- select name and sex of passengers under the age of 27 
 -- that embarked at Queenstown and Cherbourg
@@ -18,7 +18,7 @@ SELECT passengers.full_name, passengers.sex FROM passengers
 SELECT COUNT(*) FROM accidents LEFT JOIN trips
 	ON accidents.passenger_id = trips.passenger_id 
 	WHERE trips.point_of_embarkation = 'S' AND accidents.passenger_survived = 1;
--- 202
+-- 218
     
 -- Select the id and name of passengers who paid a fare greater than $100 
 -- and above the age of 35 and had siblings or spouses on board?
