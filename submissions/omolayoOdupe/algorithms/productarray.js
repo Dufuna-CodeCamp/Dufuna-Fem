@@ -59,4 +59,5 @@ function newPrice(product) {
       return product_price;
   }
   
+  
   newPrice(product);
