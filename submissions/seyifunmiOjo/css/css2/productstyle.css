@@ -42,10 +42,8 @@ footer ul {
 
 .myImg {
     height:auto;
-    object-fit: scale-down;
-    /* width:auto;
-    height: auto; */
-    /* max-width: 100%; */
+    max-width: 100%;
+    object-fit: cover;
     padding: 20px;
     margin-top: 0;
     margin-bottom: 0;
@@ -99,6 +97,8 @@ footer ul {
 
 .drum img {
     width:200px;
+    height: auto;
+    min-height: auto;
     background-color: #fff;
     padding-bottom: 0;
     
@@ -107,7 +107,7 @@ footer ul {
 .fruits-wrapper {
     align-items: center;
     justify-items:center;
-    margin-left: 80px; 
+    margin-left: 50px; 
 }
 
 figure {
@@ -118,7 +118,7 @@ figure {
 
 figure img {
     vertical-align: top;
-    
+    height: auto;
 }
 
 figure figcaption {
@@ -170,7 +170,8 @@ footer #email {
         flex-direction: row;
         position:relative;
         color: #fff;
-        margin: 0px 90px;
+        margin:10% 20% 0 20%;
+        background-color: #556b2f;
         width:fit-content;
 
     }
@@ -203,6 +204,13 @@ footer #email {
             position:relative;
         }
 
+        .copyright  p{
+            text-align: center;
+            display: flex;
+            align-items: center;
+            margin: 5% 30% 0 30%;
+        }
+
         .wrapper {
             float:right;
         }
@@ -216,3 +224,44 @@ footer #email {
             display: grid;
             grid-template-columns: 1fr 1fr;
         }
+
+        .myImg {
+            width:50%;
+            height: auto;
+        }
+
+        .drum img {
+            height: 80%;
+            width:100%;
+        }
+
+        .wrapper h3,
+        .drum h3,
+        .container h3 {
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        .wrapper a {
+            text-decoration: none;
+            border:1px solid;
+            background-color: yellowgreen;
+            margin-top: 3px;
+            color:#fff;
+            padding:13px;
+            border-radius:15%;
+        }
+        
+        .wrapper a:hover {
+            background-color: yellow;
+        }
+
+    
+
+        .container p,
+        figcaption{
+            font-size: 30px;
+        }
+
+        
+    }
