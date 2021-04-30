@@ -50,12 +50,8 @@ main{
     width: 100%;
     display: block;
 }
-#two{
-    text-align: center;
-    border: 1px solid black;
+.inp{
     width: 10%;
-    padding-left: 5px;
-    padding-right: 5px;
 }
 .buynow{
     background-color: orange;
@@ -114,6 +110,7 @@ footer{
     flex-direction: column;
     min-height: 30px;
 }
+
 .newsletter input{
     height:30px;
     width:70%;
@@ -192,9 +189,11 @@ footer{
     .inceptions{  
         display: flex;    
     }
-    #two{
-        width: 30%;
-        padding-right: 25px;  
+    .inp{
+        width: 20%;
+    }
+    .product-description{
+        margin-right: none;
     }
     .post{
         display: flex;
@@ -202,6 +201,8 @@ footer{
     }
     .work1{
         padding-right: 20px;
+        padding-top: 10px;
+        
     }
     .work2{
         padding-right: 20px;
@@ -264,10 +265,13 @@ footer{
     #related{
         margin-top: -30px;
     }
-    #two{
-        width: 30%;
-        padding-right: 30px;
+    .inp{
+        width: 20%;
     }
+    .product-description{
+        margin-right: none;
+    }
+
     #phones{
         width: 150px;
         height: 150px;

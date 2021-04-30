@@ -13,7 +13,7 @@
     <div class="first">
         <header class="site-container">
             <h1 class="header-title"><img
-                    src="./icons images/Black and Grey Spinning Cool and Funky Computer Logo (1).png" alt=""
+                    src="./Images/iconsImages/Black and Grey Spinning Cool and Funky Computer Logo (1).png" alt=""
                     height="50px" width="50px"></h1>
         </header>
         <nav class="new">
@@ -30,18 +30,26 @@
                 <img src="Images/iphone transparent.png" id="iphone" alt="" width="200px" height="200px">
             </div>
             <div class="work2">
-                <P><strong>THE NEW IPHONE</strong></P>
-                <p><strong>BRAND: iPhone 12 Pro Max</strong></p>
+                <h2>THE NEW IPHONE</h2>
+                <h3>BRAND: iPhone 12 Pro Max</h3>
                 <div class="firrs">
-                    <p><strong>Quantity:<span id="two">2</strong> </p>
+                    <h3>Quantity:
+                        <input type="number" name="quantity" id="quantity" value="1" class="inp"/>
+                        <span class="error-block quantity-error"></span>
+                    </h3>
                 </div>
-                <p><strong>Price:$150</strong></p>
-                <button class="buynow">BUY NOW</button>
-                <p><strong>DESCRIPTION</strong></p>
-                <p>The new iPhone 12 Pro Max is the latest release from tech giant Apple. It is water-resistant and
-                    face-identity enabled. It is made of glass and sleek metal,
-                    comfortable to hold. It boasts of a long battery life and available in different colors.</p>
+                <h3>Price: $ <span id="price">5000</span></h3>
+                <h3>Shipping Cost: $ <span id="shippingCost">750</span></h3>
+                <h3>Total Cost: $ <span id="totalCost">5750</span></h3>
+                <button type="submit" id="buy-now" class="buynow">BUY NOW</button>
+
             </div>
+        </div>
+        <div class="product-description">
+            <p><strong>DESCRIPTION</strong></p>
+            <p>The new iPhone 12 Pro Max is the latest release from tech giant Apple. It is water-resistant and
+                face-identity enabled. It is made of glass and sleek metal,
+                comfortable to hold. It boasts of a long battery life and available in different colors.</p>
         </div>
     </main>
     <div class="secondsss">
@@ -114,6 +122,7 @@
     </div>
     </footer>
     </div>
+    <script src="../DOM/product.js"></script>
 </body>
 
 </html>
