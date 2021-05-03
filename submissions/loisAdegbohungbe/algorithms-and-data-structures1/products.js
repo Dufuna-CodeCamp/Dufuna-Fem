@@ -44,8 +44,6 @@ let product_price = [
     750.00
 ];
 
-console.log('Sony A7ii'.length);
-
 for(let i = 0; i < products.length; i++) {
     if(products[i].length % 2 == 0) {
         product_price[i] *= 2;
