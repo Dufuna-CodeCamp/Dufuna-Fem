@@ -35,34 +35,34 @@
                 <p>Already got an account? <a href="">Sign in</a></p>
             </div>
             <div class="secondsection">
-                <form action="#" method="POST" enctype="multipart/form-data">
+                <form action="#" id="signup-form" method="POST" enctype="multipart/form-data">
                     <div class="within">
-                        <label for="firstname">First Name</label><br>
-                        <input type="text" name="firstname" id="firstname" /><br>
-
-                        <label for="lastname">Last Name</label><br>
-                        <input type="text" name="lastname" id="lastname" /><br>
-
-                        <label for="firstname">Other Names</label><br>
-                        <input type="text" name="firstname" id="firstname"><br>
-
-                        <label for="lastname">Phone Number</label><br>
-                        <input type="text" name="lastname" id="lastname"><br>
-
-                        <label for="email">Email address</label><br>
-                        <input type="text" name="email" id="email"><br>
-
-                        <label for="lastname">Password</label><br>
-                        <input type="text" name="lastname" id="lastname"><br>
-
-                        <label for="lastname">Confirm Password</label><br>
-                        <input type="text" name="lastname" id="lastname"><br>
+                        <label for="firstname">First Name</label> <br>
+                        <input type="text" name="firstName" id="firstName"/>
+                        <span class="error-block"></span><br><br>
+                        <label for="lastname">Last Name</label> <br>
+                        <input type="text" name="lastName" id="lastName"/>
+                        <span class="error-block"></span><br><br>
+                        <label for="othernames">Other Names</label> <br>
+                        <input type="tel" name="otherNames" id="otherNames"/><br>
+                        <label for="phone">Phone Number</label> <br>
+                        <input type="text" name="phone" id="phone"/>
+                        <span class="error-block"></span><br><br>
+                        <label for="email">Email Address</label> <br>
+                        <input type="email" name="email" id="email"/>
+                        <span class="error-block"></span><br><br>
+                        <label for="password">Password</label> <br>
+                        <input type="password" name="password" id="password"/>
+                        <span class="error-block"></span><br><br>
+                        <label for="confirm-password">Confirm Password</label> <br>
+                        <input type="password" name="confirmPassword" id="confirmPassword"/>
+                        <span class="error-block"></span><br><br>                
                     </div>
                     <div class="tobefilled">
                         <input type="checkbox" id="tandc" name="vehicle1" value="terms">
-                        <label for="vehicle1" style="color: blue;"> I agree to the Terms and Conditions</label><br>
+                        <label for="tandc" style="color: blue;"> I agree to the Terms and Conditions</label><br>
 
-                        <button type="button" class="signup">SIGN UP</button>
+                        <button type="submit" class="signup">SIGN UP</button>
                     </div>
                 </form>
             </div>
@@ -110,6 +110,7 @@
     </div>
     </footer>
     <div>
+        <script src="../DOM/signupform.js"></script>
 </body>
 
 </html>
