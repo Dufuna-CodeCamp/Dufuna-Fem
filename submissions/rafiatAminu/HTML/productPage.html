@@ -5,50 +5,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Page</title>
+    <link rel="stylesheet" href="../css/ProductPageStyle.css">
+
 </head>
 
 <body>
-    <h1>RAF PHONE STORES</h1>
-    <nav>
-        <ul>
-            <li><a href="./productPage.html">Store</a></li>
-            <li><a href="../html-forms/contact.html">Contact</a></li>
-            <li><a href="#">Cart</a></li>
-        </ul>
-    </nav>
-    <hr>
-    <p><b>THE NEW iPHONE 12 PRO MAX</b></p>
-    <img src="./Images/Apple_announce-iphone12pro_10132020.jpg.og.jpg" alt="" width="200px" height="200px">
-    <img src="./Images/960x0.jpg" alt="" width="200px" height="200px">
-    <p><b>Price:</b> &#8358;100,000</p>
-    <section>
-        <h2>Product Description</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a nibh quis sapien ullamcorper hendrerit
-            blandit non neque.
-            Phasellus scelerisque nisl non ex pretium ornare. Donec in est leo. Donec in volutpat velit. Pellentesque
-            lacus tellus,
-            vehicula ut erat eget, semper consectetur nisl. Vestibulum erat felis, porta ut quam sit amet, venenatis
-            finibus.
-            In quis augue eget augue porta blandit. In eget erat non neque congue tempus euismod vitae nunc. Morbi nec
-            arcu at mauris dignissim vestibulum.
-            Suspendisse potentis. Aenean gravida tincidunt metus, id sollicitudin orci tempor nec.</p>
-    </section>
-    <section>
-        <h2>Similar Products</h2>
-        <ol>
-            <li>iphone 12</li>
-            <li>iphone 11 pro max</li>
-            <li>iphone 11</li>
-        </ol>
-    </section>
-    <hr>
-    <footer>
-        <ul>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Twitter</a></li>
-        </ul>
-        <p> &copy; 2020 Raf Phone Stores</p>
+    <div class="first">
+        <header class="site-container">
+            <h1 class="header-title"><img
+                    src="./Images/iconsImages/Black and Grey Spinning Cool and Funky Computer Logo (1).png" alt=""
+                    height="50px" width="50px"></h1>
+        </header>
+        <nav class="new">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="./productPage.html">Product Page</a></li>
+                <li class="nav-item"><a href="../html-forms/contact.html">Contact Us</a></li>
+                <li class="nav-item"><a href="./SignUpPage.html">Sign-up</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <div class="inceptions">
+            <div class="work1">
+                <img src="Images/iphone transparent.png" id="iphone" alt="" width="200px" height="200px">
+            </div>
+            <div class="work2">
+                <h2>THE NEW IPHONE</h2>
+                <h3>BRAND: iPhone 12 Pro Max</h3>
+                <div class="firrs">
+                    <h3>Quantity:
+                        <input type="number" name="quantity" id="quantity" value="1" class="inp"/>
+                        <span class="error-block quantity-error"></span>
+                    </h3>
+                </div>
+                <h3>Price: $ <span id="price">5000</span></h3>
+                <h3>Shipping Cost: $ <span id="shippingCost">750</span></h3>
+                <h3>Total Cost: $ <span id="totalCost">5750</span></h3>
+                <button type="submit" id="buy-now" class="buynow">BUY NOW</button>
+
+            </div>
+        </div>
+        <div class="product-description">
+            <p><strong>DESCRIPTION</strong></p>
+            <p>The new iPhone 12 Pro Max is the latest release from tech giant Apple. It is water-resistant and
+                face-identity enabled. It is made of glass and sleek metal,
+                comfortable to hold. It boasts of a long battery life and available in different colors.</p>
+        </div>
+    </main>
+    <div class="secondsss">
+        <p style="text-align: center; padding-top: 10px; font-weight: bold;" id="related">RELATED PRODUCTS</p>
+
+        <div class="beginning">
+
+            <div class="wrapp">
+
+                <div class="post">
+
+                    <img src="Images/iphone transparent.png" id="phones" alt="">
+                    <p id="secondss">iPhone X</p>
+                    <p>Price:$200</p>
+                </div>
+                <div class="post">
+                    <img src="Images/huawei transparent.jpg" id="phones" alt="">
+                    <p id="secondss">Huawei</p>
+                    <p>Price:$200</p>
+                </div>
+            </div>
+            <div class="post">
+                <img src="Images/samsung transparent.jpg" id="phones" alt="">
+                <p id="secondss">Samsung</p>
+                <p>Price:$200</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="last">
+        <footer>
+            <div class="ending">
+                <div class="contact">
+                    <ul class="bottom-links">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Terms and Condition</a></li>
+                    </ul>
+                </div>
+                <div class="network">
+                    <div class="newsletter">
+                        <p style="color: white;"> Sign up for our Newsletter?</p>
+                        <form>
+                            <input type="email" name="email" id="email" placeholder="Enter your email address" />
+                            <button type="submit">SUBMIT</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="socm">
+                    <p style="color: white;"> CONNECT WITH US</p>
+                    <ul class="socials">
+                        <li class="nav-bottom"><a href="#">
+                                <img src="../HTML/Images/iconsImages/fb.png">
+                            </a></li>
+                        <li class="nav-bottom"><a href="#">
+                                <img src="../HTML/Images/iconsImages/twitter.png">
+                            </a></li>
+                        <li class="nav-bottom"><a href="#">
+                                <img src="../HTML/Images/iconsImages/gmail.png">
+                            </a></li>
+                        <li class="nav-bottom"><a href="#">
+                                <img src="../HTML/Images/iconsImages/youtube.jpeg">
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copyrights"> Copyright 2020 rafphonestores.com All rights reserved</p>
+    </div>
+    </div>
     </footer>
+    </div>
+    <script src="../DOM/product.js"></script>
 </body>
 
 </html>
