@@ -1,0 +1,5 @@
+# Ignore these folders/files
+
+/vendor
+composer.lock
+.env
