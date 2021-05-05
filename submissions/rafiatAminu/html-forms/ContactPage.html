@@ -14,14 +14,14 @@
     <div class="first">
         <header class="site-container">
             <h1 class="header-title"><img
-                    src="./icons images/Black and Grey Spinning Cool and Funky Computer Logo (1).png" alt=""
+                    src="../css/iconsImages/Black and Grey Spinning Cool and Funky Computer Logo (1).png" alt=""
                     height="50px" width="50px"></h1>
         </header>
         <nav class="new">
             <ul class="nav-list">
-                <li class="nav-item"><a href="./productPage.html">Product Page</a></li>
-                <li class="nav-item"><a href="../html-forms/contact.html">Contact Us</a></li>
-                <li class="nav-item"><a href="./SignUpPage.html">Sign-up</a></li>
+                <li class="nav-item"><a href="../HTML/productPage.html">Product Page</a></li>
+                <li class="nav-item"><a href="../html-forms/ContactPage.html">Contact Us</a></li>
+                <li class="nav-item"><a href="../html-forms/SignUpPage.html">Sign-up</a></li>
             </ul>
         </nav>
     </div>
@@ -99,9 +99,10 @@
                 <div class="network">
                     <div class="newsletter">
                         <p style="color: white;"> Sign up for our Newsletter?</p>
-                        <form id="newsletter-form">
-                            <input type="email" name="email" id="newsEmail" placeholder="Enter your email address" />
+                        <form action="#" id="newsletter-form" method="POST" enctype="multipart/form-data">
+                            <input type="text" name="email" id="newsletterEmail" placeholder="Enter your email address"/>
                             <button type="submit">SUBMIT</button>
+                            <span class="error-block"></span>
                         </form>
                     </div>
                 </div>
@@ -109,19 +110,20 @@
                     <p style="color: white;"> CONNECT WITH US</p>
                     <ul class="socials">
                         <li class="nav-bottom"><a href="#">
-                                <img src="../css/icons images/fb.png">
+                                <img src="../css/iconsImages/fb.png">
                             </a></li>
                         <li class="nav-bottom"><a href="#">
-                                <img src="../css/icons images/twitter.png">
+                                <img src="../css/iconsImages/twitter.png">
                             </a></li>
                         <li class="nav-bottom"><a href="#">
-                                <img src="../css/icons images/gmail.png">
+                                <img src="../css/iconsImages/gmail.png">
                             </a></li>
                         <li class="nav-bottom"><a href="#">
-                                <img src="../css/icons images/youtube.jpeg">
+                                <img src="../css/iconsImages/youtube.jpeg">
                             </a></li>
                     </ul>
                 </div>
+            </div>
             </div>
             <p class="copyrights"> Copyright 2020 rafphonestores.com All rights reserved</p>
     </div>
@@ -129,6 +131,7 @@
     </footer>
     </div>
     <script src="../DOM/contactForm.js"></script>
+    <script src="../DOM/newsletter.js"></script>
 </body>
 
 </html>
