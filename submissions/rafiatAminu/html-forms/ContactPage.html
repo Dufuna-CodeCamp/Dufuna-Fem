@@ -28,11 +28,11 @@
     <main>
         <div class="secone">
             <div class="middle">
-                <img src="../css/icons images/phone-icon-.png">
+                <img src="../css/iconsImages/phone-icon-.png">
                 <p style="font-weight: bold;">Please contact us via these numbers:</p>
                 <p>+123 803 303 0000</p>
                 <p>+123 816 710 6842</p>
-                <img src="../css/icons images/email real.png">
+                <img src="../css/iconsImages/email real.png">
                 <p style="font-weight: bold;">Email Address: </p>
                 <p>support@rafphonestores.com</p>
 
@@ -42,39 +42,44 @@
 
                     <ul class="social">
                         <li class="nav-bot"><a href="#">
-                                <img src="../css/icons images/fb.png">
+                                <img src="../css/iconsImages/fb.png">
                             </a></li>
                         <li class="nav-bot"><a href="#">
-                                <img src="../css/icons images/twitter.png">
+                                <img src="../css/iconsImages/twitter.png">
                             </a></li>
                         <li class="nav-bot"><a href="#">
-                                <img src="../css/icons images/gmail.png">
+                                <img src="../css/iconsImages/gmail.png">
                             </a></li>
                         <li class="nav-bot"><a href="#">
-                                <img src="../css/icons images/youtube.jpeg">
+                                <img src="../css/iconsImages/youtube.jpeg">
                             </a></li>
                     </ul>
                 </div>
             </div>
             <div class="all">
-                <form>
+                <form action="#" id="contact-form" method="POST" enctype="multipart/form-data">
                     <div class="inside">
                         <div class="put">
-                            <img src="../css/icons images/message-outline-xxl.png" alt="">
+                            <img src="../css/iconsImages/message-outline-xxl.png" alt="">
                             <p style="font-weight: bold;">Or better still send us a message</p>
                         </div>
                         <div class="inner">
-                            <label for="fname"></label><br>
-                            <input type="text" id="fname" name="fname" placeholder="Full Name"> <br>
-                            <label for="email"></label><br>
-                            <input type="text" id="lname" name="email" placeholder="Email Address"><br>
-                            <label for="subject"></label><br>
-                            <input type="text" id="lname" name="lname" placeholder="Subject"><br>
+
+                            <input type="text" name="fullname" id="fullName" placeholder="Full Name"/>
+                            <span class="error-block"></span><br>
+
+                            <input type="text" name="email" id="email" placeholder="Email Address"/>
+                            <span class="error-block"></span><br>
+
+                            <input type="text" name="subject" id="subject" placeholder="Subject"/>
+                            <span class="error-block"></span><br>
+
+                            <label for="message">Message</label> <br>
+                            <textarea name="message" id="message" cols="50" rows="10"></textarea>
+                            <span class="error-block"></span><br>
+
                         </div>
-                        <div class="cols">
-                            <label for="message" id="mess">Message</label><br>
-                            <textarea name="message" id="message" cols="54" rows="10"></textarea><br>
-                        </div>
+
                         <button type="submit" class="submit">SEND</button>
                     </div>
                 </form>
@@ -94,8 +99,8 @@
                 <div class="network">
                     <div class="newsletter">
                         <p style="color: white;"> Sign up for our Newsletter?</p>
-                        <form>
-                            <input type="email" name="email" id="email" placeholder="Enter your email address" />
+                        <form id="newsletter-form">
+                            <input type="email" name="email" id="newsEmail" placeholder="Enter your email address" />
                             <button type="submit">SUBMIT</button>
                         </form>
                     </div>
@@ -123,6 +128,7 @@
     </div>
     </footer>
     </div>
+    <script src="../DOM/contactForm.js"></script>
 </body>
 
 </html>

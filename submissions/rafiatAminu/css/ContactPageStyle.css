@@ -97,6 +97,12 @@ input[type=text] {
     margin-bottom: 10px;
     margin-left: 76%;
     border-radius: 6px;
+    cursor: pointer;
+}
+.error-block{
+    font-weight: lighter;
+    color: red;
+    display: block;
 }
 
 footer{
