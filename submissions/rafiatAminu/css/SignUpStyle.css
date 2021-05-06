@@ -108,6 +108,7 @@ footer{
     font-weight: bold;
     font-size: 12px;
     margin-left: 10px;
+    cursor: pointer;
 }
 .newsletter ::placeholder{
     color: blue;
@@ -164,7 +165,8 @@ footer{
     height: 10px;
     width: fit-content;
     justify-content: space-around;
-    margin: auto;   
+    margin: auto; 
+    padding-top: 22px;  
 }
 .register{
     margin: 30px;

@@ -54,7 +54,7 @@ img{
 ul.social{
    display: flex;
    flex-direction: row; 
-   padding-left: 160px;
+   padding-left: 150px;
 }
 .social a img{
     border: 1px solid transparent;
@@ -131,6 +131,7 @@ footer{
     font-weight: bold;
     font-size: 12px;
     margin-left: 10px;
+    cursor: pointer;
 }
 .newsletter ::placeholder{
     color: blue;
@@ -143,6 +144,7 @@ footer{
     border: 1px solid transparent;
     border-radius: 5px;    
 }
+
 .nav-bottom{
     display: inline-block;  
 }
@@ -157,11 +159,15 @@ footer{
 }
 @media screen and (min-width: 600px) {
     .nav-list{
-        flex-direction: row;     
+        flex-direction: row;  
+       
     }    
     .nav-item{
         padding-left: 80px;
         width: fit-content;
+    }
+    .new{
+        height: 10px;
     }
     .first{
         background-color: blue;
@@ -183,29 +189,18 @@ footer{
         height: 10px;
         width: fit-content;
         justify-content: space-around;
-        margin: auto;  
+        margin: auto; 
+        padding-top: 22px;  
     }
     ul.social{
-        padding-left: 215px;
+        padding-left: 320px;
     }
-    .all{
-       padding: 30px 30px 10px 30px; 
-       margin: 30px;
-       margin-top: 5px;
+    .register{
+        margin: 30px;
     }
-    .put{
-        margin-top: 10px;
-        text-align: center;
-    }
-    input[type=text] {
-        width: 90%;
-        border: none;
-        border-bottom: 1px solid grey;
-        margin-bottom: 5px;
-      }
-    .inner{
-        padding-bottom: 10px;
-        padding-top: 0px;
+    .secondsection{
+        padding: 30px 30px 10px 30px;
+        margin: 30px;
     }
     .contact{
         margin-top: 16px;
@@ -244,6 +239,9 @@ footer{
         padding: 10px;
         padding-right: 50px;
     }
+    ul.social{
+        padding-left: 230px;
+     }
     .middle{
         margin-top: 30px;
     }
