@@ -19,8 +19,8 @@
         <nav class="new">
             <ul class="nav-list">
                 <li class="nav-item"><a href="./productPage.html">Product Page</a></li>
-                <li class="nav-item"><a href="../html-forms/contact.html">Contact Us</a></li>
-                <li class="nav-item"><a href="./SignUpPage.html">Sign-up</a></li>
+                <li class="nav-item"><a href="../html-forms/ContactPage.html">Contact Us</a></li>
+                <li class="nav-item"><a href="../html-forms/SignUpPage.html">Sign-up</a></li>
             </ul>
         </nav>
     </div>
@@ -93,10 +93,13 @@
                 <div class="network">
                     <div class="newsletter">
                         <p style="color: white;"> Sign up for our Newsletter?</p>
-                        <form>
-                            <input type="email" name="email" id="email" placeholder="Enter your email address" />
+                        <form action="#" id="newsletter-form" method="POST" enctype="multipart/form-data">
+                            <input type="text" name="email" id="newsletterEmail" placeholder="Enter your email address"/>
                             <button type="submit">SUBMIT</button>
+                            <span class="error-block"></span>
                         </form>
+
+                
                     </div>
                 </div>
                 <div class="socm">
@@ -123,6 +126,7 @@
     </footer>
     </div>
     <script src="../DOM/product.js"></script>
+    <script src="../DOM/newsletter.js"></script>
 </body>
 
 </html>

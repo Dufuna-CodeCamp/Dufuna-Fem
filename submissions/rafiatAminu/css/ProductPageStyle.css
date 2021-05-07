@@ -88,6 +88,10 @@ main{
     align-content: center;
     margin: 17px;
 }   
+.error-block{
+    color: red;
+    font-weight: lighter;
+}
 #phones{
     width:250px;
     height: 250px;
@@ -127,6 +131,7 @@ footer{
     font-weight: bold;
     font-size: 12px;
     margin-left: 10px;
+    cursor: pointer;
 }
 .newsletter ::placeholder{
     color: blue;

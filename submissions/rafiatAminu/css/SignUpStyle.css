@@ -54,6 +54,9 @@ header{
     padding-bottom: 10px;
     margin-bottom: 10px;
 }
+.error-block{
+    color: red;
+}
 input[type=checkbox] {
     margin-right: 1px;
     margin-bottom: 10px;
@@ -71,6 +74,7 @@ input[type=checkbox] {
     padding-top: 5px;
     padding-bottom: 5px;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 .secondsection{
     border: 1px solid gray;
@@ -104,6 +108,7 @@ footer{
     font-weight: bold;
     font-size: 12px;
     margin-left: 10px;
+    cursor: pointer;
 }
 .newsletter ::placeholder{
     color: blue;
@@ -160,7 +165,8 @@ footer{
     height: 10px;
     width: fit-content;
     justify-content: space-around;
-    margin: auto;   
+    margin: auto; 
+    padding-top: 22px;  
 }
 .register{
     margin: 30px;
@@ -231,4 +237,5 @@ footer{
     padding-right: 40px;
     display: grid;
     } 
+}
 }

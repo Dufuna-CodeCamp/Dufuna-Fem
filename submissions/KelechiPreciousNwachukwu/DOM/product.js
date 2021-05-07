@@ -7,6 +7,8 @@ const domElements = {
     error: document.querySelector('.error')
 };
 
+//shipping cost
+
 const calculateShipping = (price) => {
     let shippingCost = 0;
 
@@ -22,6 +24,8 @@ const calculateShipping = (price) => {
 
     return shippingCost;
 }
+
+//total sum
 
 const calculateTotal = (price, shipping) => {
     return price + shipping;

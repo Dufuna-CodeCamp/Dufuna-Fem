@@ -14,14 +14,14 @@
     <div class="first">
         <header class="site-container">
             <h1 class="header-title"><img
-                    src="./icons images/Black and Grey Spinning Cool and Funky Computer Logo (1).png" alt=""
+                    src="../css/iconsImages/Black and Grey Spinning Cool and Funky Computer Logo (1).png" alt=""
                     height="50px" width="50px"></h1>
         </header>
         <nav class="new">
             <ul class="nav-list">
-                <li class="nav-item"><a href="./productPage.html">Product Page</a></li>
-                <li class="nav-item"><a href="../html-forms/contact.html">Contact Us</a></li>
-                <li class="nav-item"><a href="#">Sign-up</a></li>
+                <li class="nav-item"><a href="../HTML/productPage.html">Product Page</a></li>
+                <li class="nav-item"><a href="../html-forms/ContactPage.html">Contact Us</a></li>
+                <li class="nav-item"><a href="../html-forms/SignUpPage.html">Sign-up</a></li>
             </ul>
         </nav>
     </div>
@@ -35,34 +35,34 @@
                 <p>Already got an account? <a href="">Sign in</a></p>
             </div>
             <div class="secondsection">
-                <form action="#" method="POST" enctype="multipart/form-data">
+                <form action="#" id="signup-form" method="POST" enctype="multipart/form-data">
                     <div class="within">
-                        <label for="firstname">First Name</label><br>
-                        <input type="text" name="firstname" id="firstname" /><br>
-
-                        <label for="lastname">Last Name</label><br>
-                        <input type="text" name="lastname" id="lastname" /><br>
-
-                        <label for="firstname">Other Names</label><br>
-                        <input type="text" name="firstname" id="firstname"><br>
-
-                        <label for="lastname">Phone Number</label><br>
-                        <input type="text" name="lastname" id="lastname"><br>
-
-                        <label for="email">Email address</label><br>
-                        <input type="text" name="email" id="email"><br>
-
-                        <label for="lastname">Password</label><br>
-                        <input type="text" name="lastname" id="lastname"><br>
-
-                        <label for="lastname">Confirm Password</label><br>
-                        <input type="text" name="lastname" id="lastname"><br>
+                        <label for="firstname">First Name</label> <br>
+                        <input type="text" name="firstName" id="firstName"/>
+                        <span class="error-block"></span><br><br>
+                        <label for="lastname">Last Name</label> <br>
+                        <input type="text" name="lastName" id="lastName"/>
+                        <span class="error-block"></span><br><br>
+                        <label for="othernames">Other Names</label> <br>
+                        <input type="tel" name="otherNames" id="otherNames"/><br>
+                        <label for="phone">Phone Number</label> <br>
+                        <input type="text" name="phone" id="phone"/>
+                        <span class="error-block"></span><br><br>
+                        <label for="email">Email Address</label> <br>
+                        <input type="email" name="email" id="email"/>
+                        <span class="error-block"></span><br><br>
+                        <label for="password">Password</label> <br>
+                        <input type="password" name="password" id="password"/>
+                        <span class="error-block"></span><br><br>
+                        <label for="confirm-password">Confirm Password</label> <br>
+                        <input type="password" name="confirmPassword" id="confirmPassword"/>
+                        <span class="error-block"></span><br><br>                
                     </div>
                     <div class="tobefilled">
                         <input type="checkbox" id="tandc" name="vehicle1" value="terms">
-                        <label for="vehicle1" style="color: blue;"> I agree to the Terms and Conditions</label><br>
+                        <label for="tandc" style="color: blue;"> I agree to the Terms and Conditions</label><br>
 
-                        <button type="button" class="signup">SIGN UP</button>
+                        <button type="submit" class="signup">SIGN UP</button>
                     </div>
                 </form>
             </div>
@@ -81,9 +81,10 @@
                 <div class="network">
                     <div class="newsletter">
                         <p style="color: white;"> Sign up for our Newsletter?</p>
-                        <form>
-                            <input type="email" name="email" id="email" placeholder="Enter your email address" />
+                        <form action="#" id="newsletter-form" method="POST" enctype="multipart/form-data">
+                            <input type="text" name="email" id="newsletterEmail" placeholder="Enter your email address"/>
                             <button type="submit">SUBMIT</button>
+                            <span class="error-block"></span>
                         </form>
                     </div>
                 </div>
@@ -91,16 +92,16 @@
                     <p style="color: white;"> CONNECT WITH US</p>
                     <ul class="socials">
                         <li class="nav-bottom"><a href="#">
-                                <img src="../css/icons images/fb.png">
+                                <img src="../css/iconsImages/fb.png">
                             </a></li>
                         <li class="nav-bottom"><a href="#">
-                                <img src="../css/icons images/twitter.png">
+                                <img src="../css/iconsImages/twitter.png">
                             </a></li>
                         <li class="nav-bottom"><a href="#">
-                                <img src="../css/icons images/gmail.png">
+                                <img src="../css/iconsImages/gmail.png">
                             </a></li>
                         <li class="nav-bottom"><a href="#">
-                                <img src="../css/icons images/youtube.jpeg">
+                                <img src="../css/iconsImages/youtube.jpeg">
                             </a></li>
                     </ul>
                 </div>
@@ -110,6 +111,8 @@
     </div>
     </footer>
     <div>
+        <script src="../DOM/signupform.js"></script>
+        <script src="../DOM/newsletter.js"></script>
 </body>
 
 </html>
