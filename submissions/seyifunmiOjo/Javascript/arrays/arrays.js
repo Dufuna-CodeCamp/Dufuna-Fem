@@ -1,4 +1,9 @@
-let fruitsArray = new Array('lemons', 'images/lemons.jpg', '$5');
+let productList = {
+    productName: "lemons",
+    imageUrl: "images/lemons.jpg", 
+    productPrice: "$5"};
 
+console.log (productList.productName + " " + "with" +" " + productList.imageUrl + " " + "is sold for" + " " + productList.productPrice);
+    
 
-console.log(fruitsArray[0] + " " + "with" + " " + fruitsArray[1] + " " + "is sold for" + " " + fruitsArray[2])
+    
