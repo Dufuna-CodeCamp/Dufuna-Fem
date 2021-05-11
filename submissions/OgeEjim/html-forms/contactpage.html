@@ -42,19 +42,25 @@
                     <img src="../html/Images/mail.jpg">
                     <p><strong>Or better still send us a message</strong></p>
                 </div>
-                <form action="#" method="POST" enctype="application/x-www-form-urlencoded">
-                    <input type="text" name="fullname" placeholder="Fullname" id="fullname" /><br>
-                    <input type="text" name="email" placeholder="Email Address" id="email" /><br>
-                    <input type="text" name="subject" placeholder="Subject" id="subject"/><br>
+                <form id="validateForm" action="#" method="POST" enctype="application/x-www-form-urlencoded">
+                    <input type="text" name="fullName" placeholder="FullName" id="fullName"  /><p class="error-message" style="color: red;"></p>
+                    <br>
+                    <p class="error-message" style="color: red;"></p>
+                    <input type="text" name="email" placeholder="Email Address" id="email"  /><p class="error-message" style="color: red;"></p>
+                    <br>
+                    <input type="text" name="subject" placeholder="Subject" id="subject" />
+                    <p class="error-message" style="color: red;"></p>
+                    <br>
                     </p>
                     <label>Message</label> <br>
-                    <textarea name="comments" id="comments" cols="70" rows="7"></textarea> <br><br>
-                    <button style="float: right;"><strong>SEND</strong></button>
+                    <textarea name="comments" id="comments" cols="70" rows="7" ></textarea> <p class="error-message" style="color: red;"></p><br><br>
+                    
+                    <button type="submit" style="float: right;"><strong>SEND</strong></button>
                  </form>
             </div>
         </div>
+        <script src="../DOM/contact.js"></script>
     </section>
-
     <!-- Footer Section starts -->
     <footer>
         <section class="footer">
@@ -67,9 +73,13 @@
             </div>
              <div class="col col_center">
                  <p>Sign up for our Newsletter</p>
-                 <input style="color: #0066F5;" type="email" name="email" id="email" placeholder="Enter your email address" class="submit">
-                 <button>SUBMIT</button>
-             </div>
+                 <form id="valForm" action="#" method="POST" enctype="application/x-www-form-urlencoded">
+                    <input style="color: #0066F5;" type="email" name="email" id="mail" placeholder="Enter your email address" class="submit">
+                    <p style="color: white"class="error-block"></p>
+                    <button type="submit">SUBMIT</button>
+                 </form>
+            </div>
+            <script src="../DOM/newsletter.js"></script>
             <div class="col col_right">
                 <p>CONNECT WITH US</p>
                 <a href="facebook.com"><img src="../HTML/Images/facebook.png"></a>
