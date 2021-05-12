@@ -27,10 +27,10 @@
         </div>
         <div class="half">
             <div class="form_box signup">
-            <form action="#" method="POST" enctype="application/x-www-form-urlencoded">
+            <form id= validateForm action="#" method="POST" enctype="application/x-www-form-urlencoded">
                 <label for="firstname">First Name</label> <br>
                     <input type="text" name="Firstname" id="firstname"/> <br>
-                    <label for="lastname">Last Name</label> <br>
+                     
                     <input type="text" name="lastname" id="lastname"/> <br>
                     <label for="othernames">Other Names</label> <br>
                     <input type="text" name="othernames" id="othernames"/> <br>
@@ -64,10 +64,13 @@
              </ul>
             </div>
              <div class="col col_center">
-                 <p>Sign up for our Newsletter</p>
-                 <input style="color: #0066F5;" type="email" name="email" id="email" placeholder="Enter your email address" class="submit">
-                 <button>SUBMIT</button>
+                <form id="valForm" action="#" method="POST" enctype="application/x-www-form-urlencoded">
+                    <input style="color: #0066F5;" type="email" name="email" id="mail" placeholder="Enter your email address" class="submit">
+                    <p style="color: white"class="error-block"></p>
+                    <button type="submit">SUBMIT</button>
+                 </form>
              </div>
+             <script src="../DOM/newsletter.js"></script>
             <div class="col col_right">
                 <p>CONNECT WITH US</p>
                 <a href="facebook.com"><img src="../HTML/Images/facebook.png"></a>
@@ -81,5 +84,6 @@
         </div> 
      </footer>
      <!--// Footer Section ends -->
+     <script src=signupval.js></script>
 </body>
 </html> 
