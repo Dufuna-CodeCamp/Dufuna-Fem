@@ -1,7 +1,7 @@
 let submitNewsletter = document.getElementById('valForm');
 let mail = document.getElementById('mail');
 
-function mailValidation(mail,event) {
+function mailValidation(event) {
     let mailRegex =/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z]+)*$/;
     if (mail.value == "") {
         mail.nextElementSibling.innerHTML = "Please enter your Email Address";
@@ -18,7 +18,7 @@ function mailValidation(mail,event) {
 }
 
 function valForm(e) {
-    mailValidation(mail,e);
+    mailValidation(e);
 }
 
 submitNewsletter.addEventListener("submit",valForm);
