@@ -28,11 +28,16 @@
                     <div class="img_box"><img src="../HTML/Images/bluewhiteshirt.jpg"></div>
                 </div>
                 <div class='half_page'>
-                    <h3> BLUE-WHITE COLLAR TEE SHIRT</h3>
-                    <h3>Brand: Polka-dot</h3>
-                    <h3>Quantity:<input type="text" placeholder="2"></h3>
-                    <h3>Price: $150</h3>
-                    <button><strong>BUY NOW</strong></button>
+                    <form action="#" method="POST" enctype="application/x-www-form-urlencoded">
+                        <h3> BLUE-WHITE COLLAR TEE SHIRT</h3>
+                        <h3>Brand: Polka-dot</h3>
+                        <label for="Quantity"><strong>Quantity:</strong></label> <br>
+                        <input type="number" value="1" name="Quantity" id="Quantity" /><br>
+                        <h3>Price: $150</h3>
+                        <h3>Shipping cost: $50</h3>
+                        <h3>Total cost: $200</h3>
+                        <button><strong>BUY NOW</strong></button>
+                    </form>
                 </div>
             </div>
             <div class='full_page'>
@@ -68,9 +73,13 @@
             </div>
              <div class="col col_center">
                  <p>Sign up for our Newsletter</p>
-                 <input style="color: #0066F5;" type="email" name="email" id="email" placeholder="Enter your email address" class="submit">
-                 <button>SUBMIT</button>
+                 <form id="valForm" action="#" method="POST" enctype="application/x-www-form-urlencoded">
+                    <input style="color: #0066F5;" type="email" name="email" id="mail" placeholder="Enter your email address" class="submit">
+                    <p style="color: white"class="error-block"></p>
+                    <button type="submit">SUBMIT</button>
+                 </form>
              </div>
+             <script src="../DOM/newsletter.js"></script>
             <div class="col col_right">
                 <p>CONNECT WITH US</p>
                 <a href="facebook.com"><img src="../HTML/Images/facebook.png"></a>
@@ -84,5 +93,6 @@
         </div> 
      </footer>
      <!--// Footer Section ends -->
+     <script src="productcal.js"></script>
 </body>
 </html> 
