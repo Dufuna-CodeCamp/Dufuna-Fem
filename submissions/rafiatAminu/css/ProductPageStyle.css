@@ -1,0 +1,302 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-size: 16px;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+main{
+    margin: 20px;
+}
+header{
+    margin: 0;
+    padding-left: 10px;
+}
+.header-title{
+    display: inline-block;
+    margin: 10px;
+}
+.nav-list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 50px;
+    padding: 0 10px;
+}
+.nav-item a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+.nav-item{
+    height: 30px;
+    width: inherit;
+    display: inline;
+}
+.first{
+    background-color: blue;
+}
+main{
+    margin: 20px;
+}
+.firrs{
+    width: 100%;
+    display: block;
+}
+.inp{
+    width: 10%;
+}
+.buynow{
+    background-color: orange;
+    color: white;
+    border-radius: 10px;
+    border-radius: 1px solid black;
+    padding: 10px;
+    cursor: pointer;
+}
+#iphone{
+    background-color: white;
+    border-radius: none;
+    border: 1px solid black;
+}
+.beginning{
+    background-color:rgb(226, 212, 212);
+    margin:none;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+#secondsss{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.post{
+    display: grid;
+    margin-bottom: 20px;
+    text-align: center;
+    width: fit-content;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    background-color: white;
+    padding: 10px 55px 0 100px;
+    align-content: center;
+    margin: 17px;
+}   
+.error-block{
+    color: red;
+    font-weight: lighter;
+}
+#phones{
+    width:250px;
+    height: 250px;
+    margin-left: 0px;
+}
+.insider{
+    margin: 20px;
+}
+.post:hover{
+    cursor: pointer;
+    background-color: pink;
+}
+footer{
+    margin: 20px;
+}
+.bottom-links a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 30px;
+}
+
+.newsletter input{
+    height:30px;
+    width:70%;
+    margin-bottom:5px;
+    border:1px solid grey;   
+}
+.newsletter button{
+    height: 30px;
+    width: 20%;
+    margin-top: 3px;
+    color: blue;
+    background-color: white;
+    border:1px solid grey;
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.newsletter ::placeholder{
+    color: blue;
+    padding-left: 10px;
+    text-align: unset;
+}
+.socials a img{
+    height:30px;
+    width: inherit;
+    border: 1px solid transparent;
+    border-radius: 5px;    
+}
+.nav-bottom{
+    display: inline-block;  
+}
+.copyrights{
+    color: white;
+    text-align: center; 
+}
+.last{
+    background-color: blue;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+@media screen and (min-width: 600px) {
+    .nav-list{
+        flex-direction: row;  
+       
+    }    
+    .nav-item{
+        padding-left: 80px;
+        width: fit-content;
+    }
+    .new{
+        height: 10px;
+    }
+    .first{
+        background-color: blue;
+        color:white;
+        height:80px;
+        font-size: 16px;
+        display:flex;
+        justify-content: space-around;
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+    .nav-list {
+        display:flex;
+        color: white;
+    }
+    .nav-item a{
+        display:flex;
+        justify-items:center;
+        height: 10px;
+        width: fit-content;
+        justify-content: space-around;
+        margin: auto;   
+        padding-top: 22px;
+    }  
+    .inceptions{  
+        display: flex;    
+    }
+    .inp{
+        width: 20%;
+    }
+    .product-description{
+        margin-right: none;
+    }
+    .post{
+        display: flex;
+        flex-direction: column;
+    }
+    .work1{
+        padding-right: 20px;
+        padding-top: 10px;
+        
+    }
+    .work2{
+        padding-right: 20px;
+    }
+.wrapp{
+    display: flex;
+    align-content: center;
+}
+    #phones{
+        width: 120px;
+        height: 120px;
+        }
+    #nameofphone{
+        font-size: small;
+    }
+    .contact{
+        margin-top: 16px;
+    }
+    .ending{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       
+    }
+    .copyrights{
+        padding-left: 50px;
+        display: grid;
+    }
+}
+@media screen and (min-width: 992px) {
+    .first{
+        background-color:blue;
+        color:white;
+        height:80px;
+        font-size: 16px;
+        display:flex;
+        justify-content: space-between;
+        padding: 14px 30px; 
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+    .nav-list {
+        display:flex;
+        margin-left: 50px;
+        color: white;
+    }
+    .nav-item {
+        display: flex;
+        height: 10px;
+        width: inherit;
+        padding: 10px;
+        padding-right: 50px;
+        padding-top: 1px;
+    }
+    .beginning{
+        display: flex;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-top: 40px;
+        padding-right: 30px;
+    }
+    #related{
+        margin-top: -30px;
+    }
+    .inp{
+        width: 20%;
+    }
+    .product-description{
+        margin-right: none;
+    }
+
+    #phones{
+        width: 150px;
+        height: 150px;
+        }
+    .ending{
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    padding: 20px 40px;
+    padding-bottom: 0%;
+    }
+    .socm{
+        padding-left: 100px;
+    }
+    .contact{
+        padding-top: 10px;
+        margin-top: 5px;
+    }
+    .copyrights{
+    padding-left: 10px;
+    padding-right: 40px;
+    display: grid;
+    } 
+}

@@ -1,0 +1,180 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #444 220px, #fff 220px);
+}
+
+h1 {
+  color: #FFF;
+  font-weight: 100;
+  padding: 30px 0;
+}
+
+h2 {
+  font-size: 0.8rem;
+}
+
+form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 90% 10%;
+  column-gap: 5px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0 10px;
+}
+
+form input {
+  padding: 12px 10px;
+}
+
+.todoapp {
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.input-todo, .btn-submit {
+  border-radius: 7px;
+  border: none;
+}
+
+.btn-submit {
+  background-color: aquamarine;
+}
+
+.todo-container {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 1px 1px #eee;
+}
+
+.todo-list {
+  background-color: gold;
+  border-radius: 10px 10px 0 0;
+  padding: 20px 0 5px 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFF;
+  margin: 10px 30px;
+  padding: 15px;
+  border-radius: 7px;
+  font-size: 0.9rem;
+}
+
+.todo-extras {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 10px 10px;
+  padding: 10px;
+}
+
+.btn {
+  border: none;
+  background: none;
+  font-size: 0.8rem;
+}
+
+.all {
+  color: blue;
+}
+
+.clear, .active {
+  color: red;
+}
+
+.completed-button {
+  color: green;
+}
+
+.completed {
+  color: green;
+  text-decoration: line-through;
+}
+
+.todo-extras2 {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  h2, .btn {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  h2, .btn {
+    font-size: 0.65rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background: linear-gradient(to bottom, #444 200px, #fff 200px);
+  }
+
+ .show {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 5px 30px;
+ }
+
+ .todo-extras2 h2, .todo-extras2 .btn {
+   font-size: 0.8rem;
+ }
+
+ .todo-extras .list-number, .todo-extras .clear {
+   display: none;
+ }
+
+ .todo-extras {
+   display: block;
+   text-align: center;
+ }
+
+ .filters .btn {
+   font-size: 0.8rem;
+ }
+}
+
+@media screen and (max-width: 540px) {
+  .todoapp {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .todoapp {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .todoapp {
+    width: 90%;
+  }
+
+  .filters .btn, .todo-extras2 h2, .todo-extras2 .btn {
+    font-size: 0.7rem;
+  }
+}

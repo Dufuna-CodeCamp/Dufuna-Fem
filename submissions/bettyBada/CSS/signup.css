@@ -1,0 +1,301 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 100vw;
+}
+
+/* Navbar Section */
+
+header{
+    background-color: teal /*#35424a*/;
+    padding-top: 15px;
+    min-height: 60px;
+}
+
+header a {
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Helvetica;
+    color: #ffffff;
+}
+
+header ul {
+   margin: 0px;
+   padding: 0px;
+}
+
+header li {
+    list-style: none;
+    display: inline;
+    padding: 0 40px 0 40px;
+}
+
+header #logo{
+ float: left;
+ margin-left: 30px;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight{
+    color:#ffffff;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: indianred;
+    font-weight: bold;
+}
+
+/* Homepage section */
+.container-2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 90vw;
+    margin: 5vh auto;
+    height: auto;
+}
+
+.text{
+   grid-column: 1;
+   padding: 20% 10%;
+}
+
+.text > h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: teal;
+    margin-bottom: 10px;
+}
+
+.text > h3 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #5f5f5f;
+    margin-bottom: 20px;
+}
+
+.text > h3 > a {
+    color: teal;
+}
+
+.box {
+    grid-column: 2;
+    border: 2px solid #707070;
+    border-radius: 25px;
+    padding: 5%;
+}
+
+.identify{
+  width: 99px;
+  height: 22px;
+  margin: 0 6px 50px 0;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5f5f5f;
+}
+
+.inputs{
+    height: 50px;
+    width: 95%;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 5px;
+    padding: 0 5px 0 5px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.agree-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    color: teal;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.check {
+    margin-right: 10px;
+}
+
+.sign-up {
+    display: flex;
+    justify-content: center;
+}
+
+.signup-button {
+    width: 196px;
+    height: 48px;
+    background-color: teal;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    padding-right: 10%;
+    font-size: 18px;
+    padding-bottom: 0;
+}
+
+.footer-1 {
+    margin-left: 50px;
+}
+
+.footer-1 > a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer-2 {
+    color: white;
+}
+
+.footer-2 > p {
+    margin-bottom: 10px;
+}
+
+/* .newsletter {
+    display: flex
+} */
+
+.newsletter > input {
+    width: 253px;
+    height: 44px;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
+.newsletter > .sign {
+    width: 108px;
+    background-color: white;
+    color: teal;
+    border: none;
+    outline: none;
+}
+
+.footer-3 > p {
+    color: white;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        flex-wrap: wrap;
+    }
+    header li {
+        font-size: 15px;
+        padding-left: 0px;
+    }
+
+    header #logo{
+        font-size: 18px;
+   }
+
+   .container-2 {
+    display: block;
+   }
+
+.text {
+    width: 90%;
+    padding: 3%;
+}
+
+ .text > h1 {
+    text-align: center;
+ }
+ 
+ .text > h3 {
+     font-size: 30px;
+     text-align: center;
+ }
+
+ .footer{
+     flex-wrap: wrap;
+     justify-content: flex-end;
+ }
+
+ .footer-1{
+     margin-left: 0;
+     margin-right: 50px;
+ }
+    
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        min-height: 140px;
+        /* margin: 6px auto; */
+    }
+    header li {
+        display: block;
+        /* padding-right: -50px; */
+        margin: 10px auto;
+        margin-left: 30px;
+    }
+
+    header #logo{
+        display: block;
+        margin-left: 30px;
+       }
+
+    header nav{
+        float: left;
+        margin-top: 10px;
+    }
+
+    header .highlight{
+        width: 100%;
+    }
+
+    .text > h1 {
+        font-size: 45px;
+    }
+    
+    .text > h3 {
+        font-size: 18px;
+    }
+    .footer {
+        display: block;
+    }
+    .footer-2,.footer-3{
+        margin: 20px 0;
+    }
+    .copyright > p {
+       text-align: center;
+       width: 80%;
+    }
+}

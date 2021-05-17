@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset UTF="8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
+    <title>PreciseSpice - Contact</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img class="nav-logo" src="../html/img/PreciseSpiceIcon.jpg" alt="PreciseSpice-icon" width="67px"
+                height="27px">
+        </div>
+        <nav>
+            <ul>
+                <li class="nav-item"><a href="../html/product-page.html">Product Page</a></li>
+                <li class="nav-item"><a href="../html-forms/contactform.html">Contact Us</a></li>
+                <li class="nav-item"><a href="../html-forms/signup.html">Sign-up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class = "contact-info">
+            <div class = "contact-main">
+                <div class = "contacts tel-contact">
+                    <img src = "../html/assets/logo/call-icon.png" alt = "Telephone"/>
+                    <h3>Please contact us via these numbers:</h3>
+                    <p>+234 802 703 1992</p>
+                    <p>+234 802 903 2021</p>
+                </div>
+                <div class = "contacts email-contact">
+                    <img src = "../html/assets/logo/email-inbox.png" alt = "Email"/>
+                    <h3>Email Address:</h3>
+                    <p>support@precisespice.com</p>
+                </div>
+                <div class = "contacts socials-connect">
+                    <h3>Or connect with us:</h3>
+                    <div class = "social-links">
+                        <a href = "facebook.com">
+                            <img src = "../html/assets/logo/facebook-logo.png" alt = "facebook" />
+                        </a>
+                        <a href = "twitter.com">
+                            <img src = "../html/assets/logo/twiiter-logo.png" alt = "twitter" />
+                        </a>
+                        <a href = "gmail.com">
+                            <img src = "../html/assets/logo/gmail-logo.png" alt = "gmail" />
+                        </a>
+                        <a href = "youtube.com">
+                            <img src = "../html/assets/logo/youtube-logo.png" alt = "youtube" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class = "form">
+            <div class = "form-container2">
+                <div class = "form-top">
+                    <img src = "../html/assets/logo/email-icon.png" />
+                    <h3>Or better still send us a message</h3>
+                </div>
+                <form id = "form2">
+                        <div class = "contact-input">
+                            <input type = "text" name = "fullname" id = "fullname" placeholder = "Full Name" />
+                            <span class = "error-block"></span>
+                        </div><br />
+                        <div class = "contact-input">
+                            <input type = "email" name = "email" id = "email2" placeholder = "Email Address" />
+                            <span class = "error-block"></span>
+                        </div><br />
+                        <div class = "contact-input">
+                            <input type = "text" name = "subject" id = "subject" placeholder = "Subject" />
+                            <span class = "error-block"></span>
+                        </div><br />
+                        <div class = "contact-input">
+                            <label for = "message">Message</label>
+                            <textarea name = "message" id = "message" rows = "10"></textarea>
+                            <span class = "error-block"></span>
+                        </div>
+                        <div class = "contact-btn">
+                            <button type = "submit" class = "btn-contact">send</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+        <div class="footer-top">
+            <div class="footer-nav">
+                <ul class="footer-links">
+                    <li><a href="./contactform.html">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-main">
+                <div class="newsletter">
+                    <p>Sign up for our Newsletter</p>
+                    <div class="footer-form">
+                        <input type="email" id="footer-email" placeholder="Enter your email address" />
+                        <button type="submit" class="footer-btn">SUBMIT</button>
+                    </div>
+                    <span class="error-block2"></span>
+                </div>
+                <div class="social">
+                    <p>CONNECT WITH US</p>
+                    <div class="social-links">
+                        <a href="facebook.com">
+                            <img src="../html/assets/logo/facebook-logo.png" alt="facebook" />
+                        </a>
+                        <a href="twitter.com">
+                            <img src="../html/assets/logo/twiiter-logo.png" alt="twitter" />
+                        </a>
+                        <a href="gmail.com">
+                            <img src="../html/assets/logo/gmail-logo.png" alt="gmail" />
+                        </a>
+                        <a href="youtube.com">
+                            <img src="../html/assets/logo/youtube-logo.png" alt="youtube" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class = "copyright">Copyright 2021 PreciseSpiceNG All rights reserved</p>
+    </footer>
+
+    <script src = "../DOM/contactform.js"></script>
+    <script src="../DOM/newsletter.js"></script>
+
+</body>
+
+</html>

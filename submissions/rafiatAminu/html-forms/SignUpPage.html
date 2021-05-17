@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Page</title>
+    <link rel="stylesheet" href="../css/SignUpStyle.css">
+
+</head>
+
+<body>
+    <div class="first">
+        <header class="site-container">
+            <h1 class="header-title"><img
+                    src="../css/iconsImages/Black and Grey Spinning Cool and Funky Computer Logo (1).png" alt=""
+                    height="50px" width="50px"></h1>
+        </header>
+        <nav class="new">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="../HTML/productPage.html">Product Page</a></li>
+                <li class="nav-item"><a href="../html-forms/ContactPage.html">Contact Us</a></li>
+                <li class="nav-item"><a href="../html-forms/SignUpPage.html">Sign-up</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <div class="secone">
+            <div class="register">
+                <h1 style="color: blue;">Register your Account</h1>
+                <p>Registering an account gives you access to sweet promo and events available to only registered
+                    customers
+                </p>
+                <p>Already got an account? <a href="">Sign in</a></p>
+            </div>
+            <div class="secondsection">
+                <form action="#" id="signup-form" method="POST" enctype="multipart/form-data">
+                    <div class="within">
+                        <label for="firstname">First Name</label> <br>
+                        <input type="text" name="firstName" id="firstName"/>
+                        <span class="error-block"></span><br><br>
+                        <label for="lastname">Last Name</label> <br>
+                        <input type="text" name="lastName" id="lastName"/>
+                        <span class="error-block"></span><br><br>
+                        <label for="othernames">Other Names</label> <br>
+                        <input type="tel" name="otherNames" id="otherNames"/><br>
+                        <label for="phone">Phone Number</label> <br>
+                        <input type="text" name="phone" id="phone"/>
+                        <span class="error-block"></span><br><br>
+                        <label for="email">Email Address</label> <br>
+                        <input type="email" name="email" id="email"/>
+                        <span class="error-block"></span><br><br>
+                        <label for="password">Password</label> <br>
+                        <input type="password" name="password" id="password"/>
+                        <span class="error-block"></span><br><br>
+                        <label for="confirm-password">Confirm Password</label> <br>
+                        <input type="password" name="confirmPassword" id="confirmPassword"/>
+                        <span class="error-block"></span><br><br>                
+                    </div>
+                    <div class="tobefilled">
+                        <input type="checkbox" id="tandc" name="vehicle1" value="terms">
+                        <label for="tandc" style="color: blue;"> I agree to the Terms and Conditions</label><br>
+
+                        <button type="submit" class="signup">SIGN UP</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <div class="last">
+        <footer>
+            <div class="ending">
+                <div class="contact">
+                    <ul class="bottom-links">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Terms and Condition</a></li>
+                    </ul>
+                </div>
+                <div class="network">
+                    <div class="newsletter">
+                        <p style="color: white;"> Sign up for our Newsletter?</p>
+                        <form action="#" id="newsletter-form" method="POST" enctype="multipart/form-data">
+                            <input type="text" name="email" id="newsletterEmail" placeholder="Enter your email address"/>
+                            <button type="submit">SUBMIT</button>
+                            <span class="error-block"></span>
+                        </form>
+                    </div>
+                </div>
+                <div class="socm">
+                    <p style="color: white;"> CONNECT WITH US</p>
+                    <ul class="socials">
+                        <li class="nav-bottom"><a href="#">
+                                <img src="../css/iconsImages/fb.png">
+                            </a></li>
+                        <li class="nav-bottom"><a href="#">
+                                <img src="../css/iconsImages/twitter.png">
+                            </a></li>
+                        <li class="nav-bottom"><a href="#">
+                                <img src="../css/iconsImages/gmail.png">
+                            </a></li>
+                        <li class="nav-bottom"><a href="#">
+                                <img src="../css/iconsImages/youtube.jpeg">
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copyrights"> Copyright 2020 rafphonestores.com All rights reserved</p>
+    </div>
+    </div>
+    </footer>
+    <div>
+        <script src="../DOM/signupform.js"></script>
+        <script src="../DOM/newsletter.js"></script>
+</body>
+
+</html>

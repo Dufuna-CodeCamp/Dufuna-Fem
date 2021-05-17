@@ -1,71 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Infinity Sparkles</title>
-</head>
-<body>
-    <header>
-        <a href = "#">
-            <h1>Infinity Sparkles</h1>
-        </a>
-    </header>
-    <nav>
-        <ul>
-            <li><a href = "#">Home</a></li>
-            <li><a href = "#">About Us</a></li>
-            <li><a href = "#">Products</a></li>
-            <li><a href = "#">Contact Us</a></li>
-        </ul>
-    </nav>
-
-    <section>
-        <h2>Earrings</h2>
-        <p>Allow us add a sparkle to your ears by shopping from our collection of exquisite earrings</p>
-
-        <article>
-            <div>
-                <img src = "images/img_5.jpg" alt = "a pair of earrings"/>
-                <h3>Emerald Earrings</h3>
-                <h4><u>Description</u></h4>
-                <p>Pearshaped emerald 18 ct tw diamond frame stud earrings 10k-gold</p>
-                <span>$499.99</span> <br>
-                <button type = "button">Add to Cart</button>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "../css/style.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <title>Products</title>
+    </head>
+    <body>
+        <header>
+            <div class = "logo">
+                <h1>INFINITY SPARKLES</h1>
             </div>
-        </article>
-        <article class = "product">
-            <div>
-                <img src = "images/img_6.jpg" alt = "a pair of earrings"/>
-                <h3>Diamond Earrings</h3>
-                <h4><u>Description</u></h4>
-                <p>Marilyn Monroe collection baguette amethyst diamond earrings sterling silver 18k-rose-gp</p>
-                <span>$409.99</span> <br>
-                <button type = "button">Add to Cart</button>
+            <nav>
+                <ul>
+                    <li><a href = "product-page.html">Product Page</a></li>
+                    <li><a href = "../html-forms/contactform.html">Contact Us</a></li>
+                    <li><a href = "../html-forms/signup.html">Sign-Up</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="container">
+            <div class="main-product">
+                <div class="product">
+                    <div class="product-image">
+                        <img src="images/img_6.jpg" style="center;">
+                    </div>
+                    <div class="product-details">
+                        <h3>AMETHYST DIAMOND EARRINGS </h3>
+                        <p>Brand: Marilyn Monroe Collection</p>
+                        <p>Quantity:
+                            <input class="quantity" type="number" placeholder="1" />
+                        </p>
+                        <small class = "error">Please enter a valid quantity</small>
+                        <p>Price: $
+                            <span class="price">500</span>
+                        </p>
+                        <p>Shipping cost: $ <span class = "ship-cost">100</span></p>
+                    <p>Total cost: $ <span class = "total-cost">600</span></p>
+                        <a href = "#" class="buy-now">BUY NOW</a>
+                    </div>
+                </div>
             </div>
-        </article>
-    </section>
-    <br />
+            <div class="product-desc">
+                <h3>DESCRIPTION</h3>
+                <p>Add a sparkle to your ears by shopping our Marilyn Monroe collection baguette amethyst diamond earrings made with sterling silver and 18 carat gold plating.</p>
+            </div>
+        </section>
+            
+        <aside>
+            <h3>RELATED PRODUCTS</h3>
 
-    <aside>
-        <h2>Similar products</h2>
-        <ol>
-            <li><a href = "#">Diamond Solitaire Stud</a></li>
-            <li><a href = "#">Diamond Hoop Earrings</a></li>
-            <li><a href = "#">Oval Ruby Earrings</a></li>
-        </ol>
-    </aside>
+            <div class="other-products">
+                <div class="other-product">
+                    <div class="other-image">
+                        <img src="images/img_5.jpg">
+                    </div>
+                    <div class="other-details">
+                        <p>Emerald Earrings</p>
+                        <p>Price: $409.99</p>
+                    </div>
+                </div>
+                <div class="other-product">
+                    <div class="other-image">
+                        <img src="images/img-7.jpg">
+                    </div>
+                    <div class="other-details">
+                        <p>Pearl and Sapphire Necklace</p>
+                        <p>Price: $99.99</p>
+                    </div>
+                </div>
+                <div class="other-product">
+                    <div class="other-image">
+                        <img src="images/img_8.jpg">
+                    </div>
+                    <div class="other-details">
+                        <p>Diamond Engagement Ring</p>
+                        <p>Price: $2343.83</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
 
-    <footer>
-        <p>Stay Connected</p>
-        <ul>
-            <li><a href = "https://facebook.com">Facebook</a></li>
-            <li><a href = "https://twitter.com">Twitter</a></li>
-            <li><a href = "https://pinterest.com">Pinterest</a></li>
-            <li><a href = "https://instagram.com">Instagram</a></li>
-        </ul>
-        <p> &copy; 2020 Infinity Sparkles</p>
-    </footer>
-    
-</body>
+            
+        <footer>
+            <div class = "footer-top">
+                <div class = "footer-nav">
+                    <ul class = "footer-links">
+                        <li><a href = "./contactform.html">Contact Us</a></li>
+                        <li><a href = "#">About Us</a></li>
+                        <li><a href = "#">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+                <div class = "footer-main">
+                    <div class = "newsletter">
+                        <p>Sign up for our Newsletter</p>
+                        <div class = "footer-form">
+                            <input type = "email" id = "footer-email" placeholder="Enter your email address" />
+                            <button type = "button" class="footer-btn">SUBMIT</button>
+                        </div>
+                        <small class = "error-block2"></span>
+                    </div>
+                    <div class = "social">
+                        <p>CONNECT WITH US</p>
+                        <div class = "social-links">
+                            <a href = "facebook.com">
+                                <img src = "../html/logos/facebook-logo.png" alt = "facebook" />
+                            </a>
+                            <a href = "twitter.com">
+                                <img src = "../html/logos/twitter-logo.png" alt = "twitter" />
+                            </a>
+                            <a href = "gmail.com">
+                                <img src = "../html/logos/gmail-logo.png" alt = "gmail" />
+                            </a>
+                            <a href = "youtube.com">
+                                <img src = "../html/logos/youtube-logo.png" alt = "youtube" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class = "copyright">Copyright 2020 InfinitySparkles.com All rights reserved.</p>
+        </footer>
+        <script src="../DOM/product-page.js"></script>
+        <script src="../DOM/newsletter.js"></script>
+    </body>
 </html>

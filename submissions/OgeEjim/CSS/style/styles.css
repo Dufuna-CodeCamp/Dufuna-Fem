@@ -1,0 +1,361 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+nav {
+	width: 100%;
+	height: 70px;
+	background-color: #0066F5;
+}
+nav img.logo {
+	height: 100%;
+	width: 130px;
+}
+nav ul {
+	font-size: 16px;
+	font-weight: 500;
+	float: right;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.19;
+	letter-spacing: 0.2px;
+	text-align: left;
+} 
+nav ul li {
+	padding-left: 0;
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+	color: #ffffff;
+	margin-right: 50px;
+	margin-top: 10px;
+}
+nav ul li a {
+	color: #ffffff;
+	text-decoration: none;
+}
+img {
+	width: 55px;
+	height: 40px;
+}
+input:focus {
+	box-shadow: transparent;
+	outline: none;
+}
+
+/* General Styles */
+.flexed {
+	display: flex;
+	flex-wrap: wrap;
+}
+.flexed img {
+	height: 100%;
+	width: 50px;
+}
+.flexed p {
+	margin-left: 15px;
+}
+.centered {
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+}
+.centered img {
+	margin-bottom: 0;
+}
+.centered p {
+	margin-top: -10px;
+	margin-bottom: 20px;
+	text-align: center;
+	padding-left: 50px;
+}
+.form_box {
+	text-align: left;
+	padding: 22px 18px 45px 22px;
+	border-radius: 2px;
+	border: solid 1px #ccc;
+	box-shadow: 2px 2px 2px #ccc;
+}
+.form_box input {
+	width: 100%;
+	height: 25px;
+	margin: 3px 0 6px;
+	text-decoration: none;
+	border-radius: 0;
+	border: transparent;
+	border: none;
+	border-bottom: solid 1px #aaa;
+} 
+.form_box input::placeholder {
+	color: #222;
+	text-decoration: none;
+}
+.form_box textarea {
+	width: 100%;
+	border: solid 1px #aaa;
+}
+.form_box button {
+	padding: 12px 25px;
+	text-align: right;
+	display: block;
+	margin:0 auto;
+	background-color: #0066F5;
+	border: none;
+	border-radius: 0;
+	color: #ffffff;
+}
+
+/* page_content */
+.page_content {
+	padding: 30px 80px;
+	max-width: 900px;
+	margin: 0 auto;
+}
+.full_flex {
+	display: flex;
+	max-width: 700px;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.full_flex .product_list .quarter_page {
+	flex-flow: row;
+	display: flex;
+	justify-content: right;
+    align-items: center;
+}
+.half_page {
+	width: 50%;
+}
+.half_page img {
+	width: 100%;
+	height: 200px;
+}
+.half_page h3 {
+	font-size: 17px;
+}
+.half_page button {
+	border-radius: 10%;
+	background-color: rgb(255, 169, 8);
+	text-decoration-color: white;
+	text-emphasis-color: white;
+	color: white;
+	padding: 5px;
+	border: none;
+}
+.img_box {
+	overflow: hidden;
+	border: 1px solid #ccc;
+	margin-right: 20px;
+}
+.full_page {
+	width: 100%;
+}
+.product_section {
+	background: #f1f1f1;
+	text-align: center;
+	padding: 30px 0;
+}
+.product_list {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.quarter_page {
+	flex-flow: wrap;
+	width: 30%;
+	background: #cfcfcf;
+	padding: 5px;
+	display: block;
+	grid-row:span;
+	align-items: center;
+	justify-content: space-evenly;
+	text-align: center; 
+	background-color: #fff;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	flex-flow: row;
+	text-align: center;
+	}
+.quarter_page img {
+	display: flex;
+	width: 100%;
+	height: 150px;
+	justify-content: right;
+	display: flex;
+	flex-wrap: wrap;
+	justify-self: normal;
+	justify-items: normal;
+	text-align: justify;	
+}
+
+/* Signup */
+.signup label {
+  margin: 0 19px 6px 0;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5f5f5f;
+}                                                         
+.signup input {
+	width: 100%;
+	height: 30px;
+	margin: 6px 0;
+	padding: 0;
+	border-radius: 4px;
+	border: solid 1px #5f5f5f;
+} 
+.signup button {
+	padding: 12px 25px;
+	text-align: center;
+	display: block;
+	margin:0 auto 20px;
+	background-color: #0066F5;
+	border: none;
+	border-radius: 5px;
+	color: #ffffff;
+}
+.signup .label-center {
+	display: block;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.signup .label-center .check {
+	width: 9px;
+	height: 9px;
+	margin: 6px 0;
+	text-align: center;
+} 
+
+/* Contact Us */
+#page {
+	display: flex;
+	max-width: 900px;
+	margin: 30px auto;
+	text-align: center;
+}
+#page .half {
+	width: 50%;
+	flex-wrap: wrap;
+	text-rendering: geometricPrecision;
+}
+#page .half h1 {
+	font-size: 40px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.2;
+	letter-spacing: normal;
+	text-align: left;
+	color: #0066F5;
+	margin: 120px 0 30px 50px;
+}     
+#page p {
+	margin: 10px 0 10px 50px;
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.29;
+	letter-spacing: normal;
+	text-align: left;
+	color: #5f5f5f;
+}
+.half button {
+	text-align: right;
+}
+
+/* contact_left */
+.contact_left p {
+	margin-bottom: 20px;
+	text-align: center;
+}
+.contact_left h3 {
+	font-size: 20px;
+}
+.half .contact_left{
+	text-align: center;
+}
+.contact_left p {
+	padding-left: 100px;
+    text-align: center
+}
+
+/* Footer */
+footer {
+	background-color: #0066F5;
+}
+.footer {
+	background-color: #0066F5;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px 30px;
+}
+.footer a {
+	color: white;
+	text-decoration: none;
+}
+.footer .col {
+	width: 33%;
+	text-align: left;
+	color: #fcf8f8;
+	display: block;
+}
+.footer .col_left li{
+	list-style: none;
+	margin-bottom: 11px;
+}
+.footer .col_center input  {
+	text-align: left;
+	width: 100%;
+	max-width: 200px;
+	padding: 10px;
+	border: none;
+	border-radius: 0;
+	color: #0066F5;
+}
+.footer .col_center input:-ms-input-placeholder{
+	color: #0066f5;
+}
+.footer .col_center input::placeholder{
+	color: #0066f5;
+}
+.footer .col_center button {
+	color: #0066F5;
+	height: 35px;
+	border: none;
+	margin: 0;
+	font-weight: bold;
+	padding: 0px 12px;
+}
+.footer .col_center p {
+	color: white
+}
+.footer .col_center input :-ms-input-placeholder {
+	color: #0066f5;
+}
+.footer .col_right p{
+	text-align: left;
+	color: white
+}
+.footer .col_right img {
+	width: 40px;
+	height: 30px;
+	padding: 3px 3px 3px 0;
+	margin-right: 10px;
+	display: inline-block;
+	border-radius: 9px;
+}
+footer .center {
+	text-align: center; 
+	background:  #0066F5;
+	padding: 0 20px 20px;
+}
+footer .center .copyright {
+	color: white;
+}

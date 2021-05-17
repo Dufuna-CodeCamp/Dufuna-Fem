@@ -1,0 +1,258 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: brown;
+}
+/* header styling */
+
+nav {
+    padding: 10px;
+    background-color: wheat;
+    color: brown;
+    margin: auto;    
+}
+    
+nav ul {
+    list-style-type: none;
+    padding: 5px;
+}
+    
+nav li {
+    float: right;
+    padding: 10px;
+}
+    
+.navbar {
+width: 100%;
+margin: auto;
+overflow: hidden;
+}
+
+.header nav {
+    float: right;
+    margin: 15px;
+}
+    
+.header1 {
+    float: left;
+    margin: 15px;
+    font-size: 20px;
+}
+    
+header li {
+    display: inline;
+    padding: 0 30px;
+}   
+/* End of header styling */
+
+
+/* links styling */
+   /* unvisited link */
+a:link {
+    text-decoration: none;
+    color: brown;
+ }
+   /* when mouse is on link */
+ a:hover {
+     text-decoration: underline;
+     color: hotpink;
+ }
+   /* selected link */
+ a:active {
+     text-decoration: underline;
+     color: burlywood;
+ }
+/* end of link styling */
+ 
+
+/* Footer styling */
+.footer {
+    width: 100%;
+    padding: 10px;
+    background-color: wheat;
+    color: brown;
+    margin: auto;
+    overflow: hidden;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+img.fbk,
+img.twtr,
+img.gml,
+img.ytub {
+    height: 30px;
+    width: 30px;
+}
+
+.email {
+    text-align: center;
+}
+
+.sites {
+    text-align: right;
+}
+
+footer ul,
+.email,
+.sites {
+    float: left;
+    display: inline;
+    padding: 0 20px;
+    width: 33.3%;
+}
+
+.submit {
+    background-color: whitesmoke;
+    float: right;
+    color: brown;
+    border: 3px solid whitesmoke;
+    font-weight: bold;
+}
+
+.copyright {
+    text-align: center;
+}
+
+/* End of Footer Styling */
+
+
+/* Body Styling */
+body {
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    background-color: whitesmoke;
+    color: brown;
+}
+
+img.soil,
+img.vmose,
+img.gel {
+    height: 250px;
+    width: 300px;
+}
+
+img.shmpoo {
+    width: 400px;
+    height: 190px;
+    border: 2px solid wheat;
+}
+
+.specs {
+    float: right;
+    display: inherit;
+    overflow: hidden;
+    margin: 0;
+    padding: 35px 16px;
+    width: 58%;
+}
+
+#quantity {
+    padding: 3px;
+}
+
+.btn {
+    font-weight: bold;
+    background-color: wheat;
+    color: brown;
+    border: 4px solid wheat;
+    border-radius: 3px;
+}
+
+h4 {
+    text-align: center;
+    font-size: 15px;
+}
+
+.img-soil,
+.img-vmose,
+.img-gel {
+    float: left;
+    display: inline;
+    width: 33.3%;
+}
+
+.img-description {
+    position: relative;
+    left: 50px;
+    text-align: center;
+}
+
+img.soil,
+img.vmose,
+img.gel {
+    border: 20px solid wheat; 
+}
+
+.products::after {
+    content: "";
+    display: inline;
+    clear: both;
+}
+/* End of Body Styling */
+
+/* Media Responsiveness */
+@media only screen and (max-width: 600px) {
+    * {
+        width: 100%
+    }
+
+    .btn,
+    .submit,
+    .email {
+        width: initial;
+    }
+
+    img.shmpoo {
+        width: 100%;
+    }
+    .img-soil,
+    .img-vmose,
+    .img-gel {
+        float: none;
+        width: 100%;
+    }
+    .specs {
+        float: none;
+    }
+    .desc {
+        width: 100%;
+    }
+    .header nav {
+        float: none;
+        width: 100%;
+        position: initial;
+        padding: inherit;
+    }
+    nav li {
+        float: none;
+        padding: inherit;
+    }
+    .navbar {
+        overflow: auto;
+    }
+
+    nav a {
+        display: flex;
+        direction: flex;
+    }
+    footer ul,
+    .email,
+    .sites {
+        float: none;
+        width: 100%;
+        position: inherit;
+    } 
+    .submit {
+        float: none;
+    }      
+}
+
+
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/style/styles.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/style/mediaquery.css">
+    <link href="link" rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Imbue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- The NavBar Section -->
+    <nav> 
+        <img src="../HTML/Images/logo.png" class="logo">
+         <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="product.html">Product Page</a></li>
+            <li><a href="signup.html" >Sign-Up</a></li>
+        </ul>  
+    </nav>
+
+    <!-- Page Content -->
+    <section>
+        <div class="page_content">
+            <div class="full_flex">
+                <div class="half_page">
+                    <div class="img_box"><img src="../HTML/Images/bluewhiteshirt.jpg"></div>
+                </div>
+                <div class='half_page'>
+                    <form action="#" method="POST" enctype="application/x-www-form-urlencoded">
+                        <h3> BLUE-WHITE COLLAR TEE SHIRT</h3>
+                        <h3>Brand: Polka-dot</h3>
+                        <label for="Quantity"><strong>Quantity:</strong></label> <br>
+                        <input type="number" value="1" name="Quantity" id="Quantity" /><br>
+                        <h3>Price: $150</h3>
+                        <h3>Shipping cost: $50</h3>
+                        <h3>Total cost: $200</h3>
+                        <button><strong>BUY NOW</strong></button>
+                    </form>
+                </div>
+            </div>
+            <div class='full_page'>
+                <h3>DESCRIPTION</h3>
+                <p>This is a shirt you can put on all day. This polka dot designed shirt guarantees maximum comfort for whoever wears. The strength of material assures that it is long lasting from the moment it goes off the shelf.</p>
+            </div>
+            <div class="product_section">
+                <h3>RELATED PRODUCTS</h3>
+                <!-- <div class=""> -->
+                <div class="full_flex product_list">
+                    <div class="quarter_page">
+                        <img src="../HTML/Images/redtennisshoes.jpg"><br>Red Tennis shoes<br> Price: $200
+                    </div>
+                    <div class="quarter_page">
+                        <img src="../HTML/Images/blackofficeShoes.jpg"><br>Black Office shoes<br> Price: $350
+                    </div>
+                    <div class="quarter_page">
+                        <img src="../HTML/Images/redhighheeledshoes.jpg"><br>Red High-heeled shoes<br> Price: $230
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section starts -->
+    <footer>
+        <section class="footer">
+            <div class="col col_left">
+             <ul>
+                 <li><a href="#">Contact Us</a></li>
+                 <li><a href="#">About Us</a></li>
+                 <li><a href="#">Terms and conditions</a></li>
+             </ul>
+            </div>
+             <div class="col col_center">
+                 <p>Sign up for our Newsletter</p>
+                 <form id="valForm" action="#" method="POST" enctype="application/x-www-form-urlencoded">
+                    <input style="color: #0066F5;" type="email" name="email" id="mail" placeholder="Enter your email address" class="submit">
+                    <p style="color: white"class="error-block"></p>
+                    <button type="submit">SUBMIT</button>
+                 </form>
+             </div>
+             <script src="../DOM/newsletter.js"></script>
+            <div class="col col_right">
+                <p>CONNECT WITH US</p>
+                <a href="facebook.com"><img src="../HTML/Images/facebook.png"></a>
+                <a href="twitter.com"><img src="../HTML/Images/twitter.png"></a>
+                <a href="gmail.com"><img src="../HTML/Images/gmail.png"></a>
+                <a href="youtube.com"><img src="../HTML/Images/youtube.png"></a>
+            </div>  
+        </section>
+        <div class="center">
+            <p class="copyright"> &copy; More Confections.com All rights reserved.</p>
+        </div> 
+     </footer>
+     <!--// Footer Section ends -->
+     <script src="productcal.js"></script>
+</body>
+</html> 

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset UTF="8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
+    <title>PreciseSpice - Signup</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img class="nav-logo" src="../html/img/PreciseSpiceIcon.jpg" alt="PreciseSpice-icon" width="67px"
+                height="27px">
+        </div>
+        <nav>
+            <ul>
+                <li class="nav-item"><a href="../html/product-page.html">Product Page</a></li>
+                <li class="nav-item"><a href="../html-forms/contactform.html">Contact Us</a></li>
+                <li class="nav-item"><a href="../html-forms/signup.html">Sign-up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="register-text">
+            <div class="main-text">
+                <h2>Register your Account</h2>
+                <p>Registering an account gives you access to sweet promo and events available to only registered customers.</p>
+                <p>Already got an account?
+                    <a href="#">Sign in</a>
+                </p>
+            </div>
+        </section>
+        <section class="main-form">
+            <form id="form">
+                <div class="form-container">
+                    <div class="form-input">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="first-name" />
+                        <span class="error-block"></span>
+                    </div>
+                    <div class="form-input">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name" />
+                        <span class="error-block"></span>
+                    </div>
+                    <div class="form-input">
+                        <label for="other-name">Other Names</label>
+                        <input type="text" name="other-name" id="other-name" />
+                        <span class="error-block"></span>
+                    </div>
+                    <div class="form-input">
+                        <label for="phone-number">Phone Number</label>
+                        <input type="tel" name="phone-number" id="phone-number" />
+                        <span class="error-block"></span>
+                    </div>
+                    <div class="form-input">
+                        <label for="email">Email Address</label>
+                        <input type="text" name="email" id="email" />
+                        <span class="error-block"></span>
+                    </div>
+                    <div class="form-input">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" />
+                        <span class="error-block"></span>
+                    </div>
+                    <div class="form-input">
+                        <label for="password2">Confirm Password</label>
+                        <input type="password" name="password2" id="password2" />
+                        <span class="error-block"></span>
+                    </div>
+                    <div class="check-input">
+                        <input type="checkbox" id="terms" name="terms" />
+                        <label for="terms">
+                            <a href="#"> I agree to the Terms and Conditions</a>
+                        </label>
+                        <span class="error-block"></span>
+                    </div>
+
+                    <div class="btn-con">
+                        <button type="submit" class="btn-signup">sign up</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+
+        <div class="footer-top">
+            <div class="footer-nav">
+                <ul class="footer-links">
+                    <li><a href="./contactform.html">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-main">
+                <div class="newsletter">
+                    <p>Sign up for our Newsletter</p>
+                    <div class="footer-form">
+                        <input type="email" id="footer-email" placeholder="Enter your email address" />
+                        <button type="submit" class="footer-btn">SUBMIT</button>
+                    </div>
+                    <span class="error-block2"></span>
+                </div>
+                <div class="social">
+                    <p>CONNECT WITH US</p>
+                    <div class="social-links">
+                        <a href="facebook.com">
+                            <img src="../html/assets/logo/facebook-logo.png" alt="facebook" />
+                        </a>
+                        <a href="twitter.com">
+                            <img src="../html/assets/logo/twiiter-logo.png" alt="twitter" />
+                        </a>
+                        <a href="gmail.com">
+                            <img src="../html/assets/logo/gmail-logo.png" alt="gmail" />
+                        </a>
+                        <a href="youtube.com">
+                            <img src="../html/assets/logo/youtube-logo.png" alt="youtube" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class = "copyright">Copyright 2021 PreciseSpiceNG All rights reserved</p>
+    </footer>
+
+    <script src = "../DOM/signup.js"></script>
+    <script src="../DOM/newsletter.js"></script>
+
+</body>
+
+</html>

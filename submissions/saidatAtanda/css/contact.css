@@ -9,10 +9,14 @@ body {
 .header {
   background-color: rgb(100, 27, 27);
   color: white;
-  height: 150px;
+  height: auto;
   line-height: 0.5;
   padding: 10px;
   margin: 0;
+}
+.brand-name {
+  margin: 0;
+  padding: 10px; 
 }
 .brand-name span {
   font-size: 16px;
@@ -21,9 +25,10 @@ body {
 .nav-pages {
   display: flex;
   justify-content: flex-end;
+  margin: 0;
 }
 .nav-bar li {
-  margin-top: 10px;
+  margin-top: 0;
   list-style-type: none;
   padding: 10px;
 }
@@ -62,9 +67,8 @@ section img {
 }
 .contact-form {
   border: 1px solid black;
-  border-radius: 5px;
-  margin: 40px 0;
-  height: 560px;
+  margin: 80px 0;
+  height: 600px;
   width: 40%;
   padding: 30px;
 }
@@ -73,17 +77,20 @@ section img {
 }
 .contact-form input {
   width: 98%;
-  height: 25px;
+  height: 40px;
   border-style: none;
   border-bottom: 1px solid black;
   font-size: 20px;
 }
+.msg {
+  color: rgb(113,113,113);
+}
 .contact-form textarea {
   width: 98%;
   height: 200px;
-  margin-top: 10px;
+  border: 1px solid black;
 }
-.btn {
+#contact-btn {
   color: white;
   background-color: #c96567;
   border-radius: 5%;
@@ -103,22 +110,50 @@ margin: 0;
 .footer-properties {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .contact ul {
   list-style-type: none;
 }
-.subscribe h4 {
-  margin-bottom: 0;
+.subscribe {
+  margin-left: 50px;
 }
-.submit {
+.subscribe p {
+  margin-bottom: 10px;
+  text-align: left;
+}
+.news {
+  display: inline-block;
+  position: relative;
+}
+.news input {
+  height: 20px;
+  font-size: 16px;
+}
+.error-block-news,
+.error-block-contact {
+  color: red;
+  display: block;
+  font-size: 14px;
+}
+#newsletter-btn {
   color: rgb(100, 27, 27);
   text-transform: uppercase;
   background-color: white;
   border-style: none;
+  position: absolute;
+  margin-left: 20px;
+  height: 25px;
 }
-.connect h4 {
+#newsletter-btn:hover {
+  cursor: pointer;
+}
+.connect {
+  margin-left: 70px;
+}
+.connect p {
   margin-bottom: 0;
+  text-align: left;
 }
 .connect ul {
   margin: 5px;
@@ -189,7 +224,6 @@ body {
   width: 50%;
 }
 .contact-form textarea {
-  width: 98%;
   height: 150px;
 }
 footer {
