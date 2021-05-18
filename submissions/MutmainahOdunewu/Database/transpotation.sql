@@ -34,16 +34,3 @@ CREATE TABLE accidents(
 	PRIMARY KEY(id),
 	FOREIGN KEY (passenger_id) REFERENCES passengers (id)
 );
-
-
-
-
-
-
-
-
-
-
-
-
-
