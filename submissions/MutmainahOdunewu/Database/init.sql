@@ -48,8 +48,7 @@ CREATE TABLE products(
 	  PRIMARY KEY (product_id),
 	   FOREIGN KEY (category_id) REFERENCES categories (category_id),
 	   FOREIGN KEY (admins_id) REFERENCES admins (admin_id)
-	  
-	   );          
+	  );          
 
 	   //INSERT DATA INTO PRODUCT TABLE
 	    
@@ -102,7 +101,7 @@ CREATE TABLE customer_address(
     FOREIGN KEY (customer_id) REFERENCES customers (customer_id)
     );
 
-	//INSERT INTO ORDER
+	//INSERT INTO ORDERS
 	INSERT INTO orders (order_amount, order_created_at, customer_id)
 VALUES(800, now(), 1),
 	(900, now(), 2),
@@ -126,4 +125,3 @@ INSERT INTO order_items(quantity, unit_prices, total_amount, order_id, item_id)
 VALUES(3,8000, 20000,1, 3),
        (2, 6000,18000, 2, 2),
        (1, 7000, 16000, 3, 1);
-
