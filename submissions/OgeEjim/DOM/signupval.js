@@ -7,18 +7,8 @@ let address = document.getElementById('address');
 let password = document.getElementById('password');
 let confirmPassword = document.getElementById('confirmPassword');
 
-// function validateField(field,fieldName,event) {
-//     if (field.value == '') {
-//     field.nextElementSibling.innerHTML = "Please enter your " + fieldName;      
-//     event.preventDefault();
-//     return false; 
-// } else{
-//     field.nextElementSibling.innerHTML = "";
-//     return true;
-// }
-// }
 
-function valFl(firstName,event) {
+function valFirst(firstName,event) {
     let fnRegex = /^[a-zA-Z]+$/;
     if (firstName.value == '') {
         firstName.nextElementSibling.innerHTML = "Please enter your First Name";
@@ -35,7 +25,7 @@ function valFl(firstName,event) {
 }
 
 
-function valLl(lastName,event) {
+function valLast(lastName,event) {
     let fnRegex = /^[a-zA-Z]+$/;
     if (lastName.value == '') {
         lastName.nextElementSibling.innerHTML = "Please enter your Last Name";
@@ -52,7 +42,7 @@ function valLl(lastName,event) {
 }
 
 
-function valNum(number,event) {   
+function valnumber(number,event) {   
     let numberRegex = /^[0-9.+]+$/; 
     if (number.value == '') {
         number.nextElementSibling.innerHTML = "Please enter your Phone Number";
@@ -96,7 +86,7 @@ function valAddy(address,event) {
        }
    } 
 
-function valPw(password,event) { 
+function valPassword(password,event) { 
     let passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{6,})*$/;
     if (password.value == '') {
         password.nextElementSibling.innerHTML = "Please enter your Password";
@@ -112,7 +102,8 @@ function valPw(password,event) {
     }
 }
 
-function valCpw(confirmPassword,event) {
+
+function valCpassword(confirmPassword,event) {
     let password = confirmPassword
     if (confirmPassword.value == '') {
         confirmPassword.nextElementSibling.innerHTML = "Please confirm your Password";
@@ -128,13 +119,13 @@ function valCpw(confirmPassword,event) {
 
 
 function validateSignup(event) {
-    valFl(firstName,event)
-    valLl(lastName,event)
+    valFirst(firstName,event)
+    valLast(lastName,event)
     valMail(email, event)
-    valNum(number, event)
+    valnumber(number, event)
     valAddy(address, event)
-    valPw(password, event)
-    valCpw(confirmPassword, event)
+    valPassword(password, event)
+    valCpassword(confirmPassword, event)
 return true;
 }
 
