@@ -1,0 +1,22 @@
+.form-control input{
+    position: absolute;
+    top: 10rem;
+    left: 32rem;
+    width: 350px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    padding-left: 16px;
+}
+
+.form-control input:active,
+.form-control input:focus {
+    outline: #3498db;
+}
+
+@media (max-width: 480px) {
+    .form-control input {
+        left: 1rem;
+        width: 300px; 
+    }
+}
