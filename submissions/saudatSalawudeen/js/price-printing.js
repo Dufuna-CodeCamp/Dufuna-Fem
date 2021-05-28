@@ -23,6 +23,5 @@ var productList = [
 
 for (let i = 0; i < productList.length; i++) {
   items = productList[i];
-  /*console.log(items);*/
   console.log(items.productName, items.imageUrl + " is sold for " + items.productPrice);
 }
