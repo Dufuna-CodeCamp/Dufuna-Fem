@@ -1,0 +1,178 @@
+body{
+  background-color: #535c68;
+}
+
+.head-box{
+  background-color: #3d3d3d;
+  width: 100%;
+  height: 250px;
+  position: relative;
+}
+
+.App{
+  height: auto;
+  width: 600px;
+  margin: 40px auto; 
+  position: absolute; 
+  top:-40px;
+  left: 400px;
+}
+
+header h1 {
+    font-weight: bolder;
+    font-size: 50px;
+    color: #fff;
+}
+  
+.to-do-form{
+    width: 100%;
+    margin: 0px auto;
+}
+
+.to-do-form input{
+    border: 0;
+    width: 350px;
+    height: 50px;
+    padding:0 20px;
+    margin: 20px 10px 20px 0;
+    border-radius: 15px;
+    font-size: 18px;
+  }
+
+.to-do-form input::placeholder{
+  color:#3d3d3d;
+}
+
+.to-do-form input:focus, .to-do-form button:focus{
+  outline: none;
+}
+  
+.to-do-form button {
+  height: 50px;
+  border-radius: 15px;
+  border:0;
+  cursor: pointer;
+  padding: 18px 30px;
+  background-color: #dff9fb;
+}
+
+.list-container {
+    background-color: #fff200;
+    height: auto;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    padding: 20px 0px;   
+  }
+
+  .list{
+    color:#535c68 ;
+    width: 70%;
+    background-color: #fff;
+    height: 30px;
+    margin: 20px auto;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 10px 10px;
+    border: 1px solid #eaeaea;
+    position: relative;
+  }
+
+.checkbox{
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  margin: 10px 5px;
+}
+
+[type='checkbox']:not(:checked):before,
+[type='checkbox']:not(:checked):after {
+    content: '';
+    position: absolute;
+    border: 1px solid red;
+    background: #fff;
+    width: 12px;
+    height: 12px;
+
+}
+
+[type='checkbox']:checked:before,
+[type='checkbox']:checked:after {
+    content: '✅';
+    position: absolute;
+    border: 1px none green;
+    background: #fff;
+}
+
+
+/*=========== status section ===========*/
+
+.status{
+  background-color: #ffffff;
+  height: 40px;
+  width: 100%;
+  border-radius: 0px 0px 10px 10px;
+  margin: 0px auto 20px auto;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.status1 {
+  color: black;
+}
+
+.status2 {
+  color: #1B1464;
+}
+
+.status3 {
+  color: #EE5A24;
+}
+
+.status4 {
+  color: green;
+}
+
+
+.status5 {
+  color: red;
+}
+
+/*=============================================== Media Query ====================================================*/
+/* Small devices (portrait tablets and phones, below 768px) */
+@media only screen and (max-width:768px) {
+
+  .head-box{
+    width: 768px;
+  }
+  
+  .App{
+    position: absolute; 
+    top:27px;
+    left: 0px;
+    width: 100%;
+  }
+
+  header h1 {
+    font-size: 35px;
+    margin-left: 30px;
+}
+  
+.to-do-form{
+    margin-left: 30px;
+}
+
+.list-container {
+  border-radius: 0px;
+}
+
+.status{
+  border-radius: 0px;
+  margin-top: 3px;
+  flex-wrap: wrap;
+  height: auto;
+}    
+
+}
+
