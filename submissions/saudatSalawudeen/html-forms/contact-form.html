@@ -4,69 +4,103 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Contact Us</title>
+	<script src="https://kit.fontawesome.com/afa9d5dac0.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../css/contact.css" />
 </head>
 <body>
-	<!-- header -->
+	<!-- HEADER -->
 	<header>
 		<div id="head">
 			<h1>ZARIS</h1>
-			<p><em>home of sexy bodice and underwears!</em></p>
 		</div>
 		<nav>
 			<p>
-				<a href="#">Home</a> |
-				<a href="#">About-Us</a> |
-				<a href="contact-form.html">Contact Form</a> |
-				<a href="../html/product.html">Product</a>
+				<a href="#" class="nav-link">Home</a>
+				<a href="#" class="nav-link">About Us</a>
+				<a href="../html-forms/contact-form.html" class="nav-link">Contact Us</a>
+				<a href="product.html" class="nav-link">Product</a>
+				<a href="../html-forms/signup.html" class="nav-link">Sign Up</a>
 			</p>
-			<form>
-				<p>
-					<label for=""></label>
-					<input type="search" name="" id="" placeholder="product search">
-				</p>
-			</form>
 		</nav>
-	</header>
-	<hr/>
-	
-	<header>
-		<h2><u>Let Us Connect With You!</u></h2>
 	</header>
 	
 	<!-- form content -->
 	<main>
-		<form action="#" method="post" id="form">
-			<div class="container" id="">
-				<div class="">
-					<label for="fullname">Full Name</label>
-					<input type="text" name="fullname" id="fullname" placeholder="Enter your first and last name" required />
-				</div><br/>
+		<div class="container">
+			<div id="box-container">
 				
-				<div class="form-box">
-					<label for="email">Email</label>
-					<input type="email" name="email" id="email" placeholder="Enter your email" required />
-				</div><br/>
-				
-				<div class="form-box">
-					<label for="subject">Subject</label>
-					<input type="text" name="subject" id="subject" maxlength="20"  />
-				</div><br/>
-				
-				<div class="form-box">
-					<label for="message"></label>
-					<textarea name="message" id="message" cols="20" rows="10" max="50">Whatever you want to say!</textarea>
-				</div><br/>
-				
-				<div class="form-box">
-					 <button type="submit" id="btn">Submit</button>
+				<div class="box box-1">
+					<i class="fas fa-phone-alt icon"></i>
+					<p class="short-txt">Please contact us via this numbers:</p>
+					<div class="tel">
+						<p>+234 003 303 0000</p>
+						<p>+234 816 710 6842</p>
+					</div>
+				<!--</div>-->
+					<div class="">
+						<i class="fas fa-envelope-open icon"></i>
+						<p class="short-txt">Email Address:</p>
+						<p class="short-txt mail">support@domain.com</p>
+					</div>
 				</div>
+				
+				<div class="box">
+					<form action="#" method="post" id="form">
+						<i class="fas fa-envelope icon fixed"></i>
+						<p class="short-txt">or better still send us a message:</p>
+						<div class="form-boxes-wrapper" id="form-box">
+							<div class="form-box">
+								<label for="fullname"></label>
+								<input type="text" name="fullname" id="fullname" placeholder="Full Name" required class="inp" />
+							</div>
+							
+							<div class="form-box">
+								<label for="email"></label>
+								<input type="email" name="email" id="email" placeholder="Email Address" required class="inp" />
+							</div>
+				
+							<div class="form-box">
+								<label for="subject"></label>
+								<input type="text" name="subject" id="subject" maxlength="20" placeholder="Subject" class="inp"/>
+							</div>
+				
+							<div class="form-box">
+								<label for="message">Message</label>
+								<textarea name="message" id="message" cols="5" rows="10" max="50"></textarea>
+							</div>
+				
+							<div class="form-box">
+					 			<button type="submit" id="btn">Send</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				
 			</div>
-		</form>
+		</div>
 	</main>
-	<hr/>
+		
+	<!-- footer -->	
 	
 	<footer>
-		<p>All right reserved &copy; 2021. Zaris&trade;.</p>
+		<div class="container ft-links">
+			<div class="ft-link"> 
+				<a href="#" class="ft-nav-link">About Us</a> 
+				<a href="#" class="ft-nav-link">Blog</a> 
+				<a href="#" class="ft-nav-link">Terms and Conditions</a>
+			</div>
+			
+			<div class="ft-link">
+				<form id="ft-form">
+					<p>
+						<label for="search"></label>
+						<input type="search" name="" id="search" placeholder="product search">
+					</p>
+				</form>
+			</div>
+			
+		</div>
+		<p>All right reserved &copy; 2021. Zaris&trade;</p>
 	</footer>
 </body>
 </html>
