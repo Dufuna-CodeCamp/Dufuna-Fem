@@ -10,8 +10,6 @@ var buyButton;
 var errorMsg;
 
 
-//used arrow functions which are prolly not supported
-
 function calculateShipcost(price) {
     let shippingCost = 0;
     if(price < 1000) {
@@ -72,7 +70,3 @@ function getTotal(productPrice, shipping, totalCost) {
     shippingCost.innerHTML = '$' + shipping;
     total.innerHTML = '$' + totalCost;
 }
-
-// function valQuantity(quantity,event)
-
-// document.quantity.addEventListener('input');
