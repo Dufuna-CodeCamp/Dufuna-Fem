@@ -52,8 +52,10 @@ header h1 {
   border-radius: 15px;
   border:0;
   cursor: pointer;
-  padding: 18px 30px;
+  padding: 5px 30px;
   background-color: #dff9fb;
+  font-size: 25px;
+  font-weight: bolder;
 }
 
 .list-container {
@@ -171,7 +173,7 @@ header h1 {
   border-radius: 0px;
   margin-top: 3px;
   flex-wrap: wrap;
-  height: auto;
+  height: 50px;
 }    
 
 }

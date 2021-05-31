@@ -1,6 +1,4 @@
 import React from 'react';
-import {FaPlus} from 'react-icons/fa';
-
 
 const InputTodo = (props) => {
 
@@ -14,7 +12,7 @@ const InputTodo = (props) => {
             >
             </input>
             <button onClick={props.addItemHandler} disabled={props.disabled}>
-                <FaPlus className='faplus' /> 
+                +
             </button>    
         </form>
     )

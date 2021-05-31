@@ -9,8 +9,7 @@ class TodoContainer extends Component {
         super(props);
         this.state = { 
             items:[],
-            currentItem: {text:'', key:'', completed:false,},
-            
+            currentItem: {text:'', key:'', completed:false}    
          }
     }
 
@@ -37,9 +36,8 @@ class TodoContainer extends Component {
                 currentItem: {
                     text: '',
                     key:'',
-                    completed:false,
-                },
-                
+                    completed:false
+                }   
             })    
         }
     }
@@ -86,7 +84,6 @@ class TodoContainer extends Component {
                         <TodoStatus
                         itemsLeft = {this.itemsLeft}
                         clearCompletedItems={this.clearCompletedItems}
-                        
                         />
                     </div>
             </div>
