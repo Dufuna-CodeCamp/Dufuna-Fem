@@ -27,32 +27,33 @@
         </div>
         <div class="half">
             <div class="form_box signup">
-            <form id= validateForm action="#" method="POST" enctype="application/x-www-form-urlencoded">
-                <label for="firstname">First Name</label> <br>
-                    <input type="text" name="Firstname" id="firstname"/> <br>
-                     
-                    <input type="text" name="lastname" id="lastname"/> <br>
-                    <label for="othernames">Other Names</label> <br>
-                    <input type="text" name="othernames" id="othernames"/> <br>
-                    <label for="email">Email Address</label> <br>
-                    <input type="text" name="email" id="email"/> <br>
-                    <label for="number">Phone Number</label> <br>
-                    <input type="number" name="number" id="number"/> <br>
-                    <label for="address">Address</label> <br>
-                    <input type="text" name="address" id="address"/> <br>
-                    <label>Password</label><br>
-                    <input type="password" name="password"/><br>
-                    <label>Confirm Password</label><br>
-                    <input type="password" name="password"/>
+            <form id= validateSignup action="#" method="POST" enctype="application/x-www-form-urlencoded">
+                    <label for="firstname">First Name</label>
+                    <input type="text" name="firstName" id="firstName"/><p class="error-msg" style="color: red;"></p>
+                    <label for="lastname">Last Name</label>
+                    <input type="text" name="lastName" id="lastName"/><p class="error-msg" style="color: red;"></p> 
+                    <label for="othernames">Other Names</label>
+                    <input type="text" name="othernames" id="othernames"/> 
+                    <label for="email">Email Address</label> 
+                    <input type="text" name="email" id="email"/><p class="error-msg" style="color: red;"></p> 
+                    <label for="number">Phone Number</label>
+                    <input type="text" name="number" id="number"/><p class="error-msg" style="color: red;"></p> 
+                    <label for="address">Address</label> 
+                    <input type="text" name="address" id="address"/><p class="error-msg" style="color: red;"></p> 
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password"/><p class="error-msg" style="color: red;"></p>
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" name="password" id="confirmPassword"/><p class="error-msg" style="color: red;"></p>
                     </p>
                     <label for="description1" class="label-center"><input type="checkbox" name="description1" id="description1" value="description1" class="check">
                         I agree to the <a href="#">Terms and conditions</a></label>
                     <br>
-                    <button>SIGN UP</button>
+                    <button type="Submit">SIGN UP</button>
                 </fieldset>
             </form>
-        </div>
-    </section>
+            <script src="../DOM/signupval.js"></script>
+           </div>
+         </section>
     <!-- Footer Section starts -->
     <footer>
         <section class="footer">
@@ -84,6 +85,5 @@
         </div> 
      </footer>
      <!--// Footer Section ends -->
-     <script src=signupval.js></script>
 </body>
 </html> 

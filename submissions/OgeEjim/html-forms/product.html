@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="../CSS/style/mediaquery.css">
     <link href="link" rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Imbue&display=swap" rel="stylesheet">
+    <script async src="../DOM/productpricecalculation.js"></script> 
 </head>
 <body>
     <!-- The NavBar Section -->
@@ -28,15 +29,24 @@
                     <div class="img_box"><img src="../HTML/Images/bluewhiteshirt.jpg"></div>
                 </div>
                 <div class='half_page'>
-                    <form action="#" method="POST" enctype="application/x-www-form-urlencoded">
+                    <form id="calPrice" action="#" method="POST" enctype="application/x-www-form-urlencoded">
                         <h3> BLUE-WHITE COLLAR TEE SHIRT</h3>
                         <h3>Brand: Polka-dot</h3>
                         <label for="Quantity"><strong>Quantity:</strong></label> <br>
-                        <input type="number" value="1" name="Quantity" id="Quantity" /><br>
-                        <h3>Price: $150</h3>
-                        <h3>Shipping cost: $50</h3>
-                        <h3>Total cost: $200</h3>
-                        <button><strong>BUY NOW</strong></button>
+                        <input type="number" name="quantity" id="quantity" placeholder = "1" min="1" value="1" />
+                        <p id="error_msg" style="color: red;">
+                        <h3>
+                            <label for="Price" name="Price">Price:</label>
+                            <p class= "output-price" id="price" style="color: rgb(0, 0, 0);"></p>
+                        </h3>
+                        <h3>
+                            <label for="shippingCost" name="shippingCost" >Shipping cost:</label>
+                            <p class= "output-price" style="color: rgb(0, 0, 0);" id="shippingCost"></p>
+                        </h3>  
+                        <h3><label for="totalCost" name="totalCost" >Total Cost:</label>
+                            <p class= "output-price" id="totalCost" style="color: rgb(0, 0, 0);"></p>
+                        </h3>  
+                        <button name="buyButton" id="buyButton"><strong>BUY NOW</strong></button>
                     </form>
                 </div>
             </div>
@@ -79,7 +89,7 @@
                     <button type="submit">SUBMIT</button>
                  </form>
              </div>
-             <script src="../DOM/newsletter.js"></script>
+             <script src="../DOM/newsletter.js"></script> 
             <div class="col col_right">
                 <p>CONNECT WITH US</p>
                 <a href="facebook.com"><img src="../HTML/Images/facebook.png"></a>
@@ -93,6 +103,5 @@
         </div> 
      </footer>
      <!--// Footer Section ends -->
-     <script src="productcal.js"></script>
 </body>
 </html> 
