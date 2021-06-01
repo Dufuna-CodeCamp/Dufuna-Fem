@@ -24,13 +24,9 @@ class TodoContainer extends Component {
 
     addItemHandler = (e) => {
         e.preventDefault();
-
         const newItem = this.state.currentItem;
-
-        if (newItem !==''){
-            
+        if (newItem !==''){ 
             const newtodo=[...this.state.items, newItem];
-
             this.setState({
                 items: newtodo,
                 currentItem: {
@@ -60,8 +56,7 @@ class TodoContainer extends Component {
     render() { 
         return (
             <div className='all-content'>
-                <div className='head-box'>
-                </div>
+                <div className='head-box'></div>
                 <div className='App'>
                     <header>
                         <h1>TODO</h1>
@@ -71,6 +66,7 @@ class TodoContainer extends Component {
                             placeholder="create a new todos..."
                             inputTodoHandler={this.inputTodoHandler}
                             addItemHandler={this.addItemHandler}
+                            disabled={this.state.currentItem.text.length<1}
                         />    
                     </header>
                     <div className='list-container' >
@@ -83,7 +79,6 @@ class TodoContainer extends Component {
                     <div>
                         <TodoStatus
                         itemsLeft = {this.itemsLeft}
-                        clearCompletedItems={this.clearCompletedItems}
                         />
                     </div>
             </div>
