@@ -1,6 +1,4 @@
-document.addEventListener("load", initialise());
 
-function initialise() {
     var quantity = document.querySelector('#quantity')
     var total = document.querySelector('#totalCost')
     var shippingCost = document.querySelector('#shippingCost')
@@ -46,7 +44,7 @@ function initialise() {
     var productPrice = initialQty * initialCost ;
     var shipping = calculateShipcost(productPrice);
     totalCost = productPrice + shipping;   
-    
+
     getTotal(productPrice, shipping, totalCost)
     
     function getTotal(productPrice, shipping, totalCost) {
@@ -54,4 +52,3 @@ function initialise() {
         shippingCost.innerHTML = '$' + shipping;
         total.innerHTML = '$' + totalCost;
     }  
-}
