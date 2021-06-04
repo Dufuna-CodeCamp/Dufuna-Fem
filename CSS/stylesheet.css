@@ -356,16 +356,16 @@ footer {
 .social-media>h3 {
     text-transform: uppercase;
     width: 177px;
-  height: 22px;
-  margin: 0 45px 9px 57px;
-  font-family: Montserrat;
-  font-size: 18px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.22;
-  letter-spacing: normal;
-  text-align: left;
+    height: 22px;
+    margin: 0 45px 9px 57px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.22;
+    letter-spacing: normal;
+    text-align: left;
 }
 .social-media>div{
     margin-left: 57px;
