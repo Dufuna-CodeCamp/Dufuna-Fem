@@ -350,6 +350,7 @@ footer {
 
 .media {
     margin-right: 5px;
+    cursor: pointer;
 }
 
 .social-media>h3 {
