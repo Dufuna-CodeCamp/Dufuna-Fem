@@ -2,9 +2,12 @@ import React, { Component } from "react";
 import styles from "./TodoItem.module.css";
 
 class TodoItem extends Component {
-  state = {
-    editing: false,
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      editing: false,
+    };
+  }
 
   handleEditing = () => {
     this.setState({
@@ -40,16 +43,16 @@ class TodoItem extends Component {
       <li className={styles.item}>
         <div onDoubleClick={this.handleEditing} style={viewMode}>
           <span style={completed ? completedStyle : null}>{title}</span>
-            <div>
+          <div>
             <label className={styles.container}>
-            <input
-              type="checkbox"
-              checked={completed}
-              onChange={() => this.props.handleChangeProps(id)}
-            />
-            <span class={styles.checkmark}></span>
-          </label>
-            </div>
+              <input
+                type="checkbox"
+                checked={completed}
+                onChange={() => this.props.handleChangeProps(id)}
+              />
+              <span class={styles.checkmark}></span>
+            </label>
+          </div>
         </div>
 
         <input

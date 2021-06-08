@@ -6,25 +6,13 @@ import { v4 as uuidv4 } from "uuid";
 import TodoStatus from "./TodoStatus";
 
 class TodoContainer extends Component {
-  state = {
-    todos: [
-      {
-        id: uuidv4(),
-        title: "Go Shopping for Groceries",
-        completed: true,
-      },
-      {
-        id: uuidv4(),
-        title: "Appointment with the Doctor",
-        completed: false,
-      },
-      {
-        id: uuidv4(),
-        title: "Attend PTA Meeting",
-        completed: false,
-      },
-    ],
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      todos: [],
+    };
+  }
+
   handleChange = (id) => {
     this.setState((prevState) => ({
       todos: prevState.todos.map((todo) => {
@@ -75,7 +63,7 @@ class TodoContainer extends Component {
             handleChangeProps={this.handleChange}
             setUpdate={this.setUpdate}
           />
-          <TodoStatus todosLeft = {this.todosLeft} />
+          <TodoStatus todosLeft={this.todosLeft} />
         </div>
       </div>
     );
