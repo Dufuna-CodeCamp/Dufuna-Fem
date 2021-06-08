@@ -23,9 +23,8 @@ code {
 .App{
   height: auto;
   width: 600px;
-  margin: 40px auto; 
   position: absolute; 
-  top:-40px;
+  top: 5px;
   left: 400px;
 }
 
@@ -159,11 +158,10 @@ header h1 {
 @media only screen and (max-width:768px) {
 
   .head-box{
-    width: 768px;
+    width: auto;
   }
   
   .App{
-    position: absolute; 
     top:27px;
     left: 0px;
     width: 100%;
@@ -185,8 +183,10 @@ header h1 {
 .status{
   border-radius: 0px;
   margin-top: 3px;
+  min-height: 50px;
+  height: auto;
+  width: 100%;
   flex-wrap: wrap;
-  height: 50px;
 } 
 
 }
