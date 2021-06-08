@@ -133,24 +133,24 @@ header h1 {
   align-items: center;
 }
 
-.status1 {
+.items-left {
   color: black;
 }
 
-.status2 {
+.all-items {
   color: #1B1464;
 }
 
-.status3 {
+.active {
   color: #EE5A24;
 }
 
-.status4 {
+.completed {
   color: green;
 }
 
 
-.status5 {
+.cleared {
   color: red;
 }
 
@@ -187,7 +187,7 @@ header h1 {
   margin-top: 3px;
   flex-wrap: wrap;
   height: 50px;
-}    
+} 
 
 }
 

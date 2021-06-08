@@ -24,6 +24,9 @@ yarn-error.log*
 
 package-lock.json
 
+package.json
+manifest.json
+
 setupTests.js
 
 reportWebVitals.js

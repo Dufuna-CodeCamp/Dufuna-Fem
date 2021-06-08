@@ -62,8 +62,6 @@ class TodoContainer extends Component {
                         <h1>TODO</h1>
                         <InputTodo
                             value = {this.state.currentItem.text}
-                            inputType ='text'
-                            placeholder="create a new todos..."
                             inputTodoHandler={this.inputTodoHandler}
                             addItemHandler={this.addItemHandler}
                             disabled={this.state.currentItem.text.length<1}
