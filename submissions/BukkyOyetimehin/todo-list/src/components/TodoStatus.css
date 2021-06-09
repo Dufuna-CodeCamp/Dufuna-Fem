@@ -1,0 +1,42 @@
+.status {
+    display: inline-block;
+    margin: 30px auto 20px auto;
+    padding-left: 0.5rem;
+    font-weight: 600;
+    font-size: 1em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.status2 {
+  color: #485696;  
+}
+
+.status3 {
+    color: red;
+}
+
+.status4 {
+    color: green;
+}
+
+.status5 {
+    color: red;
+}
+
+
+/*media Query*/
+
+@media screen and (max-width: 400px) {
+.status{ 
+
+   font-size: 0.7rem;
+} 
+
+.status3, .status4, .status4 {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+}
+    
