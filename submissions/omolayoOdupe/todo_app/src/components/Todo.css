@@ -168,16 +168,41 @@ header h1 {
   }
 
   header h1 {
-    font-size: 35px;
+    font-size: 30px;
     margin-left: 30px;
+    margin-bottom: 10px;
 }
   
 .to-do-form{
     margin-left: 30px;
 }
 
+.to-do-form input{
+  width: 300px;
+  height: 40px;
+  font-size: 15px;
+}
+
+.to-do-form button {
+  height: 40px;
+  padding: 5px 25px;
+  font-size: 20px;
+}
+
 .list-container {
   border-radius: 0px;
+}
+
+.list{
+  height: 20px;
+  font-size: 15px;
+  margin: 20px 20px;
+
+}
+
+.checkbox{
+  right: -5px;
+  top: 3px;
 }
 
 .status{
@@ -187,6 +212,7 @@ header h1 {
   height: auto;
   width: 100%;
   flex-wrap: wrap;
+  font-size: 13px;
 } 
 
 }
