@@ -22,10 +22,10 @@ code {
 
 .App{
   height: auto;
-  width: 600px;
+  width: auto;
+  margin: 0px 300px;
   position: absolute; 
   top: 5px;
-  left: 400px;
 }
 
 header h1 {
@@ -41,7 +41,7 @@ header h1 {
 
 .to-do-form input{
     border: 0;
-    width: 350px;
+    width: 70%;
     height: 50px;
     padding:0 20px;
     margin: 20px 10px 20px 0;
@@ -122,7 +122,8 @@ header h1 {
 
 .status{
   background-color: #ffffff;
-  height: 40px;
+  min-height: 50px;
+  height: auto;
   width: 100%;
   border-radius: 0px 0px 10px 10px;
   margin: 0px auto 20px auto;
@@ -134,23 +135,28 @@ header h1 {
 
 .items-left {
   color: black;
+  padding: 15px;
 }
 
 .all-items {
   color: #1B1464;
+  padding: 15px;
 }
 
 .active {
   color: #EE5A24;
+  padding: 15px;
 }
 
 .completed {
   color: green;
+  padding: 15px;
 }
 
 
 .cleared {
   color: red;
+  padding: 15px;
 }
 
 /*=============================================== Media Query ====================================================*/
@@ -165,6 +171,7 @@ header h1 {
     top:27px;
     left: 0px;
     width: 100%;
+    margin-left: 0px;
   }
 
   header h1 {
@@ -178,7 +185,7 @@ header h1 {
 }
 
 .to-do-form input{
-  width: 300px;
+  width: 60%;
   height: 40px;
   font-size: 15px;
 }
@@ -211,8 +218,8 @@ header h1 {
   min-height: 50px;
   height: auto;
   width: 100%;
-  flex-wrap: wrap;
   font-size: 13px;
+  justify-content: space-between;
 } 
 
 }
