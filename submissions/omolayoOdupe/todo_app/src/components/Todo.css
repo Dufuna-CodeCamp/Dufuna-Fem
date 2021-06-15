@@ -1,0 +1,226 @@
+body{
+  margin: 0;
+  background-color: #535c68;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.head-box{
+  background-color: #3d3d3d;
+  width: 100%;
+  height: 250px;
+  position: relative;
+}
+
+.App{
+  height: auto;
+  width: auto;
+  margin: 0px 300px;
+  position: absolute; 
+  top: 5px;
+}
+
+header h1 {
+    font-weight: bolder;
+    font-size: 50px;
+    color: #fff;
+}
+  
+.to-do-form{
+    width: 100%;
+    margin: 0px auto;
+}
+
+.to-do-form input{
+    border: 0;
+    width: 70%;
+    height: 50px;
+    padding:0 20px;
+    margin: 20px 10px 20px 0;
+    border-radius: 15px;
+    font-size: 18px;
+  }
+
+.to-do-form input::placeholder{
+  color:#3d3d3d;
+}
+
+.to-do-form input:focus, .to-do-form button:focus{
+  outline: none;
+}
+  
+.to-do-form button {
+  height: 50px;
+  border-radius: 15px;
+  border:0;
+  cursor: pointer;
+  padding: 5px 30px;
+  background-color: #dff9fb;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.list-container {
+    background-color: #fff200;
+    height: auto;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    padding: 20px 0px;   
+  }
+
+  .list{
+    color:#535c68 ;
+    width: 70%;
+    background-color: #fff;
+    height: 30px;
+    margin: 20px auto;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 10px 25px;
+    border: 1px solid #eaeaea;
+    position: relative;
+    overflow: auto;
+  }
+
+.checkbox{
+  position: absolute;
+  right: -5px;
+  top: 5px;
+  cursor: pointer;
+  margin: 10px 15px;
+}
+
+[type='checkbox']:not(:checked):before,
+[type='checkbox']:not(:checked):after {
+    content: '';
+    position: absolute;
+    border: 1px solid red;
+    background: #fff;
+    width: 12px;
+    height: 12px;
+
+}
+
+[type='checkbox']:checked:before,
+[type='checkbox']:checked:after {
+    content: '✅';
+    position: absolute;
+    border: 1px none green;
+    background: #fff;
+}
+
+
+/*=========== status section ===========*/
+
+.status{
+  background-color: #ffffff;
+  min-height: 50px;
+  height: auto;
+  width: 100%;
+  border-radius: 0px 0px 10px 10px;
+  margin: 0px auto 20px auto;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.items-left {
+  color: black;
+  padding: 15px;
+}
+
+.all-items {
+  color: #1B1464;
+  padding: 15px;
+}
+
+.active {
+  color: #EE5A24;
+  padding: 15px;
+}
+
+.completed {
+  color: green;
+  padding: 15px;
+}
+
+
+.cleared {
+  color: red;
+  padding: 15px;
+}
+
+/*=============================================== Media Query ====================================================*/
+/* Small devices (portrait tablets and phones, below 768px) */
+@media only screen and (max-width:768px) {
+
+  .head-box{
+    width: auto;
+  }
+  
+  .App{
+    top:27px;
+    left: 0px;
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  header h1 {
+    font-size: 30px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+  
+.to-do-form{
+    margin-left: 30px;
+}
+
+.to-do-form input{
+  width: 60%;
+  height: 40px;
+  font-size: 15px;
+}
+
+.to-do-form button {
+  height: 40px;
+  padding: 5px 25px;
+  font-size: 20px;
+}
+
+.list-container {
+  border-radius: 0px;
+}
+
+.list{
+  height: 20px;
+  font-size: 15px;
+  margin: 20px 20px;
+
+}
+
+.checkbox{
+  right: -5px;
+  top: 3px;
+}
+
+.status{
+  border-radius: 0px;
+  margin-top: 3px;
+  min-height: 50px;
+  height: auto;
+  width: 100%;
+  font-size: 13px;
+  justify-content: space-between;
+} 
+
+}
+
