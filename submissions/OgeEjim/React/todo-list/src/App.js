@@ -1,4 +1,4 @@
-import CompliantsForm from './component/overall'
+import Task from './component/overall'
 import './App.css'
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
     <div>
       	<div className="topContainer"></div>
         <div className="bottomContainer"></div>
-      	<CompliantsForm/>
+      	<Task/>
     </div>
   );
 }
