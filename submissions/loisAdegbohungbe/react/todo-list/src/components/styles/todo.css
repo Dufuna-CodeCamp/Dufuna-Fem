@@ -1,0 +1,178 @@
+#todo-header{
+    height: 250px;
+}
+
+#footer button {
+    border: none;
+    background-color: white;
+}
+
+#sm-footer button {
+    border: none;
+    background-color: transparent;
+}
+
+#sm-footer{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: -10px;
+    display: none;
+}
+
+#todo-input, #todo-items {
+    width: 40%;
+}
+
+#todo-input input{
+    width: 83%;
+}
+
+#todo-input button{
+    width: 15%;
+}
+
+#todo-items {
+    margin: -38px auto 0 auto;
+    border-radius: 14px;
+}
+
+#todo-text{
+    padding-left: 27%;
+}
+
+#todo-input button.disabled{
+    opacity: 0.65; 
+    cursor: not-allowed;
+}
+
+#done-task{
+    text-decoration: line-through;
+    color:rgb(76, 175, 80)
+}
+
+.shadow{
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+
+.checkbox:not(:checked),
+.checkbox:checked {
+  position: absolute;
+  top: 5.5px;
+  cursor: pointer;
+}
+
+.label-not-checked,
+.label-checked {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+}
+
+.label-not-checked:before,
+.label-checked:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -5px;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, .1);
+  border-radius: 10%;
+  outline: none;
+}
+
+.label-not-checked:before {
+    border: 1.5px solid red;
+}
+
+.label-checked:before {
+    border: 1.5px solid rgb(76, 175, 80);
+}
+
+.label-checked:after {
+  content: '✔';
+  position: absolute;
+  top: -12px;
+  left: 4px;
+  color: rgb(76, 175, 80);
+  transition: all .2s;
+}
+
+.label-not-checked:after {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.label-checked:after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.checkbox{
+  z-index: 5;
+  opacity: 0;
+}
+
+.s-large{
+    display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+    #todo-input, #todo-items {
+        width: 60%;
+    }
+    #todo-text{
+        padding: 0;    
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #todo-header{
+        height: 310px;
+    }
+    #todo-input{
+        width: 85%;
+    }
+    #todo-text{   
+        width: 85%;
+        margin-bottom: 85px;
+    }
+    #todo-items {
+        width: 100%;
+    }
+    #todo-items {
+        margin: 0 auto;
+        border-radius: 0;
+    }
+    .shadow{
+        border-radius: 0;
+    }
+    #todo-input input{
+        width: 81%;
+    }   
+    #todo-input button{
+        width: 17%;
+    }
+}
+@media screen and (max-width: 540px) {
+    #todo-input input{
+        width: 80%;
+    }   
+    #todo-input button{
+        width: 18%;
+    }
+    #sm-footer{
+        display: flex;
+    }
+    .s-large{
+        display: none;
+    }
+    .middle-align{
+        margin: 0 auto;
+    }
+}
