@@ -2,7 +2,7 @@ import React from "react";
 
 const Form = ({setInputText, todos, setTodos,  inputText }) => {
 
-    // Function that updates the input field
+// Function that updates the input field
     const inputFieldHandler =(e) => {
         console.log(e.target.value);
         setInputText(e.target.value);

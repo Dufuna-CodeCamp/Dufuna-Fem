@@ -4,7 +4,6 @@ import Form from './Components/Form';
 import Todolist from './Components/Todolist';
 import Footer from './Components/Footer'
 
-
 function App() {
    const [inputText, setInputText] = useState("");
    const [todos, setTodos] = useState([]);

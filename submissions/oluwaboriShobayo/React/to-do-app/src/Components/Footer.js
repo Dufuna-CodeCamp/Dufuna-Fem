@@ -11,4 +11,4 @@ const Footer = ({todos, setTodos}) => {
         </div>
     )
 }
-export default Footer
+export default Footer;

@@ -24,6 +24,9 @@ yarn-error.log*
 
 
 
+/node_modules
+
+
 {
   "name": "to-do-app",
   "version": "0.1.0",
