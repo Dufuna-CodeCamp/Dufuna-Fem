@@ -2,15 +2,13 @@ import React from "react";
 
 const Form = ({setInputText, todos, setTodos,  inputText }) => {
 
-// Function that updates the input field
     const inputFieldHandler =(e) => {
-        console.log(e.target.value);
         setInputText(e.target.value);
     };
  const submitHandler = (e) => {
         e.preventDefault();
         setTodos ([
-                ...todos, {text:inputText, completed:false, id:Math.random()}
+                ...todos, {text:inputText, completed:false, id:Math.random() * 10000}
         ]);
         setInputText('');
     };
