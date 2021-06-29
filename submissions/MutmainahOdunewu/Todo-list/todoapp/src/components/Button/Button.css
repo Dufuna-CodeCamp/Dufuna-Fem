@@ -1,0 +1,25 @@
+.btn {
+    position: absolute;
+    top: 10rem;
+    left: 56rem;
+    padding: .9rem 1.6rem;
+    border-radius: 5px;
+    background-color: #3a3acc;
+    color: #fff;
+    cursor: pointer;
+    border-color:whitesmoke;
+}
+
+.btn:active,
+.btn:focus {
+    outline: none;
+    border: 2px solid white;
+}
+
+/* MOBILE RESPONSIVENESS  */
+
+@media (max-width: 480px) {
+    .btn {
+        left: 22rem;
+    }
+}
