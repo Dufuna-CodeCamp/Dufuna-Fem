@@ -216,13 +216,16 @@ form .submitInput {
      bottom: 7em;
    }
    form .TodoInput{
-     width: 400px;
+     width: 450px;
      padding: 13px;
    }
    form .submitInput{
      width: 75px;
      padding: 13px;
    }
+  .todo li{
+        line-height: 1.5;
+  } 
     .todo-container {
       width: 35.70%;
       bottom: 5.5em;
@@ -256,15 +259,15 @@ form .submitInput {
     .active-items {
      color:red;
      position:relative;
-     right: 5.3em;
+     right: 6.7em;
    }
   .completed-items {
     color:green;
     position:relative;
-    right: 8.5em;
+    right: 11.5em;
    }
   .clear-completed{
     top: 1em;
-    left: 24em;
+    left: 27em;
   }
  }
