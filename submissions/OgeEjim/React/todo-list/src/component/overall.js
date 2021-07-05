@@ -68,12 +68,12 @@ class Todo extends Component {
                         placeholder="create a new todo..."
                     />
 
-                    <button className="btn btn-primary" onClick={(e) => this.handleCreate(e)} disabled={this.state.inactive} >+</button>
+                    <button className="btn btn-primary" onClick={(e) => this.handleCreate(e)} disabled={this.state.inactive} ><b className="icon">+</b></button>
                 </div>
                 <div className="mt-4 listContainer">
                     <div className="mt-4">
                         {
-                            this.state?.list?.map((todo, index) => <Card onButtonClick={this.handleDone} index={index} todo={todo} key={index} />)
+                            this.state.list.map((todo, index) => <Card onButtonClick={this.handleDone} index={index} todo={todo} key={index} />)
                         }
                     </div>
                 </div>

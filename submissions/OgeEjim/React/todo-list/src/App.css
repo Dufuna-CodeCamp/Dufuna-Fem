@@ -32,7 +32,8 @@
 }
 
 .inputContainer {
-  border-radius: 50%;
+  border-radius: 70%;
+  width: 100%;
 }
 
 .customCard {
@@ -50,6 +51,14 @@
 
 .customCard .checkboxes {
   border: 2px solid red;
+}
+
+.icon {
+  font-size: 15px;
+  font-weight: normal;
+  color: rgb(0, 0, 0);
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .newList {
@@ -86,6 +95,10 @@ span {
   font-size: 12px;
 }
 
+.form-control {
+border-radius: 60px;
+}
+
 .actions .middle{
   display: flex; 
 }
@@ -100,6 +113,8 @@ span {
 
 .btn-primary {
   float: right;
+  width: 30%;
+  border-radius: 60px;
 }
 
 .inputContainer {
