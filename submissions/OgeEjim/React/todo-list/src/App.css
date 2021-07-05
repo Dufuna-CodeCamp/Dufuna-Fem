@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.topContainer {
+  background-color: #555;
+  height: 33vh;
+  width: 100vw
+}
+
+.bottomContainer {
+  background-color: #fff;
+  height: 70vh;
+  width: 100vw
+}
+
+.mainContainer {
+  position: absolute;
+  top: 10vh;
+  display: inline;
+}
+
+.listContainer  {
+  background-color: yellow;
+  min-height: 50vh;
+  width: 100%;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: -20px;
+}
+
+.inputContainer {
+  border-radius: 70%;
+  width: 100%;
+}
+
+.customCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  min-width: 0;
+  padding: 10px;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid black;
+  border-radius: .50rem;
+}
+
+.customCard .checkboxes {
+  border: 2px solid red;
+}
+
+.icon {
+  font-size: 15px;
+  font-weight: normal;
+  color: rgb(0, 0, 0);
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.newList {
+  color: #888
+}
+
+.checkedList {
+  color: green;
+  text-decoration: line-through
+}
+
+span {
+  width: auto
+}
+
+.title {
+  color: white;
+  text-shadow: #fff;
+
+}
+
+.actions {
+  display: flex;
+  
+  justify-content: space-between;
+  /* text-orientation: line; */
+  background-color: rgb(255, 255, 254);
+  min-height: 1vh;
+  width: 100%;
+  padding: 10px;
+  border-radius: 12px;
+  margin-top: -10px;
+  border-bottom: 0.5px solid black;
+  font-size: 12px;
+}
+
+.form-control {
+border-radius: 60px;
+}
+
+.actions .middle{
+  display: flex; 
+}
+
+.actions p{
+  margin-left: .5em;
+}
+
+.actions .end {
+  color: red;
+}
+
+.btn-primary {
+  float: right;
+  width: 30%;
+  border-radius: 60px;
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkboxes {
+  border-color: red;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+ }
+
+ .blue {
+   color: blue;   
+ }
+
+ 
