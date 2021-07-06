@@ -22,8 +22,8 @@ h1{
   margin-left:30px;
 }
 form {
-  position: relative;
-  bottom:70px;
+  position: absolute;
+  top:150px;
   margin-left: 30px;
 }
 form .TodoInput {
@@ -41,12 +41,12 @@ form .submitInput {
  cursor:pointer;
  }
  .todo-container {
+  max-width: 500px;
+  width: 100%;
+  height: 350px;
   box-shadow: 0 2px 6px ;
   background-color: #d9c179;
-  width: 100%;
-  height: 320px;
-  position:relative;
-  bottom:55px
+  position: absolute;
  }
  /* Styling the todo-items */
  .todo {
@@ -56,9 +56,10 @@ form .submitInput {
   background-color: white;
   width:290px;
   position: relative;
-  top: 20px;
+  /* top: 20px; */
   line-height: 1;
   font-size: 17px;
+  /* margin-top:20px; */
   margin: 10px 15px 10px 35px;
  }
  .todo li {
@@ -139,17 +140,19 @@ form .submitInput {
   text-decoration:line-through;
   color:green;
 }
+
 .footer{
   background-color: white;
   padding:15px;
   box-shadow: 0 4px 10px 0 #a0a0a0;
-  position: relative;
-  bottom: 68px;
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
 }
 .items-left{
-  position: relative;
-  bottom: 2.4em;
-  left: 2em;
+  position: absolute;
+   bottom: 3.4em;
+   left: 3em;
 }
 .clear-completed{
   position: absolute;
@@ -161,12 +164,14 @@ form .submitInput {
 .all-items{
   color: blue;
  margin-right: 12px;
+ margin-left: 80px;
 }
 .active-items{
   color: red;
   margin-right: 12px;
 }
 }
+
 
 
 @media only screen and (min-device-width:450px) {
@@ -183,7 +188,7 @@ form .submitInput {
     padding:10px;
   }
   .todo-container{
-    height: 350px;
+    height: 340px;
   }
   .todo{
     width: 370px;
@@ -196,14 +201,14 @@ form .submitInput {
   }
   .clear-completed{
     left: 20em;
-    bottom: 3.8em;
+    bottom: 3.6em;
   }
   .items-left{
-    bottom: 2.9em;
-    left: 3.5em;
+    bottom: 3.5em;
+    left: 5em;
   }
   .all-items{
-    margin-left: 35px;
+    margin-left: 135px;
   }
 }
 
@@ -216,7 +221,7 @@ form .submitInput {
      bottom: 7em;
    }
    form .TodoInput{
-     width: 450px;
+     width: 425px;
      padding: 13px;
    }
    form .submitInput{
@@ -228,7 +233,7 @@ form .submitInput {
   } 
     .todo-container {
       width: 35.70%;
-      bottom: 5.5em;
+      bottom: 9.5em;
       left: 31.2em;
       border-top-left-radius: 9px;
       border-top-right-radius: 9px;
@@ -237,37 +242,33 @@ form .submitInput {
     background-color:white;
     box-shadow: 0 4px 10px 0 #a0a0a0;
     padding:15px;
-    position: relative;
-    bottom: 77px;
     margin-left: 467px;
-    width: 35.80%;
-    bottom: 110px;
+    width: 33.20%;
+    bottom: 100px;
     display: flex;
     justify-content: space-between;
     border-bottom-left-radius: 9px;
     border-bottom-right-radius: 9px;
   } 
     .items-left{
-     top: 0.2em;
-     left: 0;
+     top: 1.2em;
+     left: 1em;
     }
     .all-items {
      color:blue;
-     position:relative;
-     right: 2em;
+     margin-right: 3px;
     }
     .active-items {
      color:red;
-     position:relative;
-     right: 6.7em;
+     margin-right: 155px;
    }
   .completed-items {
     color:green;
     position:relative;
-    right: 11.5em;
+    right: 10em;
    }
   .clear-completed{
     top: 1em;
-    left: 27em;
+    left: 24em;
   }
  }

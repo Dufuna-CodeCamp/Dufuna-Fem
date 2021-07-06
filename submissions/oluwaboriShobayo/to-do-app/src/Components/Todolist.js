@@ -3,6 +3,7 @@ import Todo from './Todo';
 
 
 const Todolist = ({todos, setTodos }) => {
+    // alert("??")
     console.log(todos);
     return (
         <div className="todo-container">
