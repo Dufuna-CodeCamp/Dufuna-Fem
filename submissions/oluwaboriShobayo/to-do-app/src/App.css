@@ -1,0 +1,274 @@
+@media only screen and (min-device-width: 300px) {
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 15px;
+  height: 100vh;
+}
+
+header{
+  background-color: rgb(65, 51, 51);
+  height: 40vh;
+  padding-top: 60px;
+  width: 100%;
+}
+h1{
+  color:white;
+  margin-left:30px;
+}
+form {
+  position: absolute;
+  top:150px;
+  margin-left: 30px;
+}
+form .TodoInput {
+ border-radius: 8px;
+ padding: 9px;
+ margin-right: 3px;
+ width: 230px;
+ outline: none;
+}
+form .submitInput {
+  border-radius: 8px;
+ padding: 8px;
+ width: 55px;
+ background-color: coral;
+ cursor:pointer;
+ }
+ .todo-container {
+  max-width: 500px;
+  width: 100%;
+  height: 350px;
+  box-shadow: 0 2px 6px ;
+  background-color: #d9c179;
+  position: absolute;
+ }
+ /* Styling the todo-items */
+ .todo {
+  list-style: none;
+  border:solid 1px;
+  border-radius:14px;
+  background-color: white;
+  width:290px;
+  position: relative;
+  /* top: 20px; */
+  line-height: 1;
+  font-size: 17px;
+  /* margin-top:20px; */
+  margin: 10px 15px 10px 35px;
+ }
+ .todo li {
+  padding:6px 0 0 10px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-height: 1;
+  height:25px;
+  word-wrap: break-word;
+ }
+ .container {
+  position: relative;
+  padding-left: 15px; 
+   margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* Hiding the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+/* Creating a new checkbox */
+.checkmark {
+  position: absolute;
+  display: inline-block;
+  bottom: 0.8em;
+  left: 15em;
+  height: 16px;
+  width: 16px;
+  background-color: #eee;
+  border: 2px solid red;
+}
+ /* The checkmark should be hidden when not checked */
+ .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* The checkmark should show when checked */
+.container input:checked + .checkmark:after {
+  display: block;
+}
+ /* Change the background after the checkmark is checked */
+ .container input:checked + .checkmark {
+  border: 2px solid green;
+  display: block;
+}
+
+/* Style the checkmark */
+.container .checkmark:after {
+  left:5px;
+  bottom:1.3px;
+  width: 3px;
+  height: 10px;
+  border: solid green;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+/* On mouse-over, change the background to grey */
+.container:hover input + .checkmark {
+  background-color: #ccc;
+}
+.active{
+  color:black;
+}
+ /* The colour should change to green when items are completed */
+ .completed {
+  text-decoration:line-through;
+  color:green;
+}
+
+.footer{
+  background-color: white;
+  padding:15px;
+  box-shadow: 0 4px 10px 0 #a0a0a0;
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+}
+.items-left{
+  position: absolute;
+   bottom: 3.4em;
+   left: 3em;
+}
+.clear-completed{
+  position: absolute;
+  bottom: 3.5em;
+  left:14em;
+  width:100%;
+  color: red;
+}
+.all-items{
+  color: blue;
+ margin-right: 12px;
+ margin-left: 80px;
+}
+.active-items{
+  color: red;
+  margin-right: 12px;
+}
+}
+
+
+
+@media only screen and (min-device-width:450px) {
+  h1{
+    margin-left:42px;
+  }
+   form .TodoInput{
+     width: 330px;
+     padding:10px;
+     margin-left: 20px;
+   }
+   form .submitInput{
+    width: 60px;
+    padding:10px;
+  }
+  .todo-container{
+    height: 340px;
+  }
+  .todo{
+    width: 370px;
+    line-height: 18px;
+    font-size: 22px;
+    left:20px;
+  }
+  .checkmark {
+    left: 15em;
+  }
+  .clear-completed{
+    left: 20em;
+    bottom: 3.6em;
+  }
+  .items-left{
+    bottom: 3.5em;
+    left: 5em;
+  }
+  .all-items{
+    margin-left: 135px;
+  }
+}
+
+ @media  only screen and (min-device-width: 992px) {
+   h1{
+     margin-left: 430px;
+   }
+   form{
+     margin-left: 450px;
+     bottom: 7em;
+   }
+   form .TodoInput{
+     width: 425px;
+     padding: 13px;
+   }
+   form .submitInput{
+     width: 75px;
+     padding: 13px;
+   }
+  .todo li{
+        line-height: 1.5;
+  } 
+    .todo-container {
+      width: 35.70%;
+      bottom: 9.5em;
+      left: 31.2em;
+      border-top-left-radius: 9px;
+      border-top-right-radius: 9px;
+    }
+  .footer{
+    background-color:white;
+    box-shadow: 0 4px 10px 0 #a0a0a0;
+    padding:15px;
+    margin-left: 467px;
+    width: 33.20%;
+    bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+  } 
+    .items-left{
+     top: 1.2em;
+     left: 1em;
+    }
+    .all-items {
+     color:blue;
+     margin-right: 3px;
+    }
+    .active-items {
+     color:red;
+     margin-right: 155px;
+   }
+  .completed-items {
+    color:green;
+    position:relative;
+    right: 10em;
+   }
+  .clear-completed{
+    top: 1em;
+    left: 24em;
+  }
+ }
