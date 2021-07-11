@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/signup.css">
+</head>
+<body>
+    <header>
+        <h1 class="tm-class"> AKA WEARS</h1>
+        <nav>
+            <ul class="navbar-link">
+                <li><a href="../Html/product.html">Product Page</a></li>
+                <li><a href="../html-Forms/signuppage.html">Sign Up</a></li>
+                <li><a href="../html-Forms/contact.html">Contact Us</a></li>
+            </ul>
+        </nav> 
+    </header>
+    <section class="container">
+      <main>
+          <h1>Register your</h1>
+          <h1>Account</h1>
+          <p>Registering your acccount gives you access to discount,promo and events available only to registered customer</p>
+          <p>
+              Already have an account?<span><a href="sign in.html">Sign in</a></span>
+          </p>
+      </main>
+      <aside>
+        <form action="#" id="signup_form"  class="form-group" >
+            <div class="form-details">
+            <label for="first-name">First Name</label><br>
+            <input type="text" name="first-name" id="first_name" maxlength="30" ><span class="error"></span><br>
+            <label for="last-name">Last Name</label><br>
+            <input type="text" name="last-name" id="last_name" maxlength="30"><span class="error"></span><br>
+            <label for="other-names">Other Names</label><br>
+            <input type="text" name="other-name" id="other_name"  maxlength="30"><span class="error"></span><br>
+            <label for="phone-number">Phone Number</label> <br>
+            <input type="tel" name="phone-number" id="phone_number"><span class="error"></span><br>
+            <label for="email">Email Address</label><br>
+            <input type="email" name="email" id="form_email" maxlength="50"><span class="error"></span><br>
+            <label for="password">Password</label><br>
+            <input type="password" name="password" id="password"><span class="error"></span>
+            <br>
+            <label for="confirm-password">Confirm Password</label> <br>
+            <input type="password" name="confirm-password" id="confirm_password"><span class="error"></span><br>
+            <input type="checkbox" name="terms-conditions" id="termsconditions">
+            <label for="terms-conditions">I agree to the Terms and Conditions</label><br>
+            <button type="submit" name="submit-form" id="submitform">SIGN UP</button>
+            </div>
+        </form>
+      </aside>
+  </section>
+    <footer>
+        <div class="footer-link">
+            <div>
+            <ul>
+              <li> <a href="../htmlForms/contact.html"> Contact Us </a></li>  
+              <li> <a href="#"> About Us </a></li>
+              <li> <a href="#"> Terms and Conditions </a></li>
+            </ul>
+        </div>
+        <form id="newsletter">
+            <h3>Sign up for the Newsletter</h3>
+            <input type="text" placeholder=" Enter your email address" id="email">
+            <button type="submit"> SUBMIT</button><br><br>
+            <span class="errorBlock"></span>
+        </form>
+        <div class="social">
+            <h4>CONNECT WITH US</h4>
+            <ul class="social-link">
+                    <li><a href="#"><img src="../Html/image/facebook.png " alt=""></i></a></li>
+                   <li><a href="#"><img src="../Html/image/twitter.png " alt=""></a></li>
+                   <li><a href=""></a><img src="../Html/image/gmail.png " alt=""></a></li>
+                   <li><a href="#"><img src="../Html/image/youtube.jpg" alt=""></a></li>
+             </ul>
+        </div>
+        </div>
+        <p class="text-p">Copyright &copy; 2021, AKA Wears.</p>
+    </footer>    
+
+    <script src="../DOM/newsletter.js"></script>
+    <script src="../DOM/signup.js"></script>
+</body>
+</html>
