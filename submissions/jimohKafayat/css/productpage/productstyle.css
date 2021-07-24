@@ -19,7 +19,6 @@ body{
     border-width:thin;
     box-shadow: none;
 }
-
 .nav,
 .footer-div{
     background-color: limegreen;
@@ -121,15 +120,6 @@ main{
         margin-right: 10px;
         border-color: black;
     }
- 
-   /* .logos-div{
-        float: right;
-        margin-right: -200px;
-        margin-top: 20px;
-        margin-right: 20px;
-        margin-left: 20px;
-    }*/
-
     .copyright-div{
         float: left;
         text-align: center;
