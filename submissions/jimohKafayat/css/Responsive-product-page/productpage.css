@@ -97,7 +97,6 @@ p, h4{
         text-align: center;
         padding-top: 10px;
     }
-    
     .container{
         display: flex;
         line-height: 1.5;
@@ -110,11 +109,6 @@ p, h4{
     .copyright{
         text-align: center;
     }
-    /* input, .submit{
-        padding: 10px 20px;
-        font-size: 20px;
-    } */
-    
 }
 
 
@@ -145,21 +139,6 @@ p, h4{
     .connect{
         margin-top: -15px;
     }
-    /* .connect{
-    width: 31.999%;
-    justify-self: flex-end;
-    }
-    .middle{
-    width: 31.999%;
-    justify-self: center;
-    
-    }
-    .side{
-    width: 32.999%;
-    justify-self: ;
-    
-    } */
-
 }
 
 
