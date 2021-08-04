@@ -124,7 +124,9 @@ main{
         float: left;
         text-align: center;
         margin-left: 250px;
-}   }
+
+    } 
+}
 
 
 @media screen and (min-width:1200px) {
@@ -175,7 +177,6 @@ main{
         width: 70px;
         height: 70px;
     }
-
 }
 
 
